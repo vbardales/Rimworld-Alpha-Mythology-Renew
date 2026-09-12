@@ -11,14 +11,13 @@ maintainer: Codex task dedicated to AlphaMythologyRenew; maintain this STATUS.md
 stage: preTest
 licence: silent
 licence_at: 2026-09-12; upstream master 53a5518008821188009bbf996b7120ad9593cb5f and Workshop description reviewed; no project redistribution grant found
-showcase: new local preview and icon present; artwork changes not yet committed
+showcase: preview validated and pushed; icon optimized to 128 x 128 locally (21666 bytes)
 remaining:
   - unverified: manual gameplay and save migration
   - unverified: optional legacy integrations with their providers
   - publication: Workshop item not created
-  - artwork: review and optimize local ModIcon (1254 x 1254; 1241845 bytes), then finalize artwork changes
   - parent: removal is staged in parent index; parent ignore edit is uncommitted alongside unrelated user work
-updated: 2026-09-12
+updated: 2026-09-13
 ---
 
 This task manages this standalone mod repository and keeps this status current.
@@ -122,7 +121,7 @@ Readiness recheck on 2026-09-12: the C# source and shipped DLL are present and
 tracked. All three custom classes are referenced by the intended XML definitions;
 the phoenix egg and bleeding damage defs used by the code exist. XML checks and
 Release compilation were rerun successfully and the shipped DLL rebuilt.
-Functional status remains preTest: no gameplay execution has been validated.
+Stage is preTest; this workflow label is independent of in-game testing. No gameplay execution has been validated.
 
 - Local Check-Mod.ps1: PASS, 63 XML files, 25 creatures, unique defs, race references,
   XPath syntax, isolated namespace and publication notices.
@@ -156,7 +155,7 @@ Tests/Check-Mod.ps1 passes 302 static assertions covering metadata, definition
 links, hatchers, custom worker bindings, phoenix egg fire resistance, notices,
 PNG signatures and assembly packaging. Tests/Test-Validator.ps1 passes six negative
 cases in an isolated temporary copy. CI runs both scripts and compilation.
-These results do not establish runtime gameplay correctness; stage stays preTest.
+These results do not establish runtime gameplay correctness. This does not determine the preTest workflow stage.
 
 ## TODO verification — 2026-09-12
 
@@ -175,7 +174,8 @@ These results do not establish runtime gameplay correctness; stage stays preTest
   896 x 504 (560866 bytes); local ModIcon is 1254 x 1254 (1241845 bytes).
 - [ ] Execute the 12 functional scenario groups and attach results/logs.
 - [ ] Verify supported optional integrations and migration separately.
-- [ ] Finalize local artwork and metadata edits, including icon optimization.
+- [x] Commit and push preview artwork, overlay, metadata and icon sources: 97a3091 and cae4b3b on origin/main.
+- [x] Optimize the shipped ModIcon to 128 x 128 (21666 bytes) and visually check at 128 px and 32 px on 2026-09-13.
 - [ ] Commit the separation on the parent side without including unrelated work.
 - [ ] Refresh the licence/comment audit before Workshop publication; this remains
   an open future checkpoint, not a failed check or a claim of author permission.
@@ -200,3 +200,15 @@ Applied the revised STYLE_RIMWORLD.md title hierarchy in `Art/render-preview.cjs
 The single palette reference remains `Art/preview-palette.json`: blue slate paving supplies the veil and the light blue secondary family; the orange-gold illuminated griffin supplies the saturated accent. Warm orange contrasts distinctly with the dominant cool blue rather than repeating it. No palette change was necessary.
 
 Verified actual platform fonts after document.fonts.ready: Segoe UI Semibold for both title spans, Segoe UI regular for tag and summary, Segoe UI Bold for badge; no fallback. `Art/verify-preview.py` now checks the reduced suffix separately. `Art/Preview-qa.json` records minimum real-background contrasts: main title 7.752:1, suffix 7.319:1, tag 4.682:1, summary 5.412:1, badge 8.863:1. Final image visually checked at 896 x 504 and in `Art/Preview-thumbnail-qa.png` at 268 px wide: reduced Renew remains readable, title and version identifiable, rule visible, no clipping or overlaps. Version 1.6 re-read from delivered About.xml. PNG size 564630 bytes. Nothing published. These results supersede previous overlay measurements.
+
+## Current delivery status — 2026-09-12
+
+Preview and metadata changes were committed and pushed in 97a3091; the icon and its source artwork followed in cae4b3b. Local HEAD and origin/main both resolve to cae4b3b27df3dab07ad5a3ce2150cce330da8ec7 at this check. The working tree was clean before this STATUS update. The delivered preview is 896 x 504, 564630 bytes; the icon remains 1241845 bytes and still requires the optimization recorded above.
+
+Stage remains preTest. No additional gameplay, save migration, optional integration, parent-repository or licence audit checks were performed in this documentation update. Their pending items remain open; historical measurements above describe earlier revisions. No Workshop publication was performed.
+
+## Icon optimization and stage clarification — 2026-09-13
+
+Optimized Mod/About/ModIcon.png from 1254 x 1254 / 1241845 bytes to 128 x 128 / 21666 bytes (98.26% smaller). Resampled with Pillow Lanczos and saved as an optimized RGB PNG. The identical full-resolution original remains in Art/Icons/queue-alpha-mythology.png, verified by SHA-256 before resizing. Visually checked at native 128 px and at 32 px (Art/Icons/ModIcon-32-qa.png): face, wink, wings and tail remain identifiable with no clipping. This completes the icon optimization item; earlier icon dimensions and pending notes are historical.
+
+User clarification: preTest is not tied to in-game tests. The stage is retained without inventing a new transition criterion. Gameplay, save migration and optional integration checks remain separately documented as unverified; they do not define this stage. Icon optimization and this STATUS update are local changes, not committed or pushed in this operation.

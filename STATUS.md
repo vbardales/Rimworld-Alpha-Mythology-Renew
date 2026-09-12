@@ -11,11 +11,18 @@ git_root: C:/Users/nelim/Documents/rimworld/AlphaMythologyRenew
 git_isolation: standalone; removed from parent index and ignored there
 remote: origin https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew.git
 maintainer: Codex task dedicated to AlphaMythologyRenew; maintain this STATUS.md as work progresses
-stage: preTest
+stage: preOptions
+settings_audit: partial
+audit_at: 2026-09-13
+audit_revision: 9634a431ad553bc7bcd4c36ce693256af39d86e9
+automated_tests: passed; static contracts and negative cases only
+xml_tests: passed
+functional_tests: unverified; not run in game
 licence: silent
 licence_at: 2026-09-12; upstream master 53a5518008821188009bbf996b7120ad9593cb5f and Workshop description reviewed; no project redistribution grant found
-showcase: preview validated and pushed; icon optimized to 128 x 128 locally (21666 bytes)
+showcase: directly inspected; committed Preview 896 x 504 (564630 bytes), ModIcon 128 x 128 (21666 bytes)
 remaining:
+  - unverified: relevance assessment of omitted spawn controls in the current port; their historical existence does not require restoration or establish a defect
   - unverified: English and French in-game translation acceptance, including optional integrations and wisp inspection/gizmos
   - unverified: manual gameplay and save migration
   - unverified: optional legacy integrations with their providers
@@ -248,3 +255,117 @@ has been tested in game; display, generated grammar, the new Harmony postfixes
 and optional integration behavior remain unverified in `remaining`. Reset the
 affected fields to unchecked after subsequent text/UI/Def/patch/resource changes
 until revalidation. No Workshop publication or gameplay test was performed.
+
+## Workflow audit — 2026-09-13
+
+This section supersedes historical readiness conclusions, not historical results.
+The user's supplied nine-transition workflow takes precedence over the parent
+PUBLISHING.md, STYLE_RIMWORLD.md, MOD_SETTINGS.md and TRANSLATIONS.md, all read for
+this audit. Stage names are literal workflow labels: `preOptions` means the
+Preview, palette, English description and naming gate has passed; `options`
+requires the settings audit. Gameplay is required only for `tested`.
+
+Scope: standalone repository `C:/Users/nelim/Documents/rimworld/AlphaMythologyRenew`,
+distributed directory `Mod/`. The audit started at ad6dc835c81e90735f9873d9db963d5a6147b8ef
+with 35 staged changed/added files. During read-only checks HEAD advanced to
+9634a431ad553bc7bcd4c36ce693256af39d86e9, containing that translation work; the worktree
+then became clean. This audit did not commit, stage, push or discard those changes.
+The final revision above is the audited delivery. Only STATUS.md is edited by this
+audit; isolated build outputs are under ignored `.build/audit-20260913/`.
+
+| Transition | Result | Evidence / remaining criterion |
+| --- | --- | --- |
+| dansMonoRepo -> horsMonoRepo | Validated | Own .git and Git root, configured GitHub origin; live `gh repo view` reports PUBLIC and `git ls-remote origin HEAD` returns the audited revision. README, ATTRIBUTION, CHANGELOG and licensing notices exist; distributed notice copies match. Names consistently identify the continuation without requiring literal folder/repository/package identity. |
+| horsMonoRepo -> ModIcon generated | Validated for delivered implementation scope | Release build succeeds; shipped DLL reproduced byte-for-byte as explained below. PNG directly inspected, 128 x 128, 21666 bytes. Settings are assessed at their dedicated gate below. |
+| ModIcon generated -> Preview generated | Validated | Direct inspection and Pillow decoding: PNG, 896 x 504, 564630 bytes, below 1 MB. High overhead view, tiled ground and legible subjects; no concrete camera defect found. |
+| Preview generated -> preOptions | Validated | English About description and preview, Renew reduced and blue, separate unofficial tag; blue secondary #BEDFFF and orange accent #F5A126 visibly distinct. No connecting word needs reduction in this title. |
+| preOptions -> options | Not verified | No owned settings page or shortcut. The relevance of historical spawn controls to the current port remains to be established; their omission is not a confirmed defect. settings_audit remains partial pending that assessment, not gameplay tests. |
+| options -> l10n | Independent resource validation retained | 591 inventoried fields, 590 French injection paths, 49 bilingual Keyed pairs pass current checks. English Def source is valid native coverage. Future settings text must be audited when introduced. |
+| l10n -> preTest | Partial independent verification | Required Harmony and VEF IDs/loadAfter match usage; VEF supplies MVCF. Achievements name gate matches the installed provider and its conditional language folder uses its package ID. Legacy optional providers' full type/reference/version compatibility is still unverified, not a confirmed defect. |
+| preTest -> done | Independent test artifacts validated | Written F01-F12 preconditions/actions/expectations and bilingual acceptance cases; executable static XML and translation suites pass with negative cases. These are packaging/definition/resource tests, not C# gameplay execution. Global done remains unavailable because earlier gates are unresolved. |
+| done -> tested | Not verified | No gameplay executed, no current Player.log review or bilingual UI interaction. New game, existing save, persistence, migration and provider matrix remain NOT RUN. No RIMMSQOL or other customization integration was tested. |
+
+Licensing: retain the documented `silent` classification and public/unofficial
+policy; this is not a permission grant. The archived corpus was directly counted:
+602 comments, 602 unique IDs; the cited 2022 author response is present and its
+retexture context remains qualified in the earlier audit. LICENSE grants no rights
+to upstream content and the shipped copies match. The historical 2026-09-12
+source-rights audit is retained, not represented as a fresh full online rights
+investigation. No new contrary evidence was established here; refresh before
+Workshop publication remains a separate checkpoint.
+
+### Settings audit
+
+Reviewed both owned C# files, all shipped Defs/patches and the upstream 1.5 DLL
+archived under `.build/upstream-audit/`. The port contains no Verse.Mod subclass,
+ModSettings implementation, SettingsCategory/DoSettingsWindowContents entry or
+MainButtonDef. This proves absence of an empty page and shortcut, but alone does
+not establish that no useful settings exist.
+
+Candidate player use to assess: control wild appearances of the 25 added creatures,
+including excluding an unwanted species without editing XML. The archived original
+`MagicalMenagerie_Settings` exposes per-creature pawnSpawnStates and a commonality
+multiplier (default 1, UI range 0.1-5, reset and Scribe persistence). Its
+`AlphaMythology_BiomeDef_CommonalityOfAnimal_Patch` actually multiplies MM_ animal
+commonality. The delivered port has fixed wildBiomes values and omits that settings
+implementation; README only says the window was not carried over from Animal Ark.
+That records a scope difference but does not settle whether configuration is needed
+in this port. The original audit overstated this as a confirmed need and defect.
+Historical settings alone do not require restoration. The absence of a page and
+shortcut is established; whether that absence violates the access contract remains
+unverified until the relevance assessment is complete. No implementation defect
+or failed runtime test is established by these observations.
+
+Inherited settings were also inspected in the installed VEF 1.6 assembly:
+AnimalBehaviours_Settings exposes global asexual-reproduction, exploding-egg,
+regeneration and other flags with default true and Scribe persistence. The port's
+wisp postfix reads flagAsexualReproduction. These provider-wide controls are not
+owned per-creature spawn controls. No request to duplicate all VEF controls or
+expose combat constants is implied. Egg destroy/cancel and ranged-attack commands
+are gameplay actions, not a substitute for the mod configuration page.
+
+Next gate: resolve the omitted spawn controls with a documented relevance decision.
+For retained useful settings, provide the mod-options entry and the same-settings
+MainButtons shortcut hidden by default, then execute applicable defaults, bounds,
+effect/application and serialization tests. A reasoned exclusion may support
+not_applicable only if the full inventory establishes no relevant owned settings;
+the already verified absence of page/shortcut then suffices under the user's rule.
+No feature was created in this audit. Interactive FR/EN and RIMMSQOL checks belong
+to the final gameplay gate, not this transition.
+
+### Checks executed against the delivery
+
+- `pwsh -NoProfile -File Tests/Check-Mod.ps1`: PASS, 321 assertions, 82 XML files,
+  25 creatures; includes matching LICENSE/ATTRIBUTION copies.
+- `pwsh -NoProfile -File Tests/Test-Validator.ps1`: PASS, all six deliberate
+  regressions rejected in temporary copies.
+- Bundled Python running `Tests/Check-Translations.py --self-test`: PASS,
+  591 fields, 590 injections, 49 EN/FR pairs and four negative cases. System
+  `python` was absent; the bundled interpreter successfully completed the check.
+- `../scripts/Check-DefInjected.ps1 -TransMod <Mod> -Targets <Mod>,<VEF>,<Achievements>
+  -ExtraAssemblies <VEF.dll>,<MVCF.dll>,<AchievementsExpanded.dll>`: PASS,
+  12502 defs indexed, 590 keys, zero errors and no unresolved-path report. Providers
+  are installed Workshop 2023507013 and 2288125657, using their 1.6 assemblies.
+  The checker explicitly does not implement PatchOperationAddModExtension; those
+  shipped operations were read and add classes/data rather than owned prose.
+- `dotnet build Source/AlphaMythologyRenew.csproj -c Release --no-restore --nologo
+  -p:OutputPath=../.build/audit-20260913/bin/`: PASS, SDK 8.0.424, zero warnings/errors.
+  Sandbox SDK access initially failed; the same build with local SDK access passed.
+  Output was isolated to preserve the shipped assembly.
+- A second isolated build with
+  `-p:SourceRevisionId=ad6dc835c81e90735f9873d9db963d5a6147b8ef` reproduced the shipped
+  DLL exactly: SHA-256 `13095401976479427F0307652AFCC34350AD53E939293AD91EDCD6B2B953CA74`.
+  The default build differed only because it embeds the newly created commit ID;
+  this is not stale implementation code and does not require replacing the DLL.
+- Direct PNG inspection and Pillow format/dimension/byte checks were performed.
+  No historical generation record or side-by-side gameplay screenshot was required.
+
+Documentation correction after the audit: About.xml now locates README.md and
+TESTING.md in the GitHub repository and identifies only ATTRIBUTION.md as included.
+This metadata wording change does not affect code, Defs or in-game translations.
+The settings finding above was also corrected from a defect to an unverified
+relevance assessment; no settings restoration is mandated by this audit. An old
+French checklist remains in this STATUS history; it was preserved as requested.
+Neither observation invalidates the shipped license/attribution copies, the image
+checks or the current English README/CHANGELOG. No optional recommendation is
+being treated as a missing gameplay proof.

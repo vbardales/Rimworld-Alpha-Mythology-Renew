@@ -139,3 +139,13 @@ Functional status remains preTest: no gameplay execution has been validated.
 
 Three ported classes use AlphaMythologyRenew rather than Bastyon to avoid collisions.
 All 25 original PawnKindDef names are preserved. No Workshop upload is claimed.
+
+## Test suite expansion — 2026-09-12
+
+Tests/FUNCTIONAL.md now defines 12 functional scenario groups with reproducible
+steps, expected outcomes and a result template; all remain NOT RUN.
+Tests/Check-Mod.ps1 passes 302 static assertions covering metadata, definition
+links, hatchers, custom worker bindings, phoenix egg fire resistance, notices,
+PNG signatures and assembly packaging. Tests/Test-Validator.ps1 passes six negative
+cases in an isolated temporary copy. CI runs both scripts and compilation.
+These results do not establish runtime gameplay correctness; stage stays preTest.

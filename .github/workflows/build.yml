@@ -13,3 +13,6 @@ jobs:
         run: ./Tests/Check-Mod.ps1
       - name: Compile
         run: dotnet build Source/AlphaMythologyRenew.csproj -c Release --nologo
+      - name: Validator negative cases
+        shell: pwsh
+        run: ./Tests/Test-Validator.ps1

@@ -58,3 +58,27 @@ to manual regression testing; none has been executed in this audit:
 
 Source: https://steamcommunity.com/workshop/filedetails/discussion/1821617793/3130541756142153070/
 These are reports to investigate, not confirmed defects in this port.
+
+## Executable checks and acceptance protocol
+
+Detailed manual steps, expected outcomes and evidence template:
+[Tests/FUNCTIONAL.md](Tests/FUNCTIONAL.md). All 12 scenario groups remain NOT RUN.
+
+Run from the repository root with PowerShell 7 and .NET SDK 8:
+
+```powershell
+pwsh -NoProfile -File Tests/Check-Mod.ps1
+dotnet build Source/AlphaMythologyRenew.csproj -c Release --nologo
+pwsh -NoProfile -File Tests/Test-Validator.ps1
+```
+
+Check-Mod validates metadata/dependencies, unique defs and race links, hatch targets
+and durations, laid-egg references, the three custom worker bindings, phoenix egg
+fire resistance, notice parity, PNG signatures/preview size and assembly packaging.
+Test-Validator verifies rejection of six deliberate regressions in a temporary
+copy: wrong package ID, missing race, dangling hatch target, wrong death worker,
+flammable phoenix egg, and mismatched licence notice. It never mutates the real mod.
+Both run in CI alongside compilation. The current baseline passes 302 assertions.
+These are static integration/packaging checks, not execution of RimWorld or C#
+behaviour tests. They cannot prove DLL load compatibility, optional provider types,
+full texture coverage, patch application, save migration or gameplay correctness.

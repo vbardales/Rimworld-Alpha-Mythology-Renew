@@ -11,11 +11,12 @@ maintainer: Codex task dedicated to AlphaMythologyRenew; maintain this STATUS.md
 stage: preTest
 licence: silent
 licence_at: 2026-09-12; upstream master 53a5518008821188009bbf996b7120ad9593cb5f and Workshop description reviewed; no project redistribution grant found
-showcase: original preview and icon reused with credit
+showcase: new local preview and icon present; artwork changes not yet committed
 remaining:
   - unverified: manual gameplay and save migration
   - unverified: optional legacy integrations with their providers
   - publication: Workshop item not created
+  - artwork: review and optimize local ModIcon (1254 x 1254; 1241845 bytes), then finalize artwork changes
   - parent: removal is staged in parent index; parent ignore edit is uncommitted alongside unrelated user work
 updated: 2026-09-12
 ---
@@ -128,7 +129,7 @@ Functional status remains preTest: no gameplay execution has been validated.
 - Release compilation: PASS, .NET SDK 8.0.424, zero warnings and zero errors.
 - Upstream snapshot: no automated test suite, test project or CI workflow found;
   description mentions playtesting without a reproducible protocol. See TESTING.md.
-- Nine manual gameplay scenarios remain NOT RUN, including save migration.
+- Twelve functional scenario groups in Tests/FUNCTIONAL.md remain NOT RUN, including save migration.
 - Earlier local audit recorded 129 named defs and four parents resolving with VEF,
   no unknown fields, and 65 type names examined. These checks were not rerun in
   this repository-separation audit; ten optional legacy types still require providers.
@@ -140,6 +141,13 @@ Functional status remains preTest: no gameplay execution has been validated.
 Three ported classes use AlphaMythologyRenew rather than Bastyon to avoid collisions.
 All 25 original PawnKindDef names are preserved. No Workshop upload is claimed.
 
+## Preview — 2026-09-12
+
+Generated with built-in image_gen following ../STYLE_RIMWORLD.md. Source: Art/Preview-source.png; prompt: Art/PROMPT_ALPHA_MYTHOLOGY.md; reproducible text composition: Art/render-preview.cjs. Installed Mod/About/Preview.png: 896 x 504, 560866 bytes. Visual QA completed; minimum sampled text contrast 4.76:1. Griffin and Cerberus enclosure; English title and summary, unofficial label. Existing icon deletion left untouched.
+
+
+Typography corrected to Segoe UI for title and supporting text, matching MoreStorylikeTraits and SoftWarmPrimitiveBedsRenew engraving templates. Re-rendered and visually checked.
+
 ## Test suite expansion — 2026-09-12
 
 Tests/FUNCTIONAL.md now defines 12 functional scenario groups with reproducible
@@ -149,3 +157,28 @@ links, hatchers, custom worker bindings, phoenix egg fire resistance, notices,
 PNG signatures and assembly packaging. Tests/Test-Validator.ps1 passes six negative
 cases in an isolated temporary copy. CI runs both scripts and compilation.
 These results do not establish runtime gameplay correctness; stage stays preTest.
+
+## TODO verification — 2026-09-12
+
+- [x] Cross-check the completed silent checklist against the recorded source and
+  Workshop audit evidence: 602 archived comments with 602 unique IDs; the earlier
+  two-page Bug Reports audit covers 30 replies. No full comment re-read in this check.
+- [x] Verify upstream master still resolves to the audited commit
+  53a5518008821188009bbf996b7120ad9593cb5f and GitHub visibility remains PUBLIC.
+- [x] Verify LICENSE and ATTRIBUTION copies match the versions shipped in Mod/.
+- [x] Rerun static tests: 302 assertions PASS.
+- [x] Confirm expanded-suite CI success for b86e4dcdcbaebc08c3adb8c2029d7214279f5d20:
+  https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew/actions/runs/34715873368
+- [x] Verify standalone Git isolation: parent index contains no mod files and the
+  folder is ignored; 317 removals remain staged against the parent HEAD.
+- [x] Correct stale icon-absence and nine-scenario statements. Local Preview is
+  896 x 504 (560866 bytes); local ModIcon is 1254 x 1254 (1241845 bytes).
+- [ ] Execute the 12 functional scenario groups and attach results/logs.
+- [ ] Verify supported optional integrations and migration separately.
+- [ ] Finalize local artwork and metadata edits, including icon optimization.
+- [ ] Commit the separation on the parent side without including unrelated work.
+- [ ] Refresh the licence/comment audit before Workshop publication; this remains
+  an open future checkpoint, not a failed check or a claim of author permission.
+
+The Preview section above records the earlier artwork session; its statement
+about an absent/deleted icon is superseded by the current file check here.

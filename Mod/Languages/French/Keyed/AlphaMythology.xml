@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <AMR_AsexualHatched>{0} vient de se reproduire par fission asexuée.</AMR_AsexualHatched>
+  <MM_DestroyEggsLabel>Briser l'œuf</MM_DestroyEggsLabel>
+  <MM_DestroyEggsDesc>Ordonner de briser cet œuf dès que possible.</MM_DestroyEggsDesc>
+  <MM_CancelDestroyEggsLabel>Annuler la destruction de l'œuf</MM_CancelDestroyEggsLabel>
+  <MM_CancelDestroyEggsDesc>Annuler l'ordre de briser cet œuf.</MM_CancelDestroyEggsDesc>
+  <AMR_AsexualReproductionProgress>Progression de la fission asexuée : {0} ({1} jours par cycle)</AMR_AsexualReproductionProgress>
+  <AMR_AsexualReproductionDisabled>Reproduction asexuée désactivée</AMR_AsexualReproductionDisabled>
+  <AMR_DevReproduce>DEV : se reproduire maintenant</AMR_DevReproduce>
+  <AMR_DevReproduceDesc>Déclencher la reproduction asexuée au prochain cycle de traitement.</AMR_DevReproduceDesc>
+  <MM_Boomer>Explosif</MM_Boomer>
+  <MM_BoomerDesc>Cet animal explose à sa mort.</MM_BoomerDesc>
+  <MM_DamageRanged>Attaquant à distance</MM_DamageRanged>
+  <MM_DamageRangedDOTDesc>Cet animal utilise des attaques à distance qui infligent des dégâts sur la durée. L'engager au corps à corps n'est pas forcément le meilleur usage de ses capacités.</MM_DamageRangedDOTDesc>
+  <MM_DamageRangedDesc>Cet animal utilise des attaques à distance pour blesser ses adversaires. L'engager au corps à corps n'est pas forcément le meilleur usage de ses capacités.</MM_DamageRangedDesc>
+  <MM_DamageRangedPoison>Attaquant toxique à distance</MM_DamageRangedPoison>
+  <MM_DamageRangedPoisonDesc>Cet animal utilise des attaques à distance qui infligent des dégâts toxiques. L'engager au corps à corps n'est pas forcément le meilleur usage de ses capacités.</MM_DamageRangedPoisonDesc>
+  <MM_Farm>Animal d'élevage</MM_Farm>
+  <MM_FarmMilkDesc>Cet animal d'élevage produit du lait.</MM_FarmMilkDesc>
+  <MM_FireyShockTroopDesc>Les animaux de choc se distinguent par leur grande vitesse et une capacité utile au corps à corps. Ils ne sont pas forcément très résistants ni dotés de beaucoup de santé, mais peuvent être dévastateurs s'ils sont bien employés.\n\nCet animal possède aussi des attaques qui enflamment ses ennemis.</MM_FireyShockTroopDesc>
+  <MM_MountFast>Monture rapide</MM_MountFast>
+  <MM_MountFastArmoured>Monture rapide et cuirassée</MM_MountFastArmoured>
+  <MM_MountFastArmouredDesc>Les colons peuvent monter cet animal pour bénéficier d'un important gain de vitesse, d'une protection accrue grâce à son armure et combattre au corps à corps à ses côtés. Cette fonctionnalité nécessite le mod Giddy Up! Si vous ne l'avez pas encore, qu'attendez-vous ?</MM_MountFastArmouredDesc>
+  <MM_MountFastDesc>Les colons peuvent monter cet animal pour bénéficier d'un important gain de vitesse et combattre au corps à corps à ses côtés. Cette fonctionnalité nécessite le mod Giddy Up! Si vous ne l'avez pas encore, qu'attendez-vous ?</MM_MountFastDesc>
+  <MM_No>Non</MM_No>
+  <MM_NoRanged>Cet animal ne possède pas d'attaque à distance. Pour lui ordonner d'attaquer, il faut le dresser à la garde et à l'attaque, puis lui demander de suivre un maître lorsque celui-ci est mobilisé ou travaille. Le bouton « Lâcher les animaux » dans les commandes du maître lui fera attaquer au corps à corps.</MM_NoRanged>
+  <MM_ParalizingRanged>Paralysie à distance</MM_ParalizingRanged>
+  <MM_ParalyzingRangedDesc>Les animaux paralysant à distance utilisent leurs attaques pour immobiliser leurs adversaires. Les engager au corps à corps n'est pas forcément le meilleur usage de leurs capacités.</MM_ParalyzingRangedDesc>
+  <MM_ParalyzingShockTroopDesc>Les animaux de choc se distinguent par leur grande vitesse et une capacité utile au corps à corps. Ils ne sont pas forcément très résistants ni dotés de beaucoup de santé, mais peuvent être dévastateurs s'ils sont bien employés.\n\nCet animal possède aussi des attaques capables d'immobiliser ses adversaires.</MM_ParalyzingShockTroopDesc>
+  <MM_PrimaryRole>Rôle principal</MM_PrimaryRole>
+  <MM_Ranged>Cet animal utilise des attaques à distance et ne combat au corps à corps que si l'ennemi s'approche suffisamment. Pour lui ordonner d'attaquer, il faut le dresser à la garde et à l'attaque, puis lui demander de suivre un maître lorsque celui-ci est mobilisé ou travaille. Le bouton « Lâcher les animaux » dans les commandes du maître lui fera chercher un abri adapté et utiliser son attaque à distance.</MM_Ranged>
+  <MM_RangedAttacks>Attaques à distance</MM_RangedAttacks>
+  <MM_SecondaryRole>Rôle secondaire</MM_SecondaryRole>
+  <MM_ShockTroop>Troupe de choc</MM_ShockTroop>
+  <MM_ShockTroopDOTDesc>Les animaux de choc se distinguent par leur grande vitesse et une capacité utile au corps à corps. Ils ne sont pas forcément très résistants ni dotés de beaucoup de santé, mais peuvent être dévastateurs s'ils sont bien employés.\n\nCet animal possède une attaque de mêlée qui inflige des dégâts sur la durée.</MM_ShockTroopDOTDesc>
+  <MM_ShockTroopDesc>Les animaux de choc se distinguent par leur grande vitesse et une capacité utile au corps à corps. Ils ne sont pas forcément très résistants ni dotés de beaucoup de santé, mais peuvent être dévastateurs s'ils sont bien employés.</MM_ShockTroopDesc>
+  <MM_Tank>Combattant résistant</MM_Tank>
+  <MM_Utility>Soutien</MM_Utility>
+  <MM_UtilityHealthDesc>Cet animal soigne lentement les colons et les animaux proches.</MM_UtilityHealthDesc>
+  <MM_UtilityMoodDesc>Cet animal, plutôt fragile, n'est pas adapté au combat. Il améliorera toutefois l'humeur de vos colons par des câlins ou d'autres capacités.</MM_UtilityMoodDesc>
+  <MM_UtilityTemperatureDesc>Cet animal dégage de la chaleur et réchauffe son environnement.</MM_UtilityTemperatureDesc>
+  <MM_UtilityWorkerDesc>Cet animal, plutôt fragile, n'est pas adapté au combat. Il aidera toutefois vos colons à accomplir certaines tâches, comme le minage ou la récolte.</MM_UtilityWorkerDesc>
+  <MM_VenomousTankDesc>Les animaux résistants sont spécialisés dans le combat au corps à corps. Ils possèdent des attaques puissantes, une bonne résistance, beaucoup de santé ou d'autres capacités leur permettant de survivre en première ligne.\n\nCet animal possède aussi de puissantes attaques venimeuses.</MM_VenomousTankDesc>
+  <MM_Yes>Oui</MM_Yes>
+</LanguageData>

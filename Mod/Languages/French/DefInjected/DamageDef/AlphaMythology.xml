@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MM_ToxicBite.label>morsure toxique</MM_ToxicBite.label>
+  <MM_ToxicBite.deathMessage>{0} a succombé à des morsures.</MM_ToxicBite.deathMessage>
+  <MM_VeryToxicBite.label>morsure toxique virulente</MM_VeryToxicBite.label>
+  <MM_VeryToxicBite.deathMessage>{0} a succombé à des piqûres.</MM_VeryToxicBite.deathMessage>
+  <MM_FlamingBite.label>morsure enflammée</MM_FlamingBite.label>
+  <MM_FlamingBite.deathMessage>{0} a péri dans les flammes.</MM_FlamingBite.deathMessage>
+  <MM_ToxicSting.label>piqûre toxique</MM_ToxicSting.label>
+  <MM_ToxicSting.deathMessage>{0} a succombé à des piqûres.</MM_ToxicSting.deathMessage>
+  <MM_Grapple.label>agrippement</MM_Grapple.label>
+  <MM_Grapple.deathMessage>{0} a succombé à une étreinte mortelle.</MM_Grapple.deathMessage>
+  <MM_BleedingWound.label>plaie hémorragique</MM_BleedingWound.label>
+  <MM_BleedingWound.deathMessage>{0} a succombé à une hémorragie.</MM_BleedingWound.deathMessage>
+  <MM_UncontrollableBleeding.label>hémorragie incontrôlable</MM_UncontrollableBleeding.label>
+  <MM_UncontrollableBleeding.deathMessage>{0} a succombé à une hémorragie.</MM_UncontrollableBleeding.deathMessage>
+  <MM_PetrifyingGaze.label>regard pétrifiant</MM_PetrifyingGaze.label>
+  <MM_PetrifyingGaze.deathMessage>{0} a succombé à la pétrification.</MM_PetrifyingGaze.deathMessage>
+  <MM_AcidicBreath.label>souffle acide</MM_AcidicBreath.label>
+  <MM_AcidicBreath.deathMessage>{0} a succombé à un empoisonnement.</MM_AcidicBreath.deathMessage>
+  <MM_ExtraDamageToPiratesHorn.label>corne de justice</MM_ExtraDamageToPiratesHorn.label>
+  <MM_ExtraDamageToPiratesHorn.deathMessage>{0} a succombé à des blessures perforantes.</MM_ExtraDamageToPiratesHorn.deathMessage>
+</LanguageData>

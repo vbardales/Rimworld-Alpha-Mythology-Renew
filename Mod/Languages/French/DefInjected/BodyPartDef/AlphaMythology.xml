@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MM_ChimeraTail.label>tête de serpent</MM_ChimeraTail.label>
+  <MM_Goathead.label>tête de chèvre</MM_Goathead.label>
+  <MM_Wing.label>aile</MM_Wing.label>
+  <MM_ScorpionTail.label>queue de scorpion</MM_ScorpionTail.label>
+  <MM_Antlers.label>bois</MM_Antlers.label>
+  <MM_Horns.label>cornes</MM_Horns.label>
+  <MM_PlasmaMembrane.label>membrane plasmique</MM_PlasmaMembrane.label>
+  <MM_Cytoplasm.label>cytoplasme</MM_Cytoplasm.label>
+</LanguageData>

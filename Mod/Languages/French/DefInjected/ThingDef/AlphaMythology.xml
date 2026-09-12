@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MM_EggGriffinFertilized.label>œuf de griffon (fécondé)</MM_EggGriffinFertilized.label>
+  <MM_EggGriffinFertilized.description>Un œuf de griffon fécondé. Il peut se manger cru, mais il est bien meilleur cuit. Si tout se passe bien, un griffon devrait en éclore.</MM_EggGriffinFertilized.description>
+  <MM_EggPhoenixFertilized.label>œuf de phénix (fécondé)</MM_EggPhoenixFertilized.label>
+  <MM_EggPhoenixFertilized.description>Un œuf de phénix fécondé. Si tout se passe bien, un poussin de phénix devrait en éclore. Il peut se manger cru, mais il est bien meilleur cuit.</MM_EggPhoenixFertilized.description>
+  <MM_EggSalamanderFertilized.label>œuf de salamandre (fécondé)</MM_EggSalamanderFertilized.label>
+  <MM_EggSalamanderFertilized.description>Un œuf de salamandre fécondé. Il peut se manger cru, mais il est bien meilleur cuit. Si tout se passe bien, une salamandre devrait en éclore.</MM_EggSalamanderFertilized.description>
+  <MM_EggFenghuangFertilized.label>œuf de fenghuang (fécondé)</MM_EggFenghuangFertilized.label>
+  <MM_EggFenghuangFertilized.description>Un œuf de fenghuang fécondé. Il peut se manger cru, mais il est bien meilleur cuit. Si tout se passe bien, un fenghuang devrait en éclore.</MM_EggFenghuangFertilized.description>
+  <MM_EggStymphalianBirdFertilized.label>œuf d'oiseau du Stymphale (fécondé)</MM_EggStymphalianBirdFertilized.label>
+  <MM_EggStymphalianBirdFertilized.description>Un œuf d'oiseau du Stymphale fécondé. Il peut se manger cru, mais il est bien meilleur cuit. Si tout se passe bien, un oiseau du Stymphale devrait en éclore.</MM_EggStymphalianBirdFertilized.description>
+  <MM_EggIeltxuFertilized.label>œuf d'ieltxu (fécondé)</MM_EggIeltxuFertilized.label>
+  <MM_EggIeltxuFertilized.description>Un œuf d'ieltxu fécondé. Il peut se manger cru, mais il est bien meilleur cuit. Si tout se passe bien, un ieltxu devrait en éclore.</MM_EggIeltxuFertilized.description>
+  <MM_EggBasiliskFertilized.label>œuf de basilic (fécondé)</MM_EggBasiliskFertilized.label>
+  <MM_EggBasiliskFertilized.description>Un œuf de basilic fécondé. Il peut se manger cru, mais il est bien meilleur cuit. Si tout se passe bien, un basilic devrait en éclore.</MM_EggBasiliskFertilized.description>
+  <MM_LightMagicalLeather.label>cuir magique léger</MM_LightMagicalLeather.label>
+  <MM_LightMagicalLeather.description>Ce cuir brille d'une étrange lumière éthérée. Comparé à la plupart des cuirs légers, il est nettement plus résistant et isole un peu mieux de toutes les températures.</MM_LightMagicalLeather.description>
+  <MM_HeavyMagicalLeather.label>cuir magique épais</MM_HeavyMagicalLeather.label>
+  <MM_HeavyMagicalLeather.description>Ce cuir épais brille d'une étrange lumière éthérée. Comparé à la plupart des cuirs, il est nettement plus résistant et isole un peu mieux de toutes les températures.</MM_HeavyMagicalLeather.description>
+  <MM_EggGriffinUnfertilized.label>œuf de griffon (non fécondé)</MM_EggGriffinUnfertilized.label>
+  <MM_EggGriffinUnfertilized.description>Un œuf de griffon non fécondé. Il peut se manger cru, mais il est bien meilleur cuit.</MM_EggGriffinUnfertilized.description>
+  <MM_EggBasiliskUnfertilized.label>œuf de basilic (non fécondé)</MM_EggBasiliskUnfertilized.label>
+  <MM_EggBasiliskUnfertilized.description>Un œuf de basilic non fécondé. Il peut se manger cru, mais il est bien meilleur cuit.</MM_EggBasiliskUnfertilized.description>
+  <MM_EggFenghuangUnfertilized.label>œuf de fenghuang (non fécondé)</MM_EggFenghuangUnfertilized.label>
+  <MM_EggFenghuangUnfertilized.description>Un œuf de fenghuang non fécondé. Il peut se manger cru, mais il est bien meilleur cuit.</MM_EggFenghuangUnfertilized.description>
+  <MM_EggIeltxuUnfertilized.label>œuf d'ieltxu (non fécondé)</MM_EggIeltxuUnfertilized.label>
+  <MM_EggIeltxuUnfertilized.description>Un œuf d'ieltxu non fécondé. Il peut se manger cru, mais il est bien meilleur cuit.</MM_EggIeltxuUnfertilized.description>
+  <MM_EggStymphalianBirdUnfertilized.label>œuf d'oiseau du Stymphale (non fécondé)</MM_EggStymphalianBirdUnfertilized.label>
+  <MM_EggStymphalianBirdUnfertilized.description>Un œuf d'oiseau du Stymphale non fécondé. Il peut se manger cru, mais il est bien meilleur cuit.</MM_EggStymphalianBirdUnfertilized.description>
+  <MM_EggSalamanderUnfertilized.label>œuf de salamandre (non fécondé)</MM_EggSalamanderUnfertilized.label>
+  <MM_EggSalamanderUnfertilized.description>Un œuf de salamandre non fécondé. Il peut se manger cru, mais il est bien meilleur cuit.</MM_EggSalamanderUnfertilized.description>
+  <MM_Quill.label>aiguillon</MM_Quill.label>
+  <MM_Tremor.label>secousse</MM_Tremor.label>
+  <MM_WispProjectile.label>souffle de feu follet</MM_WispProjectile.label>
+  <MM_AcidicBreath.label>souffle acide</MM_AcidicBreath.label>
+  <MM_RazorSharpFeathers.label>plumes tranchantes</MM_RazorSharpFeathers.label>
+  <MM_BurnedGrass.label>herbe morte</MM_BurnedGrass.label>
+  <MM_BurnedGrass.description>De l'herbe morte. Les animaux ne peuvent pas la manger.</MM_BurnedGrass.description>
+  <MM_BurnedBush.label>buisson mort</MM_BurnedBush.label>
+  <MM_BurnedBush.description>Un buisson mort. Les animaux ne peuvent pas le manger.</MM_BurnedBush.description>
+  <MM_Ahuizotl.label>ahuizotl</MM_Ahuizotl.label>
+  <MM_Ahuizotl.description>L'ahuizotl est une créature légendaire de la mythologie aztèque. Il ressemble à un chien dont la fourrure imperméable forme souvent des pointes. Ses mains lui permettent de manipuler des objets, et une main supplémentaire termine sa queue. On le redoute pour son goût pour la chair humaine, en particulier les ongles, les yeux et les dents. Il vivrait dans l'eau ou à proximité et utiliserait sa main caudale pour saisir ses proies et les entraîner dans les profondeurs afin de les noyer.\n\nLes ahuizotls ne sont pas des créatures naturelles. Ils ont été créés dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : les ahuizotls saisissent habilement leurs proies avec la main au bout de leur queue et les lacèrent de leurs griffes. Il est donc difficile de battre en retraite une fois engagé au corps à corps.</MM_Ahuizotl.description>
+  <MM_Ahuizotl.tools.grabbing_hand.label>main agrippante</MM_Ahuizotl.tools.grabbing_hand.label>
+  <MM_Ahuizotl.tools.left_claw.label>griffe gauche</MM_Ahuizotl.tools.left_claw.label>
+  <MM_Ahuizotl.tools.right_claw.label>griffe droite</MM_Ahuizotl.tools.right_claw.label>
+  <MM_Ahuizotl.tools.head.label>tête</MM_Ahuizotl.tools.head.label>
+  <MM_Basilisk.label>basilic</MM_Basilisk.label>
+  <MM_Basilisk.description>Dans les bestiaires européens, le basilic est un reptile légendaire, réputé roi des serpents et capable de tuer d'un seul regard. Pline l'Ancien le décrivait comme un serpent portant sur la tête une tache blanche semblable à un diadème. On lui attribuait un effet extrêmement néfaste sur la végétation : toutes les plantes autour de lui dépérissaient et pourrissaient.\n\nLes basilics ne sont pas des créatures naturelles. Ils ont été créés dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : le basilic est une bête particulièrement déplaisante. Son regard peut pétrifier ses victimes, tandis que l'herbe et les buissons alentour pourrissent lentement et se dessèchent, le nourrissant au passage. Heureusement, les basilics sont peu communs.</MM_Basilisk.description>
+  <MM_Basilisk.verbs.petrifying_gaze.label>regard pétrifiant</MM_Basilisk.verbs.petrifying_gaze.label>
+  <MM_Basilisk.tools.fangs.label>crocs</MM_Basilisk.tools.fangs.label>
+  <MM_Basilisk.tools.head.label>tête</MM_Basilisk.tools.head.label>
+  <MM_Catoblepas.label>catoblépas</MM_Catoblepas.label>
+  <MM_Catoblepas.description>Le catoblépas est une créature légendaire d'Éthiopie, dotée d'un corps de buffle et d'une tête démesurée que son poids maintient constamment tournée vers le sol.\n\nLes catoblépas ne sont pas des créatures naturelles. Ils ont été créés dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : le regard du catoblépas peut transformer les gens en pierre. Bien qu'il ne soit pas naturellement agressif, ce pouvoir dangereux lui assure de ne pas avoir de prédateurs naturels.</MM_Catoblepas.description>
+  <MM_Catoblepas.tools.head.label>tête</MM_Catoblepas.tools.head.label>
+  <MM_Catoblepas.tools.left_hoof.label>sabot gauche</MM_Catoblepas.tools.left_hoof.label>
+  <MM_Catoblepas.tools.right_hoof.label>sabot droit</MM_Catoblepas.tools.right_hoof.label>
+  <MM_Catoblepas.verbs.petrifying_gaze.label>regard pétrifiant</MM_Catoblepas.verbs.petrifying_gaze.label>
+  <MM_Cerberus.label>cerbère</MM_Cerberus.label>
+  <MM_Cerberus.description>Dans la mythologie grecque, Cerbère, souvent appelé le chien d'Hadès, est un chien à trois têtes qui garde les portes des Enfers pour empêcher les morts d'en sortir. Fils des monstres Échidna et Typhon, il est surtout connu pour sa capture par Héraclès, l'un des douze travaux du héros.\n\nLes cerbères ne sont pas des créatures naturelles. Ils ont été créés dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : les cerbères sont plus difficiles à dresser et moins intelligents que les chiens ordinaires. Leurs trois têtes en font toutefois des animaux de combat TRÈS dangereux, surtout lorsqu'elles sont équipées de mâchoires bioniques.</MM_Cerberus.description>
+  <MM_Cerberus.tools.left_claw.label>griffe gauche</MM_Cerberus.tools.left_claw.label>
+  <MM_Cerberus.tools.right_claw.label>griffe droite</MM_Cerberus.tools.right_claw.label>
+  <MM_Cerberus.tools.head.label>tête</MM_Cerberus.tools.head.label>
+  <MM_CeryneianHind.label>biche de Cérynie</MM_CeryneianHind.label>
+  <MM_CeryneianHind.description>Dans la mythologie grecque, la biche de Cérynie vivait à Cérynie, en Grèce. Cet immense cervidé, plus grand qu'un taureau, portait des bois d'or comme un cerf. La ramener vivante à Eurysthée, à Mycènes, constituait le troisième travail d'Héraclès.\n\nLes biches de Cérynie ne sont pas des créatures naturelles. Elles ont été créées dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : la biche de Cérynie, tout comme le cerf puisque les deux sexes ont été créés, est très rapide. Elle se prête toutefois moins bien au dressage comme monture que les licornes ou les pégases. Elle produit du lait.</MM_CeryneianHind.description>
+  <MM_CeryneianHind.tools.antlers-0.label>bois</MM_CeryneianHind.tools.antlers-0.label>
+  <MM_CeryneianHind.tools.antlers-1.label>bois</MM_CeryneianHind.tools.antlers-1.label>
+  <MM_CeryneianHind.tools.left_hoof.label>sabot gauche</MM_CeryneianHind.tools.left_hoof.label>
+  <MM_CeryneianHind.tools.right_hoof.label>sabot droit</MM_CeryneianHind.tools.right_hoof.label>
+  <MM_Chimera.label>chimère</MM_Chimera.label>
+  <MM_Chimera.description>La chimère était une monstrueuse créature hybride de Lycie, en Asie Mineure, capable de cracher du feu. Elle possédait un corps de lion, une tête de chèvre surgissant de son dos et une queue terminée par une tête de serpent.\n\nLes chimères ne sont pas des créatures naturelles. Elles ont été créées dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : les chimères sont légèrement venimeuses et crachent du feu, ce qui les rend dangereuses, et pas seulement pour leurs ennemis ! Elles ADORENT les colonies en bois. Ah, et on peut aussi les traire...</MM_Chimera.description>
+  <MM_Chimera.tools.toxic_bite.label>morsure toxique</MM_Chimera.tools.toxic_bite.label>
+  <MM_Chimera.tools.left_claw.label>griffe gauche</MM_Chimera.tools.left_claw.label>
+  <MM_Chimera.tools.right_claw.label>griffe droite</MM_Chimera.tools.right_claw.label>
+  <MM_Chimera.tools.head.label>tête</MM_Chimera.tools.head.label>
+  <MM_Chimera.verbs.fire_breath.label>souffle de feu</MM_Chimera.verbs.fire_breath.label>
+  <MM_ErymanthianBoar.label>sanglier d'Érymanthe</MM_ErymanthianBoar.label>
+  <MM_ErymanthianBoar.description>Le sanglier d'Érymanthe était un porc sauvage monstrueux et gigantesque qui habitait les pentes du mont Érymanthe et ravageait parfois les champs. Sa capture constituait le quatrième travail d'Héraclès. Pour y parvenir, le héros le poussa dans une neige épaisse qui ralentit considérablement sa progression et réduisit son avantage.\n\nLes sangliers d'Érymanthe ne sont pas des créatures naturelles. Ils ont été créés dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : les défenses du sanglier d'Érymanthe peuvent infliger des plaies graves qui continuent de saigner et de causer des dégâts, le rendant TRÈS dangereux au corps à corps.</MM_ErymanthianBoar.description>
+  <MM_ErymanthianBoar.tools.tusk.label>défense</MM_ErymanthianBoar.tools.tusk.label>
+  <MM_ErymanthianBoar.tools.head.label>tête</MM_ErymanthianBoar.tools.head.label>
+  <MM_Fenghuang.label>fenghuang</MM_Fenghuang.label>
+  <MM_Fenghuang.description>Le fenghuang est un oiseau légendaire des mythologies d'Asie orientale, symbole de grande vertu et de grâce. Il représente aussi l'union du yin et du yang. Selon la croyance, il n'apparaît que dans les lieux bénis par une paix, une prospérité ou un bonheur exceptionnels. Traditionnellement décrit comme un assemblage de nombreux oiseaux, il est souvent appelé « phénix chinois », bien que ses ressemblances avec le phénix occidental soient superficielles.\n\nLes fenghuangs ne sont pas des créatures naturelles. Ils ont été créés dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : les fenghuangs apprivoisés dégagent une aura de paix et de sérénité qui remonte le moral des personnes proches.</MM_Fenghuang.description>
+  <MM_Fenghuang.tools.claws.label>griffes</MM_Fenghuang.tools.claws.label>
+  <MM_Fenghuang.tools.beak.label>bec</MM_Fenghuang.tools.beak.label>
+  <MM_Fenghuang.tools.head.label>tête</MM_Fenghuang.tools.head.label>
+  <MM_Griffin.label>griffon</MM_Griffin.label>
+  <MM_Griffin.description>Le griffon possède le corps, la queue et les pattes arrière d'un lion, la tête et les ailes d'un aigle, ainsi que des serres d'aigle à l'avant. Puissants et majestueux, les griffons sont connus comme gardiens de trésors et de biens précieux, et appréciés comme montures fiables.\n\nLes griffons ne sont pas des créatures naturelles. Ils ont été créés dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : les griffons sont d'excellentes montures et bénéficient de bonus de vitesse et d'armure lorsqu'ils sont montés. Cette capacité nécessite le mod Giddy-up! Battle Mounts.</MM_Griffin.description>
+  <MM_Griffin.tools.left_claw.label>griffe gauche</MM_Griffin.tools.left_claw.label>
+  <MM_Griffin.tools.right_claw.label>griffe droite</MM_Griffin.tools.right_claw.label>
+  <MM_Griffin.tools.beak.label>bec</MM_Griffin.tools.beak.label>
+  <MM_Griffin.tools.head.label>tête</MM_Griffin.tools.head.label>
+  <MM_Ieltxu.label>ieltxu</MM_Ieltxu.label>
+  <MM_Ieltxu.description>L'ieltxu est un oiseau-esprit de la mythologie basque. Généralement représenté comme un corbeau noir de jais crachant du feu, il n'est pas malveillant, bien qu'on le décrive souvent comme espiègle. C'est une créature nocturne qui apparaît habituellement dans les forêts obscures, à la faveur de la nuit.\n\nLes ieltxus ne sont pas des créatures naturelles. Ils ont été créés dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : les ieltxus peuvent cracher du feu lorsqu'ils sont menacés. Ce sont des créatures nocturnes qui dorment pendant la journée.</MM_Ieltxu.description>
+  <MM_Ieltxu.verbs.fire_breath.label>souffle de feu</MM_Ieltxu.verbs.fire_breath.label>
+  <MM_Ieltxu.tools.claws.label>griffes</MM_Ieltxu.tools.claws.label>
+  <MM_Ieltxu.tools.beak.label>bec</MM_Ieltxu.tools.beak.label>
+  <MM_Ieltxu.tools.head.label>tête</MM_Ieltxu.tools.head.label>
+  <MM_Kappa.label>kappa</MM_Kappa.label>
+  <MM_Kappa.description>Le kappa est un esprit des rivières du folklore japonais. Il ressemble à un humanoïde vert aux mains et aux pieds palmés, portant une carapace de tortue sur le dos. Une cavité sur sa tête, son « assiette », contient un peu d'eau ; si elle se renverse ou s'évapore, le kappa s'affaiblit considérablement. Souvent espiègles, les kappas ne sont pas foncièrement malveillants. Une fois devenus leurs amis, ils peuvent accomplir toutes sortes de tâches pour les humains, comme aider les fermiers à irriguer leurs terres.\n\nLes kappas ne sont pas des créatures naturelles. Ils ont été créés dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : les kappas sont peureux et fuient le combat s'ils perdent trop de santé. Correctement dressés, avec au moins le dressage de garde, ils peuvent aider les colons à récolter.</MM_Kappa.description>
+  <MM_Kappa.tools.left_fist.label>poing gauche</MM_Kappa.tools.left_fist.label>
+  <MM_Kappa.tools.right_fist.label>poing droit</MM_Kappa.tools.right_fist.label>
+  <MM_Kappa.tools.teeth.label>dents</MM_Kappa.tools.teeth.label>
+  <MM_Kappa.tools.head.label>tête</MM_Kappa.tools.head.label>
+  <MM_Kitsune.label>kitsune</MM_Kitsune.label>
+  <MM_Kitsune.description>Le kitsune est une créature légendaire du folklore japonais, semblable à un renard très intelligent. Ses pouvoirs paranormaux augmentent avec son âge et sa sagesse. Il peut posséder jusqu'à neuf queues ; en général, plus elles sont nombreuses, plus le kitsune est âgé et puissant.\n\nLes kitsunes ne sont pas des créatures naturelles. Ils ont été créés dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : les kitsunes apprivoisés régénèrent lentement les blessures des colons et des animaux proches.</MM_Kitsune.description>
+  <MM_Kitsune.tools.left_claw.label>griffe gauche</MM_Kitsune.tools.left_claw.label>
+  <MM_Kitsune.tools.right_claw.label>griffe droite</MM_Kitsune.tools.right_claw.label>
+  <MM_Kitsune.tools.head.label>tête</MM_Kitsune.tools.head.label>
+  <MM_LernaeanHydra.label>hydre de Lerne</MM_LernaeanHydra.label>
+  <MM_LernaeanHydra.description>L'hydre de Lerne est un monstre aquatique serpentin des mythologies grecque et romaine. Son repaire était le lac de Lerne, en Argolide, d'où son nom. Son souffle et son sang sont extrêmement venimeux, et elle possède d'impressionnantes capacités de régénération. La tuer constituait le deuxième travail d'Héraclès.\n\nLes hydres ne sont pas des créatures naturelles. Elles ont été créées dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : les hydres régénèrent leurs blessures assez rapidement. Dangereuses au corps à corps, elles sont surtout redoutables par leur souffle acide empoisonné. Heureusement, elles sont plutôt craintives et s'approchent rarement des humains.</MM_LernaeanHydra.description>
+  <MM_LernaeanHydra.tools.toxic_bite.label>morsure toxique</MM_LernaeanHydra.tools.toxic_bite.label>
+  <MM_LernaeanHydra.verbs.acidic_breath.label>souffle acide</MM_LernaeanHydra.verbs.acidic_breath.label>
+  <MM_LesserWyvern.label>petite vouivre</MM_LesserWyvern.label>
+  <MM_LesserWyvern.description>Dans l'héraldique européenne médiévale, la vouivre est un dragon bipède ailé figurant sur de nombreux étendards et blasons. Contrairement au dragon à quatre pattes, elle crache rarement du feu dans l'héraldique et le folklore. Elle est plutôt associée au poison, par ses crocs venimeux ou sa dangereuse queue barbelée.\n\nLes petites vouivres ne sont pas des créatures naturelles. Elles ont été créées dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : les petites vouivres sont extrêmement venimeuses, résistantes aux dégâts et presque insensibles aux douleurs extrêmes. Heureusement, elles sont très rares. Contrairement aux grandes vouivres, elles ne peuvent pas cracher de poison. Pour découvrir les grandes vouivres, téléchargez notre mod RimWorld - Witcher Monster Hunt !</MM_LesserWyvern.description>
+  <MM_LesserWyvern.tools.left_claw.label>griffe gauche</MM_LesserWyvern.tools.left_claw.label>
+  <MM_LesserWyvern.tools.right_claw.label>griffe droite</MM_LesserWyvern.tools.right_claw.label>
+  <MM_LesserWyvern.tools.tail.label>queue</MM_LesserWyvern.tools.tail.label>
+  <MM_Manticore.label>manticore</MM_Manticore.label>
+  <MM_Manticore.description>La manticore est une créature monstrueuse de la mythologie perse. Elle possède une tête mi-humaine, mi-léonine, un corps de lion et une queue de scorpion garnie d'épines venimeuses semblables à des piquants de porc-épic. Cette manticore a aussi été modifiée pour porter des ailes de chauve-souris non fonctionnelles, absentes des représentations historiques. C'est un féroce prédateur capable de traquer ses proies et de les attaquer à distance.\n\nLes manticores ne sont pas des créatures naturelles. Elles ont été créées dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : les manticores peuvent projeter des aiguillons empoisonnés depuis leur queue de scorpion.</MM_Manticore.description>
+  <MM_Manticore.tools.left_claw.label>griffe gauche</MM_Manticore.tools.left_claw.label>
+  <MM_Manticore.tools.right_claw.label>griffe droite</MM_Manticore.tools.right_claw.label>
+  <MM_Manticore.tools.head.label>tête</MM_Manticore.tools.head.label>
+  <MM_Manticore.verbs.venomous_quills.label>aiguillons venimeux</MM_Manticore.verbs.venomous_quills.label>
+  <MM_Pegasus.label>pégase</MM_Pegasus.label>
+  <MM_Pegasus.description>Le pégase est un cheval divin ailé, parmi les créatures les plus célèbres de la mythologie grecque. Les pégases sont des étalons blancs portant une paire d'ailes emplumées sur le dos. Les récits leur prêtaient la faculté de voler, mais ces créatures semblent n'avoir des ailes que pour l'apparence : aucune prouesse génétique ne permettrait à des ailes aussi frêles de soutenir leur poids. Ils sont appréciés comme montures rapides et fiables.\n\nLes pégases ne sont pas des créatures naturelles. Ils ont été créés dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : les pégases sont d'excellentes montures et bénéficient d'un important bonus de vitesse lorsqu'ils sont montés. Cette capacité nécessite le mod Giddy-up! Battle Mounts.</MM_Pegasus.description>
+  <MM_Pegasus.tools.head.label>tête</MM_Pegasus.tools.head.label>
+  <MM_Pegasus.tools.left_hoof.label>sabot gauche</MM_Pegasus.tools.left_hoof.label>
+  <MM_Pegasus.tools.right_hoof.label>sabot droit</MM_Pegasus.tools.right_hoof.label>
+  <MM_Phoenix.label>phénix</MM_Phoenix.label>
+  <MM_Phoenix.description>Dans la mythologie égyptienne antique, puis grecque et romaine, le phénix est un oiseau à la vie très longue qui se régénère ou renaît de manière cyclique, généralement dans un immense brasier ravageant tout autour de lui. Il symbolise depuis toujours la renaissance, le renouveau et la persévérance.\n\nLes phénix ne sont pas des créatures naturelles. Ils ont été créés dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : les attaques d'un phénix peuvent enflammer ses cibles. À sa mort, il explose et laisse un œuf résistant au feu, parfois deux. Au bout d'un certain temps, un nouveau phénix en éclot.</MM_Phoenix.description>
+  <MM_Phoenix.tools.claws.label>griffes</MM_Phoenix.tools.claws.label>
+  <MM_Phoenix.tools.beak.label>bec</MM_Phoenix.tools.beak.label>
+  <MM_Phoenix.tools.head.label>tête</MM_Phoenix.tools.head.label>
+  <MM_Qilin.label>qilin</MM_Qilin.label>
+  <MM_Qilin.description>Le qilin est une créature chimérique à sabots connue en Chine et dans d'autres cultures d'Asie orientale. Il annoncerait l'arrivée ou la disparition imminente d'un sage ou d'un souverain illustre. Son corps, semblable à celui d'un cerf, est partiellement couvert d'écailles, et sa tête porte une paire de bois impressionnants.\n\nLes qilins ne sont pas des créatures naturelles. Ils ont été créés dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nHabituellement paisibles, les qilins ont cependant la fâcheuse tendance à enflammer leurs ennemis lorsqu'on les provoque.</MM_Qilin.description>
+  <MM_Qilin.tools.left_hoof.label>sabot gauche</MM_Qilin.tools.left_hoof.label>
+  <MM_Qilin.tools.right_hoof.label>sabot droit</MM_Qilin.tools.right_hoof.label>
+  <MM_Qilin.tools.antlers.label>bois</MM_Qilin.tools.antlers.label>
+  <MM_Qilin.tools.teeth.label>dents</MM_Qilin.tools.teeth.label>
+  <MM_Qilin.tools.head.label>tête</MM_Qilin.tools.head.label>
+  <MM_Salamander.label>salamandre</MM_Salamander.label>
+  <MM_Salamander.description>La salamandre est un amphibien auquel, comme à beaucoup d'animaux réels, on a souvent attribué des qualités fantastiques ou occultes qu'il ne possède pas. Dans les traditions antiques, médiévales et de la Renaissance, la salamandre légendaire prend souvent l'aspect d'une salamandre ordinaire ou d'un serpent aux traits de lézard, mais on lui prête généralement une affinité avec le feu élémentaire.\n\nLes salamandres ne sont pas des créatures naturelles. Elles ont été créées dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : les salamandres dégagent une chaleur incroyable, ce qui les rend très dangereuses, ou très utiles, dans les espaces clos. Leurs œufs partagent cette propriété et explosent à l'éclosion. La morsure d'une salamandre peut enflammer sa cible.</MM_Salamander.description>
+  <MM_Salamander.tools.firefangs.label>crocs de feu</MM_Salamander.tools.firefangs.label>
+  <MM_Salamander.tools.head.label>tête</MM_Salamander.tools.head.label>
+  <MM_StymphalianBird.label>oiseau du Stymphale</MM_StymphalianBird.label>
+  <MM_StymphalianBird.description>Les oiseaux du Stymphale sont des oiseaux voraces de la mythologie grecque, nommés d'après le marais où ils vivaient. Mangeurs d'humains, ils avaient un bec de bronze, des plumes métalliques tranchantes qu'ils projetaient sur leurs victimes et des fientes empoisonnées. Les vaincre constituait le sixième travail d'Héraclès.\n\nLes oiseaux du Stymphale ne sont pas des créatures naturelles. Ils ont été créés dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : les oiseaux du Stymphale survolent le terrain et ignorent ses pénalités de déplacement. Ils disposent d'attaques tranchantes à distance.</MM_StymphalianBird.description>
+  <MM_StymphalianBird.verbs.razor_sharp_feathers.label>plumes tranchantes</MM_StymphalianBird.verbs.razor_sharp_feathers.label>
+  <MM_StymphalianBird.tools.claws.label>griffes</MM_StymphalianBird.tools.claws.label>
+  <MM_StymphalianBird.tools.beak.label>bec</MM_StymphalianBird.tools.beak.label>
+  <MM_StymphalianBird.tools.head.label>tête</MM_StymphalianBird.tools.head.label>
+  <MM_Tlilcoatl.label>tlilcoatl</MM_Tlilcoatl.label>
+  <MM_Tlilcoatl.description>Le tlilcoatl, « serpent noir » en nahuatl, est un reptile prédateur du folklore mexicain. Il possède des écailles noires luisantes, une queue bifide et peut atteindre une taille considérable. Il exhale un dangereux gaz toxique qui étouffe rapidement ses victimes.\n\nLes tlilcoatls ne sont pas des créatures naturelles. Ils ont été créés dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : les tlilcoatls sont extrêmement venimeux, avec une morsure dangereuse et un souffle particulièrement redoutable. Ils n'attaquent toutefois les humains que pour se défendre.</MM_Tlilcoatl.description>
+  <MM_Tlilcoatl.tools.fangs.label>crocs</MM_Tlilcoatl.tools.fangs.label>
+  <MM_Tlilcoatl.verbs.poison_breath.label>souffle empoisonné</MM_Tlilcoatl.verbs.poison_breath.label>
+  <MM_Unicorn.label>licorne</MM_Unicorn.label>
+  <MM_Unicorn.description>La licorne est une créature légendaire décrite depuis l'Antiquité comme une bête portant une unique et longue corne pointue en spirale au milieu du front. Elle figurait sur les anciens sceaux de la civilisation de la vallée de l'Indus et était mentionnée par les Grecs anciens. On la décrivait couramment comme une créature des bois extrêmement farouche, symbole de pureté et de grâce. Sa corne aurait le pouvoir de purifier l'eau empoisonnée et de guérir les maladies.\n\nLes licornes ne sont pas des créatures naturelles. Elles ont été créées dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : les licornes sont d'excellentes montures et bénéficient d'un important bonus de vitesse lorsqu'elles sont montées. Cette capacité nécessite le mod Giddy-up! Battle Mounts.</MM_Unicorn.description>
+  <MM_Unicorn.tools.horn-0.label>corne</MM_Unicorn.tools.horn-0.label>
+  <MM_Unicorn.tools.horn-1.label>corne</MM_Unicorn.tools.horn-1.label>
+  <MM_Unicorn.tools.left_hoof.label>sabot gauche</MM_Unicorn.tools.left_hoof.label>
+  <MM_Unicorn.tools.right_hoof.label>sabot droit</MM_Unicorn.tools.right_hoof.label>
+  <MM_WildMinotaur.label>minotaure sauvage</MM_WildMinotaur.label>
+  <MM_WildMinotaur.description>Dans la mythologie grecque, le Minotaure était représenté avec la tête et la queue d'un taureau sur un corps humain. Il vivait au centre du Labyrinthe, construction complexe conçue par Dédale et son fils Icare sur l'ordre du roi Minos de Crète. Il fut finalement tué par le héros athénien Thésée. Le Minotaure mythologique était souvent rusé, tandis que cette créature ne possède qu'une intelligence instinctive très rudimentaire.\n\nLes minotaures ne sont pas des créatures naturelles. Ils ont été créés dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : les minotaures sauvages peuvent frapper le sol de leurs sabots pour provoquer des secousses.</MM_WildMinotaur.description>
+  <MM_WildMinotaur.tools.horns.label>cornes</MM_WildMinotaur.tools.horns.label>
+  <MM_WildMinotaur.tools.left_fist.label>poing gauche</MM_WildMinotaur.tools.left_fist.label>
+  <MM_WildMinotaur.tools.right_fist.label>poing droit</MM_WildMinotaur.tools.right_fist.label>
+  <MM_WildMinotaur.tools.teeth.label>dents</MM_WildMinotaur.tools.teeth.label>
+  <MM_WildMinotaur.tools.head.label>tête</MM_WildMinotaur.tools.head.label>
+  <MM_WildMinotaur.verbs.tremors.label>secousses</MM_WildMinotaur.verbs.tremors.label>
+  <MM_WillOWisp.label>feu follet</MM_WillOWisp.label>
+  <MM_WillOWisp.description>Le feu follet est une créature du folklore anglais, une lueur fantomatique aperçue la nuit par les voyageurs, surtout au-dessus des tourbières et des marécages. Il égarerait les passants en ressemblant à la lumière vacillante d'une lampe ou d'une lanterne.\n\nLes feux follets ne sont pas des créatures naturelles. Ils ont été créés dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : on peut à peine considérer les feux follets comme des créatures vivantes ; ils ressemblent surtout à d'étranges bactéries. Ils se reproduisent par fission asexuée, ont besoin de très peu de nourriture et sont immunisés contre les températures extrêmes, les environnements toxiques, le feu et les attaques psychiques. Lorsqu'ils sont menacés, ce qui est rare, ils peuvent souffler un nuage de particules multicolores apparemment nocives pour les êtres vivants.</MM_WillOWisp.description>
+  <MM_WillOWisp.tools.pseudopod.label>pseudopode</MM_WillOWisp.tools.pseudopod.label>
+  <MM_WillOWisp.verbs.wisp_breath.label>souffle de feu follet</MM_WillOWisp.verbs.wisp_breath.label>
+  <MM_Xiezhi.label>xiezhi</MM_Xiezhi.label>
+  <MM_Xiezhi.description>Le xiezhi est une créature légendaire de la mythologie chinoise, également connue en Corée sous le nom de haetae. On le représente généralement comme un croisement entre un lion et une chèvre, avec une unique corne sur le front. Les xiezhis perçoivent instinctivement le bien et le mal et savent distinguer les innocents des coupables.\n\nLes xiezhis ne sont pas des créatures naturelles. Ils ont été créés dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : les xiezhis attaquent férocement les pirates et les encornent avec leur corne avide de justice.</MM_Xiezhi.description>
+  <MM_Xiezhi.tools.horn.label>corne</MM_Xiezhi.tools.horn.label>
+  <MM_Xiezhi.tools.bite.label>morsure</MM_Xiezhi.tools.bite.label>
+  <MM_Xiezhi.tools.left_claw.label>griffe gauche</MM_Xiezhi.tools.left_claw.label>
+  <MM_Xiezhi.tools.right_claw.label>griffe droite</MM_Xiezhi.tools.right_claw.label>
+  <MM_Xiezhi.tools.head.label>tête</MM_Xiezhi.tools.head.label>
+</LanguageData>

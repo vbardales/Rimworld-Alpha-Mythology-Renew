@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MM_ShutDownMechanoid.label>désactiver</MM_ShutDownMechanoid.label>
+  <MM_ShutDownMechanoid.description>Désactive un mécanoïde.</MM_ShutDownMechanoid.description>
+  <MM_ShutDownMechanoid.jobString>Désactivation d'un mécanoïde.</MM_ShutDownMechanoid.jobString>
+</LanguageData>

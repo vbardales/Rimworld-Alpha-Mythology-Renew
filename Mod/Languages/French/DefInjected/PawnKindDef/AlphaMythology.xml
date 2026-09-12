@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MM_Ahuizotl.label>ahuizotl</MM_Ahuizotl.label>
+  <MM_Ahuizotl.labelPlural>ahuizotl</MM_Ahuizotl.labelPlural>
+  <MM_Ahuizotl.lifeStages.ahuizotl_puppy.label>petit ahuizotl</MM_Ahuizotl.lifeStages.ahuizotl_puppy.label>
+  <MM_Ahuizotl.lifeStages.ahuizotl_puppy.labelPlural>petits ahuizotls</MM_Ahuizotl.lifeStages.ahuizotl_puppy.labelPlural>
+  <MM_Basilisk.label>basilic</MM_Basilisk.label>
+  <MM_Catoblepas.label>catoblépas</MM_Catoblepas.label>
+  <MM_Cerberus.label>cerbère</MM_Cerberus.label>
+  <MM_Cerberus.labelPlural>cerbères</MM_Cerberus.labelPlural>
+  <MM_Cerberus.lifeStages.cerberus_puppy.label>chiot de cerbère</MM_Cerberus.lifeStages.cerberus_puppy.label>
+  <MM_Cerberus.lifeStages.cerberus_puppy.labelPlural>chiots de cerbère</MM_Cerberus.lifeStages.cerberus_puppy.labelPlural>
+  <MM_CeryneianHind.label>biche de Cérynie</MM_CeryneianHind.label>
+  <MM_CeryneianHind.labelMale>cerf de Cérynie</MM_CeryneianHind.labelMale>
+  <MM_CeryneianHind.labelFemale>biche de Cérynie</MM_CeryneianHind.labelFemale>
+  <MM_CeryneianHind.lifeStages.ceryneian_calf.label>faon de Cérynie</MM_CeryneianHind.lifeStages.ceryneian_calf.label>
+  <MM_CeryneianHind.lifeStages.ceryneian_calf.labelPlural>faons de Cérynie</MM_CeryneianHind.lifeStages.ceryneian_calf.labelPlural>
+  <MM_Chimera.label>chimère</MM_Chimera.label>
+  <MM_ErymanthianBoar.label>sanglier d'Érymanthe</MM_ErymanthianBoar.label>
+  <MM_Fenghuang.label>fenghuang</MM_Fenghuang.label>
+  <MM_Fenghuang.lifeStages.fenghuang_chick.label>poussin de fenghuang</MM_Fenghuang.lifeStages.fenghuang_chick.label>
+  <MM_Griffin.label>griffon</MM_Griffin.label>
+  <MM_Ieltxu.label>ieltxu</MM_Ieltxu.label>
+  <MM_Kappa.label>kappa</MM_Kappa.label>
+  <MM_Kitsune.label>kitsune</MM_Kitsune.label>
+  <MM_Kitsune.labelPlural>kitsune</MM_Kitsune.labelPlural>
+  <MM_Kitsune.lifeStages.kitsune_puppy.label>petit kitsune</MM_Kitsune.lifeStages.kitsune_puppy.label>
+  <MM_Kitsune.lifeStages.kitsune_puppy.labelPlural>petits kitsunes</MM_Kitsune.lifeStages.kitsune_puppy.labelPlural>
+  <MM_LernaeanHydra.label>hydre de Lerne</MM_LernaeanHydra.label>
+  <MM_LesserWyvern.label>petite vouivre</MM_LesserWyvern.label>
+  <MM_Manticore.label>manticore</MM_Manticore.label>
+  <MM_Pegasus.label>pégase</MM_Pegasus.label>
+  <MM_Pegasus.labelPlural>pégases</MM_Pegasus.labelPlural>
+  <MM_Pegasus.labelMale>étalon pégase</MM_Pegasus.labelMale>
+  <MM_Pegasus.labelFemale>jument pégase</MM_Pegasus.labelFemale>
+  <MM_Pegasus.lifeStages.pegasus_foal.label>poulain pégase</MM_Pegasus.lifeStages.pegasus_foal.label>
+  <MM_Pegasus.lifeStages.pegasus_foal.labelPlural>poulains pégases</MM_Pegasus.lifeStages.pegasus_foal.labelPlural>
+  <MM_Phoenix.label>phénix</MM_Phoenix.label>
+  <MM_Phoenix.labelPlural>phénix</MM_Phoenix.labelPlural>
+  <MM_Phoenix.lifeStages.phoenix_chick.label>poussin de phénix</MM_Phoenix.lifeStages.phoenix_chick.label>
+  <MM_Qilin.label>qilin</MM_Qilin.label>
+  <MM_Salamander.label>salamandre</MM_Salamander.label>
+  <MM_StymphalianBird.label>oiseau du Stymphale</MM_StymphalianBird.label>
+  <MM_StymphalianBird.lifeStages.stymphalian_bird_chick.label>poussin d'oiseau du Stymphale</MM_StymphalianBird.lifeStages.stymphalian_bird_chick.label>
+  <MM_Tlilcoatl.label>tlilcoatl</MM_Tlilcoatl.label>
+  <MM_Unicorn.label>licorne</MM_Unicorn.label>
+  <MM_Unicorn.labelMale>étalon licorne</MM_Unicorn.labelMale>
+  <MM_Unicorn.labelFemale>jument licorne</MM_Unicorn.labelFemale>
+  <MM_Unicorn.lifeStages.unicorn_foal.label>poulain licorne</MM_Unicorn.lifeStages.unicorn_foal.label>
+  <MM_Unicorn.lifeStages.unicorn_foal.labelPlural>poulains licornes</MM_Unicorn.lifeStages.unicorn_foal.labelPlural>
+  <MM_WildMinotaur.label>minotaure sauvage</MM_WildMinotaur.label>
+  <MM_WillOWisp.label>feu follet</MM_WillOWisp.label>
+  <MM_Xiezhi.label>xiezhi</MM_Xiezhi.label>
+</LanguageData>

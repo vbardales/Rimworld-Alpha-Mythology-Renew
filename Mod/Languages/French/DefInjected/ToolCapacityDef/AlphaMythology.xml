@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MM_ToxicSting.label>piqûre toxique</MM_ToxicSting.label>
+  <MM_ToxicBite.label>morsure toxique</MM_ToxicBite.label>
+  <MM_VeryToxicBite.label>morsure toxique virulente</MM_VeryToxicBite.label>
+  <MM_ExtraDamageToPiratesHorn.label>corne de justice</MM_ExtraDamageToPiratesHorn.label>
+  <MM_Grapple.label>agrippement</MM_Grapple.label>
+  <MM_BleedingWound.label>plaie hémorragique</MM_BleedingWound.label>
+  <MM_FlamingBite.label>morsure enflammée</MM_FlamingBite.label>
+</LanguageData>

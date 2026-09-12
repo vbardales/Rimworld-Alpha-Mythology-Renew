@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-09-13
+
+- Added French translations for creature, item, health, combat and optional
+  achievement text, and restored missing English/French UI and role keys.
+- Localized wisp reproduction inspection, birth messages and developer commands;
+  supplied French VEF egg-warning and body-clock text.
+- Corrected the qilin and salamander role labels/tooltips without changing stats.
+- Added a translation inventory, CI coverage checks and bilingual acceptance cases.
+- Static validation passes; in-game English/French acceptance remains pending.
+
 ## 2026-09-12
 
 - Extracted the 25 Alpha Mythology creatures, defs, nine optional patches, textures

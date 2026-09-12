@@ -4,6 +4,13 @@ Original mod: Alpha Mythology by Sarg Bjornson. Original preview: Oskar Potocki.
 Original Workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=1821617793
 Original source: https://github.com/juanosarg/AlphaMythology
 
+Translation work (2026-09-13): English UI/role resources are adapted from the
+original Alpha Mythology language file; missing health/temperature role tooltips
+were written for this port. French translations were prepared with Codex. Six
+shared VEF keys retain their existing English wording and add French coverage.
+The port's scoped wisp translation postfix was written after inspecting VEF's
+1.6 reproduction UI methods; it does not copy or replace reproduction logic.
+
 No project licence or explicit republication permission was found. The upstream remake timetable is not used to determine this port's status. The bundled Harmony MIT licence does not apply to Alpha Mythology.
 
 ## Original description and sound credits

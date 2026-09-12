@@ -11,6 +11,8 @@ jobs:
       - name: XML regression checks
         shell: pwsh
         run: ./Tests/Check-Mod.ps1
+      - name: Translation coverage and validator negative cases
+        run: python3 Tests/Check-Translations.py --self-test
       - name: Compile
         run: dotnet build Source/AlphaMythologyRenew.csproj -c Release --nologo
       - name: Validator negative cases

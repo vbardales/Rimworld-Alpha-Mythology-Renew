@@ -1,4 +1,7 @@
 ---
+localization: complete
+translation_en: complete
+translation_fr: complete
 mod: Alpha Mythology Renew (unofficial)
 packageId: nelim.alphamythologyrenew
 repo: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew
@@ -13,6 +16,7 @@ licence: silent
 licence_at: 2026-09-12; upstream master 53a5518008821188009bbf996b7120ad9593cb5f and Workshop description reviewed; no project redistribution grant found
 showcase: preview validated and pushed; icon optimized to 128 x 128 locally (21666 bytes)
 remaining:
+  - unverified: English and French in-game translation acceptance, including optional integrations and wisp inspection/gizmos
   - unverified: manual gameplay and save migration
   - unverified: optional legacy integrations with their providers
   - publication: Workshop item not created
@@ -212,3 +216,35 @@ Stage remains preTest. No additional gameplay, save migration, optional integrat
 Optimized Mod/About/ModIcon.png from 1254 x 1254 / 1241845 bytes to 128 x 128 / 21666 bytes (98.26% smaller). Resampled with Pillow Lanczos and saved as an optimized RGB PNG. The identical full-resolution original remains in Art/Icons/queue-alpha-mythology.png, verified by SHA-256 before resizing. Visually checked at native 128 px and at 32 px (Art/Icons/ModIcon-32-qa.png): face, wink, wings and tail remain identifiable with no clipping. This completes the icon optimization item; earlier icon dimensions and pending notes are historical.
 
 User clarification: preTest is not tied to in-game tests. The stage is retained without inventing a new transition criterion. Gameplay, save migration and optional integration checks remain separately documented as unverified; they do not define this stage. Icon optimization and this STATUS update are local changes, not committed or pushed in this operation.
+
+## Translation audit — 2026-09-13
+
+Applied the new translation gate from the parent PUBLISHING.md and TRANSLATIONS.md
+to local work based on ad6dc835c81e90735f9873d9db963d5a6147b8ef. Detailed inventory,
+scope, dependency checks, commands and runtime acceptance cases are in
+`Tests/TRANSLATIONS.md` and `Tests/TranslationInventory.json`.
+
+All owned text mechanisms and English/French resources pass the static audit:
+591 inventoried Def/patch fields, 590 French injections and 49 bilingual Keyed
+pairs. The remaining inventoried field is the wisp's inspection prefix, replaced
+as part of a fully parameterized sentence by a postfix scoped to MM_WillOWisp.
+Missing egg-command and animal-role keys were restored; two English role tooltips
+were absent upstream. Qilin and salamander role/tooltip mismatches were corrected.
+The wisp birth message is now explicitly keyed, and its developer command is
+localized. Six shared VEF keys supplement its English-only installed resources.
+
+The shared DefInjected checker passes 590 paths, 0 errors, with VEF, MVCF and
+Achievements assemblies and explicit provider targets; no path remained
+unverified. Its unsupported AddModExtension operations were inspected directly
+and add no owned prose. Achievement translations load only with their provider.
+The translation coverage test and four negative cases pass. Existing checks pass
+321 assertions and six negative cases. Release build passes with zero warnings
+and errors; the shipped DLL is rebuilt. CI includes translation validation, but
+these local edits have not been pushed or checked by a new remote CI run.
+
+`localization`, `translation_en` and `translation_fr` are complete for this
+inventory/resource gate. Historical stage preTest is retained. Neither language
+has been tested in game; display, generated grammar, the new Harmony postfixes
+and optional integration behavior remain unverified in `remaining`. Reset the
+affected fields to unchecked after subsequent text/UI/Def/patch/resource changes
+until revalidation. No Workshop publication or gameplay test was performed.

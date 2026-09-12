@@ -14,6 +14,8 @@ The upstream settings window was not part of Animal Ark and is not included.
 
 Build: `dotnet build Source/AlphaMythologyRenew.csproj -c Release`.
 Validation and manual acceptance cases are in TESTING.md. No in-game test is claimed.
+English source text and French translations are included. Translation coverage
+checks and pending bilingual gameplay acceptance are in Tests/TRANSLATIONS.md.
 Upstream: https://github.com/juanosarg/AlphaMythology
 
 Port repository: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew

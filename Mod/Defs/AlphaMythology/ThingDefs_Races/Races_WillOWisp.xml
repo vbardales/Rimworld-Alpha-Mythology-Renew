@@ -47,6 +47,7 @@
 			<li Class="VEF.AnimalBehaviours.CompProperties_AsexualReproduction">
 
 				<reproductionIntervalDays>15</reproductionIntervalDays>
+				<asexualHatchedMessage>AMR_AsexualHatched</asexualHatchedMessage>
 				<customString>Asexual fission in: </customString>
 
 			</li>

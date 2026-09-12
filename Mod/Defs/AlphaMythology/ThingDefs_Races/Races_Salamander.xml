@@ -125,12 +125,12 @@
 				</statToAdd>
 				<statValues>
 					<li>MM_Utility</li>
-					<li>MM_FireyShockTroopDesc</li>
+					<li>MM_ShockTroop</li>
 					<li>MM_No</li>					
 				</statValues>
 				<statDescriptions>
 					<li>MM_UtilityTemperatureDesc</li>
-					<li>MM_DamageRangedDOTDesc</li>
+					<li>MM_FireyShockTroopDesc</li>
 					<li>MM_NoRanged</li>
 				</statDescriptions>
 					

@@ -1,0 +1,4140 @@
+[
+  {
+    "type": "BodyDef",
+    "key": "MM_AhuizotlBody.label",
+    "en": "quadruped animal with hand in its tail",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Ahuizotl.xml",
+    "sourceKey": "MM_AhuizotlBody.label"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_AhuizotlBody.corePart.parts.Tail.parts.hand.customLabel",
+    "en": "hand",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Ahuizotl.xml",
+    "sourceKey": "MM_AhuizotlBody.corePart.parts.0.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_AhuizotlBody.corePart.parts.Tail.parts.hand.parts.right_pinky.customLabel",
+    "en": "right pinky",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Ahuizotl.xml",
+    "sourceKey": "MM_AhuizotlBody.corePart.parts.0.parts.0.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_AhuizotlBody.corePart.parts.Tail.parts.hand.parts.right_ring_finger.customLabel",
+    "en": "right ring finger",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Ahuizotl.xml",
+    "sourceKey": "MM_AhuizotlBody.corePart.parts.0.parts.0.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_AhuizotlBody.corePart.parts.Tail.parts.hand.parts.right_middle_finger.customLabel",
+    "en": "right middle finger",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Ahuizotl.xml",
+    "sourceKey": "MM_AhuizotlBody.corePart.parts.0.parts.0.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_AhuizotlBody.corePart.parts.Tail.parts.hand.parts.right_index_finger.customLabel",
+    "en": "right index finger",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Ahuizotl.xml",
+    "sourceKey": "MM_AhuizotlBody.corePart.parts.0.parts.0.parts.3.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_AhuizotlBody.corePart.parts.Tail.parts.hand.parts.right_thumb.customLabel",
+    "en": "right thumb",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Ahuizotl.xml",
+    "sourceKey": "MM_AhuizotlBody.corePart.parts.0.parts.0.parts.4.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_AhuizotlBody.corePart.parts.left_lung.customLabel",
+    "en": "left lung",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Ahuizotl.xml",
+    "sourceKey": "MM_AhuizotlBody.corePart.parts.4.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_AhuizotlBody.corePart.parts.right_lung.customLabel",
+    "en": "right lung",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Ahuizotl.xml",
+    "sourceKey": "MM_AhuizotlBody.corePart.parts.5.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_AhuizotlBody.corePart.parts.left_kidney.customLabel",
+    "en": "left kidney",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Ahuizotl.xml",
+    "sourceKey": "MM_AhuizotlBody.corePart.parts.6.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_AhuizotlBody.corePart.parts.right_kidney.customLabel",
+    "en": "right kidney",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Ahuizotl.xml",
+    "sourceKey": "MM_AhuizotlBody.corePart.parts.7.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_AhuizotlBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel",
+    "en": "left eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Ahuizotl.xml",
+    "sourceKey": "MM_AhuizotlBody.corePart.parts.9.parts.0.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_AhuizotlBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel",
+    "en": "right eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Ahuizotl.xml",
+    "sourceKey": "MM_AhuizotlBody.corePart.parts.9.parts.0.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_AhuizotlBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel",
+    "en": "left ear",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Ahuizotl.xml",
+    "sourceKey": "MM_AhuizotlBody.corePart.parts.9.parts.0.parts.3.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_AhuizotlBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel",
+    "en": "right ear",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Ahuizotl.xml",
+    "sourceKey": "MM_AhuizotlBody.corePart.parts.9.parts.0.parts.4.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_AhuizotlBody.corePart.parts.front_left_leg.customLabel",
+    "en": "front left leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Ahuizotl.xml",
+    "sourceKey": "MM_AhuizotlBody.corePart.parts.10.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_AhuizotlBody.corePart.parts.front_left_leg.parts.front_left_paw.customLabel",
+    "en": "front left paw",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Ahuizotl.xml",
+    "sourceKey": "MM_AhuizotlBody.corePart.parts.10.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_AhuizotlBody.corePart.parts.front_right_leg.customLabel",
+    "en": "front right leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Ahuizotl.xml",
+    "sourceKey": "MM_AhuizotlBody.corePart.parts.11.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_AhuizotlBody.corePart.parts.front_right_leg.parts.front_right_paw.customLabel",
+    "en": "front right paw",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Ahuizotl.xml",
+    "sourceKey": "MM_AhuizotlBody.corePart.parts.11.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_AhuizotlBody.corePart.parts.rear_left_leg.customLabel",
+    "en": "rear left leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Ahuizotl.xml",
+    "sourceKey": "MM_AhuizotlBody.corePart.parts.12.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_AhuizotlBody.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel",
+    "en": "rear left paw",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Ahuizotl.xml",
+    "sourceKey": "MM_AhuizotlBody.corePart.parts.12.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_AhuizotlBody.corePart.parts.rear_right_leg.customLabel",
+    "en": "rear right leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Ahuizotl.xml",
+    "sourceKey": "MM_AhuizotlBody.corePart.parts.13.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_AhuizotlBody.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel",
+    "en": "rear right paw",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Ahuizotl.xml",
+    "sourceKey": "MM_AhuizotlBody.corePart.parts.13.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ThreeHeadedDog.label",
+    "en": "three headed dog",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Cerberus.xml",
+    "sourceKey": "MM_ThreeHeadedDog.label"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ThreeHeadedDog.corePart.parts.left_lung.customLabel",
+    "en": "left lung",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Cerberus.xml",
+    "sourceKey": "MM_ThreeHeadedDog.corePart.parts.4.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ThreeHeadedDog.corePart.parts.right_lung.customLabel",
+    "en": "right lung",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Cerberus.xml",
+    "sourceKey": "MM_ThreeHeadedDog.corePart.parts.5.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ThreeHeadedDog.corePart.parts.left_kidney.customLabel",
+    "en": "left kidney",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Cerberus.xml",
+    "sourceKey": "MM_ThreeHeadedDog.corePart.parts.6.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ThreeHeadedDog.corePart.parts.right_kidney.customLabel",
+    "en": "right kidney",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Cerberus.xml",
+    "sourceKey": "MM_ThreeHeadedDog.corePart.parts.7.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-0.parts.left_eye.customLabel",
+    "en": "left eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Cerberus.xml",
+    "sourceKey": "MM_ThreeHeadedDog.corePart.parts.9.parts.0.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-0.parts.right_eye.customLabel",
+    "en": "right eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Cerberus.xml",
+    "sourceKey": "MM_ThreeHeadedDog.corePart.parts.9.parts.0.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-0.parts.left_ear.customLabel",
+    "en": "left ear",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Cerberus.xml",
+    "sourceKey": "MM_ThreeHeadedDog.corePart.parts.9.parts.0.parts.3.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-0.parts.right_ear.customLabel",
+    "en": "right ear",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Cerberus.xml",
+    "sourceKey": "MM_ThreeHeadedDog.corePart.parts.9.parts.0.parts.4.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-1.parts.left_eye.customLabel",
+    "en": "left eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Cerberus.xml",
+    "sourceKey": "MM_ThreeHeadedDog.corePart.parts.9.parts.1.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-1.parts.right_eye.customLabel",
+    "en": "right eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Cerberus.xml",
+    "sourceKey": "MM_ThreeHeadedDog.corePart.parts.9.parts.1.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-1.parts.left_ear.customLabel",
+    "en": "left ear",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Cerberus.xml",
+    "sourceKey": "MM_ThreeHeadedDog.corePart.parts.9.parts.1.parts.3.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-1.parts.right_ear.customLabel",
+    "en": "right ear",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Cerberus.xml",
+    "sourceKey": "MM_ThreeHeadedDog.corePart.parts.9.parts.1.parts.4.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-2.parts.left_eye.customLabel",
+    "en": "left eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Cerberus.xml",
+    "sourceKey": "MM_ThreeHeadedDog.corePart.parts.9.parts.2.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-2.parts.right_eye.customLabel",
+    "en": "right eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Cerberus.xml",
+    "sourceKey": "MM_ThreeHeadedDog.corePart.parts.9.parts.2.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-2.parts.left_ear.customLabel",
+    "en": "left ear",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Cerberus.xml",
+    "sourceKey": "MM_ThreeHeadedDog.corePart.parts.9.parts.2.parts.3.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-2.parts.right_ear.customLabel",
+    "en": "right ear",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Cerberus.xml",
+    "sourceKey": "MM_ThreeHeadedDog.corePart.parts.9.parts.2.parts.4.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ThreeHeadedDog.corePart.parts.front_left_leg.customLabel",
+    "en": "front left leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Cerberus.xml",
+    "sourceKey": "MM_ThreeHeadedDog.corePart.parts.10.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ThreeHeadedDog.corePart.parts.front_left_leg.parts.front_left_paw.customLabel",
+    "en": "front left paw",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Cerberus.xml",
+    "sourceKey": "MM_ThreeHeadedDog.corePart.parts.10.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ThreeHeadedDog.corePart.parts.front_right_leg.customLabel",
+    "en": "front right leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Cerberus.xml",
+    "sourceKey": "MM_ThreeHeadedDog.corePart.parts.11.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ThreeHeadedDog.corePart.parts.front_right_leg.parts.front_right_paw.customLabel",
+    "en": "front right paw",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Cerberus.xml",
+    "sourceKey": "MM_ThreeHeadedDog.corePart.parts.11.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ThreeHeadedDog.corePart.parts.rear_left_leg.customLabel",
+    "en": "rear left leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Cerberus.xml",
+    "sourceKey": "MM_ThreeHeadedDog.corePart.parts.12.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ThreeHeadedDog.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel",
+    "en": "rear left paw",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Cerberus.xml",
+    "sourceKey": "MM_ThreeHeadedDog.corePart.parts.12.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ThreeHeadedDog.corePart.parts.rear_right_leg.customLabel",
+    "en": "rear right leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Cerberus.xml",
+    "sourceKey": "MM_ThreeHeadedDog.corePart.parts.13.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ThreeHeadedDog.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel",
+    "en": "rear right paw",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Cerberus.xml",
+    "sourceKey": "MM_ThreeHeadedDog.corePart.parts.13.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Chimera_Body.label",
+    "en": "chimera",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Chimera.xml",
+    "sourceKey": "MM_Chimera_Body.label"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Chimera_Body.corePart.parts.MM_ChimeraTail.parts.Head.parts.left_eye.customLabel",
+    "en": "left eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Chimera.xml",
+    "sourceKey": "MM_Chimera_Body.corePart.parts.0.parts.0.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Chimera_Body.corePart.parts.MM_ChimeraTail.parts.Head.parts.right_eye.customLabel",
+    "en": "right eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Chimera.xml",
+    "sourceKey": "MM_Chimera_Body.corePart.parts.0.parts.0.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Chimera_Body.corePart.parts.MM_Goathead.parts.left_eye.customLabel",
+    "en": "left eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Chimera.xml",
+    "sourceKey": "MM_Chimera_Body.corePart.parts.2.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Chimera_Body.corePart.parts.MM_Goathead.parts.right_eye.customLabel",
+    "en": "right eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Chimera.xml",
+    "sourceKey": "MM_Chimera_Body.corePart.parts.2.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Chimera_Body.corePart.parts.MM_Goathead.parts.left_ear.customLabel",
+    "en": "left ear",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Chimera.xml",
+    "sourceKey": "MM_Chimera_Body.corePart.parts.2.parts.3.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Chimera_Body.corePart.parts.MM_Goathead.parts.right_ear.customLabel",
+    "en": "right ear",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Chimera.xml",
+    "sourceKey": "MM_Chimera_Body.corePart.parts.2.parts.4.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Chimera_Body.corePart.parts.left_lung.customLabel",
+    "en": "left lung",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Chimera.xml",
+    "sourceKey": "MM_Chimera_Body.corePart.parts.5.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Chimera_Body.corePart.parts.right_lung.customLabel",
+    "en": "right lung",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Chimera.xml",
+    "sourceKey": "MM_Chimera_Body.corePart.parts.6.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Chimera_Body.corePart.parts.left_kidney.customLabel",
+    "en": "left kidney",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Chimera.xml",
+    "sourceKey": "MM_Chimera_Body.corePart.parts.7.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Chimera_Body.corePart.parts.right_kidney.customLabel",
+    "en": "right kidney",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Chimera.xml",
+    "sourceKey": "MM_Chimera_Body.corePart.parts.8.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Chimera_Body.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel",
+    "en": "left eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Chimera.xml",
+    "sourceKey": "MM_Chimera_Body.corePart.parts.10.parts.0.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Chimera_Body.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel",
+    "en": "right eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Chimera.xml",
+    "sourceKey": "MM_Chimera_Body.corePart.parts.10.parts.0.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Chimera_Body.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel",
+    "en": "left ear",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Chimera.xml",
+    "sourceKey": "MM_Chimera_Body.corePart.parts.10.parts.0.parts.3.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Chimera_Body.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel",
+    "en": "right ear",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Chimera.xml",
+    "sourceKey": "MM_Chimera_Body.corePart.parts.10.parts.0.parts.4.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Chimera_Body.corePart.parts.front_left_leg.customLabel",
+    "en": "front left leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Chimera.xml",
+    "sourceKey": "MM_Chimera_Body.corePart.parts.11.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Chimera_Body.corePart.parts.front_left_leg.parts.front_left_paw.customLabel",
+    "en": "front left paw",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Chimera.xml",
+    "sourceKey": "MM_Chimera_Body.corePart.parts.11.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Chimera_Body.corePart.parts.front_right_leg.customLabel",
+    "en": "front right leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Chimera.xml",
+    "sourceKey": "MM_Chimera_Body.corePart.parts.12.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Chimera_Body.corePart.parts.front_right_leg.parts.front_right_paw.customLabel",
+    "en": "front right paw",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Chimera.xml",
+    "sourceKey": "MM_Chimera_Body.corePart.parts.12.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Chimera_Body.corePart.parts.rear_left_leg.customLabel",
+    "en": "rear left leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Chimera.xml",
+    "sourceKey": "MM_Chimera_Body.corePart.parts.13.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Chimera_Body.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel",
+    "en": "rear left paw",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Chimera.xml",
+    "sourceKey": "MM_Chimera_Body.corePart.parts.13.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Chimera_Body.corePart.parts.rear_right_leg.customLabel",
+    "en": "rear right leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Chimera.xml",
+    "sourceKey": "MM_Chimera_Body.corePart.parts.14.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Chimera_Body.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel",
+    "en": "rear right paw",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Chimera.xml",
+    "sourceKey": "MM_Chimera_Body.corePart.parts.14.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Hydra.label",
+    "en": "hydra",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Hydra.xml",
+    "sourceKey": "MM_Hydra.label"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Hydra.corePart.parts.left_lung.customLabel",
+    "en": "left lung",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Hydra.xml",
+    "sourceKey": "MM_Hydra.corePart.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Hydra.corePart.parts.right_lung.customLabel",
+    "en": "right lung",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Hydra.xml",
+    "sourceKey": "MM_Hydra.corePart.parts.3.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Hydra.corePart.parts.left_kidney.customLabel",
+    "en": "left kidney",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Hydra.xml",
+    "sourceKey": "MM_Hydra.corePart.parts.4.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Hydra.corePart.parts.right_kidney.customLabel",
+    "en": "right kidney",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Hydra.xml",
+    "sourceKey": "MM_Hydra.corePart.parts.5.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Hydra.corePart.parts.SnakeHead-0.parts.left_eye.customLabel",
+    "en": "left eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Hydra.xml",
+    "sourceKey": "MM_Hydra.corePart.parts.7.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Hydra.corePart.parts.SnakeHead-0.parts.right_eye.customLabel",
+    "en": "right eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Hydra.xml",
+    "sourceKey": "MM_Hydra.corePart.parts.7.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Hydra.corePart.parts.SnakeHead-1.parts.left_eye.customLabel",
+    "en": "left eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Hydra.xml",
+    "sourceKey": "MM_Hydra.corePart.parts.8.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Hydra.corePart.parts.SnakeHead-1.parts.right_eye.customLabel",
+    "en": "right eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Hydra.xml",
+    "sourceKey": "MM_Hydra.corePart.parts.8.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Hydra.corePart.parts.SnakeHead-2.parts.left_eye.customLabel",
+    "en": "left eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Hydra.xml",
+    "sourceKey": "MM_Hydra.corePart.parts.9.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Hydra.corePart.parts.SnakeHead-2.parts.right_eye.customLabel",
+    "en": "right eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Hydra.xml",
+    "sourceKey": "MM_Hydra.corePart.parts.9.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Hydra.corePart.parts.SnakeHead-3.parts.left_eye.customLabel",
+    "en": "left eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Hydra.xml",
+    "sourceKey": "MM_Hydra.corePart.parts.10.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Hydra.corePart.parts.SnakeHead-3.parts.right_eye.customLabel",
+    "en": "right eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Hydra.xml",
+    "sourceKey": "MM_Hydra.corePart.parts.10.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Hydra.corePart.parts.SnakeHead-4.parts.left_eye.customLabel",
+    "en": "left eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Hydra.xml",
+    "sourceKey": "MM_Hydra.corePart.parts.11.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Hydra.corePart.parts.SnakeHead-4.parts.right_eye.customLabel",
+    "en": "right eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Hydra.xml",
+    "sourceKey": "MM_Hydra.corePart.parts.11.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Hydra.corePart.parts.SnakeHead-5.parts.left_eye.customLabel",
+    "en": "left eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Hydra.xml",
+    "sourceKey": "MM_Hydra.corePart.parts.12.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Hydra.corePart.parts.SnakeHead-5.parts.right_eye.customLabel",
+    "en": "right eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Hydra.xml",
+    "sourceKey": "MM_Hydra.corePart.parts.12.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Hydra.corePart.parts.front_left_leg.customLabel",
+    "en": "front left leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Hydra.xml",
+    "sourceKey": "MM_Hydra.corePart.parts.13.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Hydra.corePart.parts.front_left_leg.parts.front_left_hoof.customLabel",
+    "en": "front left hoof",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Hydra.xml",
+    "sourceKey": "MM_Hydra.corePart.parts.13.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Hydra.corePart.parts.front_right_leg.customLabel",
+    "en": "front right leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Hydra.xml",
+    "sourceKey": "MM_Hydra.corePart.parts.14.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Hydra.corePart.parts.front_right_leg.parts.front_right_hoof.customLabel",
+    "en": "front right hoof",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Hydra.xml",
+    "sourceKey": "MM_Hydra.corePart.parts.14.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Hydra.corePart.parts.rear_left_leg.customLabel",
+    "en": "rear left leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Hydra.xml",
+    "sourceKey": "MM_Hydra.corePart.parts.15.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Hydra.corePart.parts.rear_left_leg.parts.rear_left_hoof.customLabel",
+    "en": "rear left hoof",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Hydra.xml",
+    "sourceKey": "MM_Hydra.corePart.parts.15.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Hydra.corePart.parts.rear_right_leg.customLabel",
+    "en": "rear right leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Hydra.xml",
+    "sourceKey": "MM_Hydra.corePart.parts.16.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Hydra.corePart.parts.rear_right_leg.parts.rear_right_hoof.customLabel",
+    "en": "rear right hoof",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Hydra.xml",
+    "sourceKey": "MM_Hydra.corePart.parts.16.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ManticoreBody.label",
+    "en": "manticore",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Manticore.xml",
+    "sourceKey": "MM_ManticoreBody.label"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ManticoreBody.corePart.parts.left_wing.customLabel",
+    "en": "left wing",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Manticore.xml",
+    "sourceKey": "MM_ManticoreBody.corePart.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ManticoreBody.corePart.parts.right_wing.customLabel",
+    "en": "right wing",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Manticore.xml",
+    "sourceKey": "MM_ManticoreBody.corePart.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ManticoreBody.corePart.parts.left_lung.customLabel",
+    "en": "left lung",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Manticore.xml",
+    "sourceKey": "MM_ManticoreBody.corePart.parts.6.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ManticoreBody.corePart.parts.right_lung.customLabel",
+    "en": "right lung",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Manticore.xml",
+    "sourceKey": "MM_ManticoreBody.corePart.parts.7.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ManticoreBody.corePart.parts.left_kidney.customLabel",
+    "en": "left kidney",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Manticore.xml",
+    "sourceKey": "MM_ManticoreBody.corePart.parts.8.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ManticoreBody.corePart.parts.right_kidney.customLabel",
+    "en": "right kidney",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Manticore.xml",
+    "sourceKey": "MM_ManticoreBody.corePart.parts.9.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ManticoreBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel",
+    "en": "left eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Manticore.xml",
+    "sourceKey": "MM_ManticoreBody.corePart.parts.11.parts.0.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ManticoreBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel",
+    "en": "right eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Manticore.xml",
+    "sourceKey": "MM_ManticoreBody.corePart.parts.11.parts.0.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ManticoreBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel",
+    "en": "left ear",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Manticore.xml",
+    "sourceKey": "MM_ManticoreBody.corePart.parts.11.parts.0.parts.3.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ManticoreBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel",
+    "en": "right ear",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Manticore.xml",
+    "sourceKey": "MM_ManticoreBody.corePart.parts.11.parts.0.parts.4.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ManticoreBody.corePart.parts.front_left_leg.customLabel",
+    "en": "front left leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Manticore.xml",
+    "sourceKey": "MM_ManticoreBody.corePart.parts.12.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ManticoreBody.corePart.parts.front_left_leg.parts.front_left_paw.customLabel",
+    "en": "front left paw",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Manticore.xml",
+    "sourceKey": "MM_ManticoreBody.corePart.parts.12.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ManticoreBody.corePart.parts.front_right_leg.customLabel",
+    "en": "front right leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Manticore.xml",
+    "sourceKey": "MM_ManticoreBody.corePart.parts.13.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ManticoreBody.corePart.parts.front_right_leg.parts.front_right_paw.customLabel",
+    "en": "front right paw",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Manticore.xml",
+    "sourceKey": "MM_ManticoreBody.corePart.parts.13.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ManticoreBody.corePart.parts.rear_left_leg.customLabel",
+    "en": "rear left leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Manticore.xml",
+    "sourceKey": "MM_ManticoreBody.corePart.parts.14.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ManticoreBody.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel",
+    "en": "rear left paw",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Manticore.xml",
+    "sourceKey": "MM_ManticoreBody.corePart.parts.14.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ManticoreBody.corePart.parts.rear_right_leg.customLabel",
+    "en": "rear right leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Manticore.xml",
+    "sourceKey": "MM_ManticoreBody.corePart.parts.15.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_ManticoreBody.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel",
+    "en": "rear right paw",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Manticore.xml",
+    "sourceKey": "MM_ManticoreBody.corePart.parts.15.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_PegasusBody.label",
+    "en": "quadruped animal with hooves and wings",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Pegasus.xml",
+    "sourceKey": "MM_PegasusBody.label"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_PegasusBody.corePart.parts.left_wing.customLabel",
+    "en": "left wing",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Pegasus.xml",
+    "sourceKey": "MM_PegasusBody.corePart.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_PegasusBody.corePart.parts.right_wing.customLabel",
+    "en": "right wing",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Pegasus.xml",
+    "sourceKey": "MM_PegasusBody.corePart.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_PegasusBody.corePart.parts.left_lung.customLabel",
+    "en": "left lung",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Pegasus.xml",
+    "sourceKey": "MM_PegasusBody.corePart.parts.5.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_PegasusBody.corePart.parts.right_lung.customLabel",
+    "en": "right lung",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Pegasus.xml",
+    "sourceKey": "MM_PegasusBody.corePart.parts.6.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_PegasusBody.corePart.parts.left_kidney.customLabel",
+    "en": "left kidney",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Pegasus.xml",
+    "sourceKey": "MM_PegasusBody.corePart.parts.7.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_PegasusBody.corePart.parts.right_kidney.customLabel",
+    "en": "right kidney",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Pegasus.xml",
+    "sourceKey": "MM_PegasusBody.corePart.parts.8.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_PegasusBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel",
+    "en": "left eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Pegasus.xml",
+    "sourceKey": "MM_PegasusBody.corePart.parts.10.parts.0.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_PegasusBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel",
+    "en": "right eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Pegasus.xml",
+    "sourceKey": "MM_PegasusBody.corePart.parts.10.parts.0.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_PegasusBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel",
+    "en": "left ear",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Pegasus.xml",
+    "sourceKey": "MM_PegasusBody.corePart.parts.10.parts.0.parts.3.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_PegasusBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel",
+    "en": "right ear",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Pegasus.xml",
+    "sourceKey": "MM_PegasusBody.corePart.parts.10.parts.0.parts.4.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_PegasusBody.corePart.parts.front_left_leg.customLabel",
+    "en": "front left leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Pegasus.xml",
+    "sourceKey": "MM_PegasusBody.corePart.parts.11.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_PegasusBody.corePart.parts.front_left_leg.parts.front_left_hoof.customLabel",
+    "en": "front left hoof",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Pegasus.xml",
+    "sourceKey": "MM_PegasusBody.corePart.parts.11.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_PegasusBody.corePart.parts.front_right_leg.customLabel",
+    "en": "front right leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Pegasus.xml",
+    "sourceKey": "MM_PegasusBody.corePart.parts.12.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_PegasusBody.corePart.parts.front_right_leg.parts.front_right_hoof.customLabel",
+    "en": "front right hoof",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Pegasus.xml",
+    "sourceKey": "MM_PegasusBody.corePart.parts.12.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_PegasusBody.corePart.parts.rear_left_leg.customLabel",
+    "en": "rear left leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Pegasus.xml",
+    "sourceKey": "MM_PegasusBody.corePart.parts.13.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_PegasusBody.corePart.parts.rear_left_leg.parts.rear_left_hoof.customLabel",
+    "en": "rear left hoof",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Pegasus.xml",
+    "sourceKey": "MM_PegasusBody.corePart.parts.13.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_PegasusBody.corePart.parts.rear_right_leg.customLabel",
+    "en": "rear right leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Pegasus.xml",
+    "sourceKey": "MM_PegasusBody.corePart.parts.14.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_PegasusBody.corePart.parts.rear_right_leg.parts.rear_right_hoof.customLabel",
+    "en": "rear right hoof",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Pegasus.xml",
+    "sourceKey": "MM_PegasusBody.corePart.parts.14.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QilinBody.label",
+    "en": "quadruped animal with hooves and antlers",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Qilin.xml",
+    "sourceKey": "MM_QilinBody.label"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QilinBody.corePart.parts.left_lung.customLabel",
+    "en": "left lung",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Qilin.xml",
+    "sourceKey": "MM_QilinBody.corePart.parts.3.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QilinBody.corePart.parts.right_lung.customLabel",
+    "en": "right lung",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Qilin.xml",
+    "sourceKey": "MM_QilinBody.corePart.parts.4.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QilinBody.corePart.parts.left_kidney.customLabel",
+    "en": "left kidney",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Qilin.xml",
+    "sourceKey": "MM_QilinBody.corePart.parts.5.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QilinBody.corePart.parts.right_kidney.customLabel",
+    "en": "right kidney",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Qilin.xml",
+    "sourceKey": "MM_QilinBody.corePart.parts.6.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QilinBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel",
+    "en": "left eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Qilin.xml",
+    "sourceKey": "MM_QilinBody.corePart.parts.8.parts.0.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QilinBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel",
+    "en": "right eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Qilin.xml",
+    "sourceKey": "MM_QilinBody.corePart.parts.8.parts.0.parts.3.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QilinBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel",
+    "en": "left ear",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Qilin.xml",
+    "sourceKey": "MM_QilinBody.corePart.parts.8.parts.0.parts.4.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QilinBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel",
+    "en": "right ear",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Qilin.xml",
+    "sourceKey": "MM_QilinBody.corePart.parts.8.parts.0.parts.5.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QilinBody.corePart.parts.front_left_leg.customLabel",
+    "en": "front left leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Qilin.xml",
+    "sourceKey": "MM_QilinBody.corePart.parts.9.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QilinBody.corePart.parts.front_left_leg.parts.front_left_hoof.customLabel",
+    "en": "front left hoof",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Qilin.xml",
+    "sourceKey": "MM_QilinBody.corePart.parts.9.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QilinBody.corePart.parts.front_right_leg.customLabel",
+    "en": "front right leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Qilin.xml",
+    "sourceKey": "MM_QilinBody.corePart.parts.10.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QilinBody.corePart.parts.front_right_leg.parts.front_right_hoof.customLabel",
+    "en": "front right hoof",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Qilin.xml",
+    "sourceKey": "MM_QilinBody.corePart.parts.10.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QilinBody.corePart.parts.rear_left_leg.customLabel",
+    "en": "rear left leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Qilin.xml",
+    "sourceKey": "MM_QilinBody.corePart.parts.11.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QilinBody.corePart.parts.rear_left_leg.parts.rear_left_hoof.customLabel",
+    "en": "rear left hoof",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Qilin.xml",
+    "sourceKey": "MM_QilinBody.corePart.parts.11.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QilinBody.corePart.parts.rear_right_leg.customLabel",
+    "en": "rear right leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Qilin.xml",
+    "sourceKey": "MM_QilinBody.corePart.parts.12.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QilinBody.corePart.parts.rear_right_leg.parts.rear_right_hoof.customLabel",
+    "en": "rear right hoof",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Qilin.xml",
+    "sourceKey": "MM_QilinBody.corePart.parts.12.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QuadrupedAnimalWithBeakAndWings.label",
+    "en": "quadruped animal with beak and wings",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_QuadrupedwithBeakAndWings.xml",
+    "sourceKey": "MM_QuadrupedAnimalWithBeakAndWings.label"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.left_lung.customLabel",
+    "en": "left lung",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_QuadrupedwithBeakAndWings.xml",
+    "sourceKey": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.3.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.right_lung.customLabel",
+    "en": "right lung",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_QuadrupedwithBeakAndWings.xml",
+    "sourceKey": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.4.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.left_kidney.customLabel",
+    "en": "left kidney",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_QuadrupedwithBeakAndWings.xml",
+    "sourceKey": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.5.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.right_kidney.customLabel",
+    "en": "right kidney",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_QuadrupedwithBeakAndWings.xml",
+    "sourceKey": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.6.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.right_wing.customLabel",
+    "en": "right wing",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_QuadrupedwithBeakAndWings.xml",
+    "sourceKey": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.8.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.left_wing.customLabel",
+    "en": "left wing",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_QuadrupedwithBeakAndWings.xml",
+    "sourceKey": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.9.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel",
+    "en": "left eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_QuadrupedwithBeakAndWings.xml",
+    "sourceKey": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.10.parts.0.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel",
+    "en": "right eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_QuadrupedwithBeakAndWings.xml",
+    "sourceKey": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.10.parts.0.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel",
+    "en": "left ear",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_QuadrupedwithBeakAndWings.xml",
+    "sourceKey": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.10.parts.0.parts.3.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel",
+    "en": "right ear",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_QuadrupedwithBeakAndWings.xml",
+    "sourceKey": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.10.parts.0.parts.4.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_left_leg.customLabel",
+    "en": "front left leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_QuadrupedwithBeakAndWings.xml",
+    "sourceKey": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.11.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_left_leg.parts.front_left_paw.customLabel",
+    "en": "front left paw",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_QuadrupedwithBeakAndWings.xml",
+    "sourceKey": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.11.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_right_leg.customLabel",
+    "en": "front right leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_QuadrupedwithBeakAndWings.xml",
+    "sourceKey": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.12.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_right_leg.parts.front_right_paw.customLabel",
+    "en": "front right paw",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_QuadrupedwithBeakAndWings.xml",
+    "sourceKey": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.12.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_left_leg.customLabel",
+    "en": "rear left leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_QuadrupedwithBeakAndWings.xml",
+    "sourceKey": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.13.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel",
+    "en": "rear left paw",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_QuadrupedwithBeakAndWings.xml",
+    "sourceKey": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.13.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_right_leg.customLabel",
+    "en": "rear right leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_QuadrupedwithBeakAndWings.xml",
+    "sourceKey": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.14.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel",
+    "en": "rear right paw",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_QuadrupedwithBeakAndWings.xml",
+    "sourceKey": "MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.14.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_Wisp.label",
+    "en": "wisp",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Wisp.xml",
+    "sourceKey": "MM_Wisp.label"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_WyvernBody.label",
+    "en": "wyvern",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Wyvern.xml",
+    "sourceKey": "MM_WyvernBody.label"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_WyvernBody.corePart.parts.left_wing.customLabel",
+    "en": "left wing",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Wyvern.xml",
+    "sourceKey": "MM_WyvernBody.corePart.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_WyvernBody.corePart.parts.right_wing.customLabel",
+    "en": "right wing",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Wyvern.xml",
+    "sourceKey": "MM_WyvernBody.corePart.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_WyvernBody.corePart.parts.left_lung.customLabel",
+    "en": "left lung",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Wyvern.xml",
+    "sourceKey": "MM_WyvernBody.corePart.parts.6.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_WyvernBody.corePart.parts.right_lung.customLabel",
+    "en": "right lung",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Wyvern.xml",
+    "sourceKey": "MM_WyvernBody.corePart.parts.7.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_WyvernBody.corePart.parts.left_kidney.customLabel",
+    "en": "left kidney",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Wyvern.xml",
+    "sourceKey": "MM_WyvernBody.corePart.parts.8.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_WyvernBody.corePart.parts.right_kidney.customLabel",
+    "en": "right kidney",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Wyvern.xml",
+    "sourceKey": "MM_WyvernBody.corePart.parts.9.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_WyvernBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel",
+    "en": "left eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Wyvern.xml",
+    "sourceKey": "MM_WyvernBody.corePart.parts.11.parts.0.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_WyvernBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel",
+    "en": "right eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Wyvern.xml",
+    "sourceKey": "MM_WyvernBody.corePart.parts.11.parts.0.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_WyvernBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel",
+    "en": "left ear",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Wyvern.xml",
+    "sourceKey": "MM_WyvernBody.corePart.parts.11.parts.0.parts.3.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_WyvernBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel",
+    "en": "right ear",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Wyvern.xml",
+    "sourceKey": "MM_WyvernBody.corePart.parts.11.parts.0.parts.4.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_WyvernBody.corePart.parts.left_leg.customLabel",
+    "en": "left leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Wyvern.xml",
+    "sourceKey": "MM_WyvernBody.corePart.parts.12.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_WyvernBody.corePart.parts.left_leg.parts.left_claws.customLabel",
+    "en": "left claws",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Wyvern.xml",
+    "sourceKey": "MM_WyvernBody.corePart.parts.12.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_WyvernBody.corePart.parts.right_leg.customLabel",
+    "en": "right leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Wyvern.xml",
+    "sourceKey": "MM_WyvernBody.corePart.parts.13.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_WyvernBody.corePart.parts.right_leg.parts.right_claws.customLabel",
+    "en": "right claws",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_Animal_Wyvern.xml",
+    "sourceKey": "MM_WyvernBody.corePart.parts.13.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.label",
+    "en": "minotaur",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.label"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.left_lung.customLabel",
+    "en": "left lung",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.6.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.right_lung.customLabel",
+    "en": "right lung",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.7.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.left_kidney.customLabel",
+    "en": "left kidney",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.8.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.right_kidney.customLabel",
+    "en": "right kidney",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.9.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel",
+    "en": "left eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.11.parts.0.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel",
+    "en": "right eye",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.11.parts.0.parts.3.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel",
+    "en": "left ear",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.11.parts.0.parts.4.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel",
+    "en": "right ear",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.11.parts.0.parts.5.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.left_shoulder.customLabel",
+    "en": "left shoulder",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.12.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_clavicle.customLabel",
+    "en": "left clavicle",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.12.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.customLabel",
+    "en": "left arm",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.12.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_humerus.customLabel",
+    "en": "left humerus",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.12.parts.1.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_radius.customLabel",
+    "en": "left radius",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.12.parts.1.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel",
+    "en": "left hand",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.12.parts.1.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_pinky.customLabel",
+    "en": "left pinky",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.12.parts.1.parts.2.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_ring_finger.customLabel",
+    "en": "left ring finger",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.12.parts.1.parts.2.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel",
+    "en": "left middle finger",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.12.parts.1.parts.2.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel",
+    "en": "left index finger",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.12.parts.1.parts.2.parts.3.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel",
+    "en": "left thumb",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.12.parts.1.parts.2.parts.4.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.right_shoulder.customLabel",
+    "en": "right shoulder",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.13.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_clavicle.customLabel",
+    "en": "right clavicle",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.13.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.customLabel",
+    "en": "right arm",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.13.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_humerus.customLabel",
+    "en": "right humerus",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.13.parts.1.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_radius.customLabel",
+    "en": "right radius",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.13.parts.1.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.customLabel",
+    "en": "right hand",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.13.parts.1.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_pinky.customLabel",
+    "en": "right pinky",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.13.parts.1.parts.2.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_ring_finger.customLabel",
+    "en": "right ring finger",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.13.parts.1.parts.2.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel",
+    "en": "right middle finger",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.13.parts.1.parts.2.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel",
+    "en": "right index finger",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.13.parts.1.parts.2.parts.3.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel",
+    "en": "right thumb",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.13.parts.1.parts.2.parts.4.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.left_leg.customLabel",
+    "en": "left leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.15.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.left_leg.parts.left_femur.customLabel",
+    "en": "left femur",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.15.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.left_leg.parts.left_tibia.customLabel",
+    "en": "left tibia",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.15.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.customLabel",
+    "en": "left foot",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.15.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.parts.left_little_toe.customLabel",
+    "en": "left little toe",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.15.parts.2.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.parts.left_fourth_toe.customLabel",
+    "en": "left fourth toe",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.15.parts.2.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.parts.left_middle_toe.customLabel",
+    "en": "left middle toe",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.15.parts.2.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.parts.left_second_toe.customLabel",
+    "en": "left second toe",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.15.parts.2.parts.3.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.parts.left_big_toe.customLabel",
+    "en": "left big toe",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.15.parts.2.parts.4.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.right_leg.customLabel",
+    "en": "right leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.16.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.right_leg.parts.right_femur.customLabel",
+    "en": "right femur",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.16.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.right_leg.parts.right_tibia.customLabel",
+    "en": "right tibia",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.16.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.customLabel",
+    "en": "right foot",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.16.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.parts.right_little_toe.customLabel",
+    "en": "right little toe",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.16.parts.2.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.parts.right_fourth_toe.customLabel",
+    "en": "right fourth toe",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.16.parts.2.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.parts.right_middle_toe.customLabel",
+    "en": "right middle toe",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.16.parts.2.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.parts.right_second_toe.customLabel",
+    "en": "right second toe",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.16.parts.2.parts.3.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.parts.right_big_toe.customLabel",
+    "en": "right big toe",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedHumanlike.xml",
+    "sourceKey": "MM_MinotaurBody.corePart.parts.16.parts.2.parts.4.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_HornedMechanoid.label",
+    "en": "mechataur",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedMechanoid.xml",
+    "sourceKey": "MM_HornedMechanoid.label"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_HornedMechanoid.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel",
+    "en": "left sight sensor",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedMechanoid.xml",
+    "sourceKey": "MM_HornedMechanoid.corePart.parts.0.parts.0.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_HornedMechanoid.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel",
+    "en": "right sight sensor",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedMechanoid.xml",
+    "sourceKey": "MM_HornedMechanoid.corePart.parts.0.parts.0.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_HornedMechanoid.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel",
+    "en": "left hearing sensor",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedMechanoid.xml",
+    "sourceKey": "MM_HornedMechanoid.corePart.parts.0.parts.0.parts.3.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_HornedMechanoid.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel",
+    "en": "right hearing sensor",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedMechanoid.xml",
+    "sourceKey": "MM_HornedMechanoid.corePart.parts.0.parts.0.parts.4.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_HornedMechanoid.corePart.parts.left_shoulder.customLabel",
+    "en": "left shoulder",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedMechanoid.xml",
+    "sourceKey": "MM_HornedMechanoid.corePart.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.customLabel",
+    "en": "left arm",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedMechanoid.xml",
+    "sourceKey": "MM_HornedMechanoid.corePart.parts.1.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel",
+    "en": "left hand",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedMechanoid.xml",
+    "sourceKey": "MM_HornedMechanoid.corePart.parts.1.parts.0.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_pinky.customLabel",
+    "en": "left pinky",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedMechanoid.xml",
+    "sourceKey": "MM_HornedMechanoid.corePart.parts.1.parts.0.parts.0.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel",
+    "en": "left middle finger",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedMechanoid.xml",
+    "sourceKey": "MM_HornedMechanoid.corePart.parts.1.parts.0.parts.0.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel",
+    "en": "left index finger",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedMechanoid.xml",
+    "sourceKey": "MM_HornedMechanoid.corePart.parts.1.parts.0.parts.0.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel",
+    "en": "left thumb",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedMechanoid.xml",
+    "sourceKey": "MM_HornedMechanoid.corePart.parts.1.parts.0.parts.0.parts.3.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.customLabel",
+    "en": "right mechanical shoulder",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedMechanoid.xml",
+    "sourceKey": "MM_HornedMechanoid.corePart.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel",
+    "en": "right arm",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedMechanoid.xml",
+    "sourceKey": "MM_HornedMechanoid.corePart.parts.2.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.customLabel",
+    "en": "right hand",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedMechanoid.xml",
+    "sourceKey": "MM_HornedMechanoid.corePart.parts.2.parts.0.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_pinky.customLabel",
+    "en": "right pinky",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedMechanoid.xml",
+    "sourceKey": "MM_HornedMechanoid.corePart.parts.2.parts.0.parts.0.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel",
+    "en": "right middle finger",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedMechanoid.xml",
+    "sourceKey": "MM_HornedMechanoid.corePart.parts.2.parts.0.parts.0.parts.1.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel",
+    "en": "right index finger",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedMechanoid.xml",
+    "sourceKey": "MM_HornedMechanoid.corePart.parts.2.parts.0.parts.0.parts.2.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel",
+    "en": "right thumb",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedMechanoid.xml",
+    "sourceKey": "MM_HornedMechanoid.corePart.parts.2.parts.0.parts.0.parts.3.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_HornedMechanoid.corePart.parts.left_leg.customLabel",
+    "en": "left leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedMechanoid.xml",
+    "sourceKey": "MM_HornedMechanoid.corePart.parts.3.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_HornedMechanoid.corePart.parts.left_leg.parts.left_foot.customLabel",
+    "en": "left foot",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedMechanoid.xml",
+    "sourceKey": "MM_HornedMechanoid.corePart.parts.3.parts.0.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_HornedMechanoid.corePart.parts.right_leg.customLabel",
+    "en": "right leg",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedMechanoid.xml",
+    "sourceKey": "MM_HornedMechanoid.corePart.parts.4.customLabel"
+  },
+  {
+    "type": "BodyDef",
+    "key": "MM_HornedMechanoid.corePart.parts.right_leg.parts.right_foot.customLabel",
+    "en": "right foot",
+    "source": "Mod/Defs/AlphaMythology/Bodies/Bodies_HornedMechanoid.xml",
+    "sourceKey": "MM_HornedMechanoid.corePart.parts.4.parts.0.customLabel"
+  },
+  {
+    "type": "BodyPartGroupDef",
+    "key": "MM_AttackTail.label",
+    "en": "scorpion tail",
+    "source": "Mod/Defs/AlphaMythology/Bodies/BodyPartGroups.xml",
+    "sourceKey": "MM_AttackTail.label"
+  },
+  {
+    "type": "BodyPartGroupDef",
+    "key": "MM_Pseudopods.label",
+    "en": "pseudopods",
+    "source": "Mod/Defs/AlphaMythology/Bodies/BodyPartGroups.xml",
+    "sourceKey": "MM_Pseudopods.label"
+  },
+  {
+    "type": "BodyPartDef",
+    "key": "MM_ChimeraTail.label",
+    "en": "serpentine head",
+    "source": "Mod/Defs/AlphaMythology/Bodies/BodyParts_General.xml",
+    "sourceKey": "MM_ChimeraTail.label"
+  },
+  {
+    "type": "BodyPartDef",
+    "key": "MM_Goathead.label",
+    "en": "goat head",
+    "source": "Mod/Defs/AlphaMythology/Bodies/BodyParts_General.xml",
+    "sourceKey": "MM_Goathead.label"
+  },
+  {
+    "type": "BodyPartDef",
+    "key": "MM_Wing.label",
+    "en": "wing",
+    "source": "Mod/Defs/AlphaMythology/Bodies/BodyParts_General.xml",
+    "sourceKey": "MM_Wing.label"
+  },
+  {
+    "type": "BodyPartDef",
+    "key": "MM_ScorpionTail.label",
+    "en": "scorpion tail",
+    "source": "Mod/Defs/AlphaMythology/Bodies/BodyParts_General.xml",
+    "sourceKey": "MM_ScorpionTail.label"
+  },
+  {
+    "type": "BodyPartDef",
+    "key": "MM_Antlers.label",
+    "en": "antlers",
+    "source": "Mod/Defs/AlphaMythology/Bodies/BodyParts_General.xml",
+    "sourceKey": "MM_Antlers.label"
+  },
+  {
+    "type": "BodyPartDef",
+    "key": "MM_Horns.label",
+    "en": "horns",
+    "source": "Mod/Defs/AlphaMythology/Bodies/BodyParts_General.xml",
+    "sourceKey": "MM_Horns.label"
+  },
+  {
+    "type": "BodyPartDef",
+    "key": "MM_PlasmaMembrane.label",
+    "en": "plasma membrane",
+    "source": "Mod/Defs/AlphaMythology/Bodies/BodyParts_General.xml",
+    "sourceKey": "MM_PlasmaMembrane.label"
+  },
+  {
+    "type": "BodyPartDef",
+    "key": "MM_Cytoplasm.label",
+    "en": "cytoplasm",
+    "source": "Mod/Defs/AlphaMythology/Bodies/BodyParts_General.xml",
+    "sourceKey": "MM_Cytoplasm.label"
+  },
+  {
+    "type": "DamageDef",
+    "key": "MM_ToxicBite.label",
+    "en": "toxic bite",
+    "source": "Mod/Defs/AlphaMythology/DamageDefs/Damage_MagicalBeasts.xml",
+    "sourceKey": "MM_ToxicBite.label"
+  },
+  {
+    "type": "DamageDef",
+    "key": "MM_ToxicBite.deathMessage",
+    "en": "{0} has been biten to death.",
+    "source": "Mod/Defs/AlphaMythology/DamageDefs/Damage_MagicalBeasts.xml",
+    "sourceKey": "MM_ToxicBite.deathMessage"
+  },
+  {
+    "type": "DamageDef",
+    "key": "MM_VeryToxicBite.label",
+    "en": "virulent toxic bite",
+    "source": "Mod/Defs/AlphaMythology/DamageDefs/Damage_MagicalBeasts.xml",
+    "sourceKey": "MM_VeryToxicBite.label"
+  },
+  {
+    "type": "DamageDef",
+    "key": "MM_VeryToxicBite.deathMessage",
+    "en": "{0} has been stung to death.",
+    "source": "Mod/Defs/AlphaMythology/DamageDefs/Damage_MagicalBeasts.xml",
+    "sourceKey": "MM_VeryToxicBite.deathMessage"
+  },
+  {
+    "type": "DamageDef",
+    "key": "MM_FlamingBite.label",
+    "en": "flaming bite",
+    "source": "Mod/Defs/AlphaMythology/DamageDefs/Damage_MagicalBeasts.xml",
+    "sourceKey": "MM_FlamingBite.label"
+  },
+  {
+    "type": "DamageDef",
+    "key": "MM_FlamingBite.deathMessage",
+    "en": "{0} has burned to death.",
+    "source": "Mod/Defs/AlphaMythology/DamageDefs/Damage_MagicalBeasts.xml",
+    "sourceKey": "MM_FlamingBite.deathMessage"
+  },
+  {
+    "type": "DamageDef",
+    "key": "MM_ToxicSting.label",
+    "en": "toxic sting",
+    "source": "Mod/Defs/AlphaMythology/DamageDefs/Damage_MagicalBeasts.xml",
+    "sourceKey": "MM_ToxicSting.label"
+  },
+  {
+    "type": "DamageDef",
+    "key": "MM_ToxicSting.deathMessage",
+    "en": "{0} has been stung to death.",
+    "source": "Mod/Defs/AlphaMythology/DamageDefs/Damage_MagicalBeasts.xml",
+    "sourceKey": "MM_ToxicSting.deathMessage"
+  },
+  {
+    "type": "DamageDef",
+    "key": "MM_Grapple.label",
+    "en": "grapple",
+    "source": "Mod/Defs/AlphaMythology/DamageDefs/Damage_MagicalBeasts.xml",
+    "sourceKey": "MM_Grapple.label"
+  },
+  {
+    "type": "DamageDef",
+    "key": "MM_Grapple.deathMessage",
+    "en": "{0} has been grappled to death.",
+    "source": "Mod/Defs/AlphaMythology/DamageDefs/Damage_MagicalBeasts.xml",
+    "sourceKey": "MM_Grapple.deathMessage"
+  },
+  {
+    "type": "DamageDef",
+    "key": "MM_BleedingWound.label",
+    "en": "bleeding wound",
+    "source": "Mod/Defs/AlphaMythology/DamageDefs/Damage_MagicalBeasts.xml",
+    "sourceKey": "MM_BleedingWound.label"
+  },
+  {
+    "type": "DamageDef",
+    "key": "MM_BleedingWound.deathMessage",
+    "en": "{0} has bled to death.",
+    "source": "Mod/Defs/AlphaMythology/DamageDefs/Damage_MagicalBeasts.xml",
+    "sourceKey": "MM_BleedingWound.deathMessage"
+  },
+  {
+    "type": "DamageDef",
+    "key": "MM_UncontrollableBleeding.label",
+    "en": "uncontrollable bleeding",
+    "source": "Mod/Defs/AlphaMythology/DamageDefs/Damage_MagicalBeasts.xml",
+    "sourceKey": "MM_UncontrollableBleeding.label"
+  },
+  {
+    "type": "DamageDef",
+    "key": "MM_UncontrollableBleeding.deathMessage",
+    "en": "{0} has bled to death.",
+    "source": "Mod/Defs/AlphaMythology/DamageDefs/Damage_MagicalBeasts.xml",
+    "sourceKey": "MM_UncontrollableBleeding.deathMessage"
+  },
+  {
+    "type": "DamageDef",
+    "key": "MM_PetrifyingGaze.label",
+    "en": "petrifying gaze",
+    "source": "Mod/Defs/AlphaMythology/DamageDefs/Damage_MagicalBeasts.xml",
+    "sourceKey": "MM_PetrifyingGaze.label"
+  },
+  {
+    "type": "DamageDef",
+    "key": "MM_PetrifyingGaze.deathMessage",
+    "en": "{0} has been petrified.",
+    "source": "Mod/Defs/AlphaMythology/DamageDefs/Damage_MagicalBeasts.xml",
+    "sourceKey": "MM_PetrifyingGaze.deathMessage"
+  },
+  {
+    "type": "DamageDef",
+    "key": "MM_AcidicBreath.label",
+    "en": "acidic breath",
+    "source": "Mod/Defs/AlphaMythology/DamageDefs/Damage_MagicalBeasts.xml",
+    "sourceKey": "MM_AcidicBreath.label"
+  },
+  {
+    "type": "DamageDef",
+    "key": "MM_AcidicBreath.deathMessage",
+    "en": "{0} has been poisoned to death.",
+    "source": "Mod/Defs/AlphaMythology/DamageDefs/Damage_MagicalBeasts.xml",
+    "sourceKey": "MM_AcidicBreath.deathMessage"
+  },
+  {
+    "type": "DamageDef",
+    "key": "MM_ExtraDamageToPiratesHorn.label",
+    "en": "horn of justice",
+    "source": "Mod/Defs/AlphaMythology/DamageDefs/Damage_MagicalBeasts.xml",
+    "sourceKey": "MM_ExtraDamageToPiratesHorn.label"
+  },
+  {
+    "type": "DamageDef",
+    "key": "MM_ExtraDamageToPiratesHorn.deathMessage",
+    "en": "{0} has been stabbed to death.",
+    "source": "Mod/Defs/AlphaMythology/DamageDefs/Damage_MagicalBeasts.xml",
+    "sourceKey": "MM_ExtraDamageToPiratesHorn.deathMessage"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_ToxicBite.description",
+    "en": "Toxins in the bloodstream. This can come from various sources, including environmental toxins, venomous bites, or poisoned weapons.\n\\nAt high doses, toxic buildup is lethal. Even at low doses, it can generate cancers.\n\\nContrary to base game toxic buildup, creatures who die with this toxic damage can be eaten.",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_ToxicBite.description"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_ToxicBite.label",
+    "en": "toxic buildup",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_ToxicBite.label"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_ToxicBite.stages.initial-0.label",
+    "en": "initial",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_ToxicBite.stages.0.label"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_ToxicBite.stages.initial-1.label",
+    "en": "initial",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_ToxicBite.stages.1.label"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_ToxicBite.stages.minor.label",
+    "en": "minor",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_ToxicBite.stages.2.label"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_ToxicBite.stages.moderate.label",
+    "en": "moderate",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_ToxicBite.stages.3.label"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_ToxicBite.stages.serious.label",
+    "en": "serious",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_ToxicBite.stages.4.label"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_ToxicBite.stages.extreme.label",
+    "en": "extreme",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_ToxicBite.stages.5.label"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_Grabbed.description",
+    "en": "This creature is being grabbed and can't move properly.",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_Grabbed.description"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_Grabbed.label",
+    "en": "grabbed",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_Grabbed.label"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_Grabbed.stages.initial.label",
+    "en": "initial",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_Grabbed.stages.0.label"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_Grabbed.stages.partially_immobilized.label",
+    "en": "partially immobilized",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_Grabbed.stages.1.label"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_Grabbed.stages.grabbed.label",
+    "en": "grabbed",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_Grabbed.stages.2.label"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_Grabbed.stages.grabbed_tight.label",
+    "en": "grabbed tight",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_Grabbed.stages.3.label"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_BleedingWound.description",
+    "en": "A bleeding wound that continues to cause blood loss for quite some time after the initial attack.",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_BleedingWound.description"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_BleedingWound.label",
+    "en": "bleeding wounds",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_BleedingWound.label"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_BleedingWound.stages.bleeding_wounds_minor.label",
+    "en": "bleeding wounds, minor",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_BleedingWound.stages.0.label"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_BleedingWound.stages.bleeding_wounds_moderate.label",
+    "en": "bleeding wounds, moderate",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_BleedingWound.stages.1.label"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_BleedingWound.stages.bleeding_wounds_serious.label",
+    "en": "bleeding wounds, serious",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_BleedingWound.stages.2.label"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_OpenWound.label",
+    "en": "open wound",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_OpenWound.label"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_OpenWound.description",
+    "en": "An open wound.",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_OpenWound.description"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_OpenWound.labelNoun",
+    "en": "an open wound",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_OpenWound.labelNoun"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_OpenWound.comps.HediffComp_TendDuration.labelTendedWell",
+    "en": "bandaged",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_OpenWound.comps.0.labelTendedWell"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_OpenWound.comps.HediffComp_TendDuration.labelTendedWellInner",
+    "en": "sutured",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_OpenWound.comps.0.labelTendedWellInner"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_OpenWound.comps.HediffComp_TendDuration.labelSolidTendedWell",
+    "en": "set",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_OpenWound.comps.0.labelSolidTendedWell"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_OpenWound.comps.HediffComp_GetsPermanent.permanentLabel",
+    "en": "stab scar",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_OpenWound.comps.2.permanentLabel"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_OpenWound.injuryProps.destroyedLabel",
+    "en": "Cut off",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_OpenWound.injuryProps.destroyedLabel"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_OpenWound.injuryProps.destroyedOutLabel",
+    "en": "Cut out",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_OpenWound.injuryProps.destroyedOutLabel"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_Petrification.description",
+    "en": "The victim's skin is hardening and turning into brittle stone. This condition is reversible and will naturally dissipate after a few hours, but if it reaches a severity of 1 it will kill its victim.",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_Petrification.description"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_Petrification.label",
+    "en": "petrification",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_Petrification.label"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_Petrification.stages.initial.label",
+    "en": "initial",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_Petrification.stages.0.label"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_Petrification.stages.stiff_joints.label",
+    "en": "stiff joints",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_Petrification.stages.1.label"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_Petrification.stages.rocky_skin.label",
+    "en": "rocky skin",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_Petrification.stages.2.label"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_Petrification.stages.brittle_bones.label",
+    "en": "brittle bones",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_Petrification.stages.3.label"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_Petrification.stages.turned_to_stone.label",
+    "en": "turned to stone",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_Petrification.stages.4.label"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_FenghuangHediff.label",
+    "en": "peace and tranquility",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_FenghuangHediff.label"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_FenghuangHediff.description",
+    "en": "A Fenghuang is soothing this person with waves of positive energy. It increases manipulation and moving stats for 12 hours.",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_FenghuangHediff.description"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_NoPain.description",
+    "en": "This creature has a reduced pain sensitivity, and it takes longer to be downed due to pain.",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_NoPain.description"
+  },
+  {
+    "type": "HediffDef",
+    "key": "MM_NoPain.label",
+    "en": "no pain sensitivity",
+    "source": "Mod/Defs/AlphaMythology/HediffDefs/Hediffs_Global_Misc.xml",
+    "sourceKey": "MM_NoPain.label"
+  },
+  {
+    "type": "MVCF.ModDef",
+    "key": "MM_MagicalMenagerie.label",
+    "en": "Alpha Mythology",
+    "source": "Mod/Defs/AlphaMythology/MVCF/MVCF.xml",
+    "sourceKey": "MM_MagicalMenagerie.label"
+  },
+  {
+    "type": "MVCF.ModDef",
+    "key": "MM_MagicalMenagerie.description",
+    "en": "Adding animal ranged attacks for Alpha Mythology creatures",
+    "source": "Mod/Defs/AlphaMythology/MVCF/MVCF.xml",
+    "sourceKey": "MM_MagicalMenagerie.description"
+  },
+  {
+    "type": "RecipeDef",
+    "key": "MM_ShutDownMechanoid.label",
+    "en": "shut down",
+    "source": "Mod/Defs/AlphaMythology/RecipeDefs/Recipes_Surgery_Installations.xml",
+    "sourceKey": "MM_ShutDownMechanoid.label"
+  },
+  {
+    "type": "RecipeDef",
+    "key": "MM_ShutDownMechanoid.description",
+    "en": "Shuts down a mechanoid.",
+    "source": "Mod/Defs/AlphaMythology/RecipeDefs/Recipes_Surgery_Installations.xml",
+    "sourceKey": "MM_ShutDownMechanoid.description"
+  },
+  {
+    "type": "RecipeDef",
+    "key": "MM_ShutDownMechanoid.jobString",
+    "en": "Shutting down mechanoid.",
+    "source": "Mod/Defs/AlphaMythology/RecipeDefs/Recipes_Surgery_Installations.xml",
+    "sourceKey": "MM_ShutDownMechanoid.jobString"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_EggGriffinFertilized.label",
+    "en": "griffin egg (fert.)",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_MagicalAnimalEggs.xml",
+    "sourceKey": "MM_EggGriffinFertilized.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_EggGriffinFertilized.description",
+    "en": "Fertilized griffin egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into a griffin.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_MagicalAnimalEggs.xml",
+    "sourceKey": "MM_EggGriffinFertilized.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_EggPhoenixFertilized.label",
+    "en": "phoenix egg (fert.)",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_MagicalAnimalEggs.xml",
+    "sourceKey": "MM_EggPhoenixFertilized.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_EggPhoenixFertilized.description",
+    "en": "Fertilized phoenix egg. If all goes well, it should hatch into a phoenix chick. It can be eaten raw, but it's much better cooked.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_MagicalAnimalEggs.xml",
+    "sourceKey": "MM_EggPhoenixFertilized.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_EggSalamanderFertilized.label",
+    "en": "salamander egg (fert.)",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_MagicalAnimalEggs.xml",
+    "sourceKey": "MM_EggSalamanderFertilized.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_EggSalamanderFertilized.description",
+    "en": "Fertilized salamander egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into a salamander.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_MagicalAnimalEggs.xml",
+    "sourceKey": "MM_EggSalamanderFertilized.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_EggFenghuangFertilized.label",
+    "en": "fenghuang egg (fert.)",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_MagicalAnimalEggs.xml",
+    "sourceKey": "MM_EggFenghuangFertilized.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_EggFenghuangFertilized.description",
+    "en": "Fertilized fenghuang egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into a fenghuang.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_MagicalAnimalEggs.xml",
+    "sourceKey": "MM_EggFenghuangFertilized.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_EggStymphalianBirdFertilized.label",
+    "en": "stymphalian bird egg (fert.)",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_MagicalAnimalEggs.xml",
+    "sourceKey": "MM_EggStymphalianBirdFertilized.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_EggStymphalianBirdFertilized.description",
+    "en": "Fertilized stymphalian bird egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into an stymphalian bird.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_MagicalAnimalEggs.xml",
+    "sourceKey": "MM_EggStymphalianBirdFertilized.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_EggIeltxuFertilized.label",
+    "en": "ieltxu egg (fert.)",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_MagicalAnimalEggs.xml",
+    "sourceKey": "MM_EggIeltxuFertilized.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_EggIeltxuFertilized.description",
+    "en": "Fertilized ieltxu egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into an ieltxu.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_MagicalAnimalEggs.xml",
+    "sourceKey": "MM_EggIeltxuFertilized.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_EggBasiliskFertilized.label",
+    "en": "basilisk egg (fert.)",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_MagicalAnimalEggs.xml",
+    "sourceKey": "MM_EggBasiliskFertilized.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_EggBasiliskFertilized.description",
+    "en": "Fertilized basilisk egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into a basilisk.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_MagicalAnimalEggs.xml",
+    "sourceKey": "MM_EggBasiliskFertilized.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_LightMagicalLeather.label",
+    "en": "light magical leather",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_Stuff_Leather.xml",
+    "sourceKey": "MM_LightMagicalLeather.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_LightMagicalLeather.description",
+    "en": "This leather shines with a strange, ethereal light. Compared to most light leathers, it is quite a bit tougher and a bit better at all kinds of temperature regulation.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_Stuff_Leather.xml",
+    "sourceKey": "MM_LightMagicalLeather.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_HeavyMagicalLeather.label",
+    "en": "heavy magical leather",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_Stuff_Leather.xml",
+    "sourceKey": "MM_HeavyMagicalLeather.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_HeavyMagicalLeather.description",
+    "en": "This heavy leather shines with a strange, ethereal light. Compared to most leather, it is quite a bit tougher and a bit better at all kinds of temperature regulation.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_Stuff_Leather.xml",
+    "sourceKey": "MM_HeavyMagicalLeather.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_EggGriffinUnfertilized.label",
+    "en": "griffin egg (unfert.)",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_UnfertilizedEggs.xml",
+    "sourceKey": "MM_EggGriffinUnfertilized.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_EggGriffinUnfertilized.description",
+    "en": "An unfertilized griffin egg. It can be eaten raw, but it's much, much better cooked.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_UnfertilizedEggs.xml",
+    "sourceKey": "MM_EggGriffinUnfertilized.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_EggBasiliskUnfertilized.label",
+    "en": "basilisk egg (unfert.)",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_UnfertilizedEggs.xml",
+    "sourceKey": "MM_EggBasiliskUnfertilized.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_EggBasiliskUnfertilized.description",
+    "en": "An unfertilized basilisk egg. It can be eaten raw, but it's much, much better cooked.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_UnfertilizedEggs.xml",
+    "sourceKey": "MM_EggBasiliskUnfertilized.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_EggFenghuangUnfertilized.label",
+    "en": "fenghuang egg (unfert.)",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_UnfertilizedEggs.xml",
+    "sourceKey": "MM_EggFenghuangUnfertilized.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_EggFenghuangUnfertilized.description",
+    "en": "An unfertilized fenghuang egg. It can be eaten raw, but it's much, much better cooked.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_UnfertilizedEggs.xml",
+    "sourceKey": "MM_EggFenghuangUnfertilized.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_EggIeltxuUnfertilized.label",
+    "en": "ieltxu egg (unfert.)",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_UnfertilizedEggs.xml",
+    "sourceKey": "MM_EggIeltxuUnfertilized.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_EggIeltxuUnfertilized.description",
+    "en": "An unfertilized ieltxu egg. It can be eaten raw, but it's much, much better cooked.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_UnfertilizedEggs.xml",
+    "sourceKey": "MM_EggIeltxuUnfertilized.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_EggStymphalianBirdUnfertilized.label",
+    "en": "stymphalian bird egg (unfert.)",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_UnfertilizedEggs.xml",
+    "sourceKey": "MM_EggStymphalianBirdUnfertilized.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_EggStymphalianBirdUnfertilized.description",
+    "en": "An unfertilized stymphalian bird egg. It can be eaten raw, but it's much, much better cooked.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_UnfertilizedEggs.xml",
+    "sourceKey": "MM_EggStymphalianBirdUnfertilized.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_EggSalamanderUnfertilized.label",
+    "en": "salamander egg (unfert.)",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_UnfertilizedEggs.xml",
+    "sourceKey": "MM_EggSalamanderUnfertilized.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_EggSalamanderUnfertilized.description",
+    "en": "An unfertilized salamander egg. It can be eaten raw, but it's much, much better cooked.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_UnfertilizedEggs.xml",
+    "sourceKey": "MM_EggSalamanderUnfertilized.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Quill.label",
+    "en": "quill",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Misc/Animal_Projectiles.xml",
+    "sourceKey": "MM_Quill.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Tremor.label",
+    "en": "tremor",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Misc/Animal_Projectiles.xml",
+    "sourceKey": "MM_Tremor.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_WispProjectile.label",
+    "en": "wisp breath",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Misc/Animal_Projectiles.xml",
+    "sourceKey": "MM_WispProjectile.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_AcidicBreath.label",
+    "en": "acidic breath",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Misc/Animal_Projectiles.xml",
+    "sourceKey": "MM_AcidicBreath.label"
+  },
+  {
+    "type": "VEF.Weapons.ExpandableProjectileDef",
+    "key": "MM_GazeAttack.label",
+    "en": "gaze attack",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Misc/Animal_Projectiles.xml",
+    "sourceKey": "MM_GazeAttack.label"
+  },
+  {
+    "type": "VEF.Weapons.ExpandableProjectileDef",
+    "key": "MM_CenteredGazeAttack.label",
+    "en": "gaze attack",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Misc/Animal_Projectiles.xml",
+    "sourceKey": "MM_CenteredGazeAttack.label"
+  },
+  {
+    "type": "VEF.Weapons.ExpandableProjectileDef",
+    "key": "MM_GreenStreamBreath.label",
+    "en": "poison breath",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Misc/Animal_Projectiles.xml",
+    "sourceKey": "MM_GreenStreamBreath.label"
+  },
+  {
+    "type": "VEF.Weapons.ExpandableProjectileDef",
+    "key": "MM_FlameBreathAnimated.label",
+    "en": "flame breath",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Misc/Animal_Projectiles.xml",
+    "sourceKey": "MM_FlameBreathAnimated.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_RazorSharpFeathers.label",
+    "en": "razor sharp feathers",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Misc/Animal_Projectiles.xml",
+    "sourceKey": "MM_RazorSharpFeathers.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_BurnedGrass.label",
+    "en": "dead grass",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Plants/Plants_Special.xml",
+    "sourceKey": "MM_BurnedGrass.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_BurnedGrass.description",
+    "en": "Dead grass. Not edible for animals.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Plants/Plants_Special.xml",
+    "sourceKey": "MM_BurnedGrass.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_BurnedBush.label",
+    "en": "dead bush",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Plants/Plants_Special.xml",
+    "sourceKey": "MM_BurnedBush.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_BurnedBush.description",
+    "en": "Dead bush. Not edible for animals.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Plants/Plants_Special.xml",
+    "sourceKey": "MM_BurnedBush.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Ahuizotl.label",
+    "en": "ahuizotl",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Ahuizotl.xml",
+    "sourceKey": "MM_Ahuizotl.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Ahuizotl.description",
+    "en": "The Ahuizotl is a legendary creature in Aztec myth. It is described as dog-like, its waterproof fur often clumping up to create spikes. The ahuizotl has hands capable of manipulation and an additional hand on its tail. The ahuizotl is feared due to its liking for human flesh, especially nails, eyes, and teeth. It is said to live in or near the water and to use the hand on the end of its tail to snatch its prey, dragging the person into the depths to drown them.\\n\\nAhuizotl aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into \"magical\" creatures.\\n\\nSpecial abilities: Ahuizotl are adept at using the hand at the end of their tail to grab their prey and claw at them with their paws, making a retreat quite difficult if engaged in close quarters.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Ahuizotl.xml",
+    "sourceKey": "MM_Ahuizotl.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Ahuizotl.tools.grabbing_hand.label",
+    "en": "grabbing hand",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Ahuizotl.xml",
+    "sourceKey": "MM_Ahuizotl.tools.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Ahuizotl.tools.left_claw.label",
+    "en": "left claw",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Ahuizotl.xml",
+    "sourceKey": "MM_Ahuizotl.tools.1.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Ahuizotl.tools.right_claw.label",
+    "en": "right claw",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Ahuizotl.xml",
+    "sourceKey": "MM_Ahuizotl.tools.2.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Ahuizotl.tools.head.label",
+    "en": "head",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Ahuizotl.xml",
+    "sourceKey": "MM_Ahuizotl.tools.4.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Ahuizotl.label",
+    "en": "ahuizotl",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Ahuizotl.xml",
+    "sourceKey": "MM_Ahuizotl.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Ahuizotl.labelPlural",
+    "en": "ahuizotl",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Ahuizotl.xml",
+    "sourceKey": "MM_Ahuizotl.labelPlural"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Ahuizotl.lifeStages.ahuizotl_puppy.label",
+    "en": "ahuizotl puppy",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Ahuizotl.xml",
+    "sourceKey": "MM_Ahuizotl.lifeStages.0.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Ahuizotl.lifeStages.ahuizotl_puppy.labelPlural",
+    "en": "ahuizotl puppies",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Ahuizotl.xml",
+    "sourceKey": "MM_Ahuizotl.lifeStages.0.labelPlural"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Basilisk.label",
+    "en": "basilisk",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Basilisk.xml",
+    "sourceKey": "MM_Basilisk.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Basilisk.description",
+    "en": "In European bestiaries, the basilisk is a legendary reptile, reputed to be a serpent king, who can cause death with a single glance. Pliny the Elder described the basilisk as a serpent with a white spot on the head, strongly resembling a diadem. It was said to have an extremely noxious effect on plants and all kind of vegetation, destroying and rotting all plants surrounding it.\\n\\nBasilisks aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into \"magical\" creatures.\\n\\nSpecial Abilities: The basilisk is a particularly unpleasant beast. Its gaze attack can petrify its victims, and grass and bushes surrounding it will slowly rot and turn into withered husks, feeding the basilisk in the process. Luckily, basilisks aren't very common.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Basilisk.xml",
+    "sourceKey": "MM_Basilisk.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Basilisk.verbs.petrifying_gaze.label",
+    "en": "petrifying gaze",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Basilisk.xml",
+    "sourceKey": "MM_Basilisk.verbs.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Basilisk.tools.fangs.label",
+    "en": "fangs",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Basilisk.xml",
+    "sourceKey": "MM_Basilisk.tools.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Basilisk.tools.head.label",
+    "en": "head",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Basilisk.xml",
+    "sourceKey": "MM_Basilisk.tools.1.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Basilisk.label",
+    "en": "basilisk",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Basilisk.xml",
+    "sourceKey": "MM_Basilisk.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Catoblepas.label",
+    "en": "catoblepas",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Catoblepas.xml",
+    "sourceKey": "MM_Catoblepas.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Catoblepas.description",
+    "en": "The Catoblepas is a legendary creature from Ethiopia, said to have the body of a cape buffalo and an oversized head that is constantly pointing downwards due to its great weight.\\n\\nCatoblepas aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into \"magical\" creatures.\\n\\nSpecial Abilities: The stare of the Catoblepas can turn people into stone. They are not naturally aggressive, but this dangerous ability makes sure they have no natural predators.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Catoblepas.xml",
+    "sourceKey": "MM_Catoblepas.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Catoblepas.tools.head.label",
+    "en": "head",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Catoblepas.xml",
+    "sourceKey": "MM_Catoblepas.tools.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Catoblepas.tools.left_hoof.label",
+    "en": "left hoof",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Catoblepas.xml",
+    "sourceKey": "MM_Catoblepas.tools.1.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Catoblepas.tools.right_hoof.label",
+    "en": "right hoof",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Catoblepas.xml",
+    "sourceKey": "MM_Catoblepas.tools.2.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Catoblepas.verbs.petrifying_gaze.label",
+    "en": "petrifying gaze",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Catoblepas.xml",
+    "sourceKey": "MM_Catoblepas.verbs.0.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Catoblepas.label",
+    "en": "catoblepas",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Catoblepas.xml",
+    "sourceKey": "MM_Catoblepas.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Cerberus.label",
+    "en": "cerberus",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Cerberus.xml",
+    "sourceKey": "MM_Cerberus.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Cerberus.description",
+    "en": "In Greek mythology, Cerberus, often referred to as the hound of Hades, is a three-headed dog that guards the gates of the Underworld to prevent the dead from leaving. Cerberus was the offspring of the monsters Echidna and Typhon, and is primarily known for his capture by Heracles, one of Heracles' twelve labours.\\n\\nCerberi aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into \"magical\" creatures.\\n\\nSpecial abilities: Cerberi are harder to train than regular dogs, and they aren't as intelligent, but having three heads makes them very VERY dangerous combat animals, specially when modified with bionic jaw implants.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Cerberus.xml",
+    "sourceKey": "MM_Cerberus.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Cerberus.tools.left_claw.label",
+    "en": "left claw",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Cerberus.xml",
+    "sourceKey": "MM_Cerberus.tools.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Cerberus.tools.right_claw.label",
+    "en": "right claw",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Cerberus.xml",
+    "sourceKey": "MM_Cerberus.tools.1.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Cerberus.tools.head.label",
+    "en": "head",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Cerberus.xml",
+    "sourceKey": "MM_Cerberus.tools.3.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Cerberus.label",
+    "en": "cerberus",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Cerberus.xml",
+    "sourceKey": "MM_Cerberus.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Cerberus.labelPlural",
+    "en": "cerberi",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Cerberus.xml",
+    "sourceKey": "MM_Cerberus.labelPlural"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Cerberus.lifeStages.cerberus_puppy.label",
+    "en": "cerberus puppy",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Cerberus.xml",
+    "sourceKey": "MM_Cerberus.lifeStages.0.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Cerberus.lifeStages.cerberus_puppy.labelPlural",
+    "en": "cerberus puppies",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Cerberus.xml",
+    "sourceKey": "MM_Cerberus.lifeStages.0.labelPlural"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_CeryneianHind.label",
+    "en": "ceryneian hind",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_CeryneianHind.xml",
+    "sourceKey": "MM_CeryneianHind.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_CeryneianHind.description",
+    "en": "In Greek mythology, the Ceryneian Hind was a mythical creature that lived in Ceryneia, Greece, and took the form of an enormous deer, larger than a bull, with golden antlers like a stag. To bring it back alive to Eurystheus in Mycenae was the third labour of Heracles.\\n\\nCeryneian Hinds aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into \"magical\" creatures.\\n\\nSpecial Abilities: The Ceryneian Hind (and by extension, Hart, since they were created in both genders) is a very fast creature, though it can't be trained as a mount as well as Unicorns or Pegasi. It produces milk.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_CeryneianHind.xml",
+    "sourceKey": "MM_CeryneianHind.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_CeryneianHind.tools.antlers-0.label",
+    "en": "antlers",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_CeryneianHind.xml",
+    "sourceKey": "MM_CeryneianHind.tools.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_CeryneianHind.tools.antlers-1.label",
+    "en": "antlers",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_CeryneianHind.xml",
+    "sourceKey": "MM_CeryneianHind.tools.1.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_CeryneianHind.tools.left_hoof.label",
+    "en": "left hoof",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_CeryneianHind.xml",
+    "sourceKey": "MM_CeryneianHind.tools.2.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_CeryneianHind.tools.right_hoof.label",
+    "en": "right hoof",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_CeryneianHind.xml",
+    "sourceKey": "MM_CeryneianHind.tools.3.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_CeryneianHind.label",
+    "en": "ceryneian hind",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_CeryneianHind.xml",
+    "sourceKey": "MM_CeryneianHind.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_CeryneianHind.labelMale",
+    "en": "ceryneian hart",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_CeryneianHind.xml",
+    "sourceKey": "MM_CeryneianHind.labelMale"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_CeryneianHind.labelFemale",
+    "en": "ceryneian hind",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_CeryneianHind.xml",
+    "sourceKey": "MM_CeryneianHind.labelFemale"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_CeryneianHind.lifeStages.ceryneian_calf.label",
+    "en": "ceryneian calf",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_CeryneianHind.xml",
+    "sourceKey": "MM_CeryneianHind.lifeStages.0.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_CeryneianHind.lifeStages.ceryneian_calf.labelPlural",
+    "en": "ceryneian calves",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_CeryneianHind.xml",
+    "sourceKey": "MM_CeryneianHind.lifeStages.0.labelPlural"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Chimera.label",
+    "en": "chimera",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Chimera.xml",
+    "sourceKey": "MM_Chimera.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Chimera.description",
+    "en": "The chimera was a monstrous fire-breathing hybrid creature of Lycia in Asia Minor, composed of the parts of a lion, with the head of a goat protruding from its back, and a tail that ends with a snake's head.\\n\\nChimeras aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into \"magical\" creatures.\\n\\nSpecial Abilities: Chimeras are both slightly venomous and fire breathing, making them quite dangerous, and not only to their enemies! Chimeras just LOVE wooden colonies. Oh, they can also be milked...",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Chimera.xml",
+    "sourceKey": "MM_Chimera.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Chimera.tools.toxic_bite.label",
+    "en": "toxic bite",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Chimera.xml",
+    "sourceKey": "MM_Chimera.tools.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Chimera.tools.left_claw.label",
+    "en": "left claw",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Chimera.xml",
+    "sourceKey": "MM_Chimera.tools.1.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Chimera.tools.right_claw.label",
+    "en": "right claw",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Chimera.xml",
+    "sourceKey": "MM_Chimera.tools.2.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Chimera.tools.head.label",
+    "en": "head",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Chimera.xml",
+    "sourceKey": "MM_Chimera.tools.4.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Chimera.verbs.fire_breath.label",
+    "en": "fire breath",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Chimera.xml",
+    "sourceKey": "MM_Chimera.verbs.0.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Chimera.label",
+    "en": "chimera",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Chimera.xml",
+    "sourceKey": "MM_Chimera.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_ErymanthianBoar.label",
+    "en": "erymanthian boar",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_ErymanthianBoar.xml",
+    "sourceKey": "MM_ErymanthianBoar.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_ErymanthianBoar.description",
+    "en": "The Erymanthian Boar was a gargantuan, monstruous wild hog that inhabited the slopes of mount Erymanthus, occasionally laying waste to the farmers' fields. The boar's capture was the objective of the Fourth Labour of Heracles. To capture the boar, Heracles drove it into thick snow, considerably slowing its progress and advantage.\\n\\nErymanthian boars aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into \"magical\" creatures.\\n\\nSpecial Abilities: The tusks of the Erymanthian Boar can cause some serious wounds that keep bleeding and causing further injuries, making them VERY dangerous in close quarters.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_ErymanthianBoar.xml",
+    "sourceKey": "MM_ErymanthianBoar.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_ErymanthianBoar.tools.tusk.label",
+    "en": "tusk",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_ErymanthianBoar.xml",
+    "sourceKey": "MM_ErymanthianBoar.tools.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_ErymanthianBoar.tools.head.label",
+    "en": "head",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_ErymanthianBoar.xml",
+    "sourceKey": "MM_ErymanthianBoar.tools.2.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_ErymanthianBoar.label",
+    "en": "erymanthian boar",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_ErymanthianBoar.xml",
+    "sourceKey": "MM_ErymanthianBoar.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Fenghuang.label",
+    "en": "fenghuang",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Fenghuang.xml",
+    "sourceKey": "MM_Fenghuang.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Fenghuang.description",
+    "en": "The Fenghuang is a legendary bird in East Asian mythologies symbolizing high virtue and grace. The fenghuang also symbolizes the union of yin and yang, and it is believed that the bird only appears in areas or places that are blessed with utmost peace and prosperity or happiness. Traditionally described as a composite of many birds it is also often called a \"Chinese Phoenix\", although similarities with the western Phoenix are superficial.\\n\\nFenghuangs aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into \"magical\" creatures.\\n\\nSpecial Abilities: Tamed Fenghuangs radiate an aura of peace and tranquility, elevating the spirits of those nearby.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Fenghuang.xml",
+    "sourceKey": "MM_Fenghuang.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Fenghuang.tools.claws.label",
+    "en": "claws",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Fenghuang.xml",
+    "sourceKey": "MM_Fenghuang.tools.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Fenghuang.tools.beak.label",
+    "en": "beak",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Fenghuang.xml",
+    "sourceKey": "MM_Fenghuang.tools.1.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Fenghuang.tools.head.label",
+    "en": "head",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Fenghuang.xml",
+    "sourceKey": "MM_Fenghuang.tools.2.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Fenghuang.label",
+    "en": "fenghuang",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Fenghuang.xml",
+    "sourceKey": "MM_Fenghuang.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Fenghuang.lifeStages.fenghuang_chick.label",
+    "en": "fenghuang chick",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Fenghuang.xml",
+    "sourceKey": "MM_Fenghuang.lifeStages.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Griffin.label",
+    "en": "griffin",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Griffin.xml",
+    "sourceKey": "MM_Griffin.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Griffin.description",
+    "en": "The Griffin is a creature with the body, tail, and back legs of a lion; the head and wings of an eagle; and an eagle's talons as its front feet. Griffins are especially powerful and majestic creatures, known for guarding treasure and priceless possessions, and valued as trusted steeds.\\n\\nGriffins aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into \"magical\" creatures.\\n\\nSpecial Abilities: Griffins are excellent mounts, receiving bonuses to speed and armour when mounted (this needs the Giddy-up! Battle Mounts mod).",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Griffin.xml",
+    "sourceKey": "MM_Griffin.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Griffin.tools.left_claw.label",
+    "en": "left claw",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Griffin.xml",
+    "sourceKey": "MM_Griffin.tools.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Griffin.tools.right_claw.label",
+    "en": "right claw",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Griffin.xml",
+    "sourceKey": "MM_Griffin.tools.1.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Griffin.tools.beak.label",
+    "en": "beak",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Griffin.xml",
+    "sourceKey": "MM_Griffin.tools.2.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Griffin.tools.head.label",
+    "en": "head",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Griffin.xml",
+    "sourceKey": "MM_Griffin.tools.3.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Griffin.label",
+    "en": "griffin",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Griffin.xml",
+    "sourceKey": "MM_Griffin.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Ieltxu.label",
+    "en": "ieltxu",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Ieltxu.xml",
+    "sourceKey": "MM_Ieltxu.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Ieltxu.description",
+    "en": "The Ieltxu is a genie bird in Basque mythology. Usually depicted as a fire breathing, pitch black raven, the Ieltxu is not a malicious creature, though it is often described as mischievous. Ieltxu are creatures of the night, usually appearing in dark forests under the cover of darkness.\\n\\nIeltxu aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into \"magical\" creatures.\\n\\nSpecial Abilities: Ieltxu can breathe fire when threatened. They are nocturnal creatures that sleep during the day.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Ieltxu.xml",
+    "sourceKey": "MM_Ieltxu.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Ieltxu.verbs.fire_breath.label",
+    "en": "fire breath",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Ieltxu.xml",
+    "sourceKey": "MM_Ieltxu.verbs.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Ieltxu.tools.claws.label",
+    "en": "claws",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Ieltxu.xml",
+    "sourceKey": "MM_Ieltxu.tools.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Ieltxu.tools.beak.label",
+    "en": "beak",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Ieltxu.xml",
+    "sourceKey": "MM_Ieltxu.tools.1.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Ieltxu.tools.head.label",
+    "en": "head",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Ieltxu.xml",
+    "sourceKey": "MM_Ieltxu.tools.2.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Ieltxu.label",
+    "en": "ieltxu",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Ieltxu.xml",
+    "sourceKey": "MM_Ieltxu.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Kappa.label",
+    "en": "kappa",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Kappa.xml",
+    "sourceKey": "MM_Kappa.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Kappa.description",
+    "en": "The kappa is a river imp in Japanese folklore, depicted as green, human-like beings with webbed hands and feet and a turtle-like carapace on their backs. A depression on their head, their \"dish\", holds a tiny amount of water, and the kappa is severely weakened if this water spills or dries. Although kappa are often seen as mischievous, they are not inherently malicious. In fact, once befriended, kappa may perform any number of tasks for human beings, such as helping farmers irrigate their land.\\n\\nKappa aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into \"magical\" creatures.\\n\\nSpecial Abilities: Kappa are cowardly, fleeing combat if they lose too much health. Properly trained kappa (\"Guard\" skill at least) can help colonists on harvesting tasks.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Kappa.xml",
+    "sourceKey": "MM_Kappa.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Kappa.tools.left_fist.label",
+    "en": "left fist",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Kappa.xml",
+    "sourceKey": "MM_Kappa.tools.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Kappa.tools.right_fist.label",
+    "en": "right fist",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Kappa.xml",
+    "sourceKey": "MM_Kappa.tools.1.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Kappa.tools.teeth.label",
+    "en": "teeth",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Kappa.xml",
+    "sourceKey": "MM_Kappa.tools.2.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Kappa.tools.head.label",
+    "en": "head",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Kappa.xml",
+    "sourceKey": "MM_Kappa.tools.3.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Kappa.label",
+    "en": "kappa",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Kappa.xml",
+    "sourceKey": "MM_Kappa.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Kitsune.label",
+    "en": "kitsune",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Kitsune.xml",
+    "sourceKey": "MM_Kitsune.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Kitsune.description",
+    "en": "The Kitsune is a legendary creature from Japanese folklore, depicted as a quite intelligent fox-like being possessing paranormal abilities that increase with its age and wisdom. Kitsune have as many as nine tails. Generally, a greater number of tails indicates an older and more powerful Kitsune.\\n\\nKitsune aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into \"magical\" creatures.\\n\\nSpecial Abilities: When tamed, Kitsune slowly regenerate the wounds of nearby colonists and animals.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Kitsune.xml",
+    "sourceKey": "MM_Kitsune.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Kitsune.tools.left_claw.label",
+    "en": "left claw",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Kitsune.xml",
+    "sourceKey": "MM_Kitsune.tools.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Kitsune.tools.right_claw.label",
+    "en": "right claw",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Kitsune.xml",
+    "sourceKey": "MM_Kitsune.tools.1.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Kitsune.tools.head.label",
+    "en": "head",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Kitsune.xml",
+    "sourceKey": "MM_Kitsune.tools.3.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Kitsune.label",
+    "en": "kitsune",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Kitsune.xml",
+    "sourceKey": "MM_Kitsune.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Kitsune.labelPlural",
+    "en": "kitsune",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Kitsune.xml",
+    "sourceKey": "MM_Kitsune.labelPlural"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Kitsune.lifeStages.kitsune_puppy.label",
+    "en": "kitsune puppy",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Kitsune.xml",
+    "sourceKey": "MM_Kitsune.lifeStages.0.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Kitsune.lifeStages.kitsune_puppy.labelPlural",
+    "en": "kitsune puppies",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Kitsune.xml",
+    "sourceKey": "MM_Kitsune.lifeStages.0.labelPlural"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_LernaeanHydra.label",
+    "en": "lernaean hydra",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_LernaeanHydra.xml",
+    "sourceKey": "MM_LernaeanHydra.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_LernaeanHydra.description",
+    "en": "The Lernaean Hydra is a serpentine water monster in Greek and Roman mythology. Its lair was the lake of Lerna in the Argolid, hence its name. The hydra possesses virulently poisonous breath and blood, and impressive regenerative capabilities. Slaying the hydra was the objective of the Second Labour of Heracles.\\n\\nHydras aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into \"magical\" creatures.\\n\\nSpecial Abilities: Hydras can regenerate wounds quite fast. Hydras are dangerous in close combat, but their real danger comes from their poisonous acidic breath. Luckily, they are usually quite shy creatures and don't tend to approach humans.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_LernaeanHydra.xml",
+    "sourceKey": "MM_LernaeanHydra.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_LernaeanHydra.tools.toxic_bite.label",
+    "en": "toxic bite",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_LernaeanHydra.xml",
+    "sourceKey": "MM_LernaeanHydra.tools.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_LernaeanHydra.verbs.acidic_breath.label",
+    "en": "acidic breath",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_LernaeanHydra.xml",
+    "sourceKey": "MM_LernaeanHydra.verbs.0.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_LernaeanHydra.label",
+    "en": "lernaean hydra",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_LernaeanHydra.xml",
+    "sourceKey": "MM_LernaeanHydra.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_LesserWyvern.label",
+    "en": "lesser wyvern",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_LesserWyvern.xml",
+    "sourceKey": "MM_LesserWyvern.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_LesserWyvern.description",
+    "en": "In Medieval European heraldry, the wyvern is a winged bipedal dragon, appearing in numerous standards and coats of arms. The wyvern in heraldry and folklore is rarely fire-breathing, unlike the four-legged dragon. Instead, wyverns are usually associated with poison, either in the form of venomous fangs or their dangerous barbed tail.\\n\\nLesser Wyverns aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into \"magical\" creatures.\\n\\nSpecial Abilities: Lesser Wyverns are extremely venomous, resistant to damage, and almost indifferent to extreme pain. Luckily, they are very rare. Contrary to Greater Wyverns, they can't spit poison (to see Greater Wyverns, download our RimWorld - Witcher Monster Hunt mod!).",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_LesserWyvern.xml",
+    "sourceKey": "MM_LesserWyvern.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_LesserWyvern.tools.left_claw.label",
+    "en": "left claw",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_LesserWyvern.xml",
+    "sourceKey": "MM_LesserWyvern.tools.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_LesserWyvern.tools.right_claw.label",
+    "en": "right claw",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_LesserWyvern.xml",
+    "sourceKey": "MM_LesserWyvern.tools.1.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_LesserWyvern.tools.tail.label",
+    "en": "tail",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_LesserWyvern.xml",
+    "sourceKey": "MM_LesserWyvern.tools.3.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_LesserWyvern.label",
+    "en": "lesser wyvern",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_LesserWyvern.xml",
+    "sourceKey": "MM_LesserWyvern.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Manticore.label",
+    "en": "manticore",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Manticore.xml",
+    "sourceKey": "MM_Manticore.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Manticore.description",
+    "en": "The Manticore is a monstrous legendary creature in Persian mythology. It has a hybrid leonine-humanoid head, the body of a lion and a scorpion tail of venomous spines similar to porcupine quills. This manticore has also been modified to have non-functional chiropteran wings, even though historical depictions of the creature didn't include them. The manticore is a fierce predator, capable of stalking its prey and attack from range.\\n\\nManticores aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into \"magical\" creatures.\\n\\nSpecial Abilities: Manticores can throw poisoned quills from their scorpion-like tails.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Manticore.xml",
+    "sourceKey": "MM_Manticore.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Manticore.tools.left_claw.label",
+    "en": "left claw",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Manticore.xml",
+    "sourceKey": "MM_Manticore.tools.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Manticore.tools.right_claw.label",
+    "en": "right claw",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Manticore.xml",
+    "sourceKey": "MM_Manticore.tools.1.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Manticore.tools.head.label",
+    "en": "head",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Manticore.xml",
+    "sourceKey": "MM_Manticore.tools.4.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Manticore.verbs.venomous_quills.label",
+    "en": "venomous quills",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Manticore.xml",
+    "sourceKey": "MM_Manticore.verbs.0.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Manticore.label",
+    "en": "manticore",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Manticore.xml",
+    "sourceKey": "MM_Manticore.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Pegasus.label",
+    "en": "pegasus",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Pegasus.xml",
+    "sourceKey": "MM_Pegasus.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Pegasus.description",
+    "en": "The Pegasus is a mythical winged divine horse, and one of the most recognized creatures in Greek mythology. Pegasi are white stallions with a pair of feathered wings sprouting from their back. Mythological pegasi were said to be able to fly using those wings, however these creatures seem to sport them just for aesthetic reasons, as there is no amount of genetic engineering that could make such flimsy wings to support their weight. They are appreciated as fast and dependable steeds.\\n\\nPegasi aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into \"magical\" creatures.\\n\\nSpecial Abilities: Pegasi are excellent mounts, receiving a huge bonus to speed when mounted (this needs the Giddy-up! Battle Mounts mod).",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Pegasus.xml",
+    "sourceKey": "MM_Pegasus.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Pegasus.tools.head.label",
+    "en": "head",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Pegasus.xml",
+    "sourceKey": "MM_Pegasus.tools.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Pegasus.tools.left_hoof.label",
+    "en": "left hoof",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Pegasus.xml",
+    "sourceKey": "MM_Pegasus.tools.1.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Pegasus.tools.right_hoof.label",
+    "en": "right hoof",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Pegasus.xml",
+    "sourceKey": "MM_Pegasus.tools.2.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Pegasus.label",
+    "en": "pegasus",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Pegasus.xml",
+    "sourceKey": "MM_Pegasus.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Pegasus.labelPlural",
+    "en": "pegasi",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Pegasus.xml",
+    "sourceKey": "MM_Pegasus.labelPlural"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Pegasus.labelMale",
+    "en": "pegasus stallion",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Pegasus.xml",
+    "sourceKey": "MM_Pegasus.labelMale"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Pegasus.labelFemale",
+    "en": "pegasus mare",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Pegasus.xml",
+    "sourceKey": "MM_Pegasus.labelFemale"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Pegasus.lifeStages.pegasus_foal.label",
+    "en": "pegasus foal",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Pegasus.xml",
+    "sourceKey": "MM_Pegasus.lifeStages.0.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Pegasus.lifeStages.pegasus_foal.labelPlural",
+    "en": "pegasus foals",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Pegasus.xml",
+    "sourceKey": "MM_Pegasus.lifeStages.0.labelPlural"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Phoenix.label",
+    "en": "phoenix",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Phoenix.xml",
+    "sourceKey": "MM_Phoenix.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Phoenix.description",
+    "en": "In ancient Egyptian and later Greek and Roman mythology, a phoenix is a long-lived bird that cyclically regenerates or is otherwise born again, usually in a massive conflagration that lays waste to anything else around it. Symbolically, the Phoenix has always been associated with concepts of rebirth, renewal and perseverance.\\n\\nPhoenixes aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into \"magical\" creatures.\\n\\nSpecial Abilities: Attacks from a Phoenix can set their targets on fire. When the Phoenix dies, it will explode and create a fire resistant egg (or sometimes two). After a while, a new Phoenix will hatch from this egg.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Phoenix.xml",
+    "sourceKey": "MM_Phoenix.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Phoenix.tools.claws.label",
+    "en": "claws",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Phoenix.xml",
+    "sourceKey": "MM_Phoenix.tools.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Phoenix.tools.beak.label",
+    "en": "beak",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Phoenix.xml",
+    "sourceKey": "MM_Phoenix.tools.1.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Phoenix.tools.head.label",
+    "en": "head",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Phoenix.xml",
+    "sourceKey": "MM_Phoenix.tools.2.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Phoenix.label",
+    "en": "phoenix",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Phoenix.xml",
+    "sourceKey": "MM_Phoenix.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Phoenix.labelPlural",
+    "en": "phoenixes",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Phoenix.xml",
+    "sourceKey": "MM_Phoenix.labelPlural"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Phoenix.lifeStages.phoenix_chick.label",
+    "en": "phoenix chick",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Phoenix.xml",
+    "sourceKey": "MM_Phoenix.lifeStages.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Qilin.label",
+    "en": "qilin",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Qilin.xml",
+    "sourceKey": "MM_Qilin.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Qilin.description",
+    "en": "The Qilin is a mythical hooved chimerical creature known in Chinese and other East Asian cultures, said to appear with the imminent arrival or passing of a sage or illustrious ruler. Qilins' bodies are partially scaled and shaped like a deer, and they sport a pair of impressive antlers on their heads.\\n\\nQilin aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into \"magical\" creatures.\\n\\nThough Qilin are usually peaceful creatures, they have a nasty tendency to set their enemies on fire when provoked.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Qilin.xml",
+    "sourceKey": "MM_Qilin.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Qilin.tools.left_hoof.label",
+    "en": "left hoof",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Qilin.xml",
+    "sourceKey": "MM_Qilin.tools.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Qilin.tools.right_hoof.label",
+    "en": "right hoof",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Qilin.xml",
+    "sourceKey": "MM_Qilin.tools.1.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Qilin.tools.antlers.label",
+    "en": "antlers",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Qilin.xml",
+    "sourceKey": "MM_Qilin.tools.2.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Qilin.tools.teeth.label",
+    "en": "teeth",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Qilin.xml",
+    "sourceKey": "MM_Qilin.tools.3.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Qilin.tools.head.label",
+    "en": "head",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Qilin.xml",
+    "sourceKey": "MM_Qilin.tools.4.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Qilin.label",
+    "en": "qilin",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Qilin.xml",
+    "sourceKey": "MM_Qilin.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Salamander.label",
+    "en": "salamander",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Salamander.xml",
+    "sourceKey": "MM_Salamander.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Salamander.description",
+    "en": "The salamander is an amphibian which, as with many real creatures, often has been ascribed fantastic and sometimes occult qualities not possessed by the real organism. The legendary salamander in Classical, Medieval, and Renaissance lore is often depicted as a typical salamander or a snake in shape with a lizard-like form, but is usually ascribed an affinity with elemental fire.\\n\\nSalamanders aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into \"magical\" creatures.\\n\\nSpecial Abilities: Salamanders radiate incredible amounts of heat, making them very dangerous (or very useful) in close spaces. Their eggs have that quality too, and they explode upon hatching. A salamander's bite can set their target on fire.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Salamander.xml",
+    "sourceKey": "MM_Salamander.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Salamander.tools.firefangs.label",
+    "en": "fire-fangs",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Salamander.xml",
+    "sourceKey": "MM_Salamander.tools.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Salamander.tools.head.label",
+    "en": "head",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Salamander.xml",
+    "sourceKey": "MM_Salamander.tools.1.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Salamander.label",
+    "en": "salamander",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Salamander.xml",
+    "sourceKey": "MM_Salamander.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_StymphalianBird.label",
+    "en": "stymphalian bird",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_StymphalianBird.xml",
+    "sourceKey": "MM_StymphalianBird.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_StymphalianBird.description",
+    "en": "The stymphalian birds are a group of voracious birds in Greek mythology, whose name is derived from their dwelling in a swamp in Stymphalia. Stymphalian birds were man-eating birds with beaks of bronze, sharp metallic feathers they could launch at their victims, and poisonous dung. Defeating the stymphalian birds was the objective of the Sixth Labour of Heracles.\\n\\nStymphalian birds aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into \"magical\" creatures.\\n\\nSpecial Abilities: Stymphalian birds fly over terrain, ignoring terrain movement costs. They can use sharp ranged attacks.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_StymphalianBird.xml",
+    "sourceKey": "MM_StymphalianBird.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_StymphalianBird.verbs.razor_sharp_feathers.label",
+    "en": "razor sharp feathers",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_StymphalianBird.xml",
+    "sourceKey": "MM_StymphalianBird.verbs.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_StymphalianBird.tools.claws.label",
+    "en": "claws",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_StymphalianBird.xml",
+    "sourceKey": "MM_StymphalianBird.tools.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_StymphalianBird.tools.beak.label",
+    "en": "beak",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_StymphalianBird.xml",
+    "sourceKey": "MM_StymphalianBird.tools.1.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_StymphalianBird.tools.head.label",
+    "en": "head",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_StymphalianBird.xml",
+    "sourceKey": "MM_StymphalianBird.tools.2.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_StymphalianBird.label",
+    "en": "stymphalian bird",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_StymphalianBird.xml",
+    "sourceKey": "MM_StymphalianBird.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_StymphalianBird.lifeStages.stymphalian_bird_chick.label",
+    "en": "stymphalian bird chick",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_StymphalianBird.xml",
+    "sourceKey": "MM_StymphalianBird.lifeStages.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Tlilcoatl.label",
+    "en": "tlilcoatl",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Tlilcoatl.xml",
+    "sourceKey": "MM_Tlilcoatl.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Tlilcoatl.description",
+    "en": "The tlilcoatl (\"black snake\" in nahuatl) is a predatory reptile in Mexican folklore. Tlilcoatls have glossy black scales, a bifurcated tail and grow to a considerable size. They can breathe a dangerous poisonous gas that quickly suffocates their victims.\\n\\nTlilcoatls aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into \"magical\" creatures.\\n\\nSpecial Abilities: Tlilcoatls are virulently venomous, with a dangerous bite and a very nasty breath attack. They will however only attacks humans defensively.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Tlilcoatl.xml",
+    "sourceKey": "MM_Tlilcoatl.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Tlilcoatl.tools.fangs.label",
+    "en": "fangs",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Tlilcoatl.xml",
+    "sourceKey": "MM_Tlilcoatl.tools.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Tlilcoatl.verbs.poison_breath.label",
+    "en": "poison breath",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Tlilcoatl.xml",
+    "sourceKey": "MM_Tlilcoatl.verbs.0.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Tlilcoatl.label",
+    "en": "tlilcoatl",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Tlilcoatl.xml",
+    "sourceKey": "MM_Tlilcoatl.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Unicorn.label",
+    "en": "unicorn",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Unicorn.xml",
+    "sourceKey": "MM_Unicorn.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Unicorn.description",
+    "en": "The unicorn is a legendary creature that has been described since antiquity as a beast with a single large, pointed, spiraling horn projecting from its forehead. The unicorn was depicted in ancient seals of the Indus Valley Civilization and was mentioned by the ancient Greeks. The Unicorn was commonly described as an extremely wild woodland creature, a symbol of purity and grace. Its horn is said to have the power to render poisoned water potable and to heal sickness.\\n\\nUnicorns aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into \"magical\" creatures.\\n\\nSpecial Abilities: Unicorns are excellent mounts, receiving a huge bonus to speed when mounted (this needs the Giddy-up! Battle Mounts mod).",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Unicorn.xml",
+    "sourceKey": "MM_Unicorn.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Unicorn.tools.horn-0.label",
+    "en": "horn",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Unicorn.xml",
+    "sourceKey": "MM_Unicorn.tools.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Unicorn.tools.horn-1.label",
+    "en": "horn",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Unicorn.xml",
+    "sourceKey": "MM_Unicorn.tools.1.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Unicorn.tools.left_hoof.label",
+    "en": "left hoof",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Unicorn.xml",
+    "sourceKey": "MM_Unicorn.tools.2.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Unicorn.tools.right_hoof.label",
+    "en": "right hoof",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Unicorn.xml",
+    "sourceKey": "MM_Unicorn.tools.3.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Unicorn.label",
+    "en": "unicorn",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Unicorn.xml",
+    "sourceKey": "MM_Unicorn.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Unicorn.labelMale",
+    "en": "unicorn stallion",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Unicorn.xml",
+    "sourceKey": "MM_Unicorn.labelMale"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Unicorn.labelFemale",
+    "en": "unicorn mare",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Unicorn.xml",
+    "sourceKey": "MM_Unicorn.labelFemale"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Unicorn.lifeStages.unicorn_foal.label",
+    "en": "unicorn foal",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Unicorn.xml",
+    "sourceKey": "MM_Unicorn.lifeStages.0.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Unicorn.lifeStages.unicorn_foal.labelPlural",
+    "en": "unicorn foals",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Unicorn.xml",
+    "sourceKey": "MM_Unicorn.lifeStages.0.labelPlural"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_WildMinotaur.label",
+    "en": "wild minotaur",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_WildMinotaur.xml",
+    "sourceKey": "MM_WildMinotaur.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_WildMinotaur.description",
+    "en": "In Greek mythology, the Minotaur is a mythical creature portrayed in Classical times with the head and tail of a bull and the body of a man. He dwelt at the center of the Labyrinth, which was an elaborate maze-like construction designed by the architect Daedalus and his son Icarus, on the command of King Minos of Crete. The Minotaur was eventually killed by the Athenian hero Theseus. The mythological Minotaur was often portrayed as a cunning beast, whereas this creature possesses a very basic, instinctual intelligence.\\n\\nMinotaurs aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into \"magical\" creatures.\\n\\nSpecial Abilities: Wild Minotaurs can pound the ground with their hooves, producing ground tremors.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_WildMinotaur.xml",
+    "sourceKey": "MM_WildMinotaur.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_WildMinotaur.tools.horns.label",
+    "en": "horns",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_WildMinotaur.xml",
+    "sourceKey": "MM_WildMinotaur.tools.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_WildMinotaur.tools.left_fist.label",
+    "en": "left fist",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_WildMinotaur.xml",
+    "sourceKey": "MM_WildMinotaur.tools.1.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_WildMinotaur.tools.right_fist.label",
+    "en": "right fist",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_WildMinotaur.xml",
+    "sourceKey": "MM_WildMinotaur.tools.2.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_WildMinotaur.tools.teeth.label",
+    "en": "teeth",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_WildMinotaur.xml",
+    "sourceKey": "MM_WildMinotaur.tools.3.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_WildMinotaur.tools.head.label",
+    "en": "head",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_WildMinotaur.xml",
+    "sourceKey": "MM_WildMinotaur.tools.4.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_WildMinotaur.verbs.tremors.label",
+    "en": "tremors",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_WildMinotaur.xml",
+    "sourceKey": "MM_WildMinotaur.verbs.0.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_WildMinotaur.label",
+    "en": "wild minotaur",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_WildMinotaur.xml",
+    "sourceKey": "MM_WildMinotaur.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_WillOWisp.label",
+    "en": "will-o'-wisp",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_WillOWisp.xml",
+    "sourceKey": "MM_WillOWisp.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_WillOWisp.description",
+    "en": "The Will-O'-Wisp is a creature from English folklore consisting of an atmospheric ghost light seen by travelers at night, especially over bogs, swamps or marshes. It is said to mislead travelers by resembling a flickering lamp or lantern.\\n\\nWill-O'-Wisps aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into \"magical\" creatures.\\n\\nSpecial Abilities: Will-O'-Wisps can barely be considered living creatures, resembling really strange bacteria more than anything else. They reproduce by asexual fission, need almost no sustenance, and are immune to temperature extremes, toxic environments, fire and psychic attacks. If threatened, which isn't often, they can breathe a cloud of multicoloured particles that seems to be harmful to living creatures.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_WillOWisp.xml",
+    "sourceKey": "MM_WillOWisp.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_WillOWisp.tools.pseudopod.label",
+    "en": "pseudopod",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_WillOWisp.xml",
+    "sourceKey": "MM_WillOWisp.tools.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_WillOWisp.comps.0.customString",
+    "en": "Asexual fission in: ",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_WillOWisp.xml",
+    "sourceKey": "MM_WillOWisp.comps.0.customString",
+    "mechanism": "AMR_AsexualReproductionProgress (scoped C# postfix)"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_WillOWisp.verbs.wisp_breath.label",
+    "en": "wisp breath",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_WillOWisp.xml",
+    "sourceKey": "MM_WillOWisp.verbs.0.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_WillOWisp.label",
+    "en": "will-o'-wisp",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_WillOWisp.xml",
+    "sourceKey": "MM_WillOWisp.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Xiezhi.label",
+    "en": "xiezhi",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Xiezhi.xml",
+    "sourceKey": "MM_Xiezhi.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Xiezhi.description",
+    "en": "The xiezhi is a legendary creature in Chinese mythology, as well as in Korean mythology where it is known as haetae. The xiezhi is usually represented as a cross between a lion and a goat, with a single horn on its forehead. Xiezhi are innately attuned to good and evil, being able to instinctively know the innocent from the guilty.\\n\\nXiezhi aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into \"magical\" creatures.\\n\\nSpecial Abilities: Xiezhi will viciously attack pirates, goring them with their justice-seeking horn.",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Xiezhi.xml",
+    "sourceKey": "MM_Xiezhi.description"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Xiezhi.tools.horn.label",
+    "en": "horn",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Xiezhi.xml",
+    "sourceKey": "MM_Xiezhi.tools.0.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Xiezhi.tools.bite.label",
+    "en": "bite",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Xiezhi.xml",
+    "sourceKey": "MM_Xiezhi.tools.1.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Xiezhi.tools.left_claw.label",
+    "en": "left claw",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Xiezhi.xml",
+    "sourceKey": "MM_Xiezhi.tools.2.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Xiezhi.tools.right_claw.label",
+    "en": "right claw",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Xiezhi.xml",
+    "sourceKey": "MM_Xiezhi.tools.3.label"
+  },
+  {
+    "type": "ThingDef",
+    "key": "MM_Xiezhi.tools.head.label",
+    "en": "head",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Xiezhi.xml",
+    "sourceKey": "MM_Xiezhi.tools.4.label"
+  },
+  {
+    "type": "PawnKindDef",
+    "key": "MM_Xiezhi.label",
+    "en": "xiezhi",
+    "source": "Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Xiezhi.xml",
+    "sourceKey": "MM_Xiezhi.label"
+  },
+  {
+    "type": "ThoughtDef",
+    "key": "MM_FenghuangThought.stages.peace_and_tranquility.label",
+    "en": "peace and tranquility",
+    "source": "Mod/Defs/AlphaMythology/ThoughtDefs/Thoughts_Memory.xml",
+    "sourceKey": "MM_FenghuangThought.stages.0.label"
+  },
+  {
+    "type": "ThoughtDef",
+    "key": "MM_FenghuangThought.stages.peace_and_tranquility.description",
+    "en": "I feel one with the Universe.",
+    "source": "Mod/Defs/AlphaMythology/ThoughtDefs/Thoughts_Memory.xml",
+    "sourceKey": "MM_FenghuangThought.stages.0.description"
+  },
+  {
+    "type": "ToolCapacityDef",
+    "key": "MM_ToxicSting.label",
+    "en": "toxic sting",
+    "source": "Mod/Defs/AlphaMythology/ToolCapacityDefs/ToolCapacity.xml",
+    "sourceKey": "MM_ToxicSting.label"
+  },
+  {
+    "type": "ToolCapacityDef",
+    "key": "MM_ToxicBite.label",
+    "en": "toxic bite",
+    "source": "Mod/Defs/AlphaMythology/ToolCapacityDefs/ToolCapacity.xml",
+    "sourceKey": "MM_ToxicBite.label"
+  },
+  {
+    "type": "ToolCapacityDef",
+    "key": "MM_VeryToxicBite.label",
+    "en": "virulent toxic bite",
+    "source": "Mod/Defs/AlphaMythology/ToolCapacityDefs/ToolCapacity.xml",
+    "sourceKey": "MM_VeryToxicBite.label"
+  },
+  {
+    "type": "ToolCapacityDef",
+    "key": "MM_ExtraDamageToPiratesHorn.label",
+    "en": "horn of justice",
+    "source": "Mod/Defs/AlphaMythology/ToolCapacityDefs/ToolCapacity.xml",
+    "sourceKey": "MM_ExtraDamageToPiratesHorn.label"
+  },
+  {
+    "type": "ToolCapacityDef",
+    "key": "MM_Grapple.label",
+    "en": "grapple",
+    "source": "Mod/Defs/AlphaMythology/ToolCapacityDefs/ToolCapacity.xml",
+    "sourceKey": "MM_Grapple.label"
+  },
+  {
+    "type": "ToolCapacityDef",
+    "key": "MM_BleedingWound.label",
+    "en": "bleeding wound",
+    "source": "Mod/Defs/AlphaMythology/ToolCapacityDefs/ToolCapacity.xml",
+    "sourceKey": "MM_BleedingWound.label"
+  },
+  {
+    "type": "ToolCapacityDef",
+    "key": "MM_FlamingBite.label",
+    "en": "flaming bite",
+    "source": "Mod/Defs/AlphaMythology/ToolCapacityDefs/ToolCapacity.xml",
+    "sourceKey": "MM_FlamingBite.label"
+  },
+  {
+    "type": "AchievementsExpanded.AchievementTabDef",
+    "key": "MM_Achievements.label",
+    "en": "Alpha Mythology",
+    "source": "Mod/Patches/AlphaMythology/AchievementsPatch.xml",
+    "sourceKey": "MM_Achievements.label"
+  },
+  {
+    "type": "AchievementsExpanded.AchievementDef",
+    "key": "MM_AchievementMagicHunter.label",
+    "en": "Magic Hunter",
+    "source": "Mod/Patches/AlphaMythology/AchievementsPatch.xml",
+    "sourceKey": "MM_AchievementMagicHunter.label"
+  },
+  {
+    "type": "AchievementsExpanded.AchievementDef",
+    "key": "MM_AchievementMagicHunter.description",
+    "en": "Kill any magical creature from Project Hecate",
+    "source": "Mod/Patches/AlphaMythology/AchievementsPatch.xml",
+    "sourceKey": "MM_AchievementMagicHunter.description"
+  },
+  {
+    "type": "AchievementsExpanded.AchievementDef",
+    "key": "MM_AchievementStayingAhead.label",
+    "en": "Staying Ahead",
+    "source": "Mod/Patches/AlphaMythology/AchievementsPatch.xml",
+    "sourceKey": "MM_AchievementStayingAhead.label"
+  },
+  {
+    "type": "AchievementsExpanded.AchievementDef",
+    "key": "MM_AchievementStayingAhead.description",
+    "en": "Kill 5 Lernaean Hydras",
+    "source": "Mod/Patches/AlphaMythology/AchievementsPatch.xml",
+    "sourceKey": "MM_AchievementStayingAhead.description"
+  },
+  {
+    "type": "AchievementsExpanded.AchievementDef",
+    "key": "MM_AchievementHardLove.label",
+    "en": "Hard Love",
+    "source": "Mod/Patches/AlphaMythology/AchievementsPatch.xml",
+    "sourceKey": "MM_AchievementHardLove.label"
+  },
+  {
+    "type": "AchievementsExpanded.AchievementDef",
+    "key": "MM_AchievementHardLove.description",
+    "en": "Have a colonist develop a bond with a Catoblepas",
+    "source": "Mod/Patches/AlphaMythology/AchievementsPatch.xml",
+    "sourceKey": "MM_AchievementHardLove.description"
+  },
+  {
+    "type": "AchievementsExpanded.AchievementDef",
+    "key": "MM_AchievementMagicParka.label",
+    "en": "Magic Parka",
+    "source": "Mod/Patches/AlphaMythology/AchievementsPatch.xml",
+    "sourceKey": "MM_AchievementMagicParka.label"
+  },
+  {
+    "type": "AchievementsExpanded.AchievementDef",
+    "key": "MM_AchievementMagicParka.description",
+    "en": "Craft a parka out of Heavy magical leather",
+    "source": "Mod/Patches/AlphaMythology/AchievementsPatch.xml",
+    "sourceKey": "MM_AchievementMagicParka.description"
+  },
+  {
+    "type": "AchievementsExpanded.AchievementDef",
+    "key": "MM_AchievementGrabbingHands.label",
+    "en": "Grabbing Hands",
+    "source": "Mod/Patches/AlphaMythology/AchievementsPatch.xml",
+    "sourceKey": "MM_AchievementGrabbingHands.label"
+  },
+  {
+    "type": "AchievementsExpanded.AchievementDef",
+    "key": "MM_AchievementGrabbingHands.description",
+    "en": "Have a pawn be held by an Ahuizotl's grasp",
+    "source": "Mod/Patches/AlphaMythology/AchievementsPatch.xml",
+    "sourceKey": "MM_AchievementGrabbingHands.description"
+  },
+  {
+    "type": "AchievementsExpanded.AchievementDef",
+    "key": "MM_AchievementFountainOfBlood.label",
+    "en": "Fountain of Blood",
+    "source": "Mod/Patches/AlphaMythology/AchievementsPatch.xml",
+    "sourceKey": "MM_AchievementFountainOfBlood.label"
+  },
+  {
+    "type": "AchievementsExpanded.AchievementDef",
+    "key": "MM_AchievementFountainOfBlood.description",
+    "en": "Have a pawn be affected by a Bleeding wound",
+    "source": "Mod/Patches/AlphaMythology/AchievementsPatch.xml",
+    "sourceKey": "MM_AchievementFountainOfBlood.description"
+  },
+  {
+    "type": "AchievementsExpanded.AchievementDef",
+    "key": "MM_AchievementStatueOfColonist.label",
+    "en": "Statue of Colonist",
+    "source": "Mod/Patches/AlphaMythology/AchievementsPatch.xml",
+    "sourceKey": "MM_AchievementStatueOfColonist.label"
+  },
+  {
+    "type": "AchievementsExpanded.AchievementDef",
+    "key": "MM_AchievementStatueOfColonist.description",
+    "en": "Have a pawn or animal die from petrification",
+    "source": "Mod/Patches/AlphaMythology/AchievementsPatch.xml",
+    "sourceKey": "MM_AchievementStatueOfColonist.description"
+  },
+  {
+    "type": "AchievementsExpanded.AchievementDef",
+    "key": "MM_AchievementForbiddenPoultry.label",
+    "en": "Forbidden Poultry",
+    "source": "Mod/Patches/AlphaMythology/AchievementsPatch.xml",
+    "sourceKey": "MM_AchievementForbiddenPoultry.label"
+  },
+  {
+    "type": "AchievementsExpanded.AchievementDef",
+    "key": "MM_AchievementForbiddenPoultry.description",
+    "en": "Use a Fertilized griffin egg to create a Lavish Meal",
+    "source": "Mod/Patches/AlphaMythology/AchievementsPatch.xml",
+    "sourceKey": "MM_AchievementForbiddenPoultry.description"
+  }
+]

@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MM_AhuizotlBody.label>animal quadrupède avec une main au bout de la queue</MM_AhuizotlBody.label>
+  <MM_AhuizotlBody.corePart.parts.Tail.parts.hand.customLabel>main</MM_AhuizotlBody.corePart.parts.Tail.parts.hand.customLabel>
+  <MM_AhuizotlBody.corePart.parts.Tail.parts.hand.parts.right_pinky.customLabel>auriculaire droit</MM_AhuizotlBody.corePart.parts.Tail.parts.hand.parts.right_pinky.customLabel>
+  <MM_AhuizotlBody.corePart.parts.Tail.parts.hand.parts.right_ring_finger.customLabel>annulaire droit</MM_AhuizotlBody.corePart.parts.Tail.parts.hand.parts.right_ring_finger.customLabel>
+  <MM_AhuizotlBody.corePart.parts.Tail.parts.hand.parts.right_middle_finger.customLabel>majeur droit</MM_AhuizotlBody.corePart.parts.Tail.parts.hand.parts.right_middle_finger.customLabel>
+  <MM_AhuizotlBody.corePart.parts.Tail.parts.hand.parts.right_index_finger.customLabel>index droit</MM_AhuizotlBody.corePart.parts.Tail.parts.hand.parts.right_index_finger.customLabel>
+  <MM_AhuizotlBody.corePart.parts.Tail.parts.hand.parts.right_thumb.customLabel>pouce droit</MM_AhuizotlBody.corePart.parts.Tail.parts.hand.parts.right_thumb.customLabel>
+  <MM_AhuizotlBody.corePart.parts.left_lung.customLabel>poumon gauche</MM_AhuizotlBody.corePart.parts.left_lung.customLabel>
+  <MM_AhuizotlBody.corePart.parts.right_lung.customLabel>poumon droit</MM_AhuizotlBody.corePart.parts.right_lung.customLabel>
+  <MM_AhuizotlBody.corePart.parts.left_kidney.customLabel>rein gauche</MM_AhuizotlBody.corePart.parts.left_kidney.customLabel>
+  <MM_AhuizotlBody.corePart.parts.right_kidney.customLabel>rein droit</MM_AhuizotlBody.corePart.parts.right_kidney.customLabel>
+  <MM_AhuizotlBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>œil gauche</MM_AhuizotlBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+  <MM_AhuizotlBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>œil droit</MM_AhuizotlBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+  <MM_AhuizotlBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>oreille gauche</MM_AhuizotlBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+  <MM_AhuizotlBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>oreille droite</MM_AhuizotlBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+  <MM_AhuizotlBody.corePart.parts.front_left_leg.customLabel>patte avant gauche</MM_AhuizotlBody.corePart.parts.front_left_leg.customLabel>
+  <MM_AhuizotlBody.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>pied avant gauche</MM_AhuizotlBody.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>
+  <MM_AhuizotlBody.corePart.parts.front_right_leg.customLabel>patte avant droite</MM_AhuizotlBody.corePart.parts.front_right_leg.customLabel>
+  <MM_AhuizotlBody.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>pied avant droit</MM_AhuizotlBody.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>
+  <MM_AhuizotlBody.corePart.parts.rear_left_leg.customLabel>patte arrière gauche</MM_AhuizotlBody.corePart.parts.rear_left_leg.customLabel>
+  <MM_AhuizotlBody.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>pied arrière gauche</MM_AhuizotlBody.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>
+  <MM_AhuizotlBody.corePart.parts.rear_right_leg.customLabel>patte arrière droite</MM_AhuizotlBody.corePart.parts.rear_right_leg.customLabel>
+  <MM_AhuizotlBody.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>pied arrière droit</MM_AhuizotlBody.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>
+  <MM_ThreeHeadedDog.label>chien à trois têtes</MM_ThreeHeadedDog.label>
+  <MM_ThreeHeadedDog.corePart.parts.left_lung.customLabel>poumon gauche</MM_ThreeHeadedDog.corePart.parts.left_lung.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.right_lung.customLabel>poumon droit</MM_ThreeHeadedDog.corePart.parts.right_lung.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.left_kidney.customLabel>rein gauche</MM_ThreeHeadedDog.corePart.parts.left_kidney.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.right_kidney.customLabel>rein droit</MM_ThreeHeadedDog.corePart.parts.right_kidney.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-0.parts.left_eye.customLabel>œil gauche</MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-0.parts.left_eye.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-0.parts.right_eye.customLabel>œil droit</MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-0.parts.right_eye.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-0.parts.left_ear.customLabel>oreille gauche</MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-0.parts.left_ear.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-0.parts.right_ear.customLabel>oreille droite</MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-0.parts.right_ear.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-1.parts.left_eye.customLabel>œil gauche</MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-1.parts.left_eye.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-1.parts.right_eye.customLabel>œil droit</MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-1.parts.right_eye.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-1.parts.left_ear.customLabel>oreille gauche</MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-1.parts.left_ear.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-1.parts.right_ear.customLabel>oreille droite</MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-1.parts.right_ear.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-2.parts.left_eye.customLabel>œil gauche</MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-2.parts.left_eye.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-2.parts.right_eye.customLabel>œil droit</MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-2.parts.right_eye.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-2.parts.left_ear.customLabel>oreille gauche</MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-2.parts.left_ear.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-2.parts.right_ear.customLabel>oreille droite</MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-2.parts.right_ear.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.front_left_leg.customLabel>patte avant gauche</MM_ThreeHeadedDog.corePart.parts.front_left_leg.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>pied avant gauche</MM_ThreeHeadedDog.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.front_right_leg.customLabel>patte avant droite</MM_ThreeHeadedDog.corePart.parts.front_right_leg.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>pied avant droit</MM_ThreeHeadedDog.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.rear_left_leg.customLabel>patte arrière gauche</MM_ThreeHeadedDog.corePart.parts.rear_left_leg.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>pied arrière gauche</MM_ThreeHeadedDog.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.rear_right_leg.customLabel>patte arrière droite</MM_ThreeHeadedDog.corePart.parts.rear_right_leg.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>pied arrière droit</MM_ThreeHeadedDog.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>
+  <MM_Chimera_Body.label>chimère</MM_Chimera_Body.label>
+  <MM_Chimera_Body.corePart.parts.MM_ChimeraTail.parts.Head.parts.left_eye.customLabel>œil gauche</MM_Chimera_Body.corePart.parts.MM_ChimeraTail.parts.Head.parts.left_eye.customLabel>
+  <MM_Chimera_Body.corePart.parts.MM_ChimeraTail.parts.Head.parts.right_eye.customLabel>œil droit</MM_Chimera_Body.corePart.parts.MM_ChimeraTail.parts.Head.parts.right_eye.customLabel>
+  <MM_Chimera_Body.corePart.parts.MM_Goathead.parts.left_eye.customLabel>œil gauche</MM_Chimera_Body.corePart.parts.MM_Goathead.parts.left_eye.customLabel>
+  <MM_Chimera_Body.corePart.parts.MM_Goathead.parts.right_eye.customLabel>œil droit</MM_Chimera_Body.corePart.parts.MM_Goathead.parts.right_eye.customLabel>
+  <MM_Chimera_Body.corePart.parts.MM_Goathead.parts.left_ear.customLabel>oreille gauche</MM_Chimera_Body.corePart.parts.MM_Goathead.parts.left_ear.customLabel>
+  <MM_Chimera_Body.corePart.parts.MM_Goathead.parts.right_ear.customLabel>oreille droite</MM_Chimera_Body.corePart.parts.MM_Goathead.parts.right_ear.customLabel>
+  <MM_Chimera_Body.corePart.parts.left_lung.customLabel>poumon gauche</MM_Chimera_Body.corePart.parts.left_lung.customLabel>
+  <MM_Chimera_Body.corePart.parts.right_lung.customLabel>poumon droit</MM_Chimera_Body.corePart.parts.right_lung.customLabel>
+  <MM_Chimera_Body.corePart.parts.left_kidney.customLabel>rein gauche</MM_Chimera_Body.corePart.parts.left_kidney.customLabel>
+  <MM_Chimera_Body.corePart.parts.right_kidney.customLabel>rein droit</MM_Chimera_Body.corePart.parts.right_kidney.customLabel>
+  <MM_Chimera_Body.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>œil gauche</MM_Chimera_Body.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+  <MM_Chimera_Body.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>œil droit</MM_Chimera_Body.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+  <MM_Chimera_Body.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>oreille gauche</MM_Chimera_Body.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+  <MM_Chimera_Body.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>oreille droite</MM_Chimera_Body.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+  <MM_Chimera_Body.corePart.parts.front_left_leg.customLabel>patte avant gauche</MM_Chimera_Body.corePart.parts.front_left_leg.customLabel>
+  <MM_Chimera_Body.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>pied avant gauche</MM_Chimera_Body.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>
+  <MM_Chimera_Body.corePart.parts.front_right_leg.customLabel>patte avant droite</MM_Chimera_Body.corePart.parts.front_right_leg.customLabel>
+  <MM_Chimera_Body.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>pied avant droit</MM_Chimera_Body.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>
+  <MM_Chimera_Body.corePart.parts.rear_left_leg.customLabel>patte arrière gauche</MM_Chimera_Body.corePart.parts.rear_left_leg.customLabel>
+  <MM_Chimera_Body.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>pied arrière gauche</MM_Chimera_Body.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>
+  <MM_Chimera_Body.corePart.parts.rear_right_leg.customLabel>patte arrière droite</MM_Chimera_Body.corePart.parts.rear_right_leg.customLabel>
+  <MM_Chimera_Body.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>pied arrière droit</MM_Chimera_Body.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>
+  <MM_Hydra.label>hydre</MM_Hydra.label>
+  <MM_Hydra.corePart.parts.left_lung.customLabel>poumon gauche</MM_Hydra.corePart.parts.left_lung.customLabel>
+  <MM_Hydra.corePart.parts.right_lung.customLabel>poumon droit</MM_Hydra.corePart.parts.right_lung.customLabel>
+  <MM_Hydra.corePart.parts.left_kidney.customLabel>rein gauche</MM_Hydra.corePart.parts.left_kidney.customLabel>
+  <MM_Hydra.corePart.parts.right_kidney.customLabel>rein droit</MM_Hydra.corePart.parts.right_kidney.customLabel>
+  <MM_Hydra.corePart.parts.SnakeHead-0.parts.left_eye.customLabel>œil gauche</MM_Hydra.corePart.parts.SnakeHead-0.parts.left_eye.customLabel>
+  <MM_Hydra.corePart.parts.SnakeHead-0.parts.right_eye.customLabel>œil droit</MM_Hydra.corePart.parts.SnakeHead-0.parts.right_eye.customLabel>
+  <MM_Hydra.corePart.parts.SnakeHead-1.parts.left_eye.customLabel>œil gauche</MM_Hydra.corePart.parts.SnakeHead-1.parts.left_eye.customLabel>
+  <MM_Hydra.corePart.parts.SnakeHead-1.parts.right_eye.customLabel>œil droit</MM_Hydra.corePart.parts.SnakeHead-1.parts.right_eye.customLabel>
+  <MM_Hydra.corePart.parts.SnakeHead-2.parts.left_eye.customLabel>œil gauche</MM_Hydra.corePart.parts.SnakeHead-2.parts.left_eye.customLabel>
+  <MM_Hydra.corePart.parts.SnakeHead-2.parts.right_eye.customLabel>œil droit</MM_Hydra.corePart.parts.SnakeHead-2.parts.right_eye.customLabel>
+  <MM_Hydra.corePart.parts.SnakeHead-3.parts.left_eye.customLabel>œil gauche</MM_Hydra.corePart.parts.SnakeHead-3.parts.left_eye.customLabel>
+  <MM_Hydra.corePart.parts.SnakeHead-3.parts.right_eye.customLabel>œil droit</MM_Hydra.corePart.parts.SnakeHead-3.parts.right_eye.customLabel>
+  <MM_Hydra.corePart.parts.SnakeHead-4.parts.left_eye.customLabel>œil gauche</MM_Hydra.corePart.parts.SnakeHead-4.parts.left_eye.customLabel>
+  <MM_Hydra.corePart.parts.SnakeHead-4.parts.right_eye.customLabel>œil droit</MM_Hydra.corePart.parts.SnakeHead-4.parts.right_eye.customLabel>
+  <MM_Hydra.corePart.parts.SnakeHead-5.parts.left_eye.customLabel>œil gauche</MM_Hydra.corePart.parts.SnakeHead-5.parts.left_eye.customLabel>
+  <MM_Hydra.corePart.parts.SnakeHead-5.parts.right_eye.customLabel>œil droit</MM_Hydra.corePart.parts.SnakeHead-5.parts.right_eye.customLabel>
+  <MM_Hydra.corePart.parts.front_left_leg.customLabel>patte avant gauche</MM_Hydra.corePart.parts.front_left_leg.customLabel>
+  <MM_Hydra.corePart.parts.front_left_leg.parts.front_left_hoof.customLabel>sabot avant gauche</MM_Hydra.corePart.parts.front_left_leg.parts.front_left_hoof.customLabel>
+  <MM_Hydra.corePart.parts.front_right_leg.customLabel>patte avant droite</MM_Hydra.corePart.parts.front_right_leg.customLabel>
+  <MM_Hydra.corePart.parts.front_right_leg.parts.front_right_hoof.customLabel>sabot avant droit</MM_Hydra.corePart.parts.front_right_leg.parts.front_right_hoof.customLabel>
+  <MM_Hydra.corePart.parts.rear_left_leg.customLabel>patte arrière gauche</MM_Hydra.corePart.parts.rear_left_leg.customLabel>
+  <MM_Hydra.corePart.parts.rear_left_leg.parts.rear_left_hoof.customLabel>sabot arrière gauche</MM_Hydra.corePart.parts.rear_left_leg.parts.rear_left_hoof.customLabel>
+  <MM_Hydra.corePart.parts.rear_right_leg.customLabel>patte arrière droite</MM_Hydra.corePart.parts.rear_right_leg.customLabel>
+  <MM_Hydra.corePart.parts.rear_right_leg.parts.rear_right_hoof.customLabel>sabot arrière droit</MM_Hydra.corePart.parts.rear_right_leg.parts.rear_right_hoof.customLabel>
+  <MM_ManticoreBody.label>manticore</MM_ManticoreBody.label>
+  <MM_ManticoreBody.corePart.parts.left_wing.customLabel>aile gauche</MM_ManticoreBody.corePart.parts.left_wing.customLabel>
+  <MM_ManticoreBody.corePart.parts.right_wing.customLabel>aile droite</MM_ManticoreBody.corePart.parts.right_wing.customLabel>
+  <MM_ManticoreBody.corePart.parts.left_lung.customLabel>poumon gauche</MM_ManticoreBody.corePart.parts.left_lung.customLabel>
+  <MM_ManticoreBody.corePart.parts.right_lung.customLabel>poumon droit</MM_ManticoreBody.corePart.parts.right_lung.customLabel>
+  <MM_ManticoreBody.corePart.parts.left_kidney.customLabel>rein gauche</MM_ManticoreBody.corePart.parts.left_kidney.customLabel>
+  <MM_ManticoreBody.corePart.parts.right_kidney.customLabel>rein droit</MM_ManticoreBody.corePart.parts.right_kidney.customLabel>
+  <MM_ManticoreBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>œil gauche</MM_ManticoreBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+  <MM_ManticoreBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>œil droit</MM_ManticoreBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+  <MM_ManticoreBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>oreille gauche</MM_ManticoreBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+  <MM_ManticoreBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>oreille droite</MM_ManticoreBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+  <MM_ManticoreBody.corePart.parts.front_left_leg.customLabel>patte avant gauche</MM_ManticoreBody.corePart.parts.front_left_leg.customLabel>
+  <MM_ManticoreBody.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>pied avant gauche</MM_ManticoreBody.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>
+  <MM_ManticoreBody.corePart.parts.front_right_leg.customLabel>patte avant droite</MM_ManticoreBody.corePart.parts.front_right_leg.customLabel>
+  <MM_ManticoreBody.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>pied avant droit</MM_ManticoreBody.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>
+  <MM_ManticoreBody.corePart.parts.rear_left_leg.customLabel>patte arrière gauche</MM_ManticoreBody.corePart.parts.rear_left_leg.customLabel>
+  <MM_ManticoreBody.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>pied arrière gauche</MM_ManticoreBody.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>
+  <MM_ManticoreBody.corePart.parts.rear_right_leg.customLabel>patte arrière droite</MM_ManticoreBody.corePart.parts.rear_right_leg.customLabel>
+  <MM_ManticoreBody.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>pied arrière droit</MM_ManticoreBody.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>
+  <MM_PegasusBody.label>animal quadrupède à sabots et à ailes</MM_PegasusBody.label>
+  <MM_PegasusBody.corePart.parts.left_wing.customLabel>aile gauche</MM_PegasusBody.corePart.parts.left_wing.customLabel>
+  <MM_PegasusBody.corePart.parts.right_wing.customLabel>aile droite</MM_PegasusBody.corePart.parts.right_wing.customLabel>
+  <MM_PegasusBody.corePart.parts.left_lung.customLabel>poumon gauche</MM_PegasusBody.corePart.parts.left_lung.customLabel>
+  <MM_PegasusBody.corePart.parts.right_lung.customLabel>poumon droit</MM_PegasusBody.corePart.parts.right_lung.customLabel>
+  <MM_PegasusBody.corePart.parts.left_kidney.customLabel>rein gauche</MM_PegasusBody.corePart.parts.left_kidney.customLabel>
+  <MM_PegasusBody.corePart.parts.right_kidney.customLabel>rein droit</MM_PegasusBody.corePart.parts.right_kidney.customLabel>
+  <MM_PegasusBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>œil gauche</MM_PegasusBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+  <MM_PegasusBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>œil droit</MM_PegasusBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+  <MM_PegasusBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>oreille gauche</MM_PegasusBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+  <MM_PegasusBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>oreille droite</MM_PegasusBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+  <MM_PegasusBody.corePart.parts.front_left_leg.customLabel>patte avant gauche</MM_PegasusBody.corePart.parts.front_left_leg.customLabel>
+  <MM_PegasusBody.corePart.parts.front_left_leg.parts.front_left_hoof.customLabel>sabot avant gauche</MM_PegasusBody.corePart.parts.front_left_leg.parts.front_left_hoof.customLabel>
+  <MM_PegasusBody.corePart.parts.front_right_leg.customLabel>patte avant droite</MM_PegasusBody.corePart.parts.front_right_leg.customLabel>
+  <MM_PegasusBody.corePart.parts.front_right_leg.parts.front_right_hoof.customLabel>sabot avant droit</MM_PegasusBody.corePart.parts.front_right_leg.parts.front_right_hoof.customLabel>
+  <MM_PegasusBody.corePart.parts.rear_left_leg.customLabel>patte arrière gauche</MM_PegasusBody.corePart.parts.rear_left_leg.customLabel>
+  <MM_PegasusBody.corePart.parts.rear_left_leg.parts.rear_left_hoof.customLabel>sabot arrière gauche</MM_PegasusBody.corePart.parts.rear_left_leg.parts.rear_left_hoof.customLabel>
+  <MM_PegasusBody.corePart.parts.rear_right_leg.customLabel>patte arrière droite</MM_PegasusBody.corePart.parts.rear_right_leg.customLabel>
+  <MM_PegasusBody.corePart.parts.rear_right_leg.parts.rear_right_hoof.customLabel>sabot arrière droit</MM_PegasusBody.corePart.parts.rear_right_leg.parts.rear_right_hoof.customLabel>
+  <MM_QilinBody.label>animal quadrupède à sabots et à bois</MM_QilinBody.label>
+  <MM_QilinBody.corePart.parts.left_lung.customLabel>poumon gauche</MM_QilinBody.corePart.parts.left_lung.customLabel>
+  <MM_QilinBody.corePart.parts.right_lung.customLabel>poumon droit</MM_QilinBody.corePart.parts.right_lung.customLabel>
+  <MM_QilinBody.corePart.parts.left_kidney.customLabel>rein gauche</MM_QilinBody.corePart.parts.left_kidney.customLabel>
+  <MM_QilinBody.corePart.parts.right_kidney.customLabel>rein droit</MM_QilinBody.corePart.parts.right_kidney.customLabel>
+  <MM_QilinBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>œil gauche</MM_QilinBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+  <MM_QilinBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>œil droit</MM_QilinBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+  <MM_QilinBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>oreille gauche</MM_QilinBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+  <MM_QilinBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>oreille droite</MM_QilinBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+  <MM_QilinBody.corePart.parts.front_left_leg.customLabel>patte avant gauche</MM_QilinBody.corePart.parts.front_left_leg.customLabel>
+  <MM_QilinBody.corePart.parts.front_left_leg.parts.front_left_hoof.customLabel>sabot avant gauche</MM_QilinBody.corePart.parts.front_left_leg.parts.front_left_hoof.customLabel>
+  <MM_QilinBody.corePart.parts.front_right_leg.customLabel>patte avant droite</MM_QilinBody.corePart.parts.front_right_leg.customLabel>
+  <MM_QilinBody.corePart.parts.front_right_leg.parts.front_right_hoof.customLabel>sabot avant droit</MM_QilinBody.corePart.parts.front_right_leg.parts.front_right_hoof.customLabel>
+  <MM_QilinBody.corePart.parts.rear_left_leg.customLabel>patte arrière gauche</MM_QilinBody.corePart.parts.rear_left_leg.customLabel>
+  <MM_QilinBody.corePart.parts.rear_left_leg.parts.rear_left_hoof.customLabel>sabot arrière gauche</MM_QilinBody.corePart.parts.rear_left_leg.parts.rear_left_hoof.customLabel>
+  <MM_QilinBody.corePart.parts.rear_right_leg.customLabel>patte arrière droite</MM_QilinBody.corePart.parts.rear_right_leg.customLabel>
+  <MM_QilinBody.corePart.parts.rear_right_leg.parts.rear_right_hoof.customLabel>sabot arrière droit</MM_QilinBody.corePart.parts.rear_right_leg.parts.rear_right_hoof.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.label>animal quadrupède à bec et à ailes</MM_QuadrupedAnimalWithBeakAndWings.label>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.left_lung.customLabel>poumon gauche</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.left_lung.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.right_lung.customLabel>poumon droit</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.right_lung.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.left_kidney.customLabel>rein gauche</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.left_kidney.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.right_kidney.customLabel>rein droit</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.right_kidney.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.right_wing.customLabel>aile droite</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.right_wing.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.left_wing.customLabel>aile gauche</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.left_wing.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>œil gauche</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>œil droit</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>oreille gauche</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>oreille droite</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_left_leg.customLabel>patte avant gauche</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_left_leg.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>pied avant gauche</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_right_leg.customLabel>patte avant droite</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_right_leg.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>pied avant droit</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_left_leg.customLabel>patte arrière gauche</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_left_leg.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>pied arrière gauche</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_right_leg.customLabel>patte arrière droite</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_right_leg.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>pied arrière droit</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>
+  <MM_Wisp.label>feu follet</MM_Wisp.label>
+  <MM_WyvernBody.label>vouivre</MM_WyvernBody.label>
+  <MM_WyvernBody.corePart.parts.left_wing.customLabel>aile gauche</MM_WyvernBody.corePart.parts.left_wing.customLabel>
+  <MM_WyvernBody.corePart.parts.right_wing.customLabel>aile droite</MM_WyvernBody.corePart.parts.right_wing.customLabel>
+  <MM_WyvernBody.corePart.parts.left_lung.customLabel>poumon gauche</MM_WyvernBody.corePart.parts.left_lung.customLabel>
+  <MM_WyvernBody.corePart.parts.right_lung.customLabel>poumon droit</MM_WyvernBody.corePart.parts.right_lung.customLabel>
+  <MM_WyvernBody.corePart.parts.left_kidney.customLabel>rein gauche</MM_WyvernBody.corePart.parts.left_kidney.customLabel>
+  <MM_WyvernBody.corePart.parts.right_kidney.customLabel>rein droit</MM_WyvernBody.corePart.parts.right_kidney.customLabel>
+  <MM_WyvernBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>œil gauche</MM_WyvernBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+  <MM_WyvernBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>œil droit</MM_WyvernBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+  <MM_WyvernBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>oreille gauche</MM_WyvernBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+  <MM_WyvernBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>oreille droite</MM_WyvernBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+  <MM_WyvernBody.corePart.parts.left_leg.customLabel>jambe gauche</MM_WyvernBody.corePart.parts.left_leg.customLabel>
+  <MM_WyvernBody.corePart.parts.left_leg.parts.left_claws.customLabel>griffes gauches</MM_WyvernBody.corePart.parts.left_leg.parts.left_claws.customLabel>
+  <MM_WyvernBody.corePart.parts.right_leg.customLabel>jambe droite</MM_WyvernBody.corePart.parts.right_leg.customLabel>
+  <MM_WyvernBody.corePart.parts.right_leg.parts.right_claws.customLabel>griffes droites</MM_WyvernBody.corePart.parts.right_leg.parts.right_claws.customLabel>
+  <MM_MinotaurBody.label>minotaure</MM_MinotaurBody.label>
+  <MM_MinotaurBody.corePart.parts.left_lung.customLabel>poumon gauche</MM_MinotaurBody.corePart.parts.left_lung.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_lung.customLabel>poumon droit</MM_MinotaurBody.corePart.parts.right_lung.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_kidney.customLabel>rein gauche</MM_MinotaurBody.corePart.parts.left_kidney.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_kidney.customLabel>rein droit</MM_MinotaurBody.corePart.parts.right_kidney.customLabel>
+  <MM_MinotaurBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>œil gauche</MM_MinotaurBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+  <MM_MinotaurBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>œil droit</MM_MinotaurBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+  <MM_MinotaurBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>oreille gauche</MM_MinotaurBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+  <MM_MinotaurBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>oreille droite</MM_MinotaurBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_shoulder.customLabel>épaule gauche</MM_MinotaurBody.corePart.parts.left_shoulder.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_clavicle.customLabel>clavicule gauche</MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_clavicle.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.customLabel>bras gauche</MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_humerus.customLabel>humérus gauche</MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_humerus.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_radius.customLabel>radius gauche</MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_radius.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>main gauche</MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_pinky.customLabel>auriculaire gauche</MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_pinky.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_ring_finger.customLabel>annulaire gauche</MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_ring_finger.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>majeur gauche</MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>index gauche</MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>pouce gauche</MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_shoulder.customLabel>épaule droite</MM_MinotaurBody.corePart.parts.right_shoulder.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_clavicle.customLabel>clavicule droite</MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_clavicle.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.customLabel>bras droit</MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_humerus.customLabel>humérus droit</MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_humerus.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_radius.customLabel>radius droit</MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_radius.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.customLabel>main droite</MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_pinky.customLabel>auriculaire droit</MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_pinky.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_ring_finger.customLabel>annulaire droit</MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_ring_finger.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>majeur droit</MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>index droit</MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>pouce droit</MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_leg.customLabel>jambe gauche</MM_MinotaurBody.corePart.parts.left_leg.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_leg.parts.left_femur.customLabel>fémur gauche</MM_MinotaurBody.corePart.parts.left_leg.parts.left_femur.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_leg.parts.left_tibia.customLabel>tibia gauche</MM_MinotaurBody.corePart.parts.left_leg.parts.left_tibia.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.customLabel>pied gauche</MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.parts.left_little_toe.customLabel>petit orteil gauche</MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.parts.left_little_toe.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.parts.left_fourth_toe.customLabel>quatrième orteil gauche</MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.parts.left_fourth_toe.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.parts.left_middle_toe.customLabel>orteil central gauche</MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.parts.left_middle_toe.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.parts.left_second_toe.customLabel>deuxième orteil gauche</MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.parts.left_second_toe.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.parts.left_big_toe.customLabel>gros orteil gauche</MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.parts.left_big_toe.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_leg.customLabel>jambe droite</MM_MinotaurBody.corePart.parts.right_leg.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_leg.parts.right_femur.customLabel>fémur droit</MM_MinotaurBody.corePart.parts.right_leg.parts.right_femur.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_leg.parts.right_tibia.customLabel>tibia droit</MM_MinotaurBody.corePart.parts.right_leg.parts.right_tibia.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.customLabel>pied droit</MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.parts.right_little_toe.customLabel>petit orteil droit</MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.parts.right_little_toe.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.parts.right_fourth_toe.customLabel>quatrième orteil droit</MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.parts.right_fourth_toe.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.parts.right_middle_toe.customLabel>orteil central droit</MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.parts.right_middle_toe.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.parts.right_second_toe.customLabel>deuxième orteil droit</MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.parts.right_second_toe.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.parts.right_big_toe.customLabel>gros orteil droit</MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.parts.right_big_toe.customLabel>
+  <MM_HornedMechanoid.label>mécataure</MM_HornedMechanoid.label>
+  <MM_HornedMechanoid.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>capteur visuel gauche</MM_HornedMechanoid.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>
+  <MM_HornedMechanoid.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>capteur visuel droit</MM_HornedMechanoid.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>
+  <MM_HornedMechanoid.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>capteur auditif gauche</MM_HornedMechanoid.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>
+  <MM_HornedMechanoid.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>capteur auditif droit</MM_HornedMechanoid.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>
+  <MM_HornedMechanoid.corePart.parts.left_shoulder.customLabel>épaule gauche</MM_HornedMechanoid.corePart.parts.left_shoulder.customLabel>
+  <MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.customLabel>bras gauche</MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.customLabel>
+  <MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>main gauche</MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>
+  <MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_pinky.customLabel>auriculaire gauche</MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_pinky.customLabel>
+  <MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>majeur gauche</MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>
+  <MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>index gauche</MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>
+  <MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>pouce gauche</MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>
+  <MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.customLabel>épaule mécanique droite</MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.customLabel>
+  <MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel>bras droit</MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel>
+  <MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.customLabel>main droite</MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.customLabel>
+  <MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_pinky.customLabel>auriculaire droit</MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_pinky.customLabel>
+  <MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>majeur droit</MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>
+  <MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>index droit</MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>
+  <MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>pouce droit</MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>
+  <MM_HornedMechanoid.corePart.parts.left_leg.customLabel>jambe gauche</MM_HornedMechanoid.corePart.parts.left_leg.customLabel>
+  <MM_HornedMechanoid.corePart.parts.left_leg.parts.left_foot.customLabel>pied gauche</MM_HornedMechanoid.corePart.parts.left_leg.parts.left_foot.customLabel>
+  <MM_HornedMechanoid.corePart.parts.right_leg.customLabel>jambe droite</MM_HornedMechanoid.corePart.parts.right_leg.customLabel>
+  <MM_HornedMechanoid.corePart.parts.right_leg.parts.right_foot.customLabel>pied droit</MM_HornedMechanoid.corePart.parts.right_leg.parts.right_foot.customLabel>
+</LanguageData>

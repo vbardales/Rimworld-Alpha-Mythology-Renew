@@ -78,7 +78,13 @@ fire resistance, notice parity, PNG signatures/preview size and assembly packagi
 Test-Validator verifies rejection of six deliberate regressions in a temporary
 copy: wrong package ID, missing race, dangling hatch target, wrong death worker,
 flammable phoenix egg, and mismatched licence notice. It never mutates the real mod.
-Both run in CI alongside compilation. The current baseline passes 302 assertions.
+Both run in CI alongside compilation. The current baseline passes 321 assertions.
 These are static integration/packaging checks, not execution of RimWorld or C#
 behaviour tests. They cannot prove DLL load compatibility, optional provider types,
 full texture coverage, patch application, save migration or gameplay correctness.
+
+The translation gate and bilingual acceptance cases are documented in
+[Tests/TRANSLATIONS.md](Tests/TRANSLATIONS.md). Run
+`python Tests/Check-Translations.py --self-test` after text, Def, patch, UI or
+language-resource edits. This check also runs in CI. Reset affected translation
+fields in STATUS.md to `unchecked` until the audit and resource checks pass again.

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MM_ToxicBite.description>Des toxines circulent dans le sang. Elles peuvent provenir de diverses sources : pollution, morsures venimeuses ou armes empoisonnées.\nÀ forte dose, l'intoxication est mortelle. Même à faible dose, elle peut provoquer des cancers.\nContrairement à l'intoxication du jeu de base, ces dégâts toxiques ne rendent pas impropres à la consommation les créatures qui en meurent.</MM_ToxicBite.description>
+  <MM_ToxicBite.label>intoxication</MM_ToxicBite.label>
+  <MM_ToxicBite.stages.initial-0.label>initiale</MM_ToxicBite.stages.initial-0.label>
+  <MM_ToxicBite.stages.initial-1.label>initiale</MM_ToxicBite.stages.initial-1.label>
+  <MM_ToxicBite.stages.minor.label>mineure</MM_ToxicBite.stages.minor.label>
+  <MM_ToxicBite.stages.moderate.label>modérée</MM_ToxicBite.stages.moderate.label>
+  <MM_ToxicBite.stages.serious.label>grave</MM_ToxicBite.stages.serious.label>
+  <MM_ToxicBite.stages.extreme.label>extrême</MM_ToxicBite.stages.extreme.label>
+  <MM_Grabbed.description>Cette créature est agrippée et ne peut pas se déplacer normalement.</MM_Grabbed.description>
+  <MM_Grabbed.label>agrippement</MM_Grabbed.label>
+  <MM_Grabbed.stages.initial.label>initiale</MM_Grabbed.stages.initial.label>
+  <MM_Grabbed.stages.partially_immobilized.label>immobilisation partielle</MM_Grabbed.stages.partially_immobilized.label>
+  <MM_Grabbed.stages.grabbed.label>agrippement</MM_Grabbed.stages.grabbed.label>
+  <MM_Grabbed.stages.grabbed_tight.label>étreinte serrée</MM_Grabbed.stages.grabbed_tight.label>
+  <MM_BleedingWound.description>Une plaie qui continue de saigner pendant un bon moment après l'attaque initiale.</MM_BleedingWound.description>
+  <MM_BleedingWound.label>plaies hémorragiques</MM_BleedingWound.label>
+  <MM_BleedingWound.stages.bleeding_wounds_minor.label>plaies hémorragiques mineures</MM_BleedingWound.stages.bleeding_wounds_minor.label>
+  <MM_BleedingWound.stages.bleeding_wounds_moderate.label>plaies hémorragiques modérées</MM_BleedingWound.stages.bleeding_wounds_moderate.label>
+  <MM_BleedingWound.stages.bleeding_wounds_serious.label>plaies hémorragiques graves</MM_BleedingWound.stages.bleeding_wounds_serious.label>
+  <MM_OpenWound.label>plaie ouverte</MM_OpenWound.label>
+  <MM_OpenWound.description>Une plaie ouverte.</MM_OpenWound.description>
+  <MM_OpenWound.labelNoun>une plaie ouverte</MM_OpenWound.labelNoun>
+  <MM_OpenWound.comps.HediffComp_TendDuration.labelTendedWell>bandée</MM_OpenWound.comps.HediffComp_TendDuration.labelTendedWell>
+  <MM_OpenWound.comps.HediffComp_TendDuration.labelTendedWellInner>suturée</MM_OpenWound.comps.HediffComp_TendDuration.labelTendedWellInner>
+  <MM_OpenWound.comps.HediffComp_TendDuration.labelSolidTendedWell>remise en place</MM_OpenWound.comps.HediffComp_TendDuration.labelSolidTendedWell>
+  <MM_OpenWound.comps.HediffComp_GetsPermanent.permanentLabel>cicatrice de perforation</MM_OpenWound.comps.HediffComp_GetsPermanent.permanentLabel>
+  <MM_OpenWound.injuryProps.destroyedLabel>Sectionnement</MM_OpenWound.injuryProps.destroyedLabel>
+  <MM_OpenWound.injuryProps.destroyedOutLabel>Excision</MM_OpenWound.injuryProps.destroyedOutLabel>
+  <MM_Petrification.description>La peau de la victime durcit et se transforme en pierre friable. Cet état est réversible et se dissipe naturellement au bout de quelques heures, mais il tue la victime si sa gravité atteint 1.</MM_Petrification.description>
+  <MM_Petrification.label>pétrification</MM_Petrification.label>
+  <MM_Petrification.stages.initial.label>initiale</MM_Petrification.stages.initial.label>
+  <MM_Petrification.stages.stiff_joints.label>articulations raides</MM_Petrification.stages.stiff_joints.label>
+  <MM_Petrification.stages.rocky_skin.label>peau de pierre</MM_Petrification.stages.rocky_skin.label>
+  <MM_Petrification.stages.brittle_bones.label>os friables</MM_Petrification.stages.brittle_bones.label>
+  <MM_Petrification.stages.turned_to_stone.label>transformation en pierre</MM_Petrification.stages.turned_to_stone.label>
+  <MM_FenghuangHediff.label>paix et sérénité</MM_FenghuangHediff.label>
+  <MM_FenghuangHediff.description>Un fenghuang apaise cette personne par des vagues d'énergie positive. Ses capacités de manipulation et de déplacement augmentent pendant 12 heures.</MM_FenghuangHediff.description>
+  <MM_NoPain.description>Cette créature est moins sensible à la douleur et met plus longtemps à être mise à terre par celle-ci.</MM_NoPain.description>
+  <MM_NoPain.label>insensibilité à la douleur</MM_NoPain.label>
+</LanguageData>

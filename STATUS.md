@@ -117,6 +117,12 @@ Local raw audit files are kept under ignored .build/workshop-audit/.
 
 ## Validation
 
+Readiness recheck on 2026-09-12: the C# source and shipped DLL are present and
+tracked. All three custom classes are referenced by the intended XML definitions;
+the phoenix egg and bleeding damage defs used by the code exist. XML checks and
+Release compilation were rerun successfully and the shipped DLL rebuilt.
+Functional status remains preTest: no gameplay execution has been validated.
+
 - Local Check-Mod.ps1: PASS, 63 XML files, 25 creatures, unique defs, race references,
   XPath syntax, isolated namespace and publication notices.
 - Release compilation: PASS, .NET SDK 8.0.424, zero warnings and zero errors.

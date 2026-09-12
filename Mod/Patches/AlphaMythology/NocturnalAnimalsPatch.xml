@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- The ieltxu is nocturnal when [XND] Nocturnal Animals is loaded. The original mod laid
+       this extension down unguarded: with the class not found in that mod's absence, the
+       ieltxu's whole def failed.
+
+       PatchOperationFindMod compares against the mod's <name>, not its packageId: Mlie's
+       continuation is called "(Continued)", hence the two entries. -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[XND] Nocturnal Animals</li>
+      <li>[XND] Nocturnal Animals (Continued)</li>
+    </mods>
+    <match Class="PatchOperationAddModExtension">
+      <xpath>Defs/ThingDef[defName="MM_Ieltxu"]</xpath>
+      <value>
+        <li Class="NocturnalAnimals.ExtendedRaceProperties">
+          <bodyClock>Nocturnal</bodyClock>
+        </li>
+      </value>
+    </match>
+  </Operation>
+
+</Patch>

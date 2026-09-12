@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <!-- The fenghuang's thought lasts only as long as the hediff is there, which takes a comp
+       and a thought class of their own. The original mod laid them down unguarded: the class
+       not being found took the whole hediff def with it.
+
+       Without VCE, the hediff keeps its stat effects and the thought stays an ordinary
+       twelve-hour memory. With it, the thought lasts exactly as long as the hediff.
+
+       1.6: both classes left VanillaCookingExpanded for VEF.Cooking. VCE 1.6 no longer
+       declares them at all, so the patch pointed at nothing as soon as VCE was active. The
+       guard on VCE is kept as it stands: the classes now come from VEF, which is always
+       there, but lifting it would make the hediff-linked thought apply without VCE too,
+       which is a change of behaviour rather than a fix. -->
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Cooking Expanded</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/HediffDef[defName="MM_FenghuangHediff"]</xpath>
+          <value>
+            <comps>
+              <li Class="VEF.Cooking.HediffCompProperties_WhileHavingThoughts">
+                <thoughtDefs>
+                  <li>MM_FenghuangThought</li>
+                </thoughtDefs>
+              </li>
+            </comps>
+          </value>
+        </li>
+
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThoughtDef[defName="MM_FenghuangThought"]</xpath>
+          <value>
+            <thoughtClass>VEF.Cooking.Thought_Hediff</thoughtClass>
+            <hediff>MM_FenghuangHediff</hediff>
+          </value>
+        </li>
+
+      </operations>
+    </match>
+  </Operation>
+
+</Patch>

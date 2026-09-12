@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- Rewritten on 2026-09-11, because this file had stopped doing anything.
+
+	     It guarded on "Giddy-up! Core" and "Giddy-up! Battle Mounts", roolo's mods of the 1.0 to 1.3
+	     era, and set extensions of the GiddyUpCore.* classes. Neither mod runs on 1.6 and neither
+	     name is claimed by anything that does, so the guard never matched; had it matched, every
+	     Class= inside would have named a type that no longer exists.
+
+	     The living successor is Giddy-Up 2 - Continued (MemeGoddess.GiddyUp, 1.4 to 1.6, after
+	     Roolo, Owlchemist and dav9670). Its assembly is still called GiddyUpCore.dll, which is what
+	     makes the break easy to miss, but its types moved to the GiddyUp namespace and were renamed:
+
+	         GiddyUpCore.DrawingOffsetPatch       -> GiddyUp.DrawingOffset
+	         GiddyUpCore.CustomStatsPatch         -> GiddyUp.CustomStats
+	         GiddyUpCore.FactionRestrictionsPatch -> GiddyUp.FactionRestrictions
+	         GiddyUpCore.CompProperties_Overlay   -> GiddyUp.CompProperties_Overlay
+
+	     Field shapes changed with them, and all four extensions are still read by live code:
+	     the offsets were comma-separated strings and are Vector3 now, so "0,0,-0.5" became
+	     (0, 0, -0.5); the overlay offsets were written with four components and the field is a
+	     Vector3, so the fourth was dropped - it was zero in every one of the fourteen overlay offsets of this pack.
+	     allowedWildAnimalsCSV became allowedWildAnimals, a list of PawnKindDef.
+
+	     The guard is a PatchOperationConditional on one of Giddy-Up's own defs rather than a
+	     PatchOperationFindMod on its display name. A name is what drifted here in the first place,
+	     and it drifted again in A Dog Said: forks rename themselves, their defs survive.
+
+	     Not seen in the game. Giddy-Up 2 - Continued is installed but not in the active modlist. -->
+<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/PawnColumnDef[defName="MountableByColonists"]</xpath>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+	
+
+
+
+
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>/Defs/ThingDef[defName = "MM_Griffin"]</xpath> 
+				<value>
+					<li Class="GiddyUp.CustomStats">
+						<!--Speed factor.  -->
+						<speedModifier>1.25</speedModifier>
+						<!--Armor factor.  -->
+						<armorModifier>1.25</armorModifier>
+						<!--Setting useMetalArmor to true, makes the animal's skin have the metal bounce of effect when hit when used as mount --> 
+						<useMetalArmor>false</useMetalArmor>
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MM_Griffin"]/comps</xpath> 
+				<value>
+					<li Class="GiddyUp.CompProperties_Overlay">
+						<overlaySide> 
+							<graphicDataDefault>
+								<texPath>Things/Pawn/Animal/MM_Griffin/MM_Saddle_Griffin_east</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<drawSize>3.5</drawSize>
+								<drawRotated>false</drawRotated>
+
+							</graphicDataDefault>					
+							<offsetDefault>(0, 0, 0)</offsetDefault>
+						</overlaySide>
+						<overlayFront> 
+							<graphicDataDefault>
+								<texPath>Things/Pawn/Animal/MM_Griffin/MM_Saddle_Griffin_south</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<drawSize>3.5</drawSize>
+								<drawRotated>false</drawRotated>
+
+							</graphicDataDefault>					
+							<offsetDefault>(0, 0, 0)</offsetDefault>
+						</overlayFront>
+						<overlayBack> 
+							<graphicDataDefault>
+								<texPath>Things/Pawn/Animal/MM_Griffin/MM_Saddle_Griffin_north</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<drawSize>3.5</drawSize>
+								<drawRotated>false</drawRotated>
+
+							</graphicDataDefault>					
+							<offsetDefault>(0, 0, 0)</offsetDefault>
+						</overlayBack>
+
+					</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAddModExtension">
+				<xpath>/Defs/ThingDef[defName = "MM_Pegasus"]</xpath> 
+				<value>
+					<li Class="GiddyUp.CustomStats">
+						<!--Speed factor.  -->
+						<speedModifier>1.5</speedModifier>
+						<!--Armor factor.  -->
+						<armorModifier>1</armorModifier>
+						<!--Setting useMetalArmor to true, makes the animal's skin have the metal bounce of effect when hit when used as mount --> 
+						<useMetalArmor>false</useMetalArmor>
+					</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAddModExtension">
+				<xpath>/Defs/ThingDef[defName = "MM_Pegasus"]</xpath> 
+				<value>
+					<li Class="GiddyUp.DrawingOffset">
+						<eastOffset>(0, 0, -0.8)</eastOffset>
+						<westOffset>(0, 0, -0.8)</westOffset>
+						<northOffset>(0, 0, -0.8)</northOffset>
+						<southOffset>(0, 0, -0.8)</southOffset>
+					</li>				
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MM_Pegasus"]</xpath> 
+				<value>
+				<comps>
+					<li Class="GiddyUp.CompProperties_Overlay">
+						<overlaySide> 
+							<graphicDataDefault>
+								<texPath>Things/Pawn/Animal/MM_Pegasus/MM_Pegasus_Saddle_east</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<drawSize>2.5</drawSize>
+								<drawRotated>false</drawRotated>
+
+							</graphicDataDefault>					
+							<offsetDefault>(0, 0, 0)</offsetDefault>
+						</overlaySide>
+						<overlayFront> 
+							<graphicDataDefault>
+								<texPath>Things/Pawn/Animal/MM_Pegasus/MM_Pegasus_Saddle_south</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<drawSize>2.5</drawSize>
+								<drawRotated>false</drawRotated>
+
+							</graphicDataDefault>					
+							<offsetDefault>(0, 0, 0)</offsetDefault>
+						</overlayFront>
+						<overlayBack> 
+							<graphicDataDefault>
+								<texPath>Things/Pawn/Animal/MM_Pegasus/MM_Pegasus_Saddle_north</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<drawSize>2.5</drawSize>
+								<drawRotated>false</drawRotated>
+
+							</graphicDataDefault>					
+							<offsetDefault>(0, 0, 0)</offsetDefault>
+						</overlayBack>
+
+					</li>
+					</comps>
+				</value>
+			</li>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>/Defs/ThingDef[defName = "MM_Unicorn"]</xpath> 
+				<value>
+					<li Class="GiddyUp.CustomStats">
+						<!--Speed factor.  -->
+						<speedModifier>1.5</speedModifier>
+						<!--Armor factor.  -->
+						<armorModifier>1</armorModifier>
+						<!--Setting useMetalArmor to true, makes the animal's skin have the metal bounce of effect when hit when used as mount --> 
+						<useMetalArmor>false</useMetalArmor>
+					</li>
+				</value>
+			</li>
+			
+			
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MM_Unicorn"]</xpath> 
+				<value>
+				<comps>
+					<li Class="GiddyUp.CompProperties_Overlay">
+						<overlaySide> 
+							<graphicDataDefault>
+								<texPath>Things/Pawn/Animal/MM_Unicorn/MM_Saddle_Unicorn_east</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<drawSize>2.8</drawSize>
+								<drawRotated>false</drawRotated>
+
+							</graphicDataDefault>					
+							<offsetDefault>(0, 0, 0)</offsetDefault>
+						</overlaySide>
+						<overlayFront> 
+							<graphicDataDefault>
+								<texPath>Things/Pawn/Animal/MM_Unicorn/MM_Saddle_Unicorn_south</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<drawSize>2.8</drawSize>
+								<drawRotated>false</drawRotated>
+
+							</graphicDataDefault>					
+							<offsetDefault>(0, 0, 0)</offsetDefault>
+						</overlayFront>
+						<overlayBack> 
+							<graphicDataDefault>
+								<texPath>Things/Pawn/Animal/MM_Unicorn/MM_Saddle_Unicorn_north</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<drawSize>2.8</drawSize>
+								<drawRotated>false</drawRotated>
+
+							</graphicDataDefault>					
+							<offsetDefault>(0, 0, 0)</offsetDefault>
+						</overlayBack>
+
+					</li>
+					</comps>
+				</value>
+			</li>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>/Defs/ThingDef[defName = "MM_Manticore"]</xpath> 
+				<value>
+					<li Class="GiddyUp.DrawingOffset">
+						<eastOffset>(0.292, 0, -1.136)</eastOffset>
+						<westOffset>(-0.292, 0, -1.136)</westOffset>
+						<northOffset>(0, 0, -1.136)</northOffset>
+						<southOffset>(0, 0, -1.136)</southOffset>
+					</li>				
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName = "MM_Manticore"]</xpath> 
+				<value>
+				<comps>
+					<li Class="GiddyUp.CompProperties_Overlay">
+						<overlaySide> 
+							<graphicDataDefault>
+								<texPath>Things/Pawn/Animal/MM_Manticore/MM_saddle_Manticore_east</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<drawSize>3</drawSize>
+								<drawRotated>false</drawRotated>
+
+							</graphicDataDefault>					
+							<offsetDefault>(0, 0, 0)</offsetDefault>
+						</overlaySide>
+						
+
+					</li>
+					</comps>
+				</value>
+			</li>
+
+		</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

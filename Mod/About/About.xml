@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Alpha Mythology Renew (unofficial)</name>
+  <author>Sarg Bjornson; RimWorld 1.6 port by nelim</author>
+  <packageId>nelim.alphamythologyrenew</packageId>
+  <supportedVersions><li>1.6</li></supportedVersions>
+  <modDependencies>
+    <li><packageId>brrainz.harmony</packageId><displayName>Harmony</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl></li>
+    <li><packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId><displayName>Vanilla Expanded Framework</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/2023507013</steamWorkshopUrl></li>
+  </modDependencies>
+  <loadAfter><li>brrainz.harmony</li><li>OskarPotocki.VanillaFactionsExpanded.Core</li></loadAfter>
+  <incompatibleWith><li>sarg.magicalmenagerie</li></incompatibleWith>
+  <description>UNOFFICIAL. This mod is published without the original author's explicit consent. If the original author contacts me to request its removal, I undertake to take it down promptly.
+
+No licence granting republication of Alpha Mythology was found. This continuation is distributed without an explicit licence or agreement from the original author; this notice is not a claim of permission.
+
+25 mythological creatures from Sarg Bjornson's Alpha Mythology, ported to RimWorld 1.6 and extracted from the private Animal Ark pack. Includes their eggs, products, abilities and optional integration patches. The original mod's settings window is not included. Creature definitions retain their original names.
+
+The port updates obsolete XML fields and VEF type names and rebuilds the phoenix death effect, bleeding wound and shutdown recipe in an isolated assembly. Optional legacy integrations have not all been verified with their providers. In-game functional testing is pending.
+
+Original: https://steamcommunity.com/sharedfiles/filedetails/?id=1821617793
+Original source: https://github.com/juanosarg/AlphaMythology
+
+Credit: creatures, code and artwork by Sarg Bjornson; original preview by Oskar Potocki. Third-party sound credits are preserved in ATTRIBUTION.md. Port and extraction by nelim with assistance from OpenAI Codex.
+
+Do not load alongside the original Alpha Mythology or an older Animal Ark build still containing it. Do not remove this content from an ongoing save. Moving an existing save from Animal Ark is untested, especially saved custom hediff classes whose namespace changed.
+
+See the included ATTRIBUTION.md, README and TESTING documents for provenance and validation. No upstream ownership or endorsement is claimed.
+
+[url=https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew]Source code on GitHub[/url]</description>
+</ModMetaData>

@@ -1,0 +1,68 @@
+---
+mod: Alpha Mythology Renew (unofficial)
+packageId: nelim.alphamythologyrenew
+repo: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew
+visibility: private
+local_path: C:/Users/nelim/Documents/rimworld/AlphaMythologyRenew
+git_root: C:/Users/nelim/Documents/rimworld/AlphaMythologyRenew
+git_isolation: standalone; removed from parent index and ignored there
+remote: origin https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew.git
+maintainer: Codex task dedicated to AlphaMythologyRenew; maintain this STATUS.md as work progresses
+stage: preTest
+licence: silent
+licence_at: 2026-09-12; upstream master 53a5518008821188009bbf996b7120ad9593cb5f and Workshop description reviewed; no project redistribution grant found
+showcase: original preview and icon reused with credit
+remaining:
+  - unverified: manual gameplay and save migration
+  - unverified: optional legacy integrations with their providers
+  - publication: Workshop item not created; GitHub repository is private
+  - parent: removal is staged in parent index; parent ignore edit is uncommitted alongside unrelated user work
+updated: 2026-09-12
+---
+
+This task manages this standalone mod repository and keeps this status current.
+The folder has its own .git and origin. The parent monorepo no longer tracks its
+files in the index and ignores /AlphaMythologyRenew/. Existing parent history is
+preserved. Parent changes have not been committed together with unrelated work.
+The initial standalone snapshot includes the local working files, with provenance
+from parent commit 4d30c6822034b6822124449ca1f170188d7f3e53; no unrelated monorepo
+history is imported. Build intermediates remain inside the ignored local .build/.
+
+## Title and description
+
+Keep Alpha Mythology Renew (unofficial): Renew denotes the port and (unofficial)
+matches the current disclosure. No additional suffix is needed.
+Mod/About/About.xml links the original source and ends with a separate
+Source code on GitHub link to this port. The latter requires repository access
+while the repository is private.
+
+## Licence verification — 2026-09-12
+
+Sources: https://github.com/juanosarg/AlphaMythology/tree/53a5518008821188009bbf996b7120ad9593cb5f
+and https://steamcommunity.com/sharedfiles/filedetails/?id=1821617793 .
+The complete upstream default-branch tree (not truncated), About/About.xml,
+project and source text were checked. GitHub reports license: null. No project
+LICENSE/COPYING or redistribution grant was found. The only LICENSE is in the
+bundled Lib.Harmony.2.3.1.1 package and applies to that dependency, not this mod.
+The reviewed Workshop description contains credits but no project licence grant.
+Thus silent means no explicit project licence found in these reviewed sources;
+it is not a licence or permission, nor proof about private author agreements.
+LICENSE and Mod/LICENSE remain identical disclosure notices, not an MIT grant.
+Third-party sound attribution is preserved in ATTRIBUTION.md. Remake timing is
+not used to infer licensing or permission.
+
+## Validation
+
+- Local Check-Mod.ps1: PASS, 63 XML files, 25 creatures, unique defs, race references,
+  XPath syntax, isolated namespace and publication notices.
+- Release compilation: PASS, .NET SDK 8.0.424, zero warnings and zero errors.
+- Upstream snapshot: no automated test suite, test project or CI workflow found;
+  description mentions playtesting without a reproducible protocol. See TESTING.md.
+- Nine manual gameplay scenarios remain NOT RUN, including save migration.
+- Earlier local audit recorded 129 named defs and four parents resolving with VEF,
+  no unknown fields, and 65 type names examined. These checks were not rerun in
+  this repository-separation audit; ten optional legacy types still require providers.
+- CI workflow runs XML checks and compilation; remote execution is tracked separately.
+
+Three ported classes use AlphaMythologyRenew rather than Bastyon to avoid collisions.
+All 25 original PawnKindDef names are preserved. No Workshop upload is claimed.

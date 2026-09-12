@@ -37,6 +37,45 @@ Source code on GitHub link to this public port repository.
 Publication policy confirmed by the user: silent = public. GitHub visibility
 was changed to public and verified on 2026-09-12; licence classification stays silent.
 
+## TODO — définir et justifier le statut `silent`
+
+Checklist à reprendre à chaque nouvel audit. Une case cochée signifie que la
+vérification a été faite, pas qu'une autorisation a été obtenue. Si une source
+nécessaire n'a pas été examinée, indiquer cette limite et garder la conclusion
+provisoire. Ne jamais déduire `silent` du seul champ GitHub `license: null`.
+
+- [x] Identifier le mod original, son auteur, son dépôt et son item Workshop.
+- [x] Dater l'audit et enregistrer le commit exact du dépôt original examiné.
+- [x] Examiner l'arborescence complète : LICENSE/LICENCE, COPYING, README,
+  About.xml, mentions dans les sources et documents de redistribution.
+- [x] Distinguer les licences du mod de celles des dépendances et contenus tiers.
+- [x] Lire la description Workshop et ses mentions de droits ou de réutilisation.
+- [x] Récupérer toutes les pages de commentaires accessibles, vérifier le total
+  et les doublons : 602/602 commentaires uniques lors de cet audit.
+- [x] Rechercher les déclarations sur les permissions, portages, republications,
+  réutilisations, refus et retraits ; identifier l'auteur et lire le contexte.
+- [x] Examiner les discussions du mod : fil Bug Reports, 30/30 réponses.
+- [x] Consigner les déclarations pertinentes avec date, lien direct et portée :
+  la réponse du 21 août 2022 concerne une retexture, pas explicitement ce port complet.
+- [x] Distinguer une licence, une permission limitée, un refus explicite et
+  l'absence de déclaration trouvée. Un projet de refonte ou le refus de répondre
+  aux demandes de mise à jour ne suffit pas à établir un refus de redistribution.
+- [x] Consigner les limites : commentaires supprimés/privés et accords privés
+  inconnus ; l'audit du dépôt porte sur le snapshot indiqué, pas tout son historique.
+- [x] Reporter les preuves et la conclusion dans STATUS.md ; garder LICENSE et
+  Mod/LICENSE comme notices tant qu'aucune licence applicable n'est identifiée.
+- [x] Appliquer la règle de visibilité de l'utilisateur : **`silent` = public**.
+  Conserver la mention `(unofficial)` et le lien vers le dépôt du port.
+- [ ] Lors du prochain audit ou avant publication Workshop, actualiser les sources
+  et les commentaires ; examiner toute politique générale de l'auteur ou autre
+  déclaration applicable nouvellement signalée, puis réévaluer la classification.
+
+Critère de décision : retenir `silent` lorsque les sources examinées ne donnent
+ni licence/autorisation explicite applicable à la redistribution du port complet,
+ni interdiction explicite applicable. Ce constat reste limité aux sources et à la
+date documentées. Une permission ambiguë ou limitée doit être signalée, jamais
+transformée en autorisation générale. Une nouvelle preuve peut changer le statut.
+
 ## Licence verification — 2026-09-12
 
 Sources: https://github.com/juanosarg/AlphaMythology/tree/53a5518008821188009bbf996b7120ad9593cb5f

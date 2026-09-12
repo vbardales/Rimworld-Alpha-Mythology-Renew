@@ -52,6 +52,30 @@ LICENSE and Mod/LICENSE remain identical disclosure notices, not an MIT grant.
 Third-party sound attribution is preserved in ATTRIBUTION.md. Remake timing is
 not used to infer licensing or permission.
 
+### Workshop comments audit — 2026-09-12
+
+Retrieved all 602 currently exposed main-page comments in seven batches: 602
+unique comment IDs, including 163 comments attributed to Sarg Bjornson. Searched
+the corpus for redistribution, reuse and permission statements and reviewed author
+responses and relevant conversational context. Also reviewed the Bug Reports
+thread's 30 replies across both pages. Deleted/private comments are outside scope.
+
+One relevant statement was found: on 21 August 2022, Sarg responded to a request
+to make a retexture with permission conditional on the game's EULA and a refusal
+to endorse it. This is not silence about all derivative work; its context is a
+retexture, not an explicit licence for republishing the complete mod as this port.
+Response: https://steamcommunity.com/sharedfiles/filedetails/?id=1821617793#c3428948355375415583
+Question: https://steamcommunity.com/sharedfiles/filedetails/?id=1821617793#c3428948355374816701
+No explicit full-mod redistribution grant or prohibition was found in the reviewed
+comments. Classification stays silent for this port, with this qualification;
+visibility remains public under the user's rule.
+
+The author's July 2026 statement concerns a future remake and removal of comments
+asking for 1.6 updates; it is not classified as a redistribution prohibition.
+Bug Reports supplies historical reproduction cases, not an automated test suite:
+https://steamcommunity.com/workshop/filedetails/discussion/1821617793/3130541756142153070/
+Local raw audit files are kept under ignored .build/workshop-audit/.
+
 ## Validation
 
 - Local Check-Mod.ps1: PASS, 63 XML files, 25 creatures, unique defs, race references,

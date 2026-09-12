@@ -42,3 +42,19 @@ This is scoped to the reviewed default-branch snapshot, not every historical bra
 Local verification on 2026-09-12: Check-Mod.ps1 PASS (63 XML files, 25 creatures);
 Release build PASS with zero warnings/errors using .NET SDK 8.0.424.
 Manual gameplay and optional provider integration tests remain pending.
+
+Workshop follow-up (2026-09-12): the Bug Reports thread contains historical manual
+reproduction cases, despite the absence of an upstream automated suite. Add these
+to manual regression testing; none has been executed in this audit:
+
+- Cut basilisk-created dead grass/bushes in a minimal colony; confirm removal
+  without a work loop or missing harvesting SoundDef errors.
+- Toggle a tamed chimera's automatic ranged attack and check that the setting is
+  respected, first alone and then with other ranged-animal mods.
+- With Tree Chopping Speed Stat present, have a tamed Kappa harvest mature crops;
+  check for the historical PawnWillingToCutPlant/ThinkNode null-reference error.
+- Verify Tlilcoatl breath against organic pawns, mechanoids and shields according
+  to the current damage definition; a historical report claims physical damage.
+
+Source: https://steamcommunity.com/workshop/filedetails/discussion/1821617793/3130541756142153070/
+These are reports to investigate, not confirmed defects in this port.

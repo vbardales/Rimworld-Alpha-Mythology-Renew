@@ -16,4 +16,4 @@ Build: `dotnet build Source/AlphaMythologyRenew.csproj -c Release`.
 Validation and manual acceptance cases are in TESTING.md. No in-game test is claimed.
 Upstream: https://github.com/juanosarg/AlphaMythology
 
-Port repository (private): https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew
+Port repository: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew

@@ -2,7 +2,7 @@
 mod: Alpha Mythology Renew (unofficial)
 packageId: nelim.alphamythologyrenew
 repo: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew
-visibility: private
+visibility: public
 local_path: C:/Users/nelim/Documents/rimworld/AlphaMythologyRenew
 git_root: C:/Users/nelim/Documents/rimworld/AlphaMythologyRenew
 git_isolation: standalone; removed from parent index and ignored there
@@ -15,7 +15,7 @@ showcase: original preview and icon reused with credit
 remaining:
   - unverified: manual gameplay and save migration
   - unverified: optional legacy integrations with their providers
-  - publication: Workshop item not created; GitHub repository is private
+  - publication: Workshop item not created
   - parent: removal is staged in parent index; parent ignore edit is uncommitted alongside unrelated user work
 updated: 2026-09-12
 ---
@@ -33,8 +33,9 @@ history is imported. Build intermediates remain inside the ignored local .build/
 Keep Alpha Mythology Renew (unofficial): Renew denotes the port and (unofficial)
 matches the current disclosure. No additional suffix is needed.
 Mod/About/About.xml links the original source and ends with a separate
-Source code on GitHub link to this port. The latter requires repository access
-while the repository is private.
+Source code on GitHub link to this public port repository.
+Publication policy confirmed by the user: silent = public. GitHub visibility
+was changed to public and verified on 2026-09-12; licence classification stays silent.
 
 ## Licence verification — 2026-09-12
 

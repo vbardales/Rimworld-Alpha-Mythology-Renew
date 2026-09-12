@@ -182,3 +182,21 @@ These results do not establish runtime gameplay correctness; stage stays preTest
 
 The Preview section above records the earlier artwork session; its statement
 about an absent/deleted icon is superseded by the current file check here.
+
+## Preview overlay recomposition — 2026-09-12
+
+Current source: `Art/Preview.png`, copied unchanged from the existing text-free `Art/Preview-source.png`, which remains preserved. No replacement illustration was generated and no old source was overwritten. Final overlay: `Mod/About/Preview.png`. Existing title and summary retained; the actual unofficial status appears as `(unofficial)` on its dedicated line. Version 1.6 is read from the delivered About.xml supportedVersions.
+
+Palette reference: `Art/preview-palette.json` only. The veil follows the extensive slate paving. The secondary ink is a light, still chromatic blue from that dominant stone family, rather than a pixel average. The vivid accent follows the warm orange-gold illumination on the griffin, strengthened in saturation for the rule and badge. Title and summary share the same primary ink. Palette values are not duplicated here.
+
+Composition and parameters: `Art/render-preview.cjs`, generating `Art/Preview-layout.html` from the palette JSON at 896 x 504. Actual Chrome platform fonts verified after document.fonts.ready: Segoe UI Semibold (title), Segoe UI regular (tag and summary), Segoe UI Bold (badge); no fallback. Layout uses the prescribed offsets, metrics, shadow and triangle coordinates.
+
+Verification: `Art/verify-preview.py`; detailed results and actual font records in `Art/Preview-qa.json`; text-free rendered background in `Art/Preview-background-qa.png`; thumbnail in `Art/Preview-thumbnail-qa.png`. Minimum contrast across entire text bounding rectangles against the real rendered background: title 6.110:1, tag 4.682:1, summary 5.412:1; badge digits against its opaque accent 8.863:1. Visually checked at 896 x 504 and 268 pixels wide: title and version identifiable, rule visible, no clipping or overlap. Final PNG: 565367 bytes, below 900 KB. Nothing published. This recomposition supersedes the earlier overlay measurements above.
+
+## Preview title hierarchy update — 2026-09-12
+
+Applied the revised STYLE_RIMWORLD.md title hierarchy in `Art/render-preview.cjs` and regenerated `Art/Preview-layout.html` and `Mod/About/Preview.png`. Alpha Mythology retains the 46 px primary ink; Renew is a direct title span at 0.65em (29.9 px), weight 600, using the secondary ink. Existing name, summary and separate unofficial tag preserved. `Art/Preview.png` remains the unchanged text-free illustration; `Art/Preview-source.png` is preserved, with no illustration replacement.
+
+The single palette reference remains `Art/preview-palette.json`: blue slate paving supplies the veil and the light blue secondary family; the orange-gold illuminated griffin supplies the saturated accent. Warm orange contrasts distinctly with the dominant cool blue rather than repeating it. No palette change was necessary.
+
+Verified actual platform fonts after document.fonts.ready: Segoe UI Semibold for both title spans, Segoe UI regular for tag and summary, Segoe UI Bold for badge; no fallback. `Art/verify-preview.py` now checks the reduced suffix separately. `Art/Preview-qa.json` records minimum real-background contrasts: main title 7.752:1, suffix 7.319:1, tag 4.682:1, summary 5.412:1, badge 8.863:1. Final image visually checked at 896 x 504 and in `Art/Preview-thumbnail-qa.png` at 268 px wide: reduced Renew remains readable, title and version identifiable, rule visible, no clipping or overlaps. Version 1.6 re-read from delivered About.xml. PNG size 564630 bytes. Nothing published. These results supersede previous overlay measurements.

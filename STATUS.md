@@ -62,7 +62,10 @@ not used to infer licensing or permission.
 - Earlier local audit recorded 129 named defs and four parents resolving with VEF,
   no unknown fields, and 65 type names examined. These checks were not rerun in
   this repository-separation audit; ten optional legacy types still require providers.
-- CI workflow runs XML checks and compilation; remote execution is tracked separately.
+- GitHub CI: PASS for initial code commit 37c56e1eab9ae8968e46d6cd43b75090c209f380,
+  XML checks and compilation on Ubuntu, run
+  https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew/actions/runs/34714005350 .
+- Initial snapshot pushed to origin/main and remote SHA verified against local HEAD.
 
 Three ported classes use AlphaMythologyRenew rather than Bastyon to avoid collisions.
 All 25 original PawnKindDef names are preserved. No Workshop upload is claimed.

@@ -86,5 +86,5 @@ Full changelog on GitHub
   its `About.xml` declares, and this pack does not republish live mods.
 
 
-These historical notes predate the user's decision to extract this unofficial continuation. Alpha has now left Animal Ark. Port and extraction: nelim, assisted by OpenAI Codex.
+These historical notes predate the user's decision to extract this unofficial continuation. Alpha has now left Animal Ark. Adapted and extracted by Nelim, assisted by OpenAI Codex.
 

@@ -21,7 +21,7 @@ The port updates obsolete XML fields and VEF type names and rebuilds the phoenix
 Original: https://steamcommunity.com/sharedfiles/filedetails/?id=1821617793
 Original source: https://github.com/juanosarg/AlphaMythology
 
-Credit: creatures, code and artwork by Sarg Bjornson; original preview by Oskar Potocki (replaced in this port by an OpenAI-generated illustration). Third-party sound credits are preserved in ATTRIBUTION.md. Port and extraction by nelim with assistance from OpenAI Codex.
+Credit: creatures, code and artwork by Sarg Bjornson; original preview by Oskar Potocki (replaced in this port by an OpenAI-generated illustration). Third-party sound credits are preserved in ATTRIBUTION.md. Port and extraction by Nelim with assistance from OpenAI Codex.
 
 Do not load alongside the original Alpha Mythology or an older Animal Ark build still containing it. Do not remove this content from an ongoing save. Moving an existing save from Animal Ark is untested, especially saved custom hediff classes whose namespace changed.
 

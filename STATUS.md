@@ -26,7 +26,7 @@ remaining:
   - unverified: English and French in-game translation acceptance, including optional integrations and wisp inspection/gizmos
   - unverified: manual gameplay and save migration
   - unverified: optional legacy integrations with their providers
-  - publication: 0.1.0 pre-published by the owner on 2026-09-26 (item private); About/PublishedFileId.txt is NOT yet in the repository: commit it as "Add published Workshop file ID for 0.1.0"; Workshop ID not yet recorded here
+  - publication: 0.1.0 pre-publication (creates the private item and its About/PublishedFileId.txt) NOT yet sent; no Workshop item exists
   - parent: removal is staged in parent index; parent ignore edit is uncommitted alongside unrelated user work
 updated: 2026-09-26
 ---
@@ -388,7 +388,7 @@ Result: **preOptions retained** (was preOptions). No transition earlier than `op
 - Not rerun this session: Check-Mod, Test-Validator, translation checks, build (no code changed since).
 
 Housekeeping done: `*.dds` and `Tests/Pickle/Evidence/`, `evidence/` added to `.gitignore` (no `.dds`
-and no evidence was tracked or present on disk); CHANGELOG now opens with `## [0.1.0]`
+and no evidence was tracked or present on disk); CHANGELOG now opens with a planned (not yet sent) `## [0.1.0]`
 (creation of a publishIdFile) under `## [unreleased]`; TESTING.md states which evidence to keep and the
 new `tested` conditions (no `@wip`, every `@requires` pass run, no manual test left).
 No Pickle suite exists yet (`Tests/Pickle/` absent): `tested` remains far off; no run was requested.

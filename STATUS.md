@@ -689,3 +689,5 @@ The run played the tree of its turn; 11 reds, read one by one:
   male (spawned female, `ActiveAndFull` required first); the wisp and Stymphalian bird need more than 300 ticks (warm-up 3.5 s,
   slow projectile): 600.
 - Not yet re-run: they wait for the next request (four already queued play the current tree).
+
+- Checked the other 24 textures removed in 7fd51c9 against convention loading (Cards, Mechataur, Firebreath/GazeAttack, logo): no path, suffix or Def reaches them; only the Pack overlay was wrongly removed.

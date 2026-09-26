@@ -691,3 +691,7 @@ The run played the tree of its turn; 11 reds, read one by one:
 - Not yet re-run: they wait for the next request (four already queued play the current tree).
 
 - Checked the other 24 textures removed in 7fd51c9 against convention loading (Cards, Mechataur, Firebreath/GazeAttack, logo): no path, suffix or Def reaches them; only the Pack overlay was wrongly removed.
+
+## Four more passes filed — 2026-09-26
+
+Revision bc60471 (the incompatibility probe scenario is now active, hypothesis: duplicate defs; the run settles the symptom). Requests: studio 20260926-231900-835-5bc7 (filter 09-publication-shots), optional integrations -902-...-d62d (10-integrations, avec-facultatifs), Giddy-Up -f431 (10-integrations, avec-giddyup), incompatibility -778c (11-behaviour-and-incompatibility). Evidence dirs studio, facultatifs, giddyup, incompat. If a filter plays nothing, the report says so (played vs discovered): refile with the suite name first.

@@ -410,7 +410,6 @@ namespace AlphaMythologyRenew.PickleSteps
             var plant = (Plant)ThingMaker.MakeThing(plantDef);
             plant.Growth = 1f;
             GenSpawn.Spawn(plant, CellAtDistance(ctx, pawn.Position, 2), map);
-            TargetsToClean(ctx);
             try
             {
                 PlantUtility.PawnWillingToCutPlant_Job(plant, pawn);

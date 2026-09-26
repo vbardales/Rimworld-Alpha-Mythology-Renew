@@ -49,3 +49,12 @@ request `20260926-111909-647-4d36` is done. Everything that does is prepared els
 - [ ] Resolve the description tail in `About.xml` (`IF I GO QUIET`, `AI-GENERATED`, `THANKS`).
 - [ ] Optional: a pull request to `juanosarg/AlphaMythology` needs a fork first (public, owner's decision); their open
   PR #3 already proposes a 1.6 update, PR #2 targets a Giddy-Up fork marked outdated.
+
+## Ideas
+
+- [ ] **Mod Error Checker** (Workshop 2877266511, Taranchuk, 1.4 to 1.6): at startup it reports, with mod names, old
+  assemblies with missing fields or methods and XML errors such as a missing thing class, worker class, comp class or
+  sound file. Shown by Virginie on 2026-09-26. Possible use here: stage it in the optional-integration pass
+  (`docs/optional-passes-draft/`) to catch a legacy patch naming a class that no longer exists in its provider, which
+  `PatchOperationFindMod` alone never shows. Not evaluated: whether it can be staged headless in the WSL, and whether its
+  output is readable from a Pickle report (`an error matching ... was logged` would be the way to assert it).

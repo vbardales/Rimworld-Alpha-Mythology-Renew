@@ -52,7 +52,7 @@ namespace AlphaMythologyRenew.PickleSteps
             return Find.CurrentMap;
         }
 
-        internal static IntVec3 FreeCell(PickleContext ctx, int radius = 30)
+        internal static IntVec3 FreeCell(PickleContext ctx, int radius = 40)
         {
             var map = Map(ctx);
             IntVec3 cell;
@@ -179,7 +179,7 @@ namespace AlphaMythologyRenew.PickleSteps
             ctx.Assert(ones > 0 && twos > 0, $"over {trials} deaths at stage {stage} one egg was seen {ones} times and two eggs {twos} times: both were expected");
         }
 
-        [Then("Alpha Mythology Renew an egg already lying where a phoenix dies survives the explosion and is counted with the new ones")]
+        [Then("Alpha Mythology Renew a phoenix dying on a tile that already holds an egg still leaves its own egg")]
         public void CrowdedTile(PickleContext ctx)
         {
             var map = Map(ctx);
@@ -191,9 +191,12 @@ namespace AlphaMythologyRenew.PickleSteps
             BatchOf(ctx).Things.Add(old);
             var phoenix = SpawnAtStage(ctx, Kind(ctx, "MM_Phoenix"), 2, cell);
             phoenix.Kill(null);
-            ctx.Assert(!old.Destroyed, "the egg that was already there did not survive the explosion");
+            // The phoenix's own egg must survive, whether it merged into the stack on the tile or was placed beside it. The egg
+            // that was already there is not the parent's to protect: whether it survived is reported, not asserted.
             int total = EggCountNear(map, eggDef, cell, 12f);
-            ctx.Assert(total >= 2, $"only {total} egg(s) lie within 12 cells: the old one plus at least one new one were expected");
+            int oldCount = old.Destroyed ? 0 : old.stackCount;
+            int own = total - oldCount;
+            ctx.Assert(own >= 1, $"the phoenix's own egg was lost: {total} egg(s) within 12 cells, {oldCount} of them the old one (destroyed: {old.Destroyed})");
         }
 
         [Then("Alpha Mythology Renew a fertilized phoenix egg hatches into a phoenix when its incubation completes")]

@@ -656,3 +656,12 @@ job are always present and can be exercised; my "not applicable" was a misreadin
 scenario that presses the port's own destroy command, checks that VEF's `VEF_DestroyItems` work giver offers the job, cancels
 and checks it is no longer offered, requests again, has a colonist carry the job out and checks the egg is gone and no
 phoenix hatched. Written, not played. The suite is 17 features and 70 local steps.
+
+## Egg merge defect found in review and fixed — 2026-09-26
+
+Reviewing the phoenix scenario before it ran showed a defect of the port's death worker: it spared from its own explosion the egg
+object it had made, but when that egg merges into a stack already on the tile the object is absorbed and the merged stack is
+not spared, so the parent's egg could be lost. `DeathActionWorker_ExplodeAndSpawnEggs` now spares the thing `TryPlaceThing`
+reports the egg ended up in (`out lastResultingThing`); the shipped DLL is rebuilt, and feature 13's crowded-tile scenario now
+asserts that the phoenix's own egg survives (whether the egg already there survives is reported, not asserted: it is not the
+parent's to protect). Not played. A search for other orphaned defs (157 examined) found none.

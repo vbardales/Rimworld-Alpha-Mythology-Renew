@@ -22,8 +22,10 @@ Feature: the phoenix dies in flames and leaves eggs
     Then Alpha Mythology Renew 40 phoenixes of life stage 2 die and each death leaves one or two fertilized eggs, both counts being seen
     And no errors were logged
 
-  Scenario: an egg already lying where a phoenix dies is not lost
-    Then Alpha Mythology Renew an egg already lying where a phoenix dies survives the explosion and is counted with the new ones
+  # Where the parent's egg merges into a stack already on the tile, the explosion must spare the merged stack: the code
+  # used to spare only the object it had made, which the merge absorbs. Fixed together with this scenario.
+  Scenario: a phoenix dying on a tile that already holds an egg still leaves its own egg
+    Then Alpha Mythology Renew a phoenix dying on a tile that already holds an egg still leaves its own egg
     And no errors were logged
 
   Scenario: a fertilized egg hatches a phoenix

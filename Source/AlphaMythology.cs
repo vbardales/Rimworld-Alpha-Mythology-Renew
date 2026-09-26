@@ -35,8 +35,11 @@ namespace AlphaMythologyRenew
             {
                 Thing egg = ThingMaker.MakeThing(eggDef);
                 egg.stackCount = PhoenixRules.EggCount(Rand.Value);
-                GenPlace.TryPlaceThing(egg, corpse.Position, map, ThingPlaceMode.Near);
-                spawned = new List<Thing> { egg };
+                // The egg may merge into a stack already lying there, in which case the object made above is absorbed and
+                // gone: the explosion must spare the thing the eggs actually ended up in, not the one that was made.
+                Thing placed;
+                GenPlace.TryPlaceThing(egg, corpse.Position, map, ThingPlaceMode.Near, out placed);
+                spawned = new List<Thing> { placed ?? egg };
             }
 
             GenExplosion.DoExplosion(corpse.Position, map, radius, DamageDefOf.Flame, corpse.InnerPawn,

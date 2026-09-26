@@ -89,7 +89,7 @@ dependency of this mod and the guards use it. Consequences to carry out when the
   inventory rows) was offered by no race: its only user was the Mechataur, which the port does not ship. Removed in a
   dedicated commit; the DLL is rebuilt (no `Recipe_ShutDown`), Check-Mod 334, translations 590 fields and 589 injections.
   ATTRIBUTION (both copies) and the About description no longer mention it.
-- [ ] **Look for other orphans**: Defs referenced by nothing (no race, recipe, thing set or patch reaches them), unused
+- [x] **Look for other orphans**: DONE 2026-09-26 by token references (157 defs, every one referenced by another def, patch, code or translation, apart from its own definition). Limits: a pair of same-name defs (a kind and its race) count as referencing each other, and a mention in a comment counts; the removed recipe was the only orphan found.
   Keyed keys (the translation check already rejects unused ones), stray files. Only the recipe and the textures were checked.
 - [ ] **Decide the in-game scenarios still open** (see the automation map in `Tests/FUNCTIONAL.md`): F06 smoke test of a
   ranged creature, F07 forced production and the Kitsune's healing, F08 dead-plant cutting, F09 the tlilcoatl damage

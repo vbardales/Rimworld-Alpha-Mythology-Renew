@@ -65,7 +65,6 @@ namespace AlphaMythologyRenew.PickleSteps
                 PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: true));
             pawn.Name = new NameSingle(name);
             GenSpawn.Spawn(pawn, CellAtDistance(ctx, near.Position, distance), map);
-            var batch = CreatureSteps.TryGet<object>(ctx);
             TargetsToClean(ctx).Add(pawn);
             return pawn;
         }

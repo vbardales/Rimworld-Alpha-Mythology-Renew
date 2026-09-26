@@ -290,6 +290,16 @@ namespace AlphaMythologyRenew.PickleSteps
             pawn.health.RemoveHediff(wound);
         }
 
+        [Then("Alpha Mythology Renew {string} still carries the bleeding wound")]
+        public void StillCarries(PickleContext ctx, string name)
+        {
+            // Looked up by name on the reloaded map: references taken before a save and reload are stale.
+            var pawn = Live(ctx, name);
+            var wound = pawn.health.hediffSet.hediffs.FirstOrDefault(h => h.def.defName == "MM_BleedingWound");
+            ctx.Assert(wound != null, $"'{name}' no longer carries the bleeding wound after the save and reload");
+            ctx.Assert(wound is Hediff_BleedingWound, $"the wound came back as a {wound?.GetType().Name}, not this mod's Hediff_BleedingWound");
+        }
+
         [When("Alpha Mythology Renew records the open wound severity of {string}")]
         public void RecordSeverity(PickleContext ctx, string name)
         {

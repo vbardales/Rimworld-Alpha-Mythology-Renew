@@ -94,3 +94,14 @@ dependency of this mod and the guards use it. Consequences to carry out when the
 - [ ] **Decide the in-game scenarios still open** (see the automation map in `Tests/FUNCTIONAL.md`): F06 smoke test of a
   ranged creature, F07 forced production and the Kitsune's healing, F08 dead-plant cutting, F09 the tlilcoatl damage
   comparison, F12 kappa harvesting with a third-party mod. F03's colonist execution is VEF's code (proposed not applicable).
+
+## Tree Chopping Speed Stat and the kappa (from the owner's link, 2026-09-26)
+
+- [ ] **Known issue of the original, not yet checked on 1.6**: Tree Chopping Speed Stat (Workshop 2566231583, velcroboy333,
+  packageId `TreeChoppingSpeed.velcroboy333`, supports 1.2 to 1.6, installed here) prefixes
+  `PlantUtility.PawnWillingToCutPlant_Job` and throws a NullReferenceException for a creature that has no
+  `VBY_TreeChopWorkSpeed` stat; the original's kappa harvests through VEF's `JobGiver_Harvest` and triggers it (discussion of
+  24 Nov 2023 on that page; the errors repeat while the kappa is in the colony). Feature 17's provider scenario plays the call
+  in the pass `wsl-deps.avec-treechop.map`. If it fails, the fix is a patch giving the kappa that stat (guarded by that mod,
+  through the resolver library once it exists), in `Mod/`.
+- [ ] File the pass: `-DepMap wsl-deps.avec-treechop.map -Filter '17-plants'`. Credit for the register and THANKS if the pass is played.

@@ -1,0 +1,4 @@
+# Pass "avec treechop": Tree Chopping Speed Stat (velcroboy333, Workshop 2566231583, supports 1.2 to 1.6), for F12.
+# Its prefix on PlantUtility.PawnWillingToCutPlant_Job reads a stat that a creature without it lacks: the original mod's
+# kappa raised a NullReferenceException there (Workshop discussion of 24 Nov 2023).
+TreeChoppingSpeed.velcroboy333   2566231583

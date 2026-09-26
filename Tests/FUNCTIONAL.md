@@ -21,14 +21,14 @@ against the checked-out XML and current dependency behaviour, not only old repor
 
 `tested` asks for no manual test left to validate: each scenario below is automated and green, or listed as not applicable
 with its reason. Nothing has been played yet except the first settings run; a row is `written` until a run shows it green.
-Every row is automated (written, not yet played) except F04's save-file persistence and the provider half of F12. F03's colonist execution is included: VEF is required, so its code is always present to be exercised (owner, 2026-09-26).
+Every row is automated (written, not yet played). F03's colonist execution is included: VEF is required, so its code is always present to be exercised (owner, 2026-09-26).
 
 | Scenario | Automation | State |
 |---|---|---|
 | F01 startup and 25 creatures | `Tests/Pickle` feature 12: every creature at every life stage, four facings, dessicated body, no error | written |
 | F02 phoenix rebirth | radius by life stage and the egg roll: `Tests/UnitTests` (green, offline); eggs left by 40 deaths per life stage, an old egg on the same tile, forced hatching: feature 13 | unit green, Pickle written |
 | F03 egg controls | feature 13: destroy and cancel commands with labels and icons in the EN and FR passes, and end to end through VEF's own designation and job (offered when requested, not when cancelled, carried out by a colonist and the egg destroyed without hatching). VEF is a required dependency, so it is always present: applicable (owner, 2026-09-26) | written |
-| F04 bleeding wound | damage recurs while it lasts and stops when removed: feature 14. Saving across a save file: **not automated** (Pickle has no step that writes a save and reloads it; the counter is saved with Scribe, checked by the static contract) | written, persistence unverified |
+| F04 bleeding wound | feature 14: damage recurs while it lasts, stops when removed, and the wound survives Pickle's "I save and reload" and keeps hurting (Scribe errors are caught by "no errors") | written |
 | F05 shutdown recipe | **removed on 2026-09-26**: `MM_ShutDownMechanoid` was offered by no race in this mod (its only user was the Mechataur, which the port does not ship), so it could not be tested; the recipe, its worker and its French text are deleted | removed |
 | F06 ranged attacks and auto-fire | feature 15: each of the 10 ranged creatures fires its first ranged verb at a target 5 cells away and the target is affected, no error. The auto-fire toggle is VEF's and is not exercised | written |
 | F07 production, regeneration, trainability | feature 16: each of the 6 egg layers produces the egg its definition names, in its count range; the 2 milkable creatures give milk when full; a tamed Kitsune heals a colonist inside its radius faster than one outside. Hatch targets and durations and trainability stay offline (Check-Mod, definitions) | written |
@@ -36,7 +36,7 @@ Every row is automated (written, not yet played) except F04's save-file persiste
 | F09 tlilcoatl damage | feature 15: the poison breath hurts an organic target; a shield belt reacts (energy or health); a mechanoid takes no toxic buildup (`@requires` Biotech). Owner: to be done anyway | written |
 | F10 save/reload, Animal Ark coexistence | duplicate defs with the original are the incompatibility pass (scenario in feature 11, symptom still to observe); migration of an Animal Ark save is untested by design and stays listed as such | partly written |
 | F11 optional integrations | feature 10, one scenario per provider, in the optional-integration and Giddy-Up passes | written |
-| F12 Kappa harvesting with Tree Chopping Speed | feature 17: asking whether a tamed kappa will cut a mature crop does not throw (the baseline half). The Tree Chopping Speed Stat half needs that mod staged in its own pass: id and version still to find. Owner: to be done anyway | baseline written, provider pass pending |
+| F12 Kappa harvesting with Tree Chopping Speed | feature 17: asking whether a tamed kappa will cut a mature crop does not throw, in the baseline and in the `avec-treechop` pass (Tree Chopping Speed Stat 2566231583). The Workshop report says the original kappa raised a NullReferenceException there for lack of the mod's stat: the provider scenario may fail, which would be a defect of the port on that provider | written, provider pass to file |
 | F13 settings | features 01 to 03, 05, 06, 07/08 (restart) and 02's real wild-animal draw; RIMMSQOL in feature 04 | mostly played once, rest written |
 
 ## Scenarios

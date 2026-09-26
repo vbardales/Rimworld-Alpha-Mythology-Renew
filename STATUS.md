@@ -468,3 +468,13 @@ Dependencies, checked in the sources (l10n -> preTest criterion):
 - The nine optional patches are `PatchOperationFindMod` by mod name and load only when the provider is
   present; only Achievements has its own `LoadFolders` branch, keyed on `vanillaexpanded.achievements`. None is
   declared as a hard dependency. Whether their target nodes still exist in each provider is unverified.
+
+### Upstream pull requests seen — 2026-09-26
+
+`juanosarg/AlphaMythology` has two open pull requests by third parties, neither merged, and the author has not
+answered them in the repository: #3 "Updated to 1.6" (Zaljerem, 2025-12-03, 73 files, 12423 additions, GiddyUp
+patch commented out) and #2 "fix giddy up patch not being up to date with giddy-up 2" (dav9670, 2025-03-16,
+1 file, targets Workshop 3246108162). Consequences, none acted on:
+- Someone else has a 1.6 update of the original in the open; a PR of ours would duplicate #3. Comparing our
+  1.6 changes against it is possible, and any comment or PR there is public: only with Virginie's agreement.
+- Our `GiddyUpPatch.xml` could be compared with #2 (giddy-up 2), which would also inform the GiddyUp optional pass.

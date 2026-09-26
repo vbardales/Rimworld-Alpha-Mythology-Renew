@@ -175,8 +175,8 @@ unofficial port of his other mod to him, in a public thread. Same reason as the 
 possibly none. No draft written on purpose.
 
 ### Not drafted yet
-- **Vanilla Achievements Expanded**, 2288125657: Steam refused the page (rate limit) after several loads; read it later,
-  then draft. Vanilla Expanded team page, so check the register for an existing VE row first.
+- **Vanilla Achievements Expanded**, 2288125657: page read 2026-09-26 (after a first refusal by Steam). Authors listed: Sarg Bjornson, Oskar Potocki and Smash Phil (Vanilla Expanded team). **Sarg Bjornson is again a co-author and answers there**: same decision as Vanilla Genetics Expanded, hers, so no draft. The port ships this integration (achievement icons and patch), so its thanks stay in the description.
+
 - **Nocturnal Animals (Continued)**, 2269731409: register row already `drafted` by two other mods: add this port to its
   `Covers`, no second comment. **Vanilla Cooking Expanded**, 2134308519: register row `posted` (2026-09-25): add to `Covers`.
 - **Use This Instead** (3396308787) belongs to the resolver library's own publication, not to this mod, unless the port

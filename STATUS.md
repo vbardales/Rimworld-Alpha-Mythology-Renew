@@ -588,3 +588,13 @@ in `About.xml` (`4516a19`, the "IF I GO QUIET / AI-GENERATED / THANKS" sections 
 The run's label says `149c495`: **the revision it actually tests is `78ee4b0`** (no code, Def, patch or test changed since
 149c495; only textures nothing references and the `About.xml` description). Check-Mod (339) and the negative cases pass
 on it. The `cleanup/unused-textures` branch and its worktree are removed after the merge.
+
+## Code review, achievements page, register plan — 2026-09-26
+
+`/code-review` (high) of `Source/Settings.cs`, `Source/SpawnRules.cs`, `Tests/Pickle/Source/Steps.cs` and the features
+returned three findings, none fixed yet because `Tests/Pickle/Source` is frozen for the queued run: (1) the restart reader
+resets the settings in memory only and leaves x3 and a blocked `MM_Griffin` in the Config file, which the passes without a
+seed (RIMMSQOL, studio, integrations, Giddy-Up) would load; fix by making the reader write the defaults back or by seeding
+every pass; (2) the multiplier reweights a creature's share among wild animals and does not raise how many animals spawn, so
+the label and tooltip overpromise; (3) no scenario runs an actual wild-animal draw, only the patched commonality. Vanilla
+Achievements Expanded's page was read (authors Sarg Bjornson, Oskar Potocki, Smash Phil); see PUBLICATION.md.

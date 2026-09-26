@@ -10,5 +10,6 @@
   <ItemGroup>
     <!-- The spawn rules compile here on their own: no game, no game assembly needed to check them. -->
     <Compile Include="../../Source/SpawnRules.cs" Link="SpawnRules.cs" />
+    <Compile Include="../../Source/PhoenixRules.cs" Link="PhoenixRules.cs" />
   </ItemGroup>
 </Project>

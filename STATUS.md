@@ -626,3 +626,16 @@ Requests filed on `bc00f57` (the tree of `Mod/` and `Tests/Pickle/` is frozen ag
 `20260926-215843-264-2401` minimal English (evidence `en2`), `-629-5a25` minimal French (`fr`), `-975-c039` restart pair
 (`restart`), `-344-92ec` with RIMMSQOL (`rimmsqol`). Not filed yet: studio (gallery), optional integrations, Giddy-Up,
 incompatibility; `Evidence/en` (run 4d36) is deleted once `en2` replaces it.
+
+## Manual scenarios mapped to automation — 2026-09-26
+
+`Tests/FUNCTIONAL.md` now opens with an automation map for F01 to F13 (AUDIT.md: no manual test left to validate for
+`tested`). Written this evening, not played: feature 12 (F01, every creature at every life stage draws), 13 (F02 and F03, the
+phoenix's eggs, hatching, egg commands in each language), 14 (F04, the recurring wound). F02's radius and egg roll became a
+game-free `Source/PhoenixRules.cs` with 6 more unit checks (all pass). The shipped DLL was rebuilt for that refactor (behaviour
+unchanged: same radii, same 30% chance of two eggs). The suite is now 14 features, 41 scenarios, 46 steps.
+Findings while mapping: **`MM_ShutDownMechanoid` is offered by no race in this mod** (its only user was the Mechataur,
+which the port does not ship): F05 cannot be tested and the recipe and `Recipe_ShutDown` are dead content, for the owner to
+keep or remove. Proposed not applicable, awaiting the owner: F03's colonist execution, F06, F07 beyond spawning, F08, F09, F12;
+F04's save-file persistence stays unverified (no Pickle step writes and reloads a save).
+The four requests filed on `bc00f57` (see above) will stage this newer tree when played, since a request carries no SHA.

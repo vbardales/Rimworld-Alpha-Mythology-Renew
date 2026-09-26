@@ -17,6 +17,28 @@ when useful, and Player.log. Clear the displayed log between cases but retain a
 copy of the full log. A missing provider is BLOCKED, never PASS. Compare behaviour
 against the checked-out XML and current dependency behaviour, not only old reports.
 
+## Automation map (2026-09-26)
+
+`tested` asks for no manual test left to validate: each scenario below is automated and green, or listed as not applicable
+with its reason. Nothing has been played yet except the first settings run; a row is `written` until a run shows it green.
+Rows marked **proposed n/a** are the session's proposal and need the owner's acceptance.
+
+| Scenario | Automation | State |
+|---|---|---|
+| F01 startup and 25 creatures | `Tests/Pickle` feature 12: every creature at every life stage, four facings, dessicated body, no error | written |
+| F02 phoenix rebirth | radius by life stage and the egg roll: `Tests/UnitTests` (green, offline); eggs left by 40 deaths per life stage, an old egg on the same tile, forced hatching: feature 13 | unit green, Pickle written |
+| F03 egg controls | destroy and cancel commands, labels and icons in EN and FR passes: feature 13. Execution of the designation by a colonist is the game's own designation and job code, not this mod's: **proposed n/a** ("we do not test the game") | written, n/a proposed for the job |
+| F04 bleeding wound | damage recurs while it lasts and stops when removed: feature 14. Saving across a save file: **not automated** (Pickle has no step that writes a save and reloads it; the counter is saved with Scribe, checked by the static contract) | written, persistence unverified |
+| F05 shutdown recipe | **blocked: `MM_ShutDownMechanoid` is offered by no race in this mod** (it lived on the Mechataur, which the port does not ship). Cannot be tested and is dead content: decide between removing the recipe and its worker or keeping them | finding |
+| F06 ranged attacks and auto-fire | the verbs and toggle are VEF's: **proposed n/a** (framework behaviour); the wiring is in the Defs and checked offline | proposed n/a |
+| F07 production, regeneration, trainability | driven by defs and VEF/vanilla comps; hatch targets and durations are asserted offline by Check-Mod; spawning is F01: **proposed n/a** beyond that | proposed n/a |
+| F08 basilisk vegetation | a historical Workshop case with third-party plant mods and the vanilla cutting job; the missing-SoundDef half is caught at load by F01's "no errors": **proposed n/a** | proposed n/a |
+| F09 tlilcoatl damage | comparing damage and shields against definitions is vanilla combat: **proposed n/a** | proposed n/a |
+| F10 save/reload, Animal Ark coexistence | duplicate defs with the original are the incompatibility pass (scenario in feature 11, symptom still to observe); migration of an Animal Ark save is untested by design and stays listed as such | partly written |
+| F11 optional integrations | feature 10, one scenario per provider, in the optional-integration and Giddy-Up passes | written |
+| F12 Kappa harvesting with Tree Chopping Speed | needs a third-party mod and is a historical case: **proposed n/a** unless the owner wants the mod staged | proposed n/a |
+| F13 settings | features 01 to 03, 05, 06, 07/08 (restart) and 02's real wild-animal draw; RIMMSQOL in feature 04 | mostly played once, rest written |
+
 ## Scenarios
 
 ### F01 — Startup and all 25 creatures

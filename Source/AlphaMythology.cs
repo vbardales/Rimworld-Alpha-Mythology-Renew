@@ -17,8 +17,6 @@ namespace AlphaMythologyRenew
     // The phoenix explodes as it dies and leaves an egg in the flames.
     public class DeathActionWorker_ExplodeAndSpawnEggs : DeathActionWorker
     {
-        private const string EggDefName = "MM_EggPhoenixFertilized";
-
         public override void PawnDied(Corpse corpse, Lord prevLord)
         {
             Map map = corpse.Map;
@@ -27,17 +25,15 @@ namespace AlphaMythologyRenew
                 return;
             }
 
-            // An adult phoenix goes off harder than a chick.
-            int stage = corpse.InnerPawn.ageTracker.CurLifeStageIndex;
-            float radius = stage == 0 ? 3.9f : (stage == 1 ? 4.9f : 5.9f);
+            float radius = PhoenixRules.ExplosionRadius(corpse.InnerPawn.ageTracker.CurLifeStageIndex);
 
-            ThingDef eggDef = DefDatabase<ThingDef>.GetNamedSilentFail(EggDefName);
+            ThingDef eggDef = DefDatabase<ThingDef>.GetNamedSilentFail(PhoenixRules.EggDefName);
             List<Thing> spawned = null;
 
             if (eggDef != null)
             {
                 Thing egg = ThingMaker.MakeThing(eggDef);
-                egg.stackCount = Rand.Value <= 0.3f ? 2 : 1;
+                egg.stackCount = PhoenixRules.EggCount(Rand.Value);
                 GenPlace.TryPlaceThing(egg, corpse.Position, map, ThingPlaceMode.Near);
                 spawned = new List<Thing> { egg };
             }

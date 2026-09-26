@@ -21,6 +21,9 @@ What is left needs a running game.
 | 06 reload | 1 | settings are global: a save load neither resets them nor takes them from the file |
 | 09 publication shots | 5 | pictures for the Workshop page (`@requires` the studio pass, `@review`) |
 | 10 integrations | 8 | each optional patch reaching its target, one scenario per provider (`@requires`), the Nature's Pretty Sweet one expected to fail until the patch guard is fixed |
+| 12 creatures | 1 | every creature at every life stage draws its four facings and its dessicated body (F01) |
+| 13 phoenix | 6 | the death leaving one or two eggs at each life stage, an egg already on the tile, forced hatching, the egg commands in each language (F02, F03) |
+| 14 bleeding | 2 | the wound hurting while it lasts and stopping when removed (F04) |
 | 11 behaviour | 2 | the phoenix leaving an egg when it dies, the will-o'-wisp's translated fission text; the incompatibility scenario is written as a comment until its symptom is known |
 | 07 / 08 restart | 1 + 1 | a value that has to outlive the process, which one process cannot show |
 
@@ -31,7 +34,7 @@ What remains unplayed stays `unverified` in `STATUS.md`.
 
 | Pass | Filter | Language | What it establishes |
 |---|---|---|---|
-| minimal English | `PLAIN` | English | the mod and its settings stand on their own (15 played, 15 skipped by requirement: 04, 09 and 10 wait for their own passes) |
+| minimal English | `PLAIN` | English | the mod and its settings stand on their own (24 played, 15 skipped by requirement: 04, 09 and 10 wait for their own passes) |
 | minimal French | `PLAIN` | French | the same, in the other language |
 | restart | `07-restart-write` then `08-restart-read` | English | settings outliving the process |
 | with RIMMSQOL | `04-rimmsqol`, `-DepMap wsl-deps.avec-rimmsqol.map` | English | the shortcut through the tool that reveals it |

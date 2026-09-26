@@ -10,8 +10,7 @@ Record game and dependency versions, actual outcomes and Player.log for each cas
    from that explosion; advance time to hatching. Repeat for chick and juvenile radii.
 3. Apply the bleeding-wound hediff, advance time, verify recurring damage; save/reload
    and verify it resumes; remove the hediff and verify the damage stops.
-4. On a valid patient, perform the shutdown recipe and check the intended death and
-   execution thought, without exceptions. Check the brain is the offered surgery part.
+4. (The shutdown recipe was removed on 2026-09-26: no race offered it.)
 5. Exercise ranged attacks, milk/egg products and regeneration on the corresponding
    creatures. Verify products and hatchers match their XML definitions.
 6. Add Giddy-Up 2 - Continued: ride griffin, pegasus, unicorn and manticore when allowed
@@ -73,7 +72,7 @@ pwsh -NoProfile -File Tests/Test-Validator.ps1
 ```
 
 Check-Mod validates metadata/dependencies, unique defs and race links, hatch targets
-and durations, laid-egg references, the three custom worker bindings, phoenix egg
+and durations, laid-egg references, the two custom worker bindings, phoenix egg
 fire resistance, notice parity, PNG signatures/preview size and assembly packaging.
 Test-Validator verifies rejection of six deliberate regressions in a temporary
 copy: wrong package ID, missing race, dangling hatch target, wrong death worker,

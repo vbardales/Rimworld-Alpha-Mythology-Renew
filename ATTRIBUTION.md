@@ -61,12 +61,12 @@ Full changelog on GitHub
   whole def down with it, hence twenty-five `Config error: no race` behind the load exceptions.
 - **But the rename does not apply to everything.** The mod declares **its own** classes in the
   `AnimalBehaviours` namespace — the very one VEF used to occupy — so renaming blindly breaks
-  them just as surely as doing nothing. The three that matter are reimplemented in
-  `AnimalArk.dll` under `Bastyon.*` rather than shipping a DLL compiled for 1.5:
-  `DeathActionWorker_ExplodeAndSpawnEggs` (the phoenix explodes and leaves an egg),
-  `Hediff_BleedingWound` and `Recipe_ShutDown` (unplug a mechanical beast). A fourth,
-  `MMToggleableSpawnDef`, only served the original mod's settings window and is not carried
-  over.
+  them just as surely as doing nothing. The two that matter are reimplemented in
+  `AlphaMythologyRenew.dll` rather than shipping a DLL compiled for 1.5:
+  `DeathActionWorker_ExplodeAndSpawnEggs` (the phoenix explodes and leaves an egg) and
+  `Hediff_BleedingWound`. Two more are not carried over: `MMToggleableSpawnDef` only served the
+  original mod's settings window, and `Recipe_ShutDown` (unplug a mechanical beast) was offered by
+  no race of this port, its only user being the Mechataur, which is not shipped.
 - **Texture collision with Steve's Animals**: both mods ship a different
   `Things/Projectiles/Proj_FireStream` for their flame breath, and whichever loaded last
   overwrote the other. Alpha Mythology's is isolated under `AM_FireStream`.

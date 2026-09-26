@@ -2303,27 +2303,6 @@
     "sourceKey": "MM_MagicalMenagerie.description"
   },
   {
-    "type": "RecipeDef",
-    "key": "MM_ShutDownMechanoid.label",
-    "en": "shut down",
-    "source": "Mod/Defs/AlphaMythology/RecipeDefs/Recipes_Surgery_Installations.xml",
-    "sourceKey": "MM_ShutDownMechanoid.label"
-  },
-  {
-    "type": "RecipeDef",
-    "key": "MM_ShutDownMechanoid.description",
-    "en": "Shuts down a mechanoid.",
-    "source": "Mod/Defs/AlphaMythology/RecipeDefs/Recipes_Surgery_Installations.xml",
-    "sourceKey": "MM_ShutDownMechanoid.description"
-  },
-  {
-    "type": "RecipeDef",
-    "key": "MM_ShutDownMechanoid.jobString",
-    "en": "Shutting down mechanoid.",
-    "source": "Mod/Defs/AlphaMythology/RecipeDefs/Recipes_Surgery_Installations.xml",
-    "sourceKey": "MM_ShutDownMechanoid.jobString"
-  },
-  {
     "type": "ThingDef",
     "key": "MM_EggGriffinFertilized.label",
     "en": "griffin egg (fert.)",

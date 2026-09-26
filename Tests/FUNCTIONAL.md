@@ -21,7 +21,7 @@ against the checked-out XML and current dependency behaviour, not only old repor
 
 `tested` asks for no manual test left to validate: each scenario below is automated and green, or listed as not applicable
 with its reason. Nothing has been played yet except the first settings run; a row is `written` until a run shows it green.
-Rows marked **proposed n/a** are the session's proposal and need the owner's acceptance.
+Only F03's colonist execution is proposed as not applicable (it is VEF's own designation and job code, the port only supplies the labels and icons, which feature 13 checks); the other rows above are automatable or decided.
 
 | Scenario | Automation | State |
 |---|---|---|
@@ -29,14 +29,14 @@ Rows marked **proposed n/a** are the session's proposal and need the owner's acc
 | F02 phoenix rebirth | radius by life stage and the egg roll: `Tests/UnitTests` (green, offline); eggs left by 40 deaths per life stage, an old egg on the same tile, forced hatching: feature 13 | unit green, Pickle written |
 | F03 egg controls | destroy and cancel commands, labels and icons in EN and FR passes: feature 13. Execution of the designation by a colonist is the game's own designation and job code, not this mod's: **proposed n/a** ("we do not test the game") | written, n/a proposed for the job |
 | F04 bleeding wound | damage recurs while it lasts and stops when removed: feature 14. Saving across a save file: **not automated** (Pickle has no step that writes a save and reloads it; the counter is saved with Scribe, checked by the static contract) | written, persistence unverified |
-| F05 shutdown recipe | **blocked: `MM_ShutDownMechanoid` is offered by no race in this mod** (it lived on the Mechataur, which the port does not ship). Cannot be tested and is dead content: decide between removing the recipe and its worker or keeping them | finding |
-| F06 ranged attacks and auto-fire | the verbs and toggle are VEF's: **proposed n/a** (framework behaviour); the wiring is in the Defs and checked offline | proposed n/a |
-| F07 production, regeneration, trainability | driven by defs and VEF/vanilla comps; hatch targets and durations are asserted offline by Check-Mod; spawning is F01: **proposed n/a** beyond that | proposed n/a |
-| F08 basilisk vegetation | a historical Workshop case with third-party plant mods and the vanilla cutting job; the missing-SoundDef half is caught at load by F01's "no errors": **proposed n/a** | proposed n/a |
-| F09 tlilcoatl damage | comparing damage and shields against definitions is vanilla combat: **proposed n/a** | proposed n/a |
+| F05 shutdown recipe | **removed on 2026-09-26**: `MM_ShutDownMechanoid` was offered by no race in this mod (its only user was the Mechataur, which the port does not ship), so it could not be tested; the recipe, its worker and its French text are deleted | removed |
+| F06 ranged attacks and auto-fire | the verbs, projectiles and the auto-fire toggle run in VEF, but **the port owns their wiring** (verbs, projectile defs, comps in the Defs): a smoke test (a tamed chimera, a hostile target, one attack that launches a projectile, no error) is automatable at medium cost; the toggle itself is VEF's. Revised 2026-09-26: not n/a, decision pending | automatable, decision pending |
+| F07 production, regeneration, trainability | hatch targets and durations are asserted offline by Check-Mod and trainability is a definition. Still in-game and automatable: one forced production cycle per producing race, the Kitsune's healing radius (a VEF comp configured here). Revised: not n/a, decision pending | partly offline, rest automatable |
+| F08 basilisk vegetation | a Workshop case from the original: dead grass and bush left by the basilisk could not be cut. Cutting is vanilla, but the plants and the harvest sound are this port's defs: automatable (spawn the dead plant, order the cut, wait, check the cell is reusable). The missing-SoundDef half is already caught at load by feature 12's "no errors". Revised: not n/a, decision pending | automatable, decision pending |
+| F09 tlilcoatl damage | compares the projectile's damage on an organic target, a mechanoid and a shielded one with the definitions. Automatable but heavy (three targets under equal conditions); the comparison rules are vanilla's. Owner to say whether it is worth it | heavy, owner to decide |
 | F10 save/reload, Animal Ark coexistence | duplicate defs with the original are the incompatibility pass (scenario in feature 11, symptom still to observe); migration of an Animal Ark save is untested by design and stays listed as such | partly written |
 | F11 optional integrations | feature 10, one scenario per provider, in the optional-integration and Giddy-Up passes | written |
-| F12 Kappa harvesting with Tree Chopping Speed | needs a third-party mod and is a historical case: **proposed n/a** unless the owner wants the mod staged | proposed n/a |
+| F12 Kappa harvesting with Tree Chopping Speed | the baseline half (a tamed kappa harvesting mature crops without an exception) is automatable; the other half needs a third-party mod that must be staged in its own pass if a compatible version exists. Owner to decide | baseline automatable, provider half needs a pass |
 | F13 settings | features 01 to 03, 05, 06, 07/08 (restart) and 02's real wild-animal draw; RIMMSQOL in feature 04 | mostly played once, rest written |
 
 ## Scenarios

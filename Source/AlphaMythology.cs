@@ -5,14 +5,15 @@ using Verse.AI.Group;
 
 namespace AlphaMythologyRenew
 {
-    // Alpha Mythology shipped these three classes in its own
+    // Alpha Mythology shipped these classes in its own
     // MagicalAnimalBehavioursAndEvents.dll, under the AnimalBehaviours namespace --
     // the very one VEF used before it moved everything under VEF.AnimalBehaviours.
     // Taking them over here avoids shipping a foreign DLL compiled for 1.5, and above all
     // keeps the namespace from colliding with that of another mod in the series.
     //
-    // The mod's fourth type, MMToggleableSpawnDef, is not taken over: it only served the
-    // settings window of the original mod, which the pack does not have.
+    // Two more types are not taken over: MMToggleableSpawnDef only served the settings window of the original mod,
+    // and Recipe_ShutDown (a surgery that killed a mechanoid through the brain) was offered by no race of this pack:
+    // its only user was the Mechataur, which the port does not ship.
 
     // The phoenix explodes as it dies and leaves an egg in the flames.
     public class DeathActionWorker_ExplodeAndSpawnEggs : DeathActionWorker
@@ -75,25 +76,6 @@ namespace AlphaMythologyRenew
         {
             base.ExposeData();
             Scribe_Values.Look(ref tickCounter, "tickCounter", 0);
-        }
-    }
-
-    // Shutting a mechanical beast down: the operation is done on the brain, and kills it.
-    public class Recipe_ShutDown : RecipeWorker
-    {
-        public override IEnumerable<BodyPartRecord> GetPartsToApplyOn(Pawn pawn, RecipeDef recipe)
-        {
-            BodyPartRecord brain = pawn.health.hediffSet.GetBrain();
-            if (brain != null)
-            {
-                yield return brain;
-            }
-        }
-
-        public override void ApplyOnPawn(Pawn pawn, BodyPartRecord part, Pawn billDoer, List<Thing> ingredients, Bill bill)
-        {
-            pawn.Kill(null);
-            ThoughtUtility.GiveThoughtsForPawnExecuted(pawn, billDoer, PawnExecutionKind.OrganHarvesting);
         }
     }
 }

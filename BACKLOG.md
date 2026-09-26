@@ -82,3 +82,15 @@ dependency of this mod and the guards use it. Consequences to carry out when the
 - [ ] Rewrite the 8 name guards as calls to the library; replay the optional-integration pass with the providers'
   current names, and `10-integrations.feature`'s Nature's Pretty Sweet scenario should then pass.
 - [ ] Credits: THANKS and the register for Use This Instead (Mlie, MIT) and the library; PUBLICATION.md dependency table.
+
+## Dead code and content found by the audit (2026-09-26)
+
+- [x] **The shutdown recipe** (`MM_ShutDownMechanoid`, `Recipe_ShutDown`, its French text, its Check-Mod assertions and 3
+  inventory rows) was offered by no race: its only user was the Mechataur, which the port does not ship. Removed in a
+  dedicated commit; the DLL is rebuilt (no `Recipe_ShutDown`), Check-Mod 334, translations 590 fields and 589 injections.
+  ATTRIBUTION (both copies) and the About description no longer mention it.
+- [ ] **Look for other orphans**: Defs referenced by nothing (no race, recipe, thing set or patch reaches them), unused
+  Keyed keys (the translation check already rejects unused ones), stray files. Only the recipe and the textures were checked.
+- [ ] **Decide the in-game scenarios still open** (see the automation map in `Tests/FUNCTIONAL.md`): F06 smoke test of a
+  ranged creature, F07 forced production and the Kitsune's healing, F08 dead-plant cutting, F09 the tlilcoatl damage
+  comparison, F12 kappa harvesting with a third-party mod. F03's colonist execution is VEF's code (proposed not applicable).

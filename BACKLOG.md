@@ -29,7 +29,7 @@ request `20260926-111909-647-4d36` is done. Everything that does is prepared els
 - [ ] **Owner's direction, 2026-09-26: go back to the library she proposed, built on Use This Instead** (UTI, Workshop
   3396308787, MIT, by Mlie), which re-resolves the compatible mods instead of hand-listed names. Its open rules file
   (`replacements.json.gz`, 2713 rules with old/new Workshop ids, names and packageIds) already links the original
-  Nature's Pretty Sweet to its "(Continued)" page. Work happens in `../ModCompatResolver/` (README has the data and
+  Nature's Pretty Sweet to its "(Continued)" page. Work happens in `../ResolveThisInstead/` (README has the data and
   the four open design questions); this mod only consumes it. **No patch is changed until she has chosen the shape**
   (custom patch operation over a packageId alias set, live lookup in UTI, or both) and the mod's tree is unfrozen.
   Two traps found in the data: the Elves have two "Continued" pages (3383096916 and zal's 3548255064), and some rules

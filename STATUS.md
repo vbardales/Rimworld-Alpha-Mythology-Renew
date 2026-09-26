@@ -697,3 +697,7 @@ The run played the tree of its turn; 11 reds, read one by one:
 Revision bc60471 (the incompatibility probe scenario is now active, hypothesis: duplicate defs; the run settles the symptom). Requests: studio 20260926-231900-835-5bc7 (filter 09-publication-shots), optional integrations -902-...-d62d (10-integrations, avec-facultatifs), Giddy-Up -f431 (10-integrations, avec-giddyup), incompatibility -778c (11-behaviour-and-incompatibility). Evidence dirs studio, facultatifs, giddyup, incompat. If a filter plays nothing, the report says so (played vs discovered): refile with the suite name first.
 
 - fr run (5a25) played the tree from before 4ab9496 (same reds as en2, plus: Ieltxu found no straight line of sight for its target — the cell finder now searches the whole ring; Minotaur/Hydra/Stymphalian: 300 ticks too short, now 600). Not diagnosed further until a run plays the fixed tree.
+
+## Restart pair: a real settings defect found — 2026-09-26
+
+Run c039 (restart): seq1 green, seq2 red ("0 creatures are blocked, expected 1", the multiplier of 3 was read). The list of blocked creatures was only assigned in `PostLoadInit`, which did not restore it when the settings file is read at start-up: blocked creatures were lost at every restart. The assignment now happens in `LoadingVars` too (Source/Settings.cs); DLL rebuilt, static checks and unit tests green. The restart pass must be refiled to prove it (the settings gate stays partial until then). Found only because the suite restarts the game: the in-process reload scenario could not show it.

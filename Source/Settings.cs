@@ -31,9 +31,10 @@ namespace AlphaMythologyRenew
             Scribe_Values.Look(ref spawnMultiplier, "spawnMultiplier", SpawnRules.DefaultMultiplier);
             List<string> blocked = blockedKinds?.ToList();
             Scribe_Collections.Look(ref blocked, "blockedKinds", LookMode.Value);
-            if (Scribe.mode == LoadSaveMode.PostLoadInit)
+            if (Scribe.mode == LoadSaveMode.LoadingVars || Scribe.mode == LoadSaveMode.PostLoadInit)
             {
-                // A hand-edited or older file must not break the game: clamp, and tolerate a missing list.
+                // A hand-edited or older file must not break the game: clamp, and tolerate a missing list. Mod settings are read in
+                // LoadingVars and PostLoadInit did not restore the list (lost at every restart in the first restart pair), so it is taken there.
                 spawnMultiplier = SpawnRules.Sanitize(spawnMultiplier);
                 blockedKinds = new HashSet<string>(blocked ?? new List<string>());
             }

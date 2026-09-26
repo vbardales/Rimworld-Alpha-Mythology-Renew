@@ -621,3 +621,8 @@ window, the keys resolve in English, and settings survive a save load. The 3 fai
 when nothing was stored), fixed in the steps and not replayed; the 2 RIMMSQOL scenarios were skipped by requirement, not
 passed. Line in `docs/runs/2026-09-26-78ee4b0-minimal-en.md`; evidence in `Tests/Pickle/Evidence/en/`. `settings_audit`
 stays `partial`: the effect on spawns, French, restart and RIMMSQOL are not yet shown.
+
+Requests filed on `bc00f57` (the tree of `Mod/` and `Tests/Pickle/` is frozen again until all four are `RUN_DONE`):
+`20260926-215843-264-2401` minimal English (evidence `en2`), `-629-5a25` minimal French (`fr`), `-975-c039` restart pair
+(`restart`), `-344-92ec` with RIMMSQOL (`rimmsqol`). Not filed yet: studio (gallery), optional integrations, Giddy-Up,
+incompatibility; `Evidence/en` (run 4d36) is deleted once `en2` replaces it.

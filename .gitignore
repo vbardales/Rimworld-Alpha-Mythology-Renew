@@ -25,3 +25,12 @@ desktop.ini
 # une fois Preview.png et ModIcon.png faits. A tout niveau, pas seulement a la racine.
 PROMPT_*.md
 **/PROMPT_*.md
+
+# Compiled DirectDraw textures: never versioned (none are shipped today).
+*.dds
+**/*.dds
+
+# Test evidence stays on disk, never in git (screenshots and Player.log grow without limit).
+# The short text history lives in docs/runs/, one line per run.
+Tests/Pickle/Evidence/
+evidence/

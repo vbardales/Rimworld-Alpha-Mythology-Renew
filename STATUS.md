@@ -13,8 +13,8 @@ remote: origin https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew.git
 maintainer: Codex task dedicated to AlphaMythologyRenew; maintain this STATUS.md as work progresses
 stage: preOptions
 settings_audit: partial
-audit_at: 2026-09-13
-audit_revision: 9634a431ad553bc7bcd4c36ce693256af39d86e9
+audit_at: 2026-09-26
+audit_revision: 3d88314fbeec0b037a884839f43689de1b4f2a90
 automated_tests: passed; static contracts and negative cases only
 xml_tests: passed
 functional_tests: unverified; not run in game
@@ -26,9 +26,9 @@ remaining:
   - unverified: English and French in-game translation acceptance, including optional integrations and wisp inspection/gizmos
   - unverified: manual gameplay and save migration
   - unverified: optional legacy integrations with their providers
-  - publication: Workshop item not created
+  - publication: 0.1.0 pre-published by the owner on 2026-09-26 (item private); About/PublishedFileId.txt is NOT yet in the repository: commit it as "Add published Workshop file ID for 0.1.0"; Workshop ID not yet recorded here
   - parent: removal is staged in parent index; parent ignore edit is uncommitted alongside unrelated user work
-updated: 2026-09-13
+updated: 2026-09-26
 ---
 
 This task manages this standalone mod repository and keeps this status current.
@@ -369,3 +369,30 @@ French checklist remains in this STATUS history; it was preserved as requested.
 Neither observation invalidates the shipped license/attribution copies, the image
 checks or the current English README/CHANGELOG. No optional recommendation is
 being treated as a missing gameplay proof.
+
+## Workflow audit — 2026-09-26
+
+Revision audited: 3d88314fbeec0b037a884839f43689de1b4f2a90, working tree clean before this
+audit (only STATUS.md, CHANGELOG.md, TESTING.md, .gitignore and docs/PROTOCOLS-READ.md edited by it).
+Documents read: see `docs/PROTOCOLS-READ.md`. Session title: `Alpha Mythology Renew (unofficial) / preOptions`.
+
+Result: **preOptions retained** (was preOptions). No transition earlier than `options` regressed;
+`options` is still not reached.
+
+- `options` blocked: `settings_audit: partial`. The port has no page and no shortcut (verified in
+  sources 2026-09-13), but whether the omitted per-creature spawn controls of the original are wanted is
+  still a decision for the owner, not a defect. Nothing was created by this audit.
+- `localization`/`translation_*` stay `complete` for the static inventory; per MOD_SETTINGS.md they can
+  only be *finalized* once the settings gate is settled, and any new settings text will reopen them.
+- `l10n → preTest` and beyond: dependencies (Harmony, VEF) unchanged since 2026-09-13; not re-run here.
+- Not rerun this session: Check-Mod, Test-Validator, translation checks, build (no code changed since).
+
+Housekeeping done: `*.dds` and `Tests/Pickle/Evidence/`, `evidence/` added to `.gitignore` (no `.dds`
+and no evidence was tracked or present on disk); CHANGELOG now opens with `## [0.1.0]`
+(creation of a publishIdFile) under `## [unreleased]`; TESTING.md states which evidence to keep and the
+new `tested` conditions (no `@wip`, every `@requires` pass run, no manual test left).
+No Pickle suite exists yet (`Tests/Pickle/` absent): `tested` remains far off; no run was requested.
+
+Upstream: `juanosarg/AlphaMythology` (default branch `master`, last push 2024-10-17, no licence) is a
+public git repository; the port is based on its commit 53a5518. Any fix worth returning goes as a PR
+there, only with the owner's agreement.

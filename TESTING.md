@@ -88,3 +88,21 @@ The translation gate and bilingual acceptance cases are documented in
 `python Tests/Check-Translations.py --self-test` after text, Def, patch, UI or
 language-resource edits. This check also runs in CI. Reset affected translation
 fields in STATUS.md to `unchecked` until the audit and resource checks pass again.
+
+## Evidence to keep
+
+Reports (`Tests/Pickle/Evidence/`, `evidence/`) are gitignored and live on disk only. Keep,
+per scenario, the latest report for the revision now in the repository, plus an older one
+only if it is the sole proof of a check the latest run did not repeat. Delete the rest as
+soon as a newer report replaces it; a report about a superseded build proves nothing.
+Screenshots may be minified (only the `@review` captures that were actually opened and
+judged, at reduced size). Never delete a report a `STATUS.md` field still points to:
+repoint it first. History is one text line per run in `docs/runs/`, never folders.
+
+## Conditions for `tested`
+
+- No scenario left in `@wip`: repaired and replayed, or deleted with its justification.
+- Every conditional scenario (`@requires:<packageId>`) has had its pass, on a map that loads
+  that mod, and its report was read (suite and scenario names checked).
+- No manual test left to validate: each is automated and green, or listed as not
+  applicable with its reason. `@review` captures are still looked at.

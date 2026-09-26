@@ -494,3 +494,11 @@ for news after "almost a month", the author (Sarg Bjornson) answering "Yep" to i
 depends on other mods being released, and comments about 1.6 updates removed from now on). None of them grants
 or forbids reuse: nothing changes the `silent` classification. The 602 previous comments were not re-read.
 The remake announcement is context for this port (a supersession risk), not a licence fact.
+
+## PUBLICATION.md drafted — 2026-09-26
+
+`PUBLICATION.md` written (dependencies and DLC with their evidence, adult-content answer, description tail,
+Steam change notes for 0.1.0 and 1.0.0, thank-you plan against `../WORKSHOP_COMMENTS.md`). Not final: gallery order
+and images do not exist yet, the 25 creature textures were not all opened for the adult-content boxes, the Workshop
+ids of the eight optional providers are unresolved, and whether to comment on the original's page is Virginie's
+decision. Nothing was posted or sent.

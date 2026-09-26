@@ -33,8 +33,8 @@ Feature: two behaviours of this mod that only a running game shows
 # the first run of this pass is what settles it. If the log shows something else, rewrite the pattern, do not add a
 # scenario expected to fail. "@allow-errors" keeps the expected error from failing the scenario by itself.
 #
-# @requires:sarg.magicalmenagerie @allow-errors
-# Scenario: the original loaded beside this port logs the duplicate definitions it is declared incompatible for
-#   Then mod "sarg.magicalmenagerie" is loaded
-#   And mod "nelim.alphamythologyrenew" is loaded
-#   And an error matching "MM_" was logged
+  @requires:sarg.magicalmenagerie @allow-errors
+  Scenario: the original loaded beside this port logs the duplicate definitions it is declared incompatible for
+    Then mod "sarg.magicalmenagerie" is loaded
+    And mod "nelim.alphamythologyrenew" is loaded
+    And an error matching "MM_" was logged

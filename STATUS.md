@@ -695,3 +695,5 @@ The run played the tree of its turn; 11 reds, read one by one:
 ## Four more passes filed — 2026-09-26
 
 Revision bc60471 (the incompatibility probe scenario is now active, hypothesis: duplicate defs; the run settles the symptom). Requests: studio 20260926-231900-835-5bc7 (filter 09-publication-shots), optional integrations -902-...-d62d (10-integrations, avec-facultatifs), Giddy-Up -f431 (10-integrations, avec-giddyup), incompatibility -778c (11-behaviour-and-incompatibility). Evidence dirs studio, facultatifs, giddyup, incompat. If a filter plays nothing, the report says so (played vs discovered): refile with the suite name first.
+
+- fr run (5a25) played the tree from before 4ab9496 (same reds as en2, plus: Ieltxu found no straight line of sight for its target — the cell finder now searches the whole ring; Minotaur/Hydra/Stymphalian: 300 ticks too short, now 600). Not diagnosed further until a run plays the fixed tree.

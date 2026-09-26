@@ -44,9 +44,13 @@ namespace AlphaMythologyRenew.PickleSteps
         private static IntVec3 CellAtDistance(PickleContext ctx, IntVec3 origin, int distance)
         {
             var map = CreatureSteps.Map(ctx);
-            foreach (var dir in new[] { IntVec3.East, IntVec3.West, IntVec3.North, IntVec3.South })
+            // Any cell of the ring around the origin, nearest to the wanted distance first: the four straight lines alone can
+            // all be blocked by a wall or a tree in the fixture.
+            var candidates = GenRadial.RadialCellsAround(origin, distance + 2f, true)
+                .Where(c => c.DistanceTo(origin) >= distance - 1f)
+                .OrderBy(c => System.Math.Abs(c.DistanceTo(origin) - distance));
+            foreach (var cell in candidates)
             {
-                var cell = origin + dir * distance;
                 if (cell.InBounds(map) && cell.Standable(map) && cell.GetFirstPawn(map) == null
                     && GenSight.LineOfSight(origin, cell, map))
                 {

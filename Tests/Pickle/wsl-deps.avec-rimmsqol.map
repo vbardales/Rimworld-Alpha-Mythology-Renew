@@ -1,0 +1,4 @@
+# The pass that stages RIMMSQOL, so the hidden MainButtons shortcut can be revealed through it.
+# RIMMSQOL first, then the steps that drive it (see PickleTools/RimmsqolSteps/README.md).
+MalteSchulze.RIMMSqol            1084452457
+nelim.pickletools.rimmsqol      path:PickleTools/RimmsqolSteps/Mod

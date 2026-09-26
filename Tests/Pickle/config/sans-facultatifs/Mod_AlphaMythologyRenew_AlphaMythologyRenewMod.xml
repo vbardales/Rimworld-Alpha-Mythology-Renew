@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The documented defaults, seeded into the profile at every staging of the ordinary pass.
+     The Config folder is not wiped between passes: without this seed, the restart pair (which leaves a
+     multiplier of 3 and a blocked creature on disk on purpose) would hand them to the next run of this mod,
+     and "a clean profile loads the documented defaults" would fail on a profile that was never clean. -->
+<SettingsBlock>
+  <ModSettings Class="AlphaMythologyRenew.AlphaMythologySettings">
+    <spawnMultiplier>1</spawnMultiplier>
+  </ModSettings>
+</SettingsBlock>

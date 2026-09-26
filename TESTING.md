@@ -114,3 +114,12 @@ settings (`Source/SpawnRules.cs`: defaults, bounds, clamping, blocked creature).
 the settings contract (hidden shortcut, worker class, persistence fields) and Test-Validator.ps1 proves a
 visible shortcut is rejected. The window, its effect on real spawns, persistence across restart and the
 RIMMSQOL route need a running game and belong to `done -> tested` (scenario F13 in Tests/FUNCTIONAL.md).
+
+## Passes (declared 2026-09-26)
+
+The Pickle suite is in [Tests/Pickle](Tests/Pickle/README.md): 8 features, 16 scenarios, written, **never played**.
+Passes: minimal English and minimal French (the same filter, one language each), the restart pair
+(`07-restart-write` then `08-restart-read`, one launch chain under one lock), and one pass with RIMMSQOL
+(`wsl-deps.avec-rimmsqol.map`, feature `04-rimmsqol`). Declared but not written yet: a pass per optional
+integration named by the nine patches, and a pass for the declared incompatibility with
+`sarg.magicalmenagerie`. Until they are played, the mod is not tested: it is essayed.

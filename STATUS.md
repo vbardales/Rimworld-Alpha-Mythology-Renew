@@ -436,3 +436,13 @@ MOD_SETTINGS.md are pending; AUDIT.md states they do not block `options`. The tw
 point (MOD_SETTINGS.md would hold `l10n` until `complete`); AUDIT.md prevails as instructed, and Virginie
 may want the wording aligned.
 `l10n -> preTest` still open: optional legacy providers not verified (unchanged). No Pickle suite written yet.
+
+## Pickle suite written — 2026-09-26
+
+`Tests/Pickle`: 8 features, 16 scenarios, 24 local steps (`Source/Steps.cs`, DLL built into
+`Mod/Pickle/Assemblies`), passes declared in `Tests/Pickle/README.md` and `TESTING.md`. Every feature line
+naming this mod matches exactly one step (checked by script); the RIMMSQOL steps come from
+`PickleTools/RimmsqolSteps`. **None has been played.** The two documents' gate for `preTest`
+(AGENTS.md: settings gate `complete` or `not_applicable`) is not met while the settings runtime checks are
+pending, so the stage stays `options`. Missing: passes for the optional integrations and for the declared
+incompatibility with `sarg.magicalmenagerie`; the wisp, phoenix and legacy patches have no scenario yet.

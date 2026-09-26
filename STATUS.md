@@ -484,3 +484,13 @@ patch commented out) and #2 "fix giddy up patch not being up to date with giddy-
 Virginie opened page 1821617793: it works, and she is subscribed. This contradicts the summarizing fetch's
 "removed from Steam Community" remark, which is dropped as unfounded. Not checked: how the page looks logged
 out (a subscriber may see an item others cannot); the 4 new comments (606 against 602) remain unread.
+
+### Workshop comments read — 2026-09-26 (Claude in Chrome, page 1 of 13, newest first)
+
+The 4 comments added since the 2026-09-12 archive are all of 22 September 2026, in one exchange: a user asking
+for news after "almost a month", the author (Sarg Bjornson) answering "Yep" to it, and two more from users. On
+30 August the author had answered "No news. It will take a long time" to a user asking for an updated version
+"floating around". Also re-read on the same page: the author's 15 July 2026 statement (a future remake that
+depends on other mods being released, and comments about 1.6 updates removed from now on). None of them grants
+or forbids reuse: nothing changes the `silent` classification. The 602 previous comments were not re-read.
+The remake announcement is context for this port (a supersession risk), not a licence fact.

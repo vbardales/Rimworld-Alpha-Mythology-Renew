@@ -26,7 +26,7 @@ What is left needs a running game.
 | 14 bleeding | 2 | the wound hurting while it lasts and stopping when removed (F04) |
 | 15 combat | 10 + 3 | each ranged creature fires and its target is affected (F06); the tlilcoatl's poison breath on an organic target, a shielded colonist and a mechanoid (F09) |
 | 16 products | 6 + 2 + 1 | egg layers, milk, and the Kitsune's regeneration (F07) |
-| 17 plants | 2 + 1 | the dead plants cut by a colonist (F08), the kappa asked about a mature crop (F12 baseline) |
+| 17 plants | 2 + 1 + 1 + 2 | the dead plants cut by a colonist (F08); F12 in the baseline and with Tree Chopping Speed Stat: the bare call, and the real path (a growing zone, a tamed kappa, VEF's JobGiver_Harvest) |
 | 11 behaviour | 2 | the phoenix leaving an egg when it dies, the will-o'-wisp's translated fission text; the incompatibility scenario is written as a comment until its symptom is known |
 | 07 / 08 restart | 1 + 1 | a value that has to outlive the process, which one process cannot show |
 

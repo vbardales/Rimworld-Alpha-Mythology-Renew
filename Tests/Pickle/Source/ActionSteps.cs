@@ -412,6 +412,73 @@ namespace AlphaMythologyRenew.PickleSteps
             if (!plant.Destroyed) plant.Destroy();
         }
 
+        // --- F12: the harvest path of the report, through VEF's own job giver -----------------------
+
+        private sealed class HarvestRecord
+        {
+            public Zone_Growing Zone;
+            public Plant Plant;
+            public Exception Error;
+            public bool Issued;
+            public string JobDefName;
+        }
+
+        [Given("Alpha Mythology Renew spawns a growing zone with a mature crop beside the tamed {string} named {string}")]
+        public void CropBesideAnimal(PickleContext ctx, string kindDefName, string name)
+        {
+            var map = CreatureSteps.Map(ctx);
+            var kind = CreatureSteps.Kind(ctx, kindDefName);
+            var animal = CreatureSteps.SpawnAtStage(ctx, kind, kind.RaceProps.lifeStageAges.Count - 1, CreatureSteps.FreeCell(ctx));
+            animal.Name = new NameSingle(name);
+            var plantDef = DefDatabase<ThingDef>.GetNamedSilentFail("Plant_Rice");
+            ctx.Require(plantDef != null, "no ThingDef named 'Plant_Rice'");
+            var cell = CellAtDistance(ctx, animal.Position, 3);
+            var zone = new Zone_Growing(map.zoneManager);
+            map.zoneManager.RegisterZone(zone);
+            zone.AddCell(cell);
+            zone.SetPlantDefToGrow(plantDef);
+            var plant = (Plant)ThingMaker.MakeThing(plantDef);
+            plant.Growth = 1f;
+            GenSpawn.Spawn(plant, cell, map);
+            ctx.Require(plant.HarvestableNow, "the spawned crop is not harvestable: the test cannot reach the harvest path");
+            ctx.Set(new HarvestRecord { Zone = zone, Plant = plant });
+        }
+
+        /// <summary>
+        /// The trace of the report: VEF's JobGiver_Harvest asks WorkGiver_GrowerHarvest, which asks
+        /// PlantUtility.PawnWillingToCutPlant_Job. The giver is built by reflection (this project does not reference VEF).
+        /// </summary>
+        [When("Alpha Mythology Renew VEF's harvest job giver is asked for a job for {string}")]
+        public void AskHarvestGiver(PickleContext ctx, string name)
+        {
+            var record = CreatureSteps.TryGet<HarvestRecord>(ctx);
+            ctx.Require(record != null, "no crop was spawned in this scenario");
+            var pawn = CreatureSteps.Live(ctx, name);
+            var type = GenTypes.GetTypeInAnyAssembly("VEF.AnimalBehaviours.JobGiver_Harvest");
+            ctx.Require(type != null, "VEF defines no JobGiver_Harvest in this build");
+            var giver = (ThinkNode)Activator.CreateInstance(type);
+            try
+            {
+                var result = giver.TryIssueJobPackage(pawn, default(JobIssueParams));
+                record.Issued = result.IsValid;
+                record.JobDefName = result.Job?.def.defName;
+            }
+            catch (Exception e)
+            {
+                record.Error = e;
+            }
+        }
+
+        [Then("Alpha Mythology Renew the harvest job giver answered without an exception")]
+        public void GiverAnswered(PickleContext ctx)
+        {
+            var record = CreatureSteps.TryGet<HarvestRecord>(ctx);
+            ctx.Require(record != null, "no crop was spawned in this scenario");
+            ctx.Assert(record.Error == null,
+                $"the harvest job giver threw {record.Error?.GetType().Name}: {record.Error?.Message} at "
+                + string.Join(" <- ", (record.Error?.StackTrace ?? "").Split('\n').Select(l => l.Trim()).Take(4).ToArray()));
+        }
+
         // --- teardown ---------------------------------------------------------------------------
 
         [AfterScenario]
@@ -429,6 +496,12 @@ namespace AlphaMythologyRenew.PickleSteps
                 }
                 var egg = CreatureSteps.TryGet<EggRecord>(ctx);
                 if (egg?.Egg != null && !egg.Egg.Destroyed) egg.Egg.Destroy();
+                var harvest = CreatureSteps.TryGet<HarvestRecord>(ctx);
+                if (harvest != null)
+                {
+                    if (harvest.Plant != null && !harvest.Plant.Destroyed) harvest.Plant.Destroy();
+                    harvest.Zone?.Delete();
+                }
                 var plant = CreatureSteps.TryGet<PlantRecord>(ctx);
                 if (plant?.Plant != null && !plant.Plant.Destroyed) plant.Plant.Destroy();
             }

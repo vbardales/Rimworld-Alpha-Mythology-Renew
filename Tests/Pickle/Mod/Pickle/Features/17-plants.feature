@@ -3,8 +3,9 @@
 # F12's second half needs Tree Chopping Speed Stat (Workshop 2566231583, velcroboy333, 1.2 to 1.6): the pass
 # wsl-deps.avec-treechop.map stages it. The Workshop report of the original (discussion of 24 Nov 2023) is a
 # NullReferenceException in that mod's prefix on PlantUtility.PawnWillingToCutPlant_Job, raised because the kappa has no
-# VBY_TreeChopWorkSpeed stat, from VEF's harvest job giver. The scenario below reproduces the call; it may well fail:
-# that would be a defect of the port on that provider, to be fixed with a patch, not a suite defect.
+# VBY_TreeChopWorkSpeed stat, from VEF's harvest job giver. The scenarios below reproduce that path (a growing zone with a
+# mature crop, a tamed kappa, VEF's own JobGiver_Harvest asked for a job) as well as the bare call; the provider one may well
+# fail: that would be a defect of the port on that provider, to be fixed with a patch, not a suite defect.
 
 Feature: plants and harvesting
 
@@ -32,4 +33,18 @@ Feature: plants and harvesting
   @requires:TreeChoppingSpeed.velcroboy333
   Scenario: with Tree Chopping Speed Stat, asking a tamed kappa about a mature crop does not throw
     Then Alpha Mythology Renew a tamed "MM_Kappa" may be asked whether it will cut a mature crop without an exception
+    And no errors were logged
+
+  # The real path of the report, in the baseline and, tagged, with the provider staged.
+  Scenario: VEF's harvest job giver answers for a tamed kappa beside a mature crop
+    Given Alpha Mythology Renew spawns a growing zone with a mature crop beside the tamed "MM_Kappa" named "Helper"
+    When Alpha Mythology Renew VEF's harvest job giver is asked for a job for "Helper"
+    Then Alpha Mythology Renew the harvest job giver answered without an exception
+    And no errors were logged
+
+  @requires:TreeChoppingSpeed.velcroboy333
+  Scenario: with Tree Chopping Speed Stat, VEF's harvest job giver answers for a tamed kappa beside a mature crop
+    Given Alpha Mythology Renew spawns a growing zone with a mature crop beside the tamed "MM_Kappa" named "Helper"
+    When Alpha Mythology Renew VEF's harvest job giver is asked for a job for "Helper"
+    Then Alpha Mythology Renew the harvest job giver answered without an exception
     And no errors were logged

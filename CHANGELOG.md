@@ -2,6 +2,11 @@
 
 ## [unreleased]
 
+### 2026-09-26
+
+- Added a settings window (Mod options): wild spawn frequency multiplier (0.1-5) and one switch per creature to keep it from appearing in the wild; optional MainButtons shortcut, hidden by default.
+- Added unit tests of the spawn rules and static checks of the settings contract; not yet tested in game.
+
 Work toward 1.0.0, above the 0.1.0 pre-publication.
 
 ### 2026-09-13

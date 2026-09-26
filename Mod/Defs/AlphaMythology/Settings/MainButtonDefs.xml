@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Optional shortcut to the mod settings. Hidden by default (neither visible nor greyed out);
+       a MainButtons customization mod such as RIMMSQOL can reveal it. -->
+  <MainButtonDef>
+    <defName>AMR_Settings</defName>
+    <label>Alpha Mythology Renew</label>
+    <description>Open the Alpha Mythology Renew settings: how often its creatures appear in the wild.</description>
+    <workerClass>AlphaMythologyRenew.MainButtonWorker_AlphaMythologySettings</workerClass>
+    <buttonVisible>false</buttonVisible>
+    <validWithoutMap>true</validWithoutMap>
+    <order>999</order>
+  </MainButtonDef>
+</Defs>

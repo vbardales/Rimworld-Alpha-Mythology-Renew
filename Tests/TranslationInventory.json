@@ -4136,5 +4136,19 @@
     "en": "Use a Fertilized griffin egg to create a Lavish Meal",
     "source": "Mod/Patches/AlphaMythology/AchievementsPatch.xml",
     "sourceKey": "MM_AchievementForbiddenPoultry.description"
+  },
+  {
+    "type": "MainButtonDef",
+    "key": "AMR_Settings.label",
+    "en": "Alpha Mythology Renew",
+    "source": "Mod/Defs/AlphaMythology/Settings/MainButtonDefs.xml",
+    "sourceKey": "AMR_Settings.label"
+  },
+  {
+    "type": "MainButtonDef",
+    "key": "AMR_Settings.description",
+    "en": "Open the Alpha Mythology Renew settings: how often its creatures appear in the wild.",
+    "source": "Mod/Defs/AlphaMythology/Settings/MainButtonDefs.xml",
+    "sourceKey": "AMR_Settings.description"
   }
 ]

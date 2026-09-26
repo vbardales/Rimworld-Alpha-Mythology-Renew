@@ -106,3 +106,11 @@ repoint it first. History is one text line per run in `docs/runs/`, never folder
   that mod, and its report was read (suite and scenario names checked).
 - No manual test left to validate: each is automated and green, or listed as not
   applicable with its reason. `@review` captures are still looked at.
+
+## Settings
+
+`dotnet run --project Tests/UnitTests/UnitTests.csproj -c Release` runs the game-free rules of the
+settings (`Source/SpawnRules.cs`: defaults, bounds, clamping, blocked creature). Check-Mod.ps1 asserts
+the settings contract (hidden shortcut, worker class, persistence fields) and Test-Validator.ps1 proves a
+visible shortcut is rejected. The window, its effect on real spawns, persistence across restart and the
+RIMMSQOL route need a running game and belong to `done -> tested` (scenario F13 in Tests/FUNCTIONAL.md).

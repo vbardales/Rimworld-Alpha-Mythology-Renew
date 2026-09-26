@@ -10,7 +10,7 @@ This disclosure follows the user's publication policy; it does not grant rights.
 Install only `Mod/`, after Harmony and Vanilla Expanded Framework. Do not combine
 with the original (`sarg.magicalmenagerie`) or an old Animal Ark containing these defs.
 New game recommended when moving from Animal Ark: custom class names changed.
-The upstream settings window was not part of Animal Ark and is not included.
+A settings window (Mod options -> Alpha Mythology Renew) sets the wild spawn frequency and lets you exclude any creature; the upstream window was not part of Animal Ark, this one is written for the port. An optional MainButtons shortcut, hidden by default, opens the same window.
 
 Build: `dotnet build Source/AlphaMythologyRenew.csproj -c Release`.
 Validation and manual acceptance cases are in TESTING.md. No in-game test is claimed.

@@ -6,6 +6,8 @@ New-Item -ItemType Directory -Path $fixture | Out-Null
 try {
     Copy-Item "$root/Mod" $fixture -Recurse
     Copy-Item "$root/LICENSE", "$root/ATTRIBUTION.md" $fixture
+    New-Item -ItemType Directory -Path "$fixture/Source" | Out-Null
+    Copy-Item "$root/Source/Settings.cs", "$root/Source/SpawnRules.cs" "$fixture/Source"
     $validator = Join-Path $PSScriptRoot 'Check-Mod.ps1'
     & $validator -ModRoot $fixture
     $cases = @(
@@ -14,7 +16,8 @@ try {
         @{ Name='dangling hatch target'; File='Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_MagicalAnimalEggs.xml'; From='<hatcherPawn>MM_Phoenix</hatcherPawn>'; To='<hatcherPawn>MM_MissingKind</hatcherPawn>'; Error='Missing PawnKindDef MM_MissingKind' },
         @{ Name='wrong death worker'; File='Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Phoenix.xml'; From='AlphaMythologyRenew.DeathActionWorker_ExplodeAndSpawnEggs'; To='AlphaMythologyRenew.MissingWorker'; Error='Phoenix death worker disconnected' },
         @{ Name='flammable phoenix egg'; File='Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_MagicalAnimalEggs.xml'; From='<Flammability>0</Flammability>'; To='<Flammability>1</Flammability>'; Error='Phoenix egg must resist fire' },
-        @{ Name='notice mismatch'; File='Mod/LICENSE'; From='No licence'; To='Some licence'; Error='LICENSE mismatch' }
+        @{ Name='notice mismatch'; File='Mod/LICENSE'; From='No licence'; To='Some licence'; Error='LICENSE mismatch' },
+        @{ Name='visible settings shortcut'; File='Mod/Defs/AlphaMythology/Settings/MainButtonDefs.xml'; From='<buttonVisible>false</buttonVisible>'; To='<buttonVisible>true</buttonVisible>'; Error='Settings shortcut must be hidden by default (buttonVisible false)' }
     )
     foreach ($case in $cases) {
         $path = Join-Path $fixture $case.File

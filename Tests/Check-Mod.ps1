@@ -47,6 +47,19 @@ Assert-Mod ($wound.hediffClass -ceq 'AlphaMythologyRenew.Hediff_BleedingWound') 
 $null = Require-Def 'DamageDef' 'MM_UncontrollableBleeding'
 $recipe = Require-Def 'RecipeDef' 'MM_ShutDownMechanoid'
 Assert-Mod ($recipe.workerClass -ceq 'AlphaMythologyRenew.Recipe_ShutDown') 'Shutdown recipe worker disconnected'
+$button = Require-Def 'MainButtonDef' 'AMR_Settings'
+Assert-Mod ($button.workerClass -ceq 'AlphaMythologyRenew.MainButtonWorker_AlphaMythologySettings') 'Settings shortcut worker disconnected'
+Assert-Mod ($button.buttonVisible -ceq 'false') 'Settings shortcut must be hidden by default (buttonVisible false)'
+$settingsSource = Get-Content "$root/Source/Settings.cs" -Raw
+$rulesSource = Get-Content "$root/Source/SpawnRules.cs" -Raw
+foreach ($needle in @('DefaultMultiplier = 1f', 'MinMultiplier = 0.1f', 'MaxMultiplier = 5f')) {
+    Assert-Mod ($rulesSource.Contains($needle)) "Settings contract: '$needle' missing from Source/SpawnRules.cs"
+}
+foreach ($needle in @(': ModSettings', ': Mod', 'SettingsCategory', 'MainButtonWorker', 'Dialog_ModSettings',
+        'CommonalityOfAnimal', 'SpawnRules.Sanitize',
+        'Scribe_Values.Look(ref spawnMultiplier', 'Scribe_Collections.Look(ref blocked')) {
+    Assert-Mod ($settingsSource.Contains($needle)) "Settings contract: '$needle' missing from Source/Settings.cs"
+}
 [xml]$about = Get-Content "$root/Mod/About/About.xml" -Raw
 $meta = $about.ModMetaData
 Assert-Mod ($meta.name -ceq 'Alpha Mythology Renew (unofficial)') 'Wrong title'

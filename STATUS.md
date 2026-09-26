@@ -11,18 +11,18 @@ git_root: C:/Users/nelim/Documents/rimworld/AlphaMythologyRenew
 git_isolation: standalone; removed from parent index and ignored there
 remote: origin https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew.git
 maintainer: Codex task dedicated to AlphaMythologyRenew; maintain this STATUS.md as work progresses
-stage: preOptions
+stage: options
 settings_audit: partial
 audit_at: 2026-09-26
-audit_revision: 3d88314fbeec0b037a884839f43689de1b4f2a90
-automated_tests: passed; static contracts and negative cases only
+audit_revision: 3d88314fbeec0b037a884839f43689de1b4f2a90 (+ uncommitted settings work, see the 2026-09-26 sections)
+automated_tests: passed; static contracts (339 assertions, 7 negative cases) and 13 settings-rule unit tests
 xml_tests: passed
 functional_tests: unverified; not run in game
 licence: silent
 licence_at: 2026-09-12; upstream master 53a5518008821188009bbf996b7120ad9593cb5f and Workshop description reviewed; no project redistribution grant found
 showcase: directly inspected; committed Preview 896 x 504 (564630 bytes), ModIcon 128 x 128 (21666 bytes)
 remaining:
-  - unverified: relevance assessment of omitted spawn controls in the current port; their historical existence does not require restoration or establish a defect
+  - unverified (in game, belongs to done -> tested): settings window, both routes (Mod options and hidden MainButtons via RIMMSQOL), real effect on wild spawns, persistence after restart and reload, EN and FR layout
   - unverified: English and French in-game translation acceptance, including optional integrations and wisp inspection/gizmos
   - unverified: manual gameplay and save migration
   - unverified: optional legacy integrations with their providers
@@ -396,3 +396,43 @@ No Pickle suite exists yet (`Tests/Pickle/` absent): `tested` remains far off; n
 Upstream: `juanosarg/AlphaMythology` (default branch `master`, last push 2024-10-17, no licence) is a
 public git repository; the port is based on its commit 53a5518. Any fix worth returning goes as a PR
 there, only with the owner's agreement.
+
+## Settings audit — 2026-09-26
+
+Decision (Virginie, 2026-09-26): port the spawn controls of the original mod. Relevance: a player can
+exclude an unwanted creature and scale the wild frequency of all 25 without editing XML.
+
+Inventory and rationale: two options only, nothing cosmetic added.
+- Wild spawn frequency multiplier: default 1, range 0.1 to 5 (step 0.05), slider plus restore-defaults
+  button. Scope: global (player configuration, not per save). Applies immediately, to new spawns only.
+- One switch per creature (25, listed from the mod's own pack, so a creature added later appears by itself):
+  unchecked = never spawns in the wild. Default: all allowed. Animals already on the map or tamed stay.
+- Mechanism: Harmony postfix on `BiomeDef.CommonalityOfAnimal` (`Source/Settings.cs`); pure rule in
+  `Source/SpawnRules.cs`. Persistence: `ModSettings` with Scribe (`spawnMultiplier`, `blockedKinds`), a
+  corrupt value is brought back into range on load.
+- Access: Mod options -> Alpha Mythology Renew (unofficial), no other mod required. MainButtons shortcut
+  `AMR_Settings`, `buttonVisible` false (neither visible nor greyed out, definition kept so RIMMSQOL can
+  reveal it), same `Dialog_ModSettings` window.
+- Excluded on purpose: the wisp/VEF reproduction flags (provider-wide, not this mod's) and combat constants.
+- Text: 5 Keyed keys (`AMR_SettingsCategory`, `AMR_SpawnMultiplier`, `AMR_SpawnMultiplierTip`,
+  `AMR_ResetDefaults`, `AMR_AllowedHeader`) in EN and FR; the shortcut label/description are Def fields,
+  French through DefInjected (MainButtonDef).
+
+Checks run on this working tree (pwsh 7 and Python from the Codex runtimes, TicketDispatcher's inventory):
+- `Tests/Check-Mod.ps1`: PASS, 339 assertions (settings shortcut hidden, worker class, source contract).
+- `Tests/Test-Validator.ps1`: PASS, 7 negative cases (new: visible shortcut is rejected).
+- `Tests/UnitTests` (`dotnet run`): PASS, 13 checks of the pure rules (defaults, bounds, clamp, NaN, blocked).
+- `Tests/Check-Translations.py --self-test`: PASS, 593 fields, 592 French injections, 54 EN/FR Keyed pairs.
+- `scripts/Check-DefInjected.ps1` with VEF and MVCF: 592 keys checked, 0 errors. The Achievements paths
+  could not be resolved this time (provider 2288125657 not installed here): unverified, unchanged since 2026-09-13.
+- `dotnet build` Release: 0 warnings, 0 errors; shipped DLL rebuilt from these sources.
+
+Not verified (in game, so for done -> tested): everything listed in `remaining` above. Reading the code does
+not prove the window, the effect on real spawns, or the RIMMSQOL route. No RIMMSQOL or other customization
+mod has been tested. No RimWorld was launched.
+
+Stage: `options` (was preOptions). `settings_audit` stays `partial` because the runtime checks of
+MOD_SETTINGS.md are pending; AUDIT.md states they do not block `options`. The two documents differ on this
+point (MOD_SETTINGS.md would hold `l10n` until `complete`); AUDIT.md prevails as instructed, and Virginie
+may want the wording aligned.
+`l10n -> preTest` still open: optional legacy providers not verified (unchanged). No Pickle suite written yet.

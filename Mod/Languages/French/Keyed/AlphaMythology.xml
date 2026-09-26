@@ -43,4 +43,9 @@
   <MM_UtilityWorkerDesc>Cet animal, plutôt fragile, n'est pas adapté au combat. Il aidera toutefois vos colons à accomplir certaines tâches, comme le minage ou la récolte.</MM_UtilityWorkerDesc>
   <MM_VenomousTankDesc>Les animaux résistants sont spécialisés dans le combat au corps à corps. Ils possèdent des attaques puissantes, une bonne résistance, beaucoup de santé ou d'autres capacités leur permettant de survivre en première ligne.\n\nCet animal possède aussi de puissantes attaques venimeuses.</MM_VenomousTankDesc>
   <MM_Yes>Oui</MM_Yes>
+  <AMR_SettingsCategory>Alpha Mythology Renew (non officiel)</AMR_SettingsCategory>
+  <AMR_SpawnMultiplier>Fréquence d'apparition à l'état sauvage : x{0}</AMR_SpawnMultiplier>
+  <AMR_SpawnMultiplierTip>Multiplie la fréquence de toutes les créatures de ce mod à l'état sauvage (1 = valeurs du mod). S'applique immédiatement, aux nouvelles apparitions seulement : les animaux déjà présents sur la carte restent.</AMR_SpawnMultiplierTip>
+  <AMR_ResetDefaults>Rétablir les valeurs par défaut</AMR_ResetDefaults>
+  <AMR_AllowedHeader>Créatures autorisées à apparaître à l'état sauvage (décochée : n'apparaît jamais ; les animaux apprivoisés ou déjà présents ne changent pas)</AMR_AllowedHeader>
 </LanguageData>

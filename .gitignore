@@ -34,3 +34,6 @@ PROMPT_*.md
 # The short text history lives in docs/runs/, one line per run.
 Tests/Pickle/Evidence/
 evidence/
+
+Tests/UnitTests/bin/
+Tests/UnitTests/obj/

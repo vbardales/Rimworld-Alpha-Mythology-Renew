@@ -161,3 +161,15 @@ null-reference exceptions. Record the provider-dependent result separately.
 
 Release acceptance requires the baseline cases to pass, documented outcomes for
 supported optional providers, and explicit disclosure of untested migration paths.
+
+## F13 - Settings (NOT RUN)
+
+Preconditions: new colony with this mod, VEF and Harmony; a second run with RIMMSQOL for step 6.
+1. Mod options -> Alpha Mythology Renew (unofficial): the window opens with multiplier 1 and all 25 creatures checked.
+2. Set the multiplier to 5, then to 0.1: label and tooltip follow; the value never leaves 0.1-5.
+3. Uncheck one creature, spawn wild animals in a biome that hosts it (dev mode, "Spawn a wild animal" pressure or many days): it never appears; others still do.
+4. Restore defaults: multiplier 1, all checked. Close, reopen: values kept. Restart the game: values kept.
+5. Confirm no MainButton is visible or greyed out on a clean configuration.
+6. With RIMMSQOL, reveal the shortcut: it opens the same window with the same values; hide it again, restart, visibility kept.
+7. Repeat 1-4 in English and French: no raw key, no clipping of the header and checkbox rows.
+8. Player.log during all of the above: no error from this mod.

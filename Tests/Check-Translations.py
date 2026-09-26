@@ -19,7 +19,7 @@ FIELDS = set('label description labelPlural labelMale labelFemale customLabel '
 KEY_FIELDS = set('buttonLabel buttonDesc buttonCancelLabel buttonCancelDesc '
                  'asexualHatchedMessage'.split())
 KEY_LISTS = {'statToAdd', 'statValues', 'statDescriptions'}
-UNCHANGED_NAMES = {'manticore', 'hydra', 'Alpha Mythology', 'ahuizotl', 'fenghuang',
+UNCHANGED_NAMES = {'manticore', 'hydra', 'Alpha Mythology', 'Alpha Mythology Renew', 'ahuizotl', 'fenghuang',
                    'ieltxu', 'kappa', 'kitsune', 'qilin', 'tlilcoatl', 'xiezhi'}
 
 

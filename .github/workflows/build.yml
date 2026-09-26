@@ -18,3 +18,5 @@ jobs:
       - name: Validator negative cases
         shell: pwsh
         run: ./Tests/Test-Validator.ps1
+      - name: Settings rules unit tests
+        run: dotnet run --project Tests/UnitTests/UnitTests.csproj -c Release

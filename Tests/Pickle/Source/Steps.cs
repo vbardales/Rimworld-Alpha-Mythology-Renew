@@ -27,6 +27,12 @@ namespace AlphaMythologyRenew.PickleSteps
                 new Dictionary<string, Dictionary<string, float>>();
         }
 
+        /// <summary>Pickle's ctx.Get throws when nothing of that type was set; a scenario that has not stored one yet is not an error.</summary>
+        private static T TryGet<T>(PickleContext ctx) where T : class
+        {
+            try { return ctx.Get<T>(); } catch (Exception) { return null; }
+        }
+
         private static AlphaMythologyRenewMod Mod(PickleContext ctx)
         {
             var mod = LoadedModManager.GetMod<AlphaMythologyRenewMod>();
@@ -154,7 +160,7 @@ namespace AlphaMythologyRenew.PickleSteps
         [When("Alpha Mythology Renew records the wild commonality of {string}")]
         public void Record(PickleContext ctx, string defName)
         {
-            var recorded = ctx.Get<Recorded>() ?? new Recorded();
+            var recorded = TryGet<Recorded>(ctx) ?? new Recorded();
             var values = Commonalities(Kind(ctx, defName));
             ctx.Require(values.Values.Any(v => v > 0f),
                 $"'{defName}' has a commonality of zero in every biome before any change: nothing to compare");
@@ -164,7 +170,7 @@ namespace AlphaMythologyRenew.PickleSteps
 
         private static Dictionary<string, float> Before(PickleContext ctx, string defName)
         {
-            var recorded = ctx.Get<Recorded>();
+            var recorded = TryGet<Recorded>(ctx);
             ctx.Require(recorded != null && recorded.ByKind.ContainsKey(defName),
                 $"no commonality was recorded for '{defName}' in this scenario");
             return recorded.ByKind[defName];

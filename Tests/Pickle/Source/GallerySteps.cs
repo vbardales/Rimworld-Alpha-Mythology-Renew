@@ -24,6 +24,12 @@ namespace AlphaMythologyRenew.PickleSteps
             public readonly Dictionary<string, Pawn> ByName = new Dictionary<string, Pawn>();
         }
 
+        /// <summary>Pickle's ctx.Get throws when nothing of that type was set; a scenario that has not stored one yet is not an error.</summary>
+        private static T TryGet<T>(PickleContext ctx) where T : class
+        {
+            try { return ctx.Get<T>(); } catch (Exception) { return null; }
+        }
+
         private static Map Map(PickleContext ctx)
         {
             ctx.Require(Current.Game != null && Find.CurrentMap != null, "no current map: load a fixture first");
@@ -32,7 +38,7 @@ namespace AlphaMythologyRenew.PickleSteps
 
         private static Pawn Creature(PickleContext ctx, string name)
         {
-            var spawned = ctx.Get<Spawned>();
+            var spawned = TryGet<Spawned>(ctx);
             ctx.Require(spawned != null && spawned.ByName.ContainsKey(name), $"no creature named '{name}' was spawned in this scenario");
             var pawn = spawned.ByName[name];
             ctx.Require(pawn.Spawned, $"'{name}' is no longer on the map");
@@ -64,7 +70,7 @@ namespace AlphaMythologyRenew.PickleSteps
             ctx.Require(found, $"no free cell near {x},{z}");
             GenSpawn.Spawn(pawn, cell, map);
 
-            var spawned = ctx.Get<Spawned>() ?? new Spawned();
+            var spawned = TryGet<Spawned>(ctx) ?? new Spawned();
             spawned.ByName[name] = pawn;
             ctx.Set(spawned);
         }
@@ -107,7 +113,7 @@ namespace AlphaMythologyRenew.PickleSteps
         {
             try
             {
-                var spawned = ctx.Get<Spawned>();
+                var spawned = TryGet<Spawned>(ctx);
                 if (spawned == null) return;
                 foreach (var pawn in spawned.ByName.Values)
                 {

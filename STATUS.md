@@ -611,3 +611,13 @@ all blocked: none); the gallery (09), integrations (10) and behaviour (11) draft
 maps. The suite is now 11 features, 32 scenarios, 35 local steps (each feature line matched to exactly one step by script;
 compiled; never played). Check-Mod (339) and the translation check pass. **The verdict of 4d36 does not cover the new
 scenarios**: the minimal English pass must be filed again once 4d36 is done, and the other passes after it.
+
+## First Pickle run read — 2026-09-26
+
+Run `4d36` (minimal English, revision 78ee4b0, `exitReason: failed`): 14 scenarios, 9 passed, 3 failed, 2 skipped. What passed
+is the first in-game evidence for this mod: it loads, the settings window opens through Mod options and shows the multiplier,
+the restore button and the 25 creatures (capture opened and read), the shortcut is hidden then revealed and opens the same
+window, the keys resolve in English, and settings survive a save load. The 3 failures are a suite defect (`ctx.Get` throws
+when nothing was stored), fixed in the steps and not replayed; the 2 RIMMSQOL scenarios were skipped by requirement, not
+passed. Line in `docs/runs/2026-09-26-78ee4b0-minimal-en.md`; evidence in `Tests/Pickle/Evidence/en/`. `settings_audit`
+stays `partial`: the effect on spawns, French, restart and RIMMSQOL are not yet shown.

@@ -44,7 +44,7 @@
   <MM_VenomousTankDesc>"Tank" animals are specialized in melee combat. These animals have high attack damage, good resistance, high health, or other abilities that allow them to survive in the front lines.\n\nThis animal also has powerful venomous attacks.</MM_VenomousTankDesc>
   <MM_Yes>Yes</MM_Yes>
   <AMR_SettingsCategory>Alpha Mythology Renew (unofficial)</AMR_SettingsCategory>
-  <AMR_SpawnMultiplier>Wild spawn frequency: x{0}</AMR_SpawnMultiplier>
+  <AMR_SpawnMultiplier>Wild spawn frequency: ×{0}</AMR_SpawnMultiplier>
   <AMR_SpawnMultiplierTip>Multiplies how common every creature of this mod is among the wild animals of a biome (1 = the mod's own values). It changes their share compared with other animals, not the total number of animals on the map. Applies immediately, to new spawns only: animals already on the map stay.</AMR_SpawnMultiplierTip>
   <AMR_ResetDefaults>Restore defaults</AMR_ResetDefaults>
   <AMR_AllowedHeader>Creatures allowed to appear in the wild (unchecked: never spawn; tamed and existing animals are unaffected)</AMR_AllowedHeader>

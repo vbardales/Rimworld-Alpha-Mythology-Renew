@@ -579,3 +579,12 @@ not to apply to the installed "(Continued)" page; the optional integrations have
 phoenix death and the legacy patches have no scenario; the first Pickle run (`20260926-111909-647-4d36`) is queued.
 `preTest -> done` asks for tests written and offline tests green, which the current tree meets except for what the
 items above still add; whether to call it `done` is left for the next audit, once the patch direction is settled.
+
+## Tree changed under the queued run — 2026-09-26
+
+On Virginie's instruction (Mod/ only, Tests/Pickle untouched), one merge commit, `78ee4b0`, brought into the tree what the run
+`20260926-111909-647-4d36` will stage: the 25 unreferenced textures removed (`7fd51c9`) and the completed description tail
+in `About.xml` (`4516a19`, the "IF I GO QUIET / AI-GENERATED / THANKS" sections of `PUBLICATION.md`, 4077 characters).
+The run's label says `149c495`: **the revision it actually tests is `78ee4b0`** (no code, Def, patch or test changed since
+149c495; only textures nothing references and the `About.xml` description). Check-Mod (339) and the negative cases pass
+on it. The `cleanup/unused-textures` branch and its worktree are removed after the merge.

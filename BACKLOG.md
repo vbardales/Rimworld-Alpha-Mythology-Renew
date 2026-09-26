@@ -105,3 +105,10 @@ dependency of this mod and the guards use it. Consequences to carry out when the
   in the pass `wsl-deps.avec-treechop.map`. If it fails, the fix is a patch giving the kappa that stat (guarded by that mod,
   through the resolver library once it exists), in `Mod/`.
 - [ ] File the pass: `-DepMap wsl-deps.avec-treechop.map -Filter '17-plants'`. Credit for the register and THANKS if the pass is played.
+
+**Update 2026-09-26 (late):** the library's packageId is confirmed by Virginie: `nelim.resolvethisinstead` (the display name may
+change, the id will not). It must **not** go into `About.xml` yet: the staging script stages every hard dependency the About
+declares and needs its Workshop id or a `path:` for it, so declaring an unmountable dependency now would stop every queued
+Pickle request. Add it (About `modDependencies`, `Check-Mod` list, and `nelim.resolvethisinstead path:ResolveThisInstead/Mod` in
+the pass maps) in one commit when the library session says its folder is mountable, and re-file the passes then. Its proof of
+concept is queued in the Pickle file (request `20260926-222716-133-fd04`) and decides the design.

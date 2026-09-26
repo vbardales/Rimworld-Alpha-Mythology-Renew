@@ -502,3 +502,23 @@ Steam change notes for 0.1.0 and 1.0.0, thank-you plan against `../WORKSHOP_COMM
 and images do not exist yet, the 25 creature textures were not all opened for the adult-content boxes, the Workshop
 ids of the eight optional providers are unresolved, and whether to comment on the original's page is Virginie's
 decision. Nothing was posted or sent.
+
+## Optional providers located, gallery drafted, upstream linked — 2026-09-26
+
+Providers, found with `scripts/Search-Workshop.sh -i About.xml` over the Workshop cache (8990 folders, only
+`<name>` matched, so a renamed or differently spelled page would be missed: an absence is not proof):
+- Found installed: A RimWorld of Magic (1201382956), Vanilla Cooking Expanded (2134308519; its Stews, Sushi and
+  Canned Meals add-ons are separate pages), [XND] Nocturnal Animals (Continued) (2269731409), Vanilla Genetics
+  Expanded (2801160906).
+- Not found installed: Vanilla Achievements Expanded (id 2288125657 known from the earlier audit), Advanced Biomes
+  (Continued), Giddy-up, Lord of the Rims - Elves (Continued), Nature's Pretty Sweet. Their ids and packageIds still
+  have to be resolved before their passes and thanks lines can be written.
+- So a pass could be written now for the four installed ones; the others need the mod installed or a page read.
+
+Gallery: `docs/gallery-draft/` holds a Pickle feature (5 scenes), its steps (compiled against the 1.6 reference
+assemblies, never played) and the studio pass map. It goes into `Tests/Pickle` only after the first run is done.
+
+Upstream link: the local repository had only `origin`. A fetch-only remote `upstream`
+(`https://github.com/juanosarg/AlphaMythology.git`, push URL set to `DISABLED`) was added and `master` fetched
+shallowly (53a5518, the audited commit). The port's GitHub repository is not a fork of it (`isFork: false`), so a
+pull request to the original would first need a fork: a public action, only with Virginie's agreement.

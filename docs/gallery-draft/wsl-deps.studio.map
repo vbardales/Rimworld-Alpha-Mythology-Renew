@@ -1,0 +1,8 @@
+# Pass "studio": Alpha Mythology Renew in the owner's photographic colony, for the images of the Workshop page (PUBLICATION.md).
+# Select it with -DepMap wsl-deps.studio.map, in English (the page is English). A named map REPLACES the default one.
+# The tools are PickleTools': the studio (fixture nelim-zen-meadow-studio, camera presets, presentation mode), the screenshot mode
+# and the clear screen. The scenarios that need them are tagged @requires:nelim.pickletools.screenshotstudio, skipped elsewhere.
+nelim.pickletools.filmticks         path:PickleTools/FilmTicks/Mod
+nelim.pickletools.screenshotstudio  path:PickleTools/ScreenshotStudio/Mod
+nelim.pickletools.screenshotmode    path:PickleTools/ScreenshotMode/Mod
+nelim.pickletools.clearscreen       path:PickleTools/ClearScreen/Mod

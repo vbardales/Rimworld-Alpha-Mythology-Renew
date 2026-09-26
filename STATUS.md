@@ -639,3 +639,14 @@ which the port does not ship): F05 cannot be tested and the recipe and `Recipe_S
 keep or remove. Proposed not applicable, awaiting the owner: F03's colonist execution, F06, F07 beyond spawning, F08, F09, F12;
 F04's save-file persistence stays unverified (no Pickle step writes and reloads a save).
 The four requests filed on `bc00f57` (see above) will stage this newer tree when played, since a request carries no SHA.
+
+## F06 to F12 automated — 2026-09-26
+
+On Virginie's instruction (F03's execution is VEF's, VEF being required; F09 and F12 to be done anyway) the remaining
+manual scenarios are written as Pickle features 15 (combat: 10 ranged creatures, the tlilcoatl against an organic target, a
+shield belt and a mechanoid), 16 (products: 6 egg layers, 2 milkables, the Kitsune's regeneration) and 17 (plants: the two
+dead plants cut by a colonist, the kappa asked about a mature crop). They compile and every line matches a step (63 local
+steps in all); none has been played and several rest on guesses about game APIs and VEF behaviour (the shield belt's
+energy field by reflection, whether the Kitsune's comp heals others, the Tree Chopping Speed half of F12 not staged), so a
+first run will settle which are suite defects and which are the port's. `Tests/FUNCTIONAL.md` map updated. The four queued
+requests will play the newer suite at their turn.

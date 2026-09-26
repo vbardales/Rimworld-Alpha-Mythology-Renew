@@ -24,6 +24,9 @@ What is left needs a running game.
 | 12 creatures | 1 | every creature at every life stage draws its four facings and its dessicated body (F01) |
 | 13 phoenix | 6 | the death leaving one or two eggs at each life stage, an egg already on the tile, forced hatching, the egg commands in each language (F02, F03) |
 | 14 bleeding | 2 | the wound hurting while it lasts and stopping when removed (F04) |
+| 15 combat | 10 + 3 | each ranged creature fires and its target is affected (F06); the tlilcoatl's poison breath on an organic target, a shielded colonist and a mechanoid (F09) |
+| 16 products | 6 + 2 + 1 | egg layers, milk, and the Kitsune's regeneration (F07) |
+| 17 plants | 2 + 1 | the dead plants cut by a colonist (F08), the kappa asked about a mature crop (F12 baseline) |
 | 11 behaviour | 2 | the phoenix leaving an egg when it dies, the will-o'-wisp's translated fission text; the incompatibility scenario is written as a comment until its symptom is known |
 | 07 / 08 restart | 1 + 1 | a value that has to outlive the process, which one process cannot show |
 

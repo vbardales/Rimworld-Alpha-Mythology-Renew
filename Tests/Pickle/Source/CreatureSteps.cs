@@ -30,7 +30,7 @@ namespace AlphaMythologyRenew.PickleSteps
             public float Severity;
         }
 
-        private static T TryGet<T>(PickleContext ctx) where T : class
+        internal static T TryGet<T>(PickleContext ctx) where T : class
         {
             try { return ctx.Get<T>(); } catch (Exception) { return null; }
         }
@@ -46,13 +46,13 @@ namespace AlphaMythologyRenew.PickleSteps
             return batch;
         }
 
-        private static Map Map(PickleContext ctx)
+        internal static Map Map(PickleContext ctx)
         {
             ctx.Require(Current.Game != null && Find.CurrentMap != null, "no current map: load a fixture first");
             return Find.CurrentMap;
         }
 
-        private static IntVec3 FreeCell(PickleContext ctx, int radius = 30)
+        internal static IntVec3 FreeCell(PickleContext ctx, int radius = 30)
         {
             var map = Map(ctx);
             IntVec3 cell;
@@ -63,7 +63,7 @@ namespace AlphaMythologyRenew.PickleSteps
             return cell;
         }
 
-        private static Pawn SpawnAtStage(PickleContext ctx, PawnKindDef kind, int stage, IntVec3 cell)
+        internal static Pawn SpawnAtStage(PickleContext ctx, PawnKindDef kind, int stage, IntVec3 cell)
         {
             var pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(kind, Faction.OfPlayer,
                 PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: true));
@@ -77,7 +77,7 @@ namespace AlphaMythologyRenew.PickleSteps
             return pawn;
         }
 
-        private static PawnKindDef Kind(PickleContext ctx, string defName)
+        internal static PawnKindDef Kind(PickleContext ctx, string defName)
         {
             var kind = DefDatabase<PawnKindDef>.GetNamedSilentFail(defName);
             ctx.Require(kind != null, $"no PawnKindDef named '{defName}'");
@@ -252,7 +252,7 @@ namespace AlphaMythologyRenew.PickleSteps
 
         // --- F04: the recurring bleeding wound ------------------------------------------------
 
-        private static Pawn Live(PickleContext ctx, string name)
+        internal static Pawn Live(PickleContext ctx, string name)
         {
             var pawn = Map(ctx).mapPawns.AllPawns.FirstOrDefault(p => p.LabelShort == name);
             ctx.Require(pawn != null, $"no living pawn named '{name}'");

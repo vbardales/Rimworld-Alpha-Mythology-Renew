@@ -1,0 +1,341 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using RimWorld;
+using RimWorks.Pickle;
+using UnityEngine;
+using Verse;
+
+namespace AlphaMythologyRenew.PickleSteps
+{
+    /// <summary>
+    /// F06 to F12 of Tests/FUNCTIONAL.md, the scenarios that were left to a person: the ranged attacks, the products,
+    /// the Kitsune's regeneration, the dead plants, the tlilcoatl's damage and the kappa's harvest. Each is a start step,
+    /// a wait made in the feature (`I wait N ticks`, which keeps the tick loop running) and a check step. The framework
+    /// pieces (VEF's projectiles, its regeneration comp) are exercised through the port's own definitions: the port owns
+    /// their wiring, and a wiring error is its defect.
+    /// </summary>
+    [PickleSteps]
+    public class ActionSteps
+    {
+        private sealed class HurtRecord
+        {
+            public readonly Dictionary<string, int> Hediffs = new Dictionary<string, int>();
+            public readonly Dictionary<string, float> Values = new Dictionary<string, float>();
+        }
+
+        private static HurtRecord Record(PickleContext ctx)
+        {
+            var record = CreatureSteps.TryGet<HurtRecord>(ctx);
+            if (record == null) { record = new HurtRecord(); ctx.Set(record); }
+            return record;
+        }
+
+        private static int HediffCount(Pawn pawn) => pawn.health.hediffSet.hediffs.Count;
+
+        private static float InjurySeverity(Pawn pawn)
+        {
+            return pawn.health.hediffSet.hediffs.OfType<Hediff_Injury>().Sum(h => h.Severity);
+        }
+
+        /// <summary>A standable cell in line of sight of the origin at about the given distance.</summary>
+        private static IntVec3 CellAtDistance(PickleContext ctx, IntVec3 origin, int distance)
+        {
+            var map = CreatureSteps.Map(ctx);
+            foreach (var dir in new[] { IntVec3.East, IntVec3.West, IntVec3.North, IntVec3.South })
+            {
+                var cell = origin + dir * distance;
+                if (cell.InBounds(map) && cell.Standable(map) && cell.GetFirstPawn(map) == null
+                    && GenSight.LineOfSight(origin, cell, map))
+                {
+                    return cell;
+                }
+            }
+            ctx.Require(false, $"no free cell {distance} cells from {origin} with a line of sight");
+            return origin;
+        }
+
+        private static Pawn SpawnTarget(PickleContext ctx, string kindDefName, string name, Pawn near, int distance, bool colonist)
+        {
+            var map = CreatureSteps.Map(ctx);
+            PawnKindDef kind = colonist ? PawnKindDefOf.Colonist : CreatureSteps.Kind(ctx, kindDefName);
+            var pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(kind, colonist ? Faction.OfPlayer : null,
+                PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: true));
+            pawn.Name = new NameSingle(name);
+            GenSpawn.Spawn(pawn, CellAtDistance(ctx, near.Position, distance), map);
+            var batch = CreatureSteps.TryGet<object>(ctx);
+            TargetsToClean(ctx).Add(pawn);
+            return pawn;
+        }
+
+        private static List<Pawn> TargetsToClean(PickleContext ctx)
+        {
+            var list = CreatureSteps.TryGet<TargetList>(ctx);
+            if (list == null) { list = new TargetList(); ctx.Set(list); }
+            return list.Pawns;
+        }
+
+        private sealed class TargetList { public readonly List<Pawn> Pawns = new List<Pawn>(); }
+
+        // --- F06 and F09: ranged attacks ------------------------------------------------------
+
+        [Given("Alpha Mythology Renew spawns the tamed adult {string} named {string} for the combat tests")]
+        public void SpawnShooter(PickleContext ctx, string kindDefName, string name)
+        {
+            var kind = CreatureSteps.Kind(ctx, kindDefName);
+            var pawn = CreatureSteps.SpawnAtStage(ctx, kind, kind.RaceProps.lifeStageAges.Count - 1, CreatureSteps.FreeCell(ctx));
+            pawn.Name = new NameSingle(name);
+        }
+
+        [Given("Alpha Mythology Renew spawns the target {string} of kind {string} {int} cells from {string}")]
+        public void SpawnAnimalTarget(PickleContext ctx, string name, string kindDefName, int distance, string shooter)
+        {
+            SpawnTarget(ctx, kindDefName, name, CreatureSteps.Live(ctx, shooter), distance, false);
+        }
+
+        [Given("Alpha Mythology Renew spawns the colonist target {string} {int} cells from {string}")]
+        public void SpawnColonistTarget(PickleContext ctx, string name, int distance, string shooter)
+        {
+            SpawnTarget(ctx, null, name, CreatureSteps.Live(ctx, shooter), distance, true);
+        }
+
+        [Given("Alpha Mythology Renew gives a shield belt to {string}")]
+        public void GiveShieldBelt(PickleContext ctx, string name)
+        {
+            var pawn = CreatureSteps.Live(ctx, name);
+            var belt = (Apparel)ThingMaker.MakeThing(ThingDefOf.Apparel_ShieldBelt);
+            pawn.apparel.Wear(belt, false);
+            ctx.Require(pawn.apparel.WornApparel.Contains(belt), $"'{name}' does not wear the shield belt");
+        }
+
+        [Given("Alpha Mythology Renew records the injury severity and the condition count of {string}")]
+        public void RecordHurt(PickleContext ctx, string name)
+        {
+            var pawn = CreatureSteps.Live(ctx, name);
+            var record = Record(ctx);
+            record.Hediffs[name] = HediffCount(pawn);
+            record.Values[name] = InjurySeverity(pawn);
+        }
+
+        [When("Alpha Mythology Renew {string} fires its first ranged attack at {string}")]
+        public void Fire(PickleContext ctx, string shooter, string target)
+        {
+            var pawn = CreatureSteps.Live(ctx, shooter);
+            var victim = CreatureSteps.Live(ctx, target);
+            var verb = pawn.VerbTracker.AllVerbs.FirstOrDefault(v => v.verbProps.range > 2f && v.verbProps.defaultProjectile != null);
+            ctx.Require(verb != null, $"'{shooter}' ({pawn.kindDef.defName}) has no ranged verb with a projectile");
+            var record = Record(ctx);
+            if (!record.Hediffs.ContainsKey(target))
+            {
+                record.Hediffs[target] = HediffCount(victim);
+                record.Values[target] = InjurySeverity(victim);
+            }
+            ctx.Assert(verb.TryStartCastOn(new LocalTargetInfo(victim)),
+                $"'{shooter}' cannot start its '{verb.verbProps.label}' attack on '{target}' ({verb.verbProps.defaultProjectile.defName})");
+        }
+
+        [Then("Alpha Mythology Renew {string} has been hurt or otherwise affected by the attack")]
+        public void WasAffected(PickleContext ctx, string target)
+        {
+            var victim = CreatureSteps.Live(ctx, target);
+            var record = Record(ctx);
+            ctx.Require(record.Hediffs.ContainsKey(target), $"no state was recorded for '{target}'");
+            bool changed = victim.Dead || HediffCount(victim) > record.Hediffs[target] || InjurySeverity(victim) > record.Values[target] + 0.01f;
+            ctx.Assert(changed, $"'{target}' shows no injury or new condition after the attack (conditions {record.Hediffs[target]} -> {HediffCount(victim)})");
+        }
+
+        [Then("Alpha Mythology Renew {string} has no toxic buildup")]
+        public void NoToxicBuildup(PickleContext ctx, string target)
+        {
+            var victim = CreatureSteps.Live(ctx, target);
+            var buildup = victim.health.hediffSet.hediffs.Where(h => h.def == HediffDefOf.ToxicBuildup).ToList();
+            ctx.Assert(buildup.Count == 0, $"'{target}' carries toxic buildup at severity {buildup.Sum(h => h.Severity)}");
+        }
+
+        [Then("Alpha Mythology Renew the shield belt of {string} took the attack or the wearer was hurt")]
+        public void ShieldInteracted(PickleContext ctx, string target)
+        {
+            var victim = CreatureSteps.Live(ctx, target);
+            var belt = victim.apparel.WornApparel.FirstOrDefault(a => a.def == ThingDefOf.Apparel_ShieldBelt);
+            ctx.Require(belt != null, $"'{target}' does not wear a shield belt");
+            var record = Record(ctx);
+            // The belt's class and its energy field are not public API: read the energy by reflection.
+            var field = belt.GetType().GetField("energy", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public);
+            ctx.Require(field != null, "the shield belt has no 'energy' field in this game build");
+            float energy = (float)field.GetValue(belt);
+            float max = belt.GetStatValue(StatDefOf.EnergyShieldEnergyMax);
+            bool hurt = InjurySeverity(victim) > record.Values[target] + 0.01f;
+            ctx.Assert(energy < max - 0.01f || hurt,
+                $"neither the shield ({energy} of {max}) nor the wearer's health reacted to the attack");
+        }
+
+        // --- F07: products and regeneration ---------------------------------------------------
+
+        [Then("Alpha Mythology Renew a female {string} produces an unfertilized egg of its own kind")]
+        public void EggLayerProduces(PickleContext ctx, string kindDefName)
+        {
+            var kind = CreatureSteps.Kind(ctx, kindDefName);
+            var pawn = CreatureSteps.SpawnAtStage(ctx, kind, kind.RaceProps.lifeStageAges.Count - 1, CreatureSteps.FreeCell(ctx));
+            pawn.gender = Gender.Female;
+            var comp = pawn.TryGetComp<CompEggLayer>();
+            ctx.Require(comp != null, $"'{kindDefName}' carries no CompEggLayer");
+            var props = comp.Props;
+            var egg = comp.ProduceEgg();
+            ctx.Assert(egg != null, "the egg layer produced nothing");
+            ctx.Assert(egg.def == props.eggUnfertilizedDef, $"produced '{egg.def.defName}', expected '{props.eggUnfertilizedDef.defName}'");
+            ctx.Assert((props.eggCountRange.min <= egg.stackCount && egg.stackCount <= props.eggCountRange.max), $"produced {egg.stackCount}, the definition allows {props.eggCountRange}");
+            ctx.Assert(props.eggFertilizedDef != null && props.eggFertilizedDef.GetCompProperties<CompProperties_Hatcher>()?.hatcherPawn != null,
+                "the fertilized egg names no hatcher pawn");
+        }
+
+        [Then("Alpha Mythology Renew a {string} gives milk when it is full")]
+        public void MilkableGives(PickleContext ctx, string kindDefName)
+        {
+            var kind = CreatureSteps.Kind(ctx, kindDefName);
+            var pawn = CreatureSteps.SpawnAtStage(ctx, kind, kind.RaceProps.lifeStageAges.Count - 1, CreatureSteps.FreeCell(ctx));
+            var comp = pawn.TryGetComp<CompMilkable>();
+            ctx.Require(comp != null, $"'{kindDefName}' carries no CompMilkable");
+            var map = CreatureSteps.Map(ctx);
+            var doer = map.mapPawns.FreeColonists.FirstOrDefault();
+            ctx.Require(doer != null, "the map has no colonist to milk");
+            var fullness = typeof(CompMilkable).GetField("fullness", BindingFlags.Instance | BindingFlags.NonPublic);
+            ctx.Require(fullness != null, "CompMilkable has no 'fullness' field in this game build");
+            fullness.SetValue(comp, 1f);
+            var milk = comp.Props.milkDef;
+            ctx.Require(milk != null, "the definition names no milk def");
+            int before = map.listerThings.ThingsOfDef(milk).Sum(t => t.stackCount);
+            comp.Gathered(doer);
+            int after = map.listerThings.ThingsOfDef(milk).Sum(t => t.stackCount);
+            ctx.Assert(after > before, $"no milk was produced when full ({before} -> {after})");
+        }
+
+        private sealed class HealRecord
+        {
+            public Pawn Near, Far;
+            public float NearBefore, FarBefore;
+        }
+
+        [When("Alpha Mythology Renew injures two colonists equally, one within {int} cells of {string} and one far away")]
+        public void InjureTwo(PickleContext ctx, int nearCells, string healer)
+        {
+            var map = CreatureSteps.Map(ctx);
+            var kitsune = CreatureSteps.Live(ctx, healer);
+            var colonists = map.mapPawns.FreeColonists.Where(p => !p.Downed && !p.Dead).Take(2).ToList();
+            ctx.Require(colonists.Count == 2, "the map needs two free colonists");
+            var near = colonists[0];
+            var far = colonists[1];
+            var nearCell = CellAtDistance(ctx, kitsune.Position, nearCells);
+            var farCell = CreatureSteps.FreeCell(ctx, 45);
+            ctx.Require(farCell.DistanceTo(kitsune.Position) > 15f, "no cell far enough from the healer was found");
+            foreach (var pair in new[] { new KeyValuePair<Pawn, IntVec3>(near, nearCell), new KeyValuePair<Pawn, IntVec3>(far, farCell) })
+            {
+                pair.Key.jobs.StopAll();
+                pair.Key.Position = pair.Value;
+                pair.Key.Notify_Teleported(false);
+                pair.Key.jobs.StopAll();
+                var torso = pair.Key.RaceProps.body.corePart;
+                pair.Key.TakeDamage(new DamageInfo(DamageDefOf.Cut, 12f, 0f, -1f, null, torso));
+            }
+            ctx.Set(new HealRecord { Near = near, Far = far, NearBefore = InjurySeverity(near), FarBefore = InjurySeverity(far) });
+            ctx.Require(InjurySeverity(near) > 0.5f && InjurySeverity(far) > 0.5f, "the colonists were not injured");
+        }
+
+        [Then("Alpha Mythology Renew the colonist near the healer has healed more than the one far away")]
+        public void NearHealedMore(PickleContext ctx)
+        {
+            var record = CreatureSteps.TryGet<HealRecord>(ctx);
+            ctx.Require(record != null, "no colonists were injured in this scenario");
+            float nearNow = InjurySeverity(record.Near), farNow = InjurySeverity(record.Far);
+            float nearHealed = record.NearBefore - nearNow, farHealed = record.FarBefore - farNow;
+            ctx.Assert(nearHealed > farHealed + 0.05f,
+                $"near colonist healed {nearHealed} ({record.NearBefore} -> {nearNow}), far colonist {farHealed} ({record.FarBefore} -> {farNow}): no faster healing inside the radius");
+        }
+
+        // --- F08 and F12: plants ----------------------------------------------------------------
+
+        [Given("Alpha Mythology Renew spawns the dead plant {string} and a colonist beside it")]
+        public void SpawnDeadPlant(PickleContext ctx, string plantDefName)
+        {
+            var map = CreatureSteps.Map(ctx);
+            var def = DefDatabase<ThingDef>.GetNamedSilentFail(plantDefName);
+            ctx.Require(def != null, $"no ThingDef named '{plantDefName}'");
+            var cell = CreatureSteps.FreeCell(ctx);
+            var plant = (Plant)ThingMaker.MakeThing(def);
+            GenSpawn.Spawn(plant, cell, map);
+            ctx.Set(new PlantRecord { Plant = plant, Cell = cell });
+        }
+
+        private sealed class PlantRecord { public Plant Plant; public IntVec3 Cell; }
+
+        [When("Alpha Mythology Renew orders a colonist to cut the plant")]
+        public void OrderCut(PickleContext ctx)
+        {
+            var record = CreatureSteps.TryGet<PlantRecord>(ctx);
+            ctx.Require(record != null, "no plant was spawned in this scenario");
+            var map = CreatureSteps.Map(ctx);
+            var colonist = map.mapPawns.FreeColonists.FirstOrDefault(p => !p.Downed && !p.Dead);
+            ctx.Require(colonist != null, "the map has no free colonist");
+            colonist.Position = record.Cell + IntVec3.East;
+            colonist.Notify_Teleported(false);
+            var job = JobMaker.MakeJob(JobDefOf.CutPlant, record.Plant);
+            colonist.jobs.TryTakeOrderedJob(job);
+        }
+
+        [Then("Alpha Mythology Renew the plant is gone and its cell is free again")]
+        public void PlantGone(PickleContext ctx)
+        {
+            var record = CreatureSteps.TryGet<PlantRecord>(ctx);
+            ctx.Require(record != null, "no plant was spawned in this scenario");
+            var map = CreatureSteps.Map(ctx);
+            ctx.Assert(record.Plant.Destroyed || !record.Plant.Spawned, "the plant is still there: the cutting job did not finish");
+            ctx.Assert(record.Cell.GetPlant(map) == null, "the cell still holds a plant");
+        }
+
+        [Then("Alpha Mythology Renew a tamed {string} may be asked whether it will cut a mature crop without an exception")]
+        public void WillingToCut(PickleContext ctx, string kindDefName)
+        {
+            var map = CreatureSteps.Map(ctx);
+            var kind = CreatureSteps.Kind(ctx, kindDefName);
+            var pawn = CreatureSteps.SpawnAtStage(ctx, kind, kind.RaceProps.lifeStageAges.Count - 1, CreatureSteps.FreeCell(ctx));
+            var plantDef = DefDatabase<ThingDef>.GetNamedSilentFail("Plant_Rice") ?? DefDatabase<ThingDef>.AllDefs.First(d => d.plant != null && d.plant.Harvestable);
+            var plant = (Plant)ThingMaker.MakeThing(plantDef);
+            plant.Growth = 1f;
+            GenSpawn.Spawn(plant, CellAtDistance(ctx, pawn.Position, 2), map);
+            TargetsToClean(ctx);
+            try
+            {
+                PlantUtility.PawnWillingToCutPlant_Job(plant, pawn);
+            }
+            catch (Exception e)
+            {
+                ctx.Assert(false, $"asking whether '{kindDefName}' will cut a mature crop threw {e.GetType().Name}: {e.Message}");
+            }
+            if (!plant.Destroyed) plant.Destroy();
+        }
+
+        // --- teardown ---------------------------------------------------------------------------
+
+        [AfterScenario]
+        public void Teardown(PickleContext ctx)
+        {
+            try
+            {
+                var list = CreatureSteps.TryGet<TargetList>(ctx);
+                if (list != null)
+                {
+                    foreach (var pawn in list.Pawns)
+                    {
+                        if (pawn != null && !pawn.Destroyed) pawn.Destroy();
+                    }
+                }
+                var plant = CreatureSteps.TryGet<PlantRecord>(ctx);
+                if (plant?.Plant != null && !plant.Plant.Destroyed) plant.Plant.Destroy();
+            }
+            catch (Exception e)
+            {
+                Log.Warning($"[Alpha Mythology Renew tests] action scenario clean-up failed: {e.Message}");
+            }
+        }
+    }
+}

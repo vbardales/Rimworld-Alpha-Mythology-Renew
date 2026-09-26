@@ -58,3 +58,14 @@ request `20260926-111909-647-4d36` is done. Everything that does is prepared els
   (`docs/optional-passes-draft/`) to catch a legacy patch naming a class that no longer exists in its provider, which
   `PatchOperationFindMod` alone never shows. Not evaluated: whether it can be staged headless in the WSL, and whether its
   output is readable from a Pickle report (`an error matching ... was logged` would be the way to assert it).
+- [ ] **IExposable checker** (Workshop 3522689097, xylthixlm, 1.6, tiny audience: 7 subscribers on 2026-09-26): warns about
+  `IExposable`, `ThingComp` and `HediffComp` classes whose fields are not all referenced in `ExposeData` (`[Unsaved]`
+  silences a deliberate one). Shown by Virginie. Relevant here: this mod ships a saved custom hediff
+  (`Hediff_BleedingWound.tickCounter`, saved) and a `ModSettings` class (`spawnMultiplier`, `blockedKinds`, both saved); a
+  pass with it staged would show any field forgotten, and the save-migration scenario (never run) concerns exactly that hediff.
+  Not evaluated: headless staging, and how its warnings appear in the log for a Pickle assertion.
+- [ ] **Mod Compatibility Checker** (Workshop 3737125696, 秋羽雪绪0w0, 1.6, requires Harmony): an in-game window that scans
+  enabled mods for conflicts, missing files and integrity, detects spam errors, exports the mod list, and can send errors
+  to an AI through an API the player configures. Its author says most of it was written with Codex. Shown by Virginie. Not
+  a resolver of renamed mods and not usable headless (window and API); at most a manual aid. Source:
+  `github.com/TKELHCI/RimWorldMOD-ModCompatChecker`, not read.

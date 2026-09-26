@@ -446,3 +446,25 @@ naming this mod matches exactly one step (checked by script); the RIMMSQOL steps
 (AGENTS.md: settings gate `complete` or `not_applicable`) is not met while the settings runtime checks are
 pending, so the stage stays `options`. Missing: passes for the optional integrations and for the declared
 incompatibility with `sarg.magicalmenagerie`; the wisp, phoenix and legacy patches have no scenario yet.
+
+## Licence refresh and dependency check — 2026-09-26
+
+Licence sources, refreshed (partial, not a full re-read):
+- Upstream `juanosarg/AlphaMythology`: default branch `master` still at the audited commit
+  `53a5518008821188009bbf996b7120ad9593cb5f` (2024-10-17), `license: null`, no LICENSE/COPYING of the
+  project (only the bundled Lib.Harmony one). Classification stays `silent`.
+- Workshop page 1821617793, read through a summarizing fetch: 606 comments now against 602 archived on
+  2026-09-12, so **4 new comments were not read**; last update shown 2024-10-16; no licence or permission
+  statement in the description. The same summary says the page "was removed from Steam Community for violating
+  guidelines but remains visible to the creator": **unverified** (a model summary, not the page text) and to be
+  looked at by hand before any publication, since it bears on how the port is presented.
+- Still open before publication: read the 4 new comments and confirm the page status. Not a defect.
+
+Dependencies, checked in the sources (l10n -> preTest criterion):
+- Harmony is a hard dependency: `Source/*.cs` patch with it (`TranslationPatches`, `Settings.cs`).
+- VEF (`OskarPotocki.VanillaFactionsExpanded.Core`) is a hard dependency: 25 `VEF.AnimalBehaviours.AnimalStatExtension`
+  and several `VEF.*` comps in the Defs; MVCF comes through VEF. `loadAfter` lists both; Workshop ids in
+  `About.xml` (2009463077, 2023507013) match the ones staging uses.
+- The nine optional patches are `PatchOperationFindMod` by mod name and load only when the provider is
+  present; only Achievements has its own `LoadFolders` branch, keyed on `vanillaexpanded.achievements`. None is
+  declared as a hard dependency. Whether their target nodes still exist in each provider is unverified.

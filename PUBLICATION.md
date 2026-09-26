@@ -43,7 +43,7 @@ Contact sheets are 150 px thumbnails: text on the cards was not read.
   The mod adds a bleeding wound. This is RimWorld's own register and nothing is graphic or frequent, so **"no"
   looks right**, but it is Virginie's answer to give.
 - Found while looking, not changed (`Mod/` is frozen): textures for a `MM_Mechataur` (4 files) that is not one of the
-  25 creatures, and a stray `MM_FenghuangEgg_a copy.png` file name.
+  25 creatures (the odd-named `MM_FenghuangEgg_a copy.png` is used: its egg graphic loads the whole folder).
 
 ## Screenshots (order to decide after the passes)
 

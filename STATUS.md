@@ -550,5 +550,14 @@ that the patch reached its target; the NPS one is expected to fail).
 
 Assets opened: `Preview.png` and all 210 PNG textures of `Mod/Textures` as contact sheets, for the adult-content boxes
 (see `PUBLICATION.md`): no nudity or sexual content, cartoon-scale violence only. Texts were not grepped for strong
-language. Stray items noted, not changed: 4 `MM_Mechataur` textures with no matching creature, and
-`MM_FenghuangEgg_a copy.png`.
+language. Stray items noted: 4 `MM_Mechataur` textures with no matching creature, and
+`MM_FenghuangEgg_a copy.png`, which turns out to be used (folder-loaded egg graphic): see BACKLOG.md.
+
+## Unused textures — 2026-09-26
+
+25 textures are referenced by no Def, patch, Integration file or C# source: 15 information cards, 4 Mechataur, 3
+Catoblepas pack overlays, `MM_Firebreath`, `MM_GazeAttack`, and the original mod's logo. Their removal is one commit on
+branch `cleanup/unused-textures` (`7fd51c9`, worktree `../AlphaMythologyRenew-cleanup`), **not merged**: `Mod/` is
+frozen until the first Pickle run is done. Check-Mod (339) and the translation check pass on the branch. Kept:
+`MM_FenghuangEgg_a copy.png`, used through its folder. Tracked in `BACKLOG.md`, which also records the owner's
+direction on the patch guards (a library she proposed; not yet understood, no patch changed).

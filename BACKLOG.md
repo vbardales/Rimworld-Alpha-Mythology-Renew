@@ -14,7 +14,7 @@ request `20260926-111909-647-4d36` is done. Everything that does is prepared els
   at an unreleased creature of the original: if the owner wants it ported, keep them and drop them from the commit.
   Not removed on purpose: `MM_FenghuangEgg_a copy.png` (a folder-loaded egg graphic uses every file of its folder;
   its odd name is harmless, its rename is not needed).
-- [ ] **Move the drafts into `Tests/Pickle/`**: `docs/gallery-draft/` (5 Workshop pictures) and
+- [ ] **Move the drafts into `Tests/Pickle/`**: `docs/gallery-draft/` (5 Workshop pictures), `docs/scenarios-draft/` (phoenix death, wisp text, incompatibility pass) and
   `docs/optional-passes-draft/` (8 integration scenarios, two pass maps). Then rebuild the steps DLL and redo the
   step-text check.
 - [ ] **File the other passes** once the first verdict is read: French, restart pair, RIMMSQOL, studio (gallery),
@@ -69,3 +69,16 @@ request `20260926-111909-647-4d36` is done. Everything that does is prepared els
   to an AI through an API the player configures. Its author says most of it was written with Codex. Shown by Virginie. Not
   a resolver of renamed mods and not usable headless (window and API); at most a manual aid. Source:
   `github.com/TKELHCI/RimWorldMOD-ModCompatChecker`, not read.
+
+## Decision, 2026-09-26: Resolve This Instead becomes a required dependency
+
+Virginie: the patches will not be fixed one by one; the new library (`../ResolveThisInstead/`) is added as a **required**
+dependency of this mod and the guards use it. Consequences to carry out when the tree is unfrozen and the library exists:
+- [ ] `About.xml`: a `modDependencies` entry (packageId, display name, Workshop url) and `loadAfter`; it forces a download
+  for every player, even one without any optional mod: accepted by the owner.
+- [ ] Publication order: the library must have a public Workshop page before this mod's `1.0.0`. The `0.1.0`
+  pre-publication only creates the private item and can go before it (add the dependency after).
+- [ ] `Tests/Check-Mod.ps1` (dependency list), the staging (`wsl-ids.map` or a `path:` line) and every pass map must stage it.
+- [ ] Rewrite the 8 name guards as calls to the library; replay the optional-integration pass with the providers'
+  current names, and `10-integrations.feature`'s Nature's Pretty Sweet scenario should then pass.
+- [ ] Credits: THANKS and the register for Use This Instead (Mlie, MIT) and the library; PUBLICATION.md dependency table.

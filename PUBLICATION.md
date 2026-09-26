@@ -36,8 +36,11 @@ Opened on 2026-09-26, as contact sheets: `Preview.png`, `ModIcon.png` source, an
 Contact sheets are 150 px thumbnails: text on the cards was not read.
 
 - Nudity or sexual content: **no**. Nothing suggestive in any image.
-- Strong language: not checked in the texts (only the images were opened); the strings are the original's and
-  the port's own keys. Grep them before answering.
+- Strong language: **no**. A word-boundary search on 2026-09-26 of `Mod/Languages`, `Mod/Defs`, `Mod/Patches`,
+  `Mod/Integrations`, `Mod/About`, `README.md` and `ATTRIBUTION.md` for common English and French profanity and slurs
+  (about 45 words, e.g. the usual four-letter words, "damn", "crap", "merde", "putain", "connard", "salope", "con") found
+  nothing. It is a word list, not a reading: a euphemism or a mod-specific term would pass, and the texts were not
+  read line by line.
 - Violence or gore: cartoon-style only. One achievement icon (`MM_AchievementFountainOfBlood`) shows a figure with
   red splashes, the creatures include fire and poison breath, and dessicated corpses are drawn as clean skeletons.
   The mod adds a bleeding wound. This is RimWorld's own register and nothing is graphic or frequent, so **"no"
@@ -125,3 +128,56 @@ item is public, and it must not claim permission.
 
 Commit `Mod/About/PublishedFileId.txt` immediately (lost, the next send creates a second item); record the
 Workshop id in `STATUS.md`; update the register; post comments only once the item is visible to recipients.
+
+## Thank-you comment drafts for the optional providers (2026-09-26, none posted)
+
+Read first, per `WORKSHOP_COMMENTS.md`: each page's description and latest comments through the browser. Status of every
+row is `drafted`; nothing is posted before the item is public. Rules followed: 150 to 350 characters, one hidden link to
+this mod, nothing claimed about compatibility (the patches have not run in game), a concrete true detail per page, a
+different opening each. `M` below is `[url=https://steamcommunity.com/sharedfiles/filedetails/?id=<ID>]Alpha Mythology Renew (unofficial)[/url]`
+with the item's id, known only after the first send.
+
+Credits verified on the pages (never inferred from names): Advanced Biomes (Continued) is Mlie's update of Hey my team
+rules!'s mod (1338280929); Nature's Pretty Sweet (Continued) is by Mlie and Halicade, an update of tkkntkkn's mod
+(1211694919); Lord of the Rims - Elves (Continued) is Zaljerem's, after Sans's continuation (3383096916) of Jecrell's
+original (1400234784), and it bundles JecsTools assemblies; Giddy-Up 2 - Continued is Meme Goddess's, picked up from
+Giddy-Up 2 Forked when its author stopped, after Roolo's original; **Vanilla Genetics Expanded is by Sarg Bjornson and
+Reann Shepard, an update of Sarg's own Genetic Rim.**
+
+### A RimWorld of Magic, 1201382956 (Torann)
+```
+Still updating RimWorld of Magic for 1.6 after all these years, respect. I wrote a small patch for my Alpha Mythology port (magicyte in the creatures' butcher products), so thanks for defs that were easy to read :) [url=https://steamcommunity.com/sharedfiles/filedetails/?id=ITEM_ID]Alpha Mythology Renew (unofficial)[/url]
+```
+
+### Advanced Biomes (Continued), 3541022508 (Mlie; original by Hey my team rules!)
+```
+Thanks Mlie for bringing Advanced Biomes to 1.6, and Hey my team rules! for the original. Biomes are what decide where a griffin turns up in my port, so yours matter more than you'd think. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=ITEM_ID]Alpha Mythology Renew (unofficial)[/url]
+```
+
+### Nature's Pretty Sweet (Continued), 3542949511 (Mlie and Halicade; original by tkkntkkn)
+```
+Mlie, Halicade: thanks for keeping Nature's Pretty Sweet going, and tkkntkkn for the original. It also taught me how fast a mod's name changes between versions, which my patch found out the hard way xD [url=https://steamcommunity.com/sharedfiles/filedetails/?id=ITEM_ID]Alpha Mythology Renew (unofficial)[/url]
+```
+
+### Lord of the Rims - Elves (Continued), 3548255064 (Zaljerem; Sans; original by Jecrell)
+```
+Thanks Zaljerem for carrying the elves on to 1.6, after Sans and Jecrell. Reading how your page lists who did what made me copy the habit for my own credits :) [url=https://steamcommunity.com/sharedfiles/filedetails/?id=ITEM_ID]Alpha Mythology Renew (unofficial)[/url]
+```
+
+### Giddy-Up 2 - Continued, 3674332861 (Meme Goddess; original by Roolo)
+```
+Thank you for picking Giddy-Up 2 up when the fork was dropped, Meme Goddess, and Roolo for the original. My griffin has a saddle sprite waiting to be tried with it, no promises yet lol [url=https://steamcommunity.com/sharedfiles/filedetails/?id=ITEM_ID]Alpha Mythology Renew (unofficial)[/url]
+```
+
+### Vanilla Genetics Expanded, 2801160906 (Sarg Bjornson and Reann Shepard) - **do not post without Virginie**
+The author of the original Alpha Mythology co-wrote this mod and answers on this page. A comment here announces an
+unofficial port of his other mod to him, in a public thread. Same reason as the original's page: her decision, and
+possibly none. No draft written on purpose.
+
+### Not drafted yet
+- **Vanilla Achievements Expanded**, 2288125657: Steam refused the page (rate limit) after several loads; read it later,
+  then draft. Vanilla Expanded team page, so check the register for an existing VE row first.
+- **Nocturnal Animals (Continued)**, 2269731409: register row already `drafted` by two other mods: add this port to its
+  `Covers`, no second comment. **Vanilla Cooking Expanded**, 2134308519: register row `posted` (2026-09-25): add to `Covers`.
+- **Use This Instead** (3396308787) belongs to the resolver library's own publication, not to this mod, unless the port
+  depends on the library.

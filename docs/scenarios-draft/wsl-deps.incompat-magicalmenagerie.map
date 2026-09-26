@@ -1,0 +1,5 @@
+# Pass "incompat-magicalmenagerie" (DRAFT): the original Alpha Mythology loaded beside this port, to LOOK at the
+# incompatibility the About.xml declares (incompatibleWith sarg.magicalmenagerie). Workshop 1821617793.
+# It is a 1.4/1.5 mod: the game will load it with a version warning; the point is what the two do together.
+# The original goes first, then the mod under test is staged after it by the launcher.
+sarg.magicalmenagerie            1821617793

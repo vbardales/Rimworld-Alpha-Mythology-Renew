@@ -138,7 +138,8 @@ namespace AlphaMythologyRenew.PickleSteps
         [Then("Alpha Mythology Renew {string} has been hurt or otherwise affected by the attack")]
         public void WasAffected(PickleContext ctx, string target)
         {
-            var victim = CreatureSteps.Live(ctx, target);
+            // A target the attack killed is no longer among the map's living pawns: it is found among the ones this suite spawned.
+            var victim = CreatureSteps.TryGet<TargetList>(ctx)?.Pawns.FirstOrDefault(p => p.LabelShort == target) ?? CreatureSteps.Live(ctx, target);
             var record = Record(ctx);
             ctx.Require(record.Hediffs.ContainsKey(target), $"no state was recorded for '{target}'");
             bool changed = victim.Dead || HediffCount(victim) > record.Hediffs[target] || InjurySeverity(victim) > record.Values[target] + 0.01f;
@@ -287,15 +288,20 @@ namespace AlphaMythologyRenew.PickleSteps
             ctx.Assert(egg != null, "the egg layer produced nothing");
             ctx.Assert(egg.def == props.eggUnfertilizedDef, $"produced '{egg.def.defName}', expected '{props.eggUnfertilizedDef.defName}'");
             ctx.Assert((props.eggCountRange.min <= egg.stackCount && egg.stackCount <= props.eggCountRange.max), $"produced {egg.stackCount}, the definition allows {props.eggCountRange}");
-            ctx.Assert(props.eggFertilizedDef != null && props.eggFertilizedDef.GetCompProperties<CompProperties_Hatcher>()?.hatcherPawn != null,
-                "the fertilized egg names no hatcher pawn");
+            // The hatcher is vanilla's CompProperties_Hatcher or a VEF subclass of it (the salamander's exploding egg): what they
+            // share is the hatcherPawn field.
+            ctx.Require(props.eggFertilizedDef != null, "the egg layer names no fertilized egg");
+            var hatcherPawn = props.eggFertilizedDef.comps
+                .Select(c => c.GetType().GetField("hatcherPawn", BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic)?.GetValue(c) as PawnKindDef)
+                .FirstOrDefault(k => k != null);
+            ctx.Assert(hatcherPawn != null, "the fertilized egg names no hatcher pawn");
         }
 
         [Then("Alpha Mythology Renew a {string} gives milk when it is full")]
         public void MilkableGives(PickleContext ctx, string kindDefName)
         {
             var kind = CreatureSteps.Kind(ctx, kindDefName);
-            var pawn = CreatureSteps.SpawnAtStage(ctx, kind, kind.RaceProps.lifeStageAges.Count - 1, CreatureSteps.FreeCell(ctx));
+            var pawn = CreatureSteps.SpawnAtStage(ctx, kind, kind.RaceProps.lifeStageAges.Count - 1, CreatureSteps.FreeCell(ctx), Gender.Female);
             var comp = pawn.TryGetComp<CompMilkable>();
             ctx.Require(comp != null, $"'{kindDefName}' carries no CompMilkable");
             var map = CreatureSteps.Map(ctx);
@@ -306,6 +312,7 @@ namespace AlphaMythologyRenew.PickleSteps
             fullness.SetValue(comp, 1f);
             var milk = comp.Props.milkDef;
             ctx.Require(milk != null, "the definition names no milk def");
+            ctx.Require(comp.ActiveAndFull, $"'{kindDefName}' cannot be milked although its fullness was set (gender {pawn.gender}, life stage {pawn.ageTracker.CurLifeStage.defName})");
             int before = map.listerThings.ThingsOfDef(milk).Sum(t => t.stackCount);
             comp.Gathered(doer);
             int after = map.listerThings.ThingsOfDef(milk).Sum(t => t.stackCount);

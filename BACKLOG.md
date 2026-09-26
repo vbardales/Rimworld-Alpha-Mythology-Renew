@@ -7,7 +7,7 @@ This mod's own backlog (the monorepo has its own). Ordered by what blocks the ne
 A request stages the working tree when it is played, so nothing below may touch `Mod/` or `Tests/Pickle/` before
 request `20260926-111909-647-4d36` is done. Everything that does is prepared elsewhere.
 
-- [x] **Remove the unused textures.** DONE 2026-09-26, merged in 78ee4b0 (was: prepared on a branch): branch `cleanup/unused-textures` (worktree
+- [x] **Remove the unused textures.** (Caveat: a texture can be loaded by convention with no Def naming it, e.g. the "Pack" overlay of a pack animal; check before removing.) DONE 2026-09-26, merged in 78ee4b0 (was: prepared on a branch): branch `cleanup/unused-textures` (worktree
   `../AlphaMythologyRenew-cleanup`, commit `7fd51c9`, 25 files: 15 cards, 4 Mechataur, 3 Catoblepas pack overlays,
   `MM_Firebreath`, `MM_GazeAttack`, the original logo). Check-Mod and the translation check pass on it. After
   `RUN_DONE`: merge, rebuild nothing (no code), re-run Check-Mod, then remove the worktree. The Mechataur textures hint

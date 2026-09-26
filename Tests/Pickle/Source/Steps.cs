@@ -202,32 +202,37 @@ namespace AlphaMythologyRenew.PickleSteps
         // --- the game's own wild animal draw --------------------------------------------------
 
         /// <summary>
-        /// Draws from the map's own WildAnimalSpawner, by its private TryFindRandomPawnKind: the method the game
-        /// calls to pick a wild animal. Asserting BiomeDef.CommonalityOfAnimal alone would pass even if a vanilla
-        /// path bypassed it; this shows the setting reaching an actual draw.
+        /// Draws through the map's own WildAnimalSpawner.SpawnRandomWildAnimalAt: the method the game calls to bring a wild
+        /// animal onto the map (1.6 has no separate kind-picking method). Asserting BiomeDef.CommonalityOfAnimal alone would
+        /// pass even if a vanilla path bypassed it; this shows the setting reaching an actual spawn. The animals it spawns
+        /// are removed again, and the kind of the first one of each call is the draw.
         /// </summary>
         private static List<PawnKindDef> Draws(PickleContext ctx, int count)
         {
             ctx.Require(Current.Game != null && Find.CurrentMap != null, "no current map: load a fixture first");
             var map = Find.CurrentMap;
-            var method = typeof(WildAnimalSpawner).GetMethod("TryFindRandomPawnKind",
+            var method = typeof(WildAnimalSpawner).GetMethod("SpawnRandomWildAnimalAt",
                 System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic
                 | System.Reflection.BindingFlags.Public);
-            ctx.Require(method != null, "WildAnimalSpawner has no TryFindRandomPawnKind in this game build");
+            ctx.Require(method != null, "WildAnimalSpawner has no SpawnRandomWildAnimalAt in this game build");
             var parameters = method.GetParameters();
-            ctx.Require(parameters.Length == 1 && parameters[0].ParameterType.IsByRef
-                        && parameters[0].ParameterType.GetElementType() == typeof(PawnKindDef),
-                "TryFindRandomPawnKind no longer has the (out PawnKindDef) shape this suite expects");
+            ctx.Require(parameters.Length == 1 && parameters[0].ParameterType == typeof(IntVec3),
+                "SpawnRandomWildAnimalAt no longer has the (IntVec3) shape this suite expects");
             ctx.Require(map.Biome.AllWildAnimals.Any(AlphaMythologyRenewMod.IsOwnKind),
                 $"the biome '{map.Biome.defName}' of this map hosts none of this mod's creatures: use another fixture");
 
             var drawn = new List<PawnKindDef>();
             for (int i = 0; i < count; i++)
             {
-                var args = new object[] { null };
-                if ((bool)method.Invoke(map.wildAnimalSpawner, args) && args[0] is PawnKindDef kind)
+                var before = new HashSet<Pawn>(map.mapPawns.AllPawns);
+                IntVec3 cell;
+                if (!CellFinder.TryFindRandomCell(map, c => c.Standable(map) && !c.Fogged(map), out cell)) continue;
+                method.Invoke(map.wildAnimalSpawner, new object[] { cell });
+                var added = map.mapPawns.AllPawns.Where(p => !before.Contains(p)).ToList();
+                if (added.Count > 0) drawn.Add(added[0].kindDef);
+                foreach (var pawn in added)
                 {
-                    drawn.Add(kind);
+                    if (!pawn.Destroyed) pawn.Destroy();
                 }
             }
             return drawn;

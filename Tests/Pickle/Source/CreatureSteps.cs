@@ -207,15 +207,16 @@ namespace AlphaMythologyRenew.PickleSteps
             var cell = FreeCell(ctx);
             var old = ThingMaker.MakeThing(eggDef);
             GenSpawn.Spawn(old, cell, map);
+            int oldBefore = old.stackCount;
             BatchOf(ctx).Things.Add(old);
             var phoenix = SpawnAtStage(ctx, Kind(ctx, "MM_Phoenix"), 2, cell);
             phoenix.Kill(null);
             // The phoenix's own egg must survive, whether it merged into the stack on the tile or was placed beside it. The egg
             // that was already there is not the parent's to protect: whether it survived is reported, not asserted.
             int total = EggCountNear(map, eggDef, cell, 12f);
-            int oldCount = old.Destroyed ? 0 : old.stackCount;
-            int own = total - oldCount;
-            ctx.Assert(own >= 1, $"the phoenix's own egg was lost: {total} egg(s) within 12 cells, {oldCount} of them the old one (destroyed: {old.Destroyed})");
+            // The old egg's stack may have absorbed the new one: what counts is what lies there beyond the old egg as it was.
+            int own = total - (old.Destroyed ? 0 : oldBefore);
+            ctx.Assert(own >= 1, $"the phoenix's own egg was lost: {total} egg(s) within 12 cells, the old one held {oldBefore} (destroyed: {old.Destroyed})");
         }
 
         [Then("Alpha Mythology Renew a fertilized phoenix egg hatches into a phoenix when its incubation completes")]
@@ -225,7 +226,6 @@ namespace AlphaMythologyRenew.PickleSteps
             var eggDef = DefDatabase<ThingDef>.GetNamedSilentFail(PhoenixRules.EggDefName);
             ctx.Require(eggDef != null, $"no ThingDef named '{PhoenixRules.EggDefName}'");
             var egg = ThingMaker.MakeThing(eggDef);
-            egg.SetFaction(Faction.OfPlayer);
             GenSpawn.Spawn(egg, FreeCell(ctx), map);
             var hatcher = egg.TryGetComp<CompHatcher>();
             ctx.Require(hatcher != null, "the fertilized phoenix egg carries no CompHatcher");
@@ -252,7 +252,6 @@ namespace AlphaMythologyRenew.PickleSteps
             var eggDef = DefDatabase<ThingDef>.GetNamedSilentFail(PhoenixRules.EggDefName);
             ctx.Require(eggDef != null, $"no ThingDef named '{PhoenixRules.EggDefName}'");
             var egg = ThingMaker.MakeThing(eggDef);
-            egg.SetFaction(Faction.OfPlayer);
             GenSpawn.Spawn(egg, FreeCell(ctx), map);
             BatchOf(ctx).Things.Add(egg);
 

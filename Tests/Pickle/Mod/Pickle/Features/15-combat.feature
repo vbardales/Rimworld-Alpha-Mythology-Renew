@@ -13,7 +13,7 @@ Feature: the creatures' ranged attacks
     Given Alpha Mythology Renew spawns the tamed adult "<creature>" named "Shooter" for the combat tests
     And Alpha Mythology Renew spawns the target "Target" of kind "Muffalo" 5 cells from "Shooter"
     When Alpha Mythology Renew "Shooter" fires its first ranged attack at "Target"
-    And I wait 300 ticks
+    And I wait 600 ticks
     Then Alpha Mythology Renew "Target" has been hurt or otherwise affected by the attack
     And no errors were logged
 
@@ -37,7 +37,7 @@ Feature: the creatures' ranged attacks
     Given Alpha Mythology Renew spawns the tamed adult "MM_Tlilcoatl" named "Shooter" for the combat tests
     And Alpha Mythology Renew spawns the target "Target" of kind "Muffalo" 5 cells from "Shooter"
     When Alpha Mythology Renew "Shooter" fires its first ranged attack at "Target"
-    And I wait 300 ticks
+    And I wait 600 ticks
     Then Alpha Mythology Renew "Target" has been hurt or otherwise affected by the attack
     And no errors were logged
 
@@ -47,7 +47,7 @@ Feature: the creatures' ranged attacks
     And Alpha Mythology Renew gives a shield belt to "Wearer"
     And Alpha Mythology Renew records the injury severity and the condition count of "Wearer"
     When Alpha Mythology Renew "Shooter" fires its first ranged attack at "Wearer"
-    And I wait 300 ticks
+    And I wait 600 ticks
     Then Alpha Mythology Renew the shield belt of "Wearer" took the attack or the wearer was hurt
     And no errors were logged
 
@@ -56,6 +56,6 @@ Feature: the creatures' ranged attacks
     Given Alpha Mythology Renew spawns the tamed adult "MM_Tlilcoatl" named "Shooter" for the combat tests
     And Alpha Mythology Renew spawns the target "Mech" of kind "Mech_Militor" 5 cells from "Shooter"
     When Alpha Mythology Renew "Shooter" fires its first ranged attack at "Mech"
-    And I wait 300 ticks
+    And I wait 600 ticks
     Then Alpha Mythology Renew "Mech" has no toxic buildup
     And no errors were logged

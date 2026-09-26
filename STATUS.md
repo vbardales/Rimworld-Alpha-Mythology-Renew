@@ -675,3 +675,17 @@ register `../WORKSHOP_COMMENTS.md` as `drafted` (A RimWorld of Magic, Advanced B
 Elves, Giddy-Up 2 - Continued), on Virginie's word; that file carries other sessions' uncommitted edits, so it was not committed
 from here, and its line endings were normalised while writing. Vanilla Genetics Expanded and Vanilla Achievements Expanded stay
 out of it until she decides about Sarg Bjornson's pages.
+
+## First full run read (en2, 41 green / 11 red / 17 skipped) — 2026-09-26
+
+The run played the tree of its turn; 11 reds, read one by one:
+
+- **Mod defect, mine**: the texture clean-up (7fd51c9) removed `MM_CatoblepasPack_*`, which the game loads by convention
+  (body texture path + "Pack", the pack-animal overlay); no Def names it, so the orphan search missed it. Restored.
+- **Suite defects, fixed**: the wild draw method `TryFindRandomPawnKind` does not exist in 1.6 (now `SpawnRandomWildAnimalAt`);
+  eggs cannot have a faction (`SetFaction` removed); the salamander's egg uses VEF's exploding hatcher, not the vanilla one
+  (check the shared `hatcherPawn` field); a merged egg stack made the phoenix's own egg look lost (count against the old stack
+  as it was); a target killed by the hydra is no longer a living pawn (counted as affected); the chimera was milked while
+  male (spawned female, `ActiveAndFull` required first); the wisp and Stymphalian bird need more than 300 ticks (warm-up 3.5 s,
+  slow projectile): 600.
+- Not yet re-run: they wait for the next request (four already queued play the current tree).

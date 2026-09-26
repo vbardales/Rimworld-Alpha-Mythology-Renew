@@ -45,7 +45,7 @@
   <MM_Yes>Yes</MM_Yes>
   <AMR_SettingsCategory>Alpha Mythology Renew (unofficial)</AMR_SettingsCategory>
   <AMR_SpawnMultiplier>Wild spawn frequency: x{0}</AMR_SpawnMultiplier>
-  <AMR_SpawnMultiplierTip>Multiplies how common every creature of this mod is in the wild (1 = the mod's own values). Applies immediately, to new spawns only: animals already on the map stay.</AMR_SpawnMultiplierTip>
+  <AMR_SpawnMultiplierTip>Multiplies how common every creature of this mod is among the wild animals of a biome (1 = the mod's own values). It changes their share compared with other animals, not the total number of animals on the map. Applies immediately, to new spawns only: animals already on the map stay.</AMR_SpawnMultiplierTip>
   <AMR_ResetDefaults>Restore defaults</AMR_ResetDefaults>
   <AMR_AllowedHeader>Creatures allowed to appear in the wild (unchecked: never spawn; tamed and existing animals are unaffected)</AMR_AllowedHeader>
 </LanguageData>

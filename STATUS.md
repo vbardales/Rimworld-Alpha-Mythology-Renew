@@ -598,3 +598,16 @@ seed (RIMMSQOL, studio, integrations, Giddy-Up) would load; fix by making the re
 every pass; (2) the multiplier reweights a creature's share among wild animals and does not raise how many animals spawn, so
 the label and tooltip overpromise; (3) no scenario runs an actual wild-animal draw, only the patched commonality. Vanilla
 Achievements Expanded's page was read (authors Sarg Bjornson, Oskar Potocki, Smash Phil); see PUBLICATION.md.
+
+## Suite grown after the first run was staged — 2026-09-26 evening
+
+Run `20260926-111909-647-4d36` is playing the revision **78ee4b0**: read from the WSL staging while it ran, the staged companion
+holds the 8 original features and the 18432-byte steps DLL, the mod has the old tooltip and no `Textures/Cards`. It therefore
+covers 16 scenarios, not the suite as it now stands. After it, on Virginie's instruction ("we will just relaunch the tickets"),
+the suite was extended and the review findings fixed in one commit on top: the restart reader writes the defaults back to
+disk; the tooltip says the multiplier changes a creature's share among wild animals, not their number (EN and FR); a new
+scenario in `02-settings` runs the game's own wild-animal draw 4000 times (multiplier 5: this mod's creatures appear;
+all blocked: none); the gallery (09), integrations (10) and behaviour (11) drafts became features with their steps and pass
+maps. The suite is now 11 features, 32 scenarios, 35 local steps (each feature line matched to exactly one step by script;
+compiled; never played). Check-Mod (339) and the translation check pass. **The verdict of 4d36 does not cover the new
+scenarios**: the minimal English pass must be filed again once 4d36 is done, and the other passes after it.

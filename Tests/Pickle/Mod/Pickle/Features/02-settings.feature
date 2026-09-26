@@ -45,3 +45,13 @@ Feature: the settings window, and what it changes in the game's own spawn table
     Then Alpha Mythology Renew setting "spawnMultiplier" reads 1
     And Alpha Mythology Renew 0 creatures are blocked
     And Alpha Mythology Renew the wild commonality of "MM_Griffin" equals the recorded one
+
+  # The scenarios above read the number the spawn table is built from. This one runs the game's own draw of a
+  # wild animal, 4000 times: with the multiplier at 5 this mod's creatures must turn up at least once, and with every
+  # one of them blocked never. It is what shows the setting reaching a real spawn and not only the patched method.
+  Scenario: the game's own wild animal draw honours the multiplier and the blocked creatures
+    When Alpha Mythology Renew sets the spawn multiplier to 5
+    Then Alpha Mythology Renew the game draws 4000 wild animals and at least one is a creature of this mod
+    When Alpha Mythology Renew blocks every creature of its own
+    Then Alpha Mythology Renew the game draws 4000 wild animals and none is a creature of this mod
+    And no errors were logged

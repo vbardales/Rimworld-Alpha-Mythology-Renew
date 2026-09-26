@@ -10,7 +10,7 @@ namespace AlphaMythologyRenew.PickleSteps
 {
     /// <summary>
     /// Steps for the Workshop pictures: put this mod's creatures on the photographic colony, frame them, and
-    /// select them. DRAFT: not yet in Tests/Pickle/Source, which is frozen until the first run is done.
+    /// select them.
     /// Built after ContentedLivestock's publication-shots steps and what that session learned: creature names
     /// must not exist in the fixture (the steps take the first pawn of that name, and the zen meadow already
     /// has a macaw called "Clover"), letters have to be dismissed, and after a camera jump the pointer rests at
@@ -55,8 +55,11 @@ namespace AlphaMythologyRenew.PickleSteps
             pawn.ageTracker.AgeBiologicalTicks = (long)((lastStage.minAge + 1f) * 3600000f);
             pawn.Name = new NameSingle(name);
 
+            // Coordinates come from the studio fixture; on another map they may lie outside it: use the centre then.
+            var origin = new IntVec3(x, 0, z);
+            if (!origin.InBounds(map)) origin = map.Center;
             IntVec3 cell;
-            var found = CellFinder.TryFindRandomCellNear(new IntVec3(x, 0, z), map, 6,
+            var found = CellFinder.TryFindRandomCellNear(origin, map, 6,
                 c => c.Standable(map) && c.GetFirstPawn(map) == null && c.GetEdifice(map) == null, out cell);
             ctx.Require(found, $"no free cell near {x},{z}");
             GenSpawn.Spawn(pawn, cell, map);
@@ -98,9 +101,6 @@ namespace AlphaMythologyRenew.PickleSteps
             Find.CameraDriver.JumpToCurrentMapLoc(target);
             Find.CameraDriver.SetRootSize(zoom);
         }
-
-        [When("Alpha Mythology Renew frames the animal {string} at zoom {float}")]
-        public void FrameCentred(PickleContext ctx, string name, float zoom) => Frame(ctx, name, zoom, 0, 0);
 
         [AfterScenario]
         public void Teardown(PickleContext ctx)

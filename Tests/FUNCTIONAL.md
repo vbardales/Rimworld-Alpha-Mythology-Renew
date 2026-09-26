@@ -173,3 +173,6 @@ Preconditions: new colony with this mod, VEF and Harmony; a second run with RIMM
 6. With RIMMSQOL, reveal the shortcut: it opens the same window with the same values; hide it again, restart, visibility kept.
 7. Repeat 1-4 in English and French: no raw key, no clipping of the header and checkbox rows.
 8. Player.log during all of the above: no error from this mod.
+
+Note added 2026-09-26: the multiplier changes a creature's share among the wild animals of a biome, not the total number of
+animals on the map. Check step 3 of F13 with that in mind (compare kinds seen, not the population).

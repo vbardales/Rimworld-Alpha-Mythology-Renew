@@ -193,6 +193,66 @@ namespace AlphaMythologyRenew.PickleSteps
             ctx.Assert(alive.Length == 0, $"'{defName}' can still appear: {string.Join(", ", alive)}");
         }
 
+        // --- the game's own wild animal draw --------------------------------------------------
+
+        /// <summary>
+        /// Draws from the map's own WildAnimalSpawner, by its private TryFindRandomPawnKind: the method the game
+        /// calls to pick a wild animal. Asserting BiomeDef.CommonalityOfAnimal alone would pass even if a vanilla
+        /// path bypassed it; this shows the setting reaching an actual draw.
+        /// </summary>
+        private static List<PawnKindDef> Draws(PickleContext ctx, int count)
+        {
+            ctx.Require(Current.Game != null && Find.CurrentMap != null, "no current map: load a fixture first");
+            var map = Find.CurrentMap;
+            var method = typeof(WildAnimalSpawner).GetMethod("TryFindRandomPawnKind",
+                System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic
+                | System.Reflection.BindingFlags.Public);
+            ctx.Require(method != null, "WildAnimalSpawner has no TryFindRandomPawnKind in this game build");
+            var parameters = method.GetParameters();
+            ctx.Require(parameters.Length == 1 && parameters[0].ParameterType.IsByRef
+                        && parameters[0].ParameterType.GetElementType() == typeof(PawnKindDef),
+                "TryFindRandomPawnKind no longer has the (out PawnKindDef) shape this suite expects");
+            ctx.Require(map.Biome.AllWildAnimals.Any(AlphaMythologyRenewMod.IsOwnKind),
+                $"the biome '{map.Biome.defName}' of this map hosts none of this mod's creatures: use another fixture");
+
+            var drawn = new List<PawnKindDef>();
+            for (int i = 0; i < count; i++)
+            {
+                var args = new object[] { null };
+                if ((bool)method.Invoke(map.wildAnimalSpawner, args) && args[0] is PawnKindDef kind)
+                {
+                    drawn.Add(kind);
+                }
+            }
+            return drawn;
+        }
+
+        [When("Alpha Mythology Renew blocks every creature of its own")]
+        public void BlockAll(PickleContext ctx)
+        {
+            foreach (var kind in AlphaMythologyRenewMod.OwnKinds())
+            {
+                Settings(ctx).blockedKinds.Add(kind.defName);
+            }
+        }
+
+        [Then("Alpha Mythology Renew the game draws {int} wild animals and at least one is a creature of this mod")]
+        public void DrawsIncludeOwn(PickleContext ctx, int count)
+        {
+            var drawn = Draws(ctx, count);
+            var own = drawn.Count(AlphaMythologyRenewMod.IsOwnKind);
+            ctx.Assert(own >= 1, $"none of {drawn.Count} draws was a creature of this mod (multiplier {Settings(ctx).spawnMultiplier})");
+        }
+
+        [Then("Alpha Mythology Renew the game draws {int} wild animals and none is a creature of this mod")]
+        public void DrawsExcludeOwn(PickleContext ctx, int count)
+        {
+            var drawn = Draws(ctx, count);
+            var own = drawn.Where(AlphaMythologyRenewMod.IsOwnKind).Select(k => k.defName).Distinct().ToArray();
+            ctx.Assert(own.Length == 0,
+                $"{drawn.Count(AlphaMythologyRenewMod.IsOwnKind)} of {drawn.Count} draws were this mod's creatures although all are blocked: {string.Join(", ", own)}");
+        }
+
         // --- the optional shortcut ------------------------------------------------------------
 
         [Then("Alpha Mythology Renew the shortcut is hidden on a clean configuration")]
@@ -259,6 +319,13 @@ namespace AlphaMythologyRenew.PickleSteps
         /// <summary>Stands the teardown down for the writer, whose purpose is to leave values behind.</summary>
         private static bool keepSettings;
 
+        /// <summary>
+        /// Set by the reader of the restart pair: once it has read what the writer left, the file is put back to
+        /// the defaults on disk too. Resetting the instance is not enough: passes without a seeded file (RIMMSQOL,
+        /// studio, integrations) would load the writer's x3 and blocked creature from the Config folder.
+        /// </summary>
+        private static bool cleanFileAfterRead;
+
         [When("Alpha Mythology Renew keeps its settings for the next launch")]
         public void Keep(PickleContext ctx)
         {
@@ -275,6 +342,7 @@ namespace AlphaMythologyRenew.PickleSteps
                 + "restart test that never restarted. Play the pair with -Filter restart-write "
                 + "-Then restart-read, which launches the game twice under one lock.");
             keepSettings = false;
+            cleanFileAfterRead = true;
         }
 
         /// <summary>The file the game holds, not the instance in memory.</summary>
@@ -308,6 +376,11 @@ namespace AlphaMythologyRenew.PickleSteps
                 if (def != null) def.buttonVisible = false;
                 if (keepSettings) return;
                 AlphaMythologyRenewMod.Settings?.ResetToDefaults();
+                if (cleanFileAfterRead)
+                {
+                    cleanFileAfterRead = false;
+                    AlphaMythologyRenewMod.Instance?.WriteSettings();
+                }
             }
             catch (Exception e)
             {

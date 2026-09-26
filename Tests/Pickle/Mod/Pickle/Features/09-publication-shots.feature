@@ -1,4 +1,4 @@
-# DRAFT for Tests/Pickle/Mod/Pickle/Features/, to move there once the first run (settings suite) is done:
+
 # Tests/Pickle is frozen until then. Not compiled against a game, never played; zoom values and cell offsets
 # are guesses to tune after the first capture.
 #

@@ -14,21 +14,24 @@ What is left needs a running game.
 | Feature | Scenarios | Why only a running game can show it |
 |---|---|---|
 | 01 loading | 3 | the loader admitted the mod beside VEF, the Mod class ran, a clean profile has the defaults |
-| 02 settings | 4 | the window belongs to this mod and edits the instance the patch reads; a changed value reaches `BiomeDef.CommonalityOfAnimal`, the number wild spawns are drawn from, for this mod's creatures and for no one else's |
+| 02 settings | 5 | the window belongs to this mod and edits the instance the patch reads; a changed value reaches `BiomeDef.CommonalityOfAnimal`, the number wild spawns are drawn from, for this mod's creatures and for no one else's; and the game's own wild-animal draw (4000 draws) honouring the multiplier and the blocked creatures |
 | 03 shortcut | 2 | the hidden shortcut is not drawn, then drawn, enabled and opens the same window |
 | 04 rimmsqol | 2 | RIMMSQOL lists, reveals and hides the shortcut (needs its own pass, `@requires`) |
 | 05 language | 2 | keys resolve in the language of the pass; a capture of the window a person reads (`@review`) |
 | 06 reload | 1 | settings are global: a save load neither resets them nor takes them from the file |
+| 09 publication shots | 5 | pictures for the Workshop page (`@requires` the studio pass, `@review`) |
+| 10 integrations | 8 | each optional patch reaching its target, one scenario per provider (`@requires`), the Nature's Pretty Sweet one expected to fail until the patch guard is fixed |
+| 11 behaviour | 2 | the phoenix leaving an egg when it dies, the will-o'-wisp's translated fission text; the incompatibility scenario is written as a comment until its symptom is known |
 | 07 / 08 restart | 1 + 1 | a value that has to outlive the process, which one process cannot show |
 
-**Not converted:** the wisp inspection text and gizmos, the phoenix death and the optional patches of the
-nine legacy integrations. They are not part of the settings; they remain `unverified` in `STATUS.md`.
+**Not converted:** the wisp gizmos and the patches of Vanilla Achievements Expanded, which is not installed here.
+What remains unplayed stays `unverified` in `STATUS.md`.
 
 ## The passes
 
 | Pass | Filter | Language | What it establishes |
 |---|---|---|---|
-| minimal English | `PLAIN` | English | the mod and its settings stand on their own (13 played, 2 skipped by requirement) |
+| minimal English | `PLAIN` | English | the mod and its settings stand on their own (15 played, 15 skipped by requirement: 04, 09 and 10 wait for their own passes) |
 | minimal French | `PLAIN` | French | the same, in the other language |
 | restart | `07-restart-write` then `08-restart-read` | English | settings outliving the process |
 | with RIMMSQOL | `04-rimmsqol`, `-DepMap wsl-deps.avec-rimmsqol.map` | English | the shortcut through the tool that reveals it |
@@ -57,3 +60,14 @@ never a whole `screenshots/` folder. Older reports of the same pass go as soon a
 them, unless one is the sole proof of a check the latest run did not repeat. Copies live in
 `Tests/Pickle/Evidence/` (gitignored); history is one text line per run in `docs/runs/`. Read `exitReason`
 before the counts and check played against discovered.
+
+## Passes added on 2026-09-26 (evening)
+
+Maps: `wsl-deps.studio.map` (gallery, English), `wsl-deps.avec-facultatifs.map` (RoM, Nocturnal Animals, Vanilla Cooking,
+Vanilla Genetics, Advanced Biomes, Nature's Pretty Sweet, Elves), `wsl-deps.avec-giddyup.map` (Giddy-Up 2 - Continued, its
+own pass), `wsl-deps.incompat-magicalmenagerie.map` (the original, staged but its scenario still a comment). A pass counts only
+if its `@requires` scenarios really ran: read the report's skipped list. The restart reader now writes the defaults back to
+the Config file, so passes without a seed do not inherit the writer's x3 and blocked creature.
+Gallery notes: the five pictures were chosen so as not to repeat the Preview (griffin and hound in a stable): a close
+griffin, a five-creature line-up, the hound, the phoenix, and the settings window. Zoom and offsets are guesses to tune
+after the first capture; open every image before ordering them.

@@ -160,10 +160,15 @@ namespace AlphaMythologyRenew.PickleSteps
             var belt = victim.apparel.WornApparel.FirstOrDefault(a => a.def == ThingDefOf.Apparel_ShieldBelt);
             ctx.Require(belt != null, $"'{target}' does not wear a shield belt");
             var record = Record(ctx);
-            // The belt's class and its energy field are not public API: read the energy by reflection.
-            var field = belt.GetType().GetField("energy", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public);
-            ctx.Require(field != null, "the shield belt has no 'energy' field in this game build");
-            float energy = (float)field.GetValue(belt);
+            // In 1.6 the belt is an ordinary apparel with a CompShield (there is no ShieldBelt class any more). Its energy is not
+            // public API: read the property or the field by reflection, on the comp.
+            var shield = belt.AllComps.FirstOrDefault(c => c.GetType().Name == "CompShield");
+            ctx.Require(shield != null, "the shield belt carries no CompShield in this game build");
+            var flags = BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public;
+            var property = shield.GetType().GetProperty("Energy", flags);
+            var field = shield.GetType().GetField("energy", flags);
+            ctx.Require(property != null || field != null, "CompShield exposes neither an 'Energy' property nor an 'energy' field in this game build");
+            float energy = property != null ? (float)property.GetValue(shield, null) : (float)field.GetValue(shield);
             float max = belt.GetStatValue(StatDefOf.EnergyShieldEnergyMax);
             bool hurt = InjurySeverity(victim) > record.Values[target] + 0.01f;
             ctx.Assert(energy < max - 0.01f || hurt,
@@ -320,6 +325,12 @@ namespace AlphaMythologyRenew.PickleSteps
             var kitsune = CreatureSteps.Live(ctx, healer);
             var colonists = map.mapPawns.FreeColonists.Where(p => !p.Downed && !p.Dead).Take(2).ToList();
             ctx.Require(colonists.Count == 2, "the map needs two free colonists");
+            // Draft every colonist: a drafted colonist neither walks off nor tends anybody, and tending would change the healing
+            // asymmetrically (the injured one next to the doctor would heal faster for that reason, not the Kitsune's).
+            foreach (var pawn in map.mapPawns.FreeColonists)
+            {
+                if (pawn.drafter != null) pawn.drafter.Drafted = true;
+            }
             var near = colonists[0];
             var far = colonists[1];
             var nearCell = CellAtDistance(ctx, kitsune.Position, nearCells);

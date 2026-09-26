@@ -174,6 +174,11 @@ namespace AlphaMythologyRenew.PickleSteps
                 {
                     corpse.Destroy();
                 }
+                // The explosion lights fires that would otherwise spread over 40 trials and burn the base of the fixture.
+                foreach (var fire in map.listerThings.ThingsOfDef(ThingDefOf.Fire).Where(f => f.Position.DistanceTo(cell) <= 20f).ToList())
+                {
+                    fire.Destroy();
+                }
             }
             ctx.Assert(odd.Count == 0, "a death left neither one nor two eggs: " + string.Join("; ", odd.Take(5).ToArray()));
             ctx.Assert(ones > 0 && twos > 0, $"over {trials} deaths at stage {stage} one egg was seen {ones} times and two eggs {twos} times: both were expected");
@@ -338,11 +343,13 @@ namespace AlphaMythologyRenew.PickleSteps
                 if (batch == null) return;
                 foreach (var entry in batch.Pawns)
                 {
-                    if (entry.Key != null && !entry.Key.Destroyed) entry.Key.Destroy();
+                    // After a save and reload the recorded objects belong to the game that was replaced: destroying them
+                    // could touch the new game's registries. Only what still stands on the current map is ours to remove.
+                    if (entry.Key != null && !entry.Key.Destroyed && entry.Key.Spawned && entry.Key.Map == Find.CurrentMap) entry.Key.Destroy();
                 }
                 foreach (var thing in batch.Things)
                 {
-                    if (thing != null && !thing.Destroyed) thing.Destroy();
+                    if (thing != null && !thing.Destroyed && thing.Spawned && thing.Map == Find.CurrentMap) thing.Destroy();
                 }
             }
             catch (Exception e)

@@ -21,11 +21,18 @@ The port updates obsolete XML fields and VEF type names and rebuilds the phoenix
 Original: https://steamcommunity.com/sharedfiles/filedetails/?id=1821617793
 Original source: https://github.com/juanosarg/AlphaMythology
 
-Credit: creatures, code and artwork by Sarg Bjornson; original preview by Oskar Potocki (replaced in this port by an OpenAI-generated illustration). Third-party sound credits are preserved in ATTRIBUTION.md. Port and extraction by Nelim with assistance from OpenAI Codex.
-
 Do not load alongside the original Alpha Mythology or an older Animal Ark build still containing it. Do not remove this content from an ongoing save. Moving an existing save from Animal Ark is untested, especially saved custom hediff classes whose namespace changed.
 
-See the included ATTRIBUTION.md and the README.md and TESTING.md documents in the GitHub repository for provenance and validation. No upstream ownership or endorsement is claimed.
+[b]IF I GO QUIET[/b]
+If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved.
+
+[b]AI-GENERATED[/b]
+The port was made with AI assistance: Codex (OpenAI) for the 1.6 extraction, the isolated assembly and the French translations; Claude Code (Anthropic) for the settings, the test suites and the documentation; OpenAI image generation for the preview illustration. The creatures, their code and their artwork are Sarg Bjornson's. Port and extraction by Nelim.
+
+[b]THANKS[/b]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1821617793]Alpha Mythology[/url] by Sarg Bjornson, which this continues; its original preview is by Oskar Potocki. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013]Vanilla Expanded Framework[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077]Harmony[/url], which the mod stands on. Optional integrations, never required: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1201382956]A RimWorld of Magic[/url], [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2801160906]Vanilla Genetics Expanded[/url], [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2134308519]Vanilla Cooking Expanded[/url], [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2288125657]Vanilla Achievements Expanded[/url], [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2269731409][XND] Nocturnal Animals (Continued)[/url], [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3541022508]Advanced Biomes (Continued)[/url], [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3542949511]Nature's Pretty Sweet (Continued)[/url], [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3548255064]Lord of the Rims - Elves (Continued)[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3674332861]Giddy-Up 2 - Continued[/url]. For testing only, never dependencies of the mod: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3791648678]Pickle[/url], [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3733484696]RimLogging[/url], [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1084452457]RIMMSQOL[/url] and PickleTools.
+
+See the included ATTRIBUTION.md, and the README.md and TESTING.md documents in the GitHub repository, for provenance, third-party sound credits and validation. No upstream ownership or endorsement is claimed.
 
 [url=https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew]Source code on GitHub[/url]</description>
 </ModMetaData>

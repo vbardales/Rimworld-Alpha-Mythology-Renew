@@ -6,6 +6,7 @@ using RimWorld;
 using RimWorks.Pickle;
 using UnityEngine;
 using Verse;
+using Verse.AI;
 
 namespace AlphaMythologyRenew.PickleSteps
 {
@@ -170,6 +171,103 @@ namespace AlphaMythologyRenew.PickleSteps
                 $"neither the shield ({energy} of {max}) nor the wearer's health reacted to the attack");
         }
 
+        // --- F03: the destruction of an egg, end to end through VEF ---------------------------
+
+        private sealed class EggRecord
+        {
+            public Thing Egg;
+            public int PhoenixesBefore;
+        }
+
+        private static EggRecord TheEgg(PickleContext ctx)
+        {
+            var record = CreatureSteps.TryGet<EggRecord>(ctx);
+            ctx.Require(record != null && record.Egg != null, "no egg was spawned in this scenario");
+            ctx.Require(!record.Egg.Destroyed, "the egg is already gone");
+            return record;
+        }
+
+        [Given("Alpha Mythology Renew spawns a fertilized phoenix egg for the destruction tests")]
+        public void SpawnEgg(PickleContext ctx)
+        {
+            var map = CreatureSteps.Map(ctx);
+            var def = DefDatabase<ThingDef>.GetNamedSilentFail(PhoenixRules.EggDefName);
+            ctx.Require(def != null, $"no ThingDef named '{PhoenixRules.EggDefName}'");
+            var egg = ThingMaker.MakeThing(def);
+            egg.SetFaction(Faction.OfPlayer);
+            GenSpawn.Spawn(egg, CreatureSteps.FreeCell(ctx), map);
+            ctx.Set(new EggRecord { Egg = egg, PhoenixesBefore = map.mapPawns.AllPawns.Count(p => p.kindDef.defName == "MM_Phoenix") });
+        }
+
+        private static void Press(PickleContext ctx, string key)
+        {
+            var egg = TheEgg(ctx).Egg;
+            var command = CreatureSteps.FindCommand(egg, key);
+            ctx.Require(command != null, $"the egg offers no command labelled '{key}'.Translate()");
+            var action = command as Command_Action;
+            ctx.Require(action != null, $"the command '{key}' is a {command.GetType().Name}, not a Command_Action");
+            action.action();
+        }
+
+        [When("Alpha Mythology Renew requests the destruction of the egg")]
+        public void RequestDestroy(PickleContext ctx) => Press(ctx, "MM_DestroyEggsLabel");
+
+        [When("Alpha Mythology Renew cancels the destruction of the egg")]
+        public void CancelDestroy(PickleContext ctx) => Press(ctx, "MM_CancelDestroyEggsLabel");
+
+        private static Job DestructionJob(PickleContext ctx, Pawn colonist, Thing egg)
+        {
+            var giverDef = DefDatabase<WorkGiverDef>.GetNamedSilentFail("VEF_DestroyItems");
+            ctx.Require(giverDef != null, "VEF defines no WorkGiverDef 'VEF_DestroyItems' in this build");
+            var scanner = giverDef.Worker as WorkGiver_Scanner;
+            ctx.Require(scanner != null, "VEF_DestroyItems has no scanner worker");
+            return scanner.HasJobOnThing(colonist, egg, false) ? scanner.JobOnThing(colonist, egg, false) : null;
+        }
+
+        private static Pawn FreeColonist(PickleContext ctx)
+        {
+            var colonist = CreatureSteps.Map(ctx).mapPawns.FreeColonists.FirstOrDefault(p => !p.Downed && !p.Dead);
+            ctx.Require(colonist != null, "the map has no free colonist");
+            return colonist;
+        }
+
+        [Then("Alpha Mythology Renew a colonist is offered a destruction job for the egg")]
+        public void JobOffered(PickleContext ctx)
+        {
+            var egg = TheEgg(ctx).Egg;
+            ctx.Assert(DestructionJob(ctx, FreeColonist(ctx), egg) != null, "no colonist is offered the destruction job although the destruction was requested");
+        }
+
+        [Then("Alpha Mythology Renew no colonist is offered a destruction job for the egg")]
+        public void NoJobOffered(PickleContext ctx)
+        {
+            var egg = TheEgg(ctx).Egg;
+            ctx.Assert(DestructionJob(ctx, FreeColonist(ctx), egg) == null, "a colonist is offered the destruction job although it was cancelled");
+        }
+
+        [When("Alpha Mythology Renew a colonist carries out the destruction job for the egg")]
+        public void CarryOut(PickleContext ctx)
+        {
+            var egg = TheEgg(ctx).Egg;
+            var colonist = FreeColonist(ctx);
+            colonist.jobs.StopAll();
+            colonist.Position = egg.Position + IntVec3.East;
+            colonist.Notify_Teleported(false);
+            var job = DestructionJob(ctx, colonist, egg);
+            ctx.Require(job != null, "the colonist is offered no destruction job");
+            colonist.jobs.TryTakeOrderedJob(job);
+        }
+
+        [Then("Alpha Mythology Renew the egg is destroyed and no phoenix has hatched from it")]
+        public void EggDestroyed(PickleContext ctx)
+        {
+            var record = CreatureSteps.TryGet<EggRecord>(ctx);
+            ctx.Require(record != null, "no egg was spawned in this scenario");
+            ctx.Assert(record.Egg.Destroyed || !record.Egg.Spawned, "the egg is still there: the destruction job did not finish");
+            int phoenixes = CreatureSteps.Map(ctx).mapPawns.AllPawns.Count(p => p.kindDef.defName == "MM_Phoenix");
+            ctx.Assert(phoenixes == record.PhoenixesBefore, $"{phoenixes - record.PhoenixesBefore} phoenix(es) appeared although the egg was destroyed");
+        }
+
         // --- F07: products and regeneration ---------------------------------------------------
 
         [Then("Alpha Mythology Renew a female {string} produces an unfertilized egg of its own kind")]
@@ -329,6 +427,8 @@ namespace AlphaMythologyRenew.PickleSteps
                         if (pawn != null && !pawn.Destroyed) pawn.Destroy();
                     }
                 }
+                var egg = CreatureSteps.TryGet<EggRecord>(ctx);
+                if (egg?.Egg != null && !egg.Egg.Destroyed) egg.Egg.Destroy();
                 var plant = CreatureSteps.TryGet<PlantRecord>(ctx);
                 if (plant?.Plant != null && !plant.Plant.Destroyed) plant.Plant.Destroy();
             }

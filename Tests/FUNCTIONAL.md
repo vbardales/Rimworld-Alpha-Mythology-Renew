@@ -21,13 +21,13 @@ against the checked-out XML and current dependency behaviour, not only old repor
 
 `tested` asks for no manual test left to validate: each scenario below is automated and green, or listed as not applicable
 with its reason. Nothing has been played yet except the first settings run; a row is `written` until a run shows it green.
-F03's colonist execution is not applicable (VEF's own code, VEF being a required dependency; owner, 2026-09-26). Every other row is automated (written, not yet played) except F04's save-file persistence and the provider half of F12.
+Every row is automated (written, not yet played) except F04's save-file persistence and the provider half of F12. F03's colonist execution is included: VEF is required, so its code is always present to be exercised (owner, 2026-09-26).
 
 | Scenario | Automation | State |
 |---|---|---|
 | F01 startup and 25 creatures | `Tests/Pickle` feature 12: every creature at every life stage, four facings, dessicated body, no error | written |
 | F02 phoenix rebirth | radius by life stage and the egg roll: `Tests/UnitTests` (green, offline); eggs left by 40 deaths per life stage, an old egg on the same tile, forced hatching: feature 13 | unit green, Pickle written |
-| F03 egg controls | destroy and cancel commands, labels and icons, EN and FR passes: feature 13. The colonist's execution of the designation is VEF's own code (`CompProperties_DestroyThisItem`), and VEF is a required dependency: **not applicable** (owner, 2026-09-26) | written; job n/a |
+| F03 egg controls | feature 13: destroy and cancel commands with labels and icons in the EN and FR passes, and end to end through VEF's own designation and job (offered when requested, not when cancelled, carried out by a colonist and the egg destroyed without hatching). VEF is a required dependency, so it is always present: applicable (owner, 2026-09-26) | written |
 | F04 bleeding wound | damage recurs while it lasts and stops when removed: feature 14. Saving across a save file: **not automated** (Pickle has no step that writes a save and reloads it; the counter is saved with Scribe, checked by the static contract) | written, persistence unverified |
 | F05 shutdown recipe | **removed on 2026-09-26**: `MM_ShutDownMechanoid` was offered by no race in this mod (its only user was the Mechataur, which the port does not ship), so it could not be tested; the recipe, its worker and its French text are deleted | removed |
 | F06 ranged attacks and auto-fire | feature 15: each of the 10 ranged creatures fires its first ranged verb at a target 5 cells away and the target is affected, no error. The auto-fire toggle is VEF's and is not exercised | written |

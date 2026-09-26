@@ -34,3 +34,18 @@ Feature: the phoenix dies in flames and leaves eggs
   Scenario: the egg's destroy and cancel commands have labels and icons
     Then Alpha Mythology Renew a fertilized phoenix egg offers destroy and cancel commands whose labels and icons resolve in the language of this pass
     And no errors were logged
+
+  # F03 end to end: the destruction is VEF's own designation and job (VEF is a required dependency, so it is always
+  # there); what is tested is that the port's egg, wired to that comp, is offered the job when requested, is not when
+  # cancelled, and is really destroyed - without hatching - when a colonist carries the job out.
+  Scenario: a requested destruction is offered, cancellable, and carried out by a colonist
+    Given Alpha Mythology Renew spawns a fertilized phoenix egg for the destruction tests
+    When Alpha Mythology Renew requests the destruction of the egg
+    Then Alpha Mythology Renew a colonist is offered a destruction job for the egg
+    When Alpha Mythology Renew cancels the destruction of the egg
+    Then Alpha Mythology Renew no colonist is offered a destruction job for the egg
+    When Alpha Mythology Renew requests the destruction of the egg
+    And Alpha Mythology Renew a colonist carries out the destruction job for the egg
+    And I wait 900 ticks
+    Then Alpha Mythology Renew the egg is destroyed and no phoenix has hatched from it
+    And no errors were logged

@@ -217,7 +217,7 @@ namespace AlphaMythologyRenew.PickleSteps
 
         // --- F03: the egg commands ------------------------------------------------------------
 
-        private static Command FindCommand(Thing thing, string key)
+        internal static Command FindCommand(Thing thing, string key)
         {
             var label = key.Translate().ToString();
             return thing.GetGizmos().OfType<Command>().FirstOrDefault(c => c.defaultLabel == label);

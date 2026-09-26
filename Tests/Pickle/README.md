@@ -22,7 +22,7 @@ What is left needs a running game.
 | 09 publication shots | 5 | pictures for the Workshop page (`@requires` the studio pass, `@review`) |
 | 10 integrations | 8 | each optional patch reaching its target, one scenario per provider (`@requires`), the Nature's Pretty Sweet one expected to fail until the patch guard is fixed |
 | 12 creatures | 1 | every creature at every life stage draws its four facings and its dessicated body (F01) |
-| 13 phoenix | 6 | the death leaving one or two eggs at each life stage, an egg already on the tile, forced hatching, the egg commands in each language (F02, F03) |
+| 13 phoenix | 7 | the death leaving one or two eggs at each life stage, an egg already on the tile, forced hatching, the egg commands in each language, and the destruction carried out end to end through VEF (F02, F03) |
 | 14 bleeding | 2 | the wound hurting while it lasts and stopping when removed (F04) |
 | 15 combat | 10 + 3 | each ranged creature fires and its target is affected (F06); the tlilcoatl's poison breath on an organic target, a shielded colonist and a mechanoid (F09) |
 | 16 products | 6 + 2 + 1 | egg layers, milk, and the Kitsune's regeneration (F07) |

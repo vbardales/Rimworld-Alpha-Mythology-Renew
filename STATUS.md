@@ -650,3 +650,9 @@ steps in all); none has been played and several rest on guesses about game APIs 
 energy field by reflection, whether the Kitsune's comp heals others, the Tree Chopping Speed half of F12 not staged), so a
 first run will settle which are suite defects and which are the port's. `Tests/FUNCTIONAL.md` map updated. The four queued
 requests will play the newer suite at their turn.
+
+Correction, same evening: F03's colonist execution is **applicable** (Virginie: VEF is a required dependency, so its designation and
+job are always present and can be exercised; my "not applicable" was a misreading of her instruction). Feature 13 gained a
+scenario that presses the port's own destroy command, checks that VEF's `VEF_DestroyItems` work giver offers the job, cancels
+and checks it is no longer offered, requests again, has a colonist carry the job out and checks the egg is gone and no
+phoenix hatched. Written, not played. The suite is 17 features and 70 local steps.

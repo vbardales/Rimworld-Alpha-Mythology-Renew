@@ -665,3 +665,13 @@ not spared, so the parent's egg could be lost. `DeathActionWorker_ExplodeAndSpaw
 reports the egg ended up in (`out lastResultingThing`); the shipped DLL is rebuilt, and feature 13's crowded-tile scenario now
 asserts that the phoenix's own egg survives (whether the egg already there survives is reported, not asserted: it is not the
 parent's to protect). Not played. A search for other orphaned defs (157 examined) found none.
+
+## Coverage and clean-up after the second review — 2026-09-26
+
+Feature 12 now spawns a creature in both genders wherever a life stage ships separate female graphics (the chimera today) and
+draws the female body and dessicated data too, so a missing female texture no longer passes. `GallerySteps` no longer keeps its own
+copies of the lookup, spawn and teardown: it uses `CreatureSteps` (75 lines instead of 130). Five rows were added to the shared
+register `../WORKSHOP_COMMENTS.md` as `drafted` (A RimWorld of Magic, Advanced Biomes, Nature's Pretty Sweet, Lord of the Rims -
+Elves, Giddy-Up 2 - Continued), on Virginie's word; that file carries other sessions' uncommitted edits, so it was not committed
+from here, and its line endings were normalised while writing. Vanilla Genetics Expanded and Vanilla Achievements Expanded stay
+out of it until she decides about Sarg Bjornson's pages.

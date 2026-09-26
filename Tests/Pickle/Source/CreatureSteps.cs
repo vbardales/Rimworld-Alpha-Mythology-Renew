@@ -63,10 +63,10 @@ namespace AlphaMythologyRenew.PickleSteps
             return cell;
         }
 
-        internal static Pawn SpawnAtStage(PickleContext ctx, PawnKindDef kind, int stage, IntVec3 cell)
+        internal static Pawn SpawnAtStage(PickleContext ctx, PawnKindDef kind, int stage, IntVec3 cell, Gender? gender = null)
         {
             var pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(kind, Faction.OfPlayer,
-                PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: true));
+                PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: true, fixedGender: gender));
             var stages = pawn.RaceProps.lifeStageAges;
             ctx.Require(stage >= 0 && stage < stages.Count, $"'{kind.defName}' has no life stage {stage} (it has {stages.Count})");
             long ticks = (long)(stages[stage].minAge * 3600000f) + 3600000L / 10;
@@ -100,7 +100,18 @@ namespace AlphaMythologyRenew.PickleSteps
                 int stages = kind.RaceProps.lifeStageAges.Count;
                 for (int s = 0; s < stages; s++)
                 {
-                    SpawnAtStage(ctx, kind, s, FreeCell(ctx));
+                    // A creature that ships separate female graphics is spawned in both genders, so that the female textures
+                    // are drawn too and not only whichever gender the generator happened to pick.
+                    bool hasFemaleLook = s < kind.lifeStages.Count && kind.lifeStages[s].femaleGraphicData != null;
+                    if (hasFemaleLook)
+                    {
+                        SpawnAtStage(ctx, kind, s, FreeCell(ctx), Gender.Male);
+                        SpawnAtStage(ctx, kind, s, FreeCell(ctx), Gender.Female);
+                    }
+                    else
+                    {
+                        SpawnAtStage(ctx, kind, s, FreeCell(ctx));
+                    }
                 }
             }
         }
@@ -122,24 +133,27 @@ namespace AlphaMythologyRenew.PickleSteps
                     continue;
                 }
                 var lifeStage = pawn.ageTracker.CurKindLifeStage;
-                var data = lifeStage.bodyGraphicData;
-                if (data == null) { failures.Add($"{pawn.kindDef.defName} stage {stage}: no bodyGraphicData"); continue; }
+                bool female = pawn.gender == Gender.Female && lifeStage.femaleGraphicData != null;
+                var data = female ? lifeStage.femaleGraphicData : lifeStage.bodyGraphicData;
+                if (data == null) { failures.Add($"{pawn.kindDef.defName} stage {stage}: no body graphic data"); continue; }
+                string look = female ? " (female)" : "";
                 var graphic = data.GraphicColoredFor(pawn);
                 foreach (var rot in new[] { Rot4.North, Rot4.East, Rot4.South, Rot4.West })
                 {
                     var mat = graphic.MatAt(rot, pawn);
                     if (mat == null || mat == BaseContent.BadMat)
                     {
-                        failures.Add($"{pawn.kindDef.defName} stage {stage}: no material facing {rot}");
+                        failures.Add($"{pawn.kindDef.defName} stage {stage}{look}: no material facing {rot}");
                     }
                 }
-                var dessicated = lifeStage.dessicatedBodyGraphicData;
+                var dessicated = female && lifeStage.femaleDessicatedBodyGraphicData != null
+                    ? lifeStage.femaleDessicatedBodyGraphicData : lifeStage.dessicatedBodyGraphicData;
                 if (dessicated != null)
                 {
                     var mat = dessicated.GraphicColoredFor(pawn).MatAt(Rot4.East, pawn);
                     if (mat == null || mat == BaseContent.BadMat)
                     {
-                        failures.Add($"{pawn.kindDef.defName} stage {stage}: no dessicated material");
+                        failures.Add($"{pawn.kindDef.defName} stage {stage}{look}: no dessicated material");
                     }
                 }
             }

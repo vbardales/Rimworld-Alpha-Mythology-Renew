@@ -25,7 +25,7 @@ Every row is automated (written, not yet played). F03's colonist execution is in
 
 | Scenario | Automation | State |
 |---|---|---|
-| F01 startup and 25 creatures | `Tests/Pickle` feature 12: every creature at every life stage, four facings, dessicated body, no error | written |
+| F01 startup and 25 creatures | `Tests/Pickle` feature 12: every creature at every life stage (in both genders where separate female graphics ship, the chimera), four facings, dessicated body, no error | written |
 | F02 phoenix rebirth | radius by life stage and the egg roll: `Tests/UnitTests` (green, offline); eggs left by 40 deaths per life stage, an old egg on the same tile, forced hatching: feature 13 | unit green, Pickle written |
 | F03 egg controls | feature 13: destroy and cancel commands with labels and icons in the EN and FR passes, and end to end through VEF's own designation and job (offered when requested, not when cancelled, carried out by a colonist and the egg destroyed without hatching). VEF is a required dependency, so it is always present: applicable (owner, 2026-09-26) | written |
 | F04 bleeding wound | feature 14: damage recurs while it lasts, stops when removed, and the wound survives Pickle's "I save and reload" and keeps hurting (Scribe errors are caught by "no errors") | written |

@@ -19,47 +19,13 @@ namespace AlphaMythologyRenew.PickleSteps
     [PickleSteps]
     public class GallerySteps
     {
-        private sealed class Spawned
-        {
-            public readonly Dictionary<string, Pawn> ByName = new Dictionary<string, Pawn>();
-        }
-
-        /// <summary>Pickle's ctx.Get throws when nothing of that type was set; a scenario that has not stored one yet is not an error.</summary>
-        private static T TryGet<T>(PickleContext ctx) where T : class
-        {
-            try { return ctx.Get<T>(); } catch (Exception) { return null; }
-        }
-
-        private static Map Map(PickleContext ctx)
-        {
-            ctx.Require(Current.Game != null && Find.CurrentMap != null, "no current map: load a fixture first");
-            return Find.CurrentMap;
-        }
-
-        private static Pawn Creature(PickleContext ctx, string name)
-        {
-            var spawned = TryGet<Spawned>(ctx);
-            ctx.Require(spawned != null && spawned.ByName.ContainsKey(name), $"no creature named '{name}' was spawned in this scenario");
-            var pawn = spawned.ByName[name];
-            ctx.Require(pawn.Spawned, $"'{name}' is no longer on the map");
-            return pawn;
-        }
-
         [Given("Alpha Mythology Renew spawns the player animal {string} as {string} near x {int} and z {int}")]
         public void SpawnPlayerAnimal(PickleContext ctx, string name, string kindDefName, int x, int z)
         {
-            var map = Map(ctx);
-            var kind = DefDatabase<PawnKindDef>.GetNamedSilentFail(kindDefName);
-            ctx.Require(kind != null, $"no PawnKindDef named '{kindDefName}'");
+            var map = CreatureSteps.Map(ctx);
+            var kind = CreatureSteps.Kind(ctx, kindDefName);
             ctx.Require(map.mapPawns.AllPawns.All(p => p.LabelShort != name),
                 $"a pawn called '{name}' already exists in the fixture: pick a name it does not have");
-
-            var pawn = PawnGenerator.GeneratePawn(new PawnGenerationRequest(kind, Faction.OfPlayer,
-                PawnGenerationContext.NonPlayer, -1, forceGenerateNewPawn: true));
-            // An adult, so that the picture shows the creature and not a juvenile.
-            var lastStage = pawn.RaceProps.lifeStageAges.Last();
-            pawn.ageTracker.AgeBiologicalTicks = (long)((lastStage.minAge + 1f) * 3600000f);
-            pawn.Name = new NameSingle(name);
 
             // Coordinates come from the studio fixture; on another map they may lie outside it: use the centre then.
             var origin = new IntVec3(x, 0, z);
@@ -68,17 +34,15 @@ namespace AlphaMythologyRenew.PickleSteps
             var found = CellFinder.TryFindRandomCellNear(origin, map, 6,
                 c => c.Standable(map) && c.GetFirstPawn(map) == null && c.GetEdifice(map) == null, out cell);
             ctx.Require(found, $"no free cell near {x},{z}");
-            GenSpawn.Spawn(pawn, cell, map);
-
-            var spawned = TryGet<Spawned>(ctx) ?? new Spawned();
-            spawned.ByName[name] = pawn;
-            ctx.Set(spawned);
+            // An adult, so that the picture shows the creature and not a juvenile. CreatureSteps records it for the teardown.
+            var pawn = CreatureSteps.SpawnAtStage(ctx, kind, kind.RaceProps.lifeStageAges.Count - 1, cell);
+            pawn.Name = new NameSingle(name);
         }
 
         [Then("Alpha Mythology Renew the creature {string} is standing on the map as {string}")]
         public void StandsAs(PickleContext ctx, string name, string kindDefName)
         {
-            var pawn = Creature(ctx, name);
+            var pawn = CreatureSteps.Live(ctx, name);
             ctx.Assert(pawn.kindDef.defName == kindDefName,
                 $"'{name}' is a {pawn.kindDef.defName}, expected {kindDefName}");
             ctx.Assert(pawn.Faction == Faction.OfPlayer, $"'{name}' does not belong to the player");
@@ -100,30 +64,12 @@ namespace AlphaMythologyRenew.PickleSteps
         [When("Alpha Mythology Renew frames the animal {string} at zoom {float}, shown {int} cells left and {int} cells up")]
         public void Frame(PickleContext ctx, string name, float zoom, int left, int up)
         {
-            var pawn = Creature(ctx, name);
+            var pawn = CreatureSteps.Live(ctx, name);
             Find.Selector.ClearSelection();
             Find.Selector.Select(pawn, playSound: false, forceDesignatorDeselect: false);
             var target = pawn.DrawPos + new Vector3(left, 0f, -up);
             Find.CameraDriver.JumpToCurrentMapLoc(target);
             Find.CameraDriver.SetRootSize(zoom);
-        }
-
-        [AfterScenario]
-        public void Teardown(PickleContext ctx)
-        {
-            try
-            {
-                var spawned = TryGet<Spawned>(ctx);
-                if (spawned == null) return;
-                foreach (var pawn in spawned.ByName.Values)
-                {
-                    if (pawn != null && !pawn.Destroyed) pawn.Destroy();
-                }
-            }
-            catch (Exception e)
-            {
-                Log.Warning($"[Alpha Mythology Renew tests] gallery creatures could not be removed: {e.Message}");
-            }
         }
     }
 }

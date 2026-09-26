@@ -478,3 +478,9 @@ patch commented out) and #2 "fix giddy up patch not being up to date with giddy-
 - Someone else has a 1.6 update of the original in the open; a PR of ours would duplicate #3. Comparing our
   1.6 changes against it is possible, and any comment or PR there is public: only with Virginie's agreement.
 - Our `GiddyUpPatch.xml` could be compared with #2 (giddy-up 2), which would also inform the GiddyUp optional pass.
+
+### Original Workshop page status — 2026-09-26
+
+Virginie opened page 1821617793: it works, and she is subscribed. This contradicts the summarizing fetch's
+"removed from Steam Community" remark, which is dropped as unfounded. Not checked: how the page looks logged
+out (a subscriber may see an item others cannot); the 4 new comments (606 against 602) remain unread.

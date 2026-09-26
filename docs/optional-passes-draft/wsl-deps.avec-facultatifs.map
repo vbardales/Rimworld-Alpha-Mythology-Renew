@@ -1,0 +1,11 @@
+# Pass "avec facultatifs" (DRAFT): the optional providers of the patches that are installed on this machine.
+# Order: prerequisites before consumers (VEF is a hard dependency of the mod and of Vanilla Cooking/Genetics).
+# Giddy-Up is kept out of this pass on purpose: it gets its own (wsl-deps.avec-giddyup.map), since a mount mod
+# changes the pawn stack and would blur what a failure in this one means.
+Torann.ARimworldOfMagic          1201382956
+Mlie.XNDNocturnalAnimals         2269731409
+VanillaExpanded.VCookE           2134308519
+VanillaExpanded.VGeneticsE       2801160906
+Mlie.AdvancedBiomes              3541022508
+Mlie.NaturesPrettySweet          3542949511
+zal.lotrelves                    3548255064

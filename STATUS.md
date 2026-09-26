@@ -522,3 +522,33 @@ Upstream link: the local repository had only `origin`. A fetch-only remote `upst
 (`https://github.com/juanosarg/AlphaMythology.git`, push URL set to `DISABLED`) was added and `master` fetched
 shallowly (53a5518, the audited commit). The port's GitHub repository is not a fork of it (`isFork: false`), so a
 pull request to the original would first need a fork: a public action, only with Virginie's agreement.
+
+## Optional integrations checked, assets opened — 2026-09-26
+
+Static check of the optional patches against the providers installed on this machine (read-only, nothing run):
+- Ids resolved (Workshop search in Chrome for the ones not installed): A RimWorld of Magic 1201382956
+  (`Torann.ARimworldOfMagic`), [XND] Nocturnal Animals (Continued) 2269731409 (`Mlie.XNDNocturnalAnimals`), Vanilla
+  Cooking Expanded 2134308519 (`VanillaExpanded.VCookE`), Vanilla Genetics Expanded 2801160906
+  (`VanillaExpanded.VGeneticsE`), Advanced Biomes (Continued) 3541022508 (`Mlie.AdvancedBiomes`), Nature's Pretty
+  Sweet (Continued) 3542949511 (`Mlie.NaturesPrettySweet`), Lord of the Rims - Elves (Continued) 3548255064
+  (`zal.lotrelves`), Giddy-Up 2 - Continued 3674332861 (`MemeGoddess.GiddyUp`). Vanilla Achievements Expanded
+  2288125657 is not installed here. Alpha Biomes (1841354677) is installed but no patch targets it.
+- Targets that exist: `RawMagicyte` in A RimWorld of Magic's v1.6 folder; `NocturnalAnimals.ExtendedRaceProperties` and
+  `bodyClock` in the Continued DLL (1.6 folder present); `HediffCompProperties_WhileHavingThoughts` and `Thought_Hediff` in
+  VEF 1.6; `GR_ExtractGenesFeline` in Vanilla Genetics Expanded (seen in its 1.4 folder, not confirmed for 1.6);
+  `TKKN_Oasis` in Nature's Pretty Sweet (Continued) 1.6. Not opened: Advanced Biomes' and the Elves' biome nodes.
+- **Suspected defect, not confirmed in game:** `NatureIsPrettySweetPatch.xml` is guarded by the name "Nature's Pretty
+  Sweet" while the installed page is named "Nature's Pretty Sweet (Continued)". `PatchOperationFindMod` compares names
+  (the Nocturnal patch's own comment says so and lists both spellings), so this patch would not apply. To be shown by
+  scenario 10 (`docs/optional-passes-draft/`) and fixed in the patch, in `Mod/`, after the first run.
+- The Giddy-Up patch is already rewritten for Giddy-Up 2 - Continued (guard on a def, new type names), so it is more
+  current than upstream PR #2, which targets "Giddy-Up 2 Forked" (page 3246108162, titled OUTDATED). The patch's own
+  comment says it was never seen in game.
+
+Drafts, not in the tree: `docs/optional-passes-draft/` (two pass maps, one feature of 8 scenarios: every one asserts only
+that the patch reached its target; the NPS one is expected to fail).
+
+Assets opened: `Preview.png` and all 210 PNG textures of `Mod/Textures` as contact sheets, for the adult-content boxes
+(see `PUBLICATION.md`): no nudity or sexual content, cartoon-scale violence only. Texts were not grepped for strong
+language. Stray items noted, not changed: 4 `MM_Mechataur` textures with no matching creature, and
+`MM_FenghuangEgg_a copy.png`.

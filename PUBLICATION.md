@@ -31,9 +31,19 @@ Checked in the sources, not from intent.
 
 ## Adult content boxes
 
-Answer: **none applies.** `Mod/About/Preview.png` was opened on 2026-09-26: two creatures and a colonist in a
-stable, nothing suggestive. The 25 creature textures and the icon were **not** all opened for this draft: open
-them before answering the form.
+Opened on 2026-09-26, as contact sheets: `Preview.png`, `ModIcon.png` source, and all 210 PNG textures of `Mod/Textures`
+(creatures in three views, dessicated skeletons, eggs, information cards, achievement icons, projectiles, saddles).
+Contact sheets are 150 px thumbnails: text on the cards was not read.
+
+- Nudity or sexual content: **no**. Nothing suggestive in any image.
+- Strong language: not checked in the texts (only the images were opened); the strings are the original's and
+  the port's own keys. Grep them before answering.
+- Violence or gore: cartoon-style only. One achievement icon (`MM_AchievementFountainOfBlood`) shows a figure with
+  red splashes, the creatures include fire and poison breath, and dessicated corpses are drawn as clean skeletons.
+  The mod adds a bleeding wound. This is RimWorld's own register and nothing is graphic or frequent, so **"no"
+  looks right**, but it is Virginie's answer to give.
+- Found while looking, not changed (`Mod/` is frozen): textures for a `MM_Mechataur` (4 files) that is not one of the
+  25 creatures, and a stray `MM_FenghuangEgg_a copy.png` file name.
 
 ## Screenshots (order to decide after the passes)
 
@@ -96,7 +106,14 @@ Method and register: `../WORKSHOP_COMMENTS.md`. A recipient already `posted` the
 | Pickle, RimLogging, RIMMSQOL | 3791648678, 3733484696, 1084452457 | posted | same, once the suite has actually been played |
 | Vanilla Cooking Expanded | 2134308519 | posted | same, only if its pass is written |
 | Alpha Mythology (the original) | 1821617793 | absent | **decision needed, see below** |
-| Other optional providers | unresolved | absent | resolve ids, then draft |
+| A RimWorld of Magic | 1201382956 | absent | ids resolved 2026-09-26; register row and draft to write |
+| [XND] Nocturnal Animals (Continued) | 2269731409 | absent | same |
+| Vanilla Genetics Expanded | 2801160906 | absent | same |
+| Vanilla Achievements Expanded | 2288125657 | absent | same (not installed here) |
+| Advanced Biomes (Continued) | 3541022508 | absent | same |
+| Nature's Pretty Sweet (Continued) | 3542949511 | absent | same, after settling the name guard (see STATUS.md) |
+| Lord of the Rims - Elves (Continued) | 3548255064 | absent | same; a "(Continued)" page: credit both the original author and the maintainer (zal): read the page to name them |
+| Giddy-Up 2 - Continued | 3674332861 | absent | same; the patch comment names Roolo, Owlchemist and dav9670 before MemeGoddess: read the page before crediting |
 
 **The original's page: do not draft yet.** A comment there announces a port published without the author's
 consent, on a page where he removes comments about 1.6 updates and answered VEF's page on 2026-09-22. Whether

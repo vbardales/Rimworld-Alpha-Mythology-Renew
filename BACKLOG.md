@@ -26,10 +26,14 @@ request `20260926-111909-647-4d36` is done. Everything that does is prepared els
   "Nature's Pretty Sweet (Continued)": `PatchOperationFindMod` compares names, so it is expected not to apply.
   Same weakness for every patch guarded by a display name (Advanced Biomes, Elves, Achievements, Cooking, Genetics,
   RimWorld of Magic, Nocturnal Animals lists both spellings by hand).
-- [ ] **Owner's direction, 2026-09-26: go back to the library she proposed**, which re-resolves the compatible mods
-  (she named NVW as what makes it possible) instead of hand-listed names. **Not yet understood by this session**:
-  which library, what NVW stands for, and how it is declared (dependency or optional). To settle before touching
-  the patches: ask, then record the mechanism here. Until then no patch is changed.
+- [ ] **Owner's direction, 2026-09-26: go back to the library she proposed, built on Use This Instead** (UTI, Workshop
+  3396308787, MIT, by Mlie), which re-resolves the compatible mods instead of hand-listed names. Its open rules file
+  (`replacements.json.gz`, 2713 rules with old/new Workshop ids, names and packageIds) already links the original
+  Nature's Pretty Sweet to its "(Continued)" page. Work happens in `../ModCompatResolver/` (README has the data and
+  the four open design questions); this mod only consumes it. **No patch is changed until she has chosen the shape**
+  (custom patch operation over a packageId alias set, live lookup in UTI, or both) and the mod's tree is unfrozen.
+  Two traps found in the data: the Elves have two "Continued" pages (3383096916 and zal's 3548255064), and some rules
+  have an empty `oldPackageId`.
 
 ## Before `tested` (see `STATUS.md`)
 

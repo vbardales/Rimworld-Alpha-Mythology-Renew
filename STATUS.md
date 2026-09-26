@@ -11,7 +11,7 @@ git_root: C:/Users/nelim/Documents/rimworld/AlphaMythologyRenew
 git_isolation: standalone; removed from parent index and ignored there
 remote: origin https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew.git
 maintainer: Codex task dedicated to AlphaMythologyRenew; maintain this STATUS.md as work progresses
-stage: options
+stage: preTest
 settings_audit: partial
 audit_at: 2026-09-26
 audit_revision: 3d88314fbeec0b037a884839f43689de1b4f2a90 (+ uncommitted settings work, see the 2026-09-26 sections)
@@ -561,3 +561,21 @@ branch `cleanup/unused-textures` (`7fd51c9`, worktree `../AlphaMythologyRenew-cl
 frozen until the first Pickle run is done. Check-Mod (339) and the translation check pass on the branch. Kept:
 `MM_FenghuangEgg_a copy.png`, used through its folder. Tracked in `BACKLOG.md`, which also records the owner's
 direction on the patch guards (a library she proposed; not yet understood, no patch changed).
+
+## Stage set to preTest — 2026-09-26, by Virginie's ruling
+
+Virginie decided that the settings run is not a precondition of `preTest`: `preTest` never asked for the tests to
+pass, only for them to be written. Stage `options` -> `preTest`. The conflict between AGENTS.md ("enter preTest only
+after both gates pass") and AUDIT.md (no in-game check for `options`, none for `done`) is resolved in favour of
+AUDIT.md by her.
+
+What holds, from this audit: dependencies declared and used (Harmony, VEF), optional integrations kept apart
+(`PatchOperationFindMod`, one `LoadFolders` branch for Achievements), settings and shortcut in place, translations
+complete for the static inventory, tests written (F01-F13, unit, XML, Pickle suite of 16 scenarios).
+
+Carried into `preTest` as open, not as defects: `settings_audit` stays `partial` (window, effect on spawns,
+persistence and RIMMSQOL are runtime checks of `done -> tested`); the Nature's Pretty Sweet name guard is suspected
+not to apply to the installed "(Continued)" page; the optional integrations have no played scenario; the wisp, the
+phoenix death and the legacy patches have no scenario; the first Pickle run (`20260926-111909-647-4d36`) is queued.
+`preTest -> done` asks for tests written and offline tests green, which the current tree meets except for what the
+items above still add; whether to call it `done` is left for the next audit, once the patch direction is settled.

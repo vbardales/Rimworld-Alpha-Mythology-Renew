@@ -3,3 +3,5 @@
 # It is a 1.4/1.5 mod: the game will load it with a version warning; the point is what the two do together.
 # The original goes first, then the mod under test is staged after it by the launcher.
 sarg.magicalmenagerie            1821617793
+nelim.resolvethisinstead   path:ResolveThisInstead/Mod
+Mlie.UseThisInstead        3396308787

@@ -6,3 +6,5 @@ nelim.pickletools.filmticks         path:PickleTools/FilmTicks/Mod
 nelim.pickletools.screenshotstudio  path:PickleTools/ScreenshotStudio/Mod
 nelim.pickletools.screenshotmode    path:PickleTools/ScreenshotMode/Mod
 nelim.pickletools.clearscreen       path:PickleTools/ClearScreen/Mod
+nelim.resolvethisinstead   path:ResolveThisInstead/Mod
+Mlie.UseThisInstead        3396308787

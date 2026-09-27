@@ -1,0 +1,9 @@
+# The default overlay, read whenever -DepMap is not given (the bare pass and every named one that forgot to say
+# 'none'). Exists only to stage Resolve This Instead, a required dependency with no Workshop id (unpublished,
+# staged by path) and its own hard dependency Use This Instead: `wsl-ids.map` cannot do this (it only resolves a
+# Workshop id for a packageId the game already decided to activate; it never activates a `path:` entry itself —
+# only a wsl-deps map's own loop does that. Found the hard way, 2026-09-27: 5622 and f45e both failed staging
+# because wsl-ids.map does not understand `path:`), so every pass needs the two lines below or this hard
+# dependency never gets staged and the game refuses to load past its About.xml.
+nelim.resolvethisinstead   path:ResolveThisInstead/Mod
+Mlie.UseThisInstead        3396308787

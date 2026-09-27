@@ -12,7 +12,7 @@ git_isolation: standalone; removed from parent index and ignored there
 remote: origin https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew.git
 maintainer: Codex task dedicated to AlphaMythologyRenew; maintain this STATUS.md as work progresses
 stage: preTest
-settings_audit: partial
+settings_audit: complete
 audit_at: 2026-09-26
 audit_revision: 3d88314fbeec0b037a884839f43689de1b4f2a90 (+ uncommitted settings work, see the 2026-09-26 sections)
 automated_tests: passed; static contracts (339 assertions, 7 negative cases) and 13 settings-rule unit tests
@@ -744,3 +744,7 @@ Run 778c: 1 green, 2 red. Read both:
   incompatibility's fallout, not a defect of the phoenix scenario or the death worker; left as is.
 - Filed the next run narrower (`-Filter` the incompatibility scenario by name, not the whole feature file), so the
   phoenix and wisp scenarios of this feature are not incidentally caught by the collision again.
+
+## Restart pair confirmed green after the settings fix — 2026-09-27
+
+Run 53a2: seq1 1/1, seq2 1/1, both green (unlike c039 which found the defect). The blocked-creatures-lost-at-restart fix (f5e8956) is proven. `settings_audit` moves from partial to complete; `Evidence/restart` (c039, the failing run) deleted, superseded by `restart2`.

@@ -1,5 +1,7 @@
-
-# Tests/Pickle is frozen until then. Not compiled against a game, never played; zoom values and cell offsets
+# Tests/Pickle is not frozen any more; zoom values and cell offsets below were tuned once against the first capture
+# (studio pass 5bc7, 2026-09-26): the hero shots (griffin, hound, phoenix) read small at zoom 7, and the five-creature
+# line-up only fit 3 of its 5 subjects in frame at zoom 13 offset 2 cells left of the middle one. Tuned, not
+# re-rendered yet: the next capture is what confirms these numbers.
 # are guesses to tune after the first capture.
 #
 # Pictures meant for the Workshop page and for nothing else. What they assert is only that the picture says what
@@ -22,7 +24,7 @@ Feature: Workshop pictures
     Then Alpha Mythology Renew the creature "Aurelia" is standing on the map as "MM_Griffin"
     When Alpha Mythology Renew dismisses every letter
     And Nelim's Pickle Tools: I frame the studio "flowers"
-    And Alpha Mythology Renew frames the animal "Aurelia" at zoom 7, shown 2 cells left and 1 cells up
+    And Alpha Mythology Renew frames the animal "Aurelia" at zoom 4, shown 1 cells left and 1 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     Then I take a screenshot "publication 1 - the griffin"
@@ -36,7 +38,7 @@ Feature: Workshop pictures
     Then Alpha Mythology Renew the creature "Morwen" is standing on the map as "MM_Unicorn"
     When Alpha Mythology Renew dismisses every letter
     And Nelim's Pickle Tools: I frame the studio "flowers"
-    And Alpha Mythology Renew frames the animal "Morwen" at zoom 13, shown 2 cells left and 1 cells up
+    And Alpha Mythology Renew frames the animal "Morwen" at zoom 20, shown 0 cells left and 1 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     Then I take a screenshot "publication 2 - five creatures side by side"
@@ -46,7 +48,7 @@ Feature: Workshop pictures
     Then Alpha Mythology Renew the creature "Balthazar" is standing on the map as "MM_Cerberus"
     When Alpha Mythology Renew dismisses every letter
     And Nelim's Pickle Tools: I frame the studio "flowers"
-    And Alpha Mythology Renew frames the animal "Balthazar" at zoom 7, shown 2 cells left and 1 cells up
+    And Alpha Mythology Renew frames the animal "Balthazar" at zoom 4, shown 1 cells left and 1 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     Then I take a screenshot "publication 3 - the three-headed hound"
@@ -56,7 +58,7 @@ Feature: Workshop pictures
     Then Alpha Mythology Renew the creature "Cinder" is standing on the map as "MM_Phoenix"
     When Alpha Mythology Renew dismisses every letter
     And Nelim's Pickle Tools: I frame the studio "flowers"
-    And Alpha Mythology Renew frames the animal "Cinder" at zoom 7, shown 2 cells left and 1 cells up
+    And Alpha Mythology Renew frames the animal "Cinder" at zoom 4, shown 1 cells left and 1 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     Then I take a screenshot "publication 4 - the phoenix"

@@ -723,3 +723,5 @@ Run d62d: stall, exit 3, no report ("Terminated"). Player.log: `TypeLoadExceptio
 ## Other pass maps checked for the same HugsLib trap — 2026-09-27
 
 After d62d's diagnosis, checked the other providers: Giddy-Up 2 - Continued (3674332861, f431) explicitly advertises being free of the HugsLib dependency, rebuilt end to end. Tree Chopping Speed Stat (2566231583, 8421) needs only Harmony, already staged as our own mod's dependency. The original Alpha Mythology's own requirements (778c) could not be checked: steamcommunity.com returned 429 (rate limit) both by WebFetch and earlier in this session; it is VEF-based like this port, so Harmony and VEF (both already staged for our own mod) are the likely floor, not confirmed. Not adding anything to `wsl-deps.incompat-magicalmenagerie.map` without evidence.
+
+- Giddy-Up pass (f431): green. 1 played (the griffin becomes a mount), 7 skipped by requirement (the other providers' scenarios, correctly not played on this map). No defect, no HugsLib trap as expected.

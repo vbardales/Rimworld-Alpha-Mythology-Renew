@@ -748,3 +748,7 @@ Run 778c: 1 green, 2 red. Read both:
 ## Restart pair confirmed green after the settings fix — 2026-09-27
 
 Run 53a2: seq1 1/1, seq2 1/1, both green (unlike c039 which found the defect). The blocked-creatures-lost-at-restart fix (f5e8956) is proven. `settings_audit` moves from partial to complete; `Evidence/restart` (c039, the failing run) deleted, superseded by `restart2`.
+
+## Treechop pass confirmed green — 2026-09-27
+
+Run 8421: 6/6, including both F12 Tree Chopping Speed Stat scenarios (the provider guard and the real VEF harvest path). The dead-plant-fixture fix (1ec236d) is proven. `Evidence/treechop` (eef1, the failing run) deleted, superseded by `treechop2`.

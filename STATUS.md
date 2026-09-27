@@ -760,3 +760,7 @@ Run 342d hung the machine 4h40 (no scenario ever started, "null texture passed t
 ## Incompat re-run: my own filter mistake — 2026-09-27
 
 Run 2a93: exit 8 (infrastructure-error), 0 scenarios played. Pickle's own exit was 2: a plain substring is read as a "Mod display name" pick (Headless/README.md filter table), not free text search — needs `::text` or `file::text`. My `-Filter 'the incompatibility warns about'` matched nothing. Refiled as `11-behaviour-and-incompatibility::the incompatibility warns about`.
+
+## Resolve This Instead wired as a required dependency — 2026-09-27
+
+Its own session (resolvethisinstead) confirmed the folder mountable (`ResolveThisInstead/Mod`, `nelim.resolvethisinstead`, declares Harmony and Use This Instead 3396308787 as its own hard dependencies) and its own load-order pass green across three mod-list passes today. One commit: `About.xml` modDependencies + loadAfter (no Workshop id yet, not published), `Tests/Check-Mod.ps1`'s dependency list, and `Tests/Pickle/wsl-ids.map` (new — resolves `nelim.resolvethisinstead path:ResolveThisInstead/Mod` and its own dependency `Mlie.UseThisInstead 3396308787`, staging is not recursive). Check-Mod passes (335 assertions). Not done: rewriting the 8 name guards to actually consume it — that waits on Virginie's choice of shape (BACKLOG.md), and the tree is unfrozen so this can land without blocking anything.

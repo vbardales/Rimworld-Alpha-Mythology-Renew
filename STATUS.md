@@ -752,3 +752,7 @@ Run 53a2: seq1 1/1, seq2 1/1, both green (unlike c039 which found the defect). T
 ## Treechop pass confirmed green — 2026-09-27
 
 Run 8421: 6/6, including both F12 Tree Chopping Speed Stat scenarios (the provider guard and the real VEF harvest path). The dead-plant-fixture fix (1ec236d) is proven. `Evidence/treechop` (eef1, the failing run) deleted, superseded by `treechop2`.
+
+## Facultatifs pass: HugsLib was not the fix, A RimWorld of Magic isolated — 2026-09-27
+
+Run 342d hung the machine 4h40 (no scenario ever started, "null texture passed to GUI.DrawTexture" looping), force-killed by Virginie, exit 143, no report. Player.log shows the SAME `TypeLoadException` on `AbilityUser.Verb_UseAbility` etc. as d62d, at the same point, even with HugsLib now staged first. That retracts the d62d diagnosis: HugsLib was not the missing piece. Something about A RimWorld of Magic's own `AbilityUser`/`AbilityUserAI` assemblies fails to resolve on this WSL machine regardless of what is staged with it — a stale or broken local Steam cache of Workshop 1201382956 is the leading suspect, not fixable from this repo. Split it out of `wsl-deps.avec-facultatifs.map` into its own `wsl-deps.avec-rwom.map`, so a third hang costs one isolated pass, not the other six providers (Nocturnal Animals, Vanilla Cooking, Vanilla Genetics, Advanced Biomes, Nature's Pretty Sweet, Elves), still untested. Filing the six-provider pass again; NOT resubmitting the RWoM pass without asking — it has already held the shared machine for hours twice on the same unresolved failure.

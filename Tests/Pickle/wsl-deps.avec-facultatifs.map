@@ -3,12 +3,15 @@
 # Giddy-Up is kept out of this pass on purpose: it gets its own (wsl-deps.avec-giddyup.map), since a mount mod
 # changes the pawn stack and would blur what a failure in this one means.
 #
-# Run d62d stalled at load (exit 3, "Terminated", no report): Player.log shows System.TypeLoadException on
-# AbilityUser.Verb_UseAbility, AbilityUser.Projectile_AbilityBase and HugsLib.ModBase, then the BadTexture material
-# spam that floods a hung load screen. A RimWorld of Magic (and HugsLib itself) needs HugsLib as its own hard
-# dependency, which this map did not stage: its types failed to resolve and the game never finished loading.
+# A RimWorld of Magic is kept out too, as of 2026-09-27: it hung the machine twice. Run d62d (no HugsLib staged)
+# stalled with TypeLoadException on AbilityUser.Verb_UseAbility etc.; HugsLib was added here for that. Run 342d
+# (HugsLib staged, first in order) hung again with the SAME exceptions, at the same lines, before HugsLib's own
+# load could even matter (game frozen 4h40, force-killed, no report). That rules HugsLib out: something about
+# A RimWorld of Magic's OWN AbilityUser/AbilityUserAI assemblies fails to resolve on this WSL machine regardless
+# of what is staged alongside it — a stale or broken local Steam Workshop cache of 1201382956 is the leading
+# suspect, not a dependency this map can supply. See wsl-deps.avec-rwom.map (its own, isolated pass): filed
+# separately so a hang there does not block the six providers below, which have nothing to do with it.
 UnlimitedHugs.HugsLib            818773962
-Torann.ARimworldOfMagic          1201382956
 Mlie.XNDNocturnalAnimals         2269731409
 VanillaExpanded.VCookE           2134308519
 VanillaExpanded.VGeneticsE       2801160906

@@ -5,8 +5,8 @@ Feature: Alpha Mythology Renew loads with its settings contracts
   # patch installed, and that a clean profile really carries the documented defaults.
 
   Scenario: the mod loads without startup errors
-    Then mod "nelim.alphamythologyrenew" is loaded
-    And mod "nelim.alphamythologyrenew" loads after "oskarpotocki.vanillafactionsexpanded.core"
+    Then mod "nelim.alphamythology" is loaded
+    And mod "nelim.alphamythology" loads after "oskarpotocki.vanillafactionsexpanded.core"
     And no errors were logged
 
   Scenario: its creatures and its shortcut are present

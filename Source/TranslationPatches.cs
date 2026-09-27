@@ -33,7 +33,7 @@ namespace AlphaMythologyRenew
                 return;
             }
 
-            var harmony = new Harmony("nelim.alphamythologyrenew.translations");
+            var harmony = new Harmony("nelim.alphamythology.translations");
             harmony.Patch(inspect, postfix: new HarmonyMethod(typeof(TranslationPatches), nameof(InspectPostfix)));
             harmony.Patch(gizmos, postfix: new HarmonyMethod(typeof(TranslationPatches), nameof(GizmosPostfix)));
         }

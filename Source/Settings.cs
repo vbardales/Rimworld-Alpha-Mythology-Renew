@@ -43,7 +43,7 @@ namespace AlphaMythologyRenew
 
     public class AlphaMythologyRenewMod : Mod
     {
-        public const string PackageId = "nelim.alphamythologyrenew";
+        public const string PackageId = "nelim.alphamythology";
         private const float RowHeight = 28f;
 
         public static AlphaMythologyRenewMod Instance;
@@ -55,7 +55,7 @@ namespace AlphaMythologyRenew
         {
             Instance = this;
             Settings = GetSettings<AlphaMythologySettings>();
-            new Harmony("nelim.alphamythologyrenew.settings").PatchAll(typeof(AlphaMythologyRenewMod).Assembly);
+            new Harmony("nelim.alphamythology.settings").PatchAll(typeof(AlphaMythologyRenewMod).Assembly);
         }
 
         public override string SettingsCategory() => "AMR_SettingsCategory".Translate();

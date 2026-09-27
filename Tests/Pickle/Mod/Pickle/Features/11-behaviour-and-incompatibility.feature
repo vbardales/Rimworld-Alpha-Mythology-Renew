@@ -40,6 +40,6 @@ Feature: two behaviours of this mod that only a running game shows
   @requires:sarg.magicalmenagerie @allow-errors
   Scenario: the original loaded beside this port logs the collision the incompatibility warns about
     Then mod "sarg.magicalmenagerie" is loaded
-    And mod "nelim.alphamythologyrenew" is loaded
+    And mod "nelim.alphamythology" is loaded
     And I wait 60 ticks
     And Alpha Mythology Renew an error matching "CommonalityOfAnimal" was logged

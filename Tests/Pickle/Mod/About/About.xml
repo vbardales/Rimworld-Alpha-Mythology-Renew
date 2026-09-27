@@ -2,14 +2,14 @@
 <ModMetaData>
   <name>Alpha Mythology Renew - Pickle tests</name>
   <author>Nelim</author>
-  <packageId>nelim.alphamythologyrenew.pickletests</packageId>
+  <packageId>nelim.alphamythology.pickletests</packageId>
   <supportedVersions>
     <li>1.6</li>
   </supportedVersions>
   <description>In-game acceptance tests for Alpha Mythology Renew. Development only; never published.</description>
   <modDependencies>
     <li>
-      <packageId>nelim.alphamythologyrenew</packageId>
+      <packageId>nelim.alphamythology</packageId>
       <displayName>Alpha Mythology Renew (unofficial)</displayName>
     </li>
     <li>
@@ -19,7 +19,7 @@
     </li>
   </modDependencies>
   <loadAfter>
-    <li>nelim.alphamythologyrenew</li>
+    <li>nelim.alphamythology</li>
     <li>rimworks.pickle</li>
   </loadAfter>
 </ModMetaData>

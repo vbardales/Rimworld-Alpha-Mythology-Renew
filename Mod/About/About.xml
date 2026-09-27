@@ -2,7 +2,7 @@
 <ModMetaData>
   <name>Alpha Mythology Renew (unofficial)</name>
   <author>Sarg Bjornson; RimWorld 1.6 adapted by Nelim</author>
-  <packageId>nelim.alphamythologyrenew</packageId>
+  <packageId>nelim.alphamythology</packageId>
   <supportedVersions><li>1.6</li></supportedVersions>
   <modDependencies>
     <li><packageId>brrainz.harmony</packageId><displayName>Harmony</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl></li>

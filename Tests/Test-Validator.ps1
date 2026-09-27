@@ -11,7 +11,7 @@ try {
     $validator = Join-Path $PSScriptRoot 'Check-Mod.ps1'
     & $validator -ModRoot $fixture
     $cases = @(
-        @{ Name='wrong package ID'; File='Mod/About/About.xml'; From='nelim.alphamythologyrenew'; To='nelim.wrong'; Error='Wrong packageId' },
+        @{ Name='wrong package ID'; File='Mod/About/About.xml'; From='nelim.alphamythology'; To='nelim.wrong'; Error='Wrong packageId' },
         @{ Name='missing race'; File='Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Phoenix.xml'; From='<defName>MM_Phoenix</defName>'; To='<defName>MM_MissingPhoenix</defName>'; Error='Missing ThingDef MM_Phoenix' },
         @{ Name='dangling hatch target'; File='Mod/Defs/AlphaMythology/ThingDefs_Items/Items_Resource_MagicalAnimalEggs.xml'; From='<hatcherPawn>MM_Phoenix</hatcherPawn>'; To='<hatcherPawn>MM_MissingKind</hatcherPawn>'; Error='Missing PawnKindDef MM_MissingKind' },
         @{ Name='wrong death worker'; File='Mod/Defs/AlphaMythology/ThingDefs_Races/Races_Phoenix.xml'; From='AlphaMythologyRenew.DeathActionWorker_ExplodeAndSpawnEggs'; To='AlphaMythologyRenew.MissingWorker'; Error='Phoenix death worker disconnected' },

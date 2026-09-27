@@ -61,7 +61,7 @@ foreach ($needle in @(': ModSettings', ': Mod', 'SettingsCategory', 'MainButtonW
 [xml]$about = Get-Content "$root/Mod/About/About.xml" -Raw
 $meta = $about.ModMetaData
 Assert-Mod ($meta.name -ceq 'Alpha Mythology Renew (unofficial)') 'Wrong title'
-Assert-Mod ($meta.packageId -ceq 'nelim.alphamythologyrenew') 'Wrong packageId'
+Assert-Mod ($meta.packageId -ceq 'nelim.alphamythology') 'Wrong packageId'
 Assert-Mod (@($meta.supportedVersions.li) -contains '1.6') 'RimWorld 1.6 support missing'
 foreach ($dependency in @('brrainz.harmony', 'OskarPotocki.VanillaFactionsExpanded.Core', 'nelim.resolvethisinstead')) {
     Assert-Mod (@($meta.modDependencies.li.packageId) -contains $dependency) "Missing dependency $dependency"

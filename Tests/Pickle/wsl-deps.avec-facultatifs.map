@@ -2,6 +2,12 @@
 # Order: prerequisites before consumers (VEF is a hard dependency of the mod and of Vanilla Cooking/Genetics).
 # Giddy-Up is kept out of this pass on purpose: it gets its own (wsl-deps.avec-giddyup.map), since a mount mod
 # changes the pawn stack and would blur what a failure in this one means.
+#
+# Run d62d stalled at load (exit 3, "Terminated", no report): Player.log shows System.TypeLoadException on
+# AbilityUser.Verb_UseAbility, AbilityUser.Projectile_AbilityBase and HugsLib.ModBase, then the BadTexture material
+# spam that floods a hung load screen. A RimWorld of Magic (and HugsLib itself) needs HugsLib as its own hard
+# dependency, which this map did not stage: its types failed to resolve and the game never finished loading.
+UnlimitedHugs.HugsLib            818773962
 Torann.ARimworldOfMagic          1201382956
 Mlie.XNDNocturnalAnimals         2269731409
 VanillaExpanded.VCookE           2134308519

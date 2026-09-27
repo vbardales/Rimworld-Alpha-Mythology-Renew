@@ -792,3 +792,19 @@ Run d961: 5/5 played green, 3 skipped by requirement (RWoM, Genetics, Giddy-Up, 
 ## Vanilla Genetics Expanded pass confirmed green in isolation — 2026-09-27
 
 Run fb2d: 1/1 green, alone. Correction to the 4092 diagnosis: GeneticRim.Core does not crash on its own — it only crashed staged alongside the other five facultatifs providers in one launch, so the true cause is a load-order or cross-mod interaction among that set, not a defect intrinsic to Vanilla Genetics Expanded by itself. Neither is ours to fix; the isolated pass is the honest way to cover it. Seven of the eight optional-integration scenarios are now confirmed green (Nocturnal Animals, Vanilla Cooking, Vanilla Genetics, Advanced Biomes, Elves, Nature's Pretty Sweet, Giddy-Up); only A RimWorld of Magic remains, held pending Virginie's word (it hung the machine twice).
+
+## The other seven name-guarded patches checked against installed names — 2026-09-27
+
+SEARCHING.md now read; used it to close the "same weakness for every patch guarded by a display name" item rather than leave it a standing worry. Read each provider's own `About/About.xml` `<name>` (six from the local Steam Workshop cache, one — Vanilla Achievements Expanded, not installed here — from a web search) against what the patch hardcodes:
+
+| Patch | Hardcoded | Installed name |
+|---|---|---|
+| AdvancedBiomesPatch | Advanced Biomes (Continued) | Advanced Biomes (Continued) |
+| GeneticRimPatch | Vanilla Genetics Expanded | Vanilla Genetics Expanded |
+| LordRingsElvesPatch | Lord of the Rims - Elves (Continued) | Lord of the Rims - Elves (Continued) |
+| NocturnalAnimalsPatch | both spellings listed by hand | [XND] Nocturnal Animals (Continued) |
+| RimworldOfMagicPatch | A RimWorld of Magic | A RimWorld of Magic |
+| VanillaCookingExpandedPatch | Vanilla Cooking Expanded | Vanilla Cooking Expanded |
+| AchievementsPatch | Vanilla Achievements Expanded | Vanilla Achievements Expanded (per a web search, not installed locally; the same search flagged the page as possibly pulled for a guideline violation — unverified, worth a second look before publication if this integration matters) |
+
+All seven match: no vouch entry needed for any of them, confirming Nature's Pretty Sweet was the only actually-drifted guard, not a symptom of a wider problem.

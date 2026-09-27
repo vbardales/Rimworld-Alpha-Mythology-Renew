@@ -36,8 +36,11 @@ This mod's own backlog (the monorepo has its own). Ordered by what blocks the ne
   why). The other seven name-guarded patches (Advanced Biomes, Elves, Achievements, Cooking, Genetics, RimWorld of
   Magic, Nocturnal Animals) already carry the currently-installed name and are not confirmed broken: no vouch entry
   added for them without a confirmed old name, since a wrong pair is worse than none (see the comment in the new file).
-  Two traps found in the data, still relevant if one of those seven turns out broken: the Elves have two "Continued"
-  pages (3383096916 and zal's 3548255064), and some rules have an empty `oldPackageId`.
+  Checked 2026-09-27 (STATUS.md, "the other seven name-guarded patches checked against installed names"): all seven
+  match the currently-installed name (six read locally, one — Achievements — by web search, not installed here).
+  Nature's Pretty Sweet was the only actually-drifted guard, not a symptom of a wider problem; this item is closed.
+  Two traps in the UTI data, kept in mind should one of these seven ever turn out to drift later: the Elves have two
+  "Continued" pages (3383096916 and zal's 3548255064), and some rules have an empty `oldPackageId`.
 
 ## Before `tested` (see `STATUS.md`)
 

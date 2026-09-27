@@ -27,7 +27,7 @@ Checked in the sources, not from intent.
 | Eight other providers (Advanced Biomes, Genetics, GiddyUp, Elves, Nature's Pretty Sweet, Nocturnal Animals, RimWorld of Magic, Vanilla Cooking Expanded) | optional, never a dependency | `Mod/Patches/AlphaMythology/*Patch.xml`, all `PatchOperationFindMod` |
 | RIMMSQOL | not a dependency; reveals the hidden settings shortcut | dev-only pass `wsl-deps.avec-rimmsqol.map` |
 | DLC | none required | one `MayRequire="Ludeon.RimWorld.Biotech"` in the Defs; `supportedVersions` 1.6 only, no DLC branch in `LoadFolders.xml` |
-| Incompatible | `sarg.magicalmenagerie` (the original) | `About.xml` `incompatibleWith`; the pass that looks at it is not written yet |
+| Incompatible | `sarg.magicalmenagerie` (the original) | `About.xml` `incompatibleWith`; pass run 2026-09-27 (778c): real symptom found and confirmed — both mods declare `PawnKindDef`s under the same defNames, and `NullReferenceException` in `BiomeDef.CommonalityOfAnimal` follows the first time the wild-animal spawner ticks. `STATUS.md` has the detail. |
 
 ## Adult content boxes
 
@@ -50,10 +50,15 @@ Contact sheets are 150 px thumbnails: text on the cards was not read.
 
 ## Screenshots (order to decide after the passes)
 
-Steam shows the first image large: the most demonstrative one goes there, not the prettiest. Nothing is
-captured yet: the only capture the suite produces is the settings window in each language (`05-language`,
-`@review`), which shows the interface and not the creatures. Gallery images need to be made of the creatures
-themselves (a scenario that spawns and frames them); zoom enough to show what is not interface. Not written yet.
+Steam shows the first image large: the most demonstrative one goes there, not the prettiest. The studio pass
+(`09-publication-shots.feature`) is written and run: first capture 5bc7 (2026-09-26), all 5 green but the hero
+shots (griffin, hound, phoenix) read small and the five-creature line-up only fit 3 of its 5 subjects — opened,
+diagnosed, framing retuned (zoom, offsets) in `8678412`; a re-render (`c928`) is filed to confirm. Order still to
+decide once a confirmed set exists: the settings window (`05-language`, `@review`) shows the interface, not a
+creature, so it is not a first-image candidate.
+
+Candidates once c928 returns, in capture order: griffin close, five creatures side by side, the three-headed
+hound, the phoenix, the settings window over the meadow.
 
 ## Description (BBCode, to place in the Workshop page at creation, in this order)
 
@@ -109,7 +114,7 @@ Method and register: `../WORKSHOP_COMMENTS.md`. A recipient already `posted` the
 | Pickle, RimLogging, RIMMSQOL | 3791648678, 3733484696, 1084452457 | posted | same, once the suite has actually been played |
 | Vanilla Cooking Expanded | 2134308519 | posted | same, only if its pass is written |
 | Alpha Mythology (the original) | 1821617793 | absent | **decision needed, see below** |
-| A RimWorld of Magic | 1201382956 | absent | ids resolved 2026-09-26; register row and draft to write |
+| A RimWorld of Magic | 1201382956 | absent | ids resolved 2026-09-26; register row and draft to write. Its own pass hung the shared machine twice (2026-09-27, d62d and 342d) on a `TypeLoadException` inside its own assemblies, unrelated to this mod; isolated in `wsl-deps.avec-rwom.map`, not resubmitted without asking. Credit the API regardless — the hang is this machine's cache, not the mod. |
 | [XND] Nocturnal Animals (Continued) | 2269731409 | absent | same |
 | Vanilla Genetics Expanded | 2801160906 | absent | same |
 | Vanilla Achievements Expanded | 2288125657 | absent | same (not installed here) |

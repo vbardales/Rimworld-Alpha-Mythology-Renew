@@ -2,23 +2,23 @@
 
 This mod's own backlog (the monorepo has its own). Ordered by what blocks the next stage. Opened 2026-09-26.
 
-## Waiting for the first Pickle run (Mod/ and Tests/Pickle are frozen until `RUN_DONE`)
-
-A request stages the working tree when it is played, so nothing below may touch `Mod/` or `Tests/Pickle/` before
-request `20260926-111909-647-4d36` is done. Everything that does is prepared elsewhere.
+## First Pickle runs and their fallout (`Mod/` and `Tests/Pickle` are no longer frozen: the tree moves at every fix)
 
 - [x] **Remove the unused textures.** (Caveat: a texture can be loaded by convention with no Def naming it, e.g. the "Pack" overlay of a pack animal; check before removing.) DONE 2026-09-26, merged in 78ee4b0 (was: prepared on a branch): branch `cleanup/unused-textures` (worktree
   `../AlphaMythologyRenew-cleanup`, commit `7fd51c9`, 25 files: 15 cards, 4 Mechataur, 3 Catoblepas pack overlays,
-  `MM_Firebreath`, `MM_GazeAttack`, the original logo). Check-Mod and the translation check pass on it. After
-  `RUN_DONE`: merge, rebuild nothing (no code), re-run Check-Mod, then remove the worktree. The Mechataur textures hint
-  at an unreleased creature of the original: if the owner wants it ported, keep them and drop them from the commit.
+  `MM_Firebreath`, `MM_GazeAttack`, the original logo). Check-Mod and the translation check pass on it.
+  The 3 Catoblepas pack overlays were wrongly removed (the game loads them by convention, no Def names them): found
+  by the first full run (en2) and restored 2026-09-26 (4ab9496). The Mechataur textures hint at an unreleased
+  creature of the original: if the owner wants it ported, keep them and drop them from any future removal commit.
   Not removed on purpose: `MM_FenghuangEgg_a copy.png` (a folder-loaded egg graphic uses every file of its folder;
   its odd name is harmless, its rename is not needed).
-- [ ] **Move the drafts into `Tests/Pickle/`**: `docs/gallery-draft/` (5 Workshop pictures), `docs/scenarios-draft/` (phoenix death, wisp text, incompatibility pass) and
-  `docs/optional-passes-draft/` (8 integration scenarios, two pass maps). Then rebuild the steps DLL and redo the
-  step-text check.
-- [ ] **File the other passes** once the first verdict is read: French, restart pair, RIMMSQOL, studio (gallery),
-  optional integrations, Giddy-Up.
+- [x] **Move the drafts into `Tests/Pickle/`**: done directly when the features were written (`docs/gallery-draft/`,
+  `docs/scenarios-draft/`, `docs/optional-passes-draft/` were never created; their content is in
+  `Tests/Pickle/Mod/Pickle/Features/09` through `11`).
+- [x] **File the other passes**: French (5a25), restart pair (c039, then 53a2 after the settings fix), RIMMSQOL
+  (92ec, green), studio/gallery (5bc7), optional integrations (d62d), Giddy-Up (f431), incompatibility probe (778c),
+  treechop (eef1, then 8421 after the fixture fix). Filed does not mean read: see `STATUS.md` for which have
+  returned a verdict.
 
 ## Patch compatibility (decision pending)
 
@@ -37,10 +37,15 @@ request `20260926-111909-647-4d36` is done. Everything that does is prepared els
 
 ## Before `tested` (see `STATUS.md`)
 
-- [ ] Settings runtime checks (F13 and the Pickle suite): window, effect on wild spawns, persistence, RIMMSQOL.
-- [ ] Passes for optional integrations and for the declared incompatibility with `sarg.magicalmenagerie`.
-- [ ] Wisp, phoenix death and legacy patches have no scenario.
-- [ ] No `@wip`, every `@requires` pass played, no manual test left.
+- [x] Settings runtime checks (F13 and the Pickle suite): window, effect on wild spawns and RIMMSQOL all green
+  (en2, 92ec). Persistence found a real defect (blocked creatures lost at restart, fixed in f5e8956); pass 53a2
+  is the re-run that proves the fix. `settings_audit` stays `partial` until it returns green.
+- [x] Wisp, phoenix death and legacy patches now have a scenario (`13-phoenix.feature`, the wisp text scenario of
+  `11-behaviour-and-incompatibility.feature`, `10-integrations.feature`).
+- [ ] Passes for optional integrations (d62d) and for the declared incompatibility with `sarg.magicalmenagerie`
+  (778c) are filed; not yet read.
+- [ ] No `@wip` (confirmed, none left), every `@requires` pass played (still to confirm once d62d/f431/778c/8421
+  return), no manual test left.
 
 ## Before `prepublished` / `published` (see `PUBLICATION.md`)
 

@@ -28,13 +28,18 @@ Feature: two behaviours of this mod that only a running game shows
     And no errors were logged
 
 # --- 12-incompatibility: play only in the pass that stages the original ------------------------------------------
-# The contract is: green = the incompatibility behaves as declared. The symptom is not known: this session has not
-# seen the two mods together. The step below is a HYPOTHESIS (duplicate defNames between the original and this port);
-# the first run of this pass is what settles it. If the log shows something else, rewrite the pattern, do not add a
-# scenario expected to fail. "@allow-errors" keeps the expected error from failing the scenario by itself.
-#
+# The contract is: green = the incompatibility behaves as declared. Settled by the first run of this pass (778c,
+# 2026-09-27): the hypothesis (a "MM_" duplicate-def message at load) was wrong, rewritten to the real symptom.
+# Both mods declare PawnKindDefs under the same defNames; the surviving instance loses a cross-reference in one of
+# them, and RimWorld.BiomeDef.CommonalityOfAnimal (postfixed by this mod's own settings patch, hence it shows in the
+# stack) throws a NullReferenceException the first time the wild-animal spawner ticks. It reached every scenario of
+# this pass, not only this one (the original stays loaded for the whole run): the phoenix scenario above failed on
+# the same exception when this pass first ran, which is this incompatibility's fallout, not a defect of its own.
+# "an error matching" is this mod's own step (BehaviourSteps.ErrorMatching), not Pickle's: see its doc comment.
+# "@allow-errors" keeps the expected error from failing the scenario by itself.
   @requires:sarg.magicalmenagerie @allow-errors
-  Scenario: the original loaded beside this port logs the duplicate definitions it is declared incompatible for
+  Scenario: the original loaded beside this port logs the collision the incompatibility warns about
     Then mod "sarg.magicalmenagerie" is loaded
     And mod "nelim.alphamythologyrenew" is loaded
-    And an error matching "MM_" was logged
+    And I wait 60 ticks
+    And Alpha Mythology Renew an error matching "CommonalityOfAnimal" was logged

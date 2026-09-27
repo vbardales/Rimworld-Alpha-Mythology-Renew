@@ -28,6 +28,19 @@ namespace AlphaMythologyRenew.PickleSteps
             return pawn;
         }
 
+        /// <summary>
+        /// Pickle's own vocabulary (AUDIT.md, PickleTools/Headless/README.md) documents "an error matching {string}
+        /// was logged", but RimWorks.Pickle.Vanilla 4.9.1 (the build staged here) has no such step: only the
+        /// negative "no errors were logged" and the warning-matching family exist (found running 778c, "Undefined
+        /// step"). Reading through <see cref="Verse.Log.Messages"/> ourselves instead of waiting on that gap.
+        /// </summary>
+        [Then("Alpha Mythology Renew an error matching {string} was logged")]
+        public void ErrorMatching(PickleContext ctx, string pattern)
+        {
+            var hit = Log.Messages.LastOrDefault(m => m.type == LogMessageType.Error && m.text.Contains(pattern));
+            ctx.Assert(hit != null, $"no logged error contains '{pattern}'");
+        }
+
         [When("Alpha Mythology Renew kills the creature {string}")]
         public void Kill(PickleContext ctx, string name)
         {

@@ -725,3 +725,22 @@ Run d62d: stall, exit 3, no report ("Terminated"). Player.log: `TypeLoadExceptio
 After d62d's diagnosis, checked the other providers: Giddy-Up 2 - Continued (3674332861, f431) explicitly advertises being free of the HugsLib dependency, rebuilt end to end. Tree Chopping Speed Stat (2566231583, 8421) needs only Harmony, already staged as our own mod's dependency. The original Alpha Mythology's own requirements (778c) could not be checked: steamcommunity.com returned 429 (rate limit) both by WebFetch and earlier in this session; it is VEF-based like this port, so Harmony and VEF (both already staged for our own mod) are the likely floor, not confirmed. Not adding anything to `wsl-deps.incompat-magicalmenagerie.map` without evidence.
 
 - Giddy-Up pass (f431): green. 1 played (the griffin becomes a mount), 7 skipped by requirement (the other providers' scenarios, correctly not played on this map). No defect, no HugsLib trap as expected.
+
+## Incompatibility pass: the real symptom, and a missing Pickle step — 2026-09-27
+
+Run 778c: 1 green, 2 red. Read both:
+- The hypothesis in the scenario ("MM_" in a duplicate-def message) was wrong. The real symptom: both mods declare
+  PawnKindDefs under the same defNames; the surviving instance loses a cross-reference in one of them, and
+  `RimWorld.BiomeDef.CommonalityOfAnimal` (postfixed by this mod's own settings patch, hence it shows in the stack)
+  throws a `NullReferenceException` the first time the wild-animal spawner ticks. Rewritten to assert that (STATUS
+  comment in the feature has the detail).
+- `an error matching {string} was logged` is documented in AUDIT.md and PickleTools/Headless/README.md as Pickle
+  vocabulary, but the staged build (RimWorks.Pickle.Vanilla 4.9.1) has no such step ("Undefined step"): decompiling
+  it shows only the negative `no errors were logged` and the warning-matching family. Not our defect to fix; wrote
+  our own `Alpha Mythology Renew an error matching {string} was logged` (BehaviourSteps.ErrorMatching) against
+  `Verse.Log.Messages`/`LogMessageType.Error` instead of waiting on it. DLL rebuilt.
+- Collateral: "a dying phoenix leaves an egg in its flames" (not tagged `@allow-errors`) failed on the same
+  exception, because the whole pass keeps the original mod loaded, not only the tagged scenario. That is this
+  incompatibility's fallout, not a defect of the phoenix scenario or the death worker; left as is.
+- Filed the next run narrower (`-Filter` the incompatibility scenario by name, not the whole feature file), so the
+  phoenix and wisp scenarios of this feature are not incidentally caught by the collision again.

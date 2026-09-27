@@ -808,3 +808,7 @@ SEARCHING.md now read; used it to close the "same weakness for every patch guard
 | AchievementsPatch | Vanilla Achievements Expanded | Vanilla Achievements Expanded (per a web search, not installed locally; the same search flagged the page as possibly pulled for a guideline violation — unverified, worth a second look before publication if this integration matters) |
 
 All seven match: no vouch entry needed for any of them, confirming Nature's Pretty Sweet was the only actually-drifted guard, not a symptom of a wider problem.
+
+## Correction: the Achievements Workshop-page flag was noise — 2026-09-28
+
+Virginie: Steam flags/hides Workshop pages for administrative reasons often, not necessarily meaning the mod is gone or broken. Retracting the caveat in the table above as overblown; no action needed on Vanilla Achievements Expanded from that search result.

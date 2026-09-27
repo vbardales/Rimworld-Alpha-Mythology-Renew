@@ -780,3 +780,7 @@ Runs 5622 and f45e both failed staging (exit 1, no report): "nelim.resolvethisin
 ## Incompatibility pass confirmed green — 2026-09-27
 
 Run 8663: 1/1. The incompatibility with sarg.magicalmenagerie behaves as declared (NRE in CommonalityOfAnimal, our own step). Superseded evidence (778c, 2a93) deleted.
+
+## Facultatifs pass: staging fixed, but Vanilla Genetics Expanded broke the shared launch — 2026-09-27
+
+Run 4092 confirms the staging fix (21 mods staged, including nelim.resolvethisinstead and mlie.usethisinstead) but 6 scenarios red, all the same cause: `GeneticRim.Core..cctor()` (Vanilla Genetics Expanded's own assembly) throws a `NullReferenceException` at load. Its Workshop page names one dependency, Vanilla Expanded Framework, which was staged; the crash is the provider's own, not ours. It tainted the other 5 scenarios of the shared launch (Nocturnal Animals, Vanilla Cooking, Advanced Biomes, Elves, Nature's Pretty Sweet), none of which is actually confirmed broken. Isolated Vanilla Genetics Expanded into `wsl-deps.avec-genetics.map`, same reasoning as A RimWorld of Magic. Refiling the five-provider pass and the genetics pass separately.

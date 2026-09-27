@@ -1,0 +1,7 @@
+# Pass "avec genetics" (DRAFT): Vanilla Genetics Expanded alone, isolated from wsl-deps.avec-facultatifs.map on
+# 2026-09-27 after run 4092: its own GeneticRim.Core static constructor throws a NullReferenceException at load
+# (its one declared dependency, VEF, was staged; not our mod's doing), which tainted every other scenario of that
+# shared launch. See the comment in wsl-deps.avec-facultatifs.map.
+VanillaExpanded.VGeneticsE       2801160906
+nelim.resolvethisinstead   path:ResolveThisInstead/Mod
+Mlie.UseThisInstead        3396308787

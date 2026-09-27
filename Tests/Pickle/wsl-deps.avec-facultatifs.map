@@ -3,6 +3,12 @@
 # Giddy-Up is kept out of this pass on purpose: it gets its own (wsl-deps.avec-giddyup.map), since a mount mod
 # changes the pawn stack and would blur what a failure in this one means.
 #
+# Vanilla Genetics Expanded is kept out too, as of 2026-09-27 (run 4092): its own GeneticRim.Core static
+# constructor throws a NullReferenceException at load, independent of our mod (its one declared dependency, VEF,
+# is staged); the error tainted the other five scenarios of the same launch collaterally ("no errors were
+# logged" caught it, not their own behaviour). Isolated in wsl-deps.avec-genetics.map so a repeat costs one
+# scenario, not the five providers below that have nothing to do with it.
+#
 # A RimWorld of Magic is kept out too, as of 2026-09-27: it hung the machine twice. Run d62d (no HugsLib staged)
 # stalled with TypeLoadException on AbilityUser.Verb_UseAbility etc.; HugsLib was added here for that. Run 342d
 # (HugsLib staged, first in order) hung again with the SAME exceptions, at the same lines, before HugsLib's own
@@ -14,7 +20,6 @@
 UnlimitedHugs.HugsLib            818773962
 Mlie.XNDNocturnalAnimals         2269731409
 VanillaExpanded.VCookE           2134308519
-VanillaExpanded.VGeneticsE       2801160906
 Mlie.AdvancedBiomes              3541022508
 Mlie.NaturesPrettySweet          3542949511
 zal.lotrelves                    3548255064

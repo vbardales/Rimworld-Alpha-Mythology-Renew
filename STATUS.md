@@ -776,3 +776,7 @@ Runs 5622 and f45e both failed staging (exit 1, no report): "nelim.resolvethisin
 ## packageId shortened: renew dropped — 2026-09-27
 
 `nelim.alphamythologyrenew` -> `nelim.alphamythology` (About.xml, both this mod and the Pickle companion test mod's own `.pickletests` suffix, Harmony instance ids in Settings.cs/TranslationPatches.cs, Check-Mod.ps1, Test-Validator.ps1, the two feature files that assert "mod ... is loaded"). The mod's title, its C# class name (AlphaMythologyRenewMod), the repository and folder name are unchanged — only the packageId. Rebuilt (Source and Pickle steps DLLs); Check-Mod (336 assertions), Test-Validator (7 negative cases including the renamed one), unit tests all green.
+
+## Incompatibility pass confirmed green — 2026-09-27
+
+Run 8663: 1/1. The incompatibility with sarg.magicalmenagerie behaves as declared (NRE in CommonalityOfAnimal, our own step). Superseded evidence (778c, 2a93) deleted.

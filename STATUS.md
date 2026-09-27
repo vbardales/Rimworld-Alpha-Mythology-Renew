@@ -703,3 +703,7 @@ Revision bc60471 (the incompatibility probe scenario is now active, hypothesis: 
 Run c039 (restart): seq1 green, seq2 red ("0 creatures are blocked, expected 1", the multiplier of 3 was read). The list of blocked creatures was only assigned in `PostLoadInit`, which did not restore it when the settings file is read at start-up: blocked creatures were lost at every restart. The assignment now happens in `LoadingVars` too (Source/Settings.cs); DLL rebuilt, static checks and unit tests green. The restart pass must be refiled to prove it (the settings gate stays partial until then). Found only because the suite restarts the game: the in-process reload scenario could not show it.
 
 - RIMMSQOL pass (92ec): 2 played, 2 green, 0 skipped (button listed hidden and not drawn; revealed it draws, enables and opens the same settings). It played the tree of its turn, after the fixes up to 4ab9496 at least; the exact staged SHA is not in the ticket log. Evidence kept: summary, junit, messages, Player.log (report.html removed).
+
+## Treechop pass: a suite defect, not the mod — 2026-09-27
+
+Run eef1: 5 green, 1 red ("a colonist can cut the basilisk's MM_BurnedBush and free the cell": "the cell still holds a plant"). Diagnosed: `FreeCell` excludes pawns, edifices and items but not plants (different ThingCategory); the cell it handed to the dead-bush scenario already carried a wild plant of the fixture, which of course survived the cut. `SpawnDeadPlant` now retries up to 20 times for a cell bare of any plant. Not the mod's defect. DLL rebuilt; needs a re-run to confirm.

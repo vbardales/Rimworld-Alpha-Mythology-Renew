@@ -379,7 +379,16 @@ namespace AlphaMythologyRenew.PickleSteps
             var map = CreatureSteps.Map(ctx);
             var def = DefDatabase<ThingDef>.GetNamedSilentFail(plantDefName);
             ctx.Require(def != null, $"no ThingDef named '{plantDefName}'");
-            var cell = CreatureSteps.FreeCell(ctx);
+            // FreeCell only excludes pawns, edifices and items: a wild plant already growing there would survive the cut and
+            // make the cell look like the job failed, when it is the fixture's own vegetation. Pick a cell bare of any plant.
+            IntVec3 cell = default;
+            bool found = false;
+            for (int i = 0; i < 20; i++)
+            {
+                cell = CreatureSteps.FreeCell(ctx);
+                if (cell.GetPlant(map) == null) { found = true; break; }
+            }
+            ctx.Require(found, "no cell free of any plant was found near the map centre after 20 attempts");
             var plant = (Plant)ThingMaker.MakeThing(def);
             GenSpawn.Spawn(plant, cell, map);
             ctx.Set(new PlantRecord { Plant = plant, Cell = cell });

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
+	<!-- The installed page is "Nature's Pretty Sweet (Continued)" (Mlie's continuation): this guard was written
+	     against the pre-rename name and would not fire alone. Left unchanged on purpose — Resolve This Instead
+	     (a required dependency, see About.xml and About/ResolveThisInstead.xml) intercepts the
+	     ModLister.HasActiveModWithName call PatchOperationFindMod makes and answers for this pair, so the patch
+	     itself needs no rewrite. -->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Nature's Pretty Sweet</li>

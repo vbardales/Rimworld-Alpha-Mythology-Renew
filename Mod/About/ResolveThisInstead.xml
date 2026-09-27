@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Vouches for the successor pairs this mod's own patches need, so Resolve This Instead's alias to Nature's Pretty
+  Sweet (Continued) is on by default rather than a mere off-by-default proposal from Use This Instead's snapshot
+  (README.md, "Default: an alias is on only if a consuming mod's embedded file vouches for it").
+
+  Only the one confirmed case is vouched for: NatureIsPrettySweetPatch.xml guards on "Nature's Pretty Sweet" while
+  the page installed on this machine is "Nature's Pretty Sweet (Continued)" (BACKLOG.md, "Patch compatibility").
+  The patch itself is unchanged — PatchOperationFindMod calls ModLister.HasActiveModWithName, which Resolve This
+  Instead intercepts, so no patch rewrite is needed; the alias is what was missing.
+
+  The other seven name-guarded patches (Advanced Biomes, Elves, Achievements, Cooking, Genetics, RimWorld of
+  Magic, Nocturnal Animals) already carry the currently-installed name (or, for Nocturnal Animals, both spellings
+  by hand) and are not confirmed broken here: adding entries for them without a confirmed old name and packageId
+  would be guessed data, which this library explicitly treats as worse than none (a wrong pair is silently wrong).
+  Add one only once a real drift is found, the way this one was.
+-->
+<ResolveThisInstead>
+  <alias>
+    <old>
+      <packageId>tkkntkkn.nps</packageId>
+      <name>Nature's Pretty Sweet</name>
+    </old>
+    <successor>
+      <packageId>Mlie.NaturesPrettySweet</packageId>
+    </successor>
+    <compatible>true</compatible>
+    <runtime>false</runtime>
+    <note>
+      NatureIsPrettySweetPatch.xml guards on the pre-rename display name; the installed page is
+      "Nature's Pretty Sweet (Continued)" (Mlie's continuation). XML patch only, no C# of ours calls
+      ModsConfig.IsActive for this pair, so window 3 (runtime opt-in) is not needed.
+    </note>
+  </alias>
+</ResolveThisInstead>

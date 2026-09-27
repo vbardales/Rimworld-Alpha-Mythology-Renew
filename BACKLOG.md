@@ -26,14 +26,18 @@ This mod's own backlog (the monorepo has its own). Ordered by what blocks the ne
   "Nature's Pretty Sweet (Continued)": `PatchOperationFindMod` compares names, so it is expected not to apply.
   Same weakness for every patch guarded by a display name (Advanced Biomes, Elves, Achievements, Cooking, Genetics,
   RimWorld of Magic, Nocturnal Animals lists both spellings by hand).
-- [ ] **Owner's direction, 2026-09-26: go back to the library she proposed, built on Use This Instead** (UTI, Workshop
-  3396308787, MIT, by Mlie), which re-resolves the compatible mods instead of hand-listed names. Its open rules file
-  (`replacements.json.gz`, 2713 rules with old/new Workshop ids, names and packageIds) already links the original
-  Nature's Pretty Sweet to its "(Continued)" page. Work happens in `../ResolveThisInstead/` (README has the data and
-  the four open design questions); this mod only consumes it. **No patch is changed until she has chosen the shape**
-  (custom patch operation over a packageId alias set, live lookup in UTI, or both) and the mod's tree is unfrozen.
-  Two traps found in the data: the Elves have two "Continued" pages (3383096916 and zal's 3548255064), and some rules
-  have an empty `oldPackageId`.
+- [x] **Owner's direction, 2026-09-26: go back to the library she proposed, built on Use This Instead** (UTI, Workshop
+  3396308787, MIT, by Mlie). DONE 2026-09-27: `../ResolveThisInstead/` decided its own shape (its README, "Open design
+  questions") — no patch operation rewrite, no live lookup call from ours; it patches `ModLister.HasActiveModWithName`
+  (what `PatchOperationFindMod` calls) and `ModsConfig.IsActive` globally during loading, and answers only for a pair a
+  consuming mod vouches for. Wired as a required dependency in `03d1a9d` (About.xml, Check-Mod, wsl-ids.map); vouched
+  for the one confirmed pair, Nature's Pretty Sweet -> Nature's Pretty Sweet (Continued), in the new
+  `Mod/About/ResolveThisInstead.xml` — `NatureIsPrettySweetPatch.xml` itself is untouched (a comment there explains
+  why). The other seven name-guarded patches (Advanced Biomes, Elves, Achievements, Cooking, Genetics, RimWorld of
+  Magic, Nocturnal Animals) already carry the currently-installed name and are not confirmed broken: no vouch entry
+  added for them without a confirmed old name, since a wrong pair is worse than none (see the comment in the new file).
+  Two traps found in the data, still relevant if one of those seven turns out broken: the Elves have two "Continued"
+  pages (3383096916 and zal's 3548255064), and some rules have an empty `oldPackageId`.
 
 ## Before `tested` (see `STATUS.md`)
 

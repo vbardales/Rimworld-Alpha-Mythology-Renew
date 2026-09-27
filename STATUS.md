@@ -719,3 +719,7 @@ Run 5bc7: 5/5 green. Opened the five pictures (BACKLOG item): the griffin, the h
 ## Facultatifs pass: stalled at load, missing dependency — 2026-09-27
 
 Run d62d: stall, exit 3, no report ("Terminated"). Player.log: `TypeLoadException` on `AbilityUser.Verb_UseAbility`, `AbilityUser.Projectile_AbilityBase` and `HugsLib.ModBase`, then the "BadTexture" material spam that floods a hung load screen. A RimWorld of Magic needs HugsLib (818773962) as its own hard dependency; the pass map staged everything else but not it, so its assembly failed to resolve and the game never finished loading. Added to `wsl-deps.avec-facultatifs.map`, first in the order (a prerequisite of the consumer it precedes). Not the mod's defect. Needs a re-run to confirm.
+
+## Other pass maps checked for the same HugsLib trap — 2026-09-27
+
+After d62d's diagnosis, checked the other providers: Giddy-Up 2 - Continued (3674332861, f431) explicitly advertises being free of the HugsLib dependency, rebuilt end to end. Tree Chopping Speed Stat (2566231583, 8421) needs only Harmony, already staged as our own mod's dependency. The original Alpha Mythology's own requirements (778c) could not be checked: steamcommunity.com returned 429 (rate limit) both by WebFetch and earlier in this session; it is VEF-based like this port, so Harmony and VEF (both already staged for our own mod) are the likely floor, not confirmed. Not adding anything to `wsl-deps.incompat-magicalmenagerie.map` without evidence.

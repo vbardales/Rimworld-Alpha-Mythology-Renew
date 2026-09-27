@@ -788,3 +788,7 @@ Run 4092 confirms the staging fix (21 mods staged, including nelim.resolvethisin
 ## Facultatifs pass (five providers) confirmed green — 2026-09-27
 
 Run d961: 5/5 played green, 3 skipped by requirement (RWoM, Genetics, Giddy-Up, each in their own pass). Nocturnal Animals, Vanilla Cooking, Advanced Biomes, Elves, and Nature's Pretty Sweet all pass — the Resolve This Instead vouch file resolves the "Nature's Pretty Sweet" name guard in a real game, confirmed. GeneticRim's crash from 4092 does not recur, isolation worked. Superseded evidence (d62d, 342d, 4092) all deleted.
+
+## Vanilla Genetics Expanded pass confirmed green in isolation — 2026-09-27
+
+Run fb2d: 1/1 green, alone. Correction to the 4092 diagnosis: GeneticRim.Core does not crash on its own — it only crashed staged alongside the other five facultatifs providers in one launch, so the true cause is a load-order or cross-mod interaction among that set, not a defect intrinsic to Vanilla Genetics Expanded by itself. Neither is ours to fix; the isolated pass is the honest way to cover it. Seven of the eight optional-integration scenarios are now confirmed green (Nocturnal Animals, Vanilla Cooking, Vanilla Genetics, Advanced Biomes, Elves, Nature's Pretty Sweet, Giddy-Up); only A RimWorld of Magic remains, held pending Virginie's word (it hung the machine twice).

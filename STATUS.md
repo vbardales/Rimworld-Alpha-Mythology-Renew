@@ -784,3 +784,7 @@ Run 8663: 1/1. The incompatibility with sarg.magicalmenagerie behaves as declare
 ## Facultatifs pass: staging fixed, but Vanilla Genetics Expanded broke the shared launch — 2026-09-27
 
 Run 4092 confirms the staging fix (21 mods staged, including nelim.resolvethisinstead and mlie.usethisinstead) but 6 scenarios red, all the same cause: `GeneticRim.Core..cctor()` (Vanilla Genetics Expanded's own assembly) throws a `NullReferenceException` at load. Its Workshop page names one dependency, Vanilla Expanded Framework, which was staged; the crash is the provider's own, not ours. It tainted the other 5 scenarios of the shared launch (Nocturnal Animals, Vanilla Cooking, Advanced Biomes, Elves, Nature's Pretty Sweet), none of which is actually confirmed broken. Isolated Vanilla Genetics Expanded into `wsl-deps.avec-genetics.map`, same reasoning as A RimWorld of Magic. Refiling the five-provider pass and the genetics pass separately.
+
+## Facultatifs pass (five providers) confirmed green — 2026-09-27
+
+Run d961: 5/5 played green, 3 skipped by requirement (RWoM, Genetics, Giddy-Up, each in their own pass). Nocturnal Animals, Vanilla Cooking, Advanced Biomes, Elves, and Nature's Pretty Sweet all pass — the Resolve This Instead vouch file resolves the "Nature's Pretty Sweet" name guard in a real game, confirmed. GeneticRim's crash from 4092 does not recur, isolation worked. Superseded evidence (d62d, 342d, 4092) all deleted.

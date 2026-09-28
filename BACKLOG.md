@@ -59,8 +59,7 @@ This mod's own backlog (the monorepo has its own). Ordered by what blocks the ne
 - [ ] Gallery images opened and ordered; strong-language grep of the texts for the adult-content boxes.
 - [ ] Register rows and drafts for the optional providers (ids resolved); decide whether to comment on the original's page.
 - [ ] Resolve the description tail in `About.xml` (`IF I GO QUIET`, `AI-GENERATED`, `THANKS`).
-- [ ] Optional: a pull request to `juanosarg/AlphaMythology` needs a fork first (public, owner's decision); their open
-  PR #3 already proposes a 1.6 update, PR #2 targets a Giddy-Up fork marked outdated.
+- [ ] **A pull request to `juanosarg/AlphaMythology` is required** (Virginie, 2026-09-28: when an upstream exists, the PR is systematic, not optional; PUBLISHING.md says so now). Steps: fork the original (public action: her go, then the fork and the PR are made together), prepare the change against ITS layout (this port is a rebuilt tree, not a diff of theirs: read their open PR #3, which already proposes a 1.6 update, and PR #2, which targets a Giddy-Up fork marked outdated, before writing anything), send only what she has read. Not started: no fork exists, nothing is proposed yet.
 
 ## Ideas
 

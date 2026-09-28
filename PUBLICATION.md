@@ -130,6 +130,10 @@ to comment at all, and in what words, is Virginie's call. If she wants one, it i
 voice, under 1000 characters, with one hidden link `[url=...]Alpha Mythology Renew[/url]`, posted only after the
 item is public, and it must not claim permission.
 
+## Upstream: a pull request is systematic
+
+The original has a Git repository (`juanosarg/AlphaMythology`, linked here as the fetch-only remote `upstream`). Rule from Virginie, 2026-09-28, now also in the monorepo's `PUBLISHING.md`: when an upstream exists, a pull request to it is made, whatever else is published. Here: not made yet (no fork, her go needed for anything public); it is in `BACKLOG.md` as required, and it does not block the `0.1.0` private send. The Workshop page and the pull request are independent: publishing the port unofficially does not replace proposing it to its author.
+
 ## After the send
 
 Commit `Mod/About/PublishedFileId.txt` immediately (lost, the next send creates a second item); record the

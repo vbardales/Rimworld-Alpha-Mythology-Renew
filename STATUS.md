@@ -841,3 +841,7 @@ About.xml description says the mod requires Resolve This Instead and that Use Th
 ## Gallery studio4 (4b81): the lowered camera floor works, framing then fixed — 2026-09-28
 
 7/7 green, and the closer shots work: the unicorn is now ~450 px tall, the griffin fills the frame. The camera keeps the lowered `sizeRange` (the open question of the previous entry is answered). But the griffin is cut at the top: the "1 cell up" shift that kept the pointer off the animal is 216 px at this scale and pushes a tall sprite out of frame. Set to 0 cells up for the six creature shots (still 1 cell left, so the pointer at the screen centre does not sit on the animal). Not re-rendered yet.
+
+## Rule: an upstream means a systematic pull request — 2026-09-28
+
+Virginie, on learning that no PR exists toward juanosarg/AlphaMythology: one is needed, in the TODO, and in the docs "if upstream, then systematic PR". Done: `BACKLOG.md` item made required (was "Optional"), `PUBLICATION.md` gets a section, and the monorepo's `PUBLISHING.md` (section "Départ depuis le projet d'origine") carries the rule. Nothing public was done: no fork, no PR; both need her go.

@@ -69,6 +69,14 @@ namespace AlphaMythologyRenew.PickleSteps
             Find.Selector.Select(pawn, playSound: false, forceDesignatorDeselect: false);
             var target = pawn.DrawPos + new Vector3(left, 0f, -up);
             Find.CameraDriver.JumpToCurrentMapLoc(target);
+            // The camera clamps its size to config.sizeRange (a floor near 7-8 in this build: a request for 4 gave the
+            // same picture as 7, studio pass c928). The range is a public field: lower its floor to what was asked
+            // for, so a close-up can be closer than the game lets a player zoom.
+            var config = Find.CameraDriver.config;
+            if (config != null && zoom < config.sizeRange.min)
+            {
+                config.sizeRange = new FloatRange(zoom, config.sizeRange.max);
+            }
             Find.CameraDriver.SetRootSize(zoom);
         }
     }

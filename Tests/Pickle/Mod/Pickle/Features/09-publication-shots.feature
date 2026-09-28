@@ -6,7 +6,8 @@
 # and the group shot at zoom 20 got WORSE, not better — it revealed the meadow's own building and three stray
 # colonists. Virginie's call, 2026-09-28: stop trying to fit several creatures in one frame; one animal per
 # picture ("un a un"). The single group scenario below is replaced by one scenario per remaining creature, framed
-# the same as the other hero shots.
+# the same as the other hero shots. Virginie, 2026-09-28: the creatures still read too small; the floor is not a wall
+# after all — GallerySteps.Frame now lowers CameraDriver.config.sizeRange.min, and the shots ask for zoom 2.5.
 #
 # Pictures meant for the Workshop page and for nothing else. What they assert is only that the picture says what
 # its caption will say: each creature is the kind it claims to be and belongs to the player. The creatures are
@@ -28,7 +29,7 @@ Feature: Workshop pictures
     Then Alpha Mythology Renew the creature "Aurelia" is standing on the map as "MM_Griffin"
     When Alpha Mythology Renew dismisses every letter
     And Nelim's Pickle Tools: I frame the studio "flowers"
-    And Alpha Mythology Renew frames the animal "Aurelia" at zoom 4, shown 1 cells left and 1 cells up
+    And Alpha Mythology Renew frames the animal "Aurelia" at zoom 2.5, shown 1 cells left and 1 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     Then I take a screenshot "publication 1 - the griffin"
@@ -38,7 +39,7 @@ Feature: Workshop pictures
     Then Alpha Mythology Renew the creature "Balthazar" is standing on the map as "MM_Cerberus"
     When Alpha Mythology Renew dismisses every letter
     And Nelim's Pickle Tools: I frame the studio "flowers"
-    And Alpha Mythology Renew frames the animal "Balthazar" at zoom 4, shown 1 cells left and 1 cells up
+    And Alpha Mythology Renew frames the animal "Balthazar" at zoom 2.5, shown 1 cells left and 1 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     Then I take a screenshot "publication 2 - the three-headed hound"
@@ -48,7 +49,7 @@ Feature: Workshop pictures
     Then Alpha Mythology Renew the creature "Cinder" is standing on the map as "MM_Phoenix"
     When Alpha Mythology Renew dismisses every letter
     And Nelim's Pickle Tools: I frame the studio "flowers"
-    And Alpha Mythology Renew frames the animal "Cinder" at zoom 4, shown 1 cells left and 1 cells up
+    And Alpha Mythology Renew frames the animal "Cinder" at zoom 2.5, shown 1 cells left and 1 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     Then I take a screenshot "publication 3 - the phoenix"
@@ -62,7 +63,7 @@ Feature: Workshop pictures
     Then Alpha Mythology Renew the creature "<name>" is standing on the map as "<creature>"
     When Alpha Mythology Renew dismisses every letter
     And Nelim's Pickle Tools: I frame the studio "flowers"
-    And Alpha Mythology Renew frames the animal "<name>" at zoom 4, shown 1 cells left and 1 cells up
+    And Alpha Mythology Renew frames the animal "<name>" at zoom 2.5, shown 1 cells left and 1 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     Then I take a screenshot "<caption>"

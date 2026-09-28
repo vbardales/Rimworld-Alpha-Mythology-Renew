@@ -812,3 +812,12 @@ All seven match: no vouch entry needed for any of them, confirming Nature's Pret
 ## Correction: the Achievements Workshop-page flag was noise — 2026-09-28
 
 Virginie: Steam flags/hides Workshop pages for administrative reasons often, not necessarily meaning the mod is gone or broken. Retracting the caveat in the table above as overblown; no action needed on Vanilla Achievements Expanded from that search result.
+
+## Studio re-render (studio2, c928): mixed result — 2026-09-28
+
+5/5 green. Compared pixel-for-pixel against the first capture (5bc7):
+- Griffin, hound, phoenix (zoom 7 -> 4): the griffin and hound frames are IDENTICAL to the first capture, down to the flower clusters' exact positions. SetRootSize clamps to a floor near 7-8 in this game build; the retune was a no-op below it, not a mistake in the numbers themselves. The phoenix reads fine either way (its sprite is simply bigger).
+- Five creatures (zoom 13 -> 20, offset 2 left -> 0): worse, not better. Dezooming that far revealed the meadow's own building (top-left corner) and three stray colonists (Jet, Larson, Morrison) at the bottom, and only 4 of 5 creatures read clearly (the unicorn is half-hidden in flowers). More subjects fit the frame at the cost of a cluttered, indoor-adjacent composition.
+- Settings window: unchanged, still fine.
+
+Not retuned again blind a third time: sent Virginie the five images to judge herself before spending another launch on a guess. `Evidence/studio` (5bc7) kept alongside `studio2` until she picks, since 5bc7's five-creature framing (only 3 subjects, but no clutter) may read better than studio2's despite fitting fewer.

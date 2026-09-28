@@ -850,6 +850,10 @@ Virginie, on learning that no PR exists toward juanosarg/AlphaMythology: one is 
 
 Virginie asked whether the cause was identified. It is now. RWoM's About.xml lists, for 1.6, Harmony, HugsLib and **JecsLite - A RimWorld of Magic** (`zal.jecsliterwom`, Workshop 3312959701, installed locally). RWoM's 1.6 folder holds only TorannMagic.dll; `AbilityUser`, `AbilityUserAI` and `CompDeflector`, the assemblies of every TypeLoadException in d62d and 342d, are in JecsLite's `1.6/Assemblies`. So both hangs came from a missing hard dependency that no pass map staged (HugsLib, added after d62d, was real but not the missing one). This retracts my two earlier guesses (HugsLib; a stale Steam cache). `wsl-deps.avec-rwom.map` now stages JecsLite. Not resubmitted: it cost the shared machine 4h40 once, so the go is Virginie's. Process slip in passing: reading this I started a `grep` over every About.xml of the Workshop cache, the unbounded scan SEARCHING.md forbids; stopped within seconds, nothing left running.
 
+### RWoM pass 3818 played with JecsLite — 2026-09-28
+
+Run 3818 (`wsl-deps.avec-rwom.map`): 1 passed, 0 failed, 7 skipped of 8. No TypeLoadException, no hang: the missing dependency was JecsLite, as diagnosed. Passed: "A RimWorld of Magic adds magicyte to the creatures' butcher products". The 7 skips each need another mod (Nocturnal Animals, Vanilla Cooking Expanded, Vanilla Genetics Expanded, Advanced Biomes, Lord of the Rims elves, Nature's Pretty Sweet, Giddy-Up 2) and are proven only in the passes that load their own mod. Evidence: `Tests/Pickle/Evidence/rwom`.
+
 ## Upstream: fork made, shape of the pull request to decide — 2026-09-28
 
 Virginie gave the go for the fork and the PR. Fork done: https://github.com/vbardales/AlphaMythology (from juanosarg/AlphaMythology, default branch only, nothing pushed to it). No PR opened yet, because reading the upstream showed the shape is a real choice, not a mechanical step:

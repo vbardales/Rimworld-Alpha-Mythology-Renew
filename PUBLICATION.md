@@ -23,6 +23,7 @@ Checked in the sources, not from intent.
 |---|---|---|
 | Harmony (`brrainz.harmony`, 2009463077) | hard dependency | patches in `Source/TranslationPatches.cs` and `Source/Settings.cs` |
 | Vanilla Expanded Framework (`OskarPotocki.VanillaFactionsExpanded.Core`, 2023507013) | hard dependency | 25 `VEF.AnimalBehaviours.AnimalStatExtension` and several `VEF.*` comps in the Defs; MVCF arrives through VEF |
+| Resolve This Instead (`nelim.resolvethisinstead`, no Workshop id yet) | hard dependency, decided by Virginie 2026-09-26 | `About.xml` modDependencies; `Mod/About/ResolveThisInstead.xml` vouches for Nature's Pretty Sweet; unpublished, staged by `path:`; **it needs a public Workshop page before this mod's 1.0.0** (its own README, BACKLOG.md). Its own dependency, Use This Instead (3396308787, Mlie, MIT), is loaded through it and credited in THANKS |
 | Vanilla Achievements Expanded | optional | `Mod/LoadFolders.xml` branch `IfModActive="vanillaexpanded.achievements"` |
 | Eight other providers (Advanced Biomes, Genetics, GiddyUp, Elves, Nature's Pretty Sweet, Nocturnal Animals, RimWorld of Magic, Vanilla Cooking Expanded) | optional, never a dependency | `Mod/Patches/AlphaMythology/*Patch.xml`, all `PatchOperationFindMod` |
 | RIMMSQOL | not a dependency; reveals the hidden settings shortcut | dev-only pass `wsl-deps.avec-rimmsqol.map` |
@@ -184,5 +185,4 @@ possibly none. No draft written on purpose.
 
 - **Nocturnal Animals (Continued)**, 2269731409: register row already `drafted` by two other mods: add this port to its
   `Covers`, no second comment. **Vanilla Cooking Expanded**, 2134308519: register row `posted` (2026-09-25): add to `Covers`.
-- **Use This Instead** (3396308787) belongs to the resolver library's own publication, not to this mod, unless the port
-  depends on the library.
+- **Use This Instead** (3396308787): this port now depends on the resolver library, so it is credited in THANKS (done, 2026-09-28); a Workshop comment for Mlie is the library's publication, not this mod's, and Mlie's consent before any mention on his page is the owner's call.

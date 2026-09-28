@@ -833,3 +833,7 @@ Virginie, after seeing studio2's crowded group photo: "un a un". Replaced the si
 ## Gallery: closer, and the settings picture cropped — 2026-09-28
 
 Virginie: zoom much more on the creatures; crop picture 7 to the window. (1) `GallerySteps.Frame` now lowers `CameraDriver.config.sizeRange.min` (a public field) to the requested zoom before `SetRootSize`, so the floor found in c928 is no wall; the six creature shots ask for zoom 2.5 (about 216 px per cell against 77 at 7, so a creature of a cell and a half goes from ~100 px to ~300 px). Untested: whether the camera keeps the lowered range in its per-frame clamp. (2) `Tests/Crop-SettingsShot.ps1` crops the settings capture to the window (900 x 700 at 511,191 in a 1920x1080 picture, 24 px margin); run on studio3's picture 7, written beside it as `-cropped.png`, source untouched.
+
+## The required library is now in the player-facing text — 2026-09-28
+
+About.xml description says the mod requires Resolve This Instead and that Use This Instead is loaded through it; THANKS credits Use This Instead (Mlie, MIT) with a link. PUBLICATION.md: a dependency row for the library (it needs a public Workshop page before this mod's 1.0.0) and the Use This Instead note reworded. Check-Mod green (336).

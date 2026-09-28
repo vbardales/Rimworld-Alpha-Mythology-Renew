@@ -837,3 +837,7 @@ Virginie: zoom much more on the creatures; crop picture 7 to the window. (1) `Ga
 ## The required library is now in the player-facing text — 2026-09-28
 
 About.xml description says the mod requires Resolve This Instead and that Use This Instead is loaded through it; THANKS credits Use This Instead (Mlie, MIT) with a link. PUBLICATION.md: a dependency row for the library (it needs a public Workshop page before this mod's 1.0.0) and the Use This Instead note reworded. Check-Mod green (336).
+
+## Gallery studio4 (4b81): the lowered camera floor works, framing then fixed — 2026-09-28
+
+7/7 green, and the closer shots work: the unicorn is now ~450 px tall, the griffin fills the frame. The camera keeps the lowered `sizeRange` (the open question of the previous entry is answered). But the griffin is cut at the top: the "1 cell up" shift that kept the pointer off the animal is 216 px at this scale and pushes a tall sprite out of frame. Set to 0 cells up for the six creature shots (still 1 cell left, so the pointer at the screen centre does not sit on the animal). Not re-rendered yet.

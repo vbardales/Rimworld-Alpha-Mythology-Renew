@@ -29,7 +29,7 @@ Feature: Workshop pictures
     Then Alpha Mythology Renew the creature "Aurelia" is standing on the map as "MM_Griffin"
     When Alpha Mythology Renew dismisses every letter
     And Nelim's Pickle Tools: I frame the studio "flowers"
-    And Alpha Mythology Renew frames the animal "Aurelia" at zoom 2.5, shown 1 cells left and 1 cells up
+    And Alpha Mythology Renew frames the animal "Aurelia" at zoom 2.5, shown 1 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     Then I take a screenshot "publication 1 - the griffin"
@@ -39,7 +39,7 @@ Feature: Workshop pictures
     Then Alpha Mythology Renew the creature "Balthazar" is standing on the map as "MM_Cerberus"
     When Alpha Mythology Renew dismisses every letter
     And Nelim's Pickle Tools: I frame the studio "flowers"
-    And Alpha Mythology Renew frames the animal "Balthazar" at zoom 2.5, shown 1 cells left and 1 cells up
+    And Alpha Mythology Renew frames the animal "Balthazar" at zoom 2.5, shown 1 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     Then I take a screenshot "publication 2 - the three-headed hound"
@@ -49,7 +49,7 @@ Feature: Workshop pictures
     Then Alpha Mythology Renew the creature "Cinder" is standing on the map as "MM_Phoenix"
     When Alpha Mythology Renew dismisses every letter
     And Nelim's Pickle Tools: I frame the studio "flowers"
-    And Alpha Mythology Renew frames the animal "Cinder" at zoom 2.5, shown 1 cells left and 1 cells up
+    And Alpha Mythology Renew frames the animal "Cinder" at zoom 2.5, shown 1 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     Then I take a screenshot "publication 3 - the phoenix"
@@ -63,7 +63,7 @@ Feature: Workshop pictures
     Then Alpha Mythology Renew the creature "<name>" is standing on the map as "<creature>"
     When Alpha Mythology Renew dismisses every letter
     And Nelim's Pickle Tools: I frame the studio "flowers"
-    And Alpha Mythology Renew frames the animal "<name>" at zoom 2.5, shown 1 cells left and 1 cells up
+    And Alpha Mythology Renew frames the animal "<name>" at zoom 2.5, shown 1 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     Then I take a screenshot "<caption>"

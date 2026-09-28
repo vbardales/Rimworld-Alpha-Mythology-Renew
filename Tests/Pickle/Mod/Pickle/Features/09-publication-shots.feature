@@ -1,8 +1,12 @@
-# Tests/Pickle is not frozen any more; zoom values and cell offsets below were tuned once against the first capture
-# (studio pass 5bc7, 2026-09-26): the hero shots (griffin, hound, phoenix) read small at zoom 7, and the five-creature
-# line-up only fit 3 of its 5 subjects in frame at zoom 13 offset 2 cells left of the middle one. Tuned, not
-# re-rendered yet: the next capture is what confirms these numbers.
-# are guesses to tune after the first capture.
+# Tests/Pickle is not frozen any more; zoom values and cell offsets below were tuned against two captures.
+# First (studio pass 5bc7, 2026-09-26): the hero shots (griffin, hound, phoenix) read small at zoom 7, and the
+# five-creature line-up only fit 3 of its 5 subjects in frame at zoom 13 offset 2 cells left of the middle one.
+# Second (studio2, c928, 2026-09-27): zoom 4 for the hero shots turned out identical to zoom 7 pixel for pixel
+# (SetRootSize clamps to a floor near 7-8 in this game build; not a mistake in the number, just a wall under it),
+# and the group shot at zoom 20 got WORSE, not better — it revealed the meadow's own building and three stray
+# colonists. Virginie's call, 2026-09-28: stop trying to fit several creatures in one frame; one animal per
+# picture ("un a un"). The single group scenario below is replaced by one scenario per remaining creature, framed
+# the same as the other hero shots.
 #
 # Pictures meant for the Workshop page and for nothing else. What they assert is only that the picture says what
 # its caption will say: each creature is the kind it claims to be and belongs to the player. The creatures are
@@ -29,20 +33,6 @@ Feature: Workshop pictures
     And I wait 30 ticks
     Then I take a screenshot "publication 1 - the griffin"
 
-  Scenario: five creatures side by side
-    Given Alpha Mythology Renew spawns the player animal "Balthazar" as "MM_Cerberus" near x 148 and z 98
-    And Alpha Mythology Renew spawns the player animal "Cinder" as "MM_Phoenix" near x 151 and z 98
-    And Alpha Mythology Renew spawns the player animal "Morwen" as "MM_Unicorn" near x 154 and z 98
-    And Alpha Mythology Renew spawns the player animal "Thessaly" as "MM_Manticore" near x 157 and z 98
-    And Alpha Mythology Renew spawns the player animal "Zephyra" as "MM_Pegasus" near x 160 and z 98
-    Then Alpha Mythology Renew the creature "Morwen" is standing on the map as "MM_Unicorn"
-    When Alpha Mythology Renew dismisses every letter
-    And Nelim's Pickle Tools: I frame the studio "flowers"
-    And Alpha Mythology Renew frames the animal "Morwen" at zoom 20, shown 0 cells left and 1 cells up
-    And Nelim's Pickle Tools: studio presentation mode is enabled
-    And I wait 30 ticks
-    Then I take a screenshot "publication 2 - five creatures side by side"
-
   Scenario: the three-headed hound
     Given Alpha Mythology Renew spawns the player animal "Balthazar" as "MM_Cerberus" near x 154 and z 98
     Then Alpha Mythology Renew the creature "Balthazar" is standing on the map as "MM_Cerberus"
@@ -51,7 +41,7 @@ Feature: Workshop pictures
     And Alpha Mythology Renew frames the animal "Balthazar" at zoom 4, shown 1 cells left and 1 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
-    Then I take a screenshot "publication 3 - the three-headed hound"
+    Then I take a screenshot "publication 2 - the three-headed hound"
 
   Scenario: the phoenix
     Given Alpha Mythology Renew spawns the player animal "Cinder" as "MM_Phoenix" near x 154 and z 98
@@ -61,7 +51,27 @@ Feature: Workshop pictures
     And Alpha Mythology Renew frames the animal "Cinder" at zoom 4, shown 1 cells left and 1 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
-    Then I take a screenshot "publication 4 - the phoenix"
+    Then I take a screenshot "publication 3 - the phoenix"
+
+  # One creature per picture from here on ("un a un", 2026-09-28: the hound and the phoenix already have their own
+  # shot above; these are the rest of what the old group photo tried to fit in one frame), same framing as the
+  # other hero shots. Each is spawned alone, not alongside the others, so none is ever hidden behind another's
+  # flowers or sprite.
+  Scenario Outline: <creature>, alone
+    Given Alpha Mythology Renew spawns the player animal "<name>" as "<creature>" near x 154 and z 98
+    Then Alpha Mythology Renew the creature "<name>" is standing on the map as "<creature>"
+    When Alpha Mythology Renew dismisses every letter
+    And Nelim's Pickle Tools: I frame the studio "flowers"
+    And Alpha Mythology Renew frames the animal "<name>" at zoom 4, shown 1 cells left and 1 cells up
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And I wait 30 ticks
+    Then I take a screenshot "<caption>"
+
+    Examples:
+      | creature      | name     | caption                        |
+      | MM_Unicorn    | Morwen   | publication 4 - the unicorn    |
+      | MM_Manticore  | Thessaly | publication 5 - the manticore  |
+      | MM_Pegasus    | Zephyra  | publication 6 - the pegasus    |
 
   # The window is the subject: the interface stays on, developer mode off so its toolbar is not in the picture.
   Scenario: the settings window over the meadow, with a creature beside it
@@ -73,7 +83,7 @@ Feature: Workshop pictures
     Then Alpha Mythology Renew sees its own settings window open
     When Nelim's Pickle Tools: developer mode is turned off for the capture
     And I wait 30 ticks
-    Then I take a screenshot "publication 5 - the settings window"
+    Then I take a screenshot "publication 7 - the settings window"
     When I close all dialogs
     And Nelim's Pickle Tools: developer mode is restored
     Then no errors were logged

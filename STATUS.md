@@ -821,3 +821,7 @@ Virginie: Steam flags/hides Workshop pages for administrative reasons often, not
 - Settings window: unchanged, still fine.
 
 Not retuned again blind a third time: sent Virginie the five images to judge herself before spending another launch on a guess. `Evidence/studio` (5bc7) kept alongside `studio2` until she picks, since 5bc7's five-creature framing (only 3 subjects, but no clutter) may read better than studio2's despite fitting fewer.
+
+## Gallery: one creature per picture, not a group shot — 2026-09-28
+
+Virginie, after seeing studio2's crowded group photo: "un a un". Replaced the single "five creatures side by side" scenario with a Scenario Outline, one picture per remaining creature (unicorn, manticore, pegasus), spawned alone so none hides behind another's flowers or sprite. The hound and phoenix already had their own shot; the gallery grows from 5 to 7 pictures. Same zoom-4 hero framing as the others (its floor near 7-8 is now documented, not fought). Renumbered the captions 1-7. No C# change (the Outline pattern is already used elsewhere in this suite); rebuilt anyway to confirm. Not yet rendered.

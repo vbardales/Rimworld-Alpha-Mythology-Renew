@@ -19,15 +19,15 @@ What is left needs a running game.
 | 04 rimmsqol | 2 | RIMMSQOL lists, reveals and hides the shortcut (needs its own pass, `@requires`) |
 | 05 language | 2 | keys resolve in the language of the pass; a capture of the window a person reads (`@review`) |
 | 06 reload | 1 | settings are global: a save load neither resets them nor takes them from the file |
-| 09 publication shots | 5 | pictures for the Workshop page (`@requires` the studio pass, `@review`) |
-| 10 integrations | 8 | each optional patch reaching its target, one scenario per provider (`@requires`), the Nature's Pretty Sweet one expected to fail until the patch guard is fixed |
+| 09 publication shots | 7 | pictures for the Workshop page (`@requires` the studio pass, `@review`) |
+| 10 integrations | 8 | each optional patch reaching its target, one scenario per provider (`@requires`); the Nature's Pretty Sweet one passes through Resolve This Instead's vouch file (`Mod/About/ResolveThisInstead.xml`) |
 | 12 creatures | 1 | every creature at every life stage draws its four facings and its dessicated body (F01) |
 | 13 phoenix | 7 | the death leaving one or two eggs at each life stage, an egg already on the tile, forced hatching, the egg commands in each language, and the destruction carried out end to end through VEF (F02, F03) |
 | 14 bleeding | 2 | the wound hurting while it lasts and stopping when removed (F04) |
 | 15 combat | 10 + 3 | each ranged creature fires and its target is affected (F06); the tlilcoatl's poison breath on an organic target, a shielded colonist and a mechanoid (F09) |
 | 16 products | 6 + 2 + 1 | egg layers, milk, and the Kitsune's regeneration (F07) |
 | 17 plants | 2 + 1 + 1 + 2 | the dead plants cut by a colonist (F08); F12 in the baseline and with Tree Chopping Speed Stat: the bare call, and the real path (a growing zone, a tamed kappa, VEF's JobGiver_Harvest) |
-| 11 behaviour | 2 | the phoenix leaving an egg when it dies, the will-o'-wisp's translated fission text; the incompatibility scenario is written as a comment until its symptom is known |
+| 11 behaviour | 3 | the phoenix leaving an egg when it dies, the will-o'-wisp's translated fission text, and the incompatibility with the original (its own pass, picked by scenario name: a whole-feature run would let the original's collision taint the other two) |
 | 07 / 08 restart | 1 + 1 | a value that has to outlive the process, which one process cannot show |
 
 **Not converted:** the wisp gizmos and the patches of Vanilla Achievements Expanded, which is not installed here.
@@ -41,14 +41,23 @@ What remains unplayed stays `unverified` in `STATUS.md`.
 | minimal French | `PLAIN` | French | the same, in the other language |
 | restart | `07-restart-write` then `08-restart-read` | English | settings outliving the process |
 | with RIMMSQOL | `04-rimmsqol`, `-DepMap wsl-deps.avec-rimmsqol.map` | English | the shortcut through the tool that reveals it |
+| studio | `09-publication-shots`, `-DepMap wsl-deps.studio.map` | English | the Workshop pictures, one creature each |
+| optional providers | `10-integrations`, `-DepMap wsl-deps.avec-facultatifs.map` | English | Nocturnal Animals, Vanilla Cooking, Advanced Biomes, Elves, Nature's Pretty Sweet, together |
+| Vanilla Genetics Expanded | `10-integrations`, `-DepMap wsl-deps.avec-genetics.map` | English | alone: staged with the five above it crashed its own static constructor, alone it does not |
+| Giddy-Up | `10-integrations`, `-DepMap wsl-deps.avec-giddyup.map` | English | the mount patch |
+| A RimWorld of Magic | `10-integrations`, `-DepMap wsl-deps.avec-rwom.map` | English | **not played**: hung the shared machine twice on its own assemblies, awaiting the owner's word |
+| incompatibility | `11-behaviour-and-incompatibility::the incompatibility warns about`, `-DepMap wsl-deps.incompat-magicalmenagerie.map` | English | the original beside this port: the documented symptom, asserted with this mod's own `an error matching` step (Pickle 4.9.1 has none) |
+| treechop | `17-plants`, `-DepMap wsl-deps.avec-treechop.map` | English | F12 with Tree Chopping Speed Stat |
+
+Every map, the default `wsl-deps.map` included, also stages Resolve This Instead by `path:` and its dependency Use This
+Instead (a wsl-deps map is the only place a `path:` line works; `wsl-ids.map` only resolves Workshop ids).
 
 `PLAIN = Alpha Mythology Renew - Pickle tests,!07-restart-write,!08-restart-read`. The suite name comes
 first: a filter of exclusions alone keeps every scenario of every suite. `04-rimmsqol` is left in `PLAIN`
 on purpose so that the report shows it skipped, not absent.
 
-Not yet covered, and to be declared before `tested`: a pass for the optional integrations named by the nine
-patches (each needs its provider and its Workshop id), and a pass for the declared incompatibility with
-`sarg.magicalmenagerie` (Workshop 1821617793), asserting the documented symptom rather than expecting a red.
+Covered as of 2026-09-28: every optional provider but A RimWorld of Magic, and the declared incompatibility with
+`sarg.magicalmenagerie` (Workshop 1821617793). See `STATUS.md` for each run.
 
 ## Running it
 
@@ -69,11 +78,11 @@ before the counts and check played against discovered.
 
 ## Passes added on 2026-09-26 (evening)
 
-Maps: `wsl-deps.studio.map` (gallery, English), `wsl-deps.avec-facultatifs.map` (RoM, Nocturnal Animals, Vanilla Cooking,
-Vanilla Genetics, Advanced Biomes, Nature's Pretty Sweet, Elves), `wsl-deps.avec-giddyup.map` (Giddy-Up 2 - Continued, its
-own pass), `wsl-deps.incompat-magicalmenagerie.map` (the original, staged but its scenario still a comment). A pass counts only
-if its `@requires` scenarios really ran: read the report's skipped list. The restart reader now writes the defaults back to
-the Config file, so passes without a seed do not inherit the writer's x3 and blocked creature.
-Gallery notes: the five pictures were chosen so as not to repeat the Preview (griffin and hound in a stable): a close
-griffin, a five-creature line-up, the hound, the phoenix, and the settings window. Zoom and offsets are guesses to tune
-after the first capture; open every image before ordering them.
+Maps: see the pass table above. A pass counts only if its `@requires` scenarios really ran: read the report's skipped
+list. The restart reader writes the defaults back to the Config file, so passes without a seed do not inherit the
+writer's x3 and blocked creature.
+Gallery notes (revised 2026-09-28): the pictures were chosen so as not to repeat the Preview (griffin and hound in a
+stable): a close griffin, the hound, the phoenix, then the unicorn, manticore and pegasus each alone, and the settings
+window. A group shot was tried and dropped: at the zoom needed to fit five creatures it showed the meadow's own building
+and stray colonists. `SetRootSize` clamps to a floor near 7-8 in this game build, so a zoom below it changes nothing.
+Open every image before ordering them.

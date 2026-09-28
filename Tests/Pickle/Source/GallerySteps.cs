@@ -37,6 +37,9 @@ namespace AlphaMythologyRenew.PickleSteps
             // An adult, so that the picture shows the creature and not a juvenile. CreatureSteps records it for the teardown.
             var pawn = CreatureSteps.SpawnAtStage(ctx, kind, kind.RaceProps.lifeStageAges.Count - 1, cell);
             pawn.Name = new NameSingle(name);
+            // GenSpawn.Spawn places a thing facing north (its back to the camera) and a paused game never turns it: every
+            // picture of studio pass 2a77 showed the creature from behind. South is the front view.
+            pawn.Rotation = Rot4.South;
         }
 
         [Then("Alpha Mythology Renew the creature {string} is standing on the map as {string}")]

@@ -868,3 +868,7 @@ Virginie: the small PR first. Branch `fix-phoenix-egg-lost-in-stack` in a scratc
 ## Studio5 (2a77): gallery framed, read — 2026-09-28
 
 7/7 green. Read pictures 1 to 3: griffin, hound and phoenix now fill the frame with no cut (the upward shift at 0 fixed the griffin); the hound picture shows the fixture colonist Miel beside it. All seven sent to Virginie one by one for the order and the unicorn call (still hers). Picture 7 cropped to the window with `Tests/Crop-SettingsShot.ps1` (`-cropped.png` next to it). `Evidence/studio3` and `studio4` deleted, superseded. No AGENTS.md in this mod folder (dispatcher asked; nothing to compress).
+
+## Gallery: creatures showed their back — 2026-09-28
+
+Virginie: all pictures face north. Cause: `GenSpawn.Spawn` places a thing with Rot4.North (back to the camera) and the game is paused, so nothing turns it. `GallerySteps` now sets `pawn.Rotation = Rot4.South` after the spawn. Not verified in game: whether the wait of 30 ticks lets a wandering animal turn again. Studio pass refiled.

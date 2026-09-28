@@ -825,3 +825,7 @@ Not retuned again blind a third time: sent Virginie the five images to judge her
 ## Gallery: one creature per picture, not a group shot — 2026-09-28
 
 Virginie, after seeing studio2's crowded group photo: "un a un". Replaced the single "five creatures side by side" scenario with a Scenario Outline, one picture per remaining creature (unicorn, manticore, pegasus), spawned alone so none hides behind another's flowers or sprite. The hound and phoenix already had their own shot; the gallery grows from 5 to 7 pictures. Same zoom-4 hero framing as the others (its floor near 7-8 is now documented, not fought). Renumbered the captions 1-7. No C# change (the Outline pattern is already used elsewhere in this suite); rebuilt anyway to confirm. Not yet rendered.
+
+## Studio3 (429e): one creature per picture, read — 2026-09-28
+
+7/7 green. Opened the three new pictures: unicorn, manticore and pegasus each read cleanly alone, no group clutter. The unicorn is the weakest (a narrow white sprite seen from above, roughly 90 px tall at the zoom floor, low contrast against the grass); the manticore reads well; the pegasus is fine, with a corner of the meadow building at the left (harmless). The colonist "Miel" of the studio fixture stands in every picture, a small stray figure, acceptable. Creatures cannot be made larger in-game (the camera floor), so any further close-up is a crop, done outside the mod when the images are uploaded. Superseded `Evidence/studio` and `studio2` deleted; `studio3` keeps the seven pictures, which are the publication candidates themselves.

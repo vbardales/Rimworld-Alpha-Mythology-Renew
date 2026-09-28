@@ -203,7 +203,7 @@ namespace AlphaMythologyRenew.PickleSteps
             var def = DefDatabase<ThingDef>.GetNamedSilentFail(PhoenixRules.EggDefName);
             ctx.Require(def != null, $"no ThingDef named '{PhoenixRules.EggDefName}'");
             var egg = ThingMaker.MakeThing(def);
-            egg.SetFaction(Faction.OfPlayer);
+            // No SetFaction: an egg thing cannot take a faction and the game logs an error (run a022).
             GenSpawn.Spawn(egg, CreatureSteps.FreeCell(ctx), map);
             ctx.Set(new EggRecord { Egg = egg, PhoenixesBefore = map.mapPawns.AllPawns.Count(p => p.kindDef.defName == "MM_Phoenix") });
         }

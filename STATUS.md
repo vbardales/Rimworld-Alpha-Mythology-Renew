@@ -20,6 +20,8 @@ xml_tests: passed
 functional_tests: unverified; not run in game
 licence: silent
 licence_at: 2026-09-12; upstream master 53a5518008821188009bbf996b7120ad9593cb5f and Workshop description reviewed; no project redistribution grant found
+upstream_mod_remotes:
+  - https://github.com/juanosarg/AlphaMythology
 showcase: directly inspected; committed Preview 896 x 504 (564630 bytes), ModIcon 128 x 128 (21666 bytes)
 remaining:
   - unverified (in game, belongs to done -> tested): settings window, both routes (Mod options and hidden MainButtons via RIMMSQOL), real effect on wild spawns, persistence after restart and reload, EN and FR layout

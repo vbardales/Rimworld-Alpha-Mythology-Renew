@@ -123,6 +123,7 @@ Method and register: `../WORKSHOP_COMMENTS.md`. A recipient already `posted` the
 | Nature's Pretty Sweet (Continued) | 3542949511 | absent | same, after settling the name guard (see STATUS.md) |
 | Lord of the Rims - Elves (Continued) | 3548255064 | absent | same; a "(Continued)" page: credit both the original author and the maintainer (zal): read the page to name them |
 | Giddy-Up 2 - Continued | 3674332861 | absent | same; the patch comment names Roolo, Owlchemist and dav9670 before MemeGoddess: read the page before crediting |
+| Tree Chopping Speed Stat | 2566231583 | absent | not a patch guard, a known-issue check (F12, feature 17); its scenario played green (8421): the kappa's `VBY_TreeChopWorkSpeed` NullReferenceException the original's page describes did not reproduce here. Register row and draft to write, credit velcroboy333. |
 
 **The original's page: do not draft yet.** A comment there announces a port published without the author's
 consent, on a page where he removes comments about 1.6 updates and answered VEF's page on 2026-09-22. Whether

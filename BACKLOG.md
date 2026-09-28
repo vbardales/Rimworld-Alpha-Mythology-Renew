@@ -49,10 +49,10 @@ This mod's own backlog (the monorepo has its own). Ordered by what blocks the ne
   is the re-run that proves the fix. `settings_audit` stays `partial` until it returns green.
 - [x] Wisp, phoenix death and legacy patches now have a scenario (`13-phoenix.feature`, the wisp text scenario of
   `11-behaviour-and-incompatibility.feature`, `10-integrations.feature`).
-- [ ] Passes for optional integrations (d62d) and for the declared incompatibility with `sarg.magicalmenagerie`
-  (778c) are filed; not yet read.
-- [ ] No `@wip` (confirmed, none left), every `@requires` pass played (still to confirm once d62d/f431/778c/8421
-  return), no manual test left.
+- [x] Passes for optional integrations and the declared incompatibility with `sarg.magicalmenagerie`: green
+  (facultatifs5, incompat4, giddyup, genetics, treechop2/8421, rwom 3818 with JecsLite). See `STATUS.md`.
+- [ ] No `@wip` (confirmed, none left); minimal EN/FR baseline (PLAIN filter) not re-run since the settings and
+  fixture fixes, so "every `@requires` pass played" is not fully confirmed yet; no manual test done.
 
 ## Before `prepublished` / `published` (see `PUBLICATION.md`)
 
@@ -114,7 +114,8 @@ dependency of this mod and the guards use it. Consequences to carry out when the
   24 Nov 2023 on that page; the errors repeat while the kappa is in the colony). Feature 17's provider scenario plays the call
   in the pass `wsl-deps.avec-treechop.map`. If it fails, the fix is a patch giving the kappa that stat (guarded by that mod,
   through the resolver library once it exists), in `Mod/`.
-- [ ] File the pass: `-DepMap wsl-deps.avec-treechop.map -Filter '17-plants'`. Credit for the register and THANKS if the pass is played.
+- [x] Pass filed and green (8421, `treechop2`): both F12 scenarios passed, the provider guard and the real VEF
+  harvest path. Credit for the register and THANKS: still to do.
 
 **Update 2026-09-26 (late):** the library's packageId is confirmed by Virginie: `nelim.resolvethisinstead` (the display name may
 change, the id will not). It must **not** go into `About.xml` yet: the staging script stages every hard dependency the About

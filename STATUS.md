@@ -862,3 +862,5 @@ Nothing public sent beyond the fork.
 ## Upstream PR #1, prepared not sent — 2026-09-28
 
 Virginie: the small PR first. Branch `fix-phoenix-egg-lost-in-stack` in a scratch clone of the fork (`C:/amfork`, sparse, one file), commit b44eb3c: `DeathActionWorker_ExplodeAndSpawnEggs` (1.5/Source) keeps the `out` result of `TryPlaceThing` and spares that in the explosion, 5 insertions and 2 deletions, file encoding and line endings kept (BOM, CRLF). Compiled alone against Krafs.Rimworld.Ref 1.5 (0 errors). Not pushed, no PR. The in-game evidence to cite is the phoenix feature of this port, filed as a022 (`13-phoenix`, default map): it has not been green since the fix, the earlier reds were suite defects fixed later, so the PR text waits on it. Promised to show her the text before it goes out.
+
+- 2026-09-28, Virginie: wait for the in-game proof (a022, phoenix feature), then open the upstream PR; she reads the text once it is open. This replaces the earlier "show her the text before it goes out". The text must state only what a green run and the compile check prove.

@@ -1,9 +1,16 @@
 # Pass "avec rwom" (DRAFT): A RimWorld of Magic alone, isolated from wsl-deps.avec-facultatifs.map on 2026-09-27
 # after it hung the machine twice (d62d, then 342d even with HugsLib staged first) with the same
-# TypeLoadException on AbilityUser.Verb_UseAbility and siblings, forcing a manual kill both times (see the comment
-# in wsl-deps.avec-facultatifs.map). Isolating it here means a third hang costs only this pass, not the other six
-# providers. Do not resubmit without asking: two runs of the shared machine already spent on the same failure.
+# TypeLoadException on AbilityUser.Verb_UseAbility and siblings, forcing a manual kill both times.
+#
+# CAUSE FOUND 2026-09-28, read in RWoM's own About.xml (<modDependenciesByVersion>, <v1.6>): its 1.6 hard dependencies
+# are Harmony, HugsLib AND "JecsLite - A RimWorld of Magic" (zal.jecsliterwom, Workshop 3312959701). RWoM's own 1.6
+# folder ships only TorannMagic.dll; AbilityUser.dll, AbilityUserAI.dll and CompDeflector.dll, the assemblies the
+# TypeLoadExceptions name, are JecsLite's (checked in its 1.6/Assemblies). HugsLib, added after d62d, was a true
+# dependency but not the missing one; JecsLite was never staged. Not a stale cache, not the machine.
+#
+# Not yet played with it. Do not resubmit without asking: two runs of the shared machine already went on this.
 UnlimitedHugs.HugsLib            818773962
+zal.jecsliterwom                 3312959701
 Torann.ARimworldOfMagic          1201382956
 nelim.resolvethisinstead   path:ResolveThisInstead/Mod
 Mlie.UseThisInstead        3396308787

@@ -845,3 +845,7 @@ About.xml description says the mod requires Resolve This Instead and that Use Th
 ## Rule: an upstream means a systematic pull request — 2026-09-28
 
 Virginie, on learning that no PR exists toward juanosarg/AlphaMythology: one is needed, in the TODO, and in the docs "if upstream, then systematic PR". Done: `BACKLOG.md` item made required (was "Optional"), `PUBLICATION.md` gets a section, and the monorepo's `PUBLISHING.md` (section "Départ depuis le projet d'origine") carries the rule. Nothing public was done: no fork, no PR; both need her go.
+
+## A RimWorld of Magic: the blocker identified, not yet played — 2026-09-28
+
+Virginie asked whether the cause was identified. It is now. RWoM's About.xml lists, for 1.6, Harmony, HugsLib and **JecsLite - A RimWorld of Magic** (`zal.jecsliterwom`, Workshop 3312959701, installed locally). RWoM's 1.6 folder holds only TorannMagic.dll; `AbilityUser`, `AbilityUserAI` and `CompDeflector`, the assemblies of every TypeLoadException in d62d and 342d, are in JecsLite's `1.6/Assemblies`. So both hangs came from a missing hard dependency that no pass map staged (HugsLib, added after d62d, was real but not the missing one). This retracts my two earlier guesses (HugsLib; a stale Steam cache). `wsl-deps.avec-rwom.map` now stages JecsLite. Not resubmitted: it cost the shared machine 4h40 once, so the go is Virginie's. Process slip in passing: reading this I started a `grep` over every About.xml of the Workshop cache, the unbounded scan SEARCHING.md forbids; stopped within seconds, nothing left running.

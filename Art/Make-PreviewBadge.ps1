@@ -12,7 +12,7 @@
      is a fraction of the box's OWN size (not the preview's), matching CSS `transform: translate(%, %)`;
      -RotateDegrees rotates around the box's center, after the translation (CSS transform-origin: center).
 .EXAMPLE
-  ./Make-PreviewBadge.ps1 -Corner BottomLeft -Width 240 -TranslatePercent -0.125,0.125 -RotateDegrees 15 `
+  ./Make-PreviewBadge.ps1 -Corner BottomLeft -Width 220 -TranslatePercent @(-0.125,0.125) -RotateDegrees 15 `
     -OutFile Preview_with_ModIcon_badge_left.png
 #>
 param(

@@ -206,6 +206,31 @@ Composition and parameters (moved 2026-09-29 to `../scripts/Render-Preview.cjs`,
 
 Verification: `Art/verify-preview.py`; detailed results and actual font records in `Art/Preview-qa.json`; text-free rendered background in `Art/Preview-background-qa.png`; thumbnail in `Art/Preview-thumbnail-qa.png`. Minimum contrast across entire text bounding rectangles against the real rendered background: title 6.110:1, tag 4.682:1, summary 5.412:1; badge digits against its opaque accent 8.863:1. Visually checked at 896 x 504 and 268 pixels wide: title and version identifiable, rule visible, no clipping or overlap. Final PNG: 565367 bytes, below 900 KB. Nothing published. This recomposition supersedes the earlier overlay measurements above.
 
+## ModIcon corner badge, Preview render pipeline generalized to `../scripts/`, tests added — 2026-09-29
+
+A second corner badge (the trimmed, background-removed `Mod/About/ModIcon.png`, `Art/ModIcon-badge.png`) now
+composites onto `Mod/About/Preview.png` next to the existing "1.6" triangle, on her direction, to reuse
+across mods. What moved out of this mod's `Art/` into the shared `../scripts/`, all on her go:
+- `Render-Preview.cjs` (mod-specific text externalized to `Art/preview-copy.json`; palette unchanged in
+  `Art/preview-palette.json`). Refactored into pure functions (`parseArgs`, `pickHighestVersion`,
+  `resolveIconBadgeCorner`, `escapeHtml`, `buildHtml`) plus a `render()` doing the Chrome/Playwright work;
+  covered by `../scripts/Render-Preview.test.cjs` (`node:test`, built into Node 24, no new dependency):
+  15 assertions, 0 failed.
+- `Make-PreviewBadge.ps1` (the icon-detour/trim/composite tool) and its pure functions, split further into
+  `PreviewBadgeLib.ps1` (`Remove-BorderBackground`, `Get-TrimmedByAlpha`, `Get-BadgeGeometry`) so
+  `../scripts/Test-PreviewBadgeLib.ps1` can dot-source just the library, against synthetic in-memory
+  bitmaps, no mod files touched: 14 assertions, 0 failed (plain PowerShell, matching
+  `Tests/Test-Validator.ps1`'s style; this workspace's Pester is 3.4.0, not used here).
+
+Re-rendered against the moved/refactored scripts after each step: `Mod/About/Preview.png` byte-identical
+to before (592971 bytes, same per-element contrast ratios); `Art/ModIcon-badge.png` byte-identical
+(`cmp`) to a fresh `-SaveTrimmedIconTo` run. Icon-badge corner is parameterized (`bottom-left` default,
+`bottom-right`, `top-left`); checked by eye, not by an automated bounds/overlap test: `bottom-left` (kept)
+and `bottom-right` both clear the scene and the "1.6" badge, `top-left` overlaps `.copy`'s title text at
+this layout's `left:50px;top:54px` and is not usable as-is here. This mod's own copies of both scripts and
+`Art/ModIcon-transparent.png`/`Art/ModIcon-trimmed.png` scratch files are gone; nothing under `Art/` or
+`Mod/About/` in this repo references the deleted local copies.
+
 ## Preview title hierarchy update — 2026-09-12
 
 Applied the revised STYLE_RIMWORLD.md title hierarchy in `Art/render-preview.cjs` and regenerated `Art/Preview-layout.html` and `Mod/About/Preview.png`. Alpha Mythology retains the 46 px primary ink; Renew is a direct title span at 0.65em (29.9 px), weight 600, using the secondary ink. Existing name, summary and separate unofficial tag preserved. `Art/Preview.png` remains the unchanged text-free illustration; `Art/Preview-source.png` is preserved, with no illustration replacement.

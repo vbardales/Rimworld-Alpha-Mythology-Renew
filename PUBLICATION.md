@@ -57,11 +57,11 @@ manticore, pegasus) plus the settings window over the meadow — 7 pictures, fra
 facing south (front view, fixed 2026-09-28). Order still to decide once a confirmed set exists: the settings
 window shows the interface, not a creature, so it is not a first-image candidate.
 
-**Naming convention (gallery folder, not yet created):** `gallery/0-preview.png` is image 0, identical to the
-shipped `Mod/About/Preview.png` (the "cover" Steam shows large — not necessarily first in the in-game gallery
-order, but slot 0 here). The 7 studio pictures are `gallery/X-<name>.png` for X = 1 to 7 — a bare digit, **not**
-zero-padded (`1-griffin.png`, not `01-griffin.png`). Together: `gallery/0-preview.png` through
-`gallery/7-<name>.png`, 8 files, X from 0 to 7.
+**Naming convention:** `Art/gallery/0-preview.png` is image 0, identical to the shipped `Mod/About/Preview.png`
+(the "cover" Steam shows large — not necessarily first in the in-game gallery order, but slot 0 here; copied
+2026-09-29). The 7 studio pictures are `Art/gallery/X-<name>.png` for X = 1 to 7 — a bare digit, **not**
+zero-padded (`1-griffin.png`, not `01-griffin.png`). Together: `Art/gallery/0-preview.png` through
+`Art/gallery/7-<name>.png`, 8 files, X from 0 to 7. Not all filled yet: only `0-preview.png` exists so far.
 
 Candidates, from the current studio pass, in capture order: griffin close, three-headed hound, phoenix, unicorn
 alone, manticore alone, pegasus alone, the settings window over the meadow.

@@ -1,0 +1,7 @@
+{
+  "title": "Alpha Mythology",
+  "suffix": "Renew",
+  "tag": "(unofficial)",
+  "copyLines": ["Mythological creatures", "for your RimWorld colony."],
+  "iconBadge": { "file": "ModIcon-badge.png", "corner": "bottom-left", "width": 220 }
+}

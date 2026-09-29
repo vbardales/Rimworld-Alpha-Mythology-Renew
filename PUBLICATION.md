@@ -52,14 +52,19 @@ Contact sheets are 150 px thumbnails: text on the cards was not read.
 ## Screenshots (order to decide after the passes)
 
 Steam shows the first image large: the most demonstrative one goes there, not the prettiest. The studio pass
-(`09-publication-shots.feature`) is written and run: first capture 5bc7 (2026-09-26), all 5 green but the hero
-shots (griffin, hound, phoenix) read small and the five-creature line-up only fit 3 of its 5 subjects — opened,
-diagnosed, framing retuned (zoom, offsets) in `8678412`; a re-render (`c928`) is filed to confirm. Order still to
-decide once a confirmed set exists: the settings window (`05-language`, `@review`) shows the interface, not a
-creature, so it is not a first-image candidate.
+(`09-publication-shots.feature`) is written and run: one picture per creature (griffin, hound, phoenix, unicorn,
+manticore, pegasus) plus the settings window over the meadow — 7 pictures, framing tuned to zoom 2.5, creatures
+facing south (front view, fixed 2026-09-28). Order still to decide once a confirmed set exists: the settings
+window shows the interface, not a creature, so it is not a first-image candidate.
 
-Candidates once c928 returns, in capture order: griffin close, five creatures side by side, the three-headed
-hound, the phoenix, the settings window over the meadow.
+**Naming convention (gallery folder, not yet created):** `gallery/0-preview.png` is image 0, identical to the
+shipped `Mod/About/Preview.png` (the "cover" Steam shows large — not necessarily first in the in-game gallery
+order, but slot 0 here). The 7 studio pictures are `gallery/X-<name>.png` for X = 1 to 7 — a bare digit, **not**
+zero-padded (`1-griffin.png`, not `01-griffin.png`). Together: `gallery/0-preview.png` through
+`gallery/7-<name>.png`, 8 files, X from 0 to 7.
+
+Candidates, from the current studio pass, in capture order: griffin close, three-headed hound, phoenix, unicorn
+alone, manticore alone, pegasus alone, the settings window over the meadow.
 
 ## Description (BBCode, to place in the Workshop page at creation, in this order)
 

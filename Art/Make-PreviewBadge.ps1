@@ -25,7 +25,9 @@ param(
     [double]$RotateDegrees = 15,
     [int]$AlphaThreshold = 20,
     [int]$BgTolerance = 26,
-    [string]$OutFile = 'Preview_with_ModIcon_badge.png'
+    [string]$OutFile = 'Preview_with_ModIcon_badge.png',
+    [string]$SaveTrimmedIconTo   # if set, writes the background-removed, alpha-trimmed icon here and exits
+                                  # (no compositing); this is the asset render-preview.cjs's .icon-badge <img> uses.
 )
 
 Add-Type -AssemblyName System.Drawing
@@ -112,6 +114,13 @@ $transparent = Remove-BorderBackground -Src $rawIcon -Tolerance $BgTolerance
 $rawIcon.Dispose()
 $icon = Get-TrimmedByAlpha -Src $transparent -Threshold $AlphaThreshold
 if (-not [object]::ReferenceEquals($icon, $transparent)) { $transparent.Dispose() }
+
+if ($SaveTrimmedIconTo) {
+    $icon.Save($SaveTrimmedIconTo, [System.Drawing.Imaging.ImageFormat]::Png)
+    Write-Output "wrote $SaveTrimmedIconTo ($($icon.Width) x $($icon.Height), trimmed, transparent background)"
+    $icon.Dispose()
+    return
+}
 
 $preview = New-Object System.Drawing.Bitmap($previewPath)
 $pw = $preview.Width; $ph = $preview.Height

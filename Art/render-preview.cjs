@@ -22,7 +22,16 @@ h1{font-size:46px;font-weight:600;line-height:1.1;letter-spacing:0}
 p{font-size:21px;font-weight:400;line-height:1.45;width:430px;letter-spacing:0;color:var(--inkPrimary)}
 .badge{position:absolute;right:0;top:0;width:80px;height:80px;background:var(--accent);clip-path:polygon(0 0,100% 0,100% 100%)}
 .version{position:absolute;left:869px;top:27px;transform:translate(-50%,-50%) rotate(45deg);font-size:26px;font-weight:700;line-height:1;color:var(--badgeInk)}
-</style><div class="veil"></div><div class="copy"><h1><span class="title-main">Alpha Mythology</span><br><span class="suffix">Renew</span></h1><div class="tag">(unofficial)</div><div class="rule"></div><p>Mythological creatures<br>for your RimWorld colony.</p></div><div class="badge"></div><div class="version">${version}</div>`;
+/* ModIcon-badge.png is a pre-baked asset (Make-PreviewBadge.ps1 -SaveTrimmedIconTo): the shipped ModIcon.png's
+   near-black background flood-filled to transparent from its border only (a plain color-key would also blank
+   matching pixels inside the artwork), then cropped to its own alpha bounding box (no dead transparent margin).
+   That PNG->PNG step needs System.Drawing; this pipeline has no Node image library, so it stays a one-off
+   asset here rather than a per-render step. Placement below is plain CSS: width fixes the box, height follows
+   the asset's own aspect ratio; left/bottom flush it into the corner; translate(%,%) is a fraction of the
+   badge's OWN box (not the page), rotate happens after, around the default center transform-origin.
+*/
+.icon-badge{position:absolute;left:0;bottom:0;width:220px;transform:translate(-12.5%,12.5%) rotate(15deg)}
+</style><div class="veil"></div><div class="copy"><h1><span class="title-main">Alpha Mythology</span><br><span class="suffix">Renew</span></h1><div class="tag">(unofficial)</div><div class="rule"></div><p>Mythological creatures<br>for your RimWorld colony.</p></div><div class="badge"></div><div class="version">${version}</div><img class="icon-badge" src="ModIcon-badge.png">`;
 fs.writeFileSync('Art/Preview-layout.html',html);
 const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
 const page=await browser.newPage({viewport:{width:896,height:504},deviceScaleFactor:1});

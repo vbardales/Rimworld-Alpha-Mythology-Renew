@@ -1,7 +1,7 @@
 ---
-localization: partial
-translation_en: partial
-translation_fr: complete
+localization: complete
+translation_en: complete
+translation_fr: partial
 mod: Alpha Mythology Renew (unofficial)
 packageId: nelim.alphamythology
 repo: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew
@@ -27,7 +27,8 @@ showcase: directly inspected; committed Preview 896 x 504 (564630 bytes), ModIco
 remaining:
   - unverified (in game, belongs to done -> tested): settings window, both routes (Mod options and hidden MainButtons via RIMMSQOL), real effect on wild spawns, persistence after restart and reload, EN and FR layout
   - unverified: English and French in-game translation acceptance, including optional integrations and wisp inspection/gizmos
-  - defect: `AMR_AsexualReproductionProgress` prints a counted noun ("{1} days per cycle", value 15 read from the wisp's VEF comp) through a key without `.One` and `.Many` forms, in English and French (TRANSLATIONS.md section 2, plural rule of 2026-09-25); fix = split into `.One`/`.Many` keys, pass the finished phrase, regenerate FRENCH_REVIEW.md and have the new French text read
+  - unverified: French review by Virginie of the changed rows only (`AMR_AsexualReproductionProgress`, `AMR_AsexualReproductionDays.One` and `.Many` in `FRENCH_REVIEW.md`); the rest was validated on 2026-10-01 (revision 9a1c1c3)
+  - unverified (in game): the wisp inspection text with the new plural keys, English and French; `Tests/Check-Translations.py` not run (no Python here)
   - feature: animal-mod rule of 2026-09-28 (PUBLISHING.md, three optional guarded patches before preTest): Nocturnal Animals is done; A Dog Said... Animal Prosthetics 2 and Better Crossbreeding have no patch and no written reason yet
   - unverified (reds with no green replay on disk; cause not re-established by this audit, the STATUS history calls some of them suite defects): the 2026-09-26 full run failed hydra, stymphalian, wisp ranged attacks, salamander egg, chimera milk, the 25-creature spawn check and the wild draw scenario; only the phoenix ones were replayed. Baseline EN/FR not re-run on the current revision
   - unverified: manual gameplay and save migration
@@ -974,3 +975,7 @@ French review: Virginie validated the French in chat on 2026-10-01 (corrections 
 Plural rule (TRANSLATIONS.md section 2, 2026-09-25), replayed as AUDIT.md step 12 asks: of the three keys that print a number, `AMR_SpawnMultiplier` ("x{0}") counts nothing, `AMR_AsexualHatched` takes a name, `AMR_AsexualReproductionProgress` counts days ("{1} days per cycle" / "{1} jours par cycle", 15 in the wisp's Def) with no `.One` or `.Many` form in either language. Defect: `localization` and `translation_en` go to `partial`, `translation_fr` stays `complete` on the text she read but will need the new French read after the fix.
 
 Retained state: `stage: showcase`, `workflow_stage: l10n` (first failing transition: `options -> l10n`, the plural forms). Session title unchanged: `alphamythology / l10n`. The audit does not fix it. Work to go back to `preTest`: add the `.One`/`.Many` keys in English and French, make the code pick by the count, regenerate `FRENCH_REVIEW.md`, have the new French text read.
+
+## Plural defect fixed — 2026-10-01
+
+`AMR_AsexualReproductionProgress` now takes the cycle length as a finished phrase (`{1}`): `AMR_AsexualReproductionDays.One` ("{0} day" / "{0} jour") or `.Many` ("{0} days" / "{0} jours"), chosen in `Source/TranslationPatches.cs` by `days == 1` (the Def says 15; 0 cannot occur, so no `.Zero`). The Pickle step reads the template prefix up to the first `{`, unchanged. DLL rebuilt (0 warnings, 0 errors), Check-Mod 336 PASS, Test-Validator PASS, unit tests ALL PASSED. Code commit `e53da76`; `FRENCH_REVIEW.md` regenerated from it. Because a French file changed, `translation_fr` is back to `partial` until Virginie reads the three changed rows; `localization` and `translation_en` are `complete` again. `stage` stays `showcase` / `l10n` until then.

@@ -11,8 +11,8 @@ git_root: C:/Users/nelim/Documents/rimworld/AlphaMythologyRenew
 git_isolation: standalone; removed from parent index and ignored there
 remote: origin https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew.git
 maintainer: Codex task dedicated to AlphaMythologyRenew; maintain this STATUS.md as work progresses
-stage: preTest
-workflow_stage: preTest
+stage: showcase
+workflow_stage: l10n
 settings_audit: complete
 audit_at: 2026-09-30
 audit_revision: 8d7e942f92d6da68da7cb2ee6d7cc3547a15b4c2 (+ uncommitted Preview regeneration and Pickle steps DLL from another session, see the 2026-09-30 audit section)
@@ -593,7 +593,7 @@ frozen until the first Pickle run is done. Check-Mod (339) and the translation c
 `MM_FenghuangEgg_a copy.png`, used through its folder. Tracked in `BACKLOG.md`, which also records the owner's
 direction on the patch guards (a library she proposed; not yet understood, no patch changed).
 
-## Stage set to preTest — 2026-09-26, by Virginie's ruling
+## Stage set to preTest — 2026-09-26, by Virginie's ruling (replaced on 2026-09-30, see the last audit section; kept as history)
 
 Virginie decided that the settings run is not a precondition of `preTest`: `preTest` never asked for the tests to
 pass, only for them to be written. Stage `options` -> `preTest`. The conflict between AGENTS.md ("enter preTest only
@@ -947,7 +947,7 @@ but per TRANSLATIONS.md this field cannot reach `complete` until Virginie hersel
 
 Revision `8d7e942`. The working tree carries another session's Preview regeneration (`Art/*`, `Mod/About/Preview.png`, `Art/echo.png`) and a rebuilt `Tests/Pickle/Mod/Pickle/Assemblies/AlphaMythologyRenew.PickleSteps.dll`; none of it is this audit's and this audit committed none of it.
 
-Retained state: `stage: preTest`, `workflow_stage: preTest` (unchanged; the `workflow_stage` field was missing and is now written). Session title: `alphamythology / preTest`.
+Retained state (corrected later the same day, see the end of this section): `stage: showcase`, `workflow_stage: l10n`. The first pass of this audit kept `preTest` and was wrong.
 
 Checks run, out of game: Check-Mod 336 assertions PASS; Test-Validator negative cases PASS; unit tests ALL PASSED. No RimWorld launched, no run filed.
 
@@ -956,3 +956,5 @@ Corrections: the front matter `packageId` said `nelim.alphamythologyrenew`, stal
 New criteria for `done -> tested` (AUDIT.md, 2026-09-30): no scenario in `@wip` (none left); every conditional scenario has run (all `@requires` passes exist on disk: facultatifs5, genetics, giddyup, rimmsqol, rwom, treechop2); no manual test left to validate. Not met: the reds and the baseline re-run (see `remaining`), and the manual cases of `Tests/FUNCTIONAL.md`, not run.
 
 Upstream: the original has a git repository (https://github.com/juanosarg/AlphaMythology, in `upstream_mod_remotes`). The fork `vbardales/AlphaMythology` exists and the phoenix-egg PR is prepared, not sent, pending the green phoenix run (2026-09-28 sections).
+
+Correction, 2026-09-30, same day: TRANSLATIONS.md (version ebadb99, 2026-09-30, read in full) says only `complete` or justified `not_applicable` in all three fields permits entry into `preTest`. Here `translation_fr` is `partial`: the French review by Virginie is pending (`FRENCH_REVIEW.md` generated) and no agreeing French text was read for gender agreement (no `PAWN_gender` switch exists in `Mod/Languages/French`; whether any text needs one is not established, it takes a reading). `options -> l10n` therefore does not hold on the current TRANSLATIONS.md, and the first transition that fails fixes the state: `stage: showcase`, `workflow_stage: l10n` (was `preTest`, set on 2026-09-26). Session title: `alphamythology / l10n`. Nothing else changes: the automated checks, the `@requires` passes and the open reds stay in `remaining`. Work to go back up: Virginie's French review, plus a reading of the French for pawn agreement; then `preTest` is back.

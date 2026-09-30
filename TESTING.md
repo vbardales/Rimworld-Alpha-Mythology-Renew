@@ -98,6 +98,17 @@ Screenshots may be minified (only the `@review` captures that were actually open
 judged, at reduced size). Never delete a report a `STATUS.md` field still points to:
 repoint it first. History is one text line per run in `docs/runs/`, never folders.
 
+Kept on disk as of 2026-09-30 (38 MB; every `report.html` and every `messages.ndjson` over 1 MB removed, they duplicate the summary and the captures):
+
+| Folder | What it proves | Delete when |
+|---|---|---|
+| `en2`, `fr` | full baseline (69 scenarios) in EN and FR on `sans-facultatifs`; one `@review` capture each | a baseline re-run on the current revision replaces them |
+| `phoenix`, `phoenix2` | phoenix scenarios (6 green in `phoenix`; the open red "a requested destruction..." in `phoenix2`) | a green run of that scenario replaces both |
+| `facultatifs5`, `genetics`, `giddyup`, `rwom`, `rimmsqol`, `treechop2` | one optional-provider pass each (`@requires` scenarios) | the same pass is replayed |
+| `incompat4` | the declared incompatibility with `sarg.magicalmenagerie` still behaves as declared | the other mod changes |
+| `restart2` | settings persistence across a restart (seq1, seq2) | replayed |
+| `studio7` | the seven gallery pictures (originals) for the Workshop page | the gallery is uploaded |
+
 ## Conditions for `tested`
 
 - No scenario left in `@wip`: repaired and replayed, or deleted with its justification.

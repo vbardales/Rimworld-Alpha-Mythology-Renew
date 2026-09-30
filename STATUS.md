@@ -3,7 +3,7 @@ localization: complete
 translation_en: complete
 translation_fr: partial
 mod: Alpha Mythology Renew (unofficial)
-packageId: nelim.alphamythologyrenew
+packageId: nelim.alphamythology
 repo: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew
 visibility: public
 local_path: C:/Users/nelim/Documents/rimworld/AlphaMythologyRenew
@@ -12,9 +12,10 @@ git_isolation: standalone; removed from parent index and ignored there
 remote: origin https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew.git
 maintainer: Codex task dedicated to AlphaMythologyRenew; maintain this STATUS.md as work progresses
 stage: preTest
+workflow_stage: preTest
 settings_audit: complete
-audit_at: 2026-09-26
-audit_revision: 3d88314fbeec0b037a884839f43689de1b4f2a90 (+ uncommitted settings work, see the 2026-09-26 sections)
+audit_at: 2026-09-30
+audit_revision: 8d7e942f92d6da68da7cb2ee6d7cc3547a15b4c2 (+ uncommitted Preview regeneration and Pickle steps DLL from another session, see the 2026-09-30 audit section)
 automated_tests: passed; static contracts (339 assertions, 7 negative cases) and 13 settings-rule unit tests
 xml_tests: passed
 functional_tests: unverified; not run in game
@@ -27,6 +28,8 @@ remaining:
   - unverified (in game, belongs to done -> tested): settings window, both routes (Mod options and hidden MainButtons via RIMMSQOL), real effect on wild spawns, persistence after restart and reload, EN and FR layout
   - unverified: English and French in-game translation acceptance, including optional integrations and wisp inspection/gizmos
   - unverified: French review by Virginie (TRANSLATIONS.md section 3; `FRENCH_REVIEW.md` generated, not yet read by her)
+  - feature: animal-mod rule of 2026-09-28 (PUBLISHING.md, three optional guarded patches before preTest): Nocturnal Animals is done; A Dog Said... Animal Prosthetics 2 and Better Crossbreeding have no patch and no written reason yet
+  - unverified (reds with no green replay on disk; cause not re-established by this audit, the STATUS history calls some of them suite defects): the 2026-09-26 full run failed hydra, stymphalian, wisp ranged attacks, salamander egg, chimera milk, the 25-creature spawn check and the wild draw scenario; only the phoenix ones were replayed. Baseline EN/FR not re-run on the current revision
   - unverified: manual gameplay and save migration
   - unverified: optional legacy integrations with their providers
   - publication: 0.1.0 pre-publication (creates the private item and its About/PublishedFileId.txt) NOT yet sent; no Workshop item exists
@@ -939,3 +942,17 @@ external mod's source needed.
 but per TRANSLATIONS.md this field cannot reach `complete` until Virginie herself reviews the French text
 — no session ever marks its own French reviewed. `remaining` carries that as `unverified`. Nothing in
 `Mod/` changed; no DLL rebuild needed.
+
+## Audit — 2026-09-30
+
+Revision `8d7e942`. The working tree carries another session's Preview regeneration (`Art/*`, `Mod/About/Preview.png`, `Art/echo.png`) and a rebuilt `Tests/Pickle/Mod/Pickle/Assemblies/AlphaMythologyRenew.PickleSteps.dll`; none of it is this audit's and this audit committed none of it.
+
+Retained state: `stage: preTest`, `workflow_stage: preTest` (unchanged; the `workflow_stage` field was missing and is now written). Session title: `alphamythology / preTest`.
+
+Checks run, out of game: Check-Mod 336 assertions PASS; Test-Validator negative cases PASS; unit tests ALL PASSED. No RimWorld launched, no run filed.
+
+Corrections: the front matter `packageId` said `nelim.alphamythologyrenew`, stale since the 2026-09-27 shortening; `About.xml` says `nelim.alphamythology`. No `About/PublishedFileId.txt` exists, so the 0.1.0 pre-publication is not sent and `CHANGELOG.md` keeps its 0.1.0 entry as planned. `.dds`: none tracked, `*.dds` already ignored, none on disk. Test evidence: none in git and already ignored; on disk it went from 196 MB to 38 MB (TESTING.md, "Evidence to keep").
+
+New criteria for `done -> tested` (AUDIT.md, 2026-09-30): no scenario in `@wip` (none left); every conditional scenario has run (all `@requires` passes exist on disk: facultatifs5, genetics, giddyup, rimmsqol, rwom, treechop2); no manual test left to validate. Not met: the reds and the baseline re-run (see `remaining`), and the manual cases of `Tests/FUNCTIONAL.md`, not run.
+
+Upstream: the original has a git repository (https://github.com/juanosarg/AlphaMythology, in `upstream_mod_remotes`). The fork `vbardales/AlphaMythology` exists and the phoenix-egg PR is prepared, not sent, pending the green phoenix run (2026-09-28 sections).

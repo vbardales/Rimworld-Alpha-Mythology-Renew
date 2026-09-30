@@ -8,7 +8,7 @@
   <AMR_AsexualReproductionProgress>Progression de la fission asexuée : {0} ({1} jours par cycle)</AMR_AsexualReproductionProgress>
   <AMR_AsexualReproductionDisabled>Reproduction asexuée désactivée</AMR_AsexualReproductionDisabled>
   <AMR_DevReproduce>DEV : se reproduire maintenant</AMR_DevReproduce>
-  <AMR_DevReproduceDesc>Déclencher la reproduction asexuée au prochain cycle de traitement.</AMR_DevReproduceDesc>
+  <AMR_DevReproduceDesc>Déclencher immédiatement la reproduction asexuée.</AMR_DevReproduceDesc>
   <MM_Boomer>Explosif</MM_Boomer>
   <MM_BoomerDesc>Cet animal explose à sa mort.</MM_BoomerDesc>
   <MM_DamageRanged>Attaquant à distance</MM_DamageRanged>
@@ -24,12 +24,12 @@
   <MM_MountFastArmouredDesc>Les colons peuvent monter cet animal pour bénéficier d'un important gain de vitesse, d'une protection accrue grâce à son armure et combattre au corps à corps à ses côtés. Cette fonctionnalité nécessite le mod Giddy Up! Si vous ne l'avez pas encore, qu'attendez-vous ?</MM_MountFastArmouredDesc>
   <MM_MountFastDesc>Les colons peuvent monter cet animal pour bénéficier d'un important gain de vitesse et combattre au corps à corps à ses côtés. Cette fonctionnalité nécessite le mod Giddy Up! Si vous ne l'avez pas encore, qu'attendez-vous ?</MM_MountFastDesc>
   <MM_No>Non</MM_No>
-  <MM_NoRanged>Cet animal ne possède pas d'attaque à distance. Pour lui ordonner d'attaquer, il faut le dresser à la garde et à l'attaque, puis lui demander de suivre un maître lorsque celui-ci est mobilisé ou travaille. Le bouton « Lâcher les animaux » dans les commandes du maître lui fera attaquer au corps à corps.</MM_NoRanged>
-  <MM_ParalizingRanged>Paralysie à distance</MM_ParalizingRanged>
-  <MM_ParalyzingRangedDesc>Les animaux paralysant à distance utilisent leurs attaques pour immobiliser leurs adversaires. Les engager au corps à corps n'est pas forcément le meilleur usage de leurs capacités.</MM_ParalyzingRangedDesc>
+  <MM_NoRanged>Cet animal ne possède pas d'attaque à distance. Pour lui ordonner d'attaquer, il faut le dresser à la garde et à l'attaque, puis lui demander de suivre la personne qui le guide lorsque celle-ci est mobilisée ou travaille. Le bouton « Lâcher les animaux » dans les commandes de cette personne lui fera attaquer au corps à corps.</MM_NoRanged>
+  <MM_ParalizingRanged>Attaquant paralysant à distance.</MM_ParalizingRanged>
+  <MM_ParalyzingRangedDesc>Les animaux paralysants à distance utilisent leurs attaques pour immobiliser leurs adversaires. Les engager au corps à corps n'est pas forcément le meilleur usage de leurs capacités.</MM_ParalyzingRangedDesc>
   <MM_ParalyzingShockTroopDesc>Les animaux de choc se distinguent par leur grande vitesse et une capacité utile au corps à corps. Ils ne sont pas forcément très résistants ni dotés de beaucoup de santé, mais peuvent être dévastateurs s'ils sont bien employés.\n\nCet animal possède aussi des attaques capables d'immobiliser ses adversaires.</MM_ParalyzingShockTroopDesc>
   <MM_PrimaryRole>Rôle principal</MM_PrimaryRole>
-  <MM_Ranged>Cet animal utilise des attaques à distance et ne combat au corps à corps que si l'ennemi s'approche suffisamment. Pour lui ordonner d'attaquer, il faut le dresser à la garde et à l'attaque, puis lui demander de suivre un maître lorsque celui-ci est mobilisé ou travaille. Le bouton « Lâcher les animaux » dans les commandes du maître lui fera chercher un abri adapté et utiliser son attaque à distance.</MM_Ranged>
+  <MM_Ranged>Cet animal utilise des attaques à distance et ne combat au corps à corps que si l'ennemi s'approche suffisamment. Pour lui ordonner d'attaquer, il faut le dresser à la garde et à l'attaque, puis lui demander de suivre la personne qui le guide lorsque celle-ci est mobilisée ou travaille. Le bouton « Lâcher les animaux » dans les commandes de cette personne lui fera chercher un abri adapté et utiliser son attaque à distance.</MM_Ranged>
   <MM_RangedAttacks>Attaques à distance</MM_RangedAttacks>
   <MM_SecondaryRole>Rôle secondaire</MM_SecondaryRole>
   <MM_ShockTroop>Troupe de choc</MM_ShockTroop>
@@ -47,5 +47,5 @@
   <AMR_SpawnMultiplier>Fréquence d'apparition à l'état sauvage : ×{0}</AMR_SpawnMultiplier>
   <AMR_SpawnMultiplierTip>Multiplie la fréquence de toutes les créatures de ce mod parmi les animaux sauvages d'un biome (1 = valeurs du mod). Cela change leur part par rapport aux autres animaux, pas le nombre total d'animaux sur la carte. S'applique immédiatement, aux nouvelles apparitions seulement : les animaux déjà présents sur la carte restent.</AMR_SpawnMultiplierTip>
   <AMR_ResetDefaults>Rétablir les valeurs par défaut</AMR_ResetDefaults>
-  <AMR_AllowedHeader>Créatures autorisées à apparaître à l'état sauvage (décochée : n'apparaît jamais ; les animaux apprivoisés ou déjà présents ne changent pas)</AMR_AllowedHeader>
+  <AMR_AllowedHeader>Créatures autorisées à apparaître à l'état sauvage (décochée : n'apparaît jamais ; les animaux apprivoisés ou déjà présents ne sont pas affectés)</AMR_AllowedHeader>
 </LanguageData>

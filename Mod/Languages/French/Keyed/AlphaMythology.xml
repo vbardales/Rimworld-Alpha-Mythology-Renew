@@ -5,7 +5,9 @@
   <MM_DestroyEggsDesc>Ordonner de briser cet œuf dès que possible.</MM_DestroyEggsDesc>
   <MM_CancelDestroyEggsLabel>Annuler la destruction de l'œuf</MM_CancelDestroyEggsLabel>
   <MM_CancelDestroyEggsDesc>Annuler l'ordre de briser cet œuf.</MM_CancelDestroyEggsDesc>
-  <AMR_AsexualReproductionProgress>Progression de la fission asexuée : {0} ({1} jours par cycle)</AMR_AsexualReproductionProgress>
+  <AMR_AsexualReproductionProgress>Progression de la fission asexuée : {0} ({1} par cycle)</AMR_AsexualReproductionProgress>
+  <AMR_AsexualReproductionDays.One>{0} jour</AMR_AsexualReproductionDays.One>
+  <AMR_AsexualReproductionDays.Many>{0} jours</AMR_AsexualReproductionDays.Many>
   <AMR_AsexualReproductionDisabled>Reproduction asexuée désactivée</AMR_AsexualReproductionDisabled>
   <AMR_DevReproduce>DEV : se reproduire maintenant</AMR_DevReproduce>
   <AMR_DevReproduceDesc>Déclencher immédiatement la reproduction asexuée.</AMR_DevReproduceDesc>

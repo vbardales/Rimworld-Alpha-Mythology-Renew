@@ -52,7 +52,10 @@ namespace AlphaMythologyRenew
             int days = (int)IntervalDays.GetValue(__instance.props);
             int ticks = (int)TicksPerDay.GetValue(__instance);
             float progress = (float)(int)Counter.GetValue(__instance) / (ticks * (float)days);
-            __result = "AMR_AsexualReproductionProgress".Translate(progress.ToStringPercent(), days);
+            string cycle = days == 1
+                ? "AMR_AsexualReproductionDays.One".Translate(days).Resolve()
+                : "AMR_AsexualReproductionDays.Many".Translate(days).Resolve();
+            __result = "AMR_AsexualReproductionProgress".Translate(progress.ToStringPercent(), cycle);
         }
 
         public static void GizmosPostfix(ThingComp __instance, ref IEnumerable<Gizmo> __result)

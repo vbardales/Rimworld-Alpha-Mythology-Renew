@@ -68,6 +68,10 @@ namespace AlphaMythologyRenew.PickleSteps
         public void Frame(PickleContext ctx, string name, float zoom, int left, int up)
         {
             var pawn = CreatureSteps.Live(ctx, name);
+            // The spawn step sets Rot4.South too, but the wait between spawn and this framing lets the
+            // pawn's own AI re-face it (wander/idle jobs), so studio7 still showed several creatures from
+            // behind despite that earlier fix. Set it again here, last, right before the capture.
+            pawn.Rotation = Rot4.South;
             Find.Selector.ClearSelection();
             Find.Selector.Select(pawn, playSound: false, forceDesignatorDeselect: false);
             var target = pawn.DrawPos + new Vector3(left, 0f, -up);

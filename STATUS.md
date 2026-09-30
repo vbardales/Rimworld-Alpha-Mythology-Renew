@@ -1,7 +1,7 @@
 ---
 localization: complete
 translation_en: complete
-translation_fr: complete
+translation_fr: partial
 mod: Alpha Mythology Renew (unofficial)
 packageId: nelim.alphamythologyrenew
 repo: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew
@@ -26,6 +26,7 @@ showcase: directly inspected; committed Preview 896 x 504 (564630 bytes), ModIco
 remaining:
   - unverified (in game, belongs to done -> tested): settings window, both routes (Mod options and hidden MainButtons via RIMMSQOL), real effect on wild spawns, persistence after restart and reload, EN and FR layout
   - unverified: English and French in-game translation acceptance, including optional integrations and wisp inspection/gizmos
+  - unverified: French review by Virginie (TRANSLATIONS.md section 3; `FRENCH_REVIEW.md` generated, not yet read by her)
   - unverified: manual gameplay and save migration
   - unverified: optional legacy integrations with their providers
   - publication: 0.1.0 pre-publication (creates the private item and its About/PublishedFileId.txt) NOT yet sent; no Workshop item exists
@@ -903,3 +904,38 @@ Virginie: the small PR first. Branch `fix-phoenix-egg-lost-in-stack` in a scratc
 ## Gallery: creatures showed their back — 2026-09-28
 
 Virginie: all pictures face north. Cause: `GenSpawn.Spawn` places a thing with Rot4.North (back to the camera) and the game is paused, so nothing turns it. `GallerySteps` now sets `pawn.Rotation = Rot4.South` after the spawn. Not verified in game: whether the wait of 30 ticks lets a wandering animal turn again. Studio pass refiled.
+
+## French review file generated — 2026-09-30
+
+Peer session (TicketDispatcher's counterpart in the "Rimworld - l10n" group) flagged TRANSLATIONS.md's new
+French gender-agreement rule and systematic-review requirement (2026-09-30): `translation_fr` reset to
+`unchecked`, this session moved to the l10n group, session title changed to `alphamythology / l10n`.
+
+Per TRANSLATIONS.md section 3, wrote `Tests/Generate-FrenchReview.cjs`: reads the shipped Keyed and
+DefInjected XML plus `Mod/Defs` (never by hand, so the columns cannot drift from the mod), writes
+`FRENCH_REVIEW.md` at the mod root (outside `Mod/`, so Steam never receives it). One table per source
+file/def type, columns Key or path / Original / English / French, in shipped order. This mod has no
+source in another language (Sarg Bjornson wrote it in English): Original repeats English, stated once at
+the top, per the section's instruction for mods with no foreign-language source.
+
+DefInjected list-item paths (e.g. `MM_Ahuizotl.lifeStages.ahuizotl_puppy.label`,
+`MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-0.parts.left_eye.customLabel`) needed resolving against
+the actual `<li>` position in `Mod/Defs`. First attempt (position = order of first appearance among only
+the *translated* siblings) undercounted: an untranslated sibling with no customLabel (e.g. a body part with
+no distinguishing label) still occupies a real `<li>` slot, so position drifted and 185 of ~710 rows failed
+to resolve. Fixed by deriving each `<li>`'s own identifier from its actual content — `customLabel` (spaces
+to `_`), else `def`, else its `Class` attribute (`XxxCompProperties_Name` -> `XxxComp_Name`, for HediffComps
+etc.), else its own `label` field (tools list items) — with a `-N` suffix for siblings that collapse to the
+same identifier (three `<li><def>Head</def>` with no customLabel become `Head-0`/`Head-1`/`Head-2`, in
+document order among just those three); position-based order is now only a fallback for lists whose `<li>`
+carry none of those fields at all (`PawnKindDef.lifeStages`, which has no name of its own — matched
+correctly here because only the named life stage exists once per position). Re-run: 0 of 626 rows
+unresolved. Verified two of this mod's own DefInjected types that read as if they were "owned by another
+mod" (`MVCF.ModDef`, `VEF.Weapons.ExpandableProjectileDef`) actually are local instances this mod defines
+itself (`MM_MagicalMenagerie`, `MM_GazeAttack` and siblings) — both resolved from `Mod/Defs` directly, no
+external mod's source needed.
+
+`translation_fr` set to `partial` (was `unchecked`): the mechanical checks and `FRENCH_REVIEW.md` are done,
+but per TRANSLATIONS.md this field cannot reach `complete` until Virginie herself reviews the French text
+— no session ever marks its own French reviewed. `remaining` carries that as `unverified`. Nothing in
+`Mod/` changed; no DLL rebuild needed.

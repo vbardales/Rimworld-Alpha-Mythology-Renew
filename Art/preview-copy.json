@@ -1,7 +1,19 @@
 {
-  "title": "Alpha Mythology",
-  "suffix": "Renew",
-  "tag": "(unofficial)",
-  "copyLines": ["Mythological creatures", "for your RimWorld colony."],
-  "iconBadge": { "file": "ModIcon-badge.png", "corner": "bottom-left", "width": 220 }
+  "title": "Alpha Mythology Renew (unofficial)",
+  "titleParts": [
+    { "text": "Alpha Mythology", "scale": 0.78 },
+    { "break": true },
+    { "text": "Renew ", "scale": 0.42, "font": "ui", "color": "secondary" },
+    { "text": "(unofficial)", "scale": 0.28, "font": "ui", "color": "secondary" }
+  ],
+  "suffix": "",
+  "tag": "",
+  "copyLines": ["Twenty-five mythological creatures", "for your RimWorld colony."],
+  "layout": "panel",
+  "panelHeight": 65,
+  "backgroundFile": "Preview.png",
+  "backgroundPosition": "center",
+  "backgroundSize": "cover",
+  "echo": { "file": "echo.png", "mode": "alpha", "preSized": true, "color": "var(--accent)", "width": 300, "height": 260, "opacity": 1, "veil": false },
+  "iconBadge": { "file": "ModIcon-badge-hires.png", "corner": "bottom-left", "width": 220, "outline": false, "veil": "radial", "veilSize": 275, "veilLeft": -55, "veilBottom": -61 }
 }

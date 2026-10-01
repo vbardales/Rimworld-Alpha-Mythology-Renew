@@ -126,13 +126,16 @@ namespace AlphaMythologyRenew.PickleSteps
             foreach (var entry in pawns)
             {
                 var pawn = entry.Key;
-                int stage = pawn.ageTracker.CurLifeStageIndex;
-                if (stage != entry.Value)
+                // The creature may already have aged into the next stage while the others were spawned (the first stage of
+                // the fenghuang, the kitsune and the Stymphalian bird is a few ticks long): what is under test is the graphic of
+                // the stage that was asked for, so that stage is read from the kind and not from the pawn's current age.
+                int stage = entry.Value;
+                if (stage >= pawn.kindDef.lifeStages.Count)
                 {
-                    failures.Add($"{pawn.kindDef.defName}: asked for life stage {entry.Value}, is in {stage}");
+                    failures.Add($"{pawn.kindDef.defName}: asked for life stage {stage}, the kind has {pawn.kindDef.lifeStages.Count}");
                     continue;
                 }
-                var lifeStage = pawn.ageTracker.CurKindLifeStage;
+                var lifeStage = pawn.kindDef.lifeStages[stage];
                 bool female = pawn.gender == Gender.Female && lifeStage.femaleGraphicData != null;
                 var data = female ? lifeStage.femaleGraphicData : lifeStage.bodyGraphicData;
                 if (data == null) { failures.Add($"{pawn.kindDef.defName} stage {stage}: no body graphic data"); continue; }

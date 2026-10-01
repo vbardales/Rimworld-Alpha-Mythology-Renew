@@ -216,8 +216,11 @@ namespace AlphaMythologyRenew.PickleSteps
                 | System.Reflection.BindingFlags.Public);
             ctx.Require(method != null, "WildAnimalSpawner has no SpawnRandomWildAnimalAt in this game build");
             var parameters = method.GetParameters();
-            ctx.Require(parameters.Length == 1 && parameters[0].ParameterType == typeof(IntVec3),
-                "SpawnRandomWildAnimalAt no longer has the (IntVec3) shape this suite expects");
+            // 1.6.4871: Boolean SpawnRandomWildAnimalAt(IntVec3 loc, Boolean canFlyIn, PawnKindDef animalKind), read from the
+            // assembly. A null kind lets the game draw it, which is the draw under test.
+            ctx.Require(parameters.Length == 3 && parameters[0].ParameterType == typeof(IntVec3)
+                && parameters[1].ParameterType == typeof(bool) && parameters[2].ParameterType == typeof(PawnKindDef),
+                "SpawnRandomWildAnimalAt no longer has the (IntVec3, bool, PawnKindDef) shape this suite expects");
             ctx.Require(map.Biome.AllWildAnimals.Any(AlphaMythologyRenewMod.IsOwnKind),
                 $"the biome '{map.Biome.defName}' of this map hosts none of this mod's creatures: use another fixture");
 
@@ -227,7 +230,7 @@ namespace AlphaMythologyRenew.PickleSteps
                 var before = new HashSet<Pawn>(map.mapPawns.AllPawns);
                 IntVec3 cell;
                 if (!CellFinder.TryFindRandomCell(map, c => c.Standable(map) && !c.Fogged(map), out cell)) continue;
-                method.Invoke(map.wildAnimalSpawner, new object[] { cell });
+                method.Invoke(map.wildAnimalSpawner, new object[] { cell, false, null });
                 var added = map.mapPawns.AllPawns.Where(p => !before.Contains(p)).ToList();
                 if (added.Count > 0) drawn.Add(added[0].kindDef);
                 foreach (var pawn in added)

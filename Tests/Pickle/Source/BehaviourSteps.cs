@@ -83,7 +83,9 @@ namespace AlphaMythologyRenew.PickleSteps
                 $"the inspection text of '{name}' does not contain '{prefix.Trim()}'. It reads: {text}");
             ctx.Assert(!text.Contains("AMR_"), $"a raw key shows in the inspection text: {text}");
             // The cycle length is a counted phrase (15 days in the Def): the plural form of the active language.
-            var cycle = "AMR_AsexualReproductionDays.Many".Translate(15).Resolve();
+            // Translate colours the number with a rich-text tag; the inspection text is read without tags on both sides.
+            var cycle = System.Text.RegularExpressions.Regex.Replace("AMR_AsexualReproductionDays.Many".Translate(15).Resolve(), "<[^>]+>", "");
+            text = System.Text.RegularExpressions.Regex.Replace(text, "<[^>]+>", "");
             ctx.Assert(text.Contains(cycle), $"the inspection text of '{name}' does not name the cycle as '{cycle}'. It reads: {text}");
         }
     }

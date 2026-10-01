@@ -188,6 +188,8 @@ namespace AlphaMythologyRenew.PickleSteps
             public int PhoenixesBefore;
         }
 
+    internal class DestroyWatch { public Pawn Colonist; }
+
         private static EggRecord TheEgg(PickleContext ctx)
         {
             var record = CreatureSteps.TryGet<EggRecord>(ctx);
@@ -264,7 +266,10 @@ namespace AlphaMythologyRenew.PickleSteps
             colonist.Notify_Teleported(false);
             var job = DestructionJob(ctx, colonist, egg);
             ctx.Require(job != null, "the colonist is offered no destruction job");
-            colonist.jobs.TryTakeOrderedJob(job);
+            bool taken = colonist.jobs.TryTakeOrderedJob(job);
+            ctx.Assert(taken && colonist.CurJob != null && colonist.CurJob.def == job.def,
+                $"the colonist did not take the destruction job (taken {taken}, current job {(colonist.CurJob == null ? "none" : colonist.CurJob.def.defName)})");
+            ctx.Set(new DestroyWatch { Colonist = colonist });
         }
 
         [Then("Alpha Mythology Renew the egg is destroyed and no phoenix has hatched from it")]
@@ -272,7 +277,9 @@ namespace AlphaMythologyRenew.PickleSteps
         {
             var record = CreatureSteps.TryGet<EggRecord>(ctx);
             ctx.Require(record != null, "no egg was spawned in this scenario");
-            ctx.Assert(record.Egg.Destroyed || !record.Egg.Spawned, "the egg is still there: the destruction job did not finish");
+            var watch = CreatureSteps.TryGet<DestroyWatch>(ctx);
+            string where = watch == null ? "" : $" (the colonist is at {watch.Colonist.Position}, the egg at {record.Egg.Position}, current job: {(watch.Colonist.CurJob == null ? "none" : watch.Colonist.CurJob.def.defName)})";
+            ctx.Assert(record.Egg.Destroyed || !record.Egg.Spawned, "the egg is still there: the destruction job did not finish" + where);
             int phoenixes = CreatureSteps.Map(ctx).mapPawns.AllPawns.Count(p => p.kindDef.defName == "MM_Phoenix");
             ctx.Assert(phoenixes == record.PhoenixesBefore, $"{phoenixes - record.PhoenixesBefore} phoenix(es) appeared although the egg was destroyed");
         }

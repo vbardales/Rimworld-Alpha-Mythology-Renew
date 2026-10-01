@@ -48,6 +48,7 @@ Feature: the phoenix dies in flames and leaves eggs
     Then Alpha Mythology Renew no colonist is offered a destruction job for the egg
     When Alpha Mythology Renew requests the destruction of the egg
     And Alpha Mythology Renew a colonist carries out the destruction job for the egg
-    And I wait 900 ticks
+    And I wait 500 ticks
+    And I wait 500 ticks
     Then Alpha Mythology Renew the egg is destroyed and no phoenix has hatched from it
     And no errors were logged

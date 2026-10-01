@@ -34,6 +34,9 @@ Feature: production and regeneration
   Scenario: a tamed Kitsune heals a colonist within its radius faster
     Given Alpha Mythology Renew spawns the tamed adult "MM_Kitsune" named "Healer" for the combat tests
     When Alpha Mythology Renew injures two colonists equally, one within 3 cells of "Healer" and one far away
-    And I wait 1500 ticks
+    # A tick wait has a real-time timeout of 5 s (base-en, 2026-10-01: 1500 ticks timed out): three shorter waits, 1500 ticks in all.
+    And I wait 500 ticks
+    And I wait 500 ticks
+    And I wait 500 ticks
     Then Alpha Mythology Renew the colonist near the healer has healed more than the one far away
     And no errors were logged

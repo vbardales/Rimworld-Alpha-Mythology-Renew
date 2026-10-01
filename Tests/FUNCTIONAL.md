@@ -40,10 +40,11 @@ Every row is automated (written, not yet played). F03's colonist execution is in
 | F13 settings | features 01 to 03, 05, 06, 07/08 (restart) and 02's real wild-animal draw; RIMMSQOL in feature 04 | mostly played once, rest written |
 | F14 animal-mod patches (added 2026-10-01) | `Tests/UnitTests/PatchTests.cs` (the three patch files applied to stand-in definitions, green, offline) and feature 18, one pass per provider (`avec-ads2`, `avec-dogsmate`, `avec-crossbreeding`): surgeries offered, `canCrossBreedWith`, the outcome extension, and the look-alikes left out | unit green, Pickle written |
 
-## What stays manual, and why it is not a test to validate (2026-10-01, for the owner to confirm)
+## What stays manual, and why it is not a test to validate (2026-10-01, confirmed by the owner in chat the same day)
 
 `tested` asks that no manual test is left. These parts of the scenarios above are not automated, and each is either not a
-test of this mod, impossible here, or covered by a definition check. None is counted as passed.
+test of this mod, impossible here, or covered by a definition check. None is counted as passed. Virginie validated the
+"not applicable", "covered" and "disclosed" states below on 2026-10-01; Achievements has its own pass (last scenario of feature 18).
 
 | Part | Reason | Proposed state |
 |---|---|---|

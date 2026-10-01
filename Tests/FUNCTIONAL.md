@@ -52,8 +52,9 @@ test of this mod, impossible here, or covered by a definition check. None is cou
 | F02 rare outcome sample, "repeat enough times" | the egg roll is a pure function proved by the unit tests (`PhoenixRules`) and the eggs by 40 deaths per life stage in feature 13 | covered |
 | F10 migration of an Animal Ark save | the older pack is private, its class names changed; migration is declared untested in `About.xml` and the README, by design | not applicable, disclosed |
 | F10 reduced Animal Ark beside this mod | no reduced Animal Ark build is available to mount; the original beside this port is the incompatibility pass (feature 11) | not applicable, the incompatibility pass stands in |
-| F11 legacy Achievements, GeneticRim | the providers are not installed on this machine (Achievements has its own `LoadFolders` branch; GeneticRim's pass crashes in its own constructor, run 4092) | unverified, disclosed; not a pass |
-| F11 A RimWorld of Magic | its pass hangs the shared machine on its own assemblies; the owner has not decided | unverified, disclosed; not a pass |
+| F11 Vanilla Genetics Expanded (the `GeneticRimPatch.xml` provider) | played green in its own pass (`avec-genetics`, 2026-09-27: 1 passed); it crashes in its own constructor only when staged with the five other providers, not alone | covered |
+| F11 A RimWorld of Magic | played green in its own pass (`avec-rwom`, run 3818, 2026-09-28: 1 passed) once JecsLite was staged; the earlier hang was a missing dependency, not the mod | covered |
+| F11 Vanilla Achievements Expanded | not installed on this machine, so its `LoadFolders` branch (`Integrations/Achievements`) was never exercised; no scenario exists for it | unverified: either a scenario and a pass (the provider downloaded, 2288125657), or disclosed as not tested |
 
 ## Scenarios
 

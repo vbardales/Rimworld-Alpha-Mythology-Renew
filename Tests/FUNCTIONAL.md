@@ -38,6 +38,22 @@ Every row is automated (written, not yet played). F03's colonist execution is in
 | F11 optional integrations | feature 10, one scenario per provider, in the optional-integration and Giddy-Up passes | written |
 | F12 Kappa harvesting with Tree Chopping Speed | feature 17: both halves, each in the baseline and with Tree Chopping Speed Stat staged (`avec-treechop` pass, Workshop 2566231583): the bare call `PawnWillingToCutPlant_Job`, and the real path of the Workshop report (a growing zone with a mature crop, a tamed kappa, VEF's own `JobGiver_Harvest` asked for a job, no exception, no error logged). The report says the original kappa raised a NullReferenceException with that mod for lack of its stat: the provider scenarios may fail, which would be a defect of the port on that provider | written, provider pass to file |
 | F13 settings | features 01 to 03, 05, 06, 07/08 (restart) and 02's real wild-animal draw; RIMMSQOL in feature 04 | mostly played once, rest written |
+| F14 animal-mod patches (added 2026-10-01) | `Tests/UnitTests/PatchTests.cs` (the three patch files applied to stand-in definitions, green, offline) and feature 18, one pass per provider (`avec-ads2`, `avec-dogsmate`, `avec-crossbreeding`): surgeries offered, `canCrossBreedWith`, the outcome extension, and the look-alikes left out | unit green, Pickle written |
+
+## What stays manual, and why it is not a test to validate (2026-10-01, for the owner to confirm)
+
+`tested` asks that no manual test is left. These parts of the scenarios above are not automated, and each is either not a
+test of this mod, impossible here, or covered by a definition check. None is counted as passed.
+
+| Part | Reason | Proposed state |
+|---|---|---|
+| F06 automatic-fire toggle | the toggle is VEF's, not this mod's ("we do not test the game", AUDIT.md) | not applicable |
+| F07 hatch targets, hatch durations, trainability | values of the Defs, proved offline by Check-Mod; a run would only re-read them | not applicable (offline) |
+| F02 rare outcome sample, "repeat enough times" | the egg roll is a pure function proved by the unit tests (`PhoenixRules`) and the eggs by 40 deaths per life stage in feature 13 | covered |
+| F10 migration of an Animal Ark save | the older pack is private, its class names changed; migration is declared untested in `About.xml` and the README, by design | not applicable, disclosed |
+| F10 reduced Animal Ark beside this mod | no reduced Animal Ark build is available to mount; the original beside this port is the incompatibility pass (feature 11) | not applicable, the incompatibility pass stands in |
+| F11 legacy Achievements, GeneticRim | the providers are not installed on this machine (Achievements has its own `LoadFolders` branch; GeneticRim's pass crashes in its own constructor, run 4092) | unverified, disclosed; not a pass |
+| F11 A RimWorld of Magic | its pass hangs the shared machine on its own assemblies; the owner has not decided | unverified, disclosed; not a pass |
 
 ## Scenarios
 

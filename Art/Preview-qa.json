@@ -16,19 +16,13 @@
           "familyName": "Segoe UI Semibold",
           "postScriptName": "SegoeUI-Semibold",
           "isCustomFont": false,
-          "glyphCount": 5
+          "glyphCount": 17
         },
         {
           "familyName": "RimWordFont",
           "postScriptName": "RimWordFont",
           "isCustomFont": true,
           "glyphCount": 14
-        },
-        {
-          "familyName": "Segoe UI",
-          "postScriptName": "SegoeUI",
-          "isCustomFont": false,
-          "glyphCount": 12
         }
       ]
     },
@@ -39,14 +33,14 @@
     ".tag": {
       "bounds": {
         "x": 149.015625,
-        "y": 133.34375,
-        "width": 141.28125,
+        "y": 138.1875,
+        "width": 148.234375,
         "height": 40
       },
       "fonts": [
         {
-          "familyName": "Segoe UI",
-          "postScriptName": "SegoeUI",
+          "familyName": "Segoe UI Semibold",
+          "postScriptName": "SegoeUI-Semibold",
           "isCustomFont": false,
           "glyphCount": 12
         }

@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <MM_EggGriffinFertilized.label>œuf de griffon (fécondé)</MM_EggGriffinFertilized.label>
+  <MM_EggGriffinFertilized.label>œuf de griffon (féc.)</MM_EggGriffinFertilized.label>
   <MM_EggGriffinFertilized.description>Un œuf de griffon fécondé. Il peut se manger cru, mais il est bien meilleur cuit. Si tout se passe bien, un griffon devrait en éclore.</MM_EggGriffinFertilized.description>
-  <MM_EggPhoenixFertilized.label>œuf de phénix (fécondé)</MM_EggPhoenixFertilized.label>
+  <MM_EggPhoenixFertilized.label>œuf de phénix (féc.)</MM_EggPhoenixFertilized.label>
   <MM_EggPhoenixFertilized.description>Un œuf de phénix fécondé. Si tout se passe bien, un poussin de phénix devrait en éclore. Il peut se manger cru, mais il est bien meilleur cuit.</MM_EggPhoenixFertilized.description>
-  <MM_EggSalamanderFertilized.label>œuf de salamandre (fécondé)</MM_EggSalamanderFertilized.label>
+  <MM_EggSalamanderFertilized.label>œuf de salamandre (féc.)</MM_EggSalamanderFertilized.label>
   <MM_EggSalamanderFertilized.description>Un œuf de salamandre fécondé. Il peut se manger cru, mais il est bien meilleur cuit. Si tout se passe bien, une salamandre devrait en éclore.</MM_EggSalamanderFertilized.description>
-  <MM_EggFenghuangFertilized.label>œuf de fenghuang (fécondé)</MM_EggFenghuangFertilized.label>
+  <MM_EggFenghuangFertilized.label>œuf de fenghuang (féc.)</MM_EggFenghuangFertilized.label>
   <MM_EggFenghuangFertilized.description>Un œuf de fenghuang fécondé. Il peut se manger cru, mais il est bien meilleur cuit. Si tout se passe bien, un fenghuang devrait en éclore.</MM_EggFenghuangFertilized.description>
-  <MM_EggStymphalianBirdFertilized.label>œuf d'oiseau du Stymphale (fécondé)</MM_EggStymphalianBirdFertilized.label>
+  <MM_EggStymphalianBirdFertilized.label>œuf d'oiseau du Stymphale (féc.)</MM_EggStymphalianBirdFertilized.label>
   <MM_EggStymphalianBirdFertilized.description>Un œuf d'oiseau du Stymphale fécondé. Il peut se manger cru, mais il est bien meilleur cuit. Si tout se passe bien, un oiseau du Stymphale devrait en éclore.</MM_EggStymphalianBirdFertilized.description>
-  <MM_EggIeltxuFertilized.label>œuf d'ieltxu (fécondé)</MM_EggIeltxuFertilized.label>
+  <MM_EggIeltxuFertilized.label>œuf d'ieltxu (féc.)</MM_EggIeltxuFertilized.label>
   <MM_EggIeltxuFertilized.description>Un œuf d'ieltxu fécondé. Il peut se manger cru, mais il est bien meilleur cuit. Si tout se passe bien, un ieltxu devrait en éclore.</MM_EggIeltxuFertilized.description>
-  <MM_EggBasiliskFertilized.label>œuf de basilic (fécondé)</MM_EggBasiliskFertilized.label>
+  <MM_EggBasiliskFertilized.label>œuf de basilic (féc.)</MM_EggBasiliskFertilized.label>
   <MM_EggBasiliskFertilized.description>Un œuf de basilic fécondé. Il peut se manger cru, mais il est bien meilleur cuit. Si tout se passe bien, un basilic devrait en éclore.</MM_EggBasiliskFertilized.description>
   <MM_LightMagicalLeather.label>cuir magique léger</MM_LightMagicalLeather.label>
   <MM_LightMagicalLeather.description>Ce cuir brille d'une étrange lumière éthérée. Comparé à la plupart des cuirs légers, il est nettement plus résistant et isole un peu mieux de toutes les températures.</MM_LightMagicalLeather.description>
   <MM_HeavyMagicalLeather.label>cuir magique épais</MM_HeavyMagicalLeather.label>
   <MM_HeavyMagicalLeather.description>Ce cuir épais brille d'une étrange lumière éthérée. Comparé à la plupart des cuirs, il est nettement plus résistant et isole un peu mieux de toutes les températures.</MM_HeavyMagicalLeather.description>
-  <MM_EggGriffinUnfertilized.label>œuf de griffon (non fécondé)</MM_EggGriffinUnfertilized.label>
+  <MM_EggGriffinUnfertilized.label>œuf de griffon (non féc.)</MM_EggGriffinUnfertilized.label>
   <MM_EggGriffinUnfertilized.description>Un œuf de griffon non fécondé. Il peut se manger cru, mais il est bien meilleur cuit.</MM_EggGriffinUnfertilized.description>
-  <MM_EggBasiliskUnfertilized.label>œuf de basilic (non fécondé)</MM_EggBasiliskUnfertilized.label>
+  <MM_EggBasiliskUnfertilized.label>œuf de basilic (non féc.)</MM_EggBasiliskUnfertilized.label>
   <MM_EggBasiliskUnfertilized.description>Un œuf de basilic non fécondé. Il peut se manger cru, mais il est bien meilleur cuit.</MM_EggBasiliskUnfertilized.description>
-  <MM_EggFenghuangUnfertilized.label>œuf de fenghuang (non fécondé)</MM_EggFenghuangUnfertilized.label>
+  <MM_EggFenghuangUnfertilized.label>œuf de fenghuang (non féc.)</MM_EggFenghuangUnfertilized.label>
   <MM_EggFenghuangUnfertilized.description>Un œuf de fenghuang non fécondé. Il peut se manger cru, mais il est bien meilleur cuit.</MM_EggFenghuangUnfertilized.description>
-  <MM_EggIeltxuUnfertilized.label>œuf d'ieltxu (non fécondé)</MM_EggIeltxuUnfertilized.label>
+  <MM_EggIeltxuUnfertilized.label>œuf d'ieltxu (non féc.)</MM_EggIeltxuUnfertilized.label>
   <MM_EggIeltxuUnfertilized.description>Un œuf d'ieltxu non fécondé. Il peut se manger cru, mais il est bien meilleur cuit.</MM_EggIeltxuUnfertilized.description>
-  <MM_EggStymphalianBirdUnfertilized.label>œuf d'oiseau du Stymphale (non fécondé)</MM_EggStymphalianBirdUnfertilized.label>
+  <MM_EggStymphalianBirdUnfertilized.label>œuf d'oiseau du Stymphale (non féc.)</MM_EggStymphalianBirdUnfertilized.label>
   <MM_EggStymphalianBirdUnfertilized.description>Un œuf d'oiseau du Stymphale non fécondé. Il peut se manger cru, mais il est bien meilleur cuit.</MM_EggStymphalianBirdUnfertilized.description>
-  <MM_EggSalamanderUnfertilized.label>œuf de salamandre (non fécondé)</MM_EggSalamanderUnfertilized.label>
+  <MM_EggSalamanderUnfertilized.label>œuf de salamandre (non féc.)</MM_EggSalamanderUnfertilized.label>
   <MM_EggSalamanderUnfertilized.description>Un œuf de salamandre non fécondé. Il peut se manger cru, mais il est bien meilleur cuit.</MM_EggSalamanderUnfertilized.description>
   <MM_Quill.label>aiguillon</MM_Quill.label>
   <MM_Tremor.label>secousse</MM_Tremor.label>

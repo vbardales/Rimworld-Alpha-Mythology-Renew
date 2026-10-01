@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <MM_Ahuizotl.label>ahuizotl</MM_Ahuizotl.label>
-  <MM_Ahuizotl.labelPlural>ahuizotl</MM_Ahuizotl.labelPlural>
+  <MM_Ahuizotl.labelPlural>ahuizotls</MM_Ahuizotl.labelPlural>
   <MM_Ahuizotl.lifeStages.ahuizotl_puppy.label>petit ahuizotl</MM_Ahuizotl.lifeStages.ahuizotl_puppy.label>
   <MM_Ahuizotl.lifeStages.ahuizotl_puppy.labelPlural>petits ahuizotls</MM_Ahuizotl.lifeStages.ahuizotl_puppy.labelPlural>
   <MM_Basilisk.label>basilic</MM_Basilisk.label>
@@ -23,7 +23,7 @@
   <MM_Ieltxu.label>ieltxu</MM_Ieltxu.label>
   <MM_Kappa.label>kappa</MM_Kappa.label>
   <MM_Kitsune.label>kitsune</MM_Kitsune.label>
-  <MM_Kitsune.labelPlural>kitsune</MM_Kitsune.labelPlural>
+  <MM_Kitsune.labelPlural>kitsunes</MM_Kitsune.labelPlural>
   <MM_Kitsune.lifeStages.kitsune_puppy.label>petit kitsune</MM_Kitsune.lifeStages.kitsune_puppy.label>
   <MM_Kitsune.lifeStages.kitsune_puppy.labelPlural>petits kitsunes</MM_Kitsune.lifeStages.kitsune_puppy.labelPlural>
   <MM_LernaeanHydra.label>hydre de Lerne</MM_LernaeanHydra.label>

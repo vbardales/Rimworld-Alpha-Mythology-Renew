@@ -1,0 +1,5 @@
+# Pass "avec ads2": A Dog Said... Animal Prosthetics 2 alone (SamBucher.ADogSaidAnimalProsthetics2).
+# Its own optional loadAfter mods are not staged; the patch needs only ADS_Cat1.
+SamBucher.ADogSaidAnimalProsthetics2   3238353862
+nelim.resolvethisinstead   path:ResolveThisInstead/Mod
+Mlie.UseThisInstead        3396308787

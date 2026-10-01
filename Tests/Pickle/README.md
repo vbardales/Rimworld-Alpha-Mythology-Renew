@@ -48,6 +48,9 @@ What remains unplayed stays `unverified` in `STATUS.md`.
 | A RimWorld of Magic | `10-integrations`, `-DepMap wsl-deps.avec-rwom.map` | English | **not played**: hung the shared machine twice on its own assemblies, awaiting the owner's word |
 | incompatibility | `11-behaviour-and-incompatibility::the incompatibility warns about`, `-DepMap wsl-deps.incompat-magicalmenagerie.map` | English | the original beside this port: the documented symptom, asserted with this mod's own `an error matching` step (Pickle 4.9.1 has none) |
 | treechop | `17-plants`, `-DepMap wsl-deps.avec-treechop.map` | English | F12 with Tree Chopping Speed Stat |
+| Animal Prosthetics 2 | `18-animal-mods`, `-DepMap wsl-deps.avec-ads2.map` | English | the surgeries offered to the listed creatures, none to the three left out (written 2026-10-01, never played) |
+| Dogs mate | `18-animal-mods`, `-DepMap wsl-deps.avec-dogsmate.map` | English | the four creatures breed with their own species, the look-alikes do not (never played) |
+| Better Crossbreeding | `18-animal-mods`, `-DepMap wsl-deps.avec-crossbreeding.map` | English | the pairs on both races and the outcome extension on the mother (never played) |
 
 Every map, the default `wsl-deps.map` included, also stages Resolve This Instead by `path:` and its dependency Use This
 Instead (a wsl-deps map is the only place a `path:` line works; `wsl-ids.map` only resolves Workshop ids).

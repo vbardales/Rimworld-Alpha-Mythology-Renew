@@ -1,7 +1,7 @@
 ---
 localization: complete
 translation_en: complete
-translation_fr: partial
+translation_fr: complete
 mod: Alpha Mythology Renew (unofficial)
 packageId: nelim.alphamythology
 repo: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew
@@ -11,11 +11,11 @@ git_root: C:/Users/nelim/Documents/rimworld/AlphaMythologyRenew
 git_isolation: standalone; removed from parent index and ignored there
 remote: origin https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew.git
 maintainer: Codex task dedicated to AlphaMythologyRenew; maintain this STATUS.md as work progresses
-stage: showcase
-workflow_stage: l10n
+stage: preTest
+workflow_stage: preTest
 settings_audit: complete
 audit_at: 2026-10-01
-audit_revision: c3edfb2 (clean tree, pushed)
+audit_revision: bedc666 (French text as of 990f571; Preview files modified by another session, uncommitted)
 automated_tests: passed; static contracts (339 assertions, 7 negative cases) and 13 settings-rule unit tests
 xml_tests: passed
 functional_tests: unverified; not run in game
@@ -27,7 +27,6 @@ showcase: directly inspected; committed Preview 896 x 504 (564630 bytes), ModIco
 remaining:
   - unverified (in game, belongs to done -> tested): settings window, both routes (Mod options and hidden MainButtons via RIMMSQOL), real effect on wild spawns, persistence after restart and reload, EN and FR layout
   - unverified: English and French in-game translation acceptance, including optional integrations and wisp inspection/gizmos
-  - unverified: French review by Virginie of the changed rows only (`AMR_AsexualReproductionProgress`, `AMR_AsexualReproductionDays.One` and `.Many` in `FRENCH_REVIEW.md`); the rest was validated on 2026-10-01 (revision 9a1c1c3)
   - unverified (in game): the wisp inspection text with the new plural keys, English and French; `Tests/Check-Translations.py` not run (no Python here)
   - feature: animal-mod rule of 2026-09-28 (PUBLISHING.md, three optional guarded patches before preTest): Nocturnal Animals is done; A Dog Said... Animal Prosthetics 2 and Better Crossbreeding have no patch and no written reason yet
   - unverified (reds with no green replay on disk; cause not re-established by this audit, the STATUS history calls some of them suite defects): the 2026-09-26 full run failed hydra, stymphalian, wisp ranged attacks, salamander egg, chimera milk, the 25-creature spawn check and the wild draw scenario; only the phoenix ones were replayed. Baseline EN/FR not re-run on the current revision
@@ -985,3 +984,7 @@ Review pass, 2026-10-01: `MM_Ahuizotl.description` retreat sentence reworded ("C
 Review pass 3, 2026-10-01 (`fc4bd4b`): role labels without gender (`MM_DamageRangedPoison` "Attaque toxique à distance", `MM_ParalizingRanged` "Attaque paralysante à distance", `MM_Boomer` "Explose à la mort", `MM_Tank` "Première ligne"); `MM_Ahuizotl.labelPlural` "ahuizotls" and `MM_Kitsune.labelPlural` "kitsunes" (were singular); egg labels "(féc.)" / "(non féc.)", short like the English "(fert.)". `FRENCH_REVIEW.md` regenerated from it. `translation_fr` stays `partial` until Virginie reads the changed rows.
 
 Review pass 4, 2026-10-01 (`990f571`): `MM_DamageRanged` "Combat à distance". Virginie confirmed the toxic, paralysing, Boomer and Tank labels. `FRENCH_REVIEW.md` regenerated from it.
+
+## French review confirmed — 2026-10-01
+
+Translation audit, dated line: reviewer Virginie, 2026-10-01, revision `990f571` (French text; `FRENCH_REVIEW.md` generated from it at `bedc666`), corrections requested: the six of 2026-09-30, two micro-corrections, plural keys, Ahuizotl sentence, gender-neutral role labels (`MM_DamageRangedPoison`, `MM_ParalizingRanged`, `MM_Boomer`, `MM_Tank`, `MM_DamageRanged`), `ahuizotls`/`kitsunes`, egg labels "(féc.)", all applied and re-read; confirmed in chat. `translation_fr: complete` on her word, written by the session that did not review it. `localization`, `translation_en`, `translation_fr` are all `complete`: `options -> l10n` holds, `l10n -> preTest` holds on the dependency check of 2026-09-26 (no dependency change since). Retained state `stage: preTest`, `workflow_stage: preTest`; session title `alphamythology / preTest`. `done` is not claimed: open reds and the animal-mod patches stay in `remaining`. Any later French change resets `translation_fr` to `unchecked`.

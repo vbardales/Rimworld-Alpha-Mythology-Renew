@@ -28,7 +28,7 @@ remaining:
   - unverified (in game, belongs to done -> tested): settings window, both routes (Mod options and hidden MainButtons via RIMMSQOL), real effect on wild spawns, persistence after restart and reload, EN and FR layout
   - unverified: English and French in-game translation acceptance, including optional integrations and wisp inspection/gizmos
   - unverified (in game): the wisp inspection text with the new plural keys, English and French; `Tests/Check-Translations.py` not run (no Python here)
-  - feature: animal-mod rule of 2026-09-28 (PUBLISHING.md, three optional guarded patches before preTest): Nocturnal Animals is done; A Dog Said... Animal Prosthetics 2 and Better Crossbreeding have no patch and no written reason yet
+  - feature: animal-mod rule of 2026-09-28, now four integrations (PUBLISHING.md, patches optional and guarded, before preTest): Nocturnal Animals is done; A Dog Said... Animal Prosthetics 2, Better Crossbreeding and Dogs mate (Continued, `Mlie.DogsMate`, added 2026-10-01) have no patch and no written reason yet
   - unverified (reds with no green replay on disk; cause not re-established by this audit, the STATUS history calls some of them suite defects): the 2026-09-26 full run failed hydra, stymphalian, wisp ranged attacks, salamander egg, chimera milk, the 25-creature spawn check and the wild draw scenario; only the phoenix ones were replayed. Baseline EN/FR not re-run on the current revision
   - unverified: manual gameplay and save migration
   - unverified: optional legacy integrations with their providers

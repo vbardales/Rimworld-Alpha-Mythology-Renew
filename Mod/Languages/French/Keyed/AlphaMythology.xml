@@ -13,7 +13,7 @@
   <AMR_DevReproduceDesc>Déclencher immédiatement la reproduction asexuée.</AMR_DevReproduceDesc>
   <MM_Boomer>Explose à la mort</MM_Boomer>
   <MM_BoomerDesc>Cet animal explose à sa mort.</MM_BoomerDesc>
-  <MM_DamageRanged>Attaquant à distance</MM_DamageRanged>
+  <MM_DamageRanged>Combat à distance</MM_DamageRanged>
   <MM_DamageRangedDOTDesc>Cet animal utilise des attaques à distance qui infligent des dégâts sur la durée. L'engager au corps à corps n'est pas forcément le meilleur usage de ses capacités.</MM_DamageRangedDOTDesc>
   <MM_DamageRangedDesc>Cet animal utilise des attaques à distance pour blesser ses adversaires. L'engager au corps à corps n'est pas forcément le meilleur usage de ses capacités.</MM_DamageRangedDesc>
   <MM_DamageRangedPoison>Attaque toxique à distance</MM_DamageRangedPoison>

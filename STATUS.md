@@ -1004,3 +1004,17 @@ Manual-test table validated, 2026-10-01: Virginie confirmed in chat the "What st
 ## Studio8 (ticket 8c3f) read — 2026-10-01
 
 Tree `153e7de`-era (run played the tree of its turn). `exitReason: passed`, 7 played of 7 discovered, 7 green. Opened all seven pictures: the griffin, hound, phoenix, unicorn, manticore and pegasus now face south (head toward the camera), fill the frame and are not cut; the fixture colonist Miel stands beside the phoenix and the manticore, Miel and a second colonist show at the edge of the griffin and the settings pictures. The unicorn stays the weakest (narrow white sprite, about 90 px wide, low contrast); the pegasus sits among busy flowers. Picture 7 is the full screen with the game UI (colonist bar, Learning helper, bottom bar): the cropped copy `...-cropped.png` made with `Tests/Crop-SettingsShot.ps1` is the one for the page. The order and the unicorn call are still Virginie's. `Evidence/studio7` deleted (superseded), `report.html` of studio8 deleted.
+
+## Baseline English read (fa4b, base-en) — 2026-10-01
+
+80 discovered, 47 green, 7 red, 26 skipped (`@requires`), `exitReason: failed`. I filed it without the PLAIN filter, so it played the restart reader without its writer: one red is my filing, not a defect. The seven, read from `summary.json`:
+
+- Restart reader alone: my filing mistake (the pair is `-Filter 07-restart-write -Then 08-restart-read`, and PLAIN excludes both). Refiled as 41a1.
+- Wild draw: `SpawnRandomWildAnimalAt` is `(IntVec3 loc, bool canFlyIn, PawnKindDef animalKind)` in 1.6.4871 (read from the assembly by reflection); the step expected one argument. Fixed, null kind lets the game draw.
+- Wisp text: the output was right ("Asexual fission progress: 0% (15 days per cycle)"); my assertion compared against the rich-text-coloured `15 days`. Tags stripped on both sides.
+- 25 creatures: fenghuang, kitsune, Stymphalian bird "asked for life stage 0, is in 1": their first stage is a few ticks long and they aged while the others were spawned. The step now reads the asked stage from the kind.
+- Destruction: the egg is still there after 900 ticks, the same red as phoenix and phoenix2, not explained. The step now checks the colonist took the job, the wait is 1000 ticks, and the failure text names the colonist's job and positions. If it stays red this is a real finding about VEF's job, not about this port.
+- Minotaur: the Tremor projectile (Blunt 20) can miss; a second volley added to the outline.
+- Kitsune: `I wait 1500 ticks` timed out at 5 s; three waits of 500.
+
+Requests: fix-en (4c41, the six scenarios above), restart pair (41a1); the unfiltered French baseline 6a49 is running (it will show the same restart red); 69f7 (a PLAIN French) cancelled as a duplicate of it. Code commit `2bf9365`. `Evidence/base-en`: `report.html` and `messages.ndjson` (30 MB) deleted.

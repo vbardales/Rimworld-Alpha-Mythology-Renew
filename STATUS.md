@@ -983,3 +983,5 @@ Retained state: `stage: showcase`, `workflow_stage: l10n` (first failing transit
 Review pass, 2026-10-01: `MM_Ahuizotl.description` retreat sentence reworded ("Cela rend la retraite difficile au corps à corps.") at `4056203`; `FRENCH_REVIEW.md` regenerated from it. `translation_fr` stays `partial` until Virginie reads the changed rows (this one and the three plural rows).
 
 Review pass 3, 2026-10-01 (`fc4bd4b`): role labels without gender (`MM_DamageRangedPoison` "Attaque toxique à distance", `MM_ParalizingRanged` "Attaque paralysante à distance", `MM_Boomer` "Explose à la mort", `MM_Tank` "Première ligne"); `MM_Ahuizotl.labelPlural` "ahuizotls" and `MM_Kitsune.labelPlural` "kitsunes" (were singular); egg labels "(féc.)" / "(non féc.)", short like the English "(fert.)". `FRENCH_REVIEW.md` regenerated from it. `translation_fr` stays `partial` until Virginie reads the changed rows.
+
+Review pass 4, 2026-10-01 (`990f571`): `MM_DamageRanged` "Combat à distance". Virginie confirmed the toxic, paralysing, Boomer and Tank labels. `FRENCH_REVIEW.md` regenerated from it.

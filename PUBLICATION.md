@@ -26,6 +26,9 @@ Checked in the sources, not from intent.
 | Resolve This Instead (`nelim.resolvethisinstead`, no Workshop id yet) | hard dependency, decided by Virginie 2026-09-26 | `About.xml` modDependencies; `Mod/About/ResolveThisInstead.xml` vouches for Nature's Pretty Sweet; unpublished, staged by `path:`; **it needs a public Workshop page before this mod's 1.0.0** (its own README, BACKLOG.md). Its own dependency, Use This Instead (3396308787, Mlie, MIT), is loaded through it and credited in THANKS |
 | Vanilla Achievements Expanded | optional | `Mod/LoadFolders.xml` branch `IfModActive="vanillaexpanded.achievements"` |
 | Eight other providers (Advanced Biomes, Genetics, GiddyUp, Elves, Nature's Pretty Sweet, Nocturnal Animals, RimWorld of Magic, Vanilla Cooking Expanded) | optional, never a dependency | `Mod/Patches/AlphaMythology/*Patch.xml`, all `PatchOperationFindMod` |
+| A Dog Said... Animal Prosthetics 2 (`SamBucher.ADogSaidAnimalProsthetics2`, 3238353862) | optional, never a dependency; `loadBefore` | `AnimalProsthetics2Patch.xml` (guard on `ADS_Cat1`), 22 animals in the three categories by vanilla analogue, 3 left out with the reason in the file header (2026-10-01) |
+| Dogs mate (Continued) (`Mlie.DogsMate`, 2441132298) | optional, never a dependency | `DogsMatePatch.xml`: Cerberus, Erymanthian boar, Ceryneian hind and Pegasus join the Dog, Pig, Deer and Horse groups; the others left out with the reason in the file header (2026-10-01) |
+| Better Crossbreeding (`DizzyEevee.BetterCrossbreeding`, 3520675842) | optional, never a dependency | `BetterCrossbreedingPatch.xml`: the same four pairs, both directions, calf Random (2026-10-01) |
 | RIMMSQOL | not a dependency; reveals the hidden settings shortcut | dev-only pass `wsl-deps.avec-rimmsqol.map` |
 | DLC | none required | one `MayRequire="Ludeon.RimWorld.Biotech"` in the Defs; `supportedVersions` 1.6 only, no DLC branch in `LoadFolders.xml` |
 | Incompatible | `sarg.magicalmenagerie` (the original) | `About.xml` `incompatibleWith`; pass run 2026-09-27 (778c): real symptom found and confirmed — both mods declare `PawnKindDef`s under the same defNames, and `NullReferenceException` in `BiomeDef.CommonalityOfAnimal` follows the first time the wild-animal spawner ticks. `STATUS.md` has the detail. |
@@ -128,6 +131,9 @@ Method and register: `../WORKSHOP_COMMENTS.md`. A recipient already `posted` the
 | Nature's Pretty Sweet (Continued) | 3542949511 | absent | same, after settling the name guard (see STATUS.md) |
 | Lord of the Rims - Elves (Continued) | 3548255064 | absent | same; a "(Continued)" page: credit both the original author and the maintainer (zal): read the page to name them |
 | Giddy-Up 2 - Continued | 3674332861 | absent | same; the patch comment names Roolo, Owlchemist and dav9670 before MemeGoddess: read the page before crediting |
+| A Dog Said... Animal Prosthetics 2 (Sam Bucher) | 3238353862 | absent | to draft, after the item is public; patch written 2026-10-01, not yet seen working in game |
+| Better Crossbreeding (DizzyEevee) | 3520675842 | absent | to draft; patch written 2026-10-01, not yet seen working in game |
+| Dogs mate (Continued) (Mlie, after Revolus) | 2441132298 | absent | to draft: credit Mlie and Revolus on the Continued page, in one message (WORKSHOP_COMMENTS.md); patch written 2026-10-01, not yet seen working in game |
 | Tree Chopping Speed Stat | 2566231583 | absent | not a patch guard, a known-issue check (F12, feature 17); its scenario played green (8421): the kappa's `VBY_TreeChopWorkSpeed` NullReferenceException the original's page describes did not reproduce here. Register row and draft to write, credit velcroboy333. |
 
 **The original's page: do not draft yet.** A comment there announces a port published without the author's

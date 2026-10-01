@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  Dogs mate (Continued) (Mlie.DogsMate, Workshop 2441132298, Mlie after Revolus).
+
+  Since 1.6 added crossbreeding the mod uses the vanilla system. It still keeps a list of animal groups,
+  Revolus.DogsMate.AnimalGroupDef (1.6/Defs/CompatibleSpecies/*.xml), each with a <pawnKinds> list; at game
+  start it makes every kind of a group mate with the others, and it shows "Can mate with" on the info card.
+  Its own compatibility patches do the same thing: add a PawnKindDef defName to the group's pawnKinds.
+
+  Four of our animals are described, in their own text, as a member of a vanilla group:
+
+    MM_Cerberus           "a three-headed dog"                Dog   (Husky, LabradorRetriever, YorkshireTerrier)
+    MM_ErymanthianBoar    "a gargantuan, monstrous wild hog"  Pig   (WildBoar, Pig)
+    MM_CeryneianHind      "the form of an enormous deer"      Deer  (Deer, Elk, Caribou)
+    MM_Pegasus            "a mythical winged divine horse"    Horse (Horse)
+
+  NOT GROUPED, on purpose. The text never says the animal IS one of the group, only that it looks like
+  one: Ahuizotl ("dog-like"), Kitsune ("fox-like"), Catoblepas ("the body of a cape buffalo"), Qilin
+  ("shaped like a deer", partially scaled), Wild Minotaur and Xiezhi (a bull; a lion and a goat: no group
+  covers them), Kappa (human-like with a carapace). The others have no vanilla group at all: Unicorn (the
+  text names no animal), Griffin, Manticore, Chimera, the birds (Phoenix, Fenghuang, Ieltxu, Stymphalian
+  Bird), the snakes (Basilisk, Salamander, Tlilcoatl), Lernaean Hydra, Lesser Wyvern, Will-o'-Wisp.
+
+  The guard is a PatchOperationConditional on the group itself (Dogs mate's own patches guard on the
+  ThingDef). Without Dogs mate the group does not exist, the xpath selects nothing, and the operation
+  reports success and logs nothing. No load order: the groups are Defs, read after every patch, and the
+  crosscheck runs at game start.
+
+  The same four pairs are written for Better Crossbreeding in BetterCrossbreedingPatch.xml.
+-->
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Dog"]/pawnKinds</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Dog"]/pawnKinds</xpath>
+			<value>
+				<li>MM_Cerberus</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Pig"]/pawnKinds</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Pig"]/pawnKinds</xpath>
+			<value>
+				<li>MM_ErymanthianBoar</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Deer"]/pawnKinds</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Deer"]/pawnKinds</xpath>
+			<value>
+				<li>MM_CeryneianHind</li>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Horse"]/pawnKinds</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/Revolus.DogsMate.AnimalGroupDef[defName="Horse"]/pawnKinds</xpath>
+			<value>
+				<li>MM_Pegasus</li>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

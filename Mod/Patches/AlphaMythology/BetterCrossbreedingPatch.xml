@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  Better Crossbreeding (DizzyEevee.BetterCrossbreeding, Workshop 3520675842).
+
+  HOW THE TWO HALVES WORK. Which animals may mate is decided by vanilla, and by the MALE only:
+  JobGiver_Mate looks for a fertile female of the male's own def, then of each def in the male's own
+  <race><canCrossBreedWith>. What is born is decided by the mod: it reads a DZY.CrossBreeding.Extension on
+  the MOTHER's PawnKindDef, whose <outcomes> are keyed by the father's kind (Maternal, Paternal, Random,
+  or Other with weighted children). A mother without the extension keeps the vanilla result, her own kind.
+  So a pair needs the list on the male's race AND the extension on the mother's kind, in both directions,
+  for both parents to be able to sire.
+
+  THE CLASS NAME. The mod's own Example/Patches/Example.xml writes Class="DZY.Crossbreeding.Extension",
+  with a lower-case b. The compiled assembly declares DZY.CrossBreeding.Extension, capital B. This file uses
+  the assembly's spelling; a patch copied from the Example would name a type that does not exist.
+
+  WHAT THIS FILE DECIDES. The four animals whose own text says they are a member of a vanilla species,
+  the same four pairs as DogsMatePatch.xml (the reasons for each, and for the animals left out, are there):
+
+    MM_Cerberus <-> Husky, LabradorRetriever, YorkshireTerrier
+    MM_ErymanthianBoar <-> WildBoar, Pig
+    MM_CeryneianHind <-> Deer, Elk, Caribou
+    MM_Pegasus <-> Horse
+
+  The calf is either parent's kind on a coin flip (Random), as for any two races of one species.
+  Every pair has one animal of this mod: a pairing between two vanilla animals belongs to Animal
+  Naturally, not here (owner's rule of 2026-09-28).
+
+  A vanilla animal is patched only to add its new partner. Each list is created if the race has none, and
+  appended to if another mod already made one: a plain Add on <race> would write a second
+  <canCrossBreedWith> and silently replace the first. The extension is created only when the kind does not
+  carry one already, for the same reason.
+
+  Everything sits inside one PatchOperationFindMod on the mod's display name, so without Better
+  Crossbreeding this file changes nothing and logs nothing. No load order: the extension is an XML node
+  parsed after every assembly is loaded.
+-->
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Better Crossbreeding</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- ===== Who may mate: the male's race lists the females it will seek ===== -->
+
+				<!-- MM_Cerberus: seeks Husky, LabradorRetriever, YorkshireTerrier -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="MM_Cerberus"]/race/canCrossBreedWith</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="MM_Cerberus"]/race/canCrossBreedWith</xpath>
+						<value>
+							<li>Husky</li>
+							<li>LabradorRetriever</li>
+							<li>YorkshireTerrier</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="MM_Cerberus"]/race</xpath>
+						<value>
+							<canCrossBreedWith>
+								<li>Husky</li>
+								<li>LabradorRetriever</li>
+								<li>YorkshireTerrier</li>
+							</canCrossBreedWith>
+						</value>
+					</nomatch>
+				</li>
+
+				<!-- Husky: seeks MM_Cerberus -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Husky"]/race/canCrossBreedWith</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Husky"]/race/canCrossBreedWith</xpath>
+						<value>
+							<li>MM_Cerberus</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Husky"]/race</xpath>
+						<value>
+							<canCrossBreedWith>
+								<li>MM_Cerberus</li>
+							</canCrossBreedWith>
+						</value>
+					</nomatch>
+				</li>
+
+				<!-- LabradorRetriever: seeks MM_Cerberus -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="LabradorRetriever"]/race/canCrossBreedWith</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LabradorRetriever"]/race/canCrossBreedWith</xpath>
+						<value>
+							<li>MM_Cerberus</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="LabradorRetriever"]/race</xpath>
+						<value>
+							<canCrossBreedWith>
+								<li>MM_Cerberus</li>
+							</canCrossBreedWith>
+						</value>
+					</nomatch>
+				</li>
+
+				<!-- YorkshireTerrier: seeks MM_Cerberus -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="YorkshireTerrier"]/race/canCrossBreedWith</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="YorkshireTerrier"]/race/canCrossBreedWith</xpath>
+						<value>
+							<li>MM_Cerberus</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="YorkshireTerrier"]/race</xpath>
+						<value>
+							<canCrossBreedWith>
+								<li>MM_Cerberus</li>
+							</canCrossBreedWith>
+						</value>
+					</nomatch>
+				</li>
+
+				<!-- MM_ErymanthianBoar: seeks WildBoar, Pig -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="MM_ErymanthianBoar"]/race/canCrossBreedWith</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="MM_ErymanthianBoar"]/race/canCrossBreedWith</xpath>
+						<value>
+							<li>WildBoar</li>
+							<li>Pig</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="MM_ErymanthianBoar"]/race</xpath>
+						<value>
+							<canCrossBreedWith>
+								<li>WildBoar</li>
+								<li>Pig</li>
+							</canCrossBreedWith>
+						</value>
+					</nomatch>
+				</li>
+
+				<!-- WildBoar: seeks MM_ErymanthianBoar -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="WildBoar"]/race/canCrossBreedWith</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="WildBoar"]/race/canCrossBreedWith</xpath>
+						<value>
+							<li>MM_ErymanthianBoar</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="WildBoar"]/race</xpath>
+						<value>
+							<canCrossBreedWith>
+								<li>MM_ErymanthianBoar</li>
+							</canCrossBreedWith>
+						</value>
+					</nomatch>
+				</li>
+
+				<!-- Pig: seeks MM_ErymanthianBoar -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Pig"]/race/canCrossBreedWith</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Pig"]/race/canCrossBreedWith</xpath>
+						<value>
+							<li>MM_ErymanthianBoar</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Pig"]/race</xpath>
+						<value>
+							<canCrossBreedWith>
+								<li>MM_ErymanthianBoar</li>
+							</canCrossBreedWith>
+						</value>
+					</nomatch>
+				</li>
+
+				<!-- MM_CeryneianHind: seeks Deer, Elk, Caribou -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="MM_CeryneianHind"]/race/canCrossBreedWith</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="MM_CeryneianHind"]/race/canCrossBreedWith</xpath>
+						<value>
+							<li>Deer</li>
+							<li>Elk</li>
+							<li>Caribou</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="MM_CeryneianHind"]/race</xpath>
+						<value>
+							<canCrossBreedWith>
+								<li>Deer</li>
+								<li>Elk</li>
+								<li>Caribou</li>
+							</canCrossBreedWith>
+						</value>
+					</nomatch>
+				</li>
+
+				<!-- Deer: seeks MM_CeryneianHind -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Deer"]/race/canCrossBreedWith</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Deer"]/race/canCrossBreedWith</xpath>
+						<value>
+							<li>MM_CeryneianHind</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Deer"]/race</xpath>
+						<value>
+							<canCrossBreedWith>
+								<li>MM_CeryneianHind</li>
+							</canCrossBreedWith>
+						</value>
+					</nomatch>
+				</li>
+
+				<!-- Elk: seeks MM_CeryneianHind -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Elk"]/race/canCrossBreedWith</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Elk"]/race/canCrossBreedWith</xpath>
+						<value>
+							<li>MM_CeryneianHind</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Elk"]/race</xpath>
+						<value>
+							<canCrossBreedWith>
+								<li>MM_CeryneianHind</li>
+							</canCrossBreedWith>
+						</value>
+					</nomatch>
+				</li>
+
+				<!-- Caribou: seeks MM_CeryneianHind -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Caribou"]/race/canCrossBreedWith</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Caribou"]/race/canCrossBreedWith</xpath>
+						<value>
+							<li>MM_CeryneianHind</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Caribou"]/race</xpath>
+						<value>
+							<canCrossBreedWith>
+								<li>MM_CeryneianHind</li>
+							</canCrossBreedWith>
+						</value>
+					</nomatch>
+				</li>
+
+				<!-- MM_Pegasus: seeks Horse -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="MM_Pegasus"]/race/canCrossBreedWith</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="MM_Pegasus"]/race/canCrossBreedWith</xpath>
+						<value>
+							<li>Horse</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="MM_Pegasus"]/race</xpath>
+						<value>
+							<canCrossBreedWith>
+								<li>Horse</li>
+							</canCrossBreedWith>
+						</value>
+					</nomatch>
+				</li>
+
+				<!-- Horse: seeks MM_Pegasus -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="Horse"]/race/canCrossBreedWith</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Horse"]/race/canCrossBreedWith</xpath>
+						<value>
+							<li>MM_Pegasus</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="Horse"]/race</xpath>
+						<value>
+							<canCrossBreedWith>
+								<li>MM_Pegasus</li>
+							</canCrossBreedWith>
+						</value>
+					</nomatch>
+				</li>
+
+				<!-- ===== What is born: the extension on the MOTHER's kind, keyed by the father ===== -->
+
+				<!-- MM_Cerberus mother -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[defName="MM_Cerberus"]/modExtensions/li[@Class="DZY.CrossBreeding.Extension"]</xpath>
+					<nomatch Class="PatchOperationAddModExtension">
+						<xpath>Defs/PawnKindDef[defName="MM_Cerberus"]</xpath>
+						<value>
+							<li Class="DZY.CrossBreeding.Extension">
+								<outcomes></outcomes>
+							</li>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="MM_Cerberus"]/modExtensions/li[@Class="DZY.CrossBreeding.Extension"]/outcomes</xpath>
+					<value>
+						<Husky>
+							<Random />
+						</Husky>
+						<LabradorRetriever>
+							<Random />
+						</LabradorRetriever>
+						<YorkshireTerrier>
+							<Random />
+						</YorkshireTerrier>
+					</value>
+				</li>
+
+				<!-- Husky mother -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[defName="Husky"]/modExtensions/li[@Class="DZY.CrossBreeding.Extension"]</xpath>
+					<nomatch Class="PatchOperationAddModExtension">
+						<xpath>Defs/PawnKindDef[defName="Husky"]</xpath>
+						<value>
+							<li Class="DZY.CrossBreeding.Extension">
+								<outcomes></outcomes>
+							</li>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="Husky"]/modExtensions/li[@Class="DZY.CrossBreeding.Extension"]/outcomes</xpath>
+					<value>
+						<MM_Cerberus>
+							<Random />
+						</MM_Cerberus>
+					</value>
+				</li>
+
+				<!-- LabradorRetriever mother -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[defName="LabradorRetriever"]/modExtensions/li[@Class="DZY.CrossBreeding.Extension"]</xpath>
+					<nomatch Class="PatchOperationAddModExtension">
+						<xpath>Defs/PawnKindDef[defName="LabradorRetriever"]</xpath>
+						<value>
+							<li Class="DZY.CrossBreeding.Extension">
+								<outcomes></outcomes>
+							</li>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="LabradorRetriever"]/modExtensions/li[@Class="DZY.CrossBreeding.Extension"]/outcomes</xpath>
+					<value>
+						<MM_Cerberus>
+							<Random />
+						</MM_Cerberus>
+					</value>
+				</li>
+
+				<!-- YorkshireTerrier mother -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[defName="YorkshireTerrier"]/modExtensions/li[@Class="DZY.CrossBreeding.Extension"]</xpath>
+					<nomatch Class="PatchOperationAddModExtension">
+						<xpath>Defs/PawnKindDef[defName="YorkshireTerrier"]</xpath>
+						<value>
+							<li Class="DZY.CrossBreeding.Extension">
+								<outcomes></outcomes>
+							</li>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="YorkshireTerrier"]/modExtensions/li[@Class="DZY.CrossBreeding.Extension"]/outcomes</xpath>
+					<value>
+						<MM_Cerberus>
+							<Random />
+						</MM_Cerberus>
+					</value>
+				</li>
+
+				<!-- MM_ErymanthianBoar mother -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[defName="MM_ErymanthianBoar"]/modExtensions/li[@Class="DZY.CrossBreeding.Extension"]</xpath>
+					<nomatch Class="PatchOperationAddModExtension">
+						<xpath>Defs/PawnKindDef[defName="MM_ErymanthianBoar"]</xpath>
+						<value>
+							<li Class="DZY.CrossBreeding.Extension">
+								<outcomes></outcomes>
+							</li>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="MM_ErymanthianBoar"]/modExtensions/li[@Class="DZY.CrossBreeding.Extension"]/outcomes</xpath>
+					<value>
+						<WildBoar>
+							<Random />
+						</WildBoar>
+						<Pig>
+							<Random />
+						</Pig>
+					</value>
+				</li>
+
+				<!-- WildBoar mother -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[defName="WildBoar"]/modExtensions/li[@Class="DZY.CrossBreeding.Extension"]</xpath>
+					<nomatch Class="PatchOperationAddModExtension">
+						<xpath>Defs/PawnKindDef[defName="WildBoar"]</xpath>
+						<value>
+							<li Class="DZY.CrossBreeding.Extension">
+								<outcomes></outcomes>
+							</li>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="WildBoar"]/modExtensions/li[@Class="DZY.CrossBreeding.Extension"]/outcomes</xpath>
+					<value>
+						<MM_ErymanthianBoar>
+							<Random />
+						</MM_ErymanthianBoar>
+					</value>
+				</li>
+
+				<!-- Pig mother -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[defName="Pig"]/modExtensions/li[@Class="DZY.CrossBreeding.Extension"]</xpath>
+					<nomatch Class="PatchOperationAddModExtension">
+						<xpath>Defs/PawnKindDef[defName="Pig"]</xpath>
+						<value>
+							<li Class="DZY.CrossBreeding.Extension">
+								<outcomes></outcomes>
+							</li>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="Pig"]/modExtensions/li[@Class="DZY.CrossBreeding.Extension"]/outcomes</xpath>
+					<value>
+						<MM_ErymanthianBoar>
+							<Random />
+						</MM_ErymanthianBoar>
+					</value>
+				</li>
+
+				<!-- MM_CeryneianHind mother -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[defName="MM_CeryneianHind"]/modExtensions/li[@Class="DZY.CrossBreeding.Extension"]</xpath>
+					<nomatch Class="PatchOperationAddModExtension">
+						<xpath>Defs/PawnKindDef[defName="MM_CeryneianHind"]</xpath>
+						<value>
+							<li Class="DZY.CrossBreeding.Extension">
+								<outcomes></outcomes>
+							</li>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="MM_CeryneianHind"]/modExtensions/li[@Class="DZY.CrossBreeding.Extension"]/outcomes</xpath>
+					<value>
+						<Deer>
+							<Random />
+						</Deer>
+						<Elk>
+							<Random />
+						</Elk>
+						<Caribou>
+							<Random />
+						</Caribou>
+					</value>
+				</li>
+
+				<!-- Deer mother -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[defName="Deer"]/modExtensions/li[@Class="DZY.CrossBreeding.Extension"]</xpath>
+					<nomatch Class="PatchOperationAddModExtension">
+						<xpath>Defs/PawnKindDef[defName="Deer"]</xpath>
+						<value>
+							<li Class="DZY.CrossBreeding.Extension">
+								<outcomes></outcomes>
+							</li>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="Deer"]/modExtensions/li[@Class="DZY.CrossBreeding.Extension"]/outcomes</xpath>
+					<value>
+						<MM_CeryneianHind>
+							<Random />
+						</MM_CeryneianHind>
+					</value>
+				</li>
+
+				<!-- Elk mother -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[defName="Elk"]/modExtensions/li[@Class="DZY.CrossBreeding.Extension"]</xpath>
+					<nomatch Class="PatchOperationAddModExtension">
+						<xpath>Defs/PawnKindDef[defName="Elk"]</xpath>
+						<value>
+							<li Class="DZY.CrossBreeding.Extension">
+								<outcomes></outcomes>
+							</li>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="Elk"]/modExtensions/li[@Class="DZY.CrossBreeding.Extension"]/outcomes</xpath>
+					<value>
+						<MM_CeryneianHind>
+							<Random />
+						</MM_CeryneianHind>
+					</value>
+				</li>
+
+				<!-- Caribou mother -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[defName="Caribou"]/modExtensions/li[@Class="DZY.CrossBreeding.Extension"]</xpath>
+					<nomatch Class="PatchOperationAddModExtension">
+						<xpath>Defs/PawnKindDef[defName="Caribou"]</xpath>
+						<value>
+							<li Class="DZY.CrossBreeding.Extension">
+								<outcomes></outcomes>
+							</li>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="Caribou"]/modExtensions/li[@Class="DZY.CrossBreeding.Extension"]/outcomes</xpath>
+					<value>
+						<MM_CeryneianHind>
+							<Random />
+						</MM_CeryneianHind>
+					</value>
+				</li>
+
+				<!-- MM_Pegasus mother -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[defName="MM_Pegasus"]/modExtensions/li[@Class="DZY.CrossBreeding.Extension"]</xpath>
+					<nomatch Class="PatchOperationAddModExtension">
+						<xpath>Defs/PawnKindDef[defName="MM_Pegasus"]</xpath>
+						<value>
+							<li Class="DZY.CrossBreeding.Extension">
+								<outcomes></outcomes>
+							</li>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="MM_Pegasus"]/modExtensions/li[@Class="DZY.CrossBreeding.Extension"]/outcomes</xpath>
+					<value>
+						<Horse>
+							<Random />
+						</Horse>
+					</value>
+				</li>
+
+				<!-- Horse mother -->
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/PawnKindDef[defName="Horse"]/modExtensions/li[@Class="DZY.CrossBreeding.Extension"]</xpath>
+					<nomatch Class="PatchOperationAddModExtension">
+						<xpath>Defs/PawnKindDef[defName="Horse"]</xpath>
+						<value>
+							<li Class="DZY.CrossBreeding.Extension">
+								<outcomes></outcomes>
+							</li>
+						</value>
+					</nomatch>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/PawnKindDef[defName="Horse"]/modExtensions/li[@Class="DZY.CrossBreeding.Extension"]/outcomes</xpath>
+					<value>
+						<MM_Pegasus>
+							<Random />
+						</MM_Pegasus>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

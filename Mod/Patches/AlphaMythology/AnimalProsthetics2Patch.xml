@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  A Dog Said... Animal Prosthetics 2 (SamBucher.ADogSaidAnimalProsthetics2, Workshop 3238353862).
+
+  ADS 2 does not read RaceProperties or a body type to decide which animals get surgery. It keeps three
+  abstract RecipeDefs, ADS_Cat1 (medieval replacements), ADS_Cat2 (+ simple prosthetics) and ADS_Cat3
+  (+ bionics), each with a hand-curated <recipeUsers> list, and copies those lists onto the real surgery
+  recipes in its own last patch (1.6/Patches/z_Category_Patches.xml). An animal absent from all three lists
+  offers only amputation and euthanasia. None of ours is listed, so without this file ADS 2 does nothing
+  for them. The lists are cumulative: a Cat3 animal appears in all three.
+
+  Read 2026-10-01 in 1.6/Defs/AnimalCategories/Animal_Categories.xml. Each animal follows its VANILLA
+  ANALOGUE in that list (the animal's own description names the model), never a hunch:
+
+    Cat3 (medieval, simple prostheses, bionics): the big mammals and predators.
+      Cerberus ("a three-headed dog") and Ahuizotl ("dog-like"): Husky, Labrador, Warg are Cat3.
+      Kitsune ("fox-like"): the three foxes are Cat3.
+      Pegasus ("winged divine horse") and Unicorn (a horned horse, hooves and horn body): Horse is Cat3.
+      Griffin, Manticore, Chimera, Xiezhi (a lion, or a lion crossed with a goat): Cougar, Panther, Lynx are Cat3.
+      Catoblepas ("the body of a cape buffalo"): Bison is Cat3.
+    Cat2 (medieval and simple prostheses):
+      Ceryneian Hind and Qilin (a deer, or deer-shaped): Deer, Elk, Caribou are Cat2.
+      Erymanthian Boar ("a gargantuan wild hog"): WildBoar is Cat2.
+      Wild Minotaur (a bull): Cow is Cat2.
+      Phoenix, Fenghuang, Stymphalian Bird (birds of 1 to 1.35 body size): Turkey, Goose, Duck, Cassowary are Cat2.
+      Kappa ("a turtle-like carapace"): Tortoise is Cat2.
+    Cat1 (medieval replacements only): Ieltxu (a raven of body size 0.6; Chicken is Cat1) and the three
+      snakes Basilisk, Salamander, Tlilcoatl (Cobra is Cat1).
+
+  NOT LISTED, on purpose: Lernaean Hydra, Lesser Wyvern and Will-o'-Wisp. They have no vanilla analogue in
+  that list (a many-headed serpent of body size 8, a wyvern, a ghost light), and an invented class is worse
+  than none. Their custom bodies are also where a surgery would find the least to work on.
+
+  The guard is a PatchOperationConditional on ADS_Cat1. Without ADS 2 the xpath selects nothing, no
+  <nomatch> is declared, and the operation reports success and logs nothing. It is NOT MayRequire:
+  MayRequire on an <Operation> is read by nothing, so it would apply whether ADS 2 is loaded or not.
+  Every branch of the predicate repeats @Name=, since [@Name="A" or "B"] is true for every RecipeDef.
+
+  About.xml declares <loadBefore>SamBucher.ADogSaidAnimalProsthetics2</loadBefore>: ADS 2 copies the
+  lists once, in its last patch, so this patch must run first or it writes into lists nobody reads.
+-->
+<Patch>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/RecipeDef[@Name="ADS_Cat1"]</xpath>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+				<!-- Cat3: also in Cat2 and Cat1 -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name="ADS_Cat3" or @Name="ADS_Cat2" or @Name="ADS_Cat1"]/recipeUsers</xpath>
+					<value>
+						<li>MM_Cerberus</li>
+						<li>MM_Ahuizotl</li>
+						<li>MM_Kitsune</li>
+						<li>MM_Pegasus</li>
+						<li>MM_Unicorn</li>
+						<li>MM_Griffin</li>
+						<li>MM_Manticore</li>
+						<li>MM_Chimera</li>
+						<li>MM_Catoblepas</li>
+						<li>MM_Xiezhi</li>
+					</value>
+				</li>
+
+				<!-- Cat2: also in Cat1 -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name="ADS_Cat2" or @Name="ADS_Cat1"]/recipeUsers</xpath>
+					<value>
+						<li>MM_CeryneianHind</li>
+						<li>MM_Qilin</li>
+						<li>MM_ErymanthianBoar</li>
+						<li>MM_WildMinotaur</li>
+						<li>MM_Phoenix</li>
+						<li>MM_Fenghuang</li>
+						<li>MM_StymphalianBird</li>
+						<li>MM_Kappa</li>
+					</value>
+				</li>
+
+				<!-- Cat1 -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/RecipeDef[@Name="ADS_Cat1"]/recipeUsers</xpath>
+					<value>
+						<li>MM_Ieltxu</li>
+						<li>MM_Basilisk</li>
+						<li>MM_Salamander</li>
+						<li>MM_Tlilcoatl</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

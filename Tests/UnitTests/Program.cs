@@ -38,6 +38,8 @@ internal static class Program
         Check(PhoenixRules.EggCount(0.31f) == 1 && PhoenixRules.EggCount(1f) == 1, "a higher roll leaves one egg");
         Check(PhoenixRules.EggDefName == "MM_EggPhoenixFertilized", "the egg def name is the fertilized phoenix egg");
 
+        PatchTests.Run(Check);
+
         Console.WriteLine(failures == 0 ? "ALL PASSED" : failures + " FAILED");
         return failures == 0 ? 0 : 1;
     }

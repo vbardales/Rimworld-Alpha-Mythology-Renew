@@ -31,6 +31,6 @@ Work toward 1.0.0, above the 0.1.0 pre-publication.
 
 ## [0.1.0]
 
-- Planned, not yet sent. Creation of a publishIdFile: pre-publication whose only purpose is to create the
-  (private) Workshop item and obtain its `About/PublishedFileId.txt`. Contents: `Mod/`
-  as it stood at the pushed commit. Not tested in game, not public.
+- Creation of a publishIdFile: pre-publication whose only purpose is to create the (private) Workshop item and obtain
+  its `About/PublishedFileId.txt` (3811323347). Contents: `Mod/` as it stood in the working tree when it was sent, on
+  2026-10-01 around 16:00. Not tested in game, not public.

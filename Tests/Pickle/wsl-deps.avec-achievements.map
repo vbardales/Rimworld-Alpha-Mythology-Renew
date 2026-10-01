@@ -1,0 +1,5 @@
+# Pass "avec achievements": Vanilla Achievements Expanded alone (vanillaexpanded.achievements). Its one dependency, VEF,
+# is already a hard dependency of the mod and staged by every pass.
+vanillaexpanded.achievements   2288125657
+nelim.resolvethisinstead   path:ResolveThisInstead/Mod
+Mlie.UseThisInstead        3396308787

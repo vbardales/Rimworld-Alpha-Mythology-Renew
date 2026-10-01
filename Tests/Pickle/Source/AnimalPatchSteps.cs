@@ -26,6 +26,22 @@ namespace AlphaMythologyRenew.PickleSteps
             (string.Equals(def.modContentPack.PackageId, packageId, StringComparison.OrdinalIgnoreCase) ||
              string.Equals(def.modContentPack.PackageIdPlayerFacing, packageId, StringComparison.OrdinalIgnoreCase));
 
+        /// <summary>
+        /// A def of a type that belongs to another mod (the Achievements Expanded types, for instance) cannot be named
+        /// at compile time here: the type is looked up by name once the game has loaded every assembly.
+        /// </summary>
+        [Then("Alpha Mythology Renew the def {string} of type {string} exists")]
+        public void DefOfTypeExists(PickleContext ctx, string defName, string typeName)
+        {
+            var type = GenTypes.GetTypeInAnyAssembly(typeName);
+            ctx.Require(type != null, $"no type named '{typeName}' is loaded");
+            var db = typeof(DefDatabase<>).MakeGenericType(type);
+            var found = db.GetMethod("GetNamedSilentFail", new[] { typeof(string), typeof(bool) }) ?? db.GetMethod("GetNamedSilentFail", new[] { typeof(string) });
+            ctx.Require(found != null, "DefDatabase<T>.GetNamedSilentFail not found");
+            var args = found.GetParameters().Length == 2 ? new object[] { defName, false } : new object[] { defName };
+            ctx.Assert(found.Invoke(null, args) != null, $"no {typeName} named '{defName}'");
+        }
+
         [Then("Alpha Mythology Renew the animal {string} is offered surgeries by mod {string}")]
         public void OffersSurgeries(PickleContext ctx, string kindName, string packageId)
         {

@@ -51,3 +51,20 @@ Feature: the animal-mod patches reach the game's own data
     And Alpha Mythology Renew the animal "MM_Cerberus" carries the extension "DZY.CrossBreeding.Extension"
     And Alpha Mythology Renew the animal "Horse" carries the extension "DZY.CrossBreeding.Extension"
     And no errors were logged
+
+  # Not an animal patch: kept here with the other provider-reading scenarios of this file. Vanilla Achievements Expanded
+  # (vanillaexpanded.achievements, 2288125657) is the one provider of F11 that was never mounted. Its patch
+  # (AchievementsPatch.xml, guarded by the mod's name) adds a tab and eight achievements, and the LoadFolders branch
+  # Integrations/Achievements carries their French text. Pass: -DepMap wsl-deps.avec-achievements.map
+  @requires:vanillaexpanded.achievements
+  Scenario: Vanilla Achievements Expanded receives the tab and the eight achievements
+    Then Alpha Mythology Renew the def "MM_Achievements" of type "AchievementsExpanded.AchievementTabDef" exists
+    And Alpha Mythology Renew the def "MM_AchievementMagicHunter" of type "AchievementsExpanded.AchievementDef" exists
+    And Alpha Mythology Renew the def "MM_AchievementStayingAhead" of type "AchievementsExpanded.AchievementDef" exists
+    And Alpha Mythology Renew the def "MM_AchievementHardLove" of type "AchievementsExpanded.AchievementDef" exists
+    And Alpha Mythology Renew the def "MM_AchievementMagicParka" of type "AchievementsExpanded.AchievementDef" exists
+    And Alpha Mythology Renew the def "MM_AchievementGrabbingHands" of type "AchievementsExpanded.AchievementDef" exists
+    And Alpha Mythology Renew the def "MM_AchievementFountainOfBlood" of type "AchievementsExpanded.AchievementDef" exists
+    And Alpha Mythology Renew the def "MM_AchievementStatueOfColonist" of type "AchievementsExpanded.AchievementDef" exists
+    And Alpha Mythology Renew the def "MM_AchievementForbiddenPoultry" of type "AchievementsExpanded.AchievementDef" exists
+    And no errors were logged

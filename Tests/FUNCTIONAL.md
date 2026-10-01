@@ -54,7 +54,7 @@ test of this mod, impossible here, or covered by a definition check. None is cou
 | F10 reduced Animal Ark beside this mod | no reduced Animal Ark build is available to mount; the original beside this port is the incompatibility pass (feature 11) | not applicable, the incompatibility pass stands in |
 | F11 Vanilla Genetics Expanded (the `GeneticRimPatch.xml` provider) | played green in its own pass (`avec-genetics`, 2026-09-27: 1 passed); it crashes in its own constructor only when staged with the five other providers, not alone | covered |
 | F11 A RimWorld of Magic | played green in its own pass (`avec-rwom`, run 3818, 2026-09-28: 1 passed) once JecsLite was staged; the earlier hang was a missing dependency, not the mod | covered |
-| F11 Vanilla Achievements Expanded | not installed on this machine, so its `LoadFolders` branch (`Integrations/Achievements`) was never exercised; no scenario exists for it | unverified: either a scenario and a pass (the provider downloaded, 2288125657), or disclosed as not tested |
+| F11 Vanilla Achievements Expanded | was never mounted; owner chose a pass on 2026-10-01: last scenario of feature 18, map `wsl-deps.avec-achievements.map` (2288125657) | written, pass to play |
 
 ## Scenarios
 

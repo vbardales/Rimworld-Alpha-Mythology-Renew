@@ -51,6 +51,7 @@ What remains unplayed stays `unverified` in `STATUS.md`.
 | Animal Prosthetics 2 | `18-animal-mods`, `-DepMap wsl-deps.avec-ads2.map` | English | the surgeries offered to the listed creatures, none to the three left out (written 2026-10-01, never played) |
 | Dogs mate | `18-animal-mods`, `-DepMap wsl-deps.avec-dogsmate.map` | English | the four creatures breed with their own species, the look-alikes do not (never played) |
 | Better Crossbreeding | `18-animal-mods`, `-DepMap wsl-deps.avec-crossbreeding.map` | English | the pairs on both races and the outcome extension on the mother (never played) |
+| Vanilla Achievements Expanded | `18-animal-mods`, `-DepMap wsl-deps.avec-achievements.map` | English | the tab and the eight achievements the guarded patch adds; the provider was never mounted before (never played) |
 
 Every map, the default `wsl-deps.map` included, also stages Resolve This Instead by `path:` and its dependency Use This
 Instead (a wsl-deps map is the only place a `path:` line works; `wsl-ids.map` only resolves Workshop ids).

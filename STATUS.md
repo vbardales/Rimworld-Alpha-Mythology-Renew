@@ -1018,3 +1018,7 @@ Tree `153e7de`-era (run played the tree of its turn). `exitReason: passed`, 7 pl
 - Kitsune: `I wait 1500 ticks` timed out at 5 s; three waits of 500.
 
 Requests: fix-en (4c41, the six scenarios above), restart pair (41a1); the unfiltered French baseline 6a49 is running (it will show the same restart red); 69f7 (a PLAIN French) cancelled as a duplicate of it. Code commit `2bf9365`. `Evidence/base-en`: `report.html` and `messages.ndjson` (30 MB) deleted.
+
+## Baseline French read (6a49, base-fr) — 2026-10-01
+
+80 discovered, 47 green, 7 red, `exitReason: failed`: the same six as base-en (restart reader alone, wild draw signature, wisp tags, life stage, destruction, minotaur) and one French-only red, the Ceryneian hind milk (0 -> 0) where base-en had the Kitsune wait timeout. The hind passed in English: the milk is placed beside the gatherer, so the step now stands the gatherer on the animal's cell before gathering (not proven to be the cause). The wisp text in French read "Progression de la fission asexuée : 0% (15 jours par cycle)": correct, the red was the coloured number in my assertion. Evidence `base-fr` trimmed (27 MB). French fixes ride on the fix-en code; a French replay of the corrected scenarios is still to file after 4c41.

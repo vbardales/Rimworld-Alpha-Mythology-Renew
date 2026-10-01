@@ -324,6 +324,10 @@ namespace AlphaMythologyRenew.PickleSteps
             var milk = comp.Props.milkDef;
             ctx.Require(milk != null, "the definition names no milk def");
             ctx.Require(comp.ActiveAndFull, $"'{kindDefName}' cannot be milked although its fullness was set (gender {pawn.gender}, life stage {pawn.ageTracker.CurLifeStage.defName})");
+            // The milk is placed beside whoever gathers it: stand the gatherer on a free cell next to the animal, so a crowded
+            // spot (base-fr, 2026-10-01: the hind, 0 -> 0 while the chimera passed) cannot swallow it.
+            doer.Position = pawn.Position;
+            doer.Notify_Teleported(false);
             int before = map.listerThings.ThingsOfDef(milk).Sum(t => t.stackCount);
             comp.Gathered(doer);
             int after = map.listerThings.ThingsOfDef(milk).Sum(t => t.stackCount);

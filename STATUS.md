@@ -1037,3 +1037,5 @@ The 0.1.0 item exists: `Mod/About/PublishedFileId.txt` = 3811323347 appeared in 
 ## Better Crossbreeding pass (17ec) read — 2026-10-01
 
 6 discovered, 1 played and green, 5 skipped (other providers), `exitReason: passed`. The pairs are listed on both races (Cerberus and the three dogs, the boar and the pigs, the hind and Deer/Elk/Caribou, Pegasus and the horse), the outcome extension `DZY.CrossBreeding.Extension` sits on the mothers, no error logged. First provider pass of the three animal-mod patches to come back green. Not shown: the calf actually born (a pass that breeds would need hours of game time), only the data the game ended up with. `Evidence/crossbreeding` trimmed.
+
+Dogs mate replay filed, 2026-10-01: request for the corrected scenarios (the grouped creatures, the boar, the two nobody groups), evidence dir dogsmate2, label at 9ac4255. Evidence/dogsmate (95c8, the red) goes once dogsmate2 is read.

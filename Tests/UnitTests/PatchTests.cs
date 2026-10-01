@@ -102,10 +102,11 @@ internal static class PatchTests
             <Revolus.DogsMate.AnimalGroupDef><defName>Cat</defName><pawnKinds><li>Cat</li></pawnKinds></Revolus.DogsMate.AnimalGroupDef>");
         var dmOn = Run(dmFile, dm);
         string[] Kinds(string g) => dmOn.XPathSelectElements($"/Defs/Revolus.DogsMate.AnimalGroupDef[defName=\"{g}\"]/pawnKinds/li").Select(x => (string)x).ToArray();
-        check(Kinds("Dog").SequenceEqual(new[] { "Husky", "MM_Cerberus" }), "Dogs mate: Cerberus joins the Dog group after its existing kinds");
         check(Kinds("Pig").SequenceEqual(new[] { "Pig", "MM_ErymanthianBoar" }), "Dogs mate: the Erymanthian boar joins the Pig group");
-        check(Kinds("Deer").SequenceEqual(new[] { "Deer", "MM_CeryneianHind" }), "Dogs mate: the Ceryneian hind joins the Deer group");
-        check(Kinds("Horse").SequenceEqual(new[] { "Horse", "MM_Pegasus" }), "Dogs mate: Pegasus joins the Horse group");
+        // Dogs mate's own sarg.magicalmenagerie.xml already groups Cerberus, the hind, Pegasus, the Unicorn, the Kitsune and the
+        // Catoblepas: this port must not add them a second time.
+        check(Kinds("Dog").SequenceEqual(new[] { "Husky" }) && Kinds("Deer").SequenceEqual(new[] { "Deer" }) && Kinds("Horse").SequenceEqual(new[] { "Horse" }),
+            "Dogs mate: the groups its own patch fills (Dog, Deer, Horse) are left alone");
         check(Kinds("Cat").SequenceEqual(new[] { "Cat" }), "Dogs mate: a group that is not named is untouched");
         var noDm = Defs("<ThingDef><defName>Husky</defName></ThingDef>");
         check(XNode.DeepEquals(Run(dmFile, noDm).Root, noDm.Root), "Dogs mate: without its groups the document is unchanged");

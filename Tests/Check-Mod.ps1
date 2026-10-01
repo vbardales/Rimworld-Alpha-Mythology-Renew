@@ -69,7 +69,13 @@ foreach ($dependency in @('brrainz.harmony', 'OskarPotocki.VanillaFactionsExpand
 Assert-Mod (@($meta.incompatibleWith.li) -contains 'sarg.magicalmenagerie') 'Original mod incompatibility missing'
 Assert-Mod ($meta.description.StartsWith('UNOFFICIAL.')) 'Disclosure missing'
 Assert-Mod ($meta.description.Contains('[url=https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew]Source code on GitHub[/url]')) 'Port GitHub link missing'
-Assert-Mod (-not (Test-Path "$root/Mod/About/PublishedFileId.txt")) 'Review Workshop ID test when first publishing; upstream ID must not be copied'
+# The file exists once the 0.1.0 pre-publication has created the item. It must hold this port's own id, never the original's (1821617793).
+$publishedIdFile = "$root/Mod/About/PublishedFileId.txt"
+if (Test-Path $publishedIdFile) {
+    $publishedId = (Get-Content -LiteralPath $publishedIdFile -Raw).Trim()
+    Assert-Mod ($publishedId -match '^\d+$') 'PublishedFileId.txt must hold digits only'
+    Assert-Mod ($publishedId -ne '1821617793') 'PublishedFileId.txt holds the original mod id; upstream ID must not be copied'
+}
 foreach ($notice in @('ATTRIBUTION.md', 'LICENSE')) {
     Assert-Mod ((Get-FileHash "$root/$notice").Hash -eq (Get-FileHash "$root/Mod/$notice").Hash) "$notice mismatch"
 }

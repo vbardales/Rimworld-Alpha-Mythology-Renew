@@ -25,20 +25,28 @@ Feature: the animal-mod patches reach the game's own data
     And Alpha Mythology Renew the animal "MM_LesserWyvern" is offered no surgery by mod "SamBucher.ADogSaidAnimalProsthetics2"
     And Alpha Mythology Renew the animal "MM_WillOWisp" is offered no surgery by mod "SamBucher.ADogSaidAnimalProsthetics2"
 
+  # Dogs mate ships its own patch for these defNames (Patches/sarg.magicalmenagerie.xml): Cerberus, the hind, Pegasus, the
+  # Unicorn, the Kitsune and the Catoblepas are grouped by it, not by us. Run 95c8 showed it (the Kitsune listed Fox_Red).
   @requires:Mlie.DogsMate
-  Scenario: Dogs mate lets the four creatures breed with their own species
+  Scenario: Dogs mate lets the grouped creatures breed with their own species
     Then Alpha Mythology Renew the animal "MM_Cerberus" can cross-breed with "Husky"
     And Alpha Mythology Renew the animal "Husky" can cross-breed with "MM_Cerberus"
-    And Alpha Mythology Renew the animal "MM_ErymanthianBoar" can cross-breed with "WildBoar"
     And Alpha Mythology Renew the animal "MM_CeryneianHind" can cross-breed with "Deer"
     And Alpha Mythology Renew the animal "MM_Pegasus" can cross-breed with "Horse"
     And Alpha Mythology Renew the animal "Horse" can cross-breed with "MM_Pegasus"
+    And Alpha Mythology Renew the animal "MM_Kitsune" can cross-breed with "Fox_Red"
+    And no errors were logged
+
+  # The one group this port adds itself (DogsMatePatch.xml).
+  @requires:Mlie.DogsMate
+  Scenario: the Erymanthian boar joins the pigs
+    Then Alpha Mythology Renew the animal "MM_ErymanthianBoar" can cross-breed with "WildBoar"
+    And Alpha Mythology Renew the animal "Pig" can cross-breed with "MM_ErymanthianBoar"
     And no errors were logged
 
   @requires:Mlie.DogsMate
-  Scenario: Dogs mate does not group the creatures that only look like a species
+  Scenario: nobody groups the creatures that only look like a species
     Then Alpha Mythology Renew the animal "MM_Ahuizotl" cannot cross-breed with "Husky"
-    And Alpha Mythology Renew the animal "MM_Kitsune" cannot cross-breed with "Fox_Red"
     And Alpha Mythology Renew the animal "MM_Qilin" cannot cross-breed with "Deer"
 
   @requires:DizzyEevee.BetterCrossbreeding

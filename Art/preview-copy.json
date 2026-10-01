@@ -1,16 +1,16 @@
 {
   "title": "Alpha Mythology Renew (unofficial)",
+  "titleSize": 46,
   "titleParts": [
-    { "text": "Alpha Mythology", "scale": 0.78 },
+    { "text": "Alpha Mythology", "scale": 1 },
     { "break": true },
-    { "text": "Renew ", "scale": 0.42, "font": "ui", "color": "secondary" },
-    { "text": "(unofficial)", "scale": 0.28, "font": "ui", "color": "secondary" }
+    { "text": "Renew", "scale": 0.65, "font": "ui", "color": "secondary" }
   ],
   "suffix": "",
-  "tag": "",
+  "tag": "(unofficial)",
+  "tagInline": true,
   "copyLines": ["Twenty-five mythological creatures", "for your RimWorld colony."],
   "layout": "panel",
-  "panelHeight": 65,
   "backgroundFile": "Preview.png",
   "backgroundPosition": "center",
   "backgroundSize": "cover",

@@ -1,5 +1,11 @@
 # Pass "avec ads2": A Dog Said... Animal Prosthetics 2 alone (SamBucher.ADogSaidAnimalProsthetics2).
 # Its own optional loadAfter mods are not staged; the patch needs only ADS_Cat1.
-SamBucher.ADogSaidAnimalProsthetics2   3238353862
+#
+# ORDER MATTERS here (run ea85, 2026-10-01, Cerberus offered no ADS surgery): the staging loads the map's mods BEFORE the
+# mod under test, and ignores loadBefore/loadAfter. ADS 2 copies its category lists once, in its last patch, so our patch
+# (About.xml says <loadBefore>SamBucher.ADogSaidAnimalProsthetics2</loadBefore>) has to run first. The tested mod is
+# therefore named in the map, before ADS 2, after its own hard dependency (Resolve This Instead, Use This Instead).
 nelim.resolvethisinstead   path:ResolveThisInstead/Mod
 Mlie.UseThisInstead        3396308787
+nelim.alphamythology       path:AlphaMythologyRenew/Mod
+SamBucher.ADogSaidAnimalProsthetics2   3238353862

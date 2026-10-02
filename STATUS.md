@@ -1077,3 +1077,9 @@ launch were read back from disk by the second, and the game computed from them. 
 Both ADS 2 scenarios passed (evidence ads2b): the surgeries are offered to the listed creatures, and the three left out on purpose are
 offered none. The five skipped scenarios belong to Dogs mate, Better Crossbreeding and Achievements, which have their own maps and passes.
 Replaces the red ads2 pass (deleted).
+
+## Dogs mate pass green after the patch reduction (a89f), 2026-10-02
+
+The three Dogs mate scenarios passed (evidence dogsmate2): the grouped creatures breed with their own species, the Erymanthian boar joins
+the pigs, and nobody groups the creatures that only look like a species. The four skipped ones belong to ADS 2, Better Crossbreeding and
+Achievements. Replaces the red dogsmate pass (deleted).

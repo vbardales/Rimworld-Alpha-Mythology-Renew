@@ -62,9 +62,12 @@ window shows the interface, not a creature, so it is not a first-image candidate
 
 **Naming convention:** `Art/gallery/0-preview.png` is image 0, identical to the shipped `Mod/About/Preview.png`
 (the "cover" Steam shows large — not necessarily first in the in-game gallery order, but slot 0 here; copied
-2026-09-29). The 7 studio pictures are `Art/gallery/X-<name>.png` for X = 1 to 7 — a bare digit, **not**
-zero-padded (`1-griffin.png`, not `01-griffin.png`). Together: `Art/gallery/0-preview.png` through
-`Art/gallery/7-<name>.png`, 8 files, X from 0 to 7. Not all filled yet: only `0-preview.png` exists so far.
+2026-09-29). The 7 studio pictures are `Art/gallery/X-<name>` for X = 1 to 7 — a bare digit, **not**
+zero-padded (`1-griffin.jpg`, not `01-griffin.jpg`). Together: `0-preview.png`, `1-griffin.jpg` … `6-pegasus.jpg`
+and `7-settings.png`, 8 files, X from 0 to 7, all present (2026-10-02). Steam caps a gallery image at 2 MB: the six
+creature shots are the studio's 1920x1080 captures re-encoded as JPEG quality 92 (about 0.45 MB each; as PNG they
+weighed 3.3 MB and downscaling to 1440 px still left 3 MB, the grass being noise). The originals stay in
+`Tests/Pickle/Evidence/studio8/` (gitignored) while that pass is the latest.
 
 Candidates, from the current studio pass, in capture order: griffin close, three-headed hound, phoenix, unicorn
 alone, manticore alone, pegasus alone, the settings window over the meadow.

@@ -1083,3 +1083,8 @@ Replaces the red ads2 pass (deleted).
 The three Dogs mate scenarios passed (evidence dogsmate2): the grouped creatures breed with their own species, the Erymanthian boar joins
 the pigs, and nobody groups the creatures that only look like a species. The four skipped ones belong to ADS 2, Better Crossbreeding and
 Achievements. Replaces the red dogsmate pass (deleted).
+
+## Achievements pass green (8c50), 2026-10-02
+
+The Vanilla Achievements Expanded scenario passed (evidence achievements2): the tab and the eight achievements reach the provider. The six skipped
+scenarios belong to the other integrations. Needed the provider in the WSL cache (downloaded the same day).

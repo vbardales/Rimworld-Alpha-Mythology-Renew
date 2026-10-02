@@ -1088,3 +1088,8 @@ Achievements. Replaces the red dogsmate pass (deleted).
 
 The Vanilla Achievements Expanded scenario passed (evidence achievements2): the tab and the eight achievements reach the provider. The six skipped
 scenarios belong to the other integrations. Needed the provider in the WSL cache (downloaded the same day).
+
+## Replay 06fc: no scenario played, my filter was wrong, refiled as 5385, 2026-10-02
+
+Exit 8, `infrastructure-error`, 0 scenarios: the game's log says the filter "matched no scenarios". A bare phrase is not a scenario filter; the
+launcher's form is `::text` (or `file::text`). Refiled as 5385 with `::`-prefixed terms. Nothing was proved by 06fc.

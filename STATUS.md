@@ -1071,3 +1071,9 @@ Red scenarios only replayed as 06fc (evidence fix-en2). Other scenarios of fix-e
 
 `restart-write` then `restart-read` under one lock, two launches (evidence restart3/seq1, seq2): both passed. The settings written by the first
 launch were read back from disk by the second, and the game computed from them. Replaces the restart2 pass.
+
+## ADS 2 pass green after the load-order fix (2614), 2026-10-02
+
+Both ADS 2 scenarios passed (evidence ads2b): the surgeries are offered to the listed creatures, and the three left out on purpose are
+offered none. The five skipped scenarios belong to Dogs mate, Better Crossbreeding and Achievements, which have their own maps and passes.
+Replaces the red ads2 pass (deleted).

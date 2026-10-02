@@ -1066,3 +1066,8 @@ are suite defects, none a defect of the mod:
 - five ranged attacks "cannot start" and the hydra "no living pawn": my second volley fired a verb still cooling down, and at a target
   the first volley had already killed. The second volley now fires only when the first changed nothing.
 Red scenarios only replayed as 06fc (evidence fix-en2). Other scenarios of fix-en stay the proof for their run.
+
+## Restart pair (41a1) green, 2026-10-02
+
+`restart-write` then `restart-read` under one lock, two launches (evidence restart3/seq1, seq2): both passed. The settings written by the first
+launch were read back from disk by the second, and the game computed from them. Replaces the restart2 pass.

@@ -15,7 +15,8 @@ Feature: the creatures' ranged attacks
     When Alpha Mythology Renew "Shooter" fires its first ranged attack at "Target"
     And I wait 600 ticks
     # A projectile can miss: a second volley, so that one miss does not read as a creature that cannot hurt (base-en, 2026-10-01: the minotaur).
-    And Alpha Mythology Renew "Shooter" fires its first ranged attack at "Target"
+    # Only when the first volley changed nothing (fix-en 4c41, 2026-10-02: a hydra that killed the target, a verb still cooling down).
+    And Alpha Mythology Renew "Shooter" fires again at "Target" if it is not yet affected
     And I wait 600 ticks
     Then Alpha Mythology Renew "Target" has been hurt or otherwise affected by the attack
     And no errors were logged

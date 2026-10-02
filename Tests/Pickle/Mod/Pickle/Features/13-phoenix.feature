@@ -48,6 +48,10 @@ Feature: the phoenix dies in flames and leaves eggs
     Then Alpha Mythology Renew no colonist is offered a destruction job for the egg
     When Alpha Mythology Renew requests the destruction of the egg
     And Alpha Mythology Renew a colonist carries out the destruction job for the egg
+    # fix-en 4c41 (2026-10-02): after 1000 ticks the colonist stood next to the egg, job VEF_DestroyItem still running:
+    # the work takes longer than the walk. Two more waits; if it is still there, the diagnostics name the job.
+    And I wait 500 ticks
+    And I wait 500 ticks
     And I wait 500 ticks
     And I wait 500 ticks
     Then Alpha Mythology Renew the egg is destroyed and no phoenix has hatched from it

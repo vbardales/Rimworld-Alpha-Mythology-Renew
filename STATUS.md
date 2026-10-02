@@ -1054,3 +1054,15 @@ already prominent in the preview background; it is replaced by the phoenix redra
 pixels and alpha apart from the final resize: no threshold, morphology, cleanup or directional fade.
 The shared renderer consumes it unchanged in the accent colour, at 48% of the panel width with
 `flipX: true`. `Art/Gallery/0-preview.png` is refreshed byte-for-byte from the delivered preview.
+
+## fix-en pass (4c41) read, 2026-10-02
+
+81 scenarios: 45 passed, 9 failed, 27 skipped (the skipped ones need a dependency map this pass did not use). All nine failures
+are suite defects, none a defect of the mod:
+- wild animal draw: the only fixture with the dependencies is a Desert, which hosts none of the creatures; the step now lends
+  the map a biome that does for the length of the draw.
+- restart-read: filed outside the pair (`-Then`); the pair is the 41a1 request.
+- egg destruction: the colonist stood next to the egg with the VEF job still running after 1000 ticks; waits doubled.
+- five ranged attacks "cannot start" and the hydra "no living pawn": my second volley fired a verb still cooling down, and at a target
+  the first volley had already killed. The second volley now fires only when the first changed nothing.
+Red scenarios only replayed as 06fc (evidence fix-en2). Other scenarios of fix-en stay the proof for their run.

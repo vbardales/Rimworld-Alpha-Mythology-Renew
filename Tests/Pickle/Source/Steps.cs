@@ -221,10 +221,30 @@ namespace AlphaMythologyRenew.PickleSteps
             ctx.Require(parameters.Length == 3 && parameters[0].ParameterType == typeof(IntVec3)
                 && parameters[1].ParameterType == typeof(bool) && parameters[2].ParameterType == typeof(PawnKindDef),
                 "SpawnRandomWildAnimalAt no longer has the (IntVec3, bool, PawnKindDef) shape this suite expects");
-            ctx.Require(map.Biome.AllWildAnimals.Any(AlphaMythologyRenewMod.IsOwnKind),
-                $"the biome '{map.Biome.defName}' of this map hosts none of this mod's creatures: use another fixture");
+            // The only fixture with the mod's dependencies is a Desert, which hosts none of the creatures (fix-en 4c41,
+            // 2026-10-02). The draw reads the biome of the map's world tile: lend the map a biome that hosts them for the
+            // length of the draw, and give the tile its own back afterwards.
+            BiomeDef lent = null, original = map.Biome;
+            System.Reflection.FieldInfo biomeField = null;
+            object tile = null;
+            if (!original.AllWildAnimals.Any(AlphaMythologyRenewMod.IsOwnKind))
+            {
+                lent = DefDatabase<BiomeDef>.AllDefsListForReading.FirstOrDefault(b => b.AllWildAnimals.Any(AlphaMythologyRenewMod.IsOwnKind));
+                ctx.Require(lent != null, "no biome of the game hosts any of this mod's creatures");
+                tile = Find.WorldGrid[map.Tile];
+                for (var t = tile.GetType(); t != null && biomeField == null; t = t.BaseType)
+                {
+                    biomeField = t.GetField("biome", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.Public
+                        | System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.DeclaredOnly);
+                }
+                ctx.Require(biomeField != null && biomeField.FieldType == typeof(BiomeDef), "the world tile has no 'biome' field in this game build");
+                biomeField.SetValue(tile, lent);
+                ctx.Require(map.Biome == lent, "lending the map a biome did not change map.Biome");
+            }
 
             var drawn = new List<PawnKindDef>();
+            try
+            {
             for (int i = 0; i < count; i++)
             {
                 var before = new HashSet<Pawn>(map.mapPawns.AllPawns);
@@ -237,6 +257,11 @@ namespace AlphaMythologyRenew.PickleSteps
                 {
                     if (!pawn.Destroyed) pawn.Destroy();
                 }
+            }
+            }
+            finally
+            {
+                if (lent != null) biomeField.SetValue(tile, original);
             }
             return drawn;
         }

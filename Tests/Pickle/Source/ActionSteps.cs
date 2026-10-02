@@ -139,6 +139,25 @@ namespace AlphaMythologyRenew.PickleSteps
                 $"'{shooter}' cannot start its '{verb.verbProps.label}' attack on '{target}' ({verb.verbProps.defaultProjectile.defName})");
         }
 
+        /// <summary>
+        /// Second volley, for a projectile that missed. Nothing to do when the first one already did its work (the
+        /// target is dead or changed: fix-en 4c41, the hydra killed it and the next lookup found no living pawn), and a
+        /// verb still cooling down is not a defect here: the first volley is the one that must start.
+        /// </summary>
+        [When("Alpha Mythology Renew {string} fires again at {string} if it is not yet affected")]
+        public void FireAgain(PickleContext ctx, string shooter, string target)
+        {
+            var victim = CreatureSteps.TryGet<TargetList>(ctx)?.Pawns.FirstOrDefault(p => p.LabelShort == target);
+            var record = Record(ctx);
+            ctx.Require(victim != null && record.Hediffs.ContainsKey(target), $"no state was recorded for '{target}'");
+            bool changed = victim.Dead || victim.Destroyed || HediffCount(victim) > record.Hediffs[target] || InjurySeverity(victim) > record.Values[target] + 0.01f;
+            if (changed) return;
+            var pawn = CreatureSteps.Live(ctx, shooter);
+            var verb = pawn.VerbTracker.AllVerbs.FirstOrDefault(v => v.verbProps.range > 2f && v.verbProps.defaultProjectile != null);
+            ctx.Require(verb != null, $"'{shooter}' has no ranged verb with a projectile");
+            verb.TryStartCastOn(new LocalTargetInfo(victim));
+        }
+
         [Then("Alpha Mythology Renew {string} has been hurt or otherwise affected by the attack")]
         public void WasAffected(PickleContext ctx, string target)
         {

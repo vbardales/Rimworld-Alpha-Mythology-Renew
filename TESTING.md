@@ -98,16 +98,18 @@ Screenshots may be minified (only the `@review` captures that were actually open
 judged, at reduced size). Never delete a report a `STATUS.md` field still points to:
 repoint it first. History is one text line per run in `docs/runs/`, never folders.
 
-Kept on disk as of 2026-09-30 (38 MB; every `report.html` and every `messages.ndjson` over 1 MB removed, they duplicate the summary and the captures):
+Kept on disk as of 2026-10-02 (first listed 2026-09-30, 38 MB then; every `report.html` and every `messages.ndjson` over 1 MB removed, they duplicate the summary and the captures):
 
 | Folder | What it proves | Delete when |
 |---|---|---|
-| `en2`, `fr` | full baseline (69 scenarios) in EN and FR on `sans-facultatifs`; one `@review` capture each | a baseline re-run on the current revision replaces them |
+| `base-en`, `base-fr` | full baseline in EN and FR on `sans-facultatifs` (pre-fix revision); one `@review` capture each | the final baseline on the current revision replaces them |
+| `fix-en`, `fix-en2` | the 4c41 pass (9 suite defects) and the replay of its red scenarios | the final baseline replaces them |
 | `phoenix`, `phoenix2` | phoenix scenarios (6 green in `phoenix`; the open red "a requested destruction..." in `phoenix2`) | a green run of that scenario replaces both |
 | `facultatifs5`, `genetics`, `giddyup`, `rwom`, `rimmsqol`, `treechop2` | one optional-provider pass each (`@requires` scenarios) | the same pass is replayed |
 | `incompat4` | the declared incompatibility with `sarg.magicalmenagerie` still behaves as declared | the other mod changes |
-| `restart2` | settings persistence across a restart (seq1, seq2) | replayed |
-| `studio7` | the seven gallery pictures (originals) for the Workshop page | the gallery is uploaded |
+| `restart3` | settings persistence across a restart (seq1, seq2), green 41a1 | replayed |
+| `ads2b`, `dogsmate2`, `crossbreeding`, `achievements2` | one animal-mod pass each, green | the same pass is replayed |
+| `studio8` | the seven gallery pictures (originals); `Art/gallery/` holds the published versions | the gallery is uploaded |
 
 ## Conditions for `tested`
 

@@ -203,13 +203,13 @@ about an absent/deleted icon is superseded by the current file check here.
 
 ## Preview overlay recomposition — 2026-09-12
 
-Current source: `Art/Preview.png`, copied unchanged from the existing text-free `Art/Preview-source.png`, which remains preserved. No replacement illustration was generated and no old source was overwritten. Final overlay: `Mod/About/Preview.png`. Existing title and summary retained; the actual unofficial status appears as `(unofficial)` on its dedicated line. Version 1.6 is read from the delivered About.xml supportedVersions.
+Current source: `Art/Preview-source.png`. No replacement illustration was generated. Final overlay: `Mod/About/Preview.png`. Existing title and summary retained; `Renew (unofficial)` shares the second title line. Version 1.6 is read from the delivered About.xml supportedVersions.
 
-Palette reference: `Art/preview-palette.json` only. The veil follows the extensive slate paving. The secondary ink is a light, still chromatic blue from that dominant stone family, rather than a pixel average. The vivid accent follows the warm orange-gold illumination on the griffin, strengthened in saturation for the rule and badge. Title and summary share the same primary ink. Palette values are not duplicated here.
+Palette reference: the `palette` object in `Art/Preview.config.json`. The veil follows the extensive slate paving. The secondary ink is a light, still chromatic blue from that dominant stone family, rather than a pixel average. The vivid accent follows the warm orange-gold illumination on the griffin, strengthened in saturation for the rule and badge. Title and summary share the same primary ink. Palette values are not duplicated here.
 
-Composition and parameters (moved 2026-09-29 to `../scripts/Render-Preview.cjs`, a shared script — this mod's `Art/render-preview.cjs` was one of ~50 near-identical per-mod copies found across the workspace; mod-specific text now lives in `Art/preview-copy.json`, the palette stays in `Art/preview-palette.json`), generating `Art/Preview-layout.html` from those two JSON files at 896 x 504. Actual Chrome platform fonts verified after document.fonts.ready: Segoe UI Semibold (title), Segoe UI regular (tag and summary), Segoe UI Bold (badge); no fallback. Layout uses the prescribed offsets, metrics, shadow and triangle coordinates.
+Composition, copy and palette live in `Art/Preview.config.json`; the shared `../scripts/Render-Preview.cjs` generates the 896 x 504 image and local diagnostics under ignored `Art/.render/`. Actual Chrome platform fonts are verified after document.fonts.ready. Layout uses the prescribed offsets, metrics, shadow and triangle coordinates.
 
-Verification: `Art/verify-preview.py`; detailed results and actual font records in `Art/Preview-qa.json`; text-free rendered background in `Art/Preview-background-qa.png`; thumbnail in `Art/Preview-thumbnail-qa.png`. Minimum contrast across entire text bounding rectangles against the real rendered background: title 6.110:1, tag 4.682:1, summary 5.412:1; badge digits against its opaque accent 8.863:1. Visually checked at 896 x 504 and 268 pixels wide: title and version identifiable, rule visible, no clipping or overlap. Final PNG: 565367 bytes, below 900 KB. Nothing published. This recomposition supersedes the earlier overlay measurements above.
+Reproducible font, bounds and text-free-background evidence is regenerated locally in `Art/.render/`. Minimum contrast from the prior full check remains recorded historically: title 6.110:1, tag 4.682:1, summary 5.412:1; badge digits 8.863:1. The current final is visually checked at 896 x 504: title and version identifiable, rule visible, no clipping or overlap. Nothing published. This recomposition supersedes the earlier overlay measurements above.
 
 ## ModIcon corner badge, Preview render pipeline generalized to `../scripts/`, tests added — 2026-09-29
 
@@ -238,9 +238,9 @@ this layout's `left:50px;top:54px` and is not usable as-is here. This mod's own 
 
 ## Preview title hierarchy update — 2026-09-12
 
-Applied the revised STYLE_RIMWORLD.md title hierarchy in `Art/render-preview.cjs` and regenerated `Art/Preview-layout.html` and `Mod/About/Preview.png`. Alpha Mythology retains the 46 px primary ink; Renew is a direct title span at 0.65em (29.9 px), weight 600, using the secondary ink. Existing name, summary and separate unofficial tag preserved. `Art/Preview.png` remains the unchanged text-free illustration; `Art/Preview-source.png` is preserved, with no illustration replacement.
+Applied the revised STYLE_RIMWORLD.md title hierarchy through the shared renderer. Alpha Mythology retains the 46 px primary ink; Renew is a direct title span at 0.65em (29.9 px), weight 600, using the secondary ink, immediately followed by `(unofficial)`. Existing name and summary are preserved. `Art/Preview-source.png` remains the unchanged text-free illustration.
 
-The single palette reference remains `Art/preview-palette.json`: blue slate paving supplies the veil and the light blue secondary family; the orange-gold illuminated griffin supplies the saturated accent. Warm orange contrasts distinctly with the dominant cool blue rather than repeating it. No palette change was necessary.
+The single palette reference is `Art/Preview.config.json`: blue slate paving supplies the veil and the light blue secondary family; the orange-gold illuminated griffin supplies the saturated accent. Warm orange contrasts distinctly with the dominant cool blue rather than repeating it. No palette change was necessary.
 
 Verified actual platform fonts after document.fonts.ready: Segoe UI Semibold for both title spans, Segoe UI regular for tag and summary, Segoe UI Bold for badge; no fallback. `Art/verify-preview.py` now checks the reduced suffix separately. `Art/Preview-qa.json` records minimum real-background contrasts: main title 7.752:1, suffix 7.319:1, tag 4.682:1, summary 5.412:1, badge 8.863:1. Final image visually checked at 896 x 504 and in `Art/Preview-thumbnail-qa.png` at 268 px wide: reduced Renew remains readable, title and version identifiable, rule visible, no clipping or overlaps. Version 1.6 re-read from delivered About.xml. PNG size 564630 bytes. Nothing published. These results supersede previous overlay measurements.
 
@@ -1055,6 +1055,18 @@ pixels and alpha apart from the final resize: no threshold, morphology, cleanup 
 The shared renderer consumes it unchanged in the accent colour, at 48% of the panel width with
 `flipX: true`. `Art/Gallery/0-preview.png` is refreshed byte-for-byte from the delivered preview.
 
+## Preview source migration — 2026-10-02
+
+The two former copy/palette JSON files are consolidated without value changes in
+`Art/Preview.config.json`. The text-free illustration remains `Art/Preview-source.png`; the
+accepted high-resolution transparent badge is now the canonical `Art/ModIcon-source.png`.
+Obsolete duplicates and committed QA intermediates were removed. The shared renderer writes
+its HTML, background and JSON diagnostics under ignored `Art/.render/`, regenerates both ICOs,
+and keeps `Art/Gallery/0-preview.png` byte-for-byte equal to `Mod/About/Preview.png`.
+The migration render is byte-identical to the accepted pre-migration Preview
+(`C2BDC8742181A912D5CD2C73BEE88974E563401596C484A3BD25378D15E90C34`, 896 x 504,
+608251 bytes). The other seven gallery files are unchanged. Nothing published.
+
 ## fix-en pass (4c41) read, 2026-10-02
 
 81 scenarios: 45 passed, 9 failed, 27 skipped (the skipped ones need a dependency map this pass did not use). All nine failures
@@ -1065,7 +1077,7 @@ are suite defects, none a defect of the mod:
 - egg destruction: the colonist stood next to the egg with the VEF job still running after 1000 ticks; waits doubled.
 - five ranged attacks "cannot start" and the hydra "no living pawn": my second volley fired a verb still cooling down, and at a target
   the first volley had already killed. The second volley now fires only when the first changed nothing.
-Red scenarios only replayed as 06fc (evidence fix-en2). Other scenarios of fix-en stay the proof for their run.
+Red scenarios only replayed as 5385 (evidence fix-en2; 06fc played nothing). Other scenarios of fix-en stay the proof for their run.
 
 ## Restart pair (41a1) green, 2026-10-02
 

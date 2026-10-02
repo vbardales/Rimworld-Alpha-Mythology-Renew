@@ -14,6 +14,6 @@
   "backgroundFile": "Preview.png",
   "backgroundPosition": "center",
   "backgroundSize": "cover",
-  "echo": { "file": "echo.png", "mode": "alpha", "preSized": true, "color": "var(--accent)", "width": 300, "height": 260, "opacity": 1, "veil": false, "panelWidth": 50, "flipX": true },
+  "echo": { "file": "echo.png", "preSized": true, "color": "var(--accent)", "width": 250, "height": 197, "opacity": 1, "veil": false, "panelTop": 3, "panelRight": -1, "panelWidth": 48, "flipX": true },
   "iconBadge": { "file": "ModIcon-badge-hires.png", "corner": "bottom-left", "width": 220, "outline": false, "veil": "radial", "veilSize": 275, "veilLeft": -55, "veilBottom": -61 }
 }

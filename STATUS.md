@@ -1045,3 +1045,12 @@ Dogs mate replay filed, 2026-10-01: request for the corrected scenarios (the gro
 Virginie uploaded `Art/Gallery/0-preview.png` to the Workshop item (3811323347) after the preview commit `58f4276` (20:39); the file is identical to `Mod/About/Preview.png` at that commit (610214 bytes, under 1 MiB). The other gallery pictures (the studio8 set, `Evidence/studio8`) are still hers to order and upload.
 
 Achievements pass (5c20) read and refiled, 2026-10-02: no report, the staging stopped before the game: Vanilla Achievements Expanded (2288125657) was in no Workshop folder of the machine. Downloaded into the WSL cache under `Use-Wsl.ps1` (steamcmd exit 0, 5.6 MB, packageId vanillaexpanded.achievements), on the owner's choice of option 1. Refiled as achievements2.
+
+## Preview echo refreshed from the delivered gallery — 2026-10-02
+
+The gallery supplied six close gameplay captures. The previous griffin echo duplicated the griffin
+already prominent in the preview background; it is replaced by the phoenix redrawn directly from
+`Art/Gallery/3-phoenix.jpg`. The final 250 x 197 transparent `Art/echo.png` preserves the generated
+pixels and alpha apart from the final resize: no threshold, morphology, cleanup or directional fade.
+The shared renderer consumes it unchanged in the accent colour, at 48% of the panel width with
+`flipX: true`. `Art/Gallery/0-preview.png` is refreshed byte-for-byte from the delivered preview.

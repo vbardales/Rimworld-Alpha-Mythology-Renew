@@ -1105,3 +1105,12 @@ scenarios belong to the other integrations. Needed the provider in the WSL cache
 
 Exit 8, `infrastructure-error`, 0 scenarios: the game's log says the filter "matched no scenarios". A bare phrase is not a scenario filter; the
 launcher's form is `::text` (or `file::text`). Refiled as 5385 with `::`-prefixed terms. Nothing was proved by 06fc.
+
+## Art folder reorganised, 2026-10-02
+
+`Art/` now holds the sources and the single config the shared renderer reads: `Preview-source.png` (text-free illustration), `echo.png`,
+`ModIcon-source.png` (canonical high-resolution badge, formerly `ModIcon-badge-hires.png`), `Preview.config.json` (composition, copy and palette,
+replacing `preview-copy.json` and `preview-palette.json`), `Preview.ico`, `ModIcon.ico`, `Cards/` and `Gallery/`. The shipped images stay
+`Mod/About/Preview.png` and `Mod/About/ModIcon.png`. Removed: the `Art/Preview.png` copy, `ModIcon-badge.png`, the QA files
+(`Preview-layout.html`, `Preview-qa.json`, `Preview-*-qa.png`, `Icons/`), `verify-preview.py`. The renderer's diagnostics go to `Art/.render/`,
+gitignored. Older entries above name the removed files: they describe what was true then. `Check-Mod.ps1` still passes (340 assertions).

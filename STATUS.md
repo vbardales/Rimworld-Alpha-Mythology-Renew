@@ -1184,3 +1184,11 @@ and 8062 with the same text: a more likely cause is that the check is late. The 
 about 0.5), so after 1800 ticks it is back at its maximum whatever the belt absorbed; the earlier passes caught it by timing. The step now also reads
 the belt's own memory of its last absorption, and the failure text lists the shield's int fields so that, if no such field exists, the next
 report says which ones do. Refiled alone as fix-en10.
+
+## Game's French translation report read, 2026-10-05
+
+Run by Virginie in her own game (`TranslationReport.txt`, French, a modded load order): 0 general load errors, 0 def-injected load errors, 0 argument
+mismatches or missing entries naming this mod. No line of the report carries an `AMR_` or `MM_` key or a def of this mod. Everything it lists belongs to
+other sources: 48 missing keyed entries and 22 missing def-injections for RimLogging (`CRL_*`, sink and channel defs) and the ancient bridge terrain defs;
+11 argument-count notes and 224 "matching English" notes in the game's own French files; 3 unused RimLogging keys. Nothing for this mod to fix. This
+confirms by the game itself what `Check-Translations.py` checked on the files (590 fields, 589 French injections, 56 keyed pairs).

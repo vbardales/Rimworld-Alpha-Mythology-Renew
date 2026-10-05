@@ -1148,3 +1148,10 @@ MM_WildMinotaur passed, shot from 7 cells (red at b9d5 and f8b6; a single run, t
 (evidence fix-en4), and the cause is mine: the raw `wildAnimals` list is empty for this mod's creatures, which reach a biome through their race's
 `wildBiomes`, so my new check found no biome at all, in the first step too. `AllWildAnimals` is back for that check, the remembered biome carries the
 blocked step. Refiled alone as c300 (evidence fix-en5).
+
+## Wild animal draw, ada3 read, 2026-10-05
+
+Step by step in the messages file of fix-en6: the first draw step passed, the second (every creature blocked) failed in 22 ms on my own "no biome" check.
+Cause, mine: in the first step the map's own biome already listed the creatures, so nothing was lent and nothing remembered; in the second no biome
+listed them any more. The biome of the first draw is now remembered whether it is lent or the map's own. Refiled alone as 22df (evidence fix-en7).
+c300 had crashed at launch (exit 139, nothing played). The step-level reading of the messages file is the way to read a failure of this scenario.

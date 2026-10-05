@@ -250,11 +250,16 @@ namespace AlphaMythologyRenew.PickleSteps
             BiomeDef lent = null, original = map.Biome;
             System.Reflection.FieldInfo biomeField = null;
             object tile = null;
-            if (!ListsOwnKind(original))
+            // Remember the biome of the first draw, lent or the map's own (ada3: the map's own listed the creatures in the first step, nothing
+            // was remembered, and in the step where every creature is blocked no biome listed them any more).
+            if (rememberedBiome == null)
             {
-                lent = rememberedBiome ?? DefDatabase<BiomeDef>.AllDefsListForReading.FirstOrDefault(ListsOwnKind);
-                rememberedBiome = lent;
-                ctx.Require(lent != null, "no biome of the game hosts any of this mod's creatures");
+                rememberedBiome = ListsOwnKind(original) ? original : DefDatabase<BiomeDef>.AllDefsListForReading.FirstOrDefault(ListsOwnKind);
+            }
+            ctx.Require(rememberedBiome != null, "no biome of the game hosts any of this mod's creatures");
+            if (original != rememberedBiome)
+            {
+                lent = rememberedBiome;
                 tile = Find.WorldGrid[map.Tile];
                 for (var t = tile.GetType(); t != null && biomeField == null; t = t.BaseType)
                 {

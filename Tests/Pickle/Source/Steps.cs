@@ -219,7 +219,9 @@ namespace AlphaMythologyRenew.PickleSteps
         {
             var list = typeof(BiomeDef).GetField("wildAnimals", System.Reflection.BindingFlags.Instance
                 | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.NonPublic)?.GetValue(biome) as System.Collections.IEnumerable;
-            if (list == null) return biome.AllWildAnimals.Any(AlphaMythologyRenewMod.IsOwnKind);
+            // The mod's creatures reach a biome through their race's wildBiomes, not through this list: AllWildAnimals sees them (a156: the raw list alone found no biome at all).
+            if (biome.AllWildAnimals.Any(AlphaMythologyRenewMod.IsOwnKind)) return true;
+            if (list == null) return false;
             foreach (var record in list)
             {
                 var animal = record.GetType().GetField("animal")?.GetValue(record) as PawnKindDef;

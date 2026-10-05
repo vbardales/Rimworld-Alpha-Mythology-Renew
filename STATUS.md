@@ -1141,3 +1141,10 @@ Two scenarios, both still red (evidence fix-en3), both still suite defects as fa
   the creature's Def, not for the suite.
 Refiled as a156 (evidence fix-en4). Evidence of b9d5 (fix-en2-1) and of the cut-short b197 (final-en) deleted: they proved nothing more. The final
 EN and FR baselines wait for a156.
+
+## Red replay a156 read, 2026-10-05
+
+MM_WildMinotaur passed, shot from 7 cells (red at b9d5 and f8b6; a single run, to be confirmed by the final baseline). The wild animal draw is still red
+(evidence fix-en4), and the cause is mine: the raw `wildAnimals` list is empty for this mod's creatures, which reach a biome through their race's
+`wildBiomes`, so my new check found no biome at all, in the first step too. `AllWildAnimals` is back for that check, the remembered biome carries the
+blocked step. Refiled alone as c300 (evidence fix-en5).

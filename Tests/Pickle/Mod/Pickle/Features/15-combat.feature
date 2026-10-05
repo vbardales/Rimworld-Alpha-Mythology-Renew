@@ -57,6 +57,11 @@ Feature: the creatures' ranged attacks
     And Alpha Mythology Renew records the injury severity and the condition count of "Wearer"
     When Alpha Mythology Renew "Shooter" fires its first ranged attack at "Wearer"
     And I wait 600 ticks
+    # A breath that misses leaves the belt at full (final-en 1aad, 2026-10-05: 1.1 of 1.1): two more volleys while the wearer is untouched.
+    And Alpha Mythology Renew "Shooter" fires again at "Wearer" if it is not yet affected
+    And I wait 600 ticks
+    And Alpha Mythology Renew "Shooter" fires again at "Wearer" if it is not yet affected
+    And I wait 600 ticks
     Then Alpha Mythology Renew the shield belt of "Wearer" took the attack or the wearer was hurt
     And no errors were logged
 

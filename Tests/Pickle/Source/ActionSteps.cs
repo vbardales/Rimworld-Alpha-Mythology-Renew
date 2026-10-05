@@ -348,8 +348,16 @@ namespace AlphaMythologyRenew.PickleSteps
             doer.Position = pawn.Position;
             doer.Notify_Teleported(false);
             int before = map.listerThings.ThingsOfDef(milk).Sum(t => t.stackCount);
-            comp.Gathered(doer);
-            int after = map.listerThings.ThingsOfDef(milk).Sum(t => t.stackCount);
+            // The yield is milkAmount x fullness x the gatherer's AnimalGatherYield, rounded at random: a poor gatherer gets 0 now and then
+            // (final-en 1aad, 2026-10-05: the hind 0 -> 0 while the chimera, with the same Def values bar 10 for 12, passed). Gather again, full
+            // each time, until some milk appears; twenty tries make a real defect, not luck, the only way to stay at nothing.
+            int after = before;
+            for (int attempt = 0; attempt < 20 && after <= before; attempt++)
+            {
+                fullness.SetValue(comp, 1f);
+                comp.Gathered(doer);
+                after = map.listerThings.ThingsOfDef(milk).Sum(t => t.stackCount);
+            }
             ctx.Assert(after > before, $"no milk was produced when full ({before} -> {after})");
         }
 

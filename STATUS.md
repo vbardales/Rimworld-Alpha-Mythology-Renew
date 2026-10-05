@@ -1161,3 +1161,11 @@ c300 had crashed at launch (exit 139, nothing played). The step-level reading of
 22df passed (evidence fix-en7): both steps of the draw scenario, with the multiplier at 5 and with every creature blocked. All nine suite defects of 4c41
 are now answered by a green scenario (the minotaur once, from 7 cells, at a156). Final baselines on the revision to test, `PLAIN` filter: English
 and French, evidence final-en and final-fr. They replace base-en, base-fr, fix-en and the fix-en7 replay once read.
+
+## Final EN baseline 1aad read, 2026-10-05
+
+79 scenarios: 50 passed, 2 red, 27 skipped by requirement (evidence final-en). Both reds are suite defects, both luck on a single try:
+- shield belt vs poison breath: belt at 1.1 of 1.1, the breath never reached it. Two more volleys while the wearer is untouched.
+- hind milk, 0 -> 0 (also at base-fr; the chimera, same Def values, passes): the yield is milkAmount x fullness x the gatherer's AnimalGatherYield, rounded
+  at random, so a poor gatherer gets nothing now and then. The step gathers again, full each time, up to twenty tries.
+The wild draw and the minotaur passed in this baseline. Replay of the two reds filed as fix-en8; the French baseline (4f4f) is next in the queue.

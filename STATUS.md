@@ -1130,3 +1130,14 @@ gitignored. Older entries above name the removed files: they describe what was t
   defect of the creature. Not yet a verdict on the minotaur.
 Refiled as f8b6 (evidence fix-en3). The final EN baseline b197 was already running on the previous build and will show the same two reds; the FR one
 (4885) was cancelled and is refiled once f8b6 is green.
+
+## Red replay f8b6 read, 2026-10-05
+
+Two scenarios, both still red (evidence fix-en3), both still suite defects as far as the evidence goes:
+- wild animal draw: the raw-list check still found no biome in the blocked step (the field name or the list does not give it). The step now
+  remembers the biome found by the first draw of the run and reuses it.
+- MM_WildMinotaur: three volleys, conditions 1 -> 1. The tremor has `minRange` 5 and the target stood 5 cells away, on the edge of it; every other
+  creature passes at 5. The minotaur is now shot from 7 (an `<distance>` column in the outline). If it is still red from 7, it is a question for
+  the creature's Def, not for the suite.
+Refiled as a156 (evidence fix-en4). Evidence of b9d5 (fix-en2-1) and of the cut-short b197 (final-en) deleted: they proved nothing more. The final
+EN and FR baselines wait for a156.

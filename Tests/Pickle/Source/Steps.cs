@@ -212,6 +212,9 @@ namespace AlphaMythologyRenew.PickleSteps
         /// the latter drops a kind whose commonality is zero, which is what blocking every creature does (fix-en2-1 b9d5,
         /// "no biome of the game hosts any of this mod's creatures" in the step where all of them are blocked).
         /// </summary>
+        // The biome found by an earlier draw of this run: once every creature is blocked no biome names one any more.
+        private static BiomeDef rememberedBiome;
+
         private static bool ListsOwnKind(BiomeDef biome)
         {
             var list = typeof(BiomeDef).GetField("wildAnimals", System.Reflection.BindingFlags.Instance
@@ -247,7 +250,8 @@ namespace AlphaMythologyRenew.PickleSteps
             object tile = null;
             if (!ListsOwnKind(original))
             {
-                lent = DefDatabase<BiomeDef>.AllDefsListForReading.FirstOrDefault(ListsOwnKind);
+                lent = rememberedBiome ?? DefDatabase<BiomeDef>.AllDefsListForReading.FirstOrDefault(ListsOwnKind);
+                rememberedBiome = lent;
                 ctx.Require(lent != null, "no biome of the game hosts any of this mod's creatures");
                 tile = Find.WorldGrid[map.Tile];
                 for (var t = tile.GetType(); t != null && biomeField == null; t = t.BaseType)

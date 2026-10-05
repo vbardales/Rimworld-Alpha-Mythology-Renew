@@ -1192,3 +1192,9 @@ mismatches or missing entries naming this mod. No line of the report carries an 
 other sources: 48 missing keyed entries and 22 missing def-injections for RimLogging (`CRL_*`, sink and channel defs) and the ancient bridge terrain defs;
 11 argument-count notes and 224 "matching English" notes in the game's own French files; 3 unused RimLogging keys. Nothing for this mod to fix. This
 confirms by the game itself what `Check-Translations.py` checked on the files (590 fields, 589 French injections, 56 keyed pairs).
+
+## Code review since 0.1.0, 2026-10-05
+
+Low-effort review of c2f8199 (0.1.0, `PublishedFileId.txt`) to f3d8693ee1c469acc5286f14b03aff0202eeca71: no findings. The shipped code (`Mod/`, `Source/`) is unchanged
+since 0.1.0 apart from `Mod/About/Preview.png` (binary); everything else in the range is `Tests/` (not reviewed at this level), `Art/`, docs and STATUS.
+Reviewed commit: f3d8693ee1c469acc5286f14b03aff0202eeca71.

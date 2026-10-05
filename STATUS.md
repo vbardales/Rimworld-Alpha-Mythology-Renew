@@ -1114,3 +1114,9 @@ replacing `preview-copy.json` and `preview-palette.json`), `Preview.ico`, `ModIc
 `Mod/About/Preview.png` and `Mod/About/ModIcon.png`. Removed: the `Art/Preview.png` copy, `ModIcon-badge.png`, the QA files
 (`Preview-layout.html`, `Preview-qa.json`, `Preview-*-qa.png`, `Icons/`), `verify-preview.py`. The renderer's diagnostics go to `Art/.render/`,
 gitignored. Older entries above name the removed files: they describe what was true then. `Check-Mod.ps1` still passes (340 assertions).
+
+## Tickets filed, 2026-10-05
+
+5385 (replay of the red scenarios) came back `invalid` (the request was refused before it started, no log): refiled as b9d5 with the
+`file::text` form (evidence fix-en2). Behind it, the final baselines on the revision to test, `PLAIN` filter: b197 in English (final-en) and
+4885 in French (final-fr). They replace base-en, base-fr, fix-en and fix-en2 once read and green.

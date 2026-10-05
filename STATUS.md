@@ -1169,3 +1169,10 @@ and French, evidence final-en and final-fr. They replace base-en, base-fr, fix-e
 - hind milk, 0 -> 0 (also at base-fr; the chimera, same Def values, passes): the yield is milkAmount x fullness x the gatherer's AnimalGatherYield, rounded
   at random, so a poor gatherer gets nothing now and then. The step gathers again, full each time, up to twenty tries.
 The wild draw and the minotaur passed in this baseline. Replay of the two reds filed as fix-en8; the French baseline (4f4f) is next in the queue.
+
+## Replay a84d read, 2026-10-05
+
+The hind milk passed (fix-en8). The shield belt is red again after three volleys, belt at 1.1 of 1.1: not luck. The wearer is a colonist generated for the
+test, and a generated colonist goes about the colony's work during the 1800 ticks of waiting; the animal targets stand still. Hypothesis, not yet proved:
+it walked out of the breath. The wearer is now drafted and its jobs stopped when it is given the belt. Refiled alone as fix-en9. If it is still red
+with the wearer in place, the finding is about the breath against a shield belt, to be read as such.

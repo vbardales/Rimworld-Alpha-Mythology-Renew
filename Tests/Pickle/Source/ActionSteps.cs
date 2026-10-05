@@ -111,6 +111,13 @@ namespace AlphaMythologyRenew.PickleSteps
             var belt = (Apparel)ThingMaker.MakeThing(ThingDefOf.Apparel_ShieldBelt);
             pawn.apparel.Wear(belt, false);
             ctx.Require(pawn.apparel.WornApparel.Contains(belt), $"'{name}' does not wear the shield belt");
+            // A colonist spawned for the test goes about the colony's work for the 1800 ticks of waiting and walks out of the breath (a84d,
+            // 2026-10-05: three volleys, the belt at 1.1 of 1.1). Drafted, it stays where it was put.
+            if (pawn.drafter != null)
+            {
+                pawn.jobs.StopAll();
+                pawn.drafter.Drafted = true;
+            }
         }
 
         [Given("Alpha Mythology Renew records the injury severity and the condition count of {string}")]

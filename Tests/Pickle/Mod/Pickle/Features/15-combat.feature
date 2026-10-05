@@ -18,6 +18,9 @@ Feature: the creatures' ranged attacks
     # Only when the first volley changed nothing (fix-en 4c41, 2026-10-02: a hydra that killed the target, a verb still cooling down).
     And Alpha Mythology Renew "Shooter" fires again at "Target" if it is not yet affected
     And I wait 600 ticks
+    # b9d5 (2026-10-05): the minotaur's tremor, a blunt 20, left a Muffalo untouched after two volleys; a third before calling it a defect.
+    And Alpha Mythology Renew "Shooter" fires again at "Target" if it is not yet affected
+    And I wait 600 ticks
     Then Alpha Mythology Renew "Target" has been hurt or otherwise affected by the attack
     And no errors were logged
 

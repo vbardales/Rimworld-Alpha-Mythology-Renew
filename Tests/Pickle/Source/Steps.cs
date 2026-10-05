@@ -207,6 +207,24 @@ namespace AlphaMythologyRenew.PickleSteps
         /// pass even if a vanilla path bypassed it; this shows the setting reaching an actual spawn. The animals it spawns
         /// are removed again, and the kind of the first one of each call is the draw.
         /// </summary>
+        /// <summary>
+        /// Whether the biome's own list of wild animals names one of this mod's kinds. The raw list, not AllWildAnimals:
+        /// the latter drops a kind whose commonality is zero, which is what blocking every creature does (fix-en2-1 b9d5,
+        /// "no biome of the game hosts any of this mod's creatures" in the step where all of them are blocked).
+        /// </summary>
+        private static bool ListsOwnKind(BiomeDef biome)
+        {
+            var list = typeof(BiomeDef).GetField("wildAnimals", System.Reflection.BindingFlags.Instance
+                | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.NonPublic)?.GetValue(biome) as System.Collections.IEnumerable;
+            if (list == null) return biome.AllWildAnimals.Any(AlphaMythologyRenewMod.IsOwnKind);
+            foreach (var record in list)
+            {
+                var animal = record.GetType().GetField("animal")?.GetValue(record) as PawnKindDef;
+                if (animal != null && AlphaMythologyRenewMod.IsOwnKind(animal)) return true;
+            }
+            return false;
+        }
+
         private static List<PawnKindDef> Draws(PickleContext ctx, int count)
         {
             ctx.Require(Current.Game != null && Find.CurrentMap != null, "no current map: load a fixture first");
@@ -227,9 +245,9 @@ namespace AlphaMythologyRenew.PickleSteps
             BiomeDef lent = null, original = map.Biome;
             System.Reflection.FieldInfo biomeField = null;
             object tile = null;
-            if (!original.AllWildAnimals.Any(AlphaMythologyRenewMod.IsOwnKind))
+            if (!ListsOwnKind(original))
             {
-                lent = DefDatabase<BiomeDef>.AllDefsListForReading.FirstOrDefault(b => b.AllWildAnimals.Any(AlphaMythologyRenewMod.IsOwnKind));
+                lent = DefDatabase<BiomeDef>.AllDefsListForReading.FirstOrDefault(ListsOwnKind);
                 ctx.Require(lent != null, "no biome of the game hosts any of this mod's creatures");
                 tile = Find.WorldGrid[map.Tile];
                 for (var t = tile.GetType(); t != null && biomeField == null; t = t.BaseType)

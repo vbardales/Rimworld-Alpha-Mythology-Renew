@@ -1120,3 +1120,13 @@ gitignored. Older entries above name the removed files: they describe what was t
 5385 (replay of the red scenarios) came back `invalid` (the request was refused before it started, no log): refiled as b9d5 with the
 `file::text` form (evidence fix-en2). Behind it, the final baselines on the revision to test, `PLAIN` filter: b197 in English (final-en) and
 4885 in French (final-fr). They replace base-en, base-fr, fix-en and fix-en2 once read and green.
+
+## Red replay b9d5 read, 2026-10-05
+
+8 scenarios: 6 passed, 2 red (evidence fix-en2-1; `fix-en2` is the older, empty 06fc report). Both are suite defects again:
+- wild animal draw: the step that blocks every creature found "no biome hosts any of this mod's creatures", because `AllWildAnimals` drops a kind
+  whose commonality is zero, which is what blocking does. The check now reads the biome's raw `wildAnimals` list.
+- MM_WildMinotaur: a blunt-20 tremor left a Muffalo untouched after two volleys (conditions 0 -> 0); a third volley before concluding it is a
+  defect of the creature. Not yet a verdict on the minotaur.
+Refiled as f8b6 (evidence fix-en3). The final EN baseline b197 was already running on the previous build and will show the same two reds; the FR one
+(4885) was cancelled and is refiled once f8b6 is green.

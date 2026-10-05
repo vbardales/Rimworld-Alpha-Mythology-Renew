@@ -98,13 +98,12 @@ Screenshots may be minified (only the `@review` captures that were actually open
 judged, at reduced size). Never delete a report a `STATUS.md` field still points to:
 repoint it first. History is one text line per run in `docs/runs/`, never folders.
 
-Kept on disk as of 2026-10-02 (first listed 2026-09-30, 38 MB then; every `report.html` and every `messages.ndjson` over 1 MB removed, they duplicate the summary and the captures):
+Kept on disk as of 2026-10-05 (first listed 2026-09-30, 38 MB then; every `report.html` and every `messages.ndjson` over 1 MB removed, they duplicate the summary and the captures):
 
 | Folder | What it proves | Delete when |
 |---|---|---|
-| `base-en`, `base-fr` | full baseline in EN and FR on `sans-facultatifs` (pre-fix revision); only the settings `@review` capture is left, the other captures deleted 2026-10-05 (disk) | the final baseline on the current revision replaces them |
-| `fix-en`, `fix-en7` | the 4c41 pass (summary and junit only; report, messages and captures deleted 2026-10-05) and the green replay of the wild animal draw |
-| `phoenix`, `phoenix2` | phoenix scenarios (6 green in `phoenix`; the open red "a requested destruction..." in `phoenix2`) | a green run of that scenario replaces both |
+| `final-en`, `final-fr` | the final baseline (79 scenarios, `PLAIN`, EN and FR on `sans-facultatifs`): 50 passed each, the two reds of the day answered by `fix-en8` and `fix-en10`; report and messages over 1 MB removed | the next full pass on a newer revision replaces them |
+| `fix-en8`, `fix-en10` | the green replays of the hind milk (a84d) and of the shield belt vs the poison breath (9d00) that the baselines had red | the next full pass has them green |
 | `facultatifs5`, `genetics`, `giddyup`, `rwom`, `rimmsqol`, `treechop2` | one optional-provider pass each (`@requires` scenarios) | the same pass is replayed |
 | `incompat4` | the declared incompatibility with `sarg.magicalmenagerie` still behaves as declared | the other mod changes |
 | `restart3` | settings persistence across a restart (seq1, seq2), green 41a1 | replayed |

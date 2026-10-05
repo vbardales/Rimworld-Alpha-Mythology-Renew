@@ -1198,3 +1198,13 @@ confirms by the game itself what `Check-Translations.py` checked on the files (5
 Low-effort review of c2f8199 (0.1.0, `PublishedFileId.txt`) to f3d8693ee1c469acc5286f14b03aff0202eeca71: no findings. The shipped code (`Mod/`, `Source/`) is unchanged
 since 0.1.0 apart from `Mod/About/Preview.png` (binary); everything else in the range is `Tests/` (not reviewed at this level), `Art/`, docs and STATUS.
 Reviewed commit: f3d8693ee1c469acc5286f14b03aff0202eeca71.
+
+## Shield belt green (9d00); suite defects all answered, 2026-10-05
+
+9d00 passed (evidence fix-en10): the belt's own memory of its last absorption is read, since its energy recharges during the 1800 ticks of waiting; the
+scenario was red at 1aad, 4f4f, a84d and 8062 and the earlier passes were timing. The hind milk passed at a84d (fix-en8).
+State of the runs on the current revision: final-en (1aad) and final-fr (4f4f) each 79 scenarios, 50 passed, 27 skipped by requirement (covered by the
+integration passes), the two reds answered by fix-en8 and fix-en10; the wild animal draw, the egg destruction and the minotaur (from 7 cells) pass in both.
+Every red of the baselines now has a green replay. Evidence trimmed to 57 MB (base-en, base-fr, fix-en, fix-en7, fix-en9, phoenix, phoenix2 deleted).
+Still before `done`: her captures to look at, her manual validations, the rest of the gallery uploaded, and the translation assertion NPT is writing
+(a step reading the game's own translation report for this mod, to be adopted in 05-language.feature).

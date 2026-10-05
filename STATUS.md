@@ -1155,3 +1155,9 @@ Step by step in the messages file of fix-en6: the first draw step passed, the se
 Cause, mine: in the first step the map's own biome already listed the creatures, so nothing was lent and nothing remembered; in the second no biome
 listed them any more. The biome of the first draw is now remembered whether it is lent or the map's own. Refiled alone as 22df (evidence fix-en7).
 c300 had crashed at launch (exit 139, nothing played). The step-level reading of the messages file is the way to read a failure of this scenario.
+
+## Wild animal draw green (22df), final baselines filed, 2026-10-05
+
+22df passed (evidence fix-en7): both steps of the draw scenario, with the multiplier at 5 and with every creature blocked. All nine suite defects of 4c41
+are now answered by a green scenario (the minotaur once, from 7 cells, at a156). Final baselines on the revision to test, `PLAIN` filter: English
+and French, evidence final-en and final-fr. They replace base-en, base-fr, fix-en and the fix-en7 replay once read.

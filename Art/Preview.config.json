@@ -24,6 +24,7 @@
     "for your RimWorld colony."
   ],
   "layout": "panel",
+  "modIconSource": "ModIcon-source.png",
   "backgroundFile": "Preview-source.png",
   "backgroundPosition": "center",
   "backgroundSize": "cover",

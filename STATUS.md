@@ -1208,3 +1208,11 @@ integration passes), the two reds answered by fix-en8 and fix-en10; the wild ani
 Every red of the baselines now has a green replay. Evidence trimmed to 57 MB (base-en, base-fr, fix-en, fix-en7, fix-en9, phoenix, phoenix2 deleted).
 Still before `done`: her captures to look at, her manual validations, the rest of the gallery uploaded, and the translation assertion NPT is writing
 (a step reading the game's own translation report for this mod, to be adopted in 05-language.feature).
+
+## Icon source changed: preview and icons regenerated, 2026-10-05
+
+`Art/ModIcon-source.png` changed (the owner's new badge). `Art/Preview.config.json` now carries `"modIconSource": "ModIcon-source.png"`, which makes the shared
+renderer deliver `Mod/About/ModIcon.png` from it (128 x 128, 22 kB) before drawing the preview. One run of `node ../scripts/Render-Preview.cjs` regenerated
+`Mod/About/Preview.png` (607 739 bytes, under 1 MiB) and `Art/Gallery/0-preview.png` (byte-identical), `Art/Preview.ico` and `Art/ModIcon.ico`. `Check-Mod.ps1` passes
+(340 assertions). Root cleaned: `.build/` (build intermediates, gitignored) deleted; `.git`, `.github`, `.gitattributes`, `.gitignore` and `desktop.ini` (the
+folder icon) stay, the first four being the repository's own and the last what `Set-ModFolderIcons.ps1` writes. Nothing is published.

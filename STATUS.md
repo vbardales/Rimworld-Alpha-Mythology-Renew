@@ -1176,3 +1176,11 @@ The hind milk passed (fix-en8). The shield belt is red again after three volleys
 test, and a generated colonist goes about the colony's work during the 1800 ticks of waiting; the animal targets stand still. Hypothesis, not yet proved:
 it walked out of the breath. The wearer is now drafted and its jobs stopped when it is given the belt. Refiled alone as fix-en9. If it is still red
 with the wearer in place, the finding is about the breath against a shield belt, to be read as such.
+
+## Replay 8062 read, 2026-10-05
+
+Still red with the wearer drafted, so my walking-away hypothesis was wrong. The scenario passed at 4c41 and at the baselines and fails at 1aad, 4f4f, a84d
+and 8062 with the same text: a more likely cause is that the check is late. The shield energy recharges (about 0.2 per second against a 15-damage hit costing
+about 0.5), so after 1800 ticks it is back at its maximum whatever the belt absorbed; the earlier passes caught it by timing. The step now also reads
+the belt's own memory of its last absorption, and the failure text lists the shield's int fields so that, if no such field exists, the next
+report says which ones do. Refiled alone as fix-en10.

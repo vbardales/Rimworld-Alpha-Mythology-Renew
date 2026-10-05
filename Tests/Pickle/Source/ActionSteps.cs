@@ -202,8 +202,15 @@ namespace AlphaMythologyRenew.PickleSteps
             float energy = property != null ? (float)property.GetValue(shield, null) : (float)field.GetValue(shield);
             float max = belt.GetStatValue(StatDefOf.EnergyShieldEnergyMax);
             bool hurt = InjurySeverity(victim) > record.Values[target] + 0.01f;
-            ctx.Assert(energy < max - 0.01f || hurt,
-                $"neither the shield ({energy} of {max}) nor the wearer's health reacted to the attack");
+            // The energy recharges: after 1800 ticks of waiting it is back at its maximum whatever the belt absorbed (8062, 2026-10-05: 1.1 of 1.1
+            // in four runs, two of them with the wearer standing still). The belt remembers the tick of its last absorption.
+            bool absorbed = false;
+            foreach (var memory in shield.GetType().GetFields(flags).Where(m => m.FieldType == typeof(int) && m.Name.IndexOf("lastAbsorb", System.StringComparison.OrdinalIgnoreCase) >= 0))
+            {
+                absorbed |= (int)memory.GetValue(shield) > 0;
+            }
+            ctx.Assert(absorbed || energy < max - 0.01f || hurt,
+                $"neither the shield ({energy} of {max}) nor the wearer's health reacted to the attack; int fields of the shield: {string.Join(", ", shield.GetType().GetFields(flags).Where(m => m.FieldType == typeof(int)).Select(m => m.Name + "=" + m.GetValue(shield)))}");
         }
 
         // --- F03: the destruction of an egg, end to end through VEF ---------------------------

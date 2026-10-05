@@ -102,8 +102,8 @@ Kept on disk as of 2026-10-02 (first listed 2026-09-30, 38 MB then; every `repor
 
 | Folder | What it proves | Delete when |
 |---|---|---|
-| `base-en`, `base-fr` | full baseline in EN and FR on `sans-facultatifs` (pre-fix revision); one `@review` capture each | the final baseline on the current revision replaces them |
-| `fix-en`, `fix-en2` | the 4c41 pass (9 suite defects) and the replay of its red scenarios | the final baseline replaces them |
+| `base-en`, `base-fr` | full baseline in EN and FR on `sans-facultatifs` (pre-fix revision); only the settings `@review` capture is left, the other captures deleted 2026-10-05 (disk) | the final baseline on the current revision replaces them |
+| `fix-en`, `fix-en7` | the 4c41 pass (summary and junit only; report, messages and captures deleted 2026-10-05) and the green replay of the wild animal draw |
 | `phoenix`, `phoenix2` | phoenix scenarios (6 green in `phoenix`; the open red "a requested destruction..." in `phoenix2`) | a green run of that scenario replaces both |
 | `facultatifs5`, `genetics`, `giddyup`, `rwom`, `rimmsqol`, `treechop2` | one optional-provider pass each (`@requires` scenarios) | the same pass is replayed |
 | `incompat4` | the declared incompatibility with `sarg.magicalmenagerie` still behaves as declared | the other mod changes |

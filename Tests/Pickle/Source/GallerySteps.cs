@@ -9,8 +9,8 @@ using Verse;
 namespace AlphaMythologyRenew.PickleSteps
 {
     /// <summary>
-    /// Steps for the Workshop pictures: put this mod's creatures on the photographic colony, frame them, and
-    /// select them.
+    /// Steps for the Workshop pictures: check this mod's creatures (spawned by PickleTools' own animal steps on the sanctuary), frame them,
+    /// and select them.
     /// Built after ContentedLivestock's publication-shots steps and what that session learned: creature names
     /// must not exist in the fixture (the steps take the first pawn of that name, and the zen meadow already
     /// has a macaw called "Clover"), letters have to be dismissed, and after a camera jump the pointer rests at
@@ -19,29 +19,6 @@ namespace AlphaMythologyRenew.PickleSteps
     [PickleSteps]
     public class GallerySteps
     {
-        [Given("Alpha Mythology Renew spawns the player animal {string} as {string} near x {int} and z {int}")]
-        public void SpawnPlayerAnimal(PickleContext ctx, string name, string kindDefName, int x, int z)
-        {
-            var map = CreatureSteps.Map(ctx);
-            var kind = CreatureSteps.Kind(ctx, kindDefName);
-            ctx.Require(map.mapPawns.AllPawns.All(p => p.LabelShort != name),
-                $"a pawn called '{name}' already exists in the fixture: pick a name it does not have");
-
-            // Coordinates come from the studio fixture; on another map they may lie outside it: use the centre then.
-            var origin = new IntVec3(x, 0, z);
-            if (!origin.InBounds(map)) origin = map.Center;
-            IntVec3 cell;
-            var found = CellFinder.TryFindRandomCellNear(origin, map, 6,
-                c => c.Standable(map) && c.GetFirstPawn(map) == null && c.GetEdifice(map) == null, out cell);
-            ctx.Require(found, $"no free cell near {x},{z}");
-            // An adult, so that the picture shows the creature and not a juvenile. CreatureSteps records it for the teardown.
-            var pawn = CreatureSteps.SpawnAtStage(ctx, kind, kind.RaceProps.lifeStageAges.Count - 1, cell);
-            pawn.Name = new NameSingle(name);
-            // GenSpawn.Spawn places a thing facing north (its back to the camera) and a paused game never turns it: every
-            // picture of studio pass 2a77 showed the creature from behind. South is the front view.
-            pawn.Rotation = Rot4.South;
-        }
-
         [Then("Alpha Mythology Renew the creature {string} is standing on the map as {string}")]
         public void StandsAs(PickleContext ctx, string name, string kindDefName)
         {

@@ -1216,3 +1216,12 @@ renderer deliver `Mod/About/ModIcon.png` from it (128 x 128, 22 kB) before drawi
 `Mod/About/Preview.png` (607 739 bytes, under 1 MiB) and `Art/Gallery/0-preview.png` (byte-identical), `Art/Preview.ico` and `Art/ModIcon.ico`. `Check-Mod.ps1` passes
 (340 assertions). Root cleaned: `.build/` (build intermediates, gitignored) deleted; `.git`, `.github`, `.gitattributes`, `.gitignore` and `desktop.ini` (the
 folder icon) stay, the first four being the repository's own and the last what `Set-ModFolderIcons.ps1` writes. Nothing is published.
+
+## Gallery scenarios rewritten for the sanctuary, 2026-10-05
+
+Pickle Tools moved every mod's gallery captures to one shared scene, Nelim's sanctuary (`Nelims-tribe`, 250 x 250; `docs/GALERIE.md` and
+`docs/SANCTUAIRE-LIEUX.md` of PickleTools). `09-publication-shots.feature` is rewritten for it: save `Nelims-tribe`, hour 12 and clear weather (the save is 23:00), each
+animal spawned adult by PickleTools' own step at the `podium` (197, 152), the camera put there by `I am at the sanctuary "podium"` and then on the animal by this
+mod's `frames the animal ... at zoom 2.5` (PickleTools' own framing stops near zoom 11; this mod's lowers the camera floor), presentation mode, one picture per creature,
+the settings window picture kept. New map `Tests/Pickle/wsl-deps.sanctuary.map`; this mod's own spawn step removed (dead). Pickle Tools asks that no gallery ticket be filed
+before it announces the final fixture ("fixture prete"): the pass is written, not filed. The seven pictures in `Art/Gallery/` are still the old studio8 ones.

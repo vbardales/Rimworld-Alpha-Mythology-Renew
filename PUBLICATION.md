@@ -1,7 +1,8 @@
 # Publication - Alpha Mythology Renew (unofficial)
 
-What the Workshop page asks for and the repository holds nowhere else. Draft of 2026-09-26; nothing here has
-been sent. The mod is not tested in game yet (see `STATUS.md`): this file is prepared, not final.
+What the Workshop page asks for and the repository holds nowhere else. Draft of 2026-09-26, checked against the monorepo's `PUBLISHING.md` on 2026-10-07. Only the private 0.1.0 pre-publication has been sent; the mod is in `preTest` (see `STATUS.md`), so this file is prepared, not final.
+
+**Publication mode: CI** (a public port; `PUBLISHING.md`, "Publier par la CI"): green dry-run of the exact commit, `publish` with the full 40-character SHA, `steam-production` approved by Virginie alone, tag and release created by the CI. The gallery goes by hand.
 
 Rights position, to keep in front of every choice below: **`silent`** (no licence, no permission, no refusal
 found), published as an unofficial port with a removal promise. The original author is Sarg Bjornson, who
@@ -10,8 +11,8 @@ announced a future remake and removes comments asking for 1.6 updates.
 ## Workshop item
 
 - Title: `Alpha Mythology Renew (unofficial)` (from `Mod/About/About.xml`).
-- Pre-publication `0.1.0` is a first send whose only purpose is to create the private item and obtain
-  `About/PublishedFileId.txt`, committed at once as `Add published Workshop file ID for 0.1.0`. Not yet done.
+- Pre-publication `0.1.0` was a first send whose only purpose was to create the private item and obtain
+  `About/PublishedFileId.txt`: done 2026-10-01 (item `3811323347`, committed at once as `Add published Workshop file ID for 0.1.0`, c2f8199). The item is private; the description it was created with is the one `About.xml` held that day, and any later correction goes through the CI (`update_description`) or by hand.
 - Version `1.0.0` arrives only with `published`. Steam creates every item private; Virginie switches it to public.
 - Tags to set by hand on the page: Animal, Race, Fantasy (to confirm on the form).
 
@@ -52,30 +53,18 @@ Contact sheets are 150 px thumbnails: text on the cards was not read.
 - Found while looking, not changed (`Mod/` is frozen): textures for a `MM_Mechataur` (4 files) that is not one of the
   25 creatures (the odd-named `MM_FenghuangEgg_a copy.png` is used: its egg graphic loads the whole folder).
 
-## Screenshots (order to decide after the passes)
+## Screenshots and gallery
 
-Steam shows the first image large: the most demonstrative one goes there, not the prettiest. The studio pass
-(`09-publication-shots.feature`) is written and run: one picture per creature (griffin, hound, phoenix, unicorn,
-manticore, pegasus) plus the settings window over the meadow — 7 pictures, framing tuned to zoom 2.5, creatures
-facing south (front view, fixed 2026-09-28). Order still to decide once a confirmed set exists: the settings
-window shows the interface, not a creature, so it is not a first-image candidate.
+Steam shows the first image large. `Art/Gallery/` (git tracks it with a capital G) is the folder uploaded as it stands: only images, numbered `0-`, `1-`, `2-`… on one digit, in page order, nothing else. Rules of `PUBLISHING.md` (2026-10-06): as many images as wanted, **total under 8 MB and each under 2 MB**; `0-preview.png` is a byte-for-byte copy of `Mod/About/Preview.png` (regenerated with it by `Render-Preview.cjs`, so they never diverge); the gallery is one staged story told by a photographer, not a series of captures (see below).
 
-**Naming convention:** `Art/gallery/0-preview.png` is image 0, identical to the shipped `Mod/About/Preview.png`
-(the "cover" Steam shows large — not necessarily first in the in-game gallery order, but slot 0 here; copied
-2026-09-29). The 7 studio pictures are `Art/gallery/X-<name>` for X = 1 to 7 — a bare digit, **not**
-zero-padded (`1-griffin.jpg`, not `01-griffin.jpg`). Together: `0-preview.png`, `1-griffin.jpg` … `6-pegasus.jpg`
-and `7-settings.png`, 8 files, X from 0 to 7, all present (2026-10-02). Steam caps a gallery image at 2 MB: the six
-creature shots are the studio's 1920x1080 captures re-encoded as JPEG quality 92 (about 0.45 MB each; as PNG they
-weighed 3.3 MB and downscaling to 1440 px still left 3 MB, the grass being noise). The originals stay in
-`Tests/Pickle/Evidence/studio8/` (gitignored) while that pass is the latest.
+**State, 2026-10-07.** `0-preview.png` is current (regenerated 2026-10-05 from the new `ModIcon-source.png`). `1-griffin.jpg` … `6-pegasus.jpg` and `7-settings.png` are the **old** pictures of the studio pass `studio8` (2026-10-01; the six creature shots re-encoded as JPEG quality 92, 0.45 MB each, because as PNG they weighed 3.3 MB), 3.7 MB in all. They are placeholders: Pickle Tools moved every mod's gallery to one shared scene, Nelim's sanctuary (`Nelims-tribe`), and `09-publication-shots.feature` is rewritten for it (2026-10-05) but **not filed** until Pickle Tools announces the final fixture. Virginie uploaded picture 0 to the Steam gallery on 2026-10-02; the others are not up.
 
-Candidates, from the current studio pass, in capture order: griffin close, three-headed hound, phoenix, unicorn
-alone, manticore alone, pegasus alone, the settings window over the meadow.
+**What `PUBLISHING.md` asks that the rewritten scenarios do not do yet** (2026-10-07, to do before the pass is filed): a shot plan in the header of the feature file, one line per image (place, game time elapsed, subject, composition, living things in the scene, what the picture says); one story told in the order of the scenarios, each `Scenario:` one image, captions that say its place in the story (`workshop-1-dawn`) instead of `publication N`; time passing through the series (start hour set once, then cumulative waits: about 208 ticks for 5 game minutes); life around the subject chosen to suit the hour (diurnal animals at noon) and removed with the decor after each shot; staged rather than centred on a bare square (the `podium` is the empty square built for the mods: a place, not yet a story); the settings window, a menu, stays a plain screen capture, and a full-screen window is taken on `window-backdrop-for-height` then cropped sideways. After each run every image is opened and read against the plan; an anomaly that comes from the scene or the shared tool is described to Pickle Tools with the capture, never worked around in the mod.
 
 ## Description (BBCode, to place in the Workshop page at creation, in this order)
 
 `SetItemDescription` is called only when the game creates the item; later corrections are by hand or through the
-CI. The body is in `Mod/About/About.xml`; this is the tail to check before the first send.
+CI. The body, and the THANKS paragraph, are in `Mod/About/About.xml` (written by hand in BBCode: this mod has not adopted the single Markdown source of `PUBLISHING.md`, a `## Steam description` block of this file from which the CI derives both the Steam page and the `About.xml` text). **The tail below is the 2026-09-26 draft and is behind `About.xml`**, which now also thanks and links Use This Instead, the three animal-mod integrations and the optional providers: check `About.xml`, not this block, before the CI sends the description. It still must end, after the credits, with `[url=https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew]Source code on GitHub[/url]`: it does.
 
 ```
 [b]IF I GO QUIET[/b]
@@ -124,6 +113,7 @@ Method and register: `../WORKSHOP_COMMENTS.md`. A recipient already `posted` the
 | Harmony | 2009463077 | posted | add "Alpha Mythology Renew" to `Covers`, no comment |
 | Vanilla Expanded Framework | 2023507013 | posted | same |
 | Pickle, RimLogging, RIMMSQOL | 3791648678, 3733484696, 1084452457 | posted | same, once the suite has actually been played |
+| PickleTools | 3806142401 (private page) | not applicable | the owner's own project and a private page with no outside recipient: no comment to oneself (`PUBLISHING.md`). Named in THANKS without a link in `About.xml`: `PUBLISHING.md` asks to link it when cited |
 | Vanilla Cooking Expanded | 2134308519 | posted | same, only if its pass is written |
 | Alpha Mythology (the original) | 1821617793 | absent | **decision needed, see below** |
 | A RimWorld of Magic | 1201382956 | absent | ids resolved 2026-09-26; register row and draft to write. Its own pass hung the shared machine twice (2026-09-27, d62d and 342d) on a `TypeLoadException` inside its own assemblies, unrelated to this mod; isolated in `wsl-deps.avec-rwom.map`, not resubmitted without asking. Credit the API regardless — the hang is this machine's cache, not the mod. |

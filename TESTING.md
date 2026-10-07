@@ -126,6 +126,29 @@ the settings contract (hidden shortcut, worker class, persistence fields) and Te
 visible shortcut is rejected. The window, its effect on real spawns, persistence across restart and the
 RIMMSQOL route need a running game and belong to `done -> tested` (scenario F13 in Tests/FUNCTIONAL.md).
 
+## Patch tests: the animal-mod integrations without the game (2026-10-01)
+
+`Tests/UnitTests/PatchTests.cs`, run by the same command as the settings rules (`dotnet run --project Tests/UnitTests/UnitTests.csproj -c Release`),
+applies the three real patch files (`AnimalProsthetics2Patch.xml`, `DogsMatePatch.xml`, `BetterCrossbreedingPatch.xml`) to small stand-ins of the other mods' definitions
+and checks the result. `PUBLISHING.md` suggests Python with `lxml`; this suite is C#, so it uses **`System.Xml.XPath`** (`XDocument.XPathSelectElements`) instead.
+
+- **Why it is as good as `lxml`, or better.** What matters is that the xpath is evaluated with XPath 1.0 semantics, as the game does: the game calls
+  `XmlDocument.SelectNodes`, which is the .NET XPath 1.0 engine, the one used here, whereas `ElementTree` only knows a subset. A predicate such as
+  `[@Name="A" or "B"]`, true for every node because `"B"` is a non-empty string, behaves here as it does in the game: a test ("ADS 2: the trap predicate...")
+  proves it.
+- **What the engine covers.** A minimal reader of the operations these patches use: `PatchOperationSequence`, `PatchOperationFindMod`, `PatchOperationConditional`,
+  `PatchOperationAdd` and `PatchOperationAddModExtension`, with the active mods as a list of display names for `FindMod`. Any other operation class throws
+  `unknown operation` instead of being skipped, so a new kind of patch cannot slip through untested: add it to `Apply` first.
+- **What it does not cover** (the Pickle passes do): the real mods' load order, what they do with the lists at game start, `MayRequire` attributes, and the game's own
+  merging of abstract parents. A green here says the patch writes what it means to write on a document shaped like the target's; it does not say the target is shaped
+  like that. The shapes were read from the providers' own files (Dogs mate's `sarg.magicalmenagerie.xml`, ADS 2's `Animal_Categories.xml`, Better Crossbreeding's DLL).
+- **Cases.** ADS 2: a Cat3 animal in all three lists, Cat2 in two, Cat1 in one, the three left out on purpose absent, existing users kept, another recipe untouched,
+  document unchanged without `ADS_Cat1`. Dogs mate: the boar joins `Pig`, the groups Dogs mate's own patch fills are not touched, an unnamed group is untouched, document
+  unchanged without the groups. Better Crossbreeding: the pairs on both races and the outcomes on the mother, an existing `canCrossBreedWith` list extended and not
+  duplicated, the capital-B `DZY.CrossBreeding.Extension`.
+- **Proof the tests can fail.** Each trap was put back in a copy of the patch (a bare `Add` on `<race>`, the predicate without `@Name=`, the wrong class spelling)
+  and the test turned red before it was trusted.
+
 ## Passes (declared 2026-09-26)
 
 The Pickle suite is in [Tests/Pickle](Tests/Pickle/README.md): 8 features, 16 scenarios, written, **never played**.

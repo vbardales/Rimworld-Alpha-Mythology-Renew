@@ -1,7 +1,9 @@
+# Since 2026-10-08 the Sanctuary has its own repository: nelim.sanctuarybacklot (steps prefixed "Nelim's Sanctuary:", the save Nelims-tribe) is staged first; the generic tools stay Nelim's Pickle Tools.
 # Pass "sanctuary": Alpha Mythology Renew's Workshop pictures on Nelim's sanctuary (Nelims-tribe), the fixture of every mod's gallery
 # (PickleTools docs/GALERIE.md). Select it with -DepMap wsl-deps.sanctuary.map, in English. A named map REPLACES the default one.
 # Modelled on PickleTools' Tests/Pickle/wsl-deps.sanctuary.map (studio fixtures, camera, stage decor, animal steps, clear screen), plus the screenshot
 # mode this mod's presentation steps use, FilmTicks, and Resolve This Instead with its dependency. Not to be filed before Pickle Tools announces the fixture.
+nelim.sanctuarybacklot             path:SanctuaryBacklot/Mod
 nelim.pickletools.filmticks         path:PickleTools/FilmTicks/Mod
 nelim.pickletools.screenshotstudio  path:PickleTools/ScreenshotStudio/Mod
 nelim.pickletools.screenshotmode    path:PickleTools/ScreenshotMode/Mod

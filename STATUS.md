@@ -1242,3 +1242,12 @@ for are in the block: PickleTools linked to its Workshop page (3806142401), and 
 into `.github/` (item 3811323347, package id `nelim.alphamythology`, requires `About/About.xml`, `Assemblies/AlphaMythologyRenew.dll`, `Defs`, gallery folder `Art/Gallery`); its 72
 script tests pass locally. `Tests/Check-Mod.ps1` now checks the plain-text link at the end of About.xml and the Markdown link at the end of the block (342 assertions). Repository is
 public. Nothing pushed, no dry-run yet. Still before a publish: `CHANGELOG.md` `## [1.0.0]`, the gallery, her validations.
+
+## The Sanctuary has its own repository, 2026-10-08
+
+Nelim's Sanctuary Backlot (`nelim.sanctuarybacklot`, private repository, `SanctuaryBacklot/`) now carries the save `Nelims-tribe`, the named places and their steps, prefixed
+`Nelim's Sanctuary:` (frame or be at a place, empty, bare the floor, animals removed or kept out, roof removed, genes). `09-publication-shots.feature` now uses
+`Nelim's Sanctuary: I am at the sanctuary "<place>"` and says in its header which steps are whose: the Backlot's for the places, Pickle Tools' for the generic ones (animal
+spawn, presentation mode, developer mode, `I let N ticks pass`), Pickle's own, this mod's own. Waits of 100 ticks or more use `Nelim's Pickle Tools: I let N ticks pass` (240 s timeout)
+instead of `I wait N ticks` (5 s). `Tests/Pickle/wsl-deps.sanctuary.map` stages `nelim.sanctuarybacklot path:SanctuaryBacklot/Mod` first. The Backlot's own STATUS says its steps are
+compiled and its first suite scenario passed, but no mod has played them yet and the broadcast to the sessions waits for its own suite: the gallery pass stays unfiled.

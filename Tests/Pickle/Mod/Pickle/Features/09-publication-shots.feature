@@ -1,7 +1,17 @@
 # Workshop pictures: one staged story, played on the shared fixture of every mod's gallery, Nelim's sanctuary (PickleTools docs/GALERIE.md and
 # docs/SANCTUAIRE-LIEUX.md). Rewritten 2026-10-05 for the sanctuary, then again 2026-10-07 after PUBLISHING.md's gallery rules (2026-10-06).
-# NOT TO BE FILED before Pickle Tools says the final fixture is installed ("fixture prete"): until then `Nelims-tribe` is not in
-# ScreenshotStudio/Mod/Pickle/Fixtures and these scenarios fail on the load.
+# NOT TO BE FILED before the Sanctuary Backlot's own suite has run green and its session says the fixture is ready (the Backlot's STATUS: its steps are
+# compiled, not yet played by a mod): until then `Nelims-tribe` may not be where the load looks and these scenarios fail on it.
+#
+# WHICH STEPS ARE WHOSE (2026-10-08: the Sanctuary has its own repository, Nelim's Sanctuary Backlot, packageId nelim.sanctuarybacklot):
+#   Nelim's Sanctuary:     the named places and the fixture's own work. Used here: `I am at the sanctuary "<place>"`. Also available: empty a place, bare its
+#                          floor, remove the animals or keep them out, remove the roof, give a gene. Staged by the line `nelim.sanctuarybacklot path:SanctuaryBacklot/Mod`
+#                          of wsl-deps.sanctuary.map, which also carries the save `Nelims-tribe`.
+#   Nelim's Pickle Tools:  the generic tools, still NPT's: the animal step (`an adult animal of kind ... is spawned at (x, z)`), `studio presentation mode is enabled`,
+#                          `developer mode is turned off for the capture` / `restored`, and `I let N ticks pass` (a 240 s timeout: Pickle's own `I wait N ticks`
+#                          times out at 5 s on a loaded machine, so it is kept only for the 30-tick pause).
+#   Pickle's own:          the save load, `game speed is paused`, `I close all dialogs`, `I set the hour to`, `I set the weather to`, `I take a screenshot`, `no errors were logged`.
+#   This mod's own:        `Alpha Mythology Renew ...` (GallerySteps.cs: the check of the creature, dismissing letters, the framing at zoom 5, the settings window).
 #
 # THE STORY. "A noon in the sanctuary": the mythical creatures of Alpha Mythology come to Nelim's sanctuary one after the other and each takes the
 # corner that suits it, as the afternoon goes by. Eight creatures, eight corners, one hour of the day in the same light; then the window that lets the
@@ -37,97 +47,97 @@ Feature: Workshop pictures
     And I set the weather to "Clear"
 
   Scenario: the griffin among the statues
-    When I wait 60 ticks
+    When Nelim's Pickle Tools: I let 60 ticks pass
     And Nelim's Pickle Tools: an adult animal of kind "MM_Griffin" named "Aurelia" is spawned at (156, 108)
     Then Alpha Mythology Renew the creature "Aurelia" is standing on the map as "MM_Griffin"
     When Alpha Mythology Renew dismisses every letter
-    And Nelim's Pickle Tools: I am at the sanctuary "statue-garden"
+    And Nelim's Sanctuary: I am at the sanctuary "statue-garden"
     And Alpha Mythology Renew frames the animal "Aurelia" at zoom 5, shown 2 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     Then I take a screenshot "workshop-1-the-griffin-among-the-statues"
 
   Scenario: the kappa by the pond
-    When I wait 268 ticks
+    When Nelim's Pickle Tools: I let 268 ticks pass
     And Nelim's Pickle Tools: an adult animal of kind "MM_Kappa" named "Ondine" is spawned at (108, 66)
     Then Alpha Mythology Renew the creature "Ondine" is standing on the map as "MM_Kappa"
     When Alpha Mythology Renew dismisses every letter
-    And Nelim's Pickle Tools: I am at the sanctuary "fishing-zone"
+    And Nelim's Sanctuary: I am at the sanctuary "fishing-zone"
     And Alpha Mythology Renew frames the animal "Ondine" at zoom 5, shown 2 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     Then I take a screenshot "workshop-2-the-kappa-by-the-pond"
 
   Scenario: the pegasus at the water garden
-    When I wait 476 ticks
+    When Nelim's Pickle Tools: I let 476 ticks pass
     And Nelim's Pickle Tools: an adult animal of kind "MM_Pegasus" named "Zephyra" is spawned at (177, 173)
     Then Alpha Mythology Renew the creature "Zephyra" is standing on the map as "MM_Pegasus"
     When Alpha Mythology Renew dismisses every letter
-    And Nelim's Pickle Tools: I am at the sanctuary "water-garden"
+    And Nelim's Sanctuary: I am at the sanctuary "water-garden"
     And Alpha Mythology Renew frames the animal "Zephyra" at zoom 5, shown 2 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     Then I take a screenshot "workshop-3-the-pegasus-at-the-water-garden"
 
   Scenario: the kitsune at the tea room
-    When I wait 500 ticks
-    And I wait 184 ticks
+    When Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 184 ticks pass
     And Nelim's Pickle Tools: an adult animal of kind "MM_Kitsune" named "Inari" is spawned at (140, 73)
     Then Alpha Mythology Renew the creature "Inari" is standing on the map as "MM_Kitsune"
     When Alpha Mythology Renew dismisses every letter
-    And Nelim's Pickle Tools: I am at the sanctuary "tea-room"
+    And Nelim's Sanctuary: I am at the sanctuary "tea-room"
     And Alpha Mythology Renew frames the animal "Inari" at zoom 5, shown 2 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     Then I take a screenshot "workshop-4-the-kitsune-at-the-tea-room"
 
   Scenario: the phoenix in the hearth hall
-    When I wait 500 ticks
-    And I wait 392 ticks
+    When Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 392 ticks pass
     And Nelim's Pickle Tools: an adult animal of kind "MM_Phoenix" named "Cinder" is spawned at (181, 115)
     Then Alpha Mythology Renew the creature "Cinder" is standing on the map as "MM_Phoenix"
     When Alpha Mythology Renew dismisses every letter
-    And Nelim's Pickle Tools: I am at the sanctuary "fire-pit"
+    And Nelim's Sanctuary: I am at the sanctuary "fire-pit"
     And Alpha Mythology Renew frames the animal "Cinder" at zoom 5, shown 2 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     Then I take a screenshot "workshop-5-the-phoenix-in-the-hearth-hall"
 
   Scenario: the hound at the courtyard gate
-    When I wait 500 ticks
-    And I wait 500 ticks
-    And I wait 100 ticks
+    When Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 100 ticks pass
     And Nelim's Pickle Tools: an adult animal of kind "MM_Cerberus" named "Balthazar" is spawned at (185, 136)
     Then Alpha Mythology Renew the creature "Balthazar" is standing on the map as "MM_Cerberus"
     When Alpha Mythology Renew dismisses every letter
-    And Nelim's Pickle Tools: I am at the sanctuary "great-courtyard"
+    And Nelim's Sanctuary: I am at the sanctuary "great-courtyard"
     And Alpha Mythology Renew frames the animal "Balthazar" at zoom 5, shown 2 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     Then I take a screenshot "workshop-6-the-hound-at-the-courtyard-gate"
 
   Scenario: the unicorn in the plant garden
-    When I wait 500 ticks
-    And I wait 500 ticks
-    And I wait 308 ticks
+    When Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 308 ticks pass
     And Nelim's Pickle Tools: an adult animal of kind "MM_Unicorn" named "Morwen" is spawned at (190, 87)
     Then Alpha Mythology Renew the creature "Morwen" is standing on the map as "MM_Unicorn"
     When Alpha Mythology Renew dismisses every letter
-    And Nelim's Pickle Tools: I am at the sanctuary "plant-garden"
+    And Nelim's Sanctuary: I am at the sanctuary "plant-garden"
     And Alpha Mythology Renew frames the animal "Morwen" at zoom 5, shown 2 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     Then I take a screenshot "workshop-7-the-unicorn-in-the-plant-garden"
 
   Scenario: the manticore by the paddies
-    When I wait 500 ticks
-    And I wait 500 ticks
-    And I wait 500 ticks
+    When Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 500 ticks pass
     And I wait 16 ticks
     And Nelim's Pickle Tools: an adult animal of kind "MM_Manticore" named "Thessaly" is spawned at (226, 117)
     Then Alpha Mythology Renew the creature "Thessaly" is standing on the map as "MM_Manticore"
     When Alpha Mythology Renew dismisses every letter
-    And Nelim's Pickle Tools: I am at the sanctuary "rice-paddies"
+    And Nelim's Sanctuary: I am at the sanctuary "rice-paddies"
     And Alpha Mythology Renew frames the animal "Thessaly" at zoom 5, shown 2 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
@@ -135,13 +145,13 @@ Feature: Workshop pictures
 
   # The window is the subject: the interface stays on, developer mode off so that its toolbar is not in the picture.
   Scenario: the settings window
-    When I wait 500 ticks
-    And I wait 500 ticks
-    And I wait 500 ticks
-    And I wait 224 ticks
+    When Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 224 ticks pass
     And Nelim's Pickle Tools: an adult animal of kind "MM_Griffin" named "Aurelia" is spawned at (197, 152)
     When Alpha Mythology Renew dismisses every letter
-    And Nelim's Pickle Tools: I am at the sanctuary "podium"
+    And Nelim's Sanctuary: I am at the sanctuary "podium"
     And Alpha Mythology Renew frames the animal "Aurelia" at zoom 9, shown 6 cells left and 2 cells up
     And Alpha Mythology Renew opens its settings window
     Then Alpha Mythology Renew sees its own settings window open

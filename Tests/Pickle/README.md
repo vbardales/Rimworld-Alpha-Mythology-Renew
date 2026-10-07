@@ -42,7 +42,7 @@ What remains unplayed stays `unverified` in `STATUS.md`.
 | restart | `07-restart-write` then `08-restart-read` | English | settings outliving the process |
 | with RIMMSQOL | `04-rimmsqol`, `-DepMap wsl-deps.avec-rimmsqol.map` | English | the shortcut through the tool that reveals it |
 | studio (replaced) | `09-publication-shots`, `-DepMap wsl-deps.studio.map` | English | the Workshop pictures on the old studio colony (pass studio8): superseded by the sanctuary pass below |
-| sanctuary | `09-publication-shots`, `-DepMap wsl-deps.sanctuary.map` | English | the Workshop pictures on Nelim's sanctuary (`Nelims-tribe`, the `podium`), by day; **not to be filed before Pickle Tools announces the fixture** |
+| sanctuary | `09-publication-shots`, `-DepMap wsl-deps.sanctuary.map` | English | the Workshop pictures on Nelim's sanctuary (`Nelims-tribe`, the `podium`), by day. The places are the Sanctuary Backlot's (`nelim.sanctuarybacklot`, steps `Nelim's Sanctuary:`), the generic tools stay Pickle Tools' (`Nelim's Pickle Tools:`); see the header of the feature. **Not to be filed before the Backlot's own suite is green and its session says the fixture is ready** |
 | optional providers | `10-integrations`, `-DepMap wsl-deps.avec-facultatifs.map` | English | Nocturnal Animals, Vanilla Cooking, Advanced Biomes, Elves, Nature's Pretty Sweet, together |
 | Vanilla Genetics Expanded | `10-integrations`, `-DepMap wsl-deps.avec-genetics.map` | English | alone: staged with the five above it crashed its own static constructor, alone it does not |
 | Giddy-Up | `10-integrations`, `-DepMap wsl-deps.avec-giddyup.map` | English | the mount patch |

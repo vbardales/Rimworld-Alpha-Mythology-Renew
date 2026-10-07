@@ -1225,3 +1225,11 @@ animal spawned adult by PickleTools' own step at the `podium` (197, 152), the ca
 mod's `frames the animal ... at zoom 2.5` (PickleTools' own framing stops near zoom 11; this mod's lowers the camera floor), presentation mode, one picture per creature,
 the settings window picture kept. New map `Tests/Pickle/wsl-deps.sanctuary.map`; this mod's own spawn step removed (dead). Pickle Tools asks that no gallery ticket be filed
 before it announces the final fixture ("fixture prete"): the pass is written, not filed. The seven pictures in `Art/Gallery/` are still the old studio8 ones.
+
+## Gallery scenarios rewritten as one story, 2026-10-07
+
+`09-publication-shots.feature` now follows the gallery rules of `PUBLISHING.md` (2026-10-06): a shot plan in the header (place, time, subject, composition, living things, what the
+picture says), one story ("A noon in the sanctuary", eight creatures in eight corners, then the settings window), one `Scenario:` per picture, captions named by their place in the
+story (`workshop-1-the-griffin-among-the-statues` …), noon set once then 208 ticks per picture already told, the creature posed after the wait, zoom 5 so that the surroundings
+show. Written from the list of places without the maps; the first run will tell which coordinates are not standable. Still not filed until Pickle Tools announces the fixture.
+About.xml (the PickleTools link, the stale testing sentence, the single Markdown source) asked of CI/CD through the Ticket Manager (the CI/CD session is archived); untouched until they answer.

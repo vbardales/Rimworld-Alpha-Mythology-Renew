@@ -1,0 +1,20 @@
+{
+  "templateStamp": "82de20b8aa50",
+  "workshopId": "3811323347",
+  "packageId": "nelim.alphamythology",
+  "releaseTitle": "Alpha Mythology Renew {version}",
+  "requirePaths": [
+    "About/About.xml",
+    "Assemblies/AlphaMythologyRenew.dll",
+    "Defs"
+  ],
+  "forbidPaths": [],
+  "previewFile": "About/Preview.png",
+  "galleryDir": "Art/Gallery",
+  "aboutFromDescription": true,
+  "description": {
+    "file": "PUBLICATION.md",
+    "format": "markdown",
+    "heading": "^## Steam description$"
+  }
+}

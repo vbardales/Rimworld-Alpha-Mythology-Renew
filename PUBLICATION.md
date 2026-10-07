@@ -2,7 +2,7 @@
 
 What the Workshop page asks for and the repository holds nowhere else. Draft of 2026-09-26, checked against the monorepo's `PUBLISHING.md` on 2026-10-07. Only the private 0.1.0 pre-publication has been sent; the mod is in `preTest` (see `STATUS.md`), so this file is prepared, not final.
 
-**Publication mode: CI** (a public port; `PUBLISHING.md`, "Publier par la CI"): green dry-run of the exact commit, `publish` with the full 40-character SHA, `steam-production` approved by Virginie alone, tag and release created by the CI. The gallery goes by hand.
+**Publication mode: CI** (a public port; `PUBLISHING.md`, "Publier par la CI"): green dry-run of the exact commit, `publish` with the full 40-character SHA, `steam-production` approved by Virginie alone, tag and release created by the CI. The gallery goes by hand. The publish workflow is generated (2026-10-07: `.github/workflows/publish-tag.yml`, `.github/publish.config.json`, scripts and their 72 tests; `generate-publish-workflow.sh --check` says whether it is behind), with `--description-markdown PUBLICATION.md` and `--about-from-description`: the description is the Markdown block under `## Steam description` below, `Mod/About/About.xml` carries its plain-text rendering (never edited by hand, `node .github/scripts/sync-about-description.mjs --write`), and `Tests/Check-Mod.ps1` checks that About.xml ends with the source link and that the block does. The 1.0.0 sends the description (`update_description`: the 0.1.0 text is the old hand-written About.xml of 2026-10-01). The repository is public, so `steam-production` can have its required reviewer. Still to write before the 1.0.0: the `## [1.0.0]` section of `CHANGELOG.md`. Order, from the CI/CD session: Markdown block, sync `--write`, `Check-Mod.ps1`, commit, push, dry-run of that exact SHA with `update_description`, then `publish` with the full 40-character SHA through `dispatch-publish.sh` (Virginie approves `steam-production`); no commit after the dry-run.
 
 Rights position, to keep in front of every choice below: **`silent`** (no licence, no permission, no refusal
 found), published as an unofficial port with a removal promise. The original author is Sarg Bjornson, who
@@ -61,24 +61,42 @@ Steam shows the first image large. `Art/Gallery/` (git tracks it with a capital 
 
 **The shot plan and the story** are in the header of `09-publication-shots.feature` (2026-10-07, after the rules of `PUBLISHING.md`): "A noon in the sanctuary", eight creatures in eight corners of the sanctuary (griffin among the statues, kappa by the pond, pegasus at the water garden, kitsune at the tea room, phoenix in the hearth hall, hound at the courtyard, unicorn in the plant garden, manticore by the paddies), then the settings window as a plain screen capture. One `Scenario:` is one picture; time goes by through the series (noon, then +5 game minutes per picture, 208 ticks, the creature posed after the wait); each picture is named by its place in the story (`workshop-1-the-griffin-among-the-statues` …). Written from the place list without seeing the maps: the first run will show which coordinates are not standable and which framings fail. After each run every image is opened and read against the plan; an anomaly that comes from the scene or the shared tool is described to Pickle Tools with the capture, never worked around in the mod. Not filed before the final fixture is announced. The pictures come out as PNG (3 MB or more each): the published ones are re-encoded (JPEG quality 92 about 0.45 MB) to stay under 2 MB, and the folder under 8 MB.
 
-## Description (BBCode, to place in the Workshop page at creation, in this order)
+## Steam description
 
-`SetItemDescription` is called only when the game creates the item; later corrections are by hand or through the
-CI. The body, and the THANKS paragraph, are in `Mod/About/About.xml` (written by hand in BBCode: this mod has not adopted the single Markdown source of `PUBLISHING.md`, a `## Steam description` block of this file from which the CI derives both the Steam page and the `About.xml` text). **The tail below is the 2026-09-26 draft and is behind `About.xml`**, which now also thanks and links Use This Instead, the three animal-mod integrations and the optional providers: check `About.xml`, not this block, before the CI sends the description. It still must end, after the credits, with `[url=https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew]Source code on GitHub[/url]`: it does.
+The single source of the Workshop description (`PUBLISHING.md`, "Source unique de la description", 2026-09-25). The CI converts the Markdown block below to Steam BBCode when `update_description` is on, and generates the plain-text `<description>` of `Mod/About/About.xml` from it (`node .github/scripts/sync-about-description.mjs --write`); every dry-run stops when the two differ. One bold span per paragraph (the Steam converter leaves two on a line unconverted), no code fence inside the block, and it ends with the source link after the credits.
 
-```
-[b]IF I GO QUIET[/b]
+```markdown
+UNOFFICIAL. This mod is published without the original author's explicit consent. If the original author contacts me to request its removal, I undertake to take it down promptly.
+
+No licence granting republication of Alpha Mythology was found. This continuation is distributed without an explicit licence or agreement from the original author; this notice is not a claim of permission.
+
+25 mythological creatures from Sarg Bjornson's Alpha Mythology, ported to RimWorld 1.6 and extracted from the private Animal Ark pack. Includes their eggs, products, abilities and optional integration patches. A settings window (Mod options) sets how often the creatures appear in the wild and lets you exclude any of them. Creature definitions retain their original names.
+
+The port updates obsolete XML fields and VEF type names and rebuilds the phoenix death effect and the bleeding wound in an isolated assembly. Its behaviour is covered by an automated in-game test suite, and its optional integrations were run in game with their providers, except A RimWorld of Magic, which was not. Play-testing by hand is still limited.
+
+Original: [Alpha Mythology](https://steamcommunity.com/sharedfiles/filedetails/?id=1821617793)
+
+Original source: https://github.com/juanosarg/AlphaMythology
+
+Requires Resolve This Instead, a small library that lets this mod's optional patches keep working when a mod they support is renamed or replaced by a continuation. It reads Use This Instead's data, so that mod is loaded too.
+
+Do not load alongside the original Alpha Mythology or an older Animal Ark build still containing it. Do not remove this content from an ongoing save. Moving an existing save from Animal Ark is untested, especially saved custom hediff classes whose namespace changed.
+
+**IF I GO QUIET**
+
 If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved.
 
-[b]AI-GENERATED[/b]
-The port, its code, tests and documentation were made with AI assistance: Codex (OpenAI) for the 1.6 extraction, the isolated assembly and the French translations, Claude Code (Anthropic) for the settings, the test suites and the documentation, and OpenAI image generation for the preview illustration. The creatures, their code and their artwork are Sarg Bjornson's.
+**AI-GENERATED**
 
-[b]THANKS[/b]
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=1821617793]Alpha Mythology[/url] by Sarg Bjornson, the original this continues; original preview by Oskar Potocki. [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013]Vanilla Expanded Framework[/url] and Harmony, which the mod stands on. For testing only, never dependencies of the mod: Pickle, RimLogging, RIMMSQOL and PickleTools.
+The port was made with AI assistance: Codex (OpenAI) for the 1.6 extraction, the isolated assembly and the French translations; Claude Code (Anthropic) for the settings, the test suites and the documentation; OpenAI image generation for the preview illustration. The creatures, their code and their artwork are Sarg Bjornson's. Port and extraction by Nelim.
 
-See ATTRIBUTION.md and the licence notice in the repository for provenance and rights. No ownership or endorsement by the original author is claimed.
+**THANKS**
 
-[url=https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew]Source code on GitHub[/url]
+[Use This Instead](https://steamcommunity.com/sharedfiles/filedetails/?id=3396308787) by Mlie (MIT), whose open replacement data Resolve This Instead reads. [Alpha Mythology](https://steamcommunity.com/sharedfiles/filedetails/?id=1821617793) by Sarg Bjornson, which this continues; its original preview is by Oskar Potocki. [Vanilla Expanded Framework](https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013) and [Harmony](https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077), which the mod stands on. Optional integrations, never required: [A Dog Said... Animal Prosthetics 2](https://steamcommunity.com/sharedfiles/filedetails/?id=3238353862), [Better Crossbreeding](https://steamcommunity.com/sharedfiles/filedetails/?id=3520675842), [Dogs mate (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2441132298) by Mlie after Revolus, [A RimWorld of Magic](https://steamcommunity.com/sharedfiles/filedetails/?id=1201382956), [Vanilla Genetics Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2801160906), [Vanilla Cooking Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2134308519), [Vanilla Achievements Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2288125657), [[XND] Nocturnal Animals (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2269731409), [Advanced Biomes (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=3541022508), [Nature's Pretty Sweet (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=3542949511), [Lord of the Rims - Elves (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=3548255064), [Giddy-Up 2 - Continued](https://steamcommunity.com/sharedfiles/filedetails/?id=3674332861) and [Tree Chopping Speed Stat](https://steamcommunity.com/sharedfiles/filedetails/?id=2566231583) by velcroboy333. For testing only, never dependencies of the mod: [Pickle](https://steamcommunity.com/sharedfiles/filedetails/?id=3791648678), [RimLogging](https://steamcommunity.com/sharedfiles/filedetails/?id=3733484696), [RIMMSQOL](https://steamcommunity.com/sharedfiles/filedetails/?id=1084452457) and [PickleTools](https://steamcommunity.com/sharedfiles/filedetails/?id=3806142401).
+
+See the included ATTRIBUTION.md, and the README.md and TESTING.md documents in the GitHub repository, for provenance, third-party sound credits and validation. No upstream ownership or endorsement is claimed.
+
+[Source code on GitHub](https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew)
 ```
 
 To settle before the first send: Nature's Pretty Sweet, GiddyUp, Genetics and the other optional providers are

@@ -68,7 +68,12 @@ foreach ($dependency in @('brrainz.harmony', 'OskarPotocki.VanillaFactionsExpand
 }
 Assert-Mod (@($meta.incompatibleWith.li) -contains 'sarg.magicalmenagerie') 'Original mod incompatibility missing'
 Assert-Mod ($meta.description.StartsWith('UNOFFICIAL.')) 'Disclosure missing'
-Assert-Mod ($meta.description.Contains('[url=https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew]Source code on GitHub[/url]')) 'Port GitHub link missing'
+# The description is generated from the Markdown block of PUBLICATION.md (plain text, links as 'label (url)'): the source link ends it, after the credits.
+Assert-Mod ($meta.description.TrimEnd().EndsWith('Source code on GitHub (https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew)')) 'Port GitHub link missing or not last in About.xml'
+$publication = (Get-Content "$root/PUBLICATION.md" -Raw) -replace "`r`n", "`n"
+$fence = '`' * 3
+Assert-Mod ($publication.Contains("## Steam description`n")) 'PUBLICATION.md has no "## Steam description" section'
+Assert-Mod ($publication.Contains("[Source code on GitHub](https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew)`n$fence")) 'PUBLICATION.md Steam description must end with the source link, right before the closing fence'
 # The file exists once the 0.1.0 pre-publication has created the item. It must hold this port's own id, never the original's (1821617793).
 $publishedIdFile = "$root/Mod/About/PublishedFileId.txt"
 if (Test-Path $publishedIdFile) {

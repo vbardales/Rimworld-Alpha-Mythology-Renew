@@ -1251,3 +1251,11 @@ Nelim's Sanctuary Backlot (`nelim.sanctuarybacklot`, private repository, `Sanctu
 spawn, presentation mode, developer mode, `I let N ticks pass`), Pickle's own, this mod's own. Waits of 100 ticks or more use `Nelim's Pickle Tools: I let N ticks pass` (240 s timeout)
 instead of `I wait N ticks` (5 s). `Tests/Pickle/wsl-deps.sanctuary.map` stages `nelim.sanctuarybacklot path:SanctuaryBacklot/Mod` first. The Backlot's own STATUS says its steps are
 compiled and its first suite scenario passed, but no mod has played them yet and the broadcast to the sessions waits for its own suite: the gallery pass stays unfiled.
+
+## Nelim in the gallery series, faces, 2026-10-08
+
+Pawns set up for a picture now also have eye colour and facial expression to consider. Answer of the Sanctuary Backlot session: Nelim has `Eyes_Brown` (EyeGenes3) by default in the fixture since its commit 574cc83, so no step for her (the gene step
+is only for another pawn created in a scene); no expression step exists, NPT is asked to carry it as a sub-mod, until then only the pawn's state drives the face (drafted, mood, pain through the Experimentals). The series
+puts Nelim in two pictures (2, the kappa's pond; 4, the tea room: `Nelim's Pickle Tools: "Nelim" stands at (x, z) facing West`), coordinates guessed beside the creature, to be read on the first run. The map
+`Tests/Pickle/wsl-deps.sanctuary.map` gains the Facial Animation block of the Backlot's own map (Nals.FacialAnimation, Experimentals, VTE, Akeron extras, EyeGenes3, performance patch, VFAE). The Backlot will say when NPT delivers the
+expression step. Not filed yet.

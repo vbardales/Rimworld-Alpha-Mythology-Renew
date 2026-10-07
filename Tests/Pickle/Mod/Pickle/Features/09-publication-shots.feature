@@ -21,9 +21,9 @@
 #
 # SHOT PLAN (place, time, subject, composition, the living around it, what the picture says):
 # 1. statue-garden (156, 108), 12:00, MM_Griffin "Aurelia", Griffin off-centre on the left, statues behind it, the garden wall on the right; living: the sanctuary's horses and sparrows around the statues; says: the griffin settles among the statues, a statue that moved.
-# 2. fishing-zone (108, 66), 12:05, MM_Kappa "Ondine", Kappa low in the left foreground, the pond opening behind it; living: the ducks and swans of the river; says: the water spirit sits on the bank of the round pond.
+# 2. fishing-zone (108, 66), 12:05, MM_Kappa "Ondine", Kappa low in the left foreground, the pond opening behind it; living: Nelim standing on the bank looking at it (her eyes are Eyes_Brown by default in the fixture: no step), and the ducks and swans of the river; says: the water spirit sits on the bank of the round pond.
 # 3. water-garden (177, 173), 12:10, MM_Pegasus "Zephyra", Pegasus at the water's edge, lilies in the foreground, bamboo to the north; living: the garden's ducks; says: the winged horse drinks among the lilies, wings folded.
-# 4. tea-room (140, 73), 12:15, MM_Kitsune "Inari", Kitsune left of the door, the wooden cabin filling the right; living: the cats of the house and a labrador by the bank; says: the fox spirit waits at the door of the tea room.
+# 4. tea-room (140, 73), 12:15, MM_Kitsune "Inari", Kitsune left of the door, the wooden cabin filling the right; living: Nelim on the step of the cabin (her face is driven by the pawn state only: no expression step exists yet, NPT is asked), and the cats of the house and a labrador by the bank; says: the fox spirit waits at the door of the tea room.
 # 5. fire-pit (181, 115), 12:20, MM_Phoenix "Cinder", Phoenix beside the central fire, the hall in shadow around it; living: the thrumbos and cats asleep in the hall; says: the firebird lights the hall as a second hearth.
 # 6. great-courtyard (185, 136), 12:25, MM_Cerberus "Balthazar", Cerberus centre-left, three heads turned three ways, the courtyard open behind; living: the sanctuary's labradors, wary at a distance; says: the three-headed hound keeps the courtyard.
 # 7. plant-garden (190, 87), 12:30, MM_Unicorn "Morwen", Unicorn between two rows of plants, the fence behind; living: the sparrows in the plants; says: the unicorn walks the fenced plant garden.
@@ -60,6 +60,7 @@ Feature: Workshop pictures
   Scenario: the kappa by the pond
     When Nelim's Pickle Tools: I let 268 ticks pass
     And Nelim's Pickle Tools: an adult animal of kind "MM_Kappa" named "Ondine" is spawned at (108, 66)
+    And Nelim's Pickle Tools: "Nelim" stands at (112, 68) facing West
     Then Alpha Mythology Renew the creature "Ondine" is standing on the map as "MM_Kappa"
     When Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "fishing-zone"
@@ -83,6 +84,7 @@ Feature: Workshop pictures
     When Nelim's Pickle Tools: I let 500 ticks pass
     And Nelim's Pickle Tools: I let 184 ticks pass
     And Nelim's Pickle Tools: an adult animal of kind "MM_Kitsune" named "Inari" is spawned at (140, 73)
+    And Nelim's Pickle Tools: "Nelim" stands at (143, 71) facing West
     Then Alpha Mythology Renew the creature "Inari" is standing on the map as "MM_Kitsune"
     When Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "tea-room"

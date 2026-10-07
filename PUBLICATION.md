@@ -72,7 +72,7 @@ No licence granting republication of Alpha Mythology was found. This continuatio
 
 25 mythological creatures from Sarg Bjornson's Alpha Mythology, ported to RimWorld 1.6 and extracted from the private Animal Ark pack. Includes their eggs, products, abilities and optional integration patches. A settings window (Mod options) sets how often the creatures appear in the wild and lets you exclude any of them. Creature definitions retain their original names.
 
-The port updates obsolete XML fields and VEF type names and rebuilds the phoenix death effect and the bleeding wound in an isolated assembly. Its behaviour is covered by an automated in-game test suite, and its optional integrations were run in game with their providers, except A RimWorld of Magic, which was not. Play-testing by hand is still limited.
+The port updates obsolete XML fields and VEF type names and rebuilds the phoenix death effect and the bleeding wound in an isolated assembly.
 
 Original: [Alpha Mythology](https://steamcommunity.com/sharedfiles/filedetails/?id=1821617793)
 

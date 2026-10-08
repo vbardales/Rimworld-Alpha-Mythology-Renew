@@ -11,6 +11,7 @@ nelim.pickletools.camerazoom        path:PickleTools/CameraZoom/Mod
 nelim.pickletools.stagedecor        path:PickleTools/StageDecor/Mod
 nelim.pickletools.coatsteps         path:PickleTools/CoatSteps/Mod
 nelim.pickletools.clearscreen       path:PickleTools/ClearScreen/Mod
+nelim.pickletools.colonistrace      path:PickleTools/ColonistRace/Mod
 nelim.resolvethisinstead   path:ResolveThisInstead/Mod
 Mlie.UseThisInstead        3396308787
 # Nelim appears in two pictures: her face is drawn by Facial Animation (block copied from SanctuaryBacklot/Tests/Pickle/wsl-deps.sanctuary.map, in its order: base, experimentals for mood and pain, VTE, Akeron extras, EyeGenes3 for her brown eyes, the performance patch, VFAE for the moving eyes).

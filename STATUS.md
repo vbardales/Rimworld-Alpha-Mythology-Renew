@@ -1274,3 +1274,11 @@ From the owner's French review (English upstream untouched): the generic plural 
 `MM_HeavyMagicalLeather` descriptions ("protège un peu mieux contre les températures extrêmes", not "isole … de toutes les températures"); `MM_Xiezhi.description` ("leur corne justicière"). Eight lines in
 `Keyed/AlphaMythology.xml` and `DefInjected/ThingDef/AlphaMythology.xml`. `Check-Translations.py` passes (590 fields, 589 injections, 56 pairs), `Check-Mod.ps1` passes (342). The French review is regenerated at the commit
 of the texts. The corrections came from the owner's review, so `translation_fr` stays `complete`; the displayed text is not seen in game yet.
+
+## NPT's translation step and face steps adopted, 2026-10-08
+
+Installed by NPT (code on main, DLL built, **not played by NPT**): `Then Nelim's Pickle Tools: the translation report has no problem for the mod {string}` (variant `..., apart from {string}`), in ScreenshotStudio. New feature
+`19-translation-report.feature` with its own map `wsl-deps.translation.map` (the default map does not stage ScreenshotStudio), key `"nelim.alphamythology"`; filed once per language as the first run, which will also say
+whether the key is exactly the packageId (NPT did not check). It does not replace `Check-Translations.py`: that one reads the files, this one reads what the running game says.
+Faces (NPT, ColonistRace): `"Nelim" facial expression is "normal+<animation>"`, recipe proven by NPT's photos: temperature 20, `I let 10 ticks pass`, place Nelim, expression with the `normal` prefix, capture at once. The gallery series uses it
+in pictures 2 (`normal+moodCheerful`) and 4 (`normal+moodCheerful2`), the map gains `colonistrace`. Gallery pass still unfiled.

@@ -1,0 +1,5 @@
+# Pass "translation report": the game's own translation report read for this mod, once per language (-Language English, then -Language French).
+# The step is Nelim's Pickle Tools': ScreenshotStudio. A named map REPLACES the default one, so Resolve This Instead and its dependency are listed again.
+nelim.pickletools.screenshotstudio  path:PickleTools/ScreenshotStudio/Mod
+nelim.resolvethisinstead   path:ResolveThisInstead/Mod
+Mlie.UseThisInstead        3396308787

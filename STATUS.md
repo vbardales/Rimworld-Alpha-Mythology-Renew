@@ -1282,3 +1282,8 @@ Installed by NPT (code on main, DLL built, **not played by NPT**): `Then Nelim's
 whether the key is exactly the packageId (NPT did not check). It does not replace `Check-Translations.py`: that one reads the files, this one reads what the running game says.
 Faces (NPT, ColonistRace): `"Nelim" facial expression is "normal+<animation>"`, recipe proven by NPT's photos: temperature 20, `I let 10 ticks pass`, place Nelim, expression with the `normal` prefix, capture at once. The gallery series uses it
 in pictures 2 (`normal+moodCheerful`) and 4 (`normal+moodCheerful2`), the map gains `colonistrace`. Gallery pass still unfiled.
+
+## Translation report, English ticket 252b (red, expected), 2026-10-09
+
+Red: "The game writes a translation report only for a language other than English; start the run with -Language <name>". My filing error, not a finding: the report exists for French only. The feature header says so; English coverage stays
+with `Check-Translations.py`. Evidence `translation-en` deleted. The French ticket 9368 is still queued.

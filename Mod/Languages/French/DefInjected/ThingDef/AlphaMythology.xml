@@ -15,9 +15,9 @@
   <MM_EggBasiliskFertilized.label>œuf de basilic (féc.)</MM_EggBasiliskFertilized.label>
   <MM_EggBasiliskFertilized.description>Un œuf de basilic fécondé. Il peut se manger cru, mais il est bien meilleur cuit. Si tout se passe bien, un basilic devrait en éclore.</MM_EggBasiliskFertilized.description>
   <MM_LightMagicalLeather.label>cuir magique léger</MM_LightMagicalLeather.label>
-  <MM_LightMagicalLeather.description>Ce cuir brille d'une étrange lumière éthérée. Comparé à la plupart des cuirs légers, il est nettement plus résistant et isole un peu mieux de toutes les températures.</MM_LightMagicalLeather.description>
+  <MM_LightMagicalLeather.description>Ce cuir brille d'une étrange lumière éthérée. Comparé à la plupart des cuirs légers, il est nettement plus résistant et protège un peu mieux contre les températures extrêmes.</MM_LightMagicalLeather.description>
   <MM_HeavyMagicalLeather.label>cuir magique épais</MM_HeavyMagicalLeather.label>
-  <MM_HeavyMagicalLeather.description>Ce cuir épais brille d'une étrange lumière éthérée. Comparé à la plupart des cuirs, il est nettement plus résistant et isole un peu mieux de toutes les températures.</MM_HeavyMagicalLeather.description>
+  <MM_HeavyMagicalLeather.description>Ce cuir épais brille d'une étrange lumière éthérée. Comparé à la plupart des cuirs, il est nettement plus résistant et protège un peu mieux contre les températures extrêmes.</MM_HeavyMagicalLeather.description>
   <MM_EggGriffinUnfertilized.label>œuf de griffon (non féc.)</MM_EggGriffinUnfertilized.label>
   <MM_EggGriffinUnfertilized.description>Un œuf de griffon non fécondé. Il peut se manger cru, mais il est bien meilleur cuit.</MM_EggGriffinUnfertilized.description>
   <MM_EggBasiliskUnfertilized.label>œuf de basilic (non féc.)</MM_EggBasiliskUnfertilized.label>
@@ -171,7 +171,7 @@
   <MM_WillOWisp.tools.pseudopod.label>pseudopode</MM_WillOWisp.tools.pseudopod.label>
   <MM_WillOWisp.verbs.wisp_breath.label>souffle de feu follet</MM_WillOWisp.verbs.wisp_breath.label>
   <MM_Xiezhi.label>xiezhi</MM_Xiezhi.label>
-  <MM_Xiezhi.description>Le xiezhi est une créature légendaire de la mythologie chinoise, également connue en Corée sous le nom de haetae. On le représente généralement comme un croisement entre un lion et une chèvre, avec une unique corne sur le front. Les xiezhis perçoivent instinctivement le bien et le mal et savent distinguer les innocents des coupables.\n\nLes xiezhis ne sont pas des créatures naturelles. Ils ont été créés dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : les xiezhis attaquent férocement les pirates et les encornent avec leur corne avide de justice.</MM_Xiezhi.description>
+  <MM_Xiezhi.description>Le xiezhi est une créature légendaire de la mythologie chinoise, également connue en Corée sous le nom de haetae. On le représente généralement comme un croisement entre un lion et une chèvre, avec une unique corne sur le front. Les xiezhis perçoivent instinctivement le bien et le mal et savent distinguer les innocents des coupables.\n\nLes xiezhis ne sont pas des créatures naturelles. Ils ont été créés dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : les xiezhis attaquent férocement les pirates et les encornent avec leur corne justicière.</MM_Xiezhi.description>
   <MM_Xiezhi.tools.horn.label>corne</MM_Xiezhi.tools.horn.label>
   <MM_Xiezhi.tools.bite.label>morsure</MM_Xiezhi.tools.bite.label>
   <MM_Xiezhi.tools.left_claw.label>griffe gauche</MM_Xiezhi.tools.left_claw.label>

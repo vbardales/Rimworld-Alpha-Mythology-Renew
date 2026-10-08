@@ -1266,3 +1266,11 @@ The owner's instruction block was restated; its state here: `Art/.render/` is gi
 PUBLISHING (2026-10-07); preview and icons regenerated from the new `ModIcon-source.png` (2026-10-05, nothing in `Mod/` changed since besides the generated description); root clean (`.build/` deleted again after each
 build; `.git`, `.github`, `.gitattributes`, `.gitignore` stay; no `_tools`); an unreachable session goes through the Ticket Manager (remembered). **Last code-review SHA: `f3d8693ee1c469acc5286f14b03aff0202eeca71`** (low effort, since 0.1.0, no finding); `Mod/` and `Source/` have not changed in code
 since (only the generated About description, the two regenerated images). Gallery candidates: see PUBLICATION.md ("Candidates").
+
+## Seven French corrections applied, 2026-10-08
+
+From the owner's French review (English upstream untouched): the generic plural "colons" is replaced without inventing a gender, because no GENDER is reachable in these strings: `MM_MountFastArmouredDesc` and
+`MM_MountFastDesc` ("Cet animal peut être monté : … la personne qui le monte"), `MM_UtilityHealthDesc`, `MM_UtilityMoodDesc` and `MM_UtilityWorkerDesc` ("les membres de la colonie"); `MM_LightMagicalLeather` and
+`MM_HeavyMagicalLeather` descriptions ("protège un peu mieux contre les températures extrêmes", not "isole … de toutes les températures"); `MM_Xiezhi.description` ("leur corne justicière"). Eight lines in
+`Keyed/AlphaMythology.xml` and `DefInjected/ThingDef/AlphaMythology.xml`. `Check-Translations.py` passes (590 fields, 589 injections, 56 pairs), `Check-Mod.ps1` passes (342). The French review is regenerated at the commit
+of the texts. The corrections came from the owner's review, so `translation_fr` stays `complete`; the displayed text is not seen in game yet.

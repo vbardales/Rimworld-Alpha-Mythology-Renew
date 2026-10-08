@@ -1259,3 +1259,10 @@ is only for another pawn created in a scene); no expression step exists, NPT is 
 puts Nelim in two pictures (2, the kappa's pond; 4, the tea room: `Nelim's Pickle Tools: "Nelim" stands at (x, z) facing West`), coordinates guessed beside the creature, to be read on the first run. The map
 `Tests/Pickle/wsl-deps.sanctuary.map` gains the Facial Animation block of the Backlot's own map (Nals.FacialAnimation, Experimentals, VTE, Akeron extras, EyeGenes3, performance patch, VFAE). The Backlot will say when NPT delivers the
 expression step. Not filed yet.
+
+## Standing instructions re-read, 2026-10-08
+
+The owner's instruction block was restated; its state here: `Art/.render/` is gitignored; the gallery scenarios use the Sanctuary Backlot, with every place read and a shot plan (09-publication-shots.feature); PUBLICATION checked against
+PUBLISHING (2026-10-07); preview and icons regenerated from the new `ModIcon-source.png` (2026-10-05, nothing in `Mod/` changed since besides the generated description); root clean (`.build/` deleted again after each
+build; `.git`, `.github`, `.gitattributes`, `.gitignore` stay; no `_tools`); an unreachable session goes through the Ticket Manager (remembered). **Last code-review SHA: `f3d8693ee1c469acc5286f14b03aff0202eeca71`** (low effort, since 0.1.0, no finding); `Mod/` and `Source/` have not changed in code
+since (only the generated About description, the two regenerated images). Gallery candidates: see PUBLICATION.md ("Candidates").

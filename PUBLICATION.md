@@ -32,7 +32,7 @@ Checked in the sources, not from intent.
 | Better Crossbreeding (`DizzyEevee.BetterCrossbreeding`, 3520675842) | optional, never a dependency | `BetterCrossbreedingPatch.xml`: the same four pairs, both directions, calf Random (2026-10-01) |
 | RIMMSQOL | not a dependency; reveals the hidden settings shortcut | dev-only pass `wsl-deps.avec-rimmsqol.map` |
 | DLC | none required | one `MayRequire="Ludeon.RimWorld.Biotech"` in the Defs; `supportedVersions` 1.6 only, no DLC branch in `LoadFolders.xml` |
-| Incompatible | `sarg.magicalmenagerie` (the original) | `About.xml` `incompatibleWith`; pass run 2026-09-27 (778c): real symptom found and confirmed — both mods declare `PawnKindDef`s under the same defNames, and `NullReferenceException` in `BiomeDef.CommonalityOfAnimal` follows the first time the wild-animal spawner ticks. `STATUS.md` has the detail. |
+| Incompatible | `sarg.magicalmenagerie` (the original) | `About.xml` `incompatibleWith`; pass run 2026-09-27 (778c): real symptom found and confirmed: both mods declare `PawnKindDef`s under the same defNames, and `NullReferenceException` in `BiomeDef.CommonalityOfAnimal` follows the first time the wild-animal spawner ticks. `STATUS.md` has the detail. |
 
 ## Adult content boxes
 
@@ -130,24 +130,24 @@ Method and register: `../WORKSHOP_COMMENTS.md`. A recipient already `posted` the
 
 | Recipient | Workshop id | Register today | Action |
 |---|---|---|---|
-| Harmony | 2009463077 | posted | add "Alpha Mythology Renew" to `Covers`, no comment |
+| Harmony | 2009463077 | posted | `Covers` updated 2026-10-10 (protocols 3a01556), no comment |
 | Vanilla Expanded Framework | 2023507013 | posted | same |
-| Pickle, RimLogging, RIMMSQOL | 3791648678, 3733484696, 1084452457 | posted | same, once the suite has actually been played |
+| Pickle, RimLogging, RIMMSQOL | 3791648678, 3733484696, 1084452457 | posted | same (the suite has been played) |
 | PickleTools | 3806142401 (private page) | not applicable | the owner's own project and a private page with no outside recipient: no comment to oneself (`PUBLISHING.md`). Named in THANKS without a link in `About.xml`: `PUBLISHING.md` asks to link it when cited |
-| Vanilla Cooking Expanded | 2134308519 | posted | same, only if its pass is written |
+| Vanilla Cooking Expanded | 2134308519 | posted | same (its pass is written and played) |
 | Alpha Mythology (the original) | 1821617793 | absent | **decision needed, see below** |
-| A RimWorld of Magic | 1201382956 | absent | ids resolved 2026-09-26; register row and draft to write. Its own pass hung the shared machine twice (2026-09-27, d62d and 342d) on a `TypeLoadException` inside its own assemblies, unrelated to this mod; isolated in `wsl-deps.avec-rwom.map`, not resubmitted without asking. Credit the API regardless — the hang is this machine's cache, not the mod. |
-| [XND] Nocturnal Animals (Continued) | 2269731409 | absent | same |
-| Vanilla Genetics Expanded | 2801160906 | absent | same |
+| A RimWorld of Magic | 1201382956 | absent | ids resolved 2026-09-26; register row and draft to write. Its own pass hung the shared machine twice (2026-09-27, d62d and 342d) on a `TypeLoadException` inside its own assemblies, unrelated to this mod; isolated in `wsl-deps.avec-rwom.map`, not resubmitted without asking. Credit the API regardless: the hang is this machine's cache, not the mod. |
+| [XND] Nocturnal Animals (Continued) | 2269731409 | posted | same: `Covers` updated, no second comment |
+| Vanilla Genetics Expanded | 2801160906 | drafted (no text) | **do not draft or post without Virginie**, see below |
 | Vanilla Achievements Expanded | 2288125657 | absent | same (not installed here) |
 | Advanced Biomes (Continued) | 3541022508 | absent | same |
 | Nature's Pretty Sweet (Continued) | 3542949511 | absent | same, after settling the name guard (see STATUS.md) |
 | Lord of the Rims - Elves (Continued) | 3548255064 | absent | same; a "(Continued)" page: credit both the original author and the maintainer (zal): read the page to name them |
 | Giddy-Up 2 - Continued | 3674332861 | absent | same; the patch comment names Roolo, Owlchemist and dav9670 before MemeGoddess: read the page before crediting |
-| A Dog Said... Animal Prosthetics 2 (Sam Bucher) | 3238353862 | absent | to draft, after the item is public; patch written 2026-10-01, not yet seen working in game |
-| Better Crossbreeding (DizzyEevee) | 3520675842 | absent | to draft; patch written 2026-10-01, not yet seen working in game |
-| Dogs mate (Continued) (Mlie, after Revolus) | 2441132298 | absent | to draft: credit Mlie and Revolus on the Continued page, in one message (WORKSHOP_COMMENTS.md); patch written 2026-10-01, not yet seen working in game |
-| Tree Chopping Speed Stat | 2566231583 | absent | not a patch guard, a known-issue check (F12, feature 17); its scenario played green (8421): the kappa's `VBY_TreeChopWorkSpeed` NullReferenceException the original's page describes did not reproduce here. Register row and draft to write, credit velcroboy333. |
+| A Dog Said... Animal Prosthetics 2 (Sam Bucher) | 3238353862 | posted | `Covers` updated, no second comment (the beetle comment was posted from A Certain Series) |
+| Better Crossbreeding (DizzyEevee) | 3520675842 | drafted | `Covers` updated; the one comment is drafted for the first mod to post (Funny Creatures Renew); a short text for this port is below in case it posts first |
+| Dogs mate (Continued) (Mlie, after Revolus) | 2441132298 | drafted | `Covers` updated; credit Mlie and Revolus in one message on the Continued page; draft below |
+| Tree Chopping Speed Stat | 2566231583 | absent | not a patch guard, a known-issue check (F12, feature 17); its scenario played green (8421): the kappa's `VBY_TreeChopWorkSpeed` NullReferenceException the original's page describes did not reproduce here. Register row added 2026-10-10 (`drafted`), draft below, credit velcroboy333. |
 
 **The original's page: do not draft yet.** A comment there announces a port published without the author's
 consent, on a page where he removes comments about 1.6 updates and answered VEF's page on 2026-09-22. Whether
@@ -204,6 +204,21 @@ Thanks Zaljerem for carrying the elves on to 1.6, after Sans and Jecrell. Readin
 Thank you for picking Giddy-Up 2 up when the fork was dropped, Meme Goddess, and Roolo for the original. My griffin has a saddle sprite waiting to be tried with it, no promises yet lol [url=https://steamcommunity.com/sharedfiles/filedetails/?id=ITEM_ID]Alpha Mythology Renew (unofficial)[/url]
 ```
 
+### Dogs mate (Continued), 2441132298 (Mlie; original by Revolus)
+```
+Mlie, thanks for keeping Dogs mate going, and Revolus for the original. Funny thing: your own file for Sarg's Magical Menagerie already knew my three-headed dog and my deer, so all I had to add was one boar :) [url=https://steamcommunity.com/sharedfiles/filedetails/?id=ITEM_ID]Alpha Mythology Renew (unofficial)[/url]
+```
+
+### Better Crossbreeding, 3520675842 (DizzyEevee)
+```
+DizzyEevee, thanks for Better Crossbreeding: I used it so my Cerberus, boar, hind and Pegasus can cross with their vanilla kin, both ways round. Small heads-up, the Example patch spells the class with a lower-case b and the assembly with a capital one xD [url=https://steamcommunity.com/sharedfiles/filedetails/?id=ITEM_ID]Alpha Mythology Renew (unofficial)[/url]
+```
+
+### Tree Chopping Speed Stat, 2566231583 (velcroboy333)
+```
+velcroboy333, thanks for Tree Chopping Speed Stat. The original Alpha Mythology page had a report of a kappa crashing with it loaded, so I sent my kappa to harvest a crop with your mod on. It came out clean :) [url=https://steamcommunity.com/sharedfiles/filedetails/?id=ITEM_ID]Alpha Mythology Renew (unofficial)[/url]
+```
+
 ### Vanilla Genetics Expanded, 2801160906 (Sarg Bjornson and Reann Shepard) - **do not post without Virginie**
 The author of the original Alpha Mythology co-wrote this mod and answers on this page. A comment here announces an
 unofficial port of his other mod to him, in a public thread. Same reason as the original's page: her decision, and
@@ -212,6 +227,5 @@ possibly none. No draft written on purpose.
 ### Not drafted yet
 - **Vanilla Achievements Expanded**, 2288125657: page read 2026-09-26 (after a first refusal by Steam). Authors listed: Sarg Bjornson, Oskar Potocki and Smash Phil (Vanilla Expanded team). **Sarg Bjornson is again a co-author and answers there**: same decision as Vanilla Genetics Expanded, hers, so no draft. The port ships this integration (achievement icons and patch), so its thanks stay in the description.
 
-- **Nocturnal Animals (Continued)**, 2269731409: register row already `drafted` by two other mods: add this port to its
-  `Covers`, no second comment. **Vanilla Cooking Expanded**, 2134308519: register row `posted` (2026-09-25): add to `Covers`.
+- **Nocturnal Animals (Continued)**, 2269731409 and **Vanilla Cooking Expanded**, 2134308519: register rows `posted`, `Covers` updated 2026-10-10, no second comment.
 - **Use This Instead** (3396308787): this port now depends on the resolver library, so it is credited in THANKS (done, 2026-09-28); a Workshop comment for Mlie is the library's publication, not this mod's, and Mlie's consent before any mention on his page is the owner's call.

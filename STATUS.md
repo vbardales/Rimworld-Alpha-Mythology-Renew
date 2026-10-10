@@ -4,7 +4,7 @@ packageId: nelim.alphamythology
 repo: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew
 remote: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew.git
 visibility: public
-workflow_stage: writeTests[1.0.0]
+workflow_stage: playTests[1.0.0]
 licence: silent
 licence_at: "2026-09-12: upstream master 53a5518008821188009bbf996b7120ad9593cb5f and the Workshop page reviewed (602 comments, Bug Reports thread); no project licence, no redistribution grant, no refusal found. Refreshed 2026-09-26. Only a retexture permission (2022-08-21, conditional on the game EULA) was found, not a licence for this port. Silent = public (owner's rule)."
 upstream_mod_remotes:
@@ -60,7 +60,11 @@ Revision `dbc114e`, `main` two commits ahead of `origin`. Previous state `preTes
 - Reserves, not blockers: `Tests/FUNCTIONAL.md` plays the role of `TEST_SCENARIOS.md` (name differs); `STATUS.md` was 129 KB, folded here (linter ERROR over 80 KB).
 - The two injections are added (`Mod/Languages/French/DefInjected`), `Tests/Check-Translations.py` now requires them (`GAME_REPORTED`, 590 fields, 591 injections), `FRENCH_REVIEW.md` regenerated. Work to cross the next transition: have Virginie read the two rows (`translation_fr` to `complete`), (ticket c626 already green) then `Check-Status.ps1`, read the missing protocols, `Mark-ProtocolsRead.ps1`, set `writeTests[1.0.0]`.
 
-## Transition 2026-10-10
+## Transition 2026-10-10: writeTests to playTests
+
+Exit of `writeTests` established at `eba7208d0e741ec31ca79513c893580045d6e3d8` (clean tree, tested sha): 7.a the numbers of `PUBLICATION.md` match the code (25 races, 22 ADS 2 animals, settings 0.1 to 5; `Tests/FUNCTIONAL.md` plays the role of `TEST_SCENARIOS.md`), 7.b and 7.c replayed green today (Check-Mod 342, Test-Validator 7 cases, unit tests, Check-Translations 590/591/56 and its self-test), 7.d suites written with each `@requires` mounted by a map (`TESTING.md`), 7.g translations complete. `playTests` now needs the Pickle tickets (AUDIT.md 8): the sha is frozen, no code commit without reopening it.
+
+## Transition 2026-10-10: localize to writeTests
 
 `localize[1.0.0]` to `writeTests[1.0.0]`: the three translation fields are `complete`, the game's French report has no problem, protocols read (`protocols_read_sha`). Exit of `writeTests` still to establish (AUDIT.md 7.a to 7.i): the numbers of `PUBLICATION.md` checked against the code (7.a), the tested sha recorded (7.f); the automated checks of 2026-10-10 are green at `33196d1` and need replaying if code changes.
 

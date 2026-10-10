@@ -35,7 +35,7 @@ remaining:
   - "2026-10-10 feature: English text inherited from upstream is corrected by the upstream PR, not silently in the port; certain fix to join the planned PR: 'work load' to 'workload' in MM_UtilityWorkerDesc (English Keyed)"
   - "2026-10-10 unverified: the 1.0.0 is not sent; the description of PUBLICATION.md holds an em dash (2 in the file), rule of 2026-10-10"
 updated: 2026-10-10
-protocols_read_sha: a959f76528043543b1ac9025b40dc8efcefd9e56
+protocols_read_sha: a1f347fd4fc1b013ffbe04869b8327fc20e5723b
 ---
 
 # Alpha Mythology Renew (unofficial): status
@@ -64,6 +64,10 @@ Revision `dbc114e`, `main` two commits ahead of `origin`. Previous state `preTes
 ## Transition 2026-10-10: writeTests to playTests
 
 Exit of `writeTests` established at `eba7208d0e741ec31ca79513c893580045d6e3d8` (clean tree, tested sha): 7.a the numbers of `PUBLICATION.md` match the code (25 races, 22 ADS 2 animals, settings 0.1 to 5; `Tests/FUNCTIONAL.md` plays the role of `TEST_SCENARIOS.md`), 7.b and 7.c replayed green today (Check-Mod 342, Test-Validator 7 cases, unit tests, Check-Translations 590/591/56 and its self-test), 7.d suites written with each `@requires` mounted by a map (`TESTING.md`), 7.g translations complete. `playTests` now needs the Pickle tickets (AUDIT.md 8): the sha is frozen, no code commit without reopening it.
+
+## Intermediates folder renamed, 2026-10-10
+
+Owner rule of the day: `build/` replaces `.build/` (`.gitignore`, `Source/Directory.Build.props`, `Tests/Pickle/Source/Directory.Build.props`, `Tests/TRANSLATIONS.md`). The Release build was rerun to a temporary folder: 0 warnings, 0 errors, no change to `Mod/` or to the sources; `build/` and the old `.build/` are deleted after each build. The tickets 1a12 and d0ff were filed before this edit and do not depend on it.
 
 ## Transition 2026-10-10: localize to writeTests
 

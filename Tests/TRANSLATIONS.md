@@ -81,7 +81,7 @@ RimWorld 1.6 Core/DLCs and the following explicit third-party targets/assemblies
 
 Invocation: `-TransMod <Mod> -Targets <Mod>,<VEF>,<Achievements>
 -ExtraAssemblies <VEF.dll>,<MVCF.dll>,<AchievementsExpanded.dll>`.
-Local raw outputs and dependency decompilations are under ignored `.build/`.
+Local raw outputs and dependency decompilations are under ignored `build/`.
 The checker resolved list handles against the actual reflected types, including
 body-part labels, duplicate horn tools, hediff comp classes and thought stages.
 The 17 achievement paths were also checked with their provider assembly present.

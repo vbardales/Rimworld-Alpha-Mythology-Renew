@@ -15,14 +15,14 @@ translation_en: complete
 translation_fr: complete
 workshop: "3811323347 (0.1.0, creation of the publishIdFile only, 2026-10-01; the item is private, switching it to public is the owner's)"
 published: no
-tested_on: never
+tested_on: "2026-10-10, Pickle only: initial passes EN and FR at the tree of eba7208 (docs commits after), replays at c9bdc67; optional-provider passes and incompatibility pass not replayed at this revision (green on earlier revisions, non-regression after deploy)"
 audit_at: 2026-10-10
 audit_revision: dbc114e22cf23ab64baa7a9047141d161d17abf2 (clean tree at the start; this audit then edited Tests/Test-Validator.ps1, CHANGELOG.md, TESTING.md, Tests/Pickle/README.md, STATUS.md)
 automated_tests: "passed 2026-10-10: Tests/UnitTests ALL PASSED (spawn rules 13, patch checks 47); Release build 0 warnings 0 errors"
 xml_tests: "passed 2026-10-10: Check-Mod.ps1 342 assertions, 86 XML files, 25 creatures; Test-Validator.ps1 7 negative cases (the runner was red before this audit, see Audit 2026-10-10); Check-Translations.py 590 fields, 589 French injections, 56 Keyed pairs (run through uv, no Python on PATH)"
 functional_tests: "unverified in this audit; Pickle history reports green passes (see Tests): not re-read here"
 remaining:
-  - "2026-10-10 unverified (playTests 8.c, 8.f): initial passes 1a12/d0ff (84 scenarios each, 49 passed, 5 red, 30 skipped by requirement) have every red replayed green (spawn step restored; destruction, Stymphalian, Kitsune, restart pair), docs/runs/2026-10-10-1a12-d0ff-initial-passes.md. Still to play at this revision: the @requires passes (avec-facultatifs, genetics, giddyup, rwom, treechop, achievements, ads2, dogsmate, crossbreeding, rimmsqol, incompat-magicalmenagerie); then 8.g to 8.m (functional scenarios, settings in game, UI in FR and EN, code review)"
+  - "2026-10-10 unverified (playTests 8.f to 8.k): the @requires passes and the incompatibility pass are green on earlier revisions and are replayed as non-regression after the deploy (followUp 14.a); functional scenarios 8.g, settings in game FR and EN 8.h and UI and logs 8.i are covered by the initial passes (84 scenarios each, every red replayed green, docs/runs/2026-10-10-1a12-d0ff-initial-passes.md); the owner's manual validations, if any, are hers"
   - "2026-10-10 feature (prepareRelease, AUDIT 3.c/11.f/12.e): CHANGELOG [Unreleased] stays on top until the dry-run; in the commit whose sha goes to the dry-run it becomes `## [1.0.0] - <planned send date>`; a slipped send means a corrected date, a new commit and a new dry-run (Check-Status WARNs changelog from publish on)"
   - "2026-10-10 feature (followUp 14.b): the Use This Instead comment for Mlie (3396308787) is drafted in PUBLICATION.md; hand it to Virginie as an orange step once the item is public, with the link and the text ready to paste"
   - "2026-10-10 feature (publish 13.b): add the Alpha Mythology Renew row to ../USE_THIS_INSTEAD.md once the item is public (old Workshop id 1821617793, read the old name, author and versions on its page; new id 3811323347); the owner reports it to Use This Instead"
@@ -37,6 +37,7 @@ remaining:
   - "2026-10-10 feature (blocker before 1.0.0): Resolve This Instead (nelim.resolvethisinstead, hard dependency) needs its own public Workshop page first; no Workshop id yet"
   - "2026-10-10 feature: English text inherited from upstream is corrected by the upstream PR, not silently in the port; certain fix to join the planned PR: 'work load' to 'workload' in MM_UtilityWorkerDesc (English Keyed)"
   - "2026-10-10 unverified: the 1.0.0 is not sent; the description of PUBLICATION.md holds an em dash (2 in the file), rule of 2026-10-10"
+code_review_sha: 8ff9b37bd18650e6c82ec96210ece2a846bf7235
 updated: 2026-10-10
 protocols_read_sha: a1f347fd4fc1b013ffbe04869b8327fc20e5723b
 ---
@@ -63,6 +64,10 @@ Revision `dbc114e`, `main` two commits ahead of `origin`. Previous state `preTes
 - Not checked: the shipped DLL is not byte-identical to a fresh build (hash differs; both from `e53da76`, the last commit of `Source/`, the build is probably not deterministic: not treated as a defect).
 - Reserves, not blockers: `Tests/FUNCTIONAL.md` plays the role of `TEST_SCENARIOS.md` (name differs); `STATUS.md` was 129 KB, folded here (linter ERROR over 80 KB).
 - The two injections are added (`Mod/Languages/French/DefInjected`), `Tests/Check-Translations.py` now requires them (`GAME_REPORTED`, 590 fields, 591 injections), `FRENCH_REVIEW.md` regenerated. Work to cross the next transition: have Virginie read the two rows (`translation_fr` to `complete`), (ticket c626 already green) then `Check-Status.ps1`, read the missing protocols, `Mark-ProtocolsRead.ps1`, set `writeTests[1.0.0]`.
+
+## Code review 2026-10-10 (playTests 8.m)
+
+Review of `f3d8693ee1c469acc5286f14b03aff0202eeca71..HEAD` (the earlier review since 0.1.0 covered up to f3d8693, low effort, no finding). `Source/` is unchanged apart from `Directory.Build.props` (`build/` folder); `Mod/` changed in French text (nine rows, plus the two injections), the About description (generated from `PUBLICATION.md`) and the ModIcon and Preview images. No finding: the French strings keep their placeholders (`{0}`, `{1}`), the three agreement-free rewrites carry no gender, `Check-Translations.py` and the game's French report agree. Reviewed commit: 8ff9b37bd18650e6c82ec96210ece2a846bf7235.
 
 ## Transition 2026-10-10: writeTests to playTests
 
@@ -104,9 +109,7 @@ Supported version 1.6 only.
 
 ## Tests
 
-Automated: front matter. Pickle suite `Tests/Pickle`: 19 features, 68 scenarios, passes declared in `TESTING.md` (three families). Reported in the history, not re-read here: the final baselines `final-en` and `final-fr` of 2026-10-05
-(79 scenarios, 50 passed each, 27 skipped by requirement, the two reds answered by green replays `fix-en8` and `fix-en10`), the optional-provider passes, the restart pair, the wild draw, the incompatibility pass. Evidence kept on disk,
-gitignored. Open red: ticket 9368 (French translation report), above. Functional scenarios: `Tests/FUNCTIONAL.md`, automation map inside.
+Automated: front matter. Pickle suite `Tests/Pickle`: 19 features, 84 scenarios, passes declared in `TESTING.md` (three families). Played 2026-10-10 on `sans-facultatifs`: the initial full passes `initial-en` and `initial-fr` (84 scenarios each, 49 passed, 5 red, 30 skipped by requirement), every red replayed green (`replay-egg`, `replay-kitsune`, `replay-restart`), and the game's French translation report green (`translation-fr2`, ticket c626). Reported green on earlier revisions, not replayed here: the optional-provider passes and the incompatibility pass (non-regression after the deploy). Evidence is kept on disk, gitignored (74 MB). Functional scenarios: `Tests/FUNCTIONAL.md`, automation map inside.
 
 ## Gallery
 

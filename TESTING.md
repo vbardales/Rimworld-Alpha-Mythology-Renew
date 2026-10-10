@@ -102,8 +102,8 @@ Kept on disk as of 2026-10-05 (first listed 2026-09-30, 38 MB then; every `repor
 
 | Folder | What it proves | Delete when |
 |---|---|---|
-| `final-en`, `final-fr` | the final baseline (79 scenarios, `PLAIN`, EN and FR on `sans-facultatifs`): 50 passed each, the two reds of the day answered by `fix-en8` and `fix-en10`; report and messages over 1 MB removed | the next full pass on a newer revision replaces them |
-| `fix-en8`, `fix-en10` | the green replays of the hind milk (a84d) and of the shield belt vs the poison breath (9d00) that the baselines had red | the next full pass has them green |
+| `initial-en`, `initial-fr` | the initial full pass of 2026-10-10 (84 scenarios, `sans-facultatifs`, EN and FR): 49 passed, 5 red each, every red replayed green; report and messages removed | the next full pass on a newer revision replaces them |
+| `replay-egg`, `replay-kitsune`, `replay-restart` | the green replays of 2026-10-10: feature 11, egg destruction, Stymphalian (one launch), Kitsune FR, restart pair | the next full pass has them green |
 | `facultatifs5`, `genetics`, `giddyup`, `rwom`, `rimmsqol`, `treechop2` | one optional-provider pass each (`@requires` scenarios) | the same pass is replayed |
 | `incompat4` | the declared incompatibility with `sarg.magicalmenagerie` still behaves as declared | the other mod changes |
 | `restart3` | settings persistence across a restart (seq1, seq2), green 41a1 | replayed |

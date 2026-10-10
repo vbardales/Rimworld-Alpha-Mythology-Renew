@@ -224,8 +224,13 @@ The author of the original Alpha Mythology co-wrote this mod and answers on this
 unofficial port of his other mod to him, in a public thread. Same reason as the original's page: her decision, and
 possibly none. No draft written on purpose.
 
+### Use This Instead, 3396308787 (Mlie)
+```
+Mlie, thanks for Use This Instead and for keeping its replacement data open: a small library of mine, Resolve This Instead, reads it so my optional patches keep working when a mod gets renamed or replaced by a continuation. Already doing its job on Nature's Pretty Sweet :) [url=https://steamcommunity.com/sharedfiles/filedetails/?id=ITEM_ID]Alpha Mythology Renew (unofficial)[/url]
+```
+Handed to Virginie as a step at `followUp` (post after the item is public, a link to a private item opens for nobody): comment on https://steamcommunity.com/sharedfiles/filedetails/?id=3396308787 . Relay of the audit workflow, 2026-10-10: this comment closes the Use This Instead point.
+
 ### Not drafted yet
 - **Vanilla Achievements Expanded**, 2288125657: page read 2026-09-26 (after a first refusal by Steam). Authors listed: Sarg Bjornson, Oskar Potocki and Smash Phil (Vanilla Expanded team). **Sarg Bjornson is again a co-author and answers there**: same decision as Vanilla Genetics Expanded, hers, so no draft. The port ships this integration (achievement icons and patch), so its thanks stay in the description.
 
 - **Nocturnal Animals (Continued)**, 2269731409 and **Vanilla Cooking Expanded**, 2134308519: register rows `posted`, `Covers` updated 2026-10-10, no second comment.
-- **Use This Instead** (3396308787): this port now depends on the resolver library, so it is credited in THANKS (done, 2026-09-28); a Workshop comment for Mlie is the library's publication, not this mod's, and Mlie's consent before any mention on his page is the owner's call.

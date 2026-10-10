@@ -22,6 +22,7 @@ automated_tests: "passed 2026-10-10: Tests/UnitTests ALL PASSED (spawn rules 13,
 xml_tests: "passed 2026-10-10: Check-Mod.ps1 342 assertions, 86 XML files, 25 creatures; Test-Validator.ps1 7 negative cases (the runner was red before this audit, see Audit 2026-10-10); Check-Translations.py 590 fields, 589 French injections, 56 Keyed pairs (run through uv, no Python on PATH)"
 functional_tests: "unverified in this audit; Pickle history reports green passes (see Tests): not re-read here"
 remaining:
+  - "2026-10-10 feature (publish 13.b): add the Alpha Mythology Renew row to ../USE_THIS_INSTEAD.md once the item is public (old Workshop id 1821617793, read the old name, author and versions on its page; new id 3811323347); the owner reports it to Use This Instead"
   - "2026-10-10 unverified (playTests): settings window, both routes (Mod options and the hidden MainButtons shortcut via RIMMSQOL), real effect on wild spawns, persistence after restart and reload, EN and FR layout"
   - "2026-10-10 unverified (playTests): English and French display in game, raw keys, clipping, optional integrations, wisp inspection text with the new plural keys"
   - "2026-10-10 unverified: save migration from Animal Ark (class names changed, untested by design) and manual gameplay"
@@ -34,7 +35,7 @@ remaining:
   - "2026-10-10 feature: English text inherited from upstream is corrected by the upstream PR, not silently in the port; certain fix to join the planned PR: 'work load' to 'workload' in MM_UtilityWorkerDesc (English Keyed)"
   - "2026-10-10 unverified: the 1.0.0 is not sent; the description of PUBLICATION.md holds an em dash (2 in the file), rule of 2026-10-10"
 updated: 2026-10-10
-protocols_read_sha: 8dc7759df76e83f3ebe7489e18035a62f07089fe
+protocols_read_sha: a959f76528043543b1ac9025b40dc8efcefd9e56
 ---
 
 # Alpha Mythology Renew (unofficial): status

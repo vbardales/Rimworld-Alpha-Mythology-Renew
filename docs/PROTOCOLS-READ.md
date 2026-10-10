@@ -10,3 +10,4 @@ Protocols (AGENTS, AUDIT, PICKLE, PUBLISHING, TRANSLATIONS, STYLE_RIMWORLD, MOD_
 | STYLE_RIMWORLD.md prompt blocks (STYLE, negative) | the Preview illustration is delivered | the owner delivers a new `Art/Preview-source.png` |
 | EXTERNAL_TOOLS.md | reviews of third-party tools, none adopted by this mod | a new external tool is considered |
 | GALLERY-PROPS.md | props for animal galleries, this mod's sanctuary series not shot yet | shootGallery (read it again before writing the series) |
+| USE_THIS_INSTEAD.md | register rows are added at `publish` (AUDIT.md 13.b), not before | `publish`: add the row (old id 1821617793 Alpha Mythology, Sarg Bjornson, versions read on the page; new id 3811323347) |

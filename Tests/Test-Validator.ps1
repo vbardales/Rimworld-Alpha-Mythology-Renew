@@ -5,7 +5,7 @@ $fixture = Join-Path ([IO.Path]::GetTempPath()) ('alpha-mythology-tests-' + [gui
 New-Item -ItemType Directory -Path $fixture | Out-Null
 try {
     Copy-Item "$root/Mod" $fixture -Recurse
-    Copy-Item "$root/LICENSE", "$root/ATTRIBUTION.md" $fixture
+    Copy-Item "$root/LICENSE", "$root/ATTRIBUTION.md", "$root/PUBLICATION.md" $fixture
     New-Item -ItemType Directory -Path "$fixture/Source" | Out-Null
     Copy-Item "$root/Source/Settings.cs", "$root/Source/SpawnRules.cs" "$fixture/Source"
     $validator = Join-Path $PSScriptRoot 'Check-Mod.ps1'

@@ -2,6 +2,24 @@
 
 ## [unreleased]
 
+### 2026-10-10
+
+Entries missing from the list below, completed at the audit of this date. Not tested in game, not public.
+
+Already in the private 0.1.0 (2026-10-01), never listed before:
+
+- Added optional integrations for animal mods: A Dog Said... Animal Prosthetics 2 (22 creatures in its categories), Dogs mate (the Erymanthian boar joins the Pig group) and Better Crossbreeding (Cerberus, Erymanthian boar, Ceryneian hind and Pegasus with their vanilla kin, both directions). Each patch changes nothing without its mod.
+- Wisp fission progress now counts days through `.One` and `.Many` keys, in English and French.
+- Fixed the phoenix death explosion destroying an egg it had merged into an existing stack.
+- Added Resolve This Instead as a required library, so the Nature's Pretty Sweet patch also applies to its (Continued) page.
+- Removed unused textures and the shutdown recipe that no creature offered.
+
+Since 0.1.0:
+
+- French text revised after the owner's review: no generic plural, corrected leather, Xiezhi and utility wording.
+- The Steam description now comes from the Markdown source of `PUBLICATION.md`; `About.xml` carries its plain-text rendering.
+- New ModIcon and Preview.
+
 ### 2026-09-26
 
 - Added a settings window (Mod options): wild spawn frequency multiplier (0.1-5) and one switch per creature to keep it from appearing in the wild; optional MainButtons shortcut, hidden by default.

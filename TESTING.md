@@ -149,11 +149,20 @@ and checks the result. `PUBLISHING.md` suggests Python with `lxml`; this suite i
 - **Proof the tests can fail.** Each trap was put back in a copy of the patch (a bare `Add` on `<race>`, the predicate without `@Name=`, the wrong class spelling)
   and the test turned red before it was trusted.
 
-## Passes (declared 2026-09-26)
+## Passes (declared 2026-09-26, rewritten 2026-10-10)
 
-The Pickle suite is in [Tests/Pickle](Tests/Pickle/README.md): 8 features, 16 scenarios, written, **never played**.
-Passes: minimal English and minimal French (the same filter, one language each), the restart pair
-(`07-restart-write` then `08-restart-read`, one launch chain under one lock), and one pass with RIMMSQOL
-(`wsl-deps.avec-rimmsqol.map`, feature `04-rimmsqol`). Declared but not written yet: a pass per optional
-integration named by the nine patches, and a pass for the declared incompatibility with
-`sarg.magicalmenagerie`. Until they are played, the mod is not tested: it is essayed.
+The Pickle suite is in [Tests/Pickle](Tests/Pickle/README.md): 19 features, 68 scenarios, written; the passes below have been played
+on the 2026-10-05 revision except where noted (evidence in `Tests/Pickle/Evidence/`, one line per run in `docs/runs/`).
+Three families, as AUDIT.md asks:
+
+1. **Without the optional mods** (default map `wsl-deps.map`): minimal English and minimal French, one pass per language, plus the
+   restart pair (`07-restart-write` then `08-restart-read`, one launch chain). Three more passes with their own map: the translation
+   report of the game (`wsl-deps.translation.map`, French only: the game writes no report for English), the gallery
+   (`wsl-deps.sanctuary.map`, the owner's captures) and the studio pass (`wsl-deps.studio.map`, superseded by the sanctuary one).
+2. **With the optional mods, one pass per exclusive combination**: `avec-facultatifs` (Advanced Biomes, Elves, Nature's Pretty Sweet,
+   Nocturnal Animals, Vanilla Cooking Expanded), `avec-genetics`, `avec-giddyup`, `avec-rwom`, `avec-treechop`, `avec-achievements`,
+   `avec-ads2`, `avec-dogsmate`, `avec-crossbreeding`, and `avec-rimmsqol` (the settings shortcut). Every `@requires:<packageId>` of the
+   suite is mounted by one of these maps.
+3. **One pass per declared incompatibility**: `incompat-magicalmenagerie` (the original mod, still incompatible as declared).
+
+Not tested on purpose (`AUDIT.md`: the mod does not change it): the behaviour of vanilla and of other mods left as they are.

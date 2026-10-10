@@ -1,8 +1,8 @@
 # Alpha Mythology Renew - Pickle suite
 
-In-game acceptance tests of the settings. Development only: the companion under `Mod/` is never
-published, and nothing here is part of the Workshop payload. Writing them is the `preTest -> done`
-criterion; playing them and reading their captures is `done -> tested`. **Nothing here has been played.**
+In-game acceptance tests of the mod (settings, creatures, optional integrations, gallery captures). Development only: the companion under `Mod/` is never
+published, and nothing here is part of the Workshop payload. Writing them is the exit
+criterion (`writeTests` to `playTests`); playing them and reading their captures is `playTests`. Most passes have been played; see `TESTING.md` and `docs/runs/`.
 
 ## What is in Gherkin, and what deliberately is not
 

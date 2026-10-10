@@ -19,6 +19,11 @@ FIELDS = set('label description labelPlural labelMale labelFemale customLabel '
 KEY_FIELDS = set('buttonLabel buttonDesc buttonCancelLabel buttonCancelDesc '
                  'asexualHatchedMessage'.split())
 KEY_LISTS = {'statToAdd', 'statValues', 'statDescriptions'}
+# Injections the game reports as missing in its own French translation report (2026-10-09) though no inventoried
+# field of this mod carries them: the wound inherits labelNounPretty from InjuryBase, and the wisp text is replaced by a
+# postfix but the Def field still exists. Value: the English text the French must keep the formatting of.
+GAME_REPORTED = {("HediffDef", "MM_OpenWound.labelNounPretty"): "{0} in the {1}",
+                 ("ThingDef", "MM_WillOWisp.comps.CompAsexualReproduction.customString"): "Asexual fission in: "}
 UNCHANGED_NAMES = {'manticore', 'hydra', 'Alpha Mythology', 'Alpha Mythology Renew', 'ahuizotl', 'fenghuang',
                    'ieltxu', 'kappa', 'kitsune', 'qilin', 'tlilcoatl', 'xiezhi'}
 
@@ -94,6 +99,10 @@ def check(root):
         require(key in fr, f'Missing French injection: {key}')
         require(signature(row['en']) == signature(fr[key]), f'Formatting mismatch: {key}')
         require(fr[key] != row['en'] or fr[key] in UNCHANGED_NAMES, f'English fallback: {key}')
+    for key, english in GAME_REPORTED.items():
+        require(key in fr, f'Missing French injection reported by the game: {key}')
+        require(signature(english) == signature(fr[key]) and fr[key] != english, f'Bad French injection: {key}')
+        required_paths.add(key)
     require(required_paths == fr.keys(), f'Stale French injections: {fr.keys()-required_paths}')
 
     for file in (root / 'Source').glob('*.cs'):

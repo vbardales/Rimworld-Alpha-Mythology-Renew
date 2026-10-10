@@ -22,6 +22,7 @@
   <MM_OpenWound.label>plaie ouverte</MM_OpenWound.label>
   <MM_OpenWound.description>Une plaie ouverte.</MM_OpenWound.description>
   <MM_OpenWound.labelNoun>une plaie ouverte</MM_OpenWound.labelNoun>
+  <MM_OpenWound.labelNounPretty>{0} : {1}</MM_OpenWound.labelNounPretty>
   <MM_OpenWound.comps.HediffComp_TendDuration.labelTendedWell>bandée</MM_OpenWound.comps.HediffComp_TendDuration.labelTendedWell>
   <MM_OpenWound.comps.HediffComp_TendDuration.labelTendedWellInner>suturée</MM_OpenWound.comps.HediffComp_TendDuration.labelTendedWellInner>
   <MM_OpenWound.comps.HediffComp_TendDuration.labelSolidTendedWell>remise en place</MM_OpenWound.comps.HediffComp_TendDuration.labelSolidTendedWell>

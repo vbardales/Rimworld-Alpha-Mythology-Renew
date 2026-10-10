@@ -168,6 +168,7 @@
   <MM_WildMinotaur.verbs.tremors.label>secousses</MM_WildMinotaur.verbs.tremors.label>
   <MM_WillOWisp.label>feu follet</MM_WillOWisp.label>
   <MM_WillOWisp.description>Le feu follet est une créature du folklore anglais, une lueur fantomatique aperçue la nuit par les voyageurs, surtout au-dessus des tourbières et des marécages. Il égarerait les passants en ressemblant à la lumière vacillante d'une lampe ou d'une lanterne.\n\nLes feux follets ne sont pas des créatures naturelles. Ils ont été créés dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : on peut à peine considérer les feux follets comme des créatures vivantes ; ils ressemblent surtout à d'étranges bactéries. Ils se reproduisent par fission asexuée, ont besoin de très peu de nourriture et sont immunisés contre les températures extrêmes, les environnements toxiques, le feu et les attaques psychiques. Lorsqu'ils sont menacés, ce qui est rare, ils peuvent souffler un nuage de particules multicolores apparemment nocives pour les êtres vivants.</MM_WillOWisp.description>
+  <MM_WillOWisp.comps.CompAsexualReproduction.customString>Fission asexuée dans : </MM_WillOWisp.comps.CompAsexualReproduction.customString>
   <MM_WillOWisp.tools.pseudopod.label>pseudopode</MM_WillOWisp.tools.pseudopod.label>
   <MM_WillOWisp.verbs.wisp_breath.label>souffle de feu follet</MM_WillOWisp.verbs.wisp_breath.label>
   <MM_Xiezhi.label>xiezhi</MM_Xiezhi.label>

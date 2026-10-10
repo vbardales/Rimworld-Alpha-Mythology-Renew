@@ -4,7 +4,7 @@ packageId: nelim.alphamythology
 repo: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew
 remote: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew.git
 visibility: public
-workflow_stage: playTests[1.0.0]
+workflow_stage: shootGallery[1.0.0]
 licence: silent
 licence_at: "2026-09-12: upstream master 53a5518008821188009bbf996b7120ad9593cb5f and the Workshop page reviewed (602 comments, Bug Reports thread); no project licence, no redistribution grant, no refusal found. Refreshed 2026-09-26. Only a retexture permission (2022-08-21, conditional on the game EULA) was found, not a licence for this port. Silent = public (owner's rule)."
 upstream_mod_remotes:
@@ -39,7 +39,7 @@ remaining:
   - "2026-10-10 unverified: the 1.0.0 is not sent; the description of PUBLICATION.md holds an em dash (2 in the file), rule of 2026-10-10"
 code_review_sha: 8ff9b37bd18650e6c82ec96210ece2a846bf7235
 updated: 2026-10-10
-protocols_read_sha: a1f347fd4fc1b013ffbe04869b8327fc20e5723b
+protocols_read_sha: b4a73cf0998fa5914b1d5e52b0817a8fe77abab3
 ---
 
 # Alpha Mythology Renew (unofficial): status
@@ -68,6 +68,10 @@ Revision `dbc114e`, `main` two commits ahead of `origin`. Previous state `preTes
 ## Code review 2026-10-10 (playTests 8.m)
 
 Review of `f3d8693ee1c469acc5286f14b03aff0202eeca71..HEAD` (the earlier review since 0.1.0 covered up to f3d8693, low effort, no finding). `Source/` is unchanged apart from `Directory.Build.props` (`build/` folder); `Mod/` changed in French text (nine rows, plus the two injections), the About description (generated from `PUBLICATION.md`) and the ModIcon and Preview images. No finding: the French strings keep their placeholders (`{0}`, `{1}`), the three agreement-free rewrites carry no gender, `Check-Translations.py` and the game's French report agree. Reviewed commit: 8ff9b37bd18650e6c82ec96210ece2a846bf7235.
+
+## Transition 2026-10-10: playTests to shootGallery
+
+Exit of `playTests` (AUDIT.md 8): 8.c initial passes and every red replayed green; 8.d the `@review` captures opened and read (`initial-en` and `initial-fr`, the settings window: EN "Alpha Mythology Renew (unofficial)" with the multiplier slider, restore-defaults button and the creature list; FR "non officiel", the intro line wraps on two lines, no raw key, no clipping, the Learning helper and bottom bar in the language of the pass); 8.e no `@wip`; 8.f the conditional passes are green on earlier revisions and replayed as non-regression after the deploy (fail-fast, AUDIT.md); 8.h and 8.i settings and UI in EN and FR covered by the 84 scenarios of each initial pass; 8.l evidence trimmed to 74 MB, `tested_on` written; 8.m `code_review_sha` recorded (no finding). No code commit since: only French text, About description and the `build/` folder name.
 
 ## Transition 2026-10-10: writeTests to playTests
 

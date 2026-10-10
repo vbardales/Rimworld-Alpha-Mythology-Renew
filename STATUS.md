@@ -22,7 +22,7 @@ automated_tests: "passed 2026-10-10: Tests/UnitTests ALL PASSED (spawn rules 13,
 xml_tests: "passed 2026-10-10: Check-Mod.ps1 342 assertions, 86 XML files, 25 creatures; Test-Validator.ps1 7 negative cases (the runner was red before this audit, see Audit 2026-10-10); Check-Translations.py 590 fields, 589 French injections, 56 Keyed pairs (run through uv, no Python on PATH)"
 functional_tests: "unverified in this audit; Pickle history reports green passes (see Tests): not re-read here"
 remaining:
-  - "2026-10-10 unverified: French review by Virginie of two new rows: HediffDef MM_OpenWound.labelNounPretty ('{0} : {1}', epicene; vanilla writes '{0} dans le {1}' or 'une {0} au/à la {1}') and ThingDef MM_WillOWisp.comps.CompAsexualReproduction.customString ('Fission asexuée dans : '); then replay ticket 9368 (French translation report) to see 0 problem"
+  - "2026-10-10 unverified: French review by Virginie of two new rows: HediffDef MM_OpenWound.labelNounPretty ('{0} : {1}', epicene; vanilla writes '{0} dans le {1}' or 'une {0} au/à la {1}') and ThingDef MM_WillOWisp.comps.CompAsexualReproduction.customString ('Fission asexuée dans : '); the game's French translation report is green since ticket c626 (2026-10-10)"
   - "2026-10-10 unverified (playTests): settings window, both routes (Mod options and the hidden MainButtons shortcut via RIMMSQOL), real effect on wild spawns, persistence after restart and reload, EN and FR layout"
   - "2026-10-10 unverified (playTests): English and French display in game, raw keys, clipping, optional integrations, wisp inspection text with the new plural keys"
   - "2026-10-10 unverified: save migration from Animal Ark (class names changed, untested by design) and manual gameplay"
@@ -56,7 +56,7 @@ Revision `dbc114e`, `main` two commits ahead of `origin`. Previous state `preTes
 - `settings_audit` was `complete` while the in-game checks are all unverified: corrected to `partial` (MOD_SETTINGS.md, AUDIT.md 5).
 - Not checked: the shipped DLL is not byte-identical to a fresh build (hash differs; both from `e53da76`, the last commit of `Source/`, the build is probably not deterministic: not treated as a defect).
 - Reserves, not blockers: `Tests/FUNCTIONAL.md` plays the role of `TEST_SCENARIOS.md` (name differs); `STATUS.md` was 129 KB, folded here (linter ERROR over 80 KB).
-- The two injections are added (`Mod/Languages/French/DefInjected`), `Tests/Check-Translations.py` now requires them (`GAME_REPORTED`, 590 fields, 591 injections), `FRENCH_REVIEW.md` regenerated. Work to cross the next transition: have Virginie read the two rows (`translation_fr` to `complete`), replay ticket 9368 in French, then `Check-Status.ps1`, read the missing protocols, `Mark-ProtocolsRead.ps1`, set `writeTests[1.0.0]`.
+- The two injections are added (`Mod/Languages/French/DefInjected`), `Tests/Check-Translations.py` now requires them (`GAME_REPORTED`, 590 fields, 591 injections), `FRENCH_REVIEW.md` regenerated. Work to cross the next transition: have Virginie read the two rows (`translation_fr` to `complete`), (ticket c626 already green) then `Check-Status.ps1`, read the missing protocols, `Mark-ProtocolsRead.ps1`, set `writeTests[1.0.0]`.
 
 ## Settings audit (2026-09-26, kept; automated checks re-run 2026-10-10)
 

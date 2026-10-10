@@ -31,6 +31,8 @@ remaining:
   - "2026-10-10 unverified (playTests 8.m): code review; last review f3d8693ee1c469acc5286f14b03aff0202eeca71 (low effort, since 0.1.0); code_review_sha is not recorded in the front matter yet"
   - "2026-10-10 feature (owner's rule): pull request to juanosarg/AlphaMythology (phoenix egg lost in a stack), branch prepared in the fork vbardales/AlphaMythology, not sent; BACKLOG.md. Waits for the green phoenix proof it cites"
   - "2026-10-10 unverified: the protocols were read in part (AGENTS, AUDIT, MOD_SETTINGS, TRANSLATIONS, ANIMALS, the queue WELCOME); PICKLE, PUBLISHING, STYLE_RIMWORLD, SEARCHING and WORKSHOP_COMMENTS not read by this session, so Mark-ProtocolsRead has not been run"
+  - "2026-10-10 feature (blocker before 1.0.0): Resolve This Instead (nelim.resolvethisinstead, hard dependency) needs its own public Workshop page first; no Workshop id yet"
+  - "2026-10-10 feature: English text inherited from upstream is corrected by the upstream PR, not silently in the port; certain fix to join the planned PR: 'work load' to 'workload' in MM_UtilityWorkerDesc (English Keyed)"
   - "2026-10-10 unverified: the 1.0.0 is not sent; the description of PUBLICATION.md holds an em dash (2 in the file), rule of 2026-10-10"
 updated: 2026-10-10
 ---

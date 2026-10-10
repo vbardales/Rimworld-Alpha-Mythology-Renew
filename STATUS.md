@@ -4,15 +4,15 @@ packageId: nelim.alphamythology
 repo: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew
 remote: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew.git
 visibility: public
-workflow_stage: localize[1.0.0]
+workflow_stage: writeTests[1.0.0]
 licence: silent
 licence_at: "2026-09-12: upstream master 53a5518008821188009bbf996b7120ad9593cb5f and the Workshop page reviewed (602 comments, Bug Reports thread); no project licence, no redistribution grant, no refusal found. Refreshed 2026-09-26. Only a retexture permission (2022-08-21, conditional on the game EULA) was found, not a licence for this port. Silent = public (owner's rule)."
 upstream_mod_remotes:
   - https://github.com/juanosarg/AlphaMythology
 settings_audit: partial
-localization: partial
+localization: complete
 translation_en: complete
-translation_fr: partial
+translation_fr: complete
 workshop: "3811323347 (0.1.0, creation of the publishIdFile only, 2026-10-01; the item is private, switching it to public is the owner's)"
 published: no
 tested_on: never
@@ -22,7 +22,6 @@ automated_tests: "passed 2026-10-10: Tests/UnitTests ALL PASSED (spawn rules 13,
 xml_tests: "passed 2026-10-10: Check-Mod.ps1 342 assertions, 86 XML files, 25 creatures; Test-Validator.ps1 7 negative cases (the runner was red before this audit, see Audit 2026-10-10); Check-Translations.py 590 fields, 589 French injections, 56 Keyed pairs (run through uv, no Python on PATH)"
 functional_tests: "unverified in this audit; Pickle history reports green passes (see Tests): not re-read here"
 remaining:
-  - "2026-10-10 unverified: French review by Virginie of two new rows: HediffDef MM_OpenWound.labelNounPretty ('{0} : {1}', epicene; vanilla writes '{0} dans le {1}' or 'une {0} au/à la {1}') and ThingDef MM_WillOWisp.comps.CompAsexualReproduction.customString ('Fission asexuée dans : '); the game's French translation report is green since ticket c626 (2026-10-10)"
   - "2026-10-10 unverified (playTests): settings window, both routes (Mod options and the hidden MainButtons shortcut via RIMMSQOL), real effect on wild spawns, persistence after restart and reload, EN and FR layout"
   - "2026-10-10 unverified (playTests): English and French display in game, raw keys, clipping, optional integrations, wisp inspection text with the new plural keys"
   - "2026-10-10 unverified: save migration from Animal Ark (class names changed, untested by design) and manual gameplay"
@@ -61,6 +60,10 @@ Revision `dbc114e`, `main` two commits ahead of `origin`. Previous state `preTes
 - Reserves, not blockers: `Tests/FUNCTIONAL.md` plays the role of `TEST_SCENARIOS.md` (name differs); `STATUS.md` was 129 KB, folded here (linter ERROR over 80 KB).
 - The two injections are added (`Mod/Languages/French/DefInjected`), `Tests/Check-Translations.py` now requires them (`GAME_REPORTED`, 590 fields, 591 injections), `FRENCH_REVIEW.md` regenerated. Work to cross the next transition: have Virginie read the two rows (`translation_fr` to `complete`), (ticket c626 already green) then `Check-Status.ps1`, read the missing protocols, `Mark-ProtocolsRead.ps1`, set `writeTests[1.0.0]`.
 
+## Transition 2026-10-10
+
+`localize[1.0.0]` to `writeTests[1.0.0]`: the three translation fields are `complete`, the game's French report has no problem, protocols read (`protocols_read_sha`). Exit of `writeTests` still to establish (AUDIT.md 7.a to 7.i): the numbers of `PUBLICATION.md` checked against the code (7.a), the tested sha recorded (7.f); the automated checks of 2026-10-10 are green at `33196d1` and need replaying if code changes.
+
 ## Settings audit (2026-09-26, kept; automated checks re-run 2026-10-10)
 
 Decision (Virginie, 2026-09-26): port the spawn controls of the original. Two options, nothing cosmetic: wild spawn frequency multiplier (default 1, 0.1 to 5, slider and
@@ -76,7 +79,7 @@ Where the French lives: `Mod/Languages/French/Keyed/AlphaMythology.xml` and `Mod
 Inventory: `Tests/TRANSLATIONS.md`, `Tests/TranslationInventory.json` (590 fields, 589 French injections, 56 Keyed pairs). `FRENCH_REVIEW.md` was generated from `37c229b`; no French file changed since.
 Plural rule: the only counted text, `AMR_AsexualReproductionDays`, has `.One` and `.Many` in both languages (`Source/TranslationPatches.cs`).
 Gender agreement: no `PAWN_gender` switch in the French; the texts are rewritten epicene (`la personne qui le monte`, `les membres de la colonie`), pawn = colon not used.
-French review by Virginie: 2026-10-01 at `990f571` (corrections of 2026-09-30 and 2026-10-01); further corrections from her review applied 2026-10-08 at `37c229b` (seven texts, English untouched). Written on her word, not by a session.
+French review by Virginie: 2026-10-10 at `33196d1`: the two rows added after the game's report (`MM_OpenWound.labelNounPretty`, wisp `customString`) validated in chat ('validé'); `FRENCH_REVIEW.md` from that revision; the game's French report is green (ticket c626). Earlier: 2026-10-01 at `990f571` (corrections of 2026-09-30 and 2026-10-01); further corrections from her review applied 2026-10-08 at `37c229b` (seven texts, English untouched). Written on her word, not by a session.
 Game's report (French): 2026-10-05 in her game, 0 errors naming this mod; 2026-10-09 NPT's step in the Pickle ticket 9368: **2 missing injections** (defect above). English has no report (the game writes one only for another language than English).
 Unverified in game: raw keys, fallback text, clipping, wisp inspection text.
 

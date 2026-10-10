@@ -7,3 +7,5 @@ Red in one language only: English, `MM_StymphalianBird` ranged attack shows no i
 
 ## Replays (exit 0, set sans-facultatifs)
 Tickets ffc3, 86a7, e84f played as one launch (filters merged, report in `Tests/Pickle/Evidence/replay-egg`, English): 4 of 4 passed: phoenix egg in the flames and wisp inspection text (feature 11, spawn step restored), egg destruction by a colonist, Stymphalian ranged attack. Ticket 81e2 (French, `replay-kitsune`): the Kitsune heal passed, 1 of 1. The Stymphalian, destruction and Kitsune reds of the initial passes did not repeat; no code changed between, so they stay recorded as timing in the initial pass, to watch at the non-regression pass. The restart pair (dfcd) is still queued.
+
+Restart pair (dfcd, `replay-restart`, English): seq1 `changed settings are written to the settings file` passed, seq2 `the previous launch's settings are loaded, and the game computes from them` passed, 2 of 2. Every red of the initial passes now has a green replay.

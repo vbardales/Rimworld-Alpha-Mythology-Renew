@@ -1,7 +1,18 @@
+# What only this mod knows: the 25 creatures and their links, the phoenix and bleeding-wound workers, the settings contract,
+# the About dependencies and the Steam description contract. The generic checks (XML well formed, no duplicate defName,
+# XPath compiles, About shape and "(unofficial)", ATTRIBUTION/LICENSE, images, PublishedFileId) live in the shared
+# scripts/Check-ModBasics.ps1, called first.
 [CmdletBinding()]
 param([string]$ModRoot = (Split-Path $PSScriptRoot -Parent))
 $ErrorActionPreference = 'Stop'
 $root = (Resolve-Path -LiteralPath $ModRoot).Path
+$shared = Join-Path $PSScriptRoot '../../scripts/Check-ModBasics.ps1'
+if (Test-Path $shared) {
+    & pwsh -NoProfile -File $shared -ModRoot $root -Unofficial -OriginalWorkshopId 1821617793
+    if ($LASTEXITCODE -ne 0) { throw 'Check-ModBasics reported findings' }
+} else {
+    Write-Warning 'scripts/Check-ModBasics.ps1 not found beside this repository (standalone checkout, CI): the generic checks did NOT run.'
+}
 $defs = @{}; $kinds = @(); $documents = @(); $checks = 0
 function Assert-Mod([bool]$Condition, [string]$Message) {
     if (-not $Condition) { throw $Message }
@@ -16,12 +27,8 @@ Get-ChildItem "$root/Mod" -Recurse -File -Filter *.xml | ForEach-Object {
     $documents += $xml
     foreach ($def in $xml.SelectNodes('/Defs/*[defName]')) {
         $key = $def.Name + ':' + $def.defName
-        Assert-Mod (-not $defs.ContainsKey($key)) "Duplicate $key in $($_.FullName)"
         $defs[$key] = $def
         if ($def.Name -eq 'PawnKindDef') { $kinds += $def }
-    }
-    foreach ($xpath in $xml.SelectNodes('//xpath')) {
-        [void][System.Xml.XPath.XPathExpression]::Compile($xpath.InnerText)
     }
     Assert-Mod ($xml.OuterXml -notmatch 'Bastyon\.') "Old Animal Ark namespace in $($_.FullName)"
 }
@@ -74,24 +81,6 @@ $publication = (Get-Content "$root/PUBLICATION.md" -Raw) -replace "`r`n", "`n"
 $fence = '`' * 3
 Assert-Mod ($publication.Contains("## Steam description`n")) 'PUBLICATION.md has no "## Steam description" section'
 Assert-Mod ($publication.Contains("[Source code on GitHub](https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew)`n$fence")) 'PUBLICATION.md Steam description must end with the source link, right before the closing fence'
-# The file exists once the 0.1.0 pre-publication has created the item. It must hold this port's own id, never the original's (1821617793).
-$publishedIdFile = "$root/Mod/About/PublishedFileId.txt"
-if (Test-Path $publishedIdFile) {
-    $publishedId = (Get-Content -LiteralPath $publishedIdFile -Raw).Trim()
-    Assert-Mod ($publishedId -match '^\d+$') 'PublishedFileId.txt must hold digits only'
-    Assert-Mod ($publishedId -ne '1821617793') 'PublishedFileId.txt holds the original mod id; upstream ID must not be copied'
-}
-foreach ($notice in @('ATTRIBUTION.md', 'LICENSE')) {
-    Assert-Mod ((Get-FileHash "$root/$notice").Hash -eq (Get-FileHash "$root/Mod/$notice").Hash) "$notice mismatch"
-}
-foreach ($name in @('Preview.png', 'ModIcon.png')) {
-    $path = "$root/Mod/About/$name"
-    Assert-Mod (Test-Path $path) "Missing $name"
-    $bytes = [IO.File]::ReadAllBytes($path)
-    Assert-Mod ($bytes.Length -ge 24) "Truncated PNG $name"
-    Assert-Mod ([Convert]::ToHexString($bytes[0..7]) -eq '89504E470D0A1A0A') "Invalid PNG signature $name"
-    if ($name -eq 'Preview.png') { Assert-Mod ($bytes.Length -lt 1MB) 'Preview must be under 1 MiB' }
-}
 Assert-Mod (Test-Path "$root/Mod/Assemblies/AlphaMythologyRenew.dll") 'Shipped assembly missing'
 $foreign = @(Get-ChildItem "$root/Mod/Assemblies" -Filter *.dll | Where-Object Name -ne 'AlphaMythologyRenew.dll')
 Assert-Mod ($foreign.Count -eq 0) 'Unexpected bundled assembly'

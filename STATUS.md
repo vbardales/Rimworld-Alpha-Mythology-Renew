@@ -19,7 +19,7 @@ tested_on: "2026-10-10, Pickle only: initial passes EN and FR at the tree of eba
 audit_at: 2026-10-10
 audit_revision: dbc114e22cf23ab64baa7a9047141d161d17abf2 (clean tree at the start; this audit then edited Tests/Test-Validator.ps1, CHANGELOG.md, TESTING.md, Tests/Pickle/README.md, STATUS.md)
 automated_tests: "passed 2026-10-10: Tests/UnitTests ALL PASSED (spawn rules 13, patch checks 47); Release build 0 warnings 0 errors"
-xml_tests: "passed 2026-10-10: Check-Mod.ps1 342 assertions, 86 XML files, 25 creatures; Test-Validator.ps1 7 negative cases (the runner was red before this audit, see Audit 2026-10-10); Check-Translations.py 590 fields, 589 French injections, 56 Keyed pairs (run through uv, no Python on PATH)"
+xml_tests: "passed 2026-10-11: Check-ModBasics (shared) then Check-Mod.ps1 174 own assertions, 86 XML files, 25 creatures; Test-Validator.ps1 6 negative cases (the runner was red before this audit, see Audit 2026-10-10); shared scripts/Check-Translations.ps1 224 source texts and French injections green 2026-10-11 (replaced Check-Translations.py, deleted)"
 functional_tests: "unverified in this audit; Pickle history reports green passes (see Tests): not re-read here"
 remaining:
   - "2026-10-10 unverified (playTests 8.f to 8.k): the @requires passes and the incompatibility pass are green on earlier revisions and are replayed as non-regression after the deploy (followUp 14.a); functional scenarios 8.g, settings in game FR and EN 8.h and UI and logs 8.i are covered by the initial passes (84 scenarios each, every red replayed green, docs/runs/2026-10-10-1a12-d0ff-initial-passes.md); the owner's manual validations, if any, are hers"
@@ -63,7 +63,7 @@ Revision `dbc114e`, `main` two commits ahead of `origin`. Previous state `preTes
 - `settings_audit` was `complete` while the in-game checks are all unverified: corrected to `partial` (MOD_SETTINGS.md, AUDIT.md 5).
 - Not checked: the shipped DLL is not byte-identical to a fresh build (hash differs; both from `e53da76`, the last commit of `Source/`, the build is probably not deterministic: not treated as a defect).
 - Reserves, not blockers: `Tests/FUNCTIONAL.md` plays the role of `TEST_SCENARIOS.md` (name differs); `STATUS.md` was 129 KB, folded here (linter ERROR over 80 KB).
-- The two injections are added (`Mod/Languages/French/DefInjected`), `Tests/Check-Translations.py` now requires them (`GAME_REPORTED`, 590 fields, 591 injections), `FRENCH_REVIEW.md` regenerated. Work to cross the next transition: have Virginie read the two rows (`translation_fr` to `complete`), (ticket c626 already green) then `Check-Status.ps1`, read the missing protocols, `Mark-ProtocolsRead.ps1`, set `writeTests[1.0.0]`.
+- The two injections are added (`Mod/Languages/French/DefInjected`), the game's translation pass proves them (the former Check-Translations.py and its `GAME_REPORTED` are deleted), `FRENCH_REVIEW.md` regenerated. Work to cross the next transition: have Virginie read the two rows (`translation_fr` to `complete`), (ticket c626 already green) then `Check-Status.ps1`, read the missing protocols, `Mark-ProtocolsRead.ps1`, set `writeTests[1.0.0]`.
 
 ## Code review 2026-10-10 (playTests 8.m)
 
@@ -97,7 +97,7 @@ Unverified, in game: everything in the `remaining` entry on the settings window.
 ## Translation audit (2026-09-13, updated 2026-10-10)
 
 Where the French lives: `Mod/Languages/French/Keyed/AlphaMythology.xml` and `Mod/Languages/French/DefInjected/*/AlphaMythology.xml` (no grammar files). English is the Def value plus `Mod/Languages/English/Keyed/`.
-Inventory: `Tests/TRANSLATIONS.md`, `Tests/TranslationInventory.json` (590 fields, 589 French injections, 56 Keyed pairs). `FRENCH_REVIEW.md` was generated from `37c229b`; no French file changed since.
+Inventory: `Tests/TRANSLATIONS.md`, the shared `scripts/Check-Translations.ps1` (224 texts). `FRENCH_REVIEW.md` was generated from `37c229b`; no French file changed since.
 Plural rule: the only counted text, `AMR_AsexualReproductionDays`, has `.One` and `.Many` in both languages (`Source/TranslationPatches.cs`).
 Gender agreement: no `PAWN_gender` switch in the French; the texts are rewritten epicene (`la personne qui le monte`, `les membres de la colonie`), pawn = colon not used.
 French review by Virginie: 2026-10-10 at `33196d1`: the two rows added after the game's report (`MM_OpenWound.labelNounPretty`, wisp `customString`) validated in chat ('validé'); `FRENCH_REVIEW.md` from that revision; the game's French report is green (ticket c626). Earlier: 2026-10-01 at `990f571` (corrections of 2026-09-30 and 2026-10-01); further corrections from her review applied 2026-10-08 at `37c229b` (seven texts, English untouched). Written on her word, not by a session.

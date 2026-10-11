@@ -8,7 +8,7 @@ criterion (`writeTests` to `playTests`); playing them and reading their captures
 
 Pickle costs the machine tens of minutes a run. What is provable without the game stays out of it:
 the rules of the settings (bounds, clamping, NaN, blocked creature) are `Tests/UnitTests`, the XML and the
-settings contract are `Tests/Check-Mod.ps1`, the translation resources are `Tests/Check-Translations.py`.
+settings contract are `Tests/Check-Mod.ps1`, the translation resources are the shared `scripts/Check-Translations.ps1`.
 What is left needs a running game.
 
 | Feature | Scenarios | Why only a running game can show it |

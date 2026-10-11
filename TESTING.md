@@ -84,8 +84,8 @@ full texture coverage, patch application, save migration or gameplay correctness
 
 The translation gate and bilingual acceptance cases are documented in
 [Tests/TRANSLATIONS.md](Tests/TRANSLATIONS.md). Run
-`python Tests/Check-Translations.py --self-test` after text, Def, patch, UI or
-language-resource edits. This check also runs in CI. Reset affected translation
+`scripts/Check-Translations.ps1` (shared, see Tests/TRANSLATIONS.md) after text, Def, patch, UI or
+language-resource edits. It is not run by this repository's CI (the script lives in the protocols repository). Reset affected translation
 fields in STATUS.md to `unchecked` until the audit and resource checks pass again.
 
 ## Evidence to keep

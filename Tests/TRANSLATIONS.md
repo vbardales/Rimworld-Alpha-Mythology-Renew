@@ -6,8 +6,8 @@ the parent workspace's PUBLISHING.md and TRANSLATIONS.md.
 
 ## Inventory and ownership
 
-`TranslationInventory.json` records 591 source fields, their English text, source
-XML paths and resolved injection paths. Coverage includes all 25 races and pawn
+The shared `../scripts/Check-Translations.ps1` builds the inventory of source fields from the Defs and patches
+(2026-10-11: it replaced this mod's Check-Translations.py and TranslationInventory.json). Coverage includes all 25 races and pawn
 kinds, juvenile/sex/plural labels, tools and verbs, bodies and nested body parts,
 damage/death messages, hediff stages and treatment labels, thoughts, surgery,
 plants, leather, eggs, projectiles, MVCF metadata and the optional achievement tab
@@ -56,19 +56,16 @@ documents are outside the in-game gate.
 ## Reproducible checks
 
 ```powershell
-python Tests/Check-Translations.py --self-test
+pwsh -Command "& ../scripts/Check-Translations.ps1 -ModRoot . -AllowUnused NocturnalAnimals.BodyClock,NocturnalAnimals.BodyClock_Crepuscular,NocturnalAnimals.BodyClock_Description,NocturnalAnimals.BodyClock_Diurnal,NocturnalAnimals.BodyClock_Nocturnal,VEF_WarningEggExplodes"
 pwsh -File Tests/Check-Mod.ps1
 pwsh -File Tests/Test-Validator.ps1
 dotnet build Source/AlphaMythologyRenew.csproj -c Release --nologo
 ```
 
-The translation check passes 591 audited fields, 590 French injections and 49
-English/French Keyed pairs. It compares against current Defs/patches and direct
-C# consumers, checks duplicates, empty values, stale entries, parameters and
-markup, and requires review when inventoried English changes. Four isolated
-negative cases reject missing keys, missing injections, damaged parameters and
-new unaudited text. This is regression coverage for the reviewed mechanisms, not
-a substitute for auditing new custom XML fields or new UI code.
+`-AllowUnused` lists the Keyed keys consumed by OTHER mods (Nocturnal Animals reads `NocturnalAnimals.*`, Vanilla Expanded Framework reads
+`VEF_WarningEggExplodes`): no call in this mod's code, kept on purpose. The shared check covers coverage, stale entries, duplicates, empty values, formatting tokens and Keyed use (see its header).
+The two injections the game's own translation report names (`MM_OpenWound.labelNounPretty`, the wisp `customString`) are proved by the
+translation pass of the game, not by an offline script.
 
 The shared checker `../scripts/Check-DefInjected.ps1` passed all 590 injection
 paths with **0 errors and no unverified paths or unknown types**. It used installed

@@ -7,7 +7,7 @@
   <modDependencies>
     <li><packageId>brrainz.harmony</packageId><displayName>Harmony</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl></li>
     <li><packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId><displayName>Vanilla Expanded Framework</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/2023507013</steamWorkshopUrl></li>
-    <li><packageId>nelim.resolvethisinstead</packageId><displayName>Resolve This Instead</displayName></li>
+    <li><packageId>nelim.resolvethisinstead</packageId><displayName>Resolve This Instead</displayName><downloadUrl>https://github.com/vbardales/Rimworld-Resolve-This-Instead</downloadUrl></li>
   </modDependencies>
   <loadAfter><li>brrainz.harmony</li><li>OskarPotocki.VanillaFactionsExpanded.Core</li><li>nelim.resolvethisinstead</li></loadAfter>
   <loadBefore><li>SamBucher.ADogSaidAnimalProsthetics2</li></loadBefore>

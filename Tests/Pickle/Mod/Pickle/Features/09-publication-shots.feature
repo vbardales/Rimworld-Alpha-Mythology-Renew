@@ -22,8 +22,8 @@
 # 208 per picture already told), then poses the creature, so that it has not left the frame.
 #
 # SHOT PLAN (place, time, subject, composition, the living around it, what the picture says):
-# 1. statue-garden (153, 91), 12:00, MM_Griffin "Aurelia", Griffin off-centre on the left, statues behind it, the garden wall on the right; living: the sanctuary's horses and sparrows around the statues; says: the griffin settles among the statues, a statue that moved.
-# 2. fishing-zone (128, 67), the bank east of the round pond, 12:05, MM_Kappa "Ondine", Kappa low in the left foreground, the pond opening behind it; living: Nelim standing on the bank looking at it (her eyes are Eyes_Brown by default in the fixture: no step; a light smile, "normal+moodCheerful"), and the ducks and swans of the river; says: the water spirit sits on the bank of the round pond.
+# 1. statue-garden (152, 94), 12:00, MM_Griffin "Aurelia", Griffin off-centre on the left, statues behind it, the garden wall on the right; living: the sanctuary's horses and sparrows around the statues; says: the griffin settles among the statues, a statue that moved.
+# 2. fishing-zone (122, 67), the bank east of the round pond, 12:05, MM_Kappa "Ondine", Kappa low in the left foreground, the pond opening behind it; living: Nelim standing on the bank looking at it (her eyes are Eyes_Brown by default in the fixture: no step; a light smile, "normal+moodCheerful"), and the ducks and swans of the river; says: the water spirit sits on the bank of the round pond.
 # 3. water-garden (177, 173), 12:10, MM_Pegasus "Zephyra", Pegasus at the water's edge, lilies in the foreground, bamboo to the north; living: the garden's ducks; says: the winged horse drinks among the lilies, wings folded.
 # 4. tea-room (140, 73), 12:15, MM_Kitsune "Inari", Kitsune left of the door, the wooden cabin filling the right; living: Nelim on the step of the cabin (smile "normal+moodCheerful2", set last, right before the capture), and the cats of the house and a labrador by the bank; says: the fox spirit waits at the door of the tea room.
 # 5. fire-pit (181, 115), 12:20, MM_Phoenix "Cinder", Phoenix beside the central fire, the hall in shadow around it; living: the thrumbos and cats asleep in the hall; says: the firebird lights the hall as a second hearth.
@@ -50,7 +50,7 @@ Feature: Workshop pictures
 
   Scenario: the griffin among the statues
     When Nelim's Pickle Tools: I let 60 ticks pass
-    And Nelim's Pickle Tools: an adult animal of kind "MM_Griffin" named "Aurelia" is spawned at (153, 91)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Griffin" named "Aurelia" is spawned at (152, 94)
     Then Alpha Mythology Renew the creature "Aurelia" is standing on the map as "MM_Griffin"
     When Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "statue-garden"
@@ -61,10 +61,10 @@ Feature: Workshop pictures
 
   Scenario: the kappa by the pond
     When Nelim's Pickle Tools: I let 268 ticks pass
-    And Nelim's Pickle Tools: an adult animal of kind "MM_Kappa" named "Ondine" is spawned at (128, 67)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Kappa" named "Ondine" is spawned at (122, 67)
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I let 10 ticks pass
-    And Nelim's Pickle Tools: "Nelim" stands at (131, 69) facing West
+    And Nelim's Pickle Tools: "Nelim" stands at (124, 69) facing West
     Then Alpha Mythology Renew the creature "Ondine" is standing on the map as "MM_Kappa"
     When Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "fishing-zone"

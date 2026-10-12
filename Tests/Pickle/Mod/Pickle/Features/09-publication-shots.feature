@@ -22,7 +22,7 @@
 # 208 per picture already told), then poses the creature, so that it has not left the frame.
 #
 # SHOT PLAN (place, time, subject, composition, the living around it, what the picture says):
-# 1. statue-garden (152, 94), 12:00, MM_Griffin "Aurelia", Griffin off-centre on the left, statues behind it, the garden wall on the right; living: the sanctuary's horses and sparrows around the statues; says: the griffin settles among the statues, a statue that moved.
+# 1. statue-garden (152, 94), 12:00, MM_Griffin "Aurelia", Griffin off-centre on the left, statues behind it, the garden wall on the right; living: a donkey and a hare placed on purpose (the wandering animals are removed first: a cat overlapped the wing in series 3); says: the griffin settles among the statues, a statue that moved.
 # 2. fishing-zone (122, 67), the bank east of the round pond, 12:05, MM_Kappa "Ondine", Kappa low in the left foreground, the pond opening behind it; living: Nelim standing on the bank looking at it (her eyes are Eyes_Brown by default in the fixture: no step; a light smile, "normal+moodCheerful"), and the ducks and swans of the river; says: the water spirit sits on the bank of the round pond.
 # 3. water-garden (177, 173), 12:10, MM_Pegasus "Zephyra", Pegasus at the water's edge, lilies in the foreground, bamboo to the north; living: the garden's ducks; says: the winged horse drinks among the lilies, wings folded.
 # 4. tea-room (140, 73), 12:15, MM_Kitsune "Inari", Kitsune left of the door, the wooden cabin filling the right; living: Nelim on the step of the cabin (smile "normal+moodCheerful2", set last, right before the capture), and the cats of the house and a labrador by the bank; says: the fox spirit waits at the door of the tea room.
@@ -30,6 +30,7 @@
 # 6. gravel-yard (172, 143) (great-courtyard is an alias of the emerald clearing, a green marker rug: not a courtyard), 12:25, MM_Cerberus "Balthazar", Cerberus centre-left, three heads turned three ways, the courtyard open behind; living: the sanctuary's labradors, wary at a distance; says: the three-headed hound keeps the courtyard.
 # 7. plant-garden (190, 87), 12:30, MM_Unicorn "Morwen", Unicorn between two rows of plants, the fence behind; living: the sparrows in the plants; says: the unicorn walks the fenced plant garden.
 # 8. rice-paddies (226, 117), 12:35, MM_Manticore "Thessaly", Manticore on the left, the rice rows running away to the right; living: the herons and chickens of the fields; says: the manticore watches the paddies from the bank.
+# 10. same window, 12:45: the creature list scrolled to its end (the window shows about 16 of the 25 creatures: the rows below Phoenix are in this picture, the rows above are in 9). Added 2026-10-12 after the owner: the faces above and below were not seen.
 # 9. podium (197, 152), 12:40, Griffin beside the window: the settings window, a plain screen capture of what it is, the interface on and developer mode off
 #    so that its toolbar is not in the picture.
 #
@@ -50,7 +51,10 @@ Feature: Workshop pictures
 
   Scenario: the griffin among the statues
     When Nelim's Pickle Tools: I let 60 ticks pass
+    And Nelim's Sanctuary: the animals are removed from the sanctuary "statue-garden"
     And Nelim's Pickle Tools: an adult animal of kind "MM_Griffin" named "Aurelia" is spawned at (152, 94)
+    And Nelim's Pickle Tools: an adult animal of kind "Donkey" named "Pilar" is spawned at (158, 97)
+    And Nelim's Pickle Tools: an adult animal of kind "Hare" named "Fennel" is spawned at (146, 99)
     Then Alpha Mythology Renew the creature "Aurelia" is standing on the map as "MM_Griffin"
     When Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "statue-garden"
@@ -119,10 +123,12 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: I let 100 ticks pass
     And Nelim's Sanctuary: the animals are removed from the sanctuary "gravel-yard"
     And Nelim's Pickle Tools: an adult animal of kind "MM_Cerberus" named "Balthazar" is spawned at (172, 143)
+    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Rex" is spawned at (180, 148)
+    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Mira" is spawned at (164, 138)
     Then Alpha Mythology Renew the creature "Balthazar" is standing on the map as "MM_Cerberus"
     When Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "gravel-yard"
-    And Alpha Mythology Renew frames the animal "Balthazar" at zoom 5, shown 2 cells left and 0 cells up
+    And Alpha Mythology Renew frames the animal "Balthazar" at zoom 3.5, shown 2 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     Then I take a screenshot "workshop-6-the-hound-at-the-courtyard-gate"
@@ -146,10 +152,13 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: I let 500 ticks pass
     And I wait 16 ticks
     And Nelim's Pickle Tools: an adult animal of kind "MM_Manticore" named "Thessaly" is spawned at (226, 117)
+    And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Hilda" is spawned at (221, 120)
+    And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Berta" is spawned at (222, 114)
+    And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Greta" is spawned at (231, 112)
     Then Alpha Mythology Renew the creature "Thessaly" is standing on the map as "MM_Manticore"
     When Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "rice-paddies"
-    And Alpha Mythology Renew frames the animal "Thessaly" at zoom 5, shown 2 cells left and 0 cells up
+    And Alpha Mythology Renew frames the animal "Thessaly" at zoom 3.5, shown 2 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     Then I take a screenshot "workshop-8-the-manticore-by-the-paddies"
@@ -169,6 +178,25 @@ Feature: Workshop pictures
     When Nelim's Pickle Tools: developer mode is turned off for the capture
     And I wait 30 ticks
     Then I take a screenshot "workshop-9-the-settings-window"
+    When I close all dialogs
+    And Nelim's Pickle Tools: developer mode is restored
+    Then no errors were logged
+
+  Scenario: the settings list, to the end
+    When Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 224 ticks pass
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Griffin" named "Aurelia" is spawned at (197, 152)
+    When Alpha Mythology Renew dismisses every letter
+    And Nelim's Sanctuary: I am at the sanctuary "podium"
+    And Alpha Mythology Renew frames the animal "Aurelia" at zoom 9, shown 6 cells left and 2 cells up
+    And Alpha Mythology Renew opens its settings window
+    Then Alpha Mythology Renew sees its own settings window open
+    And Alpha Mythology Renew scrolls its settings list to the end
+    When Nelim's Pickle Tools: developer mode is turned off for the capture
+    And I wait 30 ticks
+    Then I take a screenshot "workshop-10-the-settings-list-end"
     When I close all dialogs
     And Nelim's Pickle Tools: developer mode is restored
     Then no errors were logged

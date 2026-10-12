@@ -85,5 +85,18 @@ namespace AlphaMythologyRenew.PickleSteps
             }
             Find.CameraDriver.SetRootSize(zoom);
         }
+
+        /// <summary>
+        /// Scrolls the creature list of this mod's open settings window to its end, so that a second picture shows the rows the first
+        /// one cannot (the list holds 25 creatures, the window shows about 16). The scroll position is a private field of the mod.
+        /// </summary>
+        [When("Alpha Mythology Renew scrolls its settings list to the end")]
+        public void ScrollSettingsToEnd(PickleContext ctx)
+        {
+            var field = typeof(AlphaMythologyRenewMod).GetField("scroll",
+                System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
+            ctx.Assert(field != null, "the settings window has no scroll position to move");
+            field.SetValue(AlphaMythologyRenewMod.Instance, new Vector2(0f, 100000f));
+        }
     }
 }

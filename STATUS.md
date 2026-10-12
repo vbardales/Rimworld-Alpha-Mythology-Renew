@@ -38,8 +38,8 @@ remaining:
   - "2026-10-10 feature: English text inherited from upstream is corrected by the upstream PR, not silently in the port; certain fix to join the planned PR: 'work load' to 'workload' in MM_UtilityWorkerDesc (English Keyed)"
   - "2026-10-10 unverified: the 1.0.0 is not sent; the description of PUBLICATION.md holds an em dash (2 in the file), rule of 2026-10-10"
 code_review_sha: 8ff9b37bd18650e6c82ec96210ece2a846bf7235
-echo_review_sha: c5d27c226b5ac74df197012003c9f04038f718b1
-social_preview_sha256: 657d4cc7335f897daf6a9d713fa15a4dffb372c82ca4fc016a63264187bac0a6
+echo_review_sha: b9953cfd944f3d77352f1837ef123fbd8ac0b644
+social_preview_sha256: fba649849da03131890b808754e8cd81f831254785cade742332fe2792c0b41d
 updated: 2026-10-10
 protocols_read_sha: b4a73cf0998fa5914b1d5e52b0817a8fe77abab3
 ---

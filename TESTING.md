@@ -109,6 +109,7 @@ Kept on disk as of 2026-10-05 (first listed 2026-09-30, 38 MB then; every `repor
 | `restart3` | settings persistence across a restart (seq1, seq2), green 41a1 | replayed |
 | `ads2b`, `dogsmate2`, `crossbreeding`, `achievements2` | one animal-mod pass each, green | the same pass is replayed |
 | `studio8` | the seven gallery pictures (originals); `Art/gallery/` holds the published versions | the gallery is uploaded |
+| `gallery3` | the sanctuary series of 2026-10-12, 9 of 9 green (originals of the nine candidates in `Art/Gallery/`) | the gallery is uploaded |
 
 ## Conditions for `tested`
 

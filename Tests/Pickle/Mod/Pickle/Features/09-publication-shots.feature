@@ -169,16 +169,17 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: I let 500 ticks pass
     And Nelim's Pickle Tools: I let 500 ticks pass
     And Nelim's Pickle Tools: I let 224 ticks pass
-    And Nelim's Pickle Tools: an adult animal of kind "MM_Griffin" named "Aurelia" is spawned at (197, 152)
-    When Alpha Mythology Renew dismisses every letter
-    And Nelim's Sanctuary: I am at the sanctuary "podium"
-    And Alpha Mythology Renew frames the animal "Aurelia" at zoom 9, shown 6 cells left and 2 cells up
+    And Alpha Mythology Renew dismisses every letter
+    And Nelim's Sanctuary: I am at the sanctuary "window-backdrop-for-height"
+    And Nelim's Pickle Tools: studio presentation mode is enabled
     And Alpha Mythology Renew opens its settings window
     Then Alpha Mythology Renew sees its own settings window open
     When Nelim's Pickle Tools: developer mode is turned off for the capture
+    And Nelim's Pickle Tools: screenshot mode is enabled around the open windows
     And I wait 30 ticks
     Then I take a screenshot "workshop-9-the-settings-window"
-    When I close all dialogs
+    When Nelim's Pickle Tools: screenshot mode is disabled
+    And I close all dialogs
     And Nelim's Pickle Tools: developer mode is restored
     Then no errors were logged
 

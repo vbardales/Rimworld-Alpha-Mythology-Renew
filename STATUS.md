@@ -31,7 +31,6 @@ remaining:
   - "2026-10-10 unverified: save migration from Animal Ark (class names changed, untested by design) and manual gameplay"
   - "2026-10-10 unverified: optional-provider passes, ADS 2, Dogs mate, Better Crossbreeding and the incompatibility pass are reported green in the history (2026-09-27 to 2026-10-05); this audit did not re-read their reports"
   - "2026-10-10 unverified (playTests 8.m): code review; last review f3d8693ee1c469acc5286f14b03aff0202eeca71 (low effort, since 0.1.0); code_review_sha is not recorded in the front matter yet"
-  - "2026-10-13 feature (owner's rule): pull request to juanosarg/AlphaMythology: branch fix-phoenix-egg-lost-in-stack in C:/amfork with two local commits (phoenix egg b44eb3c, workload typo 00d1601), draft text in PUBLICATION.md, green proof found (13-phoenix scenario passed EN and FR in initial-en and initial-fr); waits for Virginie's reading and go, then push to the fork and open the pull request"
   - "2026-10-10 feature (writeDocs 11.h): thank-you drafts written in PUBLICATION.md for RWoM, Advanced Biomes, Nature's Pretty Sweet, Elves, Giddy-Up 2, Dogs mate, Better Crossbreeding and Tree Chopping Speed Stat; Covers completed in the register (protocols 3a01556 and 951bcc7). No draft, by the owner's earlier call: the original's page, Vanilla Genetics Expanded and Vanilla Achievements Expanded (Sarg Bjornson answers there). Drafts are read against the owner's voice at writeDocs, posted after the item is public (followUp 14.b)"
   - "2026-10-10 feature (blocker before 1.0.0): Resolve This Instead (nelim.resolvethisinstead, hard dependency) needs its own public Workshop page first; no Workshop id yet"
   - "2026-10-10 unverified: the 1.0.0 is not sent; the description of PUBLICATION.md holds an em dash (2 in the file), rule of 2026-10-10"
@@ -131,6 +130,8 @@ Series played in `SanctuaryBacklot` (feature `09-publication-shots`, runs da73, 
 Decision: keep `Art/echo-source.png`. It is the phoenix line-art; the phoenix is still in the accepted gallery (`2-phoenix.jpg`) and the subject of the mod (mythological creatures) has not moved. The gallery changed after the previous review only by re-shot kappa, manticore, unicorn and the new settings window, and by reordering. Preview not regenerated, so `social_preview_sha256` stands. `Art/Cards/` (an unreferenced inherited Photoshop template, 1 MB) deleted by the closing pass step 1; it stays in git history (37c56e1).
 
 ## Upstream
+
+Pull request sent 2026-10-13: https://github.com/juanosarg/AlphaMythology/pull/4 (phoenix egg lost in a stack, plus the English typo `work load` to `workload`), from the fork branch fix-phoenix-egg-lost-in-stack. Nothing to do until the author answers; an answer or a request to split goes through Virginie.
 
 Fork `vbardales/AlphaMythology` made 2026-09-28. Original master has `1.4/` and `1.5/` only; its open PR #3 adds a 1.6 folder, so a whole-port PR would collide: the PR to send is small (the phoenix egg lost in a merged stack, branch `fix-phoenix-egg-lost-in-stack`, commit b44eb3c, scratch clone `C:/amfork`).
 Not sent; the owner reads the text once open and the text states only what a green run proves.

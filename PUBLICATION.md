@@ -72,7 +72,7 @@ UNOFFICIAL. This mod is published without the original author's explicit consent
 
 No licence granting republication of Alpha Mythology was found. This continuation is distributed without an explicit licence or agreement from the original author; this notice is not a claim of permission.
 
-25 mythological creatures from Sarg Bjornson's Alpha Mythology, ported to RimWorld 1.6 and extracted from the private Animal Ark pack. Includes their eggs, products, abilities and optional integration patches. A settings window (Mod options) sets how often the creatures appear in the wild and lets you exclude any of them. Creature definitions retain their original names.
+25 mythological creatures from Sarg Bjornson's Alpha Mythology, ported to the latest RimWorld version and extracted from the private Animal Ark pack. Includes their eggs, products, abilities and optional integration patches. A settings window (Mod options) sets how often the creatures appear in the wild and lets you exclude any of them. Creature definitions retain their original names.
 
 The port updates obsolete XML fields and VEF type names and rebuilds the phoenix death effect and the bleeding wound in an isolated assembly.
 
@@ -90,7 +90,7 @@ If I do not answer within a reasonable time after being contacted, anyone may fr
 
 **AI-GENERATED**
 
-The port was made with AI assistance: Codex (OpenAI) for the 1.6 extraction, the isolated assembly and the French translations; Claude Code (Anthropic) for the settings, the test suites and the documentation; OpenAI image generation for the preview illustration. The creatures, their code and their artwork are Sarg Bjornson's. Port and extraction by Nelim.
+The port was made with AI assistance: Codex (OpenAI) for the extraction, the isolated assembly and the French translations; Claude Code (Anthropic) for the settings, the test suites and the documentation; OpenAI image generation for the preview illustration. The creatures, their code and their artwork are Sarg Bjornson's. Port and extraction by Nelim.
 
 **THANKS**
 
@@ -120,7 +120,7 @@ First upload: creates the private item. Not tested in game.
 
 ```
 [b]1.0.0[/b]
-25 mythological creatures for RimWorld 1.6, ported from Alpha Mythology (unofficial). New: a settings window (Mod options) with a wild spawn frequency multiplier and one switch per creature; an optional hidden MainButtons shortcut for RIMMSQOL. English and French.
+25 mythological creatures for the latest RimWorld version, ported from Alpha Mythology (unofficial). New: a settings window (Mod options) with a wild spawn frequency multiplier and one switch per creature; an optional hidden MainButtons shortcut for RIMMSQOL. English and French.
 ```
 
 ## Thank-you comments (drafts, none posted)

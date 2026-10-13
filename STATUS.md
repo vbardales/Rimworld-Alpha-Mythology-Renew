@@ -148,3 +148,5 @@ Gallery final (nine images, 2.6 MB, order by strength), echo kept (section above
 ## Transition 2026-10-13: writeDocs to prepareRelease
 
 Virginie validated PUBLICATION.md and CHANGELOG.md in chat on 2026-10-13 (`publication_changelog_review_sha` = the commit she read); description without a RimWorld version, adult boxes answered, thank-you drafts and Steam change notes written. `prepareRelease` next (AUDIT.md 12): the blocker below (Resolve This Instead needs its own public Workshop page), the dry-run that starts by dating `## [Unreleased]`, rollback target. `code_review_sha` is INFO-stale only because `About.xml` carries the regenerated description (text, no `Source/` change).
+
+Audit 9 to 11 re-checked criterion by criterion on 2026-10-13: 9.b to 9.e, 10.c (0-preview.png byte copy), 10.d format 896x504 and 607 KB (contrast not measured, read on the image), 10.e, 10.f (sha256 equal), 11.a to 11.j met; defect found and fixed: About.xml had no `<url>` to the repository (11.c, PUBLISHING.md), added; Check-Mod 174 assertions green after it.

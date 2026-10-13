@@ -58,7 +58,7 @@ Feature: Workshop pictures
     Then Alpha Mythology Renew the creature "Aurelia" is standing on the map as "MM_Griffin"
     When Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "statue-garden"
-    And Alpha Mythology Renew frames the animal "Aurelia" at zoom 5, shown 2 cells left and 0 cells up
+    And Alpha Mythology Renew frames the animal "Aurelia" at zoom 3.5, shown 2 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     Then I take a screenshot "workshop-1-the-griffin-among-the-statues"
@@ -72,7 +72,7 @@ Feature: Workshop pictures
     Then Alpha Mythology Renew the creature "Ondine" is standing on the map as "MM_Kappa"
     When Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "fishing-zone"
-    And Alpha Mythology Renew frames the animal "Ondine" at zoom 5, shown 2 cells left and 0 cells up
+    And Alpha Mythology Renew frames the animal "Ondine" at zoom 3, shown 2 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+moodCheerful"
@@ -141,7 +141,7 @@ Feature: Workshop pictures
     Then Alpha Mythology Renew the creature "Morwen" is standing on the map as "MM_Unicorn"
     When Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "plant-garden"
-    And Alpha Mythology Renew frames the animal "Morwen" at zoom 5, shown 2 cells left and 0 cells up
+    And Alpha Mythology Renew frames the animal "Morwen" at zoom 3.5, shown 2 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     Then I take a screenshot "workshop-7-the-unicorn-in-the-plant-garden"

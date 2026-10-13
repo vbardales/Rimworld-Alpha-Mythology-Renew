@@ -36,7 +36,7 @@ remaining:
   - "2026-10-10 feature (blocker before 1.0.0): Resolve This Instead (nelim.resolvethisinstead, hard dependency) needs its own public Workshop page first; no Workshop id yet"
   - "2026-10-10 feature: English text inherited from upstream is corrected by the upstream PR, not silently in the port; certain fix to join the planned PR: 'work load' to 'workload' in MM_UtilityWorkerDesc (English Keyed)"
   - "2026-10-10 unverified: the 1.0.0 is not sent; the description of PUBLICATION.md holds an em dash (2 in the file), rule of 2026-10-10"
-code_review_sha: 8ff9b37bd18650e6c82ec96210ece2a846bf7235
+code_review_sha: 92bdc6ece455a8dcb3e6ca3f1a33a31d492eab8b
 publication_changelog_review_sha: 92ed1e831806f7b0fead291d3b1a8ad738562bc9
 echo_review_sha: a1be481084332130c4d6b992d4735cdfe0fab33e
 social_preview_sha256: fba649849da03131890b808754e8cd81f831254785cade742332fe2792c0b41d
@@ -150,3 +150,5 @@ Gallery final (nine images, 2.6 MB, order by strength), echo kept (section above
 Virginie validated PUBLICATION.md and CHANGELOG.md in chat on 2026-10-13 (`publication_changelog_review_sha` = the commit she read); description without a RimWorld version, adult boxes answered, thank-you drafts and Steam change notes written. `prepareRelease` next (AUDIT.md 12): the blocker below (Resolve This Instead needs its own public Workshop page), the dry-run that starts by dating `## [Unreleased]`, rollback target. `code_review_sha` is INFO-stale only because `About.xml` carries the regenerated description (text, no `Source/` change).
 
 Audit 9 to 11 re-checked criterion by criterion on 2026-10-13: 9.b to 9.e, 10.c (0-preview.png byte copy), 10.d format 896x504 and 607 KB (contrast not measured, read on the image), 10.e, 10.f (sha256 equal), 11.a to 11.j met; defect found and fixed: About.xml had no `<url>` to the repository (11.c, PUBLISHING.md), added; Check-Mod 174 assertions green after it.
+
+Code review 2026-10-13 (prepareRelease 12.a): range 8ff9b37..92bdc6ece455a8dcb3e6ca3f1a33a31d492eab8b. `Source/`, `Defs/`, `Patches/`, `Languages/` and `Assemblies/` unchanged; `Mod/` changed only in `About.xml` (regenerated description without a RimWorld version, `<url>` to the repository, `downloadUrl` of Resolve This Instead, a public repository) and the regenerated Preview and ModIcon images. No finding. Reviewed commit: 92bdc6ece455a8dcb3e6ca3f1a33a31d492eab8b.

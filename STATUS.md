@@ -4,7 +4,7 @@ packageId: nelim.alphamythology
 repo: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew
 remote: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew.git
 visibility: public
-workflow_stage: mountPreview[1.0.0]
+workflow_stage: writeDocs[1.0.0]
 licence: silent
 licence_at: "2026-09-12: upstream master 53a5518008821188009bbf996b7120ad9593cb5f and the Workshop page reviewed (602 comments, Bug Reports thread); no project licence, no redistribution grant, no refusal found. Refreshed 2026-09-26. Only a retexture permission (2022-08-21, conditional on the game EULA) was found, not a licence for this port. Silent = public (owner's rule)."
 upstream_mod_remotes:
@@ -37,7 +37,7 @@ remaining:
   - "2026-10-10 feature: English text inherited from upstream is corrected by the upstream PR, not silently in the port; certain fix to join the planned PR: 'work load' to 'workload' in MM_UtilityWorkerDesc (English Keyed)"
   - "2026-10-10 unverified: the 1.0.0 is not sent; the description of PUBLICATION.md holds an em dash (2 in the file), rule of 2026-10-10"
 code_review_sha: 8ff9b37bd18650e6c82ec96210ece2a846bf7235
-echo_review_sha: b9953cfd944f3d77352f1837ef123fbd8ac0b644
+echo_review_sha: a1be481084332130c4d6b992d4735cdfe0fab33e
 social_preview_sha256: fba649849da03131890b808754e8cd81f831254785cade742332fe2792c0b41d
 updated: 2026-10-13
 protocols_read_sha: b9e70d5f65c63f769ac01131f6873b6055e4face
@@ -126,6 +126,10 @@ Automated: front matter. Pickle suite `Tests/Pickle`: 19 features, 84 scenarios,
 
 Series played in `SanctuaryBacklot` (feature `09-publication-shots`, runs da73, 9d5c, 1fa8). No candidate left.
 
+## Echo review 2026-10-13 (mountPreview 10.a)
+
+Decision: keep `Art/echo-source.png`. It is the phoenix line-art; the phoenix is still in the accepted gallery (`2-phoenix.jpg`) and the subject of the mod (mythological creatures) has not moved. The gallery changed after the previous review only by re-shot kappa, manticore, unicorn and the new settings window, and by reordering. Preview not regenerated, so `social_preview_sha256` stands. `Art/Cards/` (an unreferenced inherited Photoshop template, 1 MB) deleted by the closing pass step 1; it stays in git history (37c56e1).
+
 ## Upstream
 
 Fork `vbardales/AlphaMythology` made 2026-09-28. Original master has `1.4/` and `1.5/` only; its open PR #3 adds a 1.6 folder, so a whole-port PR would collide: the PR to send is small (the phoenix egg lost in a merged stack, branch `fix-phoenix-egg-lost-in-stack`, commit b44eb3c, scratch clone `C:/amfork`).
@@ -135,3 +139,7 @@ Not sent; the owner reads the text once open and the text states only what a gre
 
 Mode CI (`PUBLICATION.md`). The 0.1.0 pre-publication was sent 2026-10-01 (item 3811323347, `About/PublishedFileId.txt` committed, c2f8199). The 1.0.0 is not sent; the description is the Markdown block under `## Steam description`,
 `About.xml` carries its plain-text rendering (`node .github/scripts/sync-about-description.mjs --write`). Thank-you drafts in `PUBLICATION.md`, posted after the switch to public.
+
+## Transition 2026-10-13: shootGallery to mountPreview to writeDocs
+
+Gallery final (nine images, 2.6 MB, order by strength), echo kept (section above), Preview and social preview unchanged, `Art/` clean. `writeDocs` next: the two `rimworld-version` warnings (Steam description and About.xml name a RimWorld version, to rewrite as "the latest RimWorld version"), Virginie's review of PUBLICATION.md and CHANGELOG.md (`publication_changelog_review_sha`).

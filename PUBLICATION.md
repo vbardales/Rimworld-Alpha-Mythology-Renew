@@ -157,7 +157,23 @@ item is public, and it must not claim permission.
 
 ## Upstream: a pull request is systematic
 
-The original has a Git repository (`juanosarg/AlphaMythology`, linked here as the fetch-only remote `upstream`). Rule from Virginie, 2026-09-28, now also in the monorepo's `PUBLISHING.md`: when an upstream exists, a pull request to it is made, whatever else is published. Here: not made yet (no fork, her go needed for anything public); it is in `BACKLOG.md` as required, and it does not block the `0.1.0` private send. The Workshop page and the pull request are independent: publishing the port unofficially does not replace proposing it to its author.
+The original has a Git repository (`juanosarg/AlphaMythology`, linked here as the fetch-only remote `upstream`). Rule from Virginie, 2026-09-28, also in the monorepo's `PUBLISHING.md`: when an upstream exists, a pull request to it is made, whatever else is published. The Workshop page and the pull request are independent.
+
+State, 2026-10-13: the fork `vbardales/AlphaMythology` exists; the scratch clone `C:/amfork` holds branch `fix-phoenix-egg-lost-in-stack` with two local commits (b44eb3c the phoenix egg, 00d1601 `work load` to `workload` in `Languages/English/Keyed/Misc_Gameplay.xml`), **not pushed, no pull request opened**. The proof the text cites is green: scenario "a phoenix dying on a tile that already holds an egg still leaves its own egg" (`Tests/Pickle/.../13-phoenix.feature`), passed in English and in French in the initial passes of 2026-10-10 (`Tests/Pickle/Evidence/initial-en`, `initial-fr`), on this port (RimWorld 1.6), which carries the same change.
+
+Draft of the pull request, for Virginie's reading (it states only what that run proves; nothing is sent before her go):
+
+```
+Title: Phoenix death: keep the egg when it merges into an existing stack
+
+When the fertilized phoenix egg is placed on a tile that already holds a stack of the same egg, GenPlace.TryPlaceThing absorbs it into that stack and destroys the object that was created. The explosion's ignore list still held the destroyed object, so the stack the egg actually joined was not spared, and the flames could destroy it with the new egg inside.
+
+The change uses the overload with the out parameter to get the thing the egg ended up in, and ignores that one. It is in DeathActionWorker_ExplodeAndSpawnEggs.cs (1.5). I compiled it against the 1.5 references but did not run it in 1.5.
+
+I carry the same change in a 1.6 port of the creatures. There, a test where a phoenix dies on a tile that already holds a fertilized egg leaves the new egg alive (it passed in English and in French).
+
+A second, separate commit fixes a typo in the English text of MM_UtilityWorkerDesc: "work load" to "workload". Happy to split it into its own pull request if you prefer.
+```
 
 ## After the send
 

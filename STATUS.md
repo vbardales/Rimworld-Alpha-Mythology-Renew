@@ -4,7 +4,7 @@ packageId: nelim.alphamythology
 repo: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew
 remote: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew.git
 visibility: public
-workflow_stage: writeDocs[1.0.0]
+workflow_stage: prepareRelease[1.0.0]
 licence: silent
 licence_at: "2026-09-12: upstream master 53a5518008821188009bbf996b7120ad9593cb5f and the Workshop page reviewed (602 comments, Bug Reports thread); no project licence, no redistribution grant, no refusal found. Refreshed 2026-09-26. Only a retexture permission (2022-08-21, conditional on the game EULA) was found, not a licence for this port. Silent = public (owner's rule)."
 upstream_mod_remotes:
@@ -37,10 +37,11 @@ remaining:
   - "2026-10-10 feature: English text inherited from upstream is corrected by the upstream PR, not silently in the port; certain fix to join the planned PR: 'work load' to 'workload' in MM_UtilityWorkerDesc (English Keyed)"
   - "2026-10-10 unverified: the 1.0.0 is not sent; the description of PUBLICATION.md holds an em dash (2 in the file), rule of 2026-10-10"
 code_review_sha: 8ff9b37bd18650e6c82ec96210ece2a846bf7235
+publication_changelog_review_sha: 92ed1e831806f7b0fead291d3b1a8ad738562bc9
 echo_review_sha: a1be481084332130c4d6b992d4735cdfe0fab33e
 social_preview_sha256: fba649849da03131890b808754e8cd81f831254785cade742332fe2792c0b41d
 updated: 2026-10-13
-protocols_read_sha: b9e70d5f65c63f769ac01131f6873b6055e4face
+protocols_read_sha: 92cd25e11ff11424d3d28b4170ea845fa4f2e227
 ---
 
 # Alpha Mythology Renew (unofficial): status
@@ -143,3 +144,7 @@ Mode CI (`PUBLICATION.md`). The 0.1.0 pre-publication was sent 2026-10-01 (item 
 ## Transition 2026-10-13: shootGallery to mountPreview to writeDocs
 
 Gallery final (nine images, 2.6 MB, order by strength), echo kept (section above), Preview and social preview unchanged, `Art/` clean. `writeDocs` next: the two `rimworld-version` warnings (Steam description and About.xml name a RimWorld version, to rewrite as "the latest RimWorld version"), Virginie's review of PUBLICATION.md and CHANGELOG.md (`publication_changelog_review_sha`).
+
+## Transition 2026-10-13: writeDocs to prepareRelease
+
+Virginie validated PUBLICATION.md and CHANGELOG.md in chat on 2026-10-13 (`publication_changelog_review_sha` = the commit she read); description without a RimWorld version, adult boxes answered, thank-you drafts and Steam change notes written. `prepareRelease` next (AUDIT.md 12): the blocker below (Resolve This Instead needs its own public Workshop page), the dry-run that starts by dating `## [Unreleased]`, rollback target. `code_review_sha` is INFO-stale only because `About.xml` carries the regenerated description (text, no `Source/` change).

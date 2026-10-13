@@ -40,7 +40,7 @@ Opened on 2026-09-26, as contact sheets: `Preview.png`, `ModIcon.png` source, an
 (creatures in three views, dessicated skeletons, eggs, information cards, achievement icons, projectiles, saddles).
 Contact sheets are 150 px thumbnails: text on the cards was not read.
 
-- Nudity or sexual content: **no**. Nothing suggestive in any image.
+- Nudity or sexual content: **no**. Nothing suggestive in any image. The nine gallery pictures (sanctuary series, 2026-10-13) were opened one by one: creatures, Nelim fully dressed, settings window; nothing to report.
 - Strong language: **no**. A word-boundary search on 2026-09-26 of `Mod/Languages`, `Mod/Defs`, `Mod/Patches`,
   `Mod/Integrations`, `Mod/About`, `README.md` and `ATTRIBUTION.md` for common English and French profanity and slurs
   (about 45 words, e.g. the usual four-letter words, "damn", "crap", "merde", "putain", "connard", "salope", "con") found

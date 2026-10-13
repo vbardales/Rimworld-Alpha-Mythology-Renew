@@ -4,7 +4,7 @@ packageId: nelim.alphamythology
 repo: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew
 remote: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew.git
 visibility: public
-workflow_stage: shootGallery[1.0.0]
+workflow_stage: mountPreview[1.0.0]
 licence: silent
 licence_at: "2026-09-12: upstream master 53a5518008821188009bbf996b7120ad9593cb5f and the Workshop page reviewed (602 comments, Bug Reports thread); no project licence, no redistribution grant, no refusal found. Refreshed 2026-09-26. Only a retexture permission (2022-08-21, conditional on the game EULA) was found, not a licence for this port. Silent = public (owner's rule)."
 upstream_mod_remotes:
@@ -30,7 +30,6 @@ remaining:
   - "2026-10-10 unverified (playTests): English and French display in game, raw keys, clipping, optional integrations, wisp inspection text with the new plural keys"
   - "2026-10-10 unverified: save migration from Animal Ark (class names changed, untested by design) and manual gameplay"
   - "2026-10-10 unverified: optional-provider passes, ADS 2, Dogs mate, Better Crossbreeding and the incompatibility pass are reported green in the history (2026-09-27 to 2026-10-05); this audit did not re-read their reports"
-  - "2026-10-12 unverified (shootGallery): sanctuary series played 9/9 green (run da73), pictures read by the session and kept as nine candidates in Art/Gallery (1-candidate-griffin to 9-candidate-settings, the old 1-7 stay until Virginie sorts); waits for her accept or refuse per picture, then reindex, drop candidate, Preview echo decision stays valid only if the validated images do not change"
   - "2026-10-10 unverified (playTests 8.m): code review; last review f3d8693ee1c469acc5286f14b03aff0202eeca71 (low effort, since 0.1.0); code_review_sha is not recorded in the front matter yet"
   - "2026-10-10 feature (owner's rule): pull request to juanosarg/AlphaMythology (phoenix egg lost in a stack), branch prepared in the fork vbardales/AlphaMythology, not sent; BACKLOG.md. Waits for the green phoenix proof it cites"
   - "2026-10-10 feature (writeDocs 11.h): thank-you drafts written in PUBLICATION.md for RWoM, Advanced Biomes, Nature's Pretty Sweet, Elves, Giddy-Up 2, Dogs mate, Better Crossbreeding and Tree Chopping Speed Stat; Covers completed in the register (protocols 3a01556 and 951bcc7). No draft, by the owner's earlier call: the original's page, Vanilla Genetics Expanded and Vanilla Achievements Expanded (Sarg Bjornson answers there). Drafts are read against the owner's voice at writeDocs, posted after the item is public (followUp 14.b)"
@@ -40,8 +39,8 @@ remaining:
 code_review_sha: 8ff9b37bd18650e6c82ec96210ece2a846bf7235
 echo_review_sha: b9953cfd944f3d77352f1837ef123fbd8ac0b644
 social_preview_sha256: fba649849da03131890b808754e8cd81f831254785cade742332fe2792c0b41d
-updated: 2026-10-10
-protocols_read_sha: b1a713a1f6ec6d967734d6a92488778787bb40d5
+updated: 2026-10-13
+protocols_read_sha: b9e70d5f65c63f769ac01131f6873b6055e4face
 ---
 
 # Alpha Mythology Renew (unofficial): status
@@ -121,11 +120,11 @@ Automated: front matter. Pickle suite `Tests/Pickle`: 19 features, 84 scenarios,
 
 | Index | File | State |
 |---|---|---|
-| 0 | `0-preview.png` | byte copy of `Mod/About/Preview.png`, current (regenerated 2026-10-12 with `Art/echo-source.png`, commit c5d27c2; uploaded as the GitHub social preview 2026-10-12) |
-| 1 to 6 | `griffin`, `hound`, `phoenix`, `unicorn`, `manticore`, `pegasus` (JPEG) | old studio8 pictures, placeholders |
-| 7 | `7-settings.png` | old studio8 picture of the settings window |
+| 0 | `0-preview.png` | byte copy of `Mod/About/Preview.png`, current |
+| 1 to 7 | `kitsune`, `phoenix`, `manticore`, `kappa`, `pegasus`, `unicorn`, `griffin` (JPEG) | sanctuary series, accepted by Virginie 2026-10-12 and 2026-10-13; order by demonstrative strength (AUDIT.md 9.c), not by the story clock |
+| 8 | `8-settings.jpg` | settings window over `window-backdrop-for-height`, side crop, accepted 2026-10-13 (run 1fa8) |
 
-The sanctuary series (`09-publication-shots.feature`, one story, Nelim in pictures 2 and 4 with facial expressions) is written; its candidates (`N-candidate-<name>.png`) are not shot. See `PUBLICATION.md` for the plan.
+Series played in `SanctuaryBacklot` (feature `09-publication-shots`, runs da73, 9d5c, 1fa8). No candidate left.
 
 ## Upstream
 

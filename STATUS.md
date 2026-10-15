@@ -39,7 +39,7 @@ publication_changelog_review_sha: 92ed1e831806f7b0fead291d3b1a8ad738562bc9
 echo_review_sha: a1be481084332130c4d6b992d4735cdfe0fab33e
 social_preview_sha256: fba649849da03131890b808754e8cd81f831254785cade742332fe2792c0b41d
 updated: 2026-10-15
-protocols_read_sha: 228c98ab061efe4883c879bd8e5be6d97c22c128
+protocols_read_sha: 6eeb289af92096fa3a7ee40825e3b5221030873d
 ---
 
 # Alpha Mythology Renew (unofficial): status

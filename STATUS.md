@@ -30,16 +30,15 @@ remaining:
   - "2026-10-10 unverified (playTests): English and French display in game, raw keys, clipping, optional integrations, wisp inspection text with the new plural keys"
   - "2026-10-10 unverified: save migration from Animal Ark (class names changed, untested by design) and manual gameplay"
   - "2026-10-10 unverified: optional-provider passes, ADS 2, Dogs mate, Better Crossbreeding and the incompatibility pass are reported green in the history (2026-09-27 to 2026-10-05); this audit did not re-read their reports"
-  - "2026-10-10 unverified (playTests 8.m): code review; last review f3d8693ee1c469acc5286f14b03aff0202eeca71 (low effort, since 0.1.0); code_review_sha is not recorded in the front matter yet"
   - "2026-10-10 feature (writeDocs 11.h): thank-you drafts written in PUBLICATION.md for RWoM, Advanced Biomes, Nature's Pretty Sweet, Elves, Giddy-Up 2, Dogs mate, Better Crossbreeding and Tree Chopping Speed Stat; Covers completed in the register (protocols 3a01556 and 951bcc7). No draft, by the owner's earlier call: the original's page, Vanilla Genetics Expanded and Vanilla Achievements Expanded (Sarg Bjornson answers there). Drafts are read against the owner's voice at writeDocs, posted after the item is public (followUp 14.b)"
   - "2026-10-10 feature (blocker before 1.0.0): Resolve This Instead (nelim.resolvethisinstead, hard dependency) needs its own public Workshop page first; no Workshop id yet"
-  - "2026-10-10 unverified: the 1.0.0 is not sent; the description of PUBLICATION.md holds an em dash (2 in the file), rule of 2026-10-10"
+  - "2026-10-10 unverified: the 1.0.0 is not sent (the em dash of the description is gone, checked 2026-10-15: 0 in PUBLICATION.md and About.xml)"
+  - "2026-10-15 unverified (1.7 pass, run 22fa): load, settings and shortcut green on 1.7, 18 scenarios failed on the 5 s timeout of `I wait N ticks` under Waylith (tool symptom), restart pair filed alone, replayed by tickets 4f64 (restart pair) and 3b8d (the 18, 300 s scenario timeout) queued 2026-10-15; tested_1_7 absent until the wait steps are fixed and the 18 replayed alone; RIMMSQOL skipped, French not playable on 1.7"
 code_review_sha: 92bdc6ece455a8dcb3e6ca3f1a33a31d492eab8b
 publication_changelog_review_sha: 92ed1e831806f7b0fead291d3b1a8ad738562bc9
 echo_review_sha: a1be481084332130c4d6b992d4735cdfe0fab33e
 social_preview_sha256: fba649849da03131890b808754e8cd81f831254785cade742332fe2792c0b41d
-  - "2026-10-15 unverified (1.7 pass, run 22fa): load, settings and shortcut green on 1.7, 18 scenarios failed on the 5 s timeout of `I wait N ticks` under Waylith (tool symptom), restart pair filed alone; tested_1_7 absent until the wait steps are fixed and the 18 replayed alone; RIMMSQOL skipped, French not playable on 1.7"
-updated: 2026-10-13
+updated: 2026-10-15
 protocols_read_sha: 228c98ab061efe4883c879bd8e5be6d97c22c128
 ---
 

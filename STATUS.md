@@ -38,6 +38,7 @@ code_review_sha: 92bdc6ece455a8dcb3e6ca3f1a33a31d492eab8b
 publication_changelog_review_sha: 92ed1e831806f7b0fead291d3b1a8ad738562bc9
 echo_review_sha: a1be481084332130c4d6b992d4735cdfe0fab33e
 social_preview_sha256: fba649849da03131890b808754e8cd81f831254785cade742332fe2792c0b41d
+  - "2026-10-15 unverified (1.7 pass, run 22fa): load, settings and shortcut green on 1.7, 18 scenarios failed on the 5 s timeout of `I wait N ticks` under Waylith (tool symptom), restart pair filed alone; tested_1_7 absent until the wait steps are fixed and the 18 replayed alone; RIMMSQOL skipped, French not playable on 1.7"
 updated: 2026-10-13
 protocols_read_sha: 228c98ab061efe4883c879bd8e5be6d97c22c128
 ---

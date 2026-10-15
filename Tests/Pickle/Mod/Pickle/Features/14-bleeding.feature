@@ -10,28 +10,31 @@ Feature: the recurring bleeding wound
     And I close all dialogs
     And Alpha Mythology Renew spawns the adult creature "MM_Griffin" named "Bleeder" for the bleeding tests
 
+  @requires:nelim.pickletools.screenshotstudio
   Scenario: the wound keeps hurting while it is there
     When Alpha Mythology Renew records the open wound severity of "Bleeder"
     And Alpha Mythology Renew gives the bleeding wound to "Bleeder"
-    And I wait 400 ticks
+    And Nelim's Pickle Tools: I let 400 ticks pass
     Then Alpha Mythology Renew the open wound severity of "Bleeder" has grown since it was recorded
     And no errors were logged
 
+  @requires:nelim.pickletools.screenshotstudio
   Scenario: removing the wound stops the damage
     When Alpha Mythology Renew gives the bleeding wound to "Bleeder"
-    And I wait 200 ticks
+    And Nelim's Pickle Tools: I let 200 ticks pass
     And Alpha Mythology Renew removes the bleeding wound from "Bleeder"
     And Alpha Mythology Renew records the open wound severity of "Bleeder"
-    And I wait 400 ticks
+    And Nelim's Pickle Tools: I let 400 ticks pass
     Then Alpha Mythology Renew the open wound severity of "Bleeder" has not grown since it was recorded
     And no errors were logged
 
+  @requires:nelim.pickletools.screenshotstudio
   Scenario: the wound survives a save and reload and keeps hurting
     When Alpha Mythology Renew gives the bleeding wound to "Bleeder"
-    And I wait 100 ticks
+    And Nelim's Pickle Tools: I let 100 ticks pass
     And I save and reload
     Then Alpha Mythology Renew "Bleeder" still carries the bleeding wound
     When Alpha Mythology Renew records the open wound severity of "Bleeder"
-    And I wait 400 ticks
+    And Nelim's Pickle Tools: I let 400 ticks pass
     Then Alpha Mythology Renew the open wound severity of "Bleeder" has grown since it was recorded
     And no errors were logged

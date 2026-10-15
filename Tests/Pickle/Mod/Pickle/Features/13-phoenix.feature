@@ -40,6 +40,7 @@ Feature: the phoenix dies in flames and leaves eggs
   # F03 end to end: the destruction is VEF's own designation and job (VEF is a required dependency, so it is always
   # there); what is tested is that the port's egg, wired to that comp, is offered the job when requested, is not when
   # cancelled, and is really destroyed - without hatching - when a colonist carries the job out.
+  @requires:nelim.pickletools.screenshotstudio
   Scenario: a requested destruction is offered, cancellable, and carried out by a colonist
     Given Alpha Mythology Renew spawns a fertilized phoenix egg for the destruction tests
     When Alpha Mythology Renew requests the destruction of the egg
@@ -50,9 +51,9 @@ Feature: the phoenix dies in flames and leaves eggs
     And Alpha Mythology Renew a colonist carries out the destruction job for the egg
     # fix-en 4c41 (2026-10-02): after 1000 ticks the colonist stood next to the egg, job VEF_DestroyItem still running:
     # the work takes longer than the walk. Two more waits; if it is still there, the diagnostics name the job.
-    And I wait 500 ticks
-    And I wait 500 ticks
-    And I wait 500 ticks
-    And I wait 500 ticks
+    And Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 500 ticks pass
     Then Alpha Mythology Renew the egg is destroyed and no phoenix has hatched from it
     And no errors were logged

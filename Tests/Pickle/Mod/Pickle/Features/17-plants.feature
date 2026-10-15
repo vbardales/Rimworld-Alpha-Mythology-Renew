@@ -14,10 +14,11 @@ Feature: plants and harvesting
     And game speed is paused
     And I close all dialogs
 
+  @requires:nelim.pickletools.screenshotstudio
   Scenario Outline: a colonist can cut the basilisk's <plant> and free the cell
     Given Alpha Mythology Renew spawns the dead plant "<plant>" and a colonist beside it
     When Alpha Mythology Renew orders a colonist to cut the plant
-    And I wait 1200 ticks
+    And Nelim's Pickle Tools: I let 1200 ticks pass
     Then Alpha Mythology Renew the plant is gone and its cell is free again
     And no errors were logged
 

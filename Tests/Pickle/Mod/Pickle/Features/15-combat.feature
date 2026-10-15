@@ -11,18 +11,19 @@ Feature: the creatures' ranged attacks
 
   # The minotaur's tremor has a minimum range of 5: a target 5 cells away sits on the edge of it (f8b6, 2026-10-05: three volleys, nothing
   # happened), so it is shot from 7. The others keep 5.
+  @requires:nelim.pickletools.screenshotstudio
   Scenario Outline: <creature> fires its ranged attack and the target is affected
     Given Alpha Mythology Renew spawns the tamed adult "<creature>" named "Shooter" for the combat tests
     And Alpha Mythology Renew spawns the target "Target" of kind "Muffalo" <distance> cells from "Shooter"
     When Alpha Mythology Renew "Shooter" fires its first ranged attack at "Target"
-    And I wait 600 ticks
+    And Nelim's Pickle Tools: I let 600 ticks pass
     # A projectile can miss: a second volley, so that one miss does not read as a creature that cannot hurt (base-en, 2026-10-01: the minotaur).
     # Only when the first volley changed nothing (fix-en 4c41, 2026-10-02: a hydra that killed the target, a verb still cooling down).
     And Alpha Mythology Renew "Shooter" fires again at "Target" if it is not yet affected
-    And I wait 600 ticks
+    And Nelim's Pickle Tools: I let 600 ticks pass
     # b9d5 (2026-10-05): the minotaur's tremor, a blunt 20, left a Muffalo untouched after two volleys; a third before calling it a defect.
     And Alpha Mythology Renew "Shooter" fires again at "Target" if it is not yet affected
-    And I wait 600 ticks
+    And Nelim's Pickle Tools: I let 600 ticks pass
     Then Alpha Mythology Renew "Target" has been hurt or otherwise affected by the attack
     And no errors were logged
 
@@ -42,34 +43,37 @@ Feature: the creatures' ranged attacks
   # F09: the tlilcoatl's poison breath (ToxicBite, 15) against an organic target, a shielded colonist and a mechanoid.
   # Which interaction is right is defined by the game's damage and shield rules, so what is asserted is that each target
   # reacts as those rules allow and nothing throws; the outcome is in the failure text when it does not.
+  @requires:nelim.pickletools.screenshotstudio
   Scenario: the poison breath hurts an organic target
     Given Alpha Mythology Renew spawns the tamed adult "MM_Tlilcoatl" named "Shooter" for the combat tests
     And Alpha Mythology Renew spawns the target "Target" of kind "Muffalo" 5 cells from "Shooter"
     When Alpha Mythology Renew "Shooter" fires its first ranged attack at "Target"
-    And I wait 600 ticks
+    And Nelim's Pickle Tools: I let 600 ticks pass
     Then Alpha Mythology Renew "Target" has been hurt or otherwise affected by the attack
     And no errors were logged
 
+  @requires:nelim.pickletools.screenshotstudio
   Scenario: a shield belt reacts to the poison breath
     Given Alpha Mythology Renew spawns the tamed adult "MM_Tlilcoatl" named "Shooter" for the combat tests
     And Alpha Mythology Renew spawns the colonist target "Wearer" 5 cells from "Shooter"
     And Alpha Mythology Renew gives a shield belt to "Wearer"
     And Alpha Mythology Renew records the injury severity and the condition count of "Wearer"
     When Alpha Mythology Renew "Shooter" fires its first ranged attack at "Wearer"
-    And I wait 600 ticks
+    And Nelim's Pickle Tools: I let 600 ticks pass
     # A breath that misses leaves the belt at full (final-en 1aad, 2026-10-05: 1.1 of 1.1): two more volleys while the wearer is untouched.
     And Alpha Mythology Renew "Shooter" fires again at "Wearer" if it is not yet affected
-    And I wait 600 ticks
+    And Nelim's Pickle Tools: I let 600 ticks pass
     And Alpha Mythology Renew "Shooter" fires again at "Wearer" if it is not yet affected
-    And I wait 600 ticks
+    And Nelim's Pickle Tools: I let 600 ticks pass
     Then Alpha Mythology Renew the shield belt of "Wearer" took the attack or the wearer was hurt
     And no errors were logged
 
   @requires:ludeon.rimworld.biotech
+  @requires:nelim.pickletools.screenshotstudio
   Scenario: a mechanoid takes no toxic buildup from the poison breath
     Given Alpha Mythology Renew spawns the tamed adult "MM_Tlilcoatl" named "Shooter" for the combat tests
     And Alpha Mythology Renew spawns the target "Mech" of kind "Mech_Militor" 5 cells from "Shooter"
     When Alpha Mythology Renew "Shooter" fires its first ranged attack at "Mech"
-    And I wait 600 ticks
+    And Nelim's Pickle Tools: I let 600 ticks pass
     Then Alpha Mythology Renew "Mech" has no toxic buildup
     And no errors were logged

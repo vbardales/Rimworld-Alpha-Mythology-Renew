@@ -4,7 +4,7 @@ packageId: nelim.alphamythology
 repo: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew
 remote: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew.git
 visibility: public
-workflow_stage: prepareRelease[1.0.0]
+workflow_stage: shootGallery[1.0.0]
 licence: silent
 licence_at: "2026-09-12: upstream master 53a5518008821188009bbf996b7120ad9593cb5f and the Workshop page reviewed (602 comments, Bug Reports thread); no project licence, no redistribution grant, no refusal found. Refreshed 2026-09-26. Only a retexture permission (2022-08-21, conditional on the game EULA) was found, not a licence for this port. Silent = public (owner's rule)."
 upstream_mod_remotes:
@@ -124,6 +124,10 @@ Automated: front matter. Pickle suite `Tests/Pickle`: 19 features, 84 scenarios,
 | 8 | `8-settings.jpg` | settings window over `window-backdrop-for-height`, side crop, accepted 2026-10-13 (run 1fa8) |
 
 Series played in `SanctuaryBacklot` (feature `09-publication-shots`, runs da73, 9d5c, 1fa8). No candidate left.
+
+## Gallery reshoot 2026-10-15 (stage back to shootGallery)
+
+The owner asked whether the pictures match the story. Read one by one against the shot plan: griffin (no statues, no donkey or hare, an unplanned colonist), kitsune (inside the hut, not at its door, no cat or labrador) and manticore (bare soil, a macaw, no herons) were off the plan; phoenix, kappa, pegasus and unicorn matched the place but not the living around it; the hound had been dropped (2026-10-12), so the series had seven creatures and the plan said eight. Causes read in the feature: zoom 3 to 3.5 (seven cells high), the creature free to wander during the 30 ticks, companions of the plan never spawned. Feature `09-publication-shots` rewritten: plan and header aligned with the scenarios, zoom 5 to 7, creature pinned (`the animal ... stands at ... facing South`), companions spawned, cells read on the places' own empty photographs, hound moved to the cloister, rice grown to harvest. The accepted pictures stay in `Art/Gallery/` until the new ones are accepted; new ones land as `N-candidate-name`. `echo_review_sha` and the Preview are re-read once the gallery is settled.
 
 ## Echo review 2026-10-13 (mountPreview 10.a)
 

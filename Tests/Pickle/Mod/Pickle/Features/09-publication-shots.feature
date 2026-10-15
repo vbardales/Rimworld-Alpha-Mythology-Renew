@@ -15,30 +15,31 @@
 #                          nothing is recalculated otherwise), then `"Nelim" facial expression is "normal+<animation>"`: the `normal` prefix clears the heat face (sweat, pink cheeks), and the capture follows at once.
 #   This mod's own:        `Alpha Mythology Renew ...` (GallerySteps.cs: the check of the creature, dismissing letters, the framing at zoom 5, the settings window).
 #
-# THE STORY. "A noon in the sanctuary": the mythical creatures of Alpha Mythology come to Nelim's sanctuary one after the other and each takes the
-# corner that suits it, as the afternoon goes by. Eight creatures, eight corners, one hour of the day in the same light; then the window that lets the
-# visitor choose which of them may appear in the wild. Rhythm chosen by the author of the series: 5 game minutes between two pictures (about 208 ticks),
-# from noon, clear weather. The save is 23:00: every scenario sets the hour to 12, then lets the time of its own picture go by (set-up 60 ticks, plus
-# 208 per picture already told), then poses the creature, so that it has not left the frame.
 #
-# SHOT PLAN (place, time, subject, composition, the living around it, what the picture says):
-# 1. statue-garden (152, 94), 12:00, MM_Griffin "Aurelia", Griffin off-centre on the left, statues behind it, the garden wall on the right; living: a donkey and a hare placed on purpose (the wandering animals are removed first: a cat overlapped the wing in series 3); says: the griffin settles among the statues, a statue that moved.
-# 2. fishing-zone (122, 67), the bank east of the round pond, 12:05, MM_Kappa "Ondine", Kappa low in the left foreground, the pond opening behind it; living: Nelim standing on the bank looking at it (her eyes are Eyes_Brown by default in the fixture: no step; a light smile, "normal+moodCheerful"), and the ducks and swans of the river; says: the water spirit sits on the bank of the round pond.
-# 3. water-garden (177, 173), 12:10, MM_Pegasus "Zephyra", Pegasus at the water's edge, lilies in the foreground, bamboo to the north; living: the garden's ducks; says: the winged horse drinks among the lilies, wings folded.
-# 4. tea-room (140, 73), 12:15, MM_Kitsune "Inari", Kitsune left of the door, the wooden cabin filling the right; living: Nelim on the step of the cabin (smile "normal+moodCheerful2", set last, right before the capture), and the cats of the house and a labrador by the bank; says: the fox spirit waits at the door of the tea room.
-# 5. fire-pit (181, 115), 12:20, MM_Phoenix "Cinder", Phoenix beside the central fire, the hall in shadow around it; living: the thrumbos and cats asleep in the hall; says: the firebird lights the hall as a second hearth.
-# 6. gravel-yard (172, 143) (great-courtyard is an alias of the emerald clearing, a green marker rug: not a courtyard), 12:25, MM_Cerberus "Balthazar", Cerberus centre-left, three heads turned three ways, the courtyard open behind; living: the sanctuary's labradors, wary at a distance; says: the three-headed hound keeps the courtyard.
-# 7. plant-garden (190, 87), 12:30, MM_Unicorn "Morwen", Unicorn between two rows of plants, the fence behind; living: the sparrows in the plants; says: the unicorn walks the fenced plant garden.
-# 8. rice-paddies (226, 117), 12:35, MM_Manticore "Thessaly", Manticore on the left, the rice rows running away to the right; living: the herons and chickens of the fields; says: the manticore watches the paddies from the bank.
-# 10. same window, 12:45: the creature list scrolled to its end (the window shows about 16 of the 25 creatures: the rows below Phoenix are in this picture, the rows above are in 9). Added 2026-10-12 after the owner: the faces above and below were not seen.
-# 9. podium (197, 152), 12:40, Griffin beside the window: the settings window, a plain screen capture of what it is, the interface on and developer mode off
-#    so that its toolbar is not in the picture.
+# THE STORY. "A noon in the sanctuary": eight mythical creatures of Alpha Mythology come to Nelim's sanctuary one after the other, between noon and
+# 12:35, and each settles in the corner that suits it; Nelim (Virginie) meets two of them. Then the window that lets the visitor choose which of them
+# may appear in the wild. Rhythm: 5 game minutes between two pictures (about 208 ticks), clear weather. The save is 23:00: every scenario sets the hour
+# to 12, lets the time of its own picture go by (set-up 60 ticks, plus 208 per picture already told), then poses the creature. REWRITTEN 2026-10-15 after
+# the owner's question "do the pictures match the story?": the first pictures were framed too tight (zoom 3 to 3.5, seven cells high: no place left in the frame),
+# the creature was left free to wander during the 30 ticks, and most of the "living around it" of the plan was never spawned. Now: zoom 5 to 7, the creature is
+# pinned to its cell (`the animal ... stands at ... facing South`), and every companion named below is spawned by the scenario, not hoped for.
+# The cells below were read on the places' own empty photographs (SanctuaryBacklot/evidence/places-current), not guessed.
+#
+# SHOT PLAN (place, time, subject, composition, the living around it, what the picture says; zoom = half-height in cells):
+# 1. statue-garden, 12:00, MM_Griffin "Aurelia" at (155, 97), zoom 6: the griffin on the bare earth between the large head-statue (149, 95) on its left and the deer statue (160, 94) on its right, statue pieces and the pawn statues around; living: a donkey and a hare placed on purpose (the wandering animals are removed first: a cat overlapped the wing in series 3); says: the griffin settles among the statues, a statue that moved.
+# 2. fishing-zone, 12:05, MM_Kappa "Ondine" at (122, 67), zoom 5, on the east bank of the round pond; living: Nelim standing on the bank looking at it (smile "normal+moodCheerful"), a swan and a duck on the shallow rim of the pond; says: the water spirit sits on the bank of the round pond and Nelim has come to see it.
+# 3. water-garden, 12:10, MM_Pegasus "Zephyra" at (177, 173), zoom 5, at the water's edge, lilies in the foreground, bamboo to the north; living: the garden's ducks and swans; says: the winged horse drinks among the lilies.
+# 4. tea-room (the hut, door on the south side at (140, 68)), 12:15, MM_Kitsune "Inari" at (138, 66) left of the door, outside, zoom 6, the cabin filling the top of the frame; living: Nelim on the step at (141, 66) facing the fox (smile "normal+moodCheerful2", set last), a cat and a labrador by the wall; says: the fox spirit waits at the door of the tea room and Nelim comes out to it.
+# 5. fire-pit, 12:20, MM_Phoenix "Cinder" at (181, 115), zoom 7, so that the hall is in the frame and not only the hearth; living: the thrumbo of the hall (177, 120) and a cat, left where the fixture put them; says: the firebird lights the hall as a second hearth.
+# 6. cloister, 12:25, MM_Cerberus "Balthazar" at (179, 127), zoom 6, on the wooden gallery in front of the house, three heads turned to the garden; living: two labradors kept at a wary distance on the same boards; says: the three-headed hound keeps the gallery. (The first hound, alone in a meadow at the gravel yard, was dropped on 2026-10-12 as too weak and small; this one is a new place.)
+# 7. plant-garden, 12:30, MM_Unicorn "Morwen" at (190, 87), zoom 5, between two rows of plants, the fence behind; living: three sparrows in the plants; says: the unicorn walks the fenced plant garden.
+# 8. rice-paddies, 12:35, MM_Manticore "Thessaly" at (226, 117), zoom 6; the rice of the clearing is grown to harvest first (the fixture has seedlings), the macaw and the other wanderers are removed, two herons and three chickens are placed; says: the manticore watches the paddies from the bank.
+# 9. window-backdrop-for-height, the settings window, a plain screen capture of what it is, the interface on and developer mode off so that its toolbar is not in the picture.
+# 10. podium (197, 152), 12:45, Griffin beside the window: the creature list scrolled to its end (the window shows about 16 of the 25 creatures: the rows below Phoenix are here, the rows above are in 9).
 #
 # Kept from the earlier versions: spawned adult on the player's side by PickleTools' own animal step, framed by this mod's own step (it lowers the camera
-# floor: PickleTools' own framing stops near zoom 11), facing south, the creature names do not exist in the fixture. Zoom 5 instead of 2.5: the
-# surroundings are part of the picture now. After the run, every picture is opened and read against this plan; an anomaly that comes from the scene or
-# from the shared tool is described to Pickle Tools with the capture, never worked around here.
-# The sanctuary's coordinates are the centres of the named places; if one is not standable, PickleTools' step will say so and the plan moves the creature a cell.
+# floor), facing south, the creature names do not exist in the fixture. After the run, every picture is opened and read against this plan; an anomaly that
+# comes from the scene or from the shared tool is described to Pickle Tools with the capture, never worked around here.
 @review @requires:nelim.pickletools.screenshotstudio @requires:nelim.pickletools.screenshotmode @requires:nelim.pickletools.colonistrace
 Feature: Workshop pictures
 
@@ -52,13 +53,14 @@ Feature: Workshop pictures
   Scenario: the griffin among the statues
     When Nelim's Pickle Tools: I let 60 ticks pass
     And Nelim's Sanctuary: the animals are removed from the sanctuary "statue-garden"
-    And Nelim's Pickle Tools: an adult animal of kind "MM_Griffin" named "Aurelia" is spawned at (152, 94)
-    And Nelim's Pickle Tools: an adult animal of kind "Donkey" named "Pilar" is spawned at (158, 97)
-    And Nelim's Pickle Tools: an adult animal of kind "Hare" named "Fennel" is spawned at (146, 99)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Griffin" named "Aurelia" is spawned at (155, 97)
+    And Nelim's Pickle Tools: an adult animal of kind "Donkey" named "Pilar" is spawned at (159, 98)
+    And Nelim's Pickle Tools: an adult animal of kind "Hare" named "Fennel" is spawned at (151, 98)
     Then Alpha Mythology Renew the creature "Aurelia" is standing on the map as "MM_Griffin"
-    When Alpha Mythology Renew dismisses every letter
+    When Nelim's Pickle Tools: the animal "Aurelia" stands at (155, 97) facing South
+    And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "statue-garden"
-    And Alpha Mythology Renew frames the animal "Aurelia" at zoom 3.5, shown 2 cells left and 0 cells up
+    And Alpha Mythology Renew frames the animal "Aurelia" at zoom 6, shown 0 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     Then I take a screenshot "workshop-1-the-griffin-among-the-statues"
@@ -66,13 +68,16 @@ Feature: Workshop pictures
   Scenario: the kappa by the pond
     When Nelim's Pickle Tools: I let 268 ticks pass
     And Nelim's Pickle Tools: an adult animal of kind "MM_Kappa" named "Ondine" is spawned at (122, 67)
+    And Nelim's Pickle Tools: an adult animal of kind "Swan" named "Perle" is spawned at (121, 70)
+    And Nelim's Pickle Tools: an adult animal of kind "Duck" named "Plume" is spawned at (121, 64)
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I let 10 ticks pass
-    And Nelim's Pickle Tools: "Nelim" stands at (124, 69) facing West
+    And Nelim's Pickle Tools: "Nelim" stands at (125, 69) facing West
     Then Alpha Mythology Renew the creature "Ondine" is standing on the map as "MM_Kappa"
-    When Alpha Mythology Renew dismisses every letter
+    When Nelim's Pickle Tools: the animal "Ondine" stands at (122, 67) facing South
+    And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "fishing-zone"
-    And Alpha Mythology Renew frames the animal "Ondine" at zoom 3, shown 2 cells left and 0 cells up
+    And Alpha Mythology Renew frames the animal "Ondine" at zoom 5, shown 2 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+moodCheerful"
@@ -82,7 +87,8 @@ Feature: Workshop pictures
     When Nelim's Pickle Tools: I let 476 ticks pass
     And Nelim's Pickle Tools: an adult animal of kind "MM_Pegasus" named "Zephyra" is spawned at (177, 173)
     Then Alpha Mythology Renew the creature "Zephyra" is standing on the map as "MM_Pegasus"
-    When Alpha Mythology Renew dismisses every letter
+    When Nelim's Pickle Tools: the animal "Zephyra" stands at (177, 173) facing South
+    And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "water-garden"
     And Alpha Mythology Renew frames the animal "Zephyra" at zoom 5, shown 2 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
@@ -92,14 +98,17 @@ Feature: Workshop pictures
   Scenario: the kitsune at the tea room
     When Nelim's Pickle Tools: I let 500 ticks pass
     And Nelim's Pickle Tools: I let 184 ticks pass
-    And Nelim's Pickle Tools: an adult animal of kind "MM_Kitsune" named "Inari" is spawned at (140, 73)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Kitsune" named "Inari" is spawned at (138, 66)
+    And Nelim's Pickle Tools: an adult animal of kind "Cat" named "Miso" is spawned at (143, 65)
+    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Rex" is spawned at (135, 64)
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I let 10 ticks pass
-    And Nelim's Pickle Tools: "Nelim" stands at (143, 71) facing West
+    And Nelim's Pickle Tools: "Nelim" stands at (141, 66) facing West
     Then Alpha Mythology Renew the creature "Inari" is standing on the map as "MM_Kitsune"
-    When Alpha Mythology Renew dismisses every letter
+    When Nelim's Pickle Tools: the animal "Inari" stands at (138, 66) facing South
+    And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "tea-room"
-    And Alpha Mythology Renew frames the animal "Inari" at zoom 5, shown 2 cells left and 0 cells up
+    And Alpha Mythology Renew frames the animal "Inari" at zoom 6, shown 2 cells left and -2 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+moodCheerful2"
@@ -110,38 +119,44 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: I let 392 ticks pass
     And Nelim's Pickle Tools: an adult animal of kind "MM_Phoenix" named "Cinder" is spawned at (181, 115)
     Then Alpha Mythology Renew the creature "Cinder" is standing on the map as "MM_Phoenix"
-    When Alpha Mythology Renew dismisses every letter
+    When Nelim's Pickle Tools: the animal "Cinder" stands at (181, 115) facing South
+    And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "fire-pit"
-    And Alpha Mythology Renew frames the animal "Cinder" at zoom 5, shown 2 cells left and 0 cells up
+    And Alpha Mythology Renew frames the animal "Cinder" at zoom 7, shown 0 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     Then I take a screenshot "workshop-5-the-phoenix-in-the-hearth-hall"
 
-  Scenario: the hound at the courtyard gate
+  Scenario: the hound on the gallery
     When Nelim's Pickle Tools: I let 500 ticks pass
     And Nelim's Pickle Tools: I let 500 ticks pass
     And Nelim's Pickle Tools: I let 100 ticks pass
-    And Nelim's Sanctuary: the animals are removed from the sanctuary "gravel-yard"
-    And Nelim's Pickle Tools: an adult animal of kind "MM_Cerberus" named "Balthazar" is spawned at (172, 143)
-    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Rex" is spawned at (180, 148)
-    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Mira" is spawned at (164, 138)
+    And Nelim's Sanctuary: the animals are removed from the sanctuary "cloister"
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Cerberus" named "Balthazar" is spawned at (179, 127)
+    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Mira" is spawned at (172, 127)
+    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Shogun" is spawned at (187, 126)
     Then Alpha Mythology Renew the creature "Balthazar" is standing on the map as "MM_Cerberus"
-    When Alpha Mythology Renew dismisses every letter
-    And Nelim's Sanctuary: I am at the sanctuary "gravel-yard"
-    And Alpha Mythology Renew frames the animal "Balthazar" at zoom 3.5, shown 2 cells left and 0 cells up
+    When Nelim's Pickle Tools: the animal "Balthazar" stands at (179, 127) facing South
+    And Alpha Mythology Renew dismisses every letter
+    And Nelim's Sanctuary: I am at the sanctuary "cloister"
+    And Alpha Mythology Renew frames the animal "Balthazar" at zoom 6, shown 0 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
-    Then I take a screenshot "workshop-6-the-hound-at-the-courtyard-gate"
+    Then I take a screenshot "workshop-6-the-hound-on-the-gallery"
 
   Scenario: the unicorn in the plant garden
     When Nelim's Pickle Tools: I let 500 ticks pass
     And Nelim's Pickle Tools: I let 500 ticks pass
     And Nelim's Pickle Tools: I let 308 ticks pass
     And Nelim's Pickle Tools: an adult animal of kind "MM_Unicorn" named "Morwen" is spawned at (190, 87)
+    And Nelim's Pickle Tools: an adult animal of kind "Sparrow" named "Pip" is spawned at (187, 89)
+    And Nelim's Pickle Tools: an adult animal of kind "Sparrow" named "Tilly" is spawned at (193, 85)
+    And Nelim's Pickle Tools: an adult animal of kind "Sparrow" named "Wren" is spawned at (192, 91)
     Then Alpha Mythology Renew the creature "Morwen" is standing on the map as "MM_Unicorn"
-    When Alpha Mythology Renew dismisses every letter
+    When Nelim's Pickle Tools: the animal "Morwen" stands at (190, 87) facing South
+    And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "plant-garden"
-    And Alpha Mythology Renew frames the animal "Morwen" at zoom 3.5, shown 2 cells left and 0 cells up
+    And Alpha Mythology Renew frames the animal "Morwen" at zoom 5, shown 0 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     Then I take a screenshot "workshop-7-the-unicorn-in-the-plant-garden"
@@ -150,15 +165,20 @@ Feature: Workshop pictures
     When Nelim's Pickle Tools: I let 500 ticks pass
     And Nelim's Pickle Tools: I let 500 ticks pass
     And Nelim's Pickle Tools: I let 500 ticks pass
-    And I wait 16 ticks
+    And Nelim's Pickle Tools: I let 16 ticks pass
+    And Nelim's Sanctuary: the animals are removed from the sanctuary "rice-paddies"
+    And Nelim's Pickle Tools: the plants from (219, 106) to (240, 126) are fully grown
     And Nelim's Pickle Tools: an adult animal of kind "MM_Manticore" named "Thessaly" is spawned at (226, 117)
-    And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Hilda" is spawned at (221, 120)
-    And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Berta" is spawned at (222, 114)
-    And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Greta" is spawned at (231, 112)
+    And Nelim's Pickle Tools: an adult animal of kind "Heron" named "Aube" is spawned at (221, 120)
+    And Nelim's Pickle Tools: an adult animal of kind "Heron" named "Brume" is spawned at (231, 112)
+    And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Hilda" is spawned at (223, 114)
+    And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Berta" is spawned at (222, 119)
+    And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Greta" is spawned at (230, 120)
     Then Alpha Mythology Renew the creature "Thessaly" is standing on the map as "MM_Manticore"
-    When Alpha Mythology Renew dismisses every letter
+    When Nelim's Pickle Tools: the animal "Thessaly" stands at (226, 117) facing South
+    And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "rice-paddies"
-    And Alpha Mythology Renew frames the animal "Thessaly" at zoom 3.5, shown 2 cells left and 0 cells up
+    And Alpha Mythology Renew frames the animal "Thessaly" at zoom 6, shown 2 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     Then I take a screenshot "workshop-8-the-manticore-by-the-paddies"

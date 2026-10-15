@@ -34,6 +34,9 @@
 # 6. cloister, 12:25, MM_Cerberus "Balthazar" at (179, 127), zoom 6, on the wooden gallery in front of the house, three heads turned to the garden; living: two labradors kept at a wary distance on the same boards; says: the three-headed hound keeps the gallery. (The first hound, alone in a meadow at the gravel yard, was dropped on 2026-10-12 as too weak and small; this one is a new place.)
 # 7. plant-garden, 12:30, MM_Unicorn "Morwen" at (190, 87), zoom 5, between two rows of plants, the fence behind; living: three sparrows in the plants; says: the unicorn walks the fenced plant garden.
 # 8. rice-paddies, 12:35, MM_Manticore "Thessaly" at (226, 117), zoom 6; the rice of the clearing is grown to harvest first (the fixture has seedlings), the macaw and the other wanderers are removed, two herons and three chickens are placed; says: the manticore watches the paddies from the bank.
+# NELIM (the only colonist, Virginie): she wears what the fixture gives her (yellow top, grey trousers, hair in a bun, dark brown eyes: chosen by the owner, nothing to
+# set here). Her face is set by \`Nelim's Sanctuary: Nelim has her own face\` (two brows, smirk smile, blink), the heat face is cleared (map held at 20 degrees), then the
+# expression of the scene last, right before the capture: "normal+moodCheerful" at the pond, "normal+moodCheerful2" at the tea room. No other pawn is in the series.
 # 9. window-backdrop-for-height, the settings window, a plain screen capture of what it is, the interface on and developer mode off so that its toolbar is not in the picture.
 # 10. podium (197, 152), 12:45, Griffin beside the window: the creature list scrolled to its end (the window shows about 16 of the 25 creatures: the rows below Phoenix are here, the rows above are in 9).
 #
@@ -72,6 +75,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: an adult animal of kind "Duck" named "Plume" is spawned at (121, 64)
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I let 10 ticks pass
+    And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" stands at (125, 69) facing West
     Then Alpha Mythology Renew the creature "Ondine" is standing on the map as "MM_Kappa"
     When Nelim's Pickle Tools: the animal "Ondine" stands at (122, 67) facing South
@@ -103,6 +107,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Rex" is spawned at (135, 64)
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I let 10 ticks pass
+    And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" stands at (141, 66) facing West
     Then Alpha Mythology Renew the creature "Inari" is standing on the map as "MM_Kitsune"
     When Nelim's Pickle Tools: the animal "Inari" stands at (138, 66) facing South

@@ -63,6 +63,20 @@ Steam shows the first image large. `Art/Gallery/` (git tracks it with a capital 
 
 **The shot plan and the story** are in the header of `09-publication-shots.feature` (2026-10-07, after the rules of `PUBLISHING.md`): "A noon in the sanctuary", eight creatures in eight corners of the sanctuary (griffin among the statues, kappa by the pond, pegasus at the water garden, kitsune at the tea room, phoenix in the hearth hall, hound at the courtyard, unicorn in the plant garden, manticore by the paddies), then the settings window as a plain screen capture. One `Scenario:` is one picture; time goes by through the series (noon, then +5 game minutes per picture, 208 ticks, the creature posed after the wait); each picture is named by its place in the story (`workshop-1-the-griffin-among-the-statues` …). Written from the place list without seeing the maps: the first run will show which coordinates are not standable and which framings fail. After each run every image is opened and read against the plan; an anomaly that comes from the scene or the shared tool is described to Pickle Tools with the capture, never worked around in the mod. Not filed before the final fixture is announced. The pictures come out as PNG (3 MB or more each): the published ones are re-encoded (JPEG quality 92 about 0.45 MB) to stay under 2 MB, and the folder under 8 MB.
 
+### Gallery subtitles
+
+One English line at the bottom of each scene without an interface window (`GALLERY.md`, "Sous-titres"). None for `0-preview.png` (byte copy of the Preview) nor for `8-settings.jpg` (a window). Unsubtitled originals go in `Art/Gallery-clean/`, same file names. The lines follow the story "A noon in the sanctuary": Nelim's sanctuary, creatures arriving one after the other. Provisional: the files below are the 2026-10-13 pictures; the reshoot of 2026-10-15 replaces them, and the table is re-indexed with them.
+
+| index | file | line |
+|---|---|---|
+| 1 | `1-kitsune.jpg` | The fox spirit waits at the tea room door, and Nelim comes out to meet it. |
+| 2 | `2-phoenix.jpg` | The phoenix settles in the hearth hall and lights it like a second fire. |
+| 3 | `3-manticore.jpg` | The manticore watches over the rice paddies from the bank. |
+| 4 | `4-kappa.jpg` | A water spirit rests on the bank of the round pond, and Nelim has come to see it. |
+| 5 | `5-pegasus.jpg` | The winged horse drinks among the lilies of the water garden. |
+| 6 | `6-unicorn.jpg` | The unicorn walks the fenced plant garden between the rows. |
+| 7 | `7-griffin.jpg` | The griffin settles among the statues, one more of them that moved. |
+
 ## Steam description
 
 The single source of the Workshop description (`PUBLISHING.md`, "Source unique de la description", 2026-09-25). The CI converts the Markdown block below to Steam BBCode when `update_description` is on, and generates the plain-text `<description>` of `Mod/About/About.xml` from it (`node .github/scripts/sync-about-description.mjs --write`); every dry-run stops when the two differ. One bold span per paragraph (the Steam converter leaves two on a line unconverted), no code fence inside the block, and it ends with the source link after the credits.

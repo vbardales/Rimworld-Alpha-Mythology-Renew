@@ -42,85 +42,84 @@ social_preview_sha256: fba649849da03131890b808754e8cd81f831254785cade742332fe279
 updated: 2026-10-16
 protocols_read_sha: 3c467d598ccbea456113b1795f6fadc605af5de8
 ---
-
 # Alpha Mythology Renew (unofficial): status
 
-Current state only. Journal of runs: `docs/runs/`. The earlier dated sections (2026-09-12 to 2026-10-09: licence audit, Pickle runs read, gallery
-studio passes, French review rounds) are kept in git history up to commit `dbc114e` (`git show dbc114e:STATUS.md`); each is summed up below; the sections of the audit and the transitions of 2026-10-10 are in `docs/runs/2026-10-status-fold.md`.
+Current state only. Journal of runs: `docs/runs/`. Earlier dated sections (2026-09-12 to 2026-10-09: licence audit, Pickle runs read, gallery
+studio passes, French review rounds) kept in git history up to commit `dbc114e` (`git show dbc114e:STATUS.md`); each summed up below; audit sections and 2026-10-10 transitions in `docs/runs/2026-10-status-fold.md`.
 
-Standalone repository, public, `origin` the repository above; the Sanctuary Backlot (gallery scene) is a separate private repository. The original is
+Standalone repository, public, `origin` the repository above; Sanctuary Backlot (gallery scene) separate private repository. Original is
 Sarg Bjornson's Alpha Mythology (Workshop 1821617793, source https://github.com/juanosarg/AlphaMythology); this port extracts its 25 creatures from Animal Ark,
-under the packageId `nelim.alphamythology` (shortened 2026-09-27), with a C# assembly `AlphaMythologyRenew.dll` (three classes, Harmony postfixes for the settings),
-hard dependencies Harmony, Vanilla Expanded Framework and Resolve This Instead.
+under packageId `nelim.alphamythology` (shortened 2026-09-27), with C# assembly `AlphaMythologyRenew.dll` (three classes, Harmony postfixes for settings),
+hard dependencies Harmony, Vanilla Expanded Framework, Resolve This Instead.
 
 ## Settings audit (2026-09-26, kept; automated checks re-run 2026-10-10)
 
-Decision (Virginie, 2026-09-26): port the spawn controls of the original. Two options, nothing cosmetic: wild spawn frequency multiplier (default 1, 0.1 to 5, slider and
-restore-defaults button, global, applies to new spawns) and one switch per creature (25, unchecked = never spawns in the wild; animals already on the map stay).
-Mechanism: Harmony postfix on `BiomeDef.CommonalityOfAnimal` (`Source/Settings.cs`), pure rule in `Source/SpawnRules.cs`, `ModSettings` persistence with out-of-range values brought back on load.
-Access: Mod options -> Alpha Mythology Renew (unofficial); MainButtons shortcut `AMR_Settings`, `buttonVisible` false (asserted by Check-Mod, a visible one is rejected by Test-Validator), same `Dialog_ModSettings`.
-Excluded on purpose: the wisp and VEF reproduction flags and combat constants. Five Keyed keys, EN and FR.
-Unverified, in game: everything in the `remaining` entry on the settings window. A Pickle settings pass (features 01 to 08) is reported played; to be re-read at `playTests`.
+Decision (Virginie, 2026-09-26): port spawn controls of original. Two options, nothing cosmetic: wild spawn frequency multiplier (default 1, 0.1 to 5, slider and
+restore-defaults button, global, applies to new spawns) and one switch per creature (25, unchecked = never spawns in wild; animals already on map stay).
+Mechanism: Harmony postfix on `BiomeDef.CommonalityOfAnimal` (`Source/Settings.cs`), pure rule in `Source/SpawnRules.cs`, `ModSettings` persistence, out-of-range values reset on load.
+Access: Mod options -> Alpha Mythology Renew (unofficial); MainButtons shortcut `AMR_Settings`, `buttonVisible` false (asserted by Check-Mod, visible one rejected by Test-Validator), same `Dialog_ModSettings`.
+Excluded on purpose: wisp and VEF reproduction flags, combat constants. Five Keyed keys, EN and FR.
+Unverified in game: everything in `remaining` entry on settings window. Pickle settings pass (features 01 to 08) reported played; re-read at `playTests`.
 
 ## Translation audit (2026-09-13, updated 2026-10-10)
 
-Where the French lives: `Mod/Languages/French/Keyed/AlphaMythology.xml` and `Mod/Languages/French/DefInjected/*/AlphaMythology.xml` (no grammar files). English is the Def value plus `Mod/Languages/English/Keyed/`.
-Inventory: `Tests/TRANSLATIONS.md`, the shared `scripts/Check-Translations.ps1` (224 texts). `FRENCH_REVIEW.md` was generated from `37c229b`; no French file changed since.
-Plural rule: the only counted text, `AMR_AsexualReproductionDays`, has `.One` and `.Many` in both languages (`Source/TranslationPatches.cs`).
-Gender agreement: no `PAWN_gender` switch in the French; the texts are rewritten epicene (`la personne qui le monte`, `les membres de la colonie`), pawn = colon not used.
-French review by Virginie: 2026-10-10 at `33196d1`: the two rows added after the game's report (`MM_OpenWound.labelNounPretty`, wisp `customString`) validated in chat ('validé'); `FRENCH_REVIEW.md` from that revision; the game's French report is green (ticket c626). Earlier: 2026-10-01 at `990f571` (corrections of 2026-09-30 and 2026-10-01); further corrections from her review applied 2026-10-08 at `37c229b` (seven texts, English untouched). Written on her word, not by a session.
-Game's report (French): 2026-10-05 in her game, 0 errors naming this mod; 2026-10-09 NPT's step in the Pickle ticket 9368: **2 missing injections** (defect above). English has no report (the game writes one only for another language than English).
+French lives in: `Mod/Languages/French/Keyed/AlphaMythology.xml` and `Mod/Languages/French/DefInjected/*/AlphaMythology.xml` (no grammar files). English is Def value plus `Mod/Languages/English/Keyed/`.
+Inventory: `Tests/TRANSLATIONS.md`, shared `scripts/Check-Translations.ps1` (224 texts). `FRENCH_REVIEW.md` generated from `37c229b`; no French file changed since.
+Plural rule: only counted text, `AMR_AsexualReproductionDays`, has `.One` and `.Many` in both languages (`Source/TranslationPatches.cs`).
+Gender agreement: no `PAWN_gender` switch in French; texts rewritten epicene (`la personne qui le monte`, `les membres de la colonie`), pawn = colon not used.
+French review by Virginie: 2026-10-10 at `33196d1`: two rows added after game's report (`MM_OpenWound.labelNounPretty`, wisp `customString`) validated in chat ('validé'); `FRENCH_REVIEW.md` from that revision; game's French report green (ticket c626). Earlier: 2026-10-01 at `990f571` (corrections 2026-09-30 and 2026-10-01); further corrections from her review applied 2026-10-08 at `37c229b` (seven texts, English untouched). Written on her word, not by a session.
+Game's report (French): 2026-10-05 in her game, 0 errors naming this mod; 2026-10-09 NPT's step in Pickle ticket 9368: **2 missing injections** (defect above). English has no report (game writes one only for non-English language).
 Unverified in game: raw keys, fallback text, clipping, wisp inspection text.
 
 ## Dependencies and DLC (checked in the sources 2026-09-26, `PUBLICATION.md` table of 2026-10-07; no dependency change since)
 
 Hard: Harmony, Vanilla Expanded Framework, Resolve This Instead (vouches Nature's Pretty Sweet -> its (Continued) page in `Mod/About/ResolveThisInstead.xml`). Optional, never required: Advanced Biomes, Genetics Expanded,
-Giddy-Up, Lord of the Rims elves, Nature's Pretty Sweet, Nocturnal Animals, A RimWorld of Magic (needs JecsLite), Vanilla Cooking Expanded, Achievements (a `LoadFolders` branch), and the four animal-mod integrations (ANIMALS.md): ADS 2 (`loadBefore`),
-Nocturnal Animals, Dogs mate, Better Crossbreeding; each patch is guarded, with the reasons in its header. DLC: none required (one `MayRequire` Biotech). Incompatible: the original (`sarg.magicalmenagerie`), still so per the pass of 2026-09-27.
+Giddy-Up, Lord of the Rims elves, Nature's Pretty Sweet, Nocturnal Animals, A RimWorld of Magic (needs JecsLite), Vanilla Cooking Expanded, Achievements (a `LoadFolders` branch), and four animal-mod integrations (ANIMALS.md): ADS 2 (`loadBefore`),
+Nocturnal Animals, Dogs mate, Better Crossbreeding; each patch guarded, reasons in header. DLC: none required (one `MayRequire` Biotech). Incompatible: original (`sarg.magicalmenagerie`), still so per 2026-09-27 pass.
 Supported version 1.6 only.
 
 ## Tests
 
-Automated: front matter. Pickle suite `Tests/Pickle`: 19 features, 84 scenarios, passes declared in `TESTING.md` (three families). Played 2026-10-10 on `sans-facultatifs`: the initial full passes `initial-en` and `initial-fr` (84 scenarios each, 49 passed, 5 red, 30 skipped by requirement), every red replayed green (`replay-egg`, `replay-kitsune`, `replay-restart`), and the game's French translation report green (`translation-fr2`, ticket c626). Reported green on earlier revisions, not replayed here: the optional-provider passes and the incompatibility pass (non-regression after the deploy). Evidence is kept on disk, gitignored (74 MB). Functional scenarios: `Tests/FUNCTIONAL.md`, automation map inside.
+Automated: front matter. Pickle suite `Tests/Pickle`: 19 features, 84 scenarios, passes declared in `TESTING.md` (three families). Played 2026-10-10 on `sans-facultatifs`: initial full passes `initial-en` and `initial-fr` (84 scenarios each, 49 passed, 5 red, 30 skipped by requirement), every red replayed green (`replay-egg`, `replay-kitsune`, `replay-restart`), game's French translation report green (`translation-fr2`, ticket c626). Reported green on earlier revisions, not replayed here: optional-provider passes and incompatibility pass (non-regression after deploy). Evidence kept on disk, gitignored (74 MB). Functional scenarios: `Tests/FUNCTIONAL.md`, automation map inside.
 
 ## Gallery
 
 | Index | File | State |
 |---|---|---|
 | 0 | `0-preview.png` | byte copy of `Mod/About/Preview.png`, current |
-| 1 to 7 | `kitsune`, `phoenix`, `manticore`, `kappa`, `pegasus`, `unicorn`, `griffin` (JPEG) | sanctuary series, accepted by Virginie 2026-10-12 and 2026-10-13; order by demonstrative strength (AUDIT.md 9.c), not by the story clock |
+| 1 to 7 | `kitsune`, `phoenix`, `manticore`, `kappa`, `pegasus`, `unicorn`, `griffin` (JPEG) | sanctuary series, accepted by Virginie 2026-10-12 and 2026-10-13; order by demonstrative strength (AUDIT.md 9.c), not story clock |
 | 8 | `8-settings.jpg` | settings window over `window-backdrop-for-height`, side crop, accepted 2026-10-13 (run 1fa8) |
 
 Series played in `SanctuaryBacklot` (feature `09-publication-shots`, runs da73, 9d5c, 1fa8). No candidate left.
 
 ## Gallery reshoot 2026-10-15 (stage back to shootGallery)
 
-The owner asked whether the pictures match the story. Read one by one against the shot plan: griffin (no statues, no donkey or hare, an unplanned colonist), kitsune (inside the hut, not at its door, no cat or labrador) and manticore (bare soil, a macaw, no herons) were off the plan; phoenix, kappa, pegasus and unicorn matched the place but not the living around it; the hound had been dropped (2026-10-12), so the series had seven creatures and the plan said eight. Causes read in the feature: zoom 3 to 3.5 (seven cells high), the creature free to wander during the 30 ticks, companions of the plan never spawned. Feature `09-publication-shots` rewritten: plan and header aligned with the scenarios, zoom 5 to 7, creature pinned (`the animal ... stands at ... facing South`), companions spawned, cells read on the places' own empty photographs, hound moved to the cloister, rice grown to harvest. The accepted pictures stay in `Art/Gallery/` until the new ones are accepted; new ones land as `N-candidate-name`. `echo_review_sha` and the Preview are re-read once the gallery is settled.
+Owner asked whether pictures match story. Read one by one against shot plan: griffin (no statues, no donkey or hare, unplanned colonist), kitsune (inside hut, not at door, no cat or labrador), manticore (bare soil, macaw, no herons) off plan; phoenix, kappa, pegasus, unicorn matched place but not living around it; hound dropped (2026-10-12), so series had seven creatures, plan said eight. Causes read in feature: zoom 3 to 3.5 (seven cells high), creature free to wander during 30 ticks, plan companions never spawned. Feature `09-publication-shots` rewritten: plan and header aligned with scenarios, zoom 5 to 7, creature pinned (`the animal ... stands at ... facing South`), companions spawned, cells read on places' own empty photographs, hound moved to cloister, rice grown to harvest. Accepted pictures stay in `Art/Gallery/` until new ones accepted; new ones land as `N-candidate-name`. `echo_review_sha` and Preview re-read once gallery settled.
 
 ## Echo review 2026-10-13 (mountPreview 10.a)
 
-Decision: keep `Art/echo-source.png`. It is the phoenix line-art; the phoenix is still in the accepted gallery (`2-phoenix.jpg`) and the subject of the mod (mythological creatures) has not moved. The gallery changed after the previous review only by re-shot kappa, manticore, unicorn and the new settings window, and by reordering. Preview not regenerated, so `social_preview_sha256` stands. `Art/Cards/` (an unreferenced inherited Photoshop template, 1 MB) deleted by the closing pass step 1; it stays in git history (37c56e1).
+Decision: keep `Art/echo-source.png`. Phoenix line-art; phoenix still in accepted gallery (`2-phoenix.jpg`), mod subject (mythological creatures) unchanged. Gallery changed since previous review only by re-shot kappa, manticore, unicorn, new settings window, reordering. Preview not regenerated, so `social_preview_sha256` stands. `Art/Cards/` (unreferenced inherited Photoshop template, 1 MB) deleted by closing pass step 1; stays in git history (37c56e1).
 
 ## Upstream
 
-Pull request sent 2026-10-13: https://github.com/juanosarg/AlphaMythology/pull/4 (phoenix egg lost in a stack, plus the English typo `work load` to `workload`), from the fork branch fix-phoenix-egg-lost-in-stack. Nothing to do until the author answers; an answer or a request to split goes through Virginie.
+Pull request sent 2026-10-13: https://github.com/juanosarg/AlphaMythology/pull/4 (phoenix egg lost in stack, plus English typo `work load` to `workload`), from fork branch fix-phoenix-egg-lost-in-stack. Nothing to do until author answers; answer or split request goes through Virginie.
 
-Fork `vbardales/AlphaMythology` made 2026-09-28. Original master has `1.4/` and `1.5/` only; its open PR #3 adds a 1.6 folder, so a whole-port PR would collide: the PR to send is small (the phoenix egg lost in a merged stack, branch `fix-phoenix-egg-lost-in-stack`, commit b44eb3c, scratch clone `C:/amfork`).
-Not sent; the owner reads the text once open and the text states only what a green run proves.
+Fork `vbardales/AlphaMythology` made 2026-09-28. Original master has `1.4/` and `1.5/` only; its open PR #3 adds 1.6 folder, so whole-port PR would collide: PR to send is small (phoenix egg lost in merged stack, branch `fix-phoenix-egg-lost-in-stack`, commit b44eb3c, scratch clone `C:/amfork`).
+Not sent; owner reads text once open, text states only what green run proves.
 
 ## Publication
 
-Mode CI (`PUBLICATION.md`). The 0.1.0 pre-publication was sent 2026-10-01 (item 3811323347, `About/PublishedFileId.txt` committed, c2f8199). The 1.0.0 is not sent; the description is the Markdown block under `## Steam description`,
-`About.xml` carries its plain-text rendering (`node .github/scripts/sync-about-description.mjs --write`). Thank-you drafts in `PUBLICATION.md`, posted after the switch to public.
+Mode CI (`PUBLICATION.md`). 0.1.0 pre-publication sent 2026-10-01 (item 3811323347, `About/PublishedFileId.txt` committed, c2f8199). 1.0.0 not sent; description is Markdown block under `## Steam description`,
+`About.xml` carries plain-text rendering (`node .github/scripts/sync-about-description.mjs --write`). Thank-you drafts in `PUBLICATION.md`, posted after switch to public.
 
 ## Transition 2026-10-13: shootGallery to mountPreview to writeDocs
 
-Gallery final (nine images, 2.6 MB, order by strength), echo kept (section above), Preview and social preview unchanged, `Art/` clean. `writeDocs` next: the two `rimworld-version` warnings (Steam description and About.xml name a RimWorld version, to rewrite as "the latest RimWorld version"), Virginie's review of PUBLICATION.md and CHANGELOG.md (`publication_changelog_review_sha`).
+Gallery final (nine images, 2.6 MB, order by strength), echo kept (section above), Preview and social preview unchanged, `Art/` clean. `writeDocs` next: two `rimworld-version` warnings (Steam description and About.xml name a RimWorld version, rewrite as "the latest RimWorld version"), Virginie's review of PUBLICATION.md and CHANGELOG.md (`publication_changelog_review_sha`).
 
 ## Transition 2026-10-13: writeDocs to prepareRelease
 
-Virginie validated PUBLICATION.md and CHANGELOG.md in chat on 2026-10-13 (`publication_changelog_review_sha` = the commit she read); description without a RimWorld version, adult boxes answered, thank-you drafts and Steam change notes written. `prepareRelease` next (AUDIT.md 12): the blocker below (Resolve This Instead needs its own public Workshop page), the dry-run that starts by dating `## [Unreleased]`, rollback target. `code_review_sha` is INFO-stale only because `About.xml` carries the regenerated description (text, no `Source/` change).
+Virginie validated PUBLICATION.md and CHANGELOG.md in chat 2026-10-13 (`publication_changelog_review_sha` = commit she read); description without RimWorld version, adult boxes answered, thank-you drafts and Steam change notes written. `prepareRelease` next (AUDIT.md 12): blocker below (Resolve This Instead needs own public Workshop page), dry-run starting by dating `## [Unreleased]`, rollback target. `code_review_sha` INFO-stale only because `About.xml` carries regenerated description (text, no `Source/` change).
 
-Audit 9 to 11 re-checked criterion by criterion on 2026-10-13: 9.b to 9.e, 10.c (0-preview.png byte copy), 10.d format 896x504 and 607 KB (contrast not measured, read on the image), 10.e, 10.f (sha256 equal), 11.a to 11.j met; defect found and fixed: About.xml had no `<url>` to the repository (11.c, PUBLISHING.md), added; Check-Mod 174 assertions green after it.
+Audit 9 to 11 re-checked criterion by criterion 2026-10-13: 9.b to 9.e, 10.c (0-preview.png byte copy), 10.d format 896x504 and 607 KB (contrast not measured, read on image), 10.e, 10.f (sha256 equal), 11.a to 11.j met; defect found and fixed: About.xml had no `<url>` to repository (11.c, PUBLISHING.md), added; Check-Mod 174 assertions green after.
 
-Code review 2026-10-13 (prepareRelease 12.a): range 8ff9b37..92bdc6ece455a8dcb3e6ca3f1a33a31d492eab8b. `Source/`, `Defs/`, `Patches/`, `Languages/` and `Assemblies/` unchanged; `Mod/` changed only in `About.xml` (regenerated description without a RimWorld version, `<url>` to the repository, `downloadUrl` of Resolve This Instead, a public repository) and the regenerated Preview and ModIcon images. No finding. Reviewed commit: 92bdc6ece455a8dcb3e6ca3f1a33a31d492eab8b.
+Code review 2026-10-13 (prepareRelease 12.a): range 8ff9b37..92bdc6ece455a8dcb3e6ca3f1a33a31d492eab8b. `Source/`, `Defs/`, `Patches/`, `Languages/`, `Assemblies/` unchanged; `Mod/` changed only in `About.xml` (regenerated description without RimWorld version, `<url>` to repository, `downloadUrl` of Resolve This Instead, public repository) and regenerated Preview and ModIcon images. No finding. Reviewed commit: 92bdc6ece455a8dcb3e6ca3f1a33a31d492eab8b.

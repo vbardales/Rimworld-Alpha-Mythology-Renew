@@ -17,7 +17,7 @@
 #
 #
 # THE STORY. "A noon in the sanctuary": eight mythical creatures of Alpha Mythology come to Nelim's sanctuary one after the other, between noon and
-# 12:35, and each settles in the corner that suits it; Nelim (Virginie) meets two of them. Then the window that lets the visitor choose which of them
+# 12:35, and each settles in the corner that suits it, and Nelim (Virginie) goes to meet every one, in a different top each time. Then the window that lets the visitor choose which of them
 # may appear in the wild. Rhythm: 5 game minutes between two pictures (about 208 ticks), clear weather. The save is 23:00: every scenario sets the hour
 # to 12, lets the time of its own picture go by (set-up 60 ticks, plus 208 per picture already told), then poses the creature. REWRITTEN 2026-10-15 after
 # the owner's question "do the pictures match the story?": the first pictures were framed too tight (zoom 3 to 3.5, seven cells high: no place left in the frame),
@@ -34,9 +34,14 @@
 # 6. cloister, 12:25, MM_Cerberus "Balthazar" at (179, 127), zoom 6, on the wooden gallery in front of the house, three heads turned to the garden; living: two labradors kept at a wary distance on the same boards; says: the three-headed hound keeps the gallery. (The first hound, alone in a meadow at the gravel yard, was dropped on 2026-10-12 as too weak and small; this one is a new place.)
 # 7. plant-garden, 12:30, MM_Unicorn "Morwen" at (190, 87), zoom 5, between two rows of plants, the fence behind; living: three sparrows in the plants; says: the unicorn walks the fenced plant garden.
 # 8. rice-paddies, 12:35, MM_Manticore "Thessaly" at (226, 117), zoom 6; the rice of the clearing is grown to harvest first (the fixture has seedlings), the macaw and the other wanderers are removed, two herons and three chickens are placed; says: the manticore watches the paddies from the bank.
-# NELIM (the only colonist, Virginie): she wears what the fixture gives her (yellow top, grey trousers, hair in a bun, dark brown eyes: chosen by the owner, nothing to
-# set here). Her face is set by \`Nelim's Sanctuary: Nelim has her own face\` (two brows, smirk smile, blink), the heat face is cleared (map held at 20 degrees), then the
-# expression of the scene last, right before the capture: "normal+moodCheerful" at the pond, "normal+moodCheerful2" at the tea room. No other pawn is in the series.
+# NELIM (the only colonist, Virginie) is in all eight creature pictures (owner rule 2026-10-14: protagonist of the series; reworked 2026-10-16). She keeps what the owner chose
+# for her: hair in a bun, dark brown eyes, grey trousers. What changes per scene is the top (`Apparel_BasicShirt` dyed in a colour that stands out from the place and the creature),
+# where she stands (about four cells from the creature, turned towards it or towards the visitor) and her expression, set last, right before the capture, after the map is held at
+# 20 degrees (no heat face) and her own face is set (two brows, smirk smile, blink). No other pawn: the visitors are the creatures.
+#   1 griffin: teal top, NLR-Open (wonder), (152, 100) facing East   2 kappa: coral top, moodCheerful, (125, 69) facing West   3 pegasus: saffron top, NLR-Smile, (181, 174) facing West
+#   4 kitsune: indigo top, moodCheerful2, (141, 66) facing West      5 phoenix: green top, NLR-Open, (177, 116) facing East     6 hound: cream top, SocialRelax (calm among wary dogs), (183, 128) facing West
+#   7 unicorn: plum top, moodCheerful2, (186, 85) facing East        8 manticore: crimson top, NLR-Smile, (222, 117) facing East
+# Cells beside the creature are read from the place lists, not from a photograph: a step that says "not standable" names the cell to move.
 # 9. window-backdrop-for-height, the settings window, a plain screen capture of what it is, the interface on and developer mode off so that its toolbar is not in the picture.
 # 10. podium (197, 152), 12:45, Griffin beside the window: the creature list scrolled to its end (the window shows about 16 of the 25 creatures: the rows below Phoenix are here, the rows above are in 9).
 #
@@ -59,6 +64,11 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: an adult animal of kind "MM_Griffin" named "Aurelia" is spawned at (155, 97)
     And Nelim's Pickle Tools: an adult animal of kind "Donkey" named "Pilar" is spawned at (159, 98)
     And Nelim's Pickle Tools: an adult animal of kind "Hare" named "Fennel" is spawned at (151, 98)
+    And Nelim's Pickle Tools: the temperature of the map is 20 degrees
+    And Nelim's Pickle Tools: I let 10 ticks pass
+    And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (40, 120, 125)
+    And Nelim's Pickle Tools: "Nelim" stands at (152, 100) facing East
     Then Alpha Mythology Renew the creature "Aurelia" is standing on the map as "MM_Griffin"
     When Nelim's Pickle Tools: the animal "Aurelia" stands at (155, 97) facing South
     And Alpha Mythology Renew dismisses every letter
@@ -66,6 +76,7 @@ Feature: Workshop pictures
     And Alpha Mythology Renew frames the animal "Aurelia" at zoom 6, shown 0 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Open"
     Then I take a screenshot "workshop-1-the-griffin-among-the-statues"
 
   Scenario: the kappa by the pond
@@ -76,6 +87,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (224, 112, 96)
     And Nelim's Pickle Tools: "Nelim" stands at (125, 69) facing West
     Then Alpha Mythology Renew the creature "Ondine" is standing on the map as "MM_Kappa"
     When Nelim's Pickle Tools: the animal "Ondine" stands at (122, 67) facing South
@@ -90,6 +102,11 @@ Feature: Workshop pictures
   Scenario: the pegasus at the water garden
     When Nelim's Pickle Tools: I let 476 ticks pass
     And Nelim's Pickle Tools: an adult animal of kind "MM_Pegasus" named "Zephyra" is spawned at (177, 173)
+    And Nelim's Pickle Tools: the temperature of the map is 20 degrees
+    And Nelim's Pickle Tools: I let 10 ticks pass
+    And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (232, 170, 60)
+    And Nelim's Pickle Tools: "Nelim" stands at (181, 174) facing West
     Then Alpha Mythology Renew the creature "Zephyra" is standing on the map as "MM_Pegasus"
     When Nelim's Pickle Tools: the animal "Zephyra" stands at (177, 173) facing South
     And Alpha Mythology Renew dismisses every letter
@@ -97,6 +114,7 @@ Feature: Workshop pictures
     And Alpha Mythology Renew frames the animal "Zephyra" at zoom 5, shown 2 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"
     Then I take a screenshot "workshop-3-the-pegasus-at-the-water-garden"
 
   Scenario: the kitsune at the tea room
@@ -108,6 +126,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (52, 70, 130)
     And Nelim's Pickle Tools: "Nelim" stands at (141, 66) facing West
     Then Alpha Mythology Renew the creature "Inari" is standing on the map as "MM_Kitsune"
     When Nelim's Pickle Tools: the animal "Inari" stands at (138, 66) facing South
@@ -123,6 +142,11 @@ Feature: Workshop pictures
     When Nelim's Pickle Tools: I let 500 ticks pass
     And Nelim's Pickle Tools: I let 392 ticks pass
     And Nelim's Pickle Tools: an adult animal of kind "MM_Phoenix" named "Cinder" is spawned at (181, 115)
+    And Nelim's Pickle Tools: the temperature of the map is 20 degrees
+    And Nelim's Pickle Tools: I let 10 ticks pass
+    And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (40, 110, 90)
+    And Nelim's Pickle Tools: "Nelim" stands at (177, 116) facing East
     Then Alpha Mythology Renew the creature "Cinder" is standing on the map as "MM_Phoenix"
     When Nelim's Pickle Tools: the animal "Cinder" stands at (181, 115) facing South
     And Alpha Mythology Renew dismisses every letter
@@ -130,6 +154,7 @@ Feature: Workshop pictures
     And Alpha Mythology Renew frames the animal "Cinder" at zoom 7, shown 0 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Open"
     Then I take a screenshot "workshop-5-the-phoenix-in-the-hearth-hall"
 
   Scenario: the hound on the gallery
@@ -140,6 +165,11 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: an adult animal of kind "MM_Cerberus" named "Balthazar" is spawned at (179, 127)
     And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Mira" is spawned at (172, 127)
     And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Shogun" is spawned at (187, 126)
+    And Nelim's Pickle Tools: the temperature of the map is 20 degrees
+    And Nelim's Pickle Tools: I let 10 ticks pass
+    And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (236, 226, 200)
+    And Nelim's Pickle Tools: "Nelim" stands at (183, 128) facing West
     Then Alpha Mythology Renew the creature "Balthazar" is standing on the map as "MM_Cerberus"
     When Nelim's Pickle Tools: the animal "Balthazar" stands at (179, 127) facing South
     And Alpha Mythology Renew dismisses every letter
@@ -147,6 +177,7 @@ Feature: Workshop pictures
     And Alpha Mythology Renew frames the animal "Balthazar" at zoom 6, shown 0 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal+SocialRelax"
     Then I take a screenshot "workshop-6-the-hound-on-the-gallery"
 
   Scenario: the unicorn in the plant garden
@@ -157,6 +188,11 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: an adult animal of kind "Sparrow" named "Pip" is spawned at (187, 89)
     And Nelim's Pickle Tools: an adult animal of kind "Sparrow" named "Tilly" is spawned at (193, 85)
     And Nelim's Pickle Tools: an adult animal of kind "Sparrow" named "Wren" is spawned at (192, 91)
+    And Nelim's Pickle Tools: the temperature of the map is 20 degrees
+    And Nelim's Pickle Tools: I let 10 ticks pass
+    And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (130, 60, 120)
+    And Nelim's Pickle Tools: "Nelim" stands at (186, 85) facing East
     Then Alpha Mythology Renew the creature "Morwen" is standing on the map as "MM_Unicorn"
     When Nelim's Pickle Tools: the animal "Morwen" stands at (190, 87) facing South
     And Alpha Mythology Renew dismisses every letter
@@ -164,6 +200,7 @@ Feature: Workshop pictures
     And Alpha Mythology Renew frames the animal "Morwen" at zoom 5, shown 0 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal+moodCheerful2"
     Then I take a screenshot "workshop-7-the-unicorn-in-the-plant-garden"
 
   Scenario: the manticore by the paddies
@@ -179,6 +216,11 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Hilda" is spawned at (223, 114)
     And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Berta" is spawned at (222, 119)
     And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Greta" is spawned at (230, 120)
+    And Nelim's Pickle Tools: the temperature of the map is 20 degrees
+    And Nelim's Pickle Tools: I let 10 ticks pass
+    And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (176, 48, 56)
+    And Nelim's Pickle Tools: "Nelim" stands at (222, 117) facing East
     Then Alpha Mythology Renew the creature "Thessaly" is standing on the map as "MM_Manticore"
     When Nelim's Pickle Tools: the animal "Thessaly" stands at (226, 117) facing South
     And Alpha Mythology Renew dismisses every letter
@@ -186,6 +228,7 @@ Feature: Workshop pictures
     And Alpha Mythology Renew frames the animal "Thessaly" at zoom 6, shown 2 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"
     Then I take a screenshot "workshop-8-the-manticore-by-the-paddies"
 
   # The window is the subject: the interface stays on, developer mode off so that its toolbar is not in the picture.

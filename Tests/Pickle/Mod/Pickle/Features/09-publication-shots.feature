@@ -30,7 +30,7 @@
 # 2. fishing-zone, 12:05, MM_Kappa "Ondine" at (122, 67), zoom 5, on the east bank of the round pond; living: Nelim standing on the bank looking at it (smile "normal+moodCheerful"), a swan and a duck on the shallow rim of the pond; says: the water spirit sits on the bank of the round pond and Nelim has come to see it.
 # 3. water-garden, 12:10, MM_Pegasus "Zephyra" at (177, 173), zoom 5, at the water's edge, lilies in the foreground, bamboo to the north; living: the garden's ducks and swans; says: the winged horse drinks among the lilies.
 # 4. tea-room (the hut, door on the south side at (140, 68)), 12:15, MM_Kitsune "Inari" at (138, 66) left of the door, outside, zoom 6, the cabin filling the top of the frame; living: Nelim on the step at (141, 66) facing the fox (smile "normal+moodCheerful2", set last), a cat and a labrador by the wall; says: the fox spirit waits at the door of the tea room and Nelim comes out to it.
-# 5. fire-pit, 12:20, MM_Phoenix "Cinder" at (181, 115), zoom 7, so that the hall is in the frame and not only the hearth; living: the thrumbo of the hall (177, 120) and a cat, left where the fixture put them; says: the firebird lights the hall as a second hearth.
+# 5. fire-pit, 12:20, MM_Phoenix "Cinder" at (180, 115), zoom 7 (the cell of the campfire, 181, is not standable), so that the hall is in the frame and not only the hearth; living: the thrumbo of the hall (177, 120) and a cat, left where the fixture put them; says: the firebird lights the hall as a second hearth.
 # 6. cloister, 12:25, MM_Cerberus "Balthazar" at (179, 127), zoom 6, on the wooden gallery in front of the house, three heads turned to the garden; living: two labradors kept at a wary distance on the same boards; says: the three-headed hound keeps the gallery. (The first hound, alone in a meadow at the gravel yard, was dropped on 2026-10-12 as too weak and small; this one is a new place.)
 # 7. plant-garden, 12:30, MM_Unicorn "Morwen" at (190, 87), zoom 5, between two rows of plants, the fence behind; living: three sparrows in the plants; says: the unicorn walks the fenced plant garden.
 # 8. rice-paddies, 12:35, MM_Manticore "Thessaly" at (226, 117), zoom 6; the rice of the clearing is grown to harvest first (the fixture has seedlings), the macaw and the other wanderers are removed, two herons and three chickens are placed; says: the manticore watches the paddies from the bank.
@@ -38,9 +38,9 @@
 # for her: hair in a bun, dark brown eyes, grey trousers. What changes per scene is the top (`Apparel_BasicShirt` dyed in a colour that stands out from the place and the creature),
 # where she stands (about four cells from the creature, turned towards it or towards the visitor) and her expression, set last, right before the capture, after the map is held at
 # 20 degrees (no heat face) and her own face is set (two brows, smirk smile, blink). No other pawn: the visitors are the creatures.
-#   1 griffin: teal top, NLR-Open (wonder), (152, 100) facing East   2 kappa: coral top, moodCheerful, (125, 69) facing West   3 pegasus: saffron top, NLR-Smile, (181, 174) facing West
-#   4 kitsune: indigo top, moodCheerful2, (141, 66) facing West      5 phoenix: green top, NLR-Open, (177, 116) facing East     6 hound: cream top, SocialRelax (calm among wary dogs), (183, 128) facing West
-#   7 unicorn: plum top, moodCheerful2, (186, 85) facing East        8 manticore: crimson top, NLR-Smile, (222, 117) facing East
+#   1 griffin: teal top, NLR-Open (wonder), (153, 97) facing East   2 kappa: coral top, moodCheerful, (125, 69) facing West   3 pegasus: saffron top, NLR-Smile, (181, 174) facing West
+#   4 kitsune: indigo top, moodCheerful2, (141, 66) facing West      5 phoenix: green top, NLR-Open, (176, 116) facing East     6 hound: cream top, SocialRelax (calm among wary dogs), (183, 128) facing West
+#   7 unicorn: plum top, moodCheerful2, (188, 87) facing East        8 manticore: crimson top, NLR-Smile, (222, 117) facing East
 # Cells beside the creature are read from the place lists, not from a photograph: a step that says "not standable" names the cell to move.
 # 9. window-backdrop-for-height, the settings window, a plain screen capture of what it is, the interface on and developer mode off so that its toolbar is not in the picture.
 # 10. podium (197, 152), 12:45, Griffin beside the window: the creature list scrolled to its end (the window shows about 16 of the 25 creatures: the rows below Phoenix are here, the rows above are in 9).
@@ -68,7 +68,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (40, 120, 125)
-    And Nelim's Pickle Tools: "Nelim" stands at (152, 100) facing East
+    And Nelim's Pickle Tools: "Nelim" stands at (153, 97) facing East
     Then Alpha Mythology Renew the creature "Aurelia" is standing on the map as "MM_Griffin"
     When Nelim's Pickle Tools: the animal "Aurelia" stands at (155, 97) facing South
     And Alpha Mythology Renew dismisses every letter
@@ -141,14 +141,14 @@ Feature: Workshop pictures
   Scenario: the phoenix in the hearth hall
     When Nelim's Pickle Tools: I let 500 ticks pass
     And Nelim's Pickle Tools: I let 392 ticks pass
-    And Nelim's Pickle Tools: an adult animal of kind "MM_Phoenix" named "Cinder" is spawned at (181, 115)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Phoenix" named "Cinder" is spawned at (180, 115)
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (40, 110, 90)
-    And Nelim's Pickle Tools: "Nelim" stands at (177, 116) facing East
+    And Nelim's Pickle Tools: "Nelim" stands at (176, 116) facing East
     Then Alpha Mythology Renew the creature "Cinder" is standing on the map as "MM_Phoenix"
-    When Nelim's Pickle Tools: the animal "Cinder" stands at (181, 115) facing South
+    When Nelim's Pickle Tools: the animal "Cinder" stands at (180, 115) facing South
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "fire-pit"
     And Alpha Mythology Renew frames the animal "Cinder" at zoom 7, shown 0 cells left and 0 cells up
@@ -192,7 +192,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (130, 60, 120)
-    And Nelim's Pickle Tools: "Nelim" stands at (186, 85) facing East
+    And Nelim's Pickle Tools: "Nelim" stands at (188, 87) facing East
     Then Alpha Mythology Renew the creature "Morwen" is standing on the map as "MM_Unicorn"
     When Nelim's Pickle Tools: the animal "Morwen" stands at (190, 87) facing South
     And Alpha Mythology Renew dismisses every letter

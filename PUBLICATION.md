@@ -76,7 +76,7 @@ One English line at the bottom of each scene without an interface window (`GALLE
 | pegasus at the water garden | The winged horse drinks among the lilies, and Nelim stops to watch. |
 | unicorn in the plant garden | The unicorn walks the fenced plant garden, and Nelim follows at a distance. |
 | griffin among the statues | The griffin settles among the statues, one more of them that moved. |
-| hound on the gallery | The three-headed hound keeps the wooden gallery, and Nelim sits calm among the wary dogs. |
+| hound on the gallery | The three-headed hound keeps the wooden gallery, and Nelim stands calm among the wary dogs. |
 
 ## Steam description
 

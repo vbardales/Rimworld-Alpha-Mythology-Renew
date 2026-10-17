@@ -4,7 +4,7 @@
 
 ### 2026-10-10
 
-Entries missing from the list below, completed at the audit of this date. Played in game by the Pickle suite (initial passes in English and French, 2026-10-10); not public.
+Entries added at the audit of this date: they document, after the fact, changes already in the private 0.1.0 or made since. Played in game by the Pickle suite (initial passes in English and French, 2026-10-10); not public.
 
 Already in the private 0.1.0 (2026-10-01), never listed before:
 

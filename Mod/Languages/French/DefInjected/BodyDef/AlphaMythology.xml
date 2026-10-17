@@ -16,13 +16,13 @@
   <MM_AhuizotlBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>oreille gauche</MM_AhuizotlBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
   <MM_AhuizotlBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>oreille droite</MM_AhuizotlBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
   <MM_AhuizotlBody.corePart.parts.front_left_leg.customLabel>patte avant gauche</MM_AhuizotlBody.corePart.parts.front_left_leg.customLabel>
-  <MM_AhuizotlBody.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>pied avant gauche</MM_AhuizotlBody.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>
+  <MM_AhuizotlBody.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>patte avant gauche</MM_AhuizotlBody.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>
   <MM_AhuizotlBody.corePart.parts.front_right_leg.customLabel>patte avant droite</MM_AhuizotlBody.corePart.parts.front_right_leg.customLabel>
-  <MM_AhuizotlBody.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>pied avant droit</MM_AhuizotlBody.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>
+  <MM_AhuizotlBody.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>patte avant droit</MM_AhuizotlBody.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>
   <MM_AhuizotlBody.corePart.parts.rear_left_leg.customLabel>patte arrière gauche</MM_AhuizotlBody.corePart.parts.rear_left_leg.customLabel>
-  <MM_AhuizotlBody.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>pied arrière gauche</MM_AhuizotlBody.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>
+  <MM_AhuizotlBody.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>patte arrière gauche</MM_AhuizotlBody.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>
   <MM_AhuizotlBody.corePart.parts.rear_right_leg.customLabel>patte arrière droite</MM_AhuizotlBody.corePart.parts.rear_right_leg.customLabel>
-  <MM_AhuizotlBody.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>pied arrière droit</MM_AhuizotlBody.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>
+  <MM_AhuizotlBody.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>patte arrière droit</MM_AhuizotlBody.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>
   <MM_ThreeHeadedDog.label>chien à trois têtes</MM_ThreeHeadedDog.label>
   <MM_ThreeHeadedDog.corePart.parts.left_lung.customLabel>poumon gauche</MM_ThreeHeadedDog.corePart.parts.left_lung.customLabel>
   <MM_ThreeHeadedDog.corePart.parts.right_lung.customLabel>poumon droit</MM_ThreeHeadedDog.corePart.parts.right_lung.customLabel>
@@ -41,13 +41,13 @@
   <MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-2.parts.left_ear.customLabel>oreille gauche</MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-2.parts.left_ear.customLabel>
   <MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-2.parts.right_ear.customLabel>oreille droite</MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-2.parts.right_ear.customLabel>
   <MM_ThreeHeadedDog.corePart.parts.front_left_leg.customLabel>patte avant gauche</MM_ThreeHeadedDog.corePart.parts.front_left_leg.customLabel>
-  <MM_ThreeHeadedDog.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>pied avant gauche</MM_ThreeHeadedDog.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>patte avant gauche</MM_ThreeHeadedDog.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>
   <MM_ThreeHeadedDog.corePart.parts.front_right_leg.customLabel>patte avant droite</MM_ThreeHeadedDog.corePart.parts.front_right_leg.customLabel>
-  <MM_ThreeHeadedDog.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>pied avant droit</MM_ThreeHeadedDog.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>patte avant droit</MM_ThreeHeadedDog.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>
   <MM_ThreeHeadedDog.corePart.parts.rear_left_leg.customLabel>patte arrière gauche</MM_ThreeHeadedDog.corePart.parts.rear_left_leg.customLabel>
-  <MM_ThreeHeadedDog.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>pied arrière gauche</MM_ThreeHeadedDog.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>patte arrière gauche</MM_ThreeHeadedDog.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>
   <MM_ThreeHeadedDog.corePart.parts.rear_right_leg.customLabel>patte arrière droite</MM_ThreeHeadedDog.corePart.parts.rear_right_leg.customLabel>
-  <MM_ThreeHeadedDog.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>pied arrière droit</MM_ThreeHeadedDog.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>patte arrière droit</MM_ThreeHeadedDog.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>
   <MM_Chimera_Body.label>chimère</MM_Chimera_Body.label>
   <MM_Chimera_Body.corePart.parts.MM_ChimeraTail.parts.Head.parts.left_eye.customLabel>œil gauche</MM_Chimera_Body.corePart.parts.MM_ChimeraTail.parts.Head.parts.left_eye.customLabel>
   <MM_Chimera_Body.corePart.parts.MM_ChimeraTail.parts.Head.parts.right_eye.customLabel>œil droit</MM_Chimera_Body.corePart.parts.MM_ChimeraTail.parts.Head.parts.right_eye.customLabel>
@@ -64,13 +64,13 @@
   <MM_Chimera_Body.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>oreille gauche</MM_Chimera_Body.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
   <MM_Chimera_Body.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>oreille droite</MM_Chimera_Body.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
   <MM_Chimera_Body.corePart.parts.front_left_leg.customLabel>patte avant gauche</MM_Chimera_Body.corePart.parts.front_left_leg.customLabel>
-  <MM_Chimera_Body.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>pied avant gauche</MM_Chimera_Body.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>
+  <MM_Chimera_Body.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>patte avant gauche</MM_Chimera_Body.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>
   <MM_Chimera_Body.corePart.parts.front_right_leg.customLabel>patte avant droite</MM_Chimera_Body.corePart.parts.front_right_leg.customLabel>
-  <MM_Chimera_Body.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>pied avant droit</MM_Chimera_Body.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>
+  <MM_Chimera_Body.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>patte avant droit</MM_Chimera_Body.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>
   <MM_Chimera_Body.corePart.parts.rear_left_leg.customLabel>patte arrière gauche</MM_Chimera_Body.corePart.parts.rear_left_leg.customLabel>
-  <MM_Chimera_Body.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>pied arrière gauche</MM_Chimera_Body.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>
+  <MM_Chimera_Body.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>patte arrière gauche</MM_Chimera_Body.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>
   <MM_Chimera_Body.corePart.parts.rear_right_leg.customLabel>patte arrière droite</MM_Chimera_Body.corePart.parts.rear_right_leg.customLabel>
-  <MM_Chimera_Body.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>pied arrière droit</MM_Chimera_Body.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>
+  <MM_Chimera_Body.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>patte arrière droit</MM_Chimera_Body.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>
   <MM_Hydra.label>hydre</MM_Hydra.label>
   <MM_Hydra.corePart.parts.left_lung.customLabel>poumon gauche</MM_Hydra.corePart.parts.left_lung.customLabel>
   <MM_Hydra.corePart.parts.right_lung.customLabel>poumon droit</MM_Hydra.corePart.parts.right_lung.customLabel>
@@ -108,13 +108,13 @@
   <MM_ManticoreBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>oreille gauche</MM_ManticoreBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
   <MM_ManticoreBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>oreille droite</MM_ManticoreBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
   <MM_ManticoreBody.corePart.parts.front_left_leg.customLabel>patte avant gauche</MM_ManticoreBody.corePart.parts.front_left_leg.customLabel>
-  <MM_ManticoreBody.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>pied avant gauche</MM_ManticoreBody.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>
+  <MM_ManticoreBody.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>patte avant gauche</MM_ManticoreBody.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>
   <MM_ManticoreBody.corePart.parts.front_right_leg.customLabel>patte avant droite</MM_ManticoreBody.corePart.parts.front_right_leg.customLabel>
-  <MM_ManticoreBody.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>pied avant droit</MM_ManticoreBody.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>
+  <MM_ManticoreBody.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>patte avant droit</MM_ManticoreBody.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>
   <MM_ManticoreBody.corePart.parts.rear_left_leg.customLabel>patte arrière gauche</MM_ManticoreBody.corePart.parts.rear_left_leg.customLabel>
-  <MM_ManticoreBody.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>pied arrière gauche</MM_ManticoreBody.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>
+  <MM_ManticoreBody.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>patte arrière gauche</MM_ManticoreBody.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>
   <MM_ManticoreBody.corePart.parts.rear_right_leg.customLabel>patte arrière droite</MM_ManticoreBody.corePart.parts.rear_right_leg.customLabel>
-  <MM_ManticoreBody.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>pied arrière droit</MM_ManticoreBody.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>
+  <MM_ManticoreBody.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>patte arrière droit</MM_ManticoreBody.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>
   <MM_PegasusBody.label>animal quadrupède à sabots et à ailes</MM_PegasusBody.label>
   <MM_PegasusBody.corePart.parts.left_wing.customLabel>aile gauche</MM_PegasusBody.corePart.parts.left_wing.customLabel>
   <MM_PegasusBody.corePart.parts.right_wing.customLabel>aile droite</MM_PegasusBody.corePart.parts.right_wing.customLabel>
@@ -163,13 +163,13 @@
   <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>oreille gauche</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
   <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>oreille droite</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
   <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_left_leg.customLabel>patte avant gauche</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_left_leg.customLabel>
-  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>pied avant gauche</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>patte avant gauche</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>
   <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_right_leg.customLabel>patte avant droite</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_right_leg.customLabel>
-  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>pied avant droit</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>patte avant droit</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>
   <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_left_leg.customLabel>patte arrière gauche</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_left_leg.customLabel>
-  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>pied arrière gauche</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>patte arrière gauche</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>
   <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_right_leg.customLabel>patte arrière droite</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_right_leg.customLabel>
-  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>pied arrière droit</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>patte arrière droit</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>
   <MM_Wisp.label>feu follet</MM_Wisp.label>
   <MM_WyvernBody.label>vouivre</MM_WyvernBody.label>
   <MM_WyvernBody.corePart.parts.left_wing.customLabel>aile gauche</MM_WyvernBody.corePart.parts.left_wing.customLabel>

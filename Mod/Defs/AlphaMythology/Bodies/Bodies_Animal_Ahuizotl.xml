@@ -12,7 +12,7 @@
 
 	<BodyDef>
 		<defName>MM_AhuizotlBody</defName>
-		<label>quadruped animal with hand in its tail</label>
+		<label>quadruped animal with a hand at the end of its tail</label>
 		<corePart>
 			<def>Body</def>
 			<height>Middle</height>

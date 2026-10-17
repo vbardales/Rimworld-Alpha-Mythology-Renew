@@ -179,7 +179,7 @@
 	<ThingDef ParentName="EggFertBase">
 		<defName>MM_EggStymphalianBirdFertilized</defName>
 		<label>stymphalian bird egg (fert.)</label>
-		<description>Fertilized stymphalian bird egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into an stymphalian bird.</description>
+		<description>Fertilized stymphalian bird egg. It can be eaten raw, but it's much, much better cooked. If all goes well, it should hatch into a stymphalian bird.</description>
 		<tradeability>None</tradeability>
 		<statBases>
 			<MarketValue>9.0</MarketValue>

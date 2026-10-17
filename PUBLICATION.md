@@ -37,7 +37,7 @@ Checked in the sources, not from intent.
 ## Adult content boxes
 
 Opened on 2026-09-26, as contact sheets: `Preview.png`, `ModIcon.png` source, and all 210 PNG textures of `Mod/Textures`
-(creatures in three views, dessicated skeletons, eggs, information cards, achievement icons, projectiles, saddles).
+(creatures in three views, desiccated skeletons, eggs, information cards, achievement icons, projectiles, saddles).
 Contact sheets are 150 px thumbnails: text on the cards was not read.
 
 - Nudity or sexual content: **no**. Nothing suggestive in any image. The nine gallery pictures (sanctuary series, 2026-10-13) were opened one by one: creatures, Nelim fully dressed, settings window; nothing to report.
@@ -47,7 +47,7 @@ Contact sheets are 150 px thumbnails: text on the cards was not read.
   nothing. It is a word list, not a reading: a euphemism or a mod-specific term would pass, and the texts were not
   read line by line.
 - Violence or gore: cartoon-style only. One achievement icon (`MM_AchievementFountainOfBlood`) shows a figure with
-  red splashes, the creatures include fire and poison breath, and dessicated corpses are drawn as clean skeletons.
+  red splashes, the creatures include fire and poison breath, and desiccated corpses are drawn as clean skeletons.
   The mod adds a bleeding wound. This is RimWorld's own register and nothing is graphic or frequent, so **"no"
   looks right**, but it is Virginie's answer to give.
 - Found while looking, not changed (`Mod/` is frozen): textures for a `MM_Mechataur` (4 files) that is not one of the

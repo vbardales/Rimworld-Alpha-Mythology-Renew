@@ -6,7 +6,7 @@
 		<label>toxic bite</label>
 		<workerClass>DamageWorker_Stab</workerClass>
 		<externalViolence>true</externalViolence>
-		<deathMessage>{0} has been biten to death.</deathMessage>
+		<deathMessage>{0} has been bitten to death.</deathMessage>
 		<hediff>Stab</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<additionalHediffs>

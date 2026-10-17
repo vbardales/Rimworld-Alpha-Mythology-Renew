@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <MM_ToxicBite.description>Des toxines circulent dans le sang. Elles peuvent provenir de diverses sources : pollution, morsures venimeuses ou armes empoisonnées.\nÀ forte dose, l'intoxication est mortelle. Même à faible dose, elle peut provoquer des cancers.\nContrairement à l'intoxication du jeu de base, ces dégâts toxiques ne rendent pas impropres à la consommation les créatures qui en meurent.</MM_ToxicBite.description>
+  <MM_ToxicBite.description>Des toxines circulent dans le sang. Elles peuvent provenir de diverses sources : pollution, morsures venimeuses ou armes empoisonnées.\n\nÀ forte dose, l'intoxication est mortelle. Même à faible dose, elle peut provoquer des cancers.\n\nContrairement à l'intoxication du jeu de base, ces dégâts toxiques ne rendent pas impropres à la consommation les créatures qui en meurent.</MM_ToxicBite.description>
   <MM_ToxicBite.label>intoxication</MM_ToxicBite.label>
   <MM_ToxicBite.stages.initial-0.label>initiale</MM_ToxicBite.stages.initial-0.label>
   <MM_ToxicBite.stages.initial-1.label>initiale</MM_ToxicBite.stages.initial-1.label>
@@ -37,7 +37,7 @@
   <MM_Petrification.stages.brittle_bones.label>os friables</MM_Petrification.stages.brittle_bones.label>
   <MM_Petrification.stages.turned_to_stone.label>transformation en pierre</MM_Petrification.stages.turned_to_stone.label>
   <MM_FenghuangHediff.label>paix et sérénité</MM_FenghuangHediff.label>
-  <MM_FenghuangHediff.description>Un fenghuang apaise cette personne par des vagues d'énergie positive. Ses capacités de manipulation et de déplacement augmentent pendant 12 heures.</MM_FenghuangHediff.description>
+  <MM_FenghuangHediff.description>Un fenghuang apaise cette personne par des vagues d'énergie positive. Les capacités de manipulation et de déplacement de cette personne augmentent pendant 12 heures.</MM_FenghuangHediff.description>
   <MM_NoPain.description>Cette créature est moins sensible à la douleur et met plus longtemps à être mise à terre par celle-ci.</MM_NoPain.description>
   <MM_NoPain.label>insensibilité à la douleur</MM_NoPain.label>
 </LanguageData>

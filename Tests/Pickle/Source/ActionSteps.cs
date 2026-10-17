@@ -456,7 +456,15 @@ namespace AlphaMythologyRenew.PickleSteps
             var map = CreatureSteps.Map(ctx);
             var colonist = map.mapPawns.FreeColonists.FirstOrDefault(p => !p.Downed && !p.Dead);
             ctx.Require(colonist != null, "the map has no free colonist");
-            colonist.Position = record.Cell + IntVec3.East;
+            // The cell east of the plant may be a wall, a rock, water or a tree: the colonist would never reach the plant and the
+            // job would look like a defect of the plant. Stand on the first neighbour a pawn can stand on.
+            IntVec3 stand = IntVec3.Invalid;
+            foreach (var c in GenAdj.CellsAdjacent8Way(new TargetInfo(record.Cell, map)))
+            {
+                if (c.InBounds(map) && c.Standable(map) && c.GetEdifice(map) == null && c.GetPlant(map) == null) { stand = c; break; }
+            }
+            ctx.Require(stand.IsValid, $"no standable cell beside the plant at {record.Cell}");
+            colonist.Position = stand;
             colonist.Notify_Teleported(false);
             var job = JobMaker.MakeJob(JobDefOf.CutPlant, record.Plant);
             colonist.jobs.TryTakeOrderedJob(job);

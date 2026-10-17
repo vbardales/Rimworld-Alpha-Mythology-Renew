@@ -61,7 +61,7 @@ Feature: Workshop pictures
   Scenario: the griffin among the statues
     When Nelim's Pickle Tools: I let 60 ticks pass
     And Nelim's Sanctuary: the animals are removed from the sanctuary "statue-garden"
-    And Nelim's Pickle Tools: an adult animal of kind "MM_Griffin" named "Aurelia" is spawned at (155, 97)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Griffin" named "Aurelia" is spawned at (154, 97)
     And Nelim's Pickle Tools: an adult animal of kind "Donkey" named "Pilar" is spawned at (159, 98)
     And Nelim's Pickle Tools: an adult animal of kind "Hare" named "Fennel" is spawned at (151, 98)
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
@@ -70,7 +70,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (40, 120, 125)
     And Nelim's Pickle Tools: "Nelim" stands at (153, 97) facing East
     Then Alpha Mythology Renew the creature "Aurelia" is standing on the map as "MM_Griffin"
-    When Nelim's Pickle Tools: the animal "Aurelia" stands at (155, 97) facing South
+    When Nelim's Pickle Tools: the animal "Aurelia" stands at (154, 97) facing South
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "statue-garden"
     And Alpha Mythology Renew frames the animal "Aurelia" at zoom 6, shown 0 cells left and 0 cells up
@@ -184,7 +184,7 @@ Feature: Workshop pictures
     When Nelim's Pickle Tools: I let 500 ticks pass
     And Nelim's Pickle Tools: I let 500 ticks pass
     And Nelim's Pickle Tools: I let 308 ticks pass
-    And Nelim's Pickle Tools: an adult animal of kind "MM_Unicorn" named "Morwen" is spawned at (190, 87)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Unicorn" named "Morwen" is spawned at (189, 87)
     And Nelim's Pickle Tools: an adult animal of kind "Sparrow" named "Pip" is spawned at (187, 89)
     And Nelim's Pickle Tools: an adult animal of kind "Sparrow" named "Tilly" is spawned at (193, 85)
     And Nelim's Pickle Tools: an adult animal of kind "Sparrow" named "Wren" is spawned at (192, 91)
@@ -194,7 +194,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (130, 60, 120)
     And Nelim's Pickle Tools: "Nelim" stands at (188, 87) facing East
     Then Alpha Mythology Renew the creature "Morwen" is standing on the map as "MM_Unicorn"
-    When Nelim's Pickle Tools: the animal "Morwen" stands at (190, 87) facing South
+    When Nelim's Pickle Tools: the animal "Morwen" stands at (189, 87) facing South
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "plant-garden"
     And Alpha Mythology Renew frames the animal "Morwen" at zoom 5, shown 0 cells left and 0 cells up

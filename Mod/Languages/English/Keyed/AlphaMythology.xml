@@ -31,7 +31,7 @@
   <MM_ParalyzingRangedDesc>"Paralyzing Ranged" animals use ranged attacks to immobilize attackers. Having them in melee might not be the best use for them.</MM_ParalyzingRangedDesc>
   <MM_ParalyzingShockTroopDesc>"Shock Troop" animals are specialized in high speed, and some ability that adds utility to melee combat. They may not be very resistant, or have high health, but if properly used they can have devastating effects.\n\nThis animal also has attacks that can be used to immobilize attackers.</MM_ParalyzingShockTroopDesc>
   <MM_PrimaryRole>Primary Role</MM_PrimaryRole>
-  <MM_Ranged>This animal uses ranged attacks, and will only use melee attacks if the enemy gets into melee range. To order it to attack, it needs to be trained in Guard and Attack, then it needs to be assigned to follow a master when drafted and/or working. The "release" button on the master's commands bar will make the animal search for appropiate cover and use its ranged attack.</MM_Ranged>
+  <MM_Ranged>This animal uses ranged attacks, and will only use melee attacks if the enemy gets into melee range. To order it to attack, it needs to be trained in Guard and Attack, then it needs to be assigned to follow a master when drafted and/or working. The "release" button on the master's commands bar will make the animal search for appropriate cover and use its ranged attack.</MM_Ranged>
   <MM_RangedAttacks>Uses Ranged Attacks</MM_RangedAttacks>
   <MM_SecondaryRole>Secondary Role</MM_SecondaryRole>
   <MM_ShockTroop>Shock Troop</MM_ShockTroop>

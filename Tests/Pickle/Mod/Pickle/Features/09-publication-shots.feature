@@ -48,7 +48,7 @@
 # Kept from the earlier versions: spawned adult on the player's side by PickleTools' own animal step, framed by this mod's own step (it lowers the camera
 # floor), facing south, the creature names do not exist in the fixture. After the run, every picture is opened and read against this plan; an anomaly that
 # comes from the scene or from the shared tool is described to Pickle Tools with the capture, never worked around here.
-@review @requires:nelim.pickletools.screenshotstudio @requires:nelim.pickletools.screenshotmode @requires:nelim.pickletools.colonistrace
+@review @requires:nelim.pickletools.screenshotstudio @requires:nelim.pickletools.screenshotmode @requires:nelim.pickletools.colonistrace @requires:nelim.pickletools.stagedecor
 Feature: Workshop pictures
 
   Background:
@@ -132,6 +132,7 @@ Feature: Workshop pictures
     When Nelim's Pickle Tools: the animal "Inari" stands at (138, 66) facing South
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "tea-room"
+    And Nelim's Pickle Tools: the painted zones are hidden
     And Alpha Mythology Renew frames the animal "Inari" at zoom 6, shown 2 cells left and -2 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
@@ -192,11 +193,12 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (130, 60, 120)
-    And Nelim's Pickle Tools: "Nelim" stands at (188, 87) facing East
+    And Nelim's Pickle Tools: the colonist "Nelim" stands on the nearest free cell around (188, 87)
     Then Alpha Mythology Renew the creature "Morwen" is standing on the map as "MM_Unicorn"
-    When Nelim's Pickle Tools: the animal "Morwen" stands at (188, 86) facing South
+    When Nelim's Pickle Tools: the animal "Morwen" stands on the nearest free cell around (188, 86)
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "plant-garden"
+    And Nelim's Pickle Tools: the painted zones are hidden
     And Alpha Mythology Renew frames the animal "Morwen" at zoom 5, shown 0 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
@@ -225,6 +227,7 @@ Feature: Workshop pictures
     When Nelim's Pickle Tools: the animal "Thessaly" stands at (226, 117) facing South
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "rice-paddies"
+    And Nelim's Pickle Tools: the painted zones are hidden
     And Alpha Mythology Renew frames the animal "Thessaly" at zoom 6, shown 2 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks

@@ -22,6 +22,7 @@ automated_tests: "passed 2026-10-10: Tests/UnitTests ALL PASSED (spawn rules 13,
 xml_tests: "passed 2026-10-11: Check-ModBasics (shared) then Check-Mod.ps1 174 own assertions, 86 XML files, 25 creatures; Test-Validator.ps1 6 negative cases (the runner was red before this audit, see Audit 2026-10-10); shared scripts/Check-Translations.ps1 224 source texts and French injections green 2026-10-11 (replaced Check-Translations.py, deleted)"
 functional_tests: "unverified in this audit; Pickle history reports green passes (see Tests): not re-read here"
 remaining:
+  - "2026-10-17 French (no tu, no vous rule, TRANSLATIONS.md): 3 texts rewritten without second person, for Virginie to read: MM_MountFastDesc and MM_MountFastArmouredDesc (`Pas encore installé ? C'est le moment de l'ajouter !`), MM_LesserWyvern.description (`Les grandes vouivres sont à découvrir dans le mod RimWorld - Witcher Monster Hunt !`); scripts/Check-Translations.ps1 reports 6 findings that predate this change (checked by stash), to look at"
   - "2026-10-10 unverified (playTests 8.f to 8.k): the @requires passes and the incompatibility pass are green on earlier revisions and are replayed as non-regression after the deploy (followUp 14.a); functional scenarios 8.g, settings in game FR and EN 8.h and UI and logs 8.i are covered by the initial passes (84 scenarios each, every red replayed green, docs/runs/2026-10-10-1a12-d0ff-initial-passes.md); the owner's manual validations, if any, are hers"
   - "2026-10-10 feature (prepareRelease, AUDIT 3.c/11.f/12.e): CHANGELOG [Unreleased] stays on top until the dry-run; in the commit whose sha goes to the dry-run it becomes `## [1.0.0] - <planned send date>`; a slipped send means a corrected date, a new commit and a new dry-run (Check-Status WARNs changelog from publish on)"
   - "2026-10-10 feature (followUp 14.b): the Use This Instead comment for Mlie (3396308787) is drafted in PUBLICATION.md; hand it to Virginie as an orange step once the item is public, with the link and the text ready to paste"
@@ -39,7 +40,7 @@ code_review_sha: 92bdc6ece455a8dcb3e6ca3f1a33a31d492eab8b
 publication_changelog_review_sha: 92ed1e831806f7b0fead291d3b1a8ad738562bc9
 echo_review_sha: a1be481084332130c4d6b992d4735cdfe0fab33e
 social_preview_sha256: fba649849da03131890b808754e8cd81f831254785cade742332fe2792c0b41d
-updated: 2026-10-16
+updated: 2026-10-17
 protocols_read_sha: 3c467d598ccbea456113b1795f6fadc605af5de8
 ---
 # Alpha Mythology Renew (unofficial): status

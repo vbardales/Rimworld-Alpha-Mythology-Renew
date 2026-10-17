@@ -9,7 +9,7 @@
   <MM_ToxicBite.stages.serious.label>grave</MM_ToxicBite.stages.serious.label>
   <MM_ToxicBite.stages.extreme.label>extrême</MM_ToxicBite.stages.extreme.label>
   <MM_Grabbed.description>Cette créature est agrippée et ne peut pas se déplacer normalement.</MM_Grabbed.description>
-  <MM_Grabbed.label>agrippé</MM_Grabbed.label>
+  <MM_Grabbed.label>agrippement</MM_Grabbed.label>
   <MM_Grabbed.stages.initial.label>initiale</MM_Grabbed.stages.initial.label>
   <MM_Grabbed.stages.partially_immobilized.label>immobilisation partielle</MM_Grabbed.stages.partially_immobilized.label>
   <MM_Grabbed.stages.grabbed.label>agrippement</MM_Grabbed.stages.grabbed.label>

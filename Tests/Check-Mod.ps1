@@ -84,4 +84,12 @@ Assert-Mod ($publication.Contains("[Source code on GitHub](https://github.com/vb
 Assert-Mod (Test-Path "$root/Mod/Assemblies/AlphaMythologyRenew.dll") 'Shipped assembly missing'
 $foreign = @(Get-ChildItem "$root/Mod/Assemblies" -Filter *.dll | Where-Object Name -ne 'AlphaMythologyRenew.dll')
 Assert-Mod ($foreign.Count -eq 0) 'Unexpected bundled assembly'
+$translations = Join-Path $PSScriptRoot '../../scripts/Check-Translations.ps1'
+if (Test-Path $translations) {
+    # Compatibility Keyed entries kept on purpose without a call in Source/: Nocturnal Animals reads the BodyClock keys, VEF reads
+    # VEF_WarningEggExplodes (Mod/Languages/English/Keyed/VEF.xml).
+    $kept = 'NocturnalAnimals.BodyClock,NocturnalAnimals.BodyClock_Diurnal,NocturnalAnimals.BodyClock_Crepuscular,NocturnalAnimals.BodyClock_Nocturnal,NocturnalAnimals.BodyClock_Description,VEF_WarningEggExplodes'
+    & pwsh -NoProfile -Command "& '$translations' -ModRoot '$root' -AllowUnused '$kept'.Split(',')"
+    if ($LASTEXITCODE -ne 0) { throw 'Check-Translations reported findings' }
+}
 Write-Host "PASS: $checks assertions; $($documents.Count) XML files; 25 creatures. Static contracts only; gameplay not executed."

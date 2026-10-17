@@ -6,8 +6,8 @@ New-Item -ItemType Directory -Path $fixture | Out-Null
 try {
     Copy-Item "$root/Mod" $fixture -Recurse
     Copy-Item "$root/LICENSE", "$root/ATTRIBUTION.md", "$root/PUBLICATION.md" $fixture
-    New-Item -ItemType Directory -Path "$fixture/Source" | Out-Null
-    Copy-Item "$root/Source/Settings.cs", "$root/Source/SpawnRules.cs" "$fixture/Source"
+    # Whole Source/: Check-Translations reads every .Translate() call to tell used Keyed entries from unused ones.
+    Copy-Item "$root/Source" $fixture -Recurse
     $validator = Join-Path $PSScriptRoot 'Check-Mod.ps1'
     & $validator -ModRoot $fixture
     $cases = @(

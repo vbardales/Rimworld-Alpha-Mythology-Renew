@@ -112,7 +112,7 @@ Reworked after the Audit reading (GALLERY-SHOTLIST-AUDIT.md): per scene a decor 
 | 7 unicorn, plant-garden, plum top, moodCheerful2, holds berries | 4 | cell not standable (red three times) | step `stands on the nearest free cell around`, zones hidden, ticket d92f |
 | 8 manticore, rice-paddies, crimson top, NLR-Smile, brings pemmican | 4 | rice not grown, painted zone | plants step on the clearing, zones hidden, ticket d92f |
 
-Lowest 4. Verdicts after the run (captures judged against 4: refuse and redo what stays under). Gallery not yet accepted: stage is shootGallery.
+Criterion k (one story: who, where, which day, rhythm, episodes that advance) written in the header of the feature (4 September 5500, noon to 12:35, five minutes between episodes). Lowest 4. Verdicts after the run (captures judged against 4: refuse and redo what stays under). Gallery not yet accepted: stage is shootGallery.
 
 ## Echo review 2026-10-13 (mountPreview 10.a)
 

@@ -25,6 +25,11 @@
 # pinned to its cell (`the animal ... stands at ... facing South`), and every companion named below is spawned by the scenario, not hoped for.
 # The cells below were read on the places' own empty photographs (SanctuaryBacklot/evidence/places-current), not guessed.
 #
+# THE STORY IN ONE PARAGRAPH (criterion k, 2026-10-18). WHO: Nelim, the sanctuary's keeper, and eight creatures of Alpha Mythology who come to her one after the other, each with an offering from her hands.
+# WHERE: Nelim's sanctuary. WHEN: one clear day, the 4th of September 5500 (the date of the save), from noon to 12:35, five game minutes between two episodes. EPISODES, each one moving on from the last:
+# she meets the griffin among the statues (12:00), carries a meal to the kappa at its pond (12:05), holds hay out to the pegasus at the water garden (12:10), walks to the tea room where the kitsune waits (12:15),
+# feeds the hearth for the phoenix (12:20), calms the three-headed hound on the gallery (12:25), follows the unicorn through the plant garden (12:30), and ends on the bank where the manticore watches the paddies (12:35).
+# Then the settings window (9 and 10), where the visitor chooses which of them may appear in the wild.
 # SHOT PLAN (place, time, subject, composition, the living around it, what the picture says; zoom = half-height in cells):
 # 1. statue-garden, 12:00, MM_Griffin "Aurelia" at (155, 97), zoom 6: the griffin on the bare earth between the large head-statue (149, 95) on its left and the deer statue (160, 94) on its right, statue pieces and the pawn statues around; living: a donkey and a hare placed on purpose (the wandering animals are removed first: a cat overlapped the wing in series 3); says: the griffin settles among the statues, a statue that moved.
 # 2. fishing-zone, 12:05, MM_Kappa "Ondine" at (122, 67), zoom 5, on the east bank of the round pond; living: Nelim standing on the bank looking at it (smile "normal+moodCheerful"), a swan and a duck on the shallow rim of the pond; says: the water spirit sits on the bank of the round pond and Nelim has come to see it.

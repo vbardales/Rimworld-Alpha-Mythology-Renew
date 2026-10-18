@@ -97,6 +97,25 @@ Series played in `SanctuaryBacklot` (feature `09-publication-shots`, runs da73, 
 
 Owner asked whether pictures match story. Read one by one against shot plan: griffin (no statues, no donkey or hare, unplanned colonist), kitsune (inside hut, not at door, no cat or labrador), manticore (bare soil, macaw, no herons) off plan; phoenix, kappa, pegasus, unicorn matched place but not living around it; hound dropped (2026-10-12), so series had seven creatures, plan said eight. Causes read in feature: zoom 3 to 3.5 (seven cells high), creature free to wander during 30 ticks, plan companions never spawned. Feature `09-publication-shots` rewritten: plan and header aligned with scenarios, zoom 5 to 7, creature pinned (`the animal ... stands at ... facing South`), companions spawned, cells read on places' own empty photographs, hound moved to cloister, rice grown to harvest. Accepted pictures stay in `Art/Gallery/` until new ones accepted; new ones land as `N-candidate-name`. `echo_review_sha` and Preview re-read once gallery settled.
 
+## Shotlist rating 2026-10-18 (owner rule: every scene 4 of 5 or more before it is played)
+
+Skill `write-shotlist` is not in this session's list: ratings written by hand from feature `09-publication-shots`. Below 4 is reworked until 4.
+
+| Scene | Rating | Main risk | Action |
+|---|---|---|---|
+| 1 griffin, statue-garden | 4 | cell not standable (fixed at 154, 97) | kept |
+| 2 kappa, fishing-zone | 4 | small subject | kept |
+| 3 pegasus, water-garden | 4 | none known | kept |
+| 4 kitsune, tea-room | 3 | painted zone visible, cell unchecked | rework: zones hidden step (NPT 124c3e2), ticket d92f |
+| 5 phoenix, fire-pit | 4 | none known | kept |
+| 6 hound, cloister | 4 | none known | kept |
+| 7 unicorn, plant-garden | 3 | cell not standable three times | rework: nearest free cell step, ticket d92f |
+| 8 manticore, rice-paddies | 3 | painted zone, rice not grown | rework: zones hidden, ticket d92f |
+| 9 settings window | 4 | none known | kept |
+| 10 settings list end | 3 | never judged, scene not in the gallery | read at the next full series |
+
+Lowest 3, four scenes to rework or read. Gallery not yet accepted: stage is shootGallery.
+
 ## Echo review 2026-10-13 (mountPreview 10.a)
 
 Decision: keep `Art/echo-source.png`. Phoenix line-art; phoenix still in accepted gallery (`2-phoenix.jpg`), mod subject (mythological creatures) unchanged. Gallery changed since previous review only by re-shot kappa, manticore, unicorn, new settings window, reordering. Preview not regenerated, so `social_preview_sha256` stands. `Art/Cards/` (unreferenced inherited Photoshop template, 1 MB) deleted by closing pass step 1; stays in git history (37c56e1).

@@ -45,6 +45,19 @@
 # 9. window-backdrop-for-height, the settings window, a plain screen capture of what it is, the interface on and developer mode off so that its toolbar is not in the picture.
 # 10. podium (197, 152), 12:45, Griffin beside the window: the creature list scrolled to its end (the window shows about 16 of the 25 creatures: the rows below Phoenix are here, the rows above are in 9).
 #
+# SHOTLIST AGAINST GALLERY.md a to j (2026-10-18). Common to the eight creature scenes: a = noon sanctuary, clear weather, game time passes (60 ticks of set-up plus 208 per picture
+# already told); c = a companion animal or plant in each; d = Nelim in a top of her own colour (above), her bun (owner's choice), the expression named in the plan, set last; i = one subject, never a row;
+# j = the creature of the mod is the subject. Per scene, what Nelim does (e), the decor placed by this scenario and removed after the shot (b), the line the image says (g), the risk and the plan against it (h).
+# Decor cells are read on the places' photographs; a decor step that names a blocked cell fails and names it: the plan is then to move the prop one cell, never to drop it.
+#   1 griffin: Nelim brings it meat (carries Meat_Muffalo); SculptureSmall (152, 99) and a grown daylily (156, 99); griffin off-centre (2 left); "A griffin settles among the statues and Nelim brings it meat." Risk: a donkey or hare overlaps the wing; plan: they stand at 5 cells, animals of the place removed first.
+#   2 kappa: Nelim brings a meal to the bank (carries MealSimple); daylilies (124, 66) and (123, 69), swan and duck on the rim; "The water spirit sits on the bank and Nelim has come to see it." Risk: small subject; plan: zoom 5, off-centre 2 left, readable at gallery size (candidate kept).
+#   3 pegasus: Nelim holds out hay (carries Hay); daylilies (179, 175) and (175, 171); "The winged horse drinks among the lilies and Nelim offers hay." Risk: foreground lilies hide the legs; plan: zoom 5 and the decor cells away from the creature.
+#   4 kitsune: Nelim comes out of the hut with a fine meal (carries MealFine); TorchLamp lit (143, 67), bonsai pot (139, 64), a cat and a labrador by the wall; "The fox spirit waits at the door of the tea room and Nelim comes out to it." Risk: painted zone visible on the ground; plan: `the painted zones are hidden` (NPT 124c3e2).
+#   5 phoenix: Nelim feeds the hearth (carries WoodLog); TorchLamp (178, 117) and Brazier (183, 117), both lit; "The firebird lights the hall as a second hearth." Risk: heat face, lit lamps washed out at noon; plan: map held at 20 degrees, 10 ticks before Nelim, the lamps seen against the hall interior.
+#   6 hound: Nelim calms the dogs with kibble (carries Kibble); stool (175, 127) and bonsai pot (186, 127), two labradors kept at a distance; "The three-headed hound keeps the gallery and Nelim brings kibble to the wary dogs." Risk: three heads read as one blob; plan: zoom 6, heads turned to the garden, the subject alone on the boards.
+#   7 unicorn: Nelim holds out berries (carries RawBerries); daylilies (186, 88) and (191, 86), three sparrows; "The unicorn walks the fenced plant garden and Nelim follows with berries." Risk: cell not standable (red three times); plan: `stands on the nearest free cell around` for Nelim and the animal (NPT 124c3e2), painted zones hidden.
+#   8 manticore: Nelim brings pemmican to the bank (carries Pemmican); SculptureSmall (220, 115), a grown daylily (224, 121), herons and chickens; "The manticore watches the paddies from the bank." Risk: rice not grown, painted zone; plan: the plants step on the whole clearing and `the painted zones are hidden`.
+#   9 and 10 settings window: interface scenes at the centre of the screen, set aside from the rating (AUDIT); 10 now shares the window backdrop of 9, with presentation mode.
 # Kept from the earlier versions: spawned adult on the player's side by PickleTools' own animal step, framed by this mod's own step (it lowers the camera
 # floor), facing south, the creature names do not exist in the fixture. After the run, every picture is opened and read against this plan; an anomaly that
 # comes from the scene or from the shared tool is described to Pickle Tools with the capture, never worked around here.
@@ -64,11 +77,15 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: an adult animal of kind "MM_Griffin" named "Aurelia" is spawned at (154, 97)
     And Nelim's Pickle Tools: an adult animal of kind "Donkey" named "Pilar" is spawned at (159, 98)
     And Nelim's Pickle Tools: an adult animal of kind "Hare" named "Fennel" is spawned at (151, 98)
+    And Nelim's Pickle Tools: I place the decor "SculptureSmall" at (152, 99)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (156, 99)
+    And Nelim's Pickle Tools: the plants from (156, 99) to (156, 99) are fully grown
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (40, 120, 125)
     And Nelim's Pickle Tools: "Nelim" stands at (153, 97) facing East
+    And Nelim's Pickle Tools: "Nelim" carries the item "Meat_Muffalo"
     Then Alpha Mythology Renew the creature "Aurelia" is standing on the map as "MM_Griffin"
     When Nelim's Pickle Tools: the animal "Aurelia" stands at (154, 97) facing South
     And Alpha Mythology Renew dismisses every letter
@@ -78,17 +95,23 @@ Feature: Workshop pictures
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Open"
     Then I take a screenshot "workshop-1-the-griffin-among-the-statues"
+    When Nelim's Pickle Tools: the decor is removed
 
   Scenario: the kappa by the pond
     When Nelim's Pickle Tools: I let 268 ticks pass
     And Nelim's Pickle Tools: an adult animal of kind "MM_Kappa" named "Ondine" is spawned at (122, 67)
     And Nelim's Pickle Tools: an adult animal of kind "Swan" named "Perle" is spawned at (121, 70)
     And Nelim's Pickle Tools: an adult animal of kind "Duck" named "Plume" is spawned at (121, 64)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (124, 66)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (123, 69)
+    And Nelim's Pickle Tools: the plants from (124, 66) to (124, 66) are fully grown
+    And Nelim's Pickle Tools: the plants from (123, 69) to (123, 69) are fully grown
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (224, 112, 96)
     And Nelim's Pickle Tools: "Nelim" stands at (125, 69) facing West
+    And Nelim's Pickle Tools: "Nelim" carries the item "MealSimple"
     Then Alpha Mythology Renew the creature "Ondine" is standing on the map as "MM_Kappa"
     When Nelim's Pickle Tools: the animal "Ondine" stands at (122, 67) facing South
     And Alpha Mythology Renew dismisses every letter
@@ -98,15 +121,21 @@ Feature: Workshop pictures
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+moodCheerful"
     Then I take a screenshot "workshop-2-the-kappa-by-the-pond"
+    When Nelim's Pickle Tools: the decor is removed
 
   Scenario: the pegasus at the water garden
     When Nelim's Pickle Tools: I let 476 ticks pass
     And Nelim's Pickle Tools: an adult animal of kind "MM_Pegasus" named "Zephyra" is spawned at (177, 173)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (179, 175)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (175, 171)
+    And Nelim's Pickle Tools: the plants from (179, 175) to (179, 175) are fully grown
+    And Nelim's Pickle Tools: the plants from (175, 171) to (175, 171) are fully grown
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (232, 170, 60)
     And Nelim's Pickle Tools: "Nelim" stands at (181, 174) facing West
+    And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     Then Alpha Mythology Renew the creature "Zephyra" is standing on the map as "MM_Pegasus"
     When Nelim's Pickle Tools: the animal "Zephyra" stands at (177, 173) facing South
     And Alpha Mythology Renew dismisses every letter
@@ -116,6 +145,7 @@ Feature: Workshop pictures
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"
     Then I take a screenshot "workshop-3-the-pegasus-at-the-water-garden"
+    When Nelim's Pickle Tools: the decor is removed
 
   Scenario: the kitsune at the tea room
     When Nelim's Pickle Tools: I let 500 ticks pass
@@ -123,11 +153,15 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: an adult animal of kind "MM_Kitsune" named "Inari" is spawned at (138, 66)
     And Nelim's Pickle Tools: an adult animal of kind "Cat" named "Miso" is spawned at (143, 65)
     And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Rex" is spawned at (135, 64)
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (143, 67)
+    And Nelim's Pickle Tools: I place the decor "PlantPot_Bonsai" at (139, 64)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (143, 67) is lit
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (52, 70, 130)
     And Nelim's Pickle Tools: "Nelim" stands at (141, 66) facing West
+    And Nelim's Pickle Tools: "Nelim" carries the item "MealFine"
     Then Alpha Mythology Renew the creature "Inari" is standing on the map as "MM_Kitsune"
     When Nelim's Pickle Tools: the animal "Inari" stands at (138, 66) facing South
     And Alpha Mythology Renew dismisses every letter
@@ -138,16 +172,22 @@ Feature: Workshop pictures
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+moodCheerful2"
     Then I take a screenshot "workshop-4-the-kitsune-at-the-tea-room"
+    When Nelim's Pickle Tools: the decor is removed
 
   Scenario: the phoenix in the hearth hall
     When Nelim's Pickle Tools: I let 500 ticks pass
     And Nelim's Pickle Tools: I let 392 ticks pass
     And Nelim's Pickle Tools: an adult animal of kind "MM_Phoenix" named "Cinder" is spawned at (180, 115)
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (178, 117)
+    And Nelim's Pickle Tools: I place the decor "Brazier" at (183, 117)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (178, 117) is lit
+    And Nelim's Pickle Tools: the decor "Brazier" at (183, 117) is lit
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (40, 110, 90)
     And Nelim's Pickle Tools: "Nelim" stands at (176, 116) facing East
+    And Nelim's Pickle Tools: "Nelim" carries the item "WoodLog"
     Then Alpha Mythology Renew the creature "Cinder" is standing on the map as "MM_Phoenix"
     When Nelim's Pickle Tools: the animal "Cinder" stands at (180, 115) facing South
     And Alpha Mythology Renew dismisses every letter
@@ -157,6 +197,7 @@ Feature: Workshop pictures
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Open"
     Then I take a screenshot "workshop-5-the-phoenix-in-the-hearth-hall"
+    When Nelim's Pickle Tools: the decor is removed
 
   Scenario: the hound on the gallery
     When Nelim's Pickle Tools: I let 500 ticks pass
@@ -166,11 +207,14 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: an adult animal of kind "MM_Cerberus" named "Balthazar" is spawned at (179, 127)
     And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Mira" is spawned at (172, 127)
     And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Shogun" is spawned at (187, 126)
+    And Nelim's Pickle Tools: I place the decor "Stool" at (175, 127)
+    And Nelim's Pickle Tools: I place the decor "PlantPot_Bonsai" at (186, 127)
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (236, 226, 200)
     And Nelim's Pickle Tools: "Nelim" stands at (183, 128) facing West
+    And Nelim's Pickle Tools: "Nelim" carries the item "Kibble"
     Then Alpha Mythology Renew the creature "Balthazar" is standing on the map as "MM_Cerberus"
     When Nelim's Pickle Tools: the animal "Balthazar" stands at (179, 127) facing South
     And Alpha Mythology Renew dismisses every letter
@@ -180,6 +224,7 @@ Feature: Workshop pictures
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+SocialRelax"
     Then I take a screenshot "workshop-6-the-hound-on-the-gallery"
+    When Nelim's Pickle Tools: the decor is removed
 
   Scenario: the unicorn in the plant garden
     When Nelim's Pickle Tools: I let 500 ticks pass
@@ -189,11 +234,16 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: an adult animal of kind "Sparrow" named "Pip" is spawned at (187, 89)
     And Nelim's Pickle Tools: an adult animal of kind "Sparrow" named "Tilly" is spawned at (193, 85)
     And Nelim's Pickle Tools: an adult animal of kind "Sparrow" named "Wren" is spawned at (192, 91)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (186, 88)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (191, 86)
+    And Nelim's Pickle Tools: the plants from (186, 88) to (186, 88) are fully grown
+    And Nelim's Pickle Tools: the plants from (191, 86) to (191, 86) are fully grown
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (130, 60, 120)
     And Nelim's Pickle Tools: the colonist "Nelim" stands on the nearest free cell around (188, 87)
+    And Nelim's Pickle Tools: "Nelim" carries the item "RawBerries"
     Then Alpha Mythology Renew the creature "Morwen" is standing on the map as "MM_Unicorn"
     When Nelim's Pickle Tools: the animal "Morwen" stands on the nearest free cell around (188, 86)
     And Alpha Mythology Renew dismisses every letter
@@ -204,6 +254,7 @@ Feature: Workshop pictures
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+moodCheerful2"
     Then I take a screenshot "workshop-7-the-unicorn-in-the-plant-garden"
+    When Nelim's Pickle Tools: the decor is removed
 
   Scenario: the manticore by the paddies
     When Nelim's Pickle Tools: I let 500 ticks pass
@@ -218,11 +269,15 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Hilda" is spawned at (223, 114)
     And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Berta" is spawned at (222, 119)
     And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Greta" is spawned at (230, 120)
+    And Nelim's Pickle Tools: I place the decor "SculptureSmall" at (220, 115)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (224, 121)
+    And Nelim's Pickle Tools: the plants from (224, 121) to (224, 121) are fully grown
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (176, 48, 56)
     And Nelim's Pickle Tools: "Nelim" stands at (222, 117) facing East
+    And Nelim's Pickle Tools: "Nelim" carries the item "Pemmican"
     Then Alpha Mythology Renew the creature "Thessaly" is standing on the map as "MM_Manticore"
     When Nelim's Pickle Tools: the animal "Thessaly" stands at (226, 117) facing South
     And Alpha Mythology Renew dismisses every letter
@@ -233,6 +288,7 @@ Feature: Workshop pictures
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"
     Then I take a screenshot "workshop-8-the-manticore-by-the-paddies"
+    When Nelim's Pickle Tools: the decor is removed
 
   # The window is the subject: the interface stays on, developer mode off so that its toolbar is not in the picture.
   Scenario: the settings window

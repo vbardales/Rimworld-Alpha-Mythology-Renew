@@ -112,7 +112,8 @@ Reworked after the Audit reading (GALLERY-SHOTLIST-AUDIT.md): per scene a decor 
 | 7 unicorn, plant-garden, plum top, moodCheerful2, holds berries | 4 | cell not standable (red three times) | step `stands on the nearest free cell around`, zones hidden, ticket d92f |
 | 8 manticore, rice-paddies, crimson top, NLR-Smile, brings pemmican | 4 | rice not grown, painted zone | plants step on the clearing, zones hidden, ticket d92f |
 
-Criterion k (one story: who, where, which day, rhythm, episodes that advance) written in the header of the feature (4 September 5500, noon to 12:35, five minutes between episodes). Lowest 4. Verdicts after the run (captures judged against 4: refuse and redo what stays under). Gallery not yet accepted: stage is shootGallery.
+Criterion k (one story: who, where, which day, rhythm, episodes that advance) written in the header of the feature (4 September 5500, noon to 12:35, five minutes between episodes). Verdicts of ticket c6b6 (10 of 10 passed, captures opened 2026-10-18, gallery-nelim4): pegasus 4, phoenix 4, hound 4 (kept as candidates); griffin 3 (Nelim overlaps the wing: moved to (151, 97)); kappa 3 (macaw in frame, subject small: animals of fishing-zone removed, zoom 4); kitsune 3 and manticore 3 (the orange is the smiley carpet terrain, not a zone: `the painted zones are hidden` does not touch it; covered with `I lay the floor "Soil"`, removed with the decor; macaw removed at the tea room); unicorn 2 (Nelim stands on the unicorn: she goes to the nearest free cell around (185, 88)). Reworked scenes replayed in the next ticket. Offerings are not readable in the pictures (a small box): not a blocker, the action reads from the pose.
+Lowest 4. Verdicts after the run (captures judged against 4: refuse and redo what stays under). Gallery not yet accepted: stage is shootGallery.
 
 ## Echo review 2026-10-13 (mountPreview 10.a)
 

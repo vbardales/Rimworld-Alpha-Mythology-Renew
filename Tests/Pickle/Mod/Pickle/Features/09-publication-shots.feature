@@ -89,7 +89,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (40, 120, 125)
-    And Nelim's Pickle Tools: "Nelim" stands at (153, 97) facing East
+    And Nelim's Pickle Tools: "Nelim" stands at (151, 97) facing East
     And Nelim's Pickle Tools: "Nelim" carries the item "Meat_Muffalo"
     Then Alpha Mythology Renew the creature "Aurelia" is standing on the map as "MM_Griffin"
     When Nelim's Pickle Tools: the animal "Aurelia" stands at (154, 97) facing South
@@ -104,6 +104,7 @@ Feature: Workshop pictures
 
   Scenario: the kappa by the pond
     When Nelim's Pickle Tools: I let 268 ticks pass
+    And Nelim's Sanctuary: the animals are removed from the sanctuary "fishing-zone"
     And Nelim's Pickle Tools: an adult animal of kind "MM_Kappa" named "Ondine" is spawned at (122, 67)
     And Nelim's Pickle Tools: an adult animal of kind "Swan" named "Perle" is spawned at (121, 70)
     And Nelim's Pickle Tools: an adult animal of kind "Duck" named "Plume" is spawned at (121, 64)
@@ -121,7 +122,7 @@ Feature: Workshop pictures
     When Nelim's Pickle Tools: the animal "Ondine" stands at (122, 67) facing South
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "fishing-zone"
-    And Alpha Mythology Renew frames the animal "Ondine" at zoom 5, shown 2 cells left and 0 cells up
+    And Alpha Mythology Renew frames the animal "Ondine" at zoom 4, shown 2 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+moodCheerful"
@@ -155,6 +156,8 @@ Feature: Workshop pictures
   Scenario: the kitsune at the tea room
     When Nelim's Pickle Tools: I let 500 ticks pass
     And Nelim's Pickle Tools: I let 184 ticks pass
+    And Nelim's Sanctuary: the animals are removed from the sanctuary "tea-room"
+    And Nelim's Pickle Tools: I lay the floor "Soil" from (130, 56) to (150, 65)
     And Nelim's Pickle Tools: an adult animal of kind "MM_Kitsune" named "Inari" is spawned at (138, 66)
     And Nelim's Pickle Tools: an adult animal of kind "Cat" named "Miso" is spawned at (143, 65)
     And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Rex" is spawned at (135, 64)
@@ -247,7 +250,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (130, 60, 120)
-    And Nelim's Pickle Tools: the colonist "Nelim" stands on the nearest free cell around (188, 87)
+    And Nelim's Pickle Tools: the colonist "Nelim" stands on the nearest free cell around (185, 88)
     And Nelim's Pickle Tools: "Nelim" carries the item "RawBerries"
     Then Alpha Mythology Renew the creature "Morwen" is standing on the map as "MM_Unicorn"
     When Nelim's Pickle Tools: the animal "Morwen" stands on the nearest free cell around (188, 86)
@@ -267,6 +270,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: I let 500 ticks pass
     And Nelim's Pickle Tools: I let 16 ticks pass
     And Nelim's Sanctuary: the animals are removed from the sanctuary "rice-paddies"
+    And Nelim's Pickle Tools: I lay the floor "Soil" from (205, 100) to (221, 116)
     And Nelim's Pickle Tools: the plants from (219, 106) to (240, 126) are fully grown
     And Nelim's Pickle Tools: an adult animal of kind "MM_Manticore" named "Thessaly" is spawned at (226, 117)
     And Nelim's Pickle Tools: an adult animal of kind "Heron" named "Aube" is spawned at (221, 120)

@@ -112,7 +112,7 @@ Skill `write-shotlist` is not in this session's list: ratings written by hand fr
 | 7 unicorn, plant-garden | 3 | cell not standable three times | rework: nearest free cell step, ticket d92f |
 | 8 manticore, rice-paddies | 3 | painted zone, rice not grown | rework: zones hidden, ticket d92f |
 | 9 settings window | 4 | none known | kept |
-| 10 settings list end | 3 | never judged, scene not in the gallery | read at the next full series |
+| 10 settings list end | 3 then 4 | read 2026-10-18 on gallery4: selected griffin card and bottom panel, learning helper, busy podium backdrop | reworked: scene 9 pattern (backdrop, presentation mode, screenshot mode around the window), no griffin; 4 before play, verdict after the run |
 
 Lowest 3, four scenes to rework or read. Gallery not yet accepted: stage is shootGallery.
 

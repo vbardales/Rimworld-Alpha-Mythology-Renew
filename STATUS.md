@@ -38,7 +38,7 @@ remaining:
   - "2026-10-19 feature (shootGallery 9): eight new candidates in Art/Gallery (1-candidate-phoenix to 8-candidate-manticore, shotlist at 4 of 5, tickets c6b6 and a7e0 read, docs/runs/2026-10-18-c6b6-a7e0-gallery-shotlist.md); Virginie accepts or refuses each, then reindex with 8-settings.jpg as 9, update the gallery table below, subtitles from PUBLICATION.md 'Gallery subtitles' (clean originals in Art/Gallery-clean)"
 code_review_sha: 92bdc6ece455a8dcb3e6ca3f1a33a31d492eab8b
 publication_changelog_review_sha: 92ed1e831806f7b0fead291d3b1a8ad738562bc9
-echo_review_sha: a1be481084332130c4d6b992d4735cdfe0fab33e
+echo_review_sha: 1dfde4ad13f2a7adfb833de2ec2e3bc185e76967
 social_preview_sha256: d0458c9f6095218ab55b06095e179d508311792a755a8681115c9c626463f2c5
 updated: 2026-10-17
 protocols_read_sha: b08c1315abc7369296b6456f460e266731c95817
@@ -116,7 +116,7 @@ Criterion k (one story: who, where, which day, rhythm, episodes that advance) wr
 
 Lowest 4 (read after play). Gallery not yet accepted: stage is shootGallery.
 
-## Echo review 2026-10-13 (mountPreview 10.a)
+## Echo review 2026-10-23 confirmed (Virginie, in chat, at Preview regenerated with the panel config), earlier 2026-10-13 (mountPreview 10.a)
 
 Decision: keep `Art/echo-source.png`. Phoenix line-art; phoenix still in accepted gallery (`2-phoenix.jpg`), mod subject (mythological creatures) unchanged. Gallery changed since previous review only by re-shot kappa, manticore, unicorn, new settings window, reordering. Preview not regenerated, so `social_preview_sha256` stands. `Art/Cards/` (unreferenced inherited Photoshop template, 1 MB) deleted by closing pass step 1; stays in git history (37c56e1).
 

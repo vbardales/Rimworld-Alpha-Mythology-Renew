@@ -37,6 +37,7 @@
 #   4 kitsune: zoom 3 (was 6), shown 1 cell left: the frame is 6 cells high, so the DarklightBrazier at (144, 70), 4 cells above the fox, falls outside it without any hide step; the fox and Nelim are twice as big.
 #   5 phoenix: zoom 4 (was 5); the phoenix stands on the grey hearth stones (180-182, 114-116) read on the first capture, red on grey, Nelim 3 cells away, cat at (177, 113) (free per the list).
 #   6 hound: the black hound on dark wood did not stand out; a strip of `TileSandstone` (176-183, 127-128, name from vanilla terrain, to be read: the step fails with the known names if wrong) is laid under it, and Nelim's top is sky blue (90, 150, 210) instead of cream, which would vanish on pale tile.
+#   REWORK 3 2026-10-23 (owner: use the Backlot's own pets, SanctuaryBacklot CATALOGUE-ANIMAUX.md, instead of spawning cats, dogs and thrumbos): the fixture animals are moved with `the animal "<name>" stands at (x, z) facing South`, never spawned. 4 kitsune: Tama (Miel's Norwegian Forest Cat, long brown tabby and white) at (143, 65) and Shogun (Nelim's sand labrador) at (135, 64). 5 phoenix: Kuru (black cat) at (177, 113) and Atticus (Nelim's snow-white thrumbo) at (183, 113), white against the red bird. 6 hound: Yuki (grey and white husky, fuchsia collar) at (172, 127) and Shogun at (187, 126); the labrador that was spawned under the name Shogun is gone (the fixture already has one). Risk: a pet standing in a place when its scenario empties it (`the animals are removed from the sanctuary`) is despawned and cannot be moved: asked of NSB where the pets live. Wild or farm animals (donkey, hare, swan, duck, sparrows, herons, chickens) stay spawned: the fixture has no pet of those kinds.
 #
 # THE STORY IN ONE PARAGRAPH (criterion k, 2026-10-18). WHO: Nelim, the sanctuary's keeper, and eight creatures of Alpha Mythology who come to her one after the other, each with an offering from her hands.
 # WHERE: Nelim's sanctuary. WHEN: one clear day, the 4th of September 5500 (the date of the save), from noon to 12:35, five game minutes between two episodes. EPISODES, each one moving on from the last:
@@ -176,8 +177,8 @@ Feature: Workshop pictures
     And Nelim's Sanctuary: the animals are removed from the sanctuary "tea-room"
     And Nelim's Pickle Tools: I lay the floor "Soil" from (130, 56) to (150, 65)
     And Nelim's Pickle Tools: an adult animal of kind "MM_Kitsune" named "Inari" is spawned at (138, 66)
-    And Nelim's Pickle Tools: an adult animal of kind "Cat" named "Miso" is spawned at (143, 65)
-    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Rex" is spawned at (135, 64)
+    And Nelim's Pickle Tools: the animal "Tama" stands at (143, 65) facing South
+    And Nelim's Pickle Tools: the animal "Shogun" stands at (135, 64) facing South
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (143, 67)
     And Nelim's Pickle Tools: I place the decor "PlantPot_Bonsai" at (139, 64)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (143, 67) is lit
@@ -204,7 +205,8 @@ Feature: Workshop pictures
     When Nelim's Pickle Tools: I let 500 ticks pass
     And Nelim's Pickle Tools: I let 392 ticks pass
     And Nelim's Pickle Tools: an adult animal of kind "MM_Phoenix" named "Cinder" is spawned at (180, 115)
-    And Nelim's Pickle Tools: an adult animal of kind "Cat" named "Ember" is spawned at (177, 113)
+    And Nelim's Pickle Tools: the animal "Kuru" stands at (177, 113) facing South
+    And Nelim's Pickle Tools: the animal "Atticus" stands at (183, 113) facing South
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (178, 117)
     And Nelim's Pickle Tools: I place the decor "Brazier" at (183, 117)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (178, 117) is lit
@@ -233,8 +235,8 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: I let 100 ticks pass
     And Nelim's Sanctuary: the animals are removed from the sanctuary "cloister"
     And Nelim's Pickle Tools: an adult animal of kind "MM_Cerberus" named "Balthazar" is spawned at (179, 127)
-    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Mira" is spawned at (172, 127)
-    And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Shogun" is spawned at (187, 126)
+    And Nelim's Pickle Tools: the animal "Yuki" stands at (172, 127) facing South
+    And Nelim's Pickle Tools: the animal "Shogun" stands at (187, 126) facing South
     And Nelim's Pickle Tools: I lay the floor "TileSandstone" from (176, 127) to (183, 128)
     And Nelim's Pickle Tools: I place the decor "Stool" at (175, 127)
     And Nelim's Pickle Tools: I place the decor "PlantPot_Bonsai" at (186, 127)

@@ -46,6 +46,7 @@
 #
 #   REWORK 4 CORRECTED by NSB's read of the bank (terrain from the save's top grid, ids inferred, to confirm on a capture): earth at z 171 is x 146-156, z 172 x 145-155, z 170 x 147-156; (154, 174) is water and (156, 172) is water with a lily. Scene 3 now: pegasus (154, 171), Nelim (152, 172) facing East holding hay, daylilies (150, 170) and (156, 170), swan on the water at (158, 171), frame zoom 4 centred on the pegasus (water to its east, brown earth around). A steam geyser stands at (149, 173), kept out of the way. Four wild animals live on the bank west of x 153 (Chinchilla, Snowhare, Armadillo, Panda at about (150-151, 171-173)) and wander once ticks pass: the removal of `water-garden` reaches x >= 153 only, so they may drift into the frame (living documentary, or a risk of overlap with Nelim: read on the replay).
 #   REWORK 4 CORRECTED AGAIN by NSB (terrain ids resolved by hash): the bank "earth" is MossyTerrain (moss green, not brown; SANCTUAIRE-LIEUX.md was wrong or meant the moss colour), the pools are WaterShallow, WaterDeep cells (156, 174), (155-157, 175), (154-158, 176) are not standable. Cells unchanged and land: (152, 172), (156, 171), (150, 170); (154, 174) is shallow water, (160, 171) shallow and walkable. The contrast of scene 3 is now a pale horse on moss green beside blue-grey water, not on brown: read on the capture.
+#   REWORK 6 2026-10-23 (owner: again, scenes 1 to 6; the paper is nearly exhausted, what is left needs the replay): scene 3 frame "shown 3 cells left" puts the camera at x 157, the visible x range is about 149.9 to 164.1, so the steam geyser at (149, 173) leaves the frame and the water gets the right half; the daylily moves to (152, 170) so it is not cut by the left edge. The other five scenes keep their cells and zooms: the remaining doubts (small subject on 2 and 5, contrast on 3 and 6, `stands at` on save pets, `TileSandstone`, zoom 3) can only be settled by a play, the probe scenario at the end settles three of them.
 #   REWORK 5 2026-10-23 (rate-gallery found criterion b weak on 2, 3, 7, 8 and f weak on 1 to 5): the decor sets now differ from one scene to the next (1 sculpture + daylily; 2 tall yellow grass + stool; 3 daylily + tall yellow grass; 7 bonsai pot + daylily; 8 sculpture + tall yellow grass; 4 torch + bonsai; 5 torch + brazier; 6 stool + bonsai), only defNames played and read in GALLERY-PROPS.md; the shot plan lines of 1 to 5 carry the zooms and cells of the scenarios. Not played, so no cap lifts.
 # THE STORY IN ONE PARAGRAPH (criterion k, 2026-10-18). WHO: Nelim, the sanctuary's keeper, and eight creatures of Alpha Mythology who come to her one after the other, each with an offering from her hands.
 # WHERE: Nelim's sanctuary. WHEN: one clear day, the 4th of September 5500 (the date of the save), from noon to 12:35, five game minutes between two episodes. EPISODES, each one moving on from the last:
@@ -78,7 +79,7 @@
 # Decor cells are read on the places' photographs; a decor step that names a blocked cell fails and names it: the plan is then to move the prop one cell, never to drop it.
 #   1 griffin: Nelim brings it meat (carries Meat_Muffalo); SculptureSmall (152, 99) and a grown daylily (156, 99); griffin off-centre (1 left); "A griffin settles among the statues and Nelim brings it meat." Risk: a donkey or hare overlaps the wing; plan: they stand at 5 cells, animals of the place removed first.
 #   2 kappa: Nelim brings a meal to the bank (carries MealSimple); tall yellow grass (124, 66) and a stool (123, 69), swan and duck on the rim; "The water spirit sits on the bank and Nelim has come to see it." Risk: small subject; plan: zoom 3, off-centre 2 left, swan and duck pulled in so the 6-cell frame holds them.
-#   3 pegasus: Nelim holds out hay (carries Hay); daylily (150, 170), tall yellow grass (156, 170), a swan on the water; "The winged horse stands at the bank and Nelim brings it hay." Risk: wild animals of the bank drift into the frame; plan: the east part is emptied first, the replay reads the rest.
+#   3 pegasus: Nelim holds out hay (carries Hay); daylily (152, 170), tall yellow grass (156, 170), a swan on the water; "The winged horse stands at the bank and Nelim brings it hay." Risk: wild animals of the bank drift into the frame; plan: the east part is emptied first, the replay reads the rest.
 #   4 kitsune: Nelim comes out of the hut with a fine meal (carries MealFine); TorchLamp lit (143, 67), bonsai pot (139, 64), a cat and a labrador by the wall; "The fox spirit waits at the door of the tea room and Nelim comes out to it." Risk: painted zone visible on the ground; plan: `the painted zones are hidden` (NPT 124c3e2).
 #   5 phoenix: Nelim feeds the hearth (carries WoodLog); TorchLamp (178, 117) and Brazier (183, 117), both lit; "The firebird lights the hall as a second hearth." Risk: heat face, lit lamps washed out at noon; plan: map held at 20 degrees, 10 ticks before Nelim, the lamps seen against the hall interior.
 #   6 hound: Nelim calms the dogs with kibble (carries Kibble); stool (175, 127) and bonsai pot (186, 127), two labradors kept at a distance; "The three-headed hound keeps the gallery and Nelim brings kibble to the wary dogs." Risk: three heads read as one blob; plan: zoom 6, heads turned to the garden, the subject alone on the boards.
@@ -159,9 +160,9 @@ Feature: Workshop pictures
     And Nelim's Sanctuary: the animals are removed from the sanctuary "water-garden"
     And Nelim's Pickle Tools: an adult animal of kind "MM_Pegasus" named "Zephyra" is spawned at (154, 171)
     And Nelim's Pickle Tools: an adult animal of kind "Swan" named "Perle" is spawned at (158, 171)
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (150, 170)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (152, 170)
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (156, 170)
-    And Nelim's Pickle Tools: the plants from (150, 170) to (150, 170) are fully grown
+    And Nelim's Pickle Tools: the plants from (152, 170) to (152, 170) are fully grown
     And Nelim's Pickle Tools: the plants from (156, 170) to (156, 170) are fully grown
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I let 10 ticks pass
@@ -175,7 +176,7 @@ Feature: Workshop pictures
     When Nelim's Pickle Tools: the animal "Zephyra" stands at (154, 171) facing South
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "water-garden"
-    And Alpha Mythology Renew frames the animal "Zephyra" at zoom 4, shown 0 cells left and 0 cells up
+    And Alpha Mythology Renew frames the animal "Zephyra" at zoom 4, shown 3 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"

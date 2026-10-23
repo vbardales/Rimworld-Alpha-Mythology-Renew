@@ -76,8 +76,8 @@
 # already told); c = a companion animal or plant in each; d = Nelim in a top of her own colour (above), her high ponytail (owner, 2026-10-23), the expression named in the plan, set last; i = one subject, never a row;
 # j = the creature of the mod is the subject. Per scene, what Nelim does (e), the decor placed by this scenario and removed after the shot (b), the line the image says (g), the risk and the plan against it (h).
 # Decor cells are read on the places' photographs; a decor step that names a blocked cell fails and names it: the plan is then to move the prop one cell, never to drop it.
-#   1 griffin: Nelim brings it meat (carries Meat_Muffalo); SculptureSmall (152, 99) and a grown daylily (156, 99); griffin off-centre (2 left); "A griffin settles among the statues and Nelim brings it meat." Risk: a donkey or hare overlaps the wing; plan: they stand at 5 cells, animals of the place removed first.
-#   2 kappa: Nelim brings a meal to the bank (carries MealSimple); tall yellow grass (124, 66) and a stool (123, 69), swan and duck on the rim; "The water spirit sits on the bank and Nelim has come to see it." Risk: small subject; plan: zoom 5, off-centre 2 left, readable at gallery size (candidate kept).
+#   1 griffin: Nelim brings it meat (carries Meat_Muffalo); SculptureSmall (152, 99) and a grown daylily (156, 99); griffin off-centre (1 left); "A griffin settles among the statues and Nelim brings it meat." Risk: a donkey or hare overlaps the wing; plan: they stand at 5 cells, animals of the place removed first.
+#   2 kappa: Nelim brings a meal to the bank (carries MealSimple); tall yellow grass (124, 66) and a stool (123, 69), swan and duck on the rim; "The water spirit sits on the bank and Nelim has come to see it." Risk: small subject; plan: zoom 3, off-centre 2 left, swan and duck pulled in so the 6-cell frame holds them.
 #   3 pegasus: Nelim holds out hay (carries Hay); daylily (150, 170), tall yellow grass (156, 170), a swan on the water; "The winged horse stands at the bank and Nelim brings it hay." Risk: wild animals of the bank drift into the frame; plan: the east part is emptied first, the replay reads the rest.
 #   4 kitsune: Nelim comes out of the hut with a fine meal (carries MealFine); TorchLamp lit (143, 67), bonsai pot (139, 64), a cat and a labrador by the wall; "The fox spirit waits at the door of the tea room and Nelim comes out to it." Risk: painted zone visible on the ground; plan: `the painted zones are hidden` (NPT 124c3e2).
 #   5 phoenix: Nelim feeds the hearth (carries WoodLog); TorchLamp (178, 117) and Brazier (183, 117), both lit; "The firebird lights the hall as a second hearth." Risk: heat face, lit lamps washed out at noon; plan: map held at 20 degrees, 10 ticks before Nelim, the lamps seen against the hall interior.
@@ -379,3 +379,47 @@ Feature: Workshop pictures
     And I close all dialogs
     And Nelim's Pickle Tools: developer mode is restored
     Then no errors were logged
+
+  # PROBE, not a gallery shot and not rated: plays the three things no feature has played, in one short scenario, so that the replay of the eight shots rests on read facts. The save pets (Yuki, Shogun, Atticus) are moved by `stands at` after the cloister is emptied; the `TileSandstone` strip of scene 6 is laid; Nelim gets the Highpony hairstyle and the log line of her drawn hair; one picture is taken to read the tile and the pets. File it alone with -Filter '::probe: save pets' (a scenario title goes after the two colons).
+
+  Scenario: probe: save pets, sandstone tile and Nelim's hair
+
+    When Nelim's Pickle Tools: I let 60 ticks pass
+
+    And Nelim's Sanctuary: the animals are removed from the sanctuary "cloister"
+
+    And Nelim's Pickle Tools: the animal "Yuki" stands at (172, 127) facing South
+
+    And Nelim's Pickle Tools: the animal "Shogun" stands at (187, 126) facing South
+
+    And Nelim's Pickle Tools: the animal "Atticus" stands at (183, 113) facing South
+
+    And Nelim's Pickle Tools: I lay the floor "TileSandstone" from (176, 127) to (183, 128)
+
+    And Nelim's Pickle Tools: the temperature of the map is 20 degrees
+
+    And Nelim's Pickle Tools: I let 10 ticks pass
+
+    And Nelim's Sanctuary: Nelim has her own face
+
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (90, 150, 210)
+
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
+
+    And Nelim's Sanctuary: the appearance of "Nelim" is logged
+
+    And Nelim's Pickle Tools: "Nelim" stands at (184, 127) facing East
+
+    And Alpha Mythology Renew dismisses every letter
+
+    And Nelim's Sanctuary: I am at the sanctuary "cloister"
+
+    And Alpha Mythology Renew frames the animal "Shogun" at zoom 5, shown 0 cells left and 0 cells up
+
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+
+    And I wait 30 ticks
+
+    Then I take a screenshot "probe-save-pets-and-tile"
+
+    And no errors were logged

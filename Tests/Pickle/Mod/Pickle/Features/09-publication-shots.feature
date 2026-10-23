@@ -62,7 +62,7 @@
 #  6 hound, cloister 17:00, z5, subject left of centre: Nelim drags a sack of kibble toward the hound, Yuki and Shogun follow her; she is about to set it down. HaulToCell Kibble, paused mid-walk. Decor Stool (175, 127), PlantPot_Bonsai (186, 127); no sandstone strip (it looked like a set).
 #  7 unicorn, plant-garden about 17:12, z3 (frame 6 cells high, the unicorn about 1.5 cells, a quarter of the height, white against the dark soil), expression moodCheerful2, says: "While Nelim picks berries, the unicorn comes to the fence to see her.": Nelim picks berries behind the fence, work effect drawn; the unicorn wanders on the far side, sparrows in the plants; she has just picked the first, the unicorn is coming to the fence. Job Harvest on a grown berry bush placed for the shot. Decor PlantPot_Bonsai (186, 88), Plant_Daylily (191, 86).
 #  8 manticore, rice-paddies 18:00 dusk, z5 wide (frame 10 cells high, the manticore about 1.5 cells, a seventh of the height but the only dark winged silhouette on pale soil, about 40 px on the thumbnail; the paddies fill the rest), expression NLR-Smile, says: "At dusk the last visitor watches the paddies while Nelim finishes the harvest.": Nelim harvests rice with her back to the manticore, which watches from the bank, herons and chickens in the rice; the day is ending, nothing will happen. Job Harvest on the rice. Decor SculptureSmall (220, 115), Plant_YellowTallGrass (224, 121).
-# SCENARIOS REWRITTEN 2026-10-23 from this block: one outfit (36, 72, 140), hours by `I set the hour to` (12, 13, 14, 15, 16, 17, 17 + 500 ticks, 18), zooms 6, 2.5, 4, head framing, 4, 5, 3, 5, forced job Tame on the kappa and the fox, head framing for the fox. NOT possible with the step as written by NPT (target is a pawn): the haul of meat, hay, kibble, the Refuel of the campfire, the Harvest of berries and rice; those scenes keep `carries the item` and the pose is not mid-walk: asked of NPT (a target that is a thing or a plant). Hour set by integer, so the times of the block above are rounded to the hour.
+# SCENARIOS REWRITTEN 2026-10-23 (second pass: NPT 379a608 added `is forced to haul n of the item to (x, z)`, `Refuel on the building at (x, z)`, `Harvest on the plant at (x, z)`; scenes 1, 3, 6 haul, 5 Refuel the campfire with a WoodLog placed at (179, 113), 7 Harvest a Plant_Berry placed at (187, 90), 8 Harvest the rice at (222, 118); the earlier gap sentence below is out of date for them) from this block: one outfit (36, 72, 140), hours by `I set the hour to` (12, 13, 14, 15, 16, 17, 17 + 500 ticks, 18), zooms 6, 2.5, 4, head framing, 4, 5, 3, 5, forced job Tame on the kappa and the fox, head framing for the fox. NOT possible with the step as written by NPT (target is a pawn): the haul of meat, hay, kibble, the Refuel of the campfire, the Harvest of berries and rice; those scenes keep `carries the item` and the pose is not mid-walk: asked of NPT (a target that is a thing or a plant). Hour set by integer, so the times of the block above are rounded to the hour.
 # RISKS (unplayed, written for the probe 2): Tame, Refuel and Harvest are guesses; HaulToCell with an item; a berry bush and the rice as Harvest targets; the head-framing step needs SimpleCameraSetting staged; a pose frozen mid-gesture needs ticks while the game runs, then pause. Herons: present in the save (5).
 # THE STORY IN ONE PARAGRAPH (criterion k, 2026-10-18). WHO: Nelim, the sanctuary's keeper, and eight creatures of Alpha Mythology who come to her one after the other, each with an offering from her hands.
 # WHERE: Nelim's sanctuary. WHEN: one clear day, the 4th of September 5500 (the date of the save), from noon to 12:35, five game minutes between two episodes. EPISODES, each one moving on from the last:
@@ -130,8 +130,9 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (36, 72, 140)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Sanctuary: the appearance of "Nelim" is logged
-    And Nelim's Pickle Tools: "Nelim" stands at (150, 97) facing East
-    And Nelim's Pickle Tools: "Nelim" carries the item "Meat_Muffalo"
+    And Nelim's Pickle Tools: "Nelim" stands at (147, 97) facing East
+    And Nelim's Pickle Tools: "Nelim" is forced to haul 1 of the item "Meat_Muffalo" to (152, 98)
+    And Nelim's Pickle Tools: I let 40 ticks pass
     Then Alpha Mythology Renew the creature "Aurelia" is standing on the map as "MM_Griffin"
     When Nelim's Pickle Tools: the animal "Aurelia" stands at (153, 97) facing South
     And Alpha Mythology Renew dismisses every letter
@@ -188,8 +189,9 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (36, 72, 140)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Sanctuary: the appearance of "Nelim" is logged
-    And Nelim's Pickle Tools: "Nelim" stands at (152, 172) facing East
-    And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
+    And Nelim's Pickle Tools: "Nelim" stands at (148, 171) facing East
+    And Nelim's Pickle Tools: "Nelim" is forced to haul 1 of the item "Hay" to (153, 171)
+    And Nelim's Pickle Tools: I let 40 ticks pass
     Then Alpha Mythology Renew the creature "Zephyra" is standing on the map as "MM_Pegasus"
     When Nelim's Pickle Tools: the animal "Zephyra" stands at (154, 171) facing South
     And Alpha Mythology Renew dismisses every letter
@@ -248,8 +250,9 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (36, 72, 140)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Sanctuary: the appearance of "Nelim" is logged
-    And Nelim's Pickle Tools: "Nelim" stands at (177, 116) facing East
-    And Nelim's Pickle Tools: "Nelim" carries the item "WoodLog"
+    And Nelim's Pickle Tools: I place the decor "WoodLog" at (179, 113)
+    And Nelim's Pickle Tools: "Nelim" is forced into the job "Refuel" on the building "Campfire" at (181, 115)
+    And Nelim's Pickle Tools: I let 40 ticks pass
     Then Alpha Mythology Renew the creature "Cinder" is standing on the map as "MM_Phoenix"
     When Nelim's Pickle Tools: the animal "Cinder" stands at (180, 115) facing South
     And Alpha Mythology Renew dismisses every letter
@@ -276,8 +279,9 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (36, 72, 140)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Sanctuary: the appearance of "Nelim" is logged
-    And Nelim's Pickle Tools: "Nelim" stands at (183, 128) facing West
-    And Nelim's Pickle Tools: "Nelim" carries the item "Kibble"
+    And Nelim's Pickle Tools: "Nelim" stands at (184, 128) facing West
+    And Nelim's Pickle Tools: "Nelim" is forced to haul 1 of the item "Kibble" to (181, 127)
+    And Nelim's Pickle Tools: I let 40 ticks pass
     Then Alpha Mythology Renew the creature "Balthazar" is standing on the map as "MM_Cerberus"
     When Nelim's Pickle Tools: the animal "Balthazar" stands at (179, 127) facing South
     And Alpha Mythology Renew dismisses every letter
@@ -305,8 +309,10 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (36, 72, 140)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Sanctuary: the appearance of "Nelim" is logged
-    And Nelim's Pickle Tools: the colonist "Nelim" stands on the nearest free cell around (185, 88)
-    And Nelim's Pickle Tools: "Nelim" carries the item "RawBerries"
+    And Nelim's Pickle Tools: I place the decor "Plant_Berry" at (187, 90)
+    And Nelim's Pickle Tools: the plants from (187, 90) to (187, 90) are fully grown
+    And Nelim's Pickle Tools: "Nelim" is forced into the job "Harvest" on the plant at (187, 90)
+    And Nelim's Pickle Tools: I let 40 ticks pass
     Then Alpha Mythology Renew the creature "Morwen" is standing on the map as "MM_Unicorn"
     When Nelim's Pickle Tools: the animal "Morwen" stands on the nearest free cell around (188, 86)
     And Alpha Mythology Renew dismisses every letter
@@ -339,8 +345,8 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (36, 72, 140)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Sanctuary: the appearance of "Nelim" is logged
-    And Nelim's Pickle Tools: "Nelim" stands at (222, 117) facing East
-    And Nelim's Pickle Tools: "Nelim" carries the item "Pemmican"
+    And Nelim's Pickle Tools: "Nelim" is forced into the job "Harvest" on the plant at (222, 118)
+    And Nelim's Pickle Tools: I let 40 ticks pass
     Then Alpha Mythology Renew the creature "Thessaly" is standing on the map as "MM_Manticore"
     When Nelim's Pickle Tools: the animal "Thessaly" stands at (226, 117) facing South
     And Alpha Mythology Renew dismisses every letter

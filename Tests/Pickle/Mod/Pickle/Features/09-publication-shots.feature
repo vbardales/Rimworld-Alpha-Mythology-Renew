@@ -44,6 +44,7 @@
 #   3 pegasus moved to the brown earth bank west of the water garden (SANCTUAIRE-LIEUX.md: bank x 143-158, z 168-176, burrow to avoid at (149, 173)): pegasus (152, 172), Nelim (156, 171) facing West, daylilies (150, 170) and (154, 174), a swan on the water at (160, 171); pale horse on brown earth against the water, no soil patch needed. Cells of the bank not yet read in a plant list (asked of NSB).
 #   2 kappa: zoom 3 (was 4), swan (121, 69) and duck (121, 65) pulled in so they stay inside the 6-cell-high frame.
 #
+#   REWORK 4 CORRECTED by NSB's read of the bank (terrain from the save's top grid, ids inferred, to confirm on a capture): earth at z 171 is x 146-156, z 172 x 145-155, z 170 x 147-156; (154, 174) is water and (156, 172) is water with a lily. Scene 3 now: pegasus (154, 171), Nelim (152, 172) facing East holding hay, daylilies (150, 170) and (156, 170), swan on the water at (158, 171), frame zoom 4 centred on the pegasus (water to its east, brown earth around). A steam geyser stands at (149, 173), kept out of the way. Four wild animals live on the bank west of x 153 (Chinchilla, Snowhare, Armadillo, Panda at about (150-151, 171-173)) and wander once ticks pass: the removal of `water-garden` reaches x >= 153 only, so they may drift into the frame (living documentary, or a risk of overlap with Nelim: read on the replay).
 # THE STORY IN ONE PARAGRAPH (criterion k, 2026-10-18). WHO: Nelim, the sanctuary's keeper, and eight creatures of Alpha Mythology who come to her one after the other, each with an offering from her hands.
 # WHERE: Nelim's sanctuary. WHEN: one clear day, the 4th of September 5500 (the date of the save), from noon to 12:35, five game minutes between two episodes. EPISODES, each one moving on from the last:
 # she meets the griffin among the statues (12:00), carries a meal to the kappa at its pond (12:05), holds hay out to the pegasus at the water garden (12:10), walks to the tea room where the kitsune waits (12:15),
@@ -154,25 +155,26 @@ Feature: Workshop pictures
 
   Scenario: the pegasus at the water garden
     When Nelim's Pickle Tools: I let 476 ticks pass
-    And Nelim's Pickle Tools: an adult animal of kind "MM_Pegasus" named "Zephyra" is spawned at (152, 172)
-    And Nelim's Pickle Tools: an adult animal of kind "Swan" named "Perle" is spawned at (160, 171)
+    And Nelim's Sanctuary: the animals are removed from the sanctuary "water-garden"
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Pegasus" named "Zephyra" is spawned at (154, 171)
+    And Nelim's Pickle Tools: an adult animal of kind "Swan" named "Perle" is spawned at (158, 171)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (150, 170)
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (154, 174)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (156, 170)
     And Nelim's Pickle Tools: the plants from (150, 170) to (150, 170) are fully grown
-    And Nelim's Pickle Tools: the plants from (154, 174) to (154, 174) are fully grown
+    And Nelim's Pickle Tools: the plants from (156, 170) to (156, 170) are fully grown
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (232, 170, 60)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Sanctuary: the appearance of "Nelim" is logged
-    And Nelim's Pickle Tools: "Nelim" stands at (156, 171) facing West
+    And Nelim's Pickle Tools: "Nelim" stands at (152, 172) facing East
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     Then Alpha Mythology Renew the creature "Zephyra" is standing on the map as "MM_Pegasus"
-    When Nelim's Pickle Tools: the animal "Zephyra" stands at (152, 172) facing South
+    When Nelim's Pickle Tools: the animal "Zephyra" stands at (154, 171) facing South
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "water-garden"
-    And Alpha Mythology Renew frames the animal "Zephyra" at zoom 4, shown 2 cells left and 0 cells up
+    And Alpha Mythology Renew frames the animal "Zephyra" at zoom 4, shown 0 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"

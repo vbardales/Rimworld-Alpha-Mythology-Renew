@@ -381,45 +381,24 @@ Feature: Workshop pictures
     Then no errors were logged
 
   # PROBE, not a gallery shot and not rated: plays the three things no feature has played, in one short scenario, so that the replay of the eight shots rests on read facts. The save pets (Yuki, Shogun, Atticus) are moved by `stands at` after the cloister is emptied; the `TileSandstone` strip of scene 6 is laid; Nelim gets the Highpony hairstyle and the log line of her drawn hair; one picture is taken to read the tile and the pets. File it alone with -Filter '::probe: save pets' (a scenario title goes after the two colons).
-
   Scenario: probe: save pets, sandstone tile and Nelim's hair
-
     When Nelim's Pickle Tools: I let 60 ticks pass
-
     And Nelim's Sanctuary: the animals are removed from the sanctuary "cloister"
-
     And Nelim's Pickle Tools: the animal "Yuki" stands at (172, 127) facing South
-
     And Nelim's Pickle Tools: the animal "Shogun" stands at (187, 126) facing South
-
     And Nelim's Pickle Tools: the animal "Atticus" stands at (183, 113) facing South
-
     And Nelim's Pickle Tools: I lay the floor "TileSandstone" from (176, 127) to (183, 128)
-
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
-
     And Nelim's Pickle Tools: I let 10 ticks pass
-
     And Nelim's Sanctuary: Nelim has her own face
-
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (90, 150, 210)
-
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
-
     And Nelim's Sanctuary: the appearance of "Nelim" is logged
-
     And Nelim's Pickle Tools: "Nelim" stands at (184, 127) facing East
-
     And Alpha Mythology Renew dismisses every letter
-
     And Nelim's Sanctuary: I am at the sanctuary "cloister"
-
     And Alpha Mythology Renew frames the animal "Shogun" at zoom 5, shown 0 cells left and 0 cells up
-
     And Nelim's Pickle Tools: studio presentation mode is enabled
-
     And I wait 30 ticks
-
     Then I take a screenshot "probe-save-pets-and-tile"
-
     And no errors were logged

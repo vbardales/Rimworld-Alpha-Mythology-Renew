@@ -40,7 +40,7 @@
 # 7. plant-garden, 12:30, MM_Unicorn "Morwen" at (190, 87), zoom 5, between two rows of plants, the fence behind; living: three sparrows in the plants; says: the unicorn walks the fenced plant garden.
 # 8. rice-paddies, 12:35, MM_Manticore "Thessaly" at (226, 117), zoom 6; the rice of the clearing is grown to harvest first (the fixture has seedlings), the macaw and the other wanderers are removed, two herons and three chickens are placed; says: the manticore watches the paddies from the bank.
 # NELIM (the only colonist, Virginie) is in all eight creature pictures (owner rule 2026-10-14: protagonist of the series; reworked 2026-10-16). She keeps what the owner chose
-# for her: hair in a bun, dark brown eyes, grey trousers. What changes per scene is the top (`Apparel_BasicShirt` dyed in a colour that stands out from the place and the creature),
+# for her: hair in a high ponytail (`Roo_HD_Hair_Highpony`, owner, 2026-10-23, as in NELIM-PROFIL.md; the fixture default, no step sets it, to be read on the next captures), dark brown eyes, grey trousers. What changes per scene is the top (`Apparel_BasicShirt` dyed in a colour that stands out from the place and the creature),
 # where she stands (about four cells from the creature, turned towards it or towards the visitor) and her expression, set last, right before the capture, after the map is held at
 # 20 degrees (no heat face) and her own face is set (two brows, smirk smile, blink). No other pawn: the visitors are the creatures.
 #   1 griffin: teal top, NLR-Open (wonder), (153, 97) facing East   2 kappa: coral top, moodCheerful, (125, 69) facing West   3 pegasus: saffron top, NLR-Smile, (181, 174) facing West
@@ -51,7 +51,7 @@
 # 10. podium (197, 152), 12:45, Griffin beside the window: the creature list scrolled to its end (the window shows about 16 of the 25 creatures: the rows below Phoenix are here, the rows above are in 9).
 #
 # SHOTLIST AGAINST GALLERY.md a to j (2026-10-18). Common to the eight creature scenes: a = noon sanctuary, clear weather, game time passes (60 ticks of set-up plus 208 per picture
-# already told); c = a companion animal or plant in each; d = Nelim in a top of her own colour (above), her bun (owner's choice), the expression named in the plan, set last; i = one subject, never a row;
+# already told); c = a companion animal or plant in each; d = Nelim in a top of her own colour (above), her high ponytail (owner, 2026-10-23), the expression named in the plan, set last; i = one subject, never a row;
 # j = the creature of the mod is the subject. Per scene, what Nelim does (e), the decor placed by this scenario and removed after the shot (b), the line the image says (g), the risk and the plan against it (h).
 # Decor cells are read on the places' photographs; a decor step that names a blocked cell fails and names it: the plan is then to move the prop one cell, never to drop it.
 #   1 griffin: Nelim brings it meat (carries Meat_Muffalo); SculptureSmall (152, 99) and a grown daylily (156, 99); griffin off-centre (2 left); "A griffin settles among the statues and Nelim brings it meat." Risk: a donkey or hare overlaps the wing; plan: they stand at 5 cells, animals of the place removed first.

@@ -1,0 +1,3 @@
+2026-10-23 df08 + 6ea8 (one launch, set sanctuary, 2 of 2 passed, exit 0): probe "save pets, sandstone tile and Nelim's hair" and scene 1 "the griffin among the statues" (zoom 6, haul).
+Read: `the animal "Shogun" stands at` works on a save pet (labrador at the planned cell); TileSandstone laid (brick strip ends at Nelim); Highpony ponytail shown; no error logged. Yuki and Atticus were out of the probe frame, not read. Scene 1: griffin faces front, Nelim carries the meat towards (152, 98) with a hare beside her, ponytail and blue top read; SculptureGrand (green object) and a dark smudge still in frame; Nelim small at zoom 6.
+Evidence read then deleted (probes, not proof of `Mod/`).

@@ -49,3 +49,5 @@ nelim.resolvethisinstead   path:ResolveThisInstead/Mod
 Mlie.UseThisInstead        3396308787
 # Roo's HD Hairstyles (Continued): Nelim's high ponytail Roo_HD_Hair_Highpony (owner, 2026-10-23); same line as SanctuaryBacklot's wsl-deps.sanctuary-looks.map.
 rooboid.hdhair.continued 3559870636
+# Probe 2 and the rewritten scenes 4: head framing needs a camera range below 11 (NPT CameraZoom docs): SimpleCameraSetting, as wsl-deps.look-gallery.map.
+ray1203.SimpleCameraSetting 3232415388

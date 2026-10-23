@@ -25,6 +25,14 @@
 # pinned to its cell (`the animal ... stands at ... facing South`), and every companion named below is spawned by the scenario, not hoped for.
 # The cells below were read on the places' own empty photographs (SanctuaryBacklot/evidence/places-current), not guessed.
 #
+# REWORK 2026-10-23, after the director's reading of the eight candidates (owner asked to rework the scenario; captures read in Art/Gallery-clean):
+#   Hair: Nelim wears the high ponytail `Roo_HD_Hair_Highpony` (owner, 2026-10-23; NELIM-PROFIL.md), set in every scenario by `"Nelim" hairstyle is` right after her top; map line `rooboid.hdhair.continued` added to wsl-deps.sanctuary.map. Nothing else in the run changes her hair.
+#   Reading: at zoom 5 to 7 her face is a few pixels, so the named expressions do not read (kappa at zoom 4 is the one where it nearly does). Only the griffin and the phoenix are reframed here (zoom 5, Nelim about 3 and 2 cells away); pegasus, kitsune, hound, unicorn, manticore keep zoom 5 or 6 and their expression stays set but unreadable: the pose, the offering and the top colour carry the picture.
+#   1 griffin: the right wing touched a small statue one cell east; griffin moved one cell west (153, 97), Nelim at (150, 97), zoom 5, griffin shown 1 cell left. Not resolved: a large green object at the top of the frame and a dark smudge on the ground (unidentified, to read on the replay and describe to NPT if still there).
+#   3 pegasus: Nelim stood on dry reeds in the grey water, little contrast; a patch of Soil (180-183, 173-175) is laid under her, the bank she stands on.
+#   5 phoenix (the weakest: small subject in a busy hall, Nelim lost, thrumbo and cat out of frame): zoom 5 instead of 7, phoenix shown 1 cell left, Nelim at (177, 116) two cells closer, a cat "Ember" at (176, 113) in the frame. The thrumbo of the hall is not in frame at zoom 5, not forced.
+#   Kept as read: 2 kappa, 4 hound (dark on dark wood, risk kept: the heads read), 6 kitsune, 7 unicorn, 8 manticore.
+#
 # THE STORY IN ONE PARAGRAPH (criterion k, 2026-10-18). WHO: Nelim, the sanctuary's keeper, and eight creatures of Alpha Mythology who come to her one after the other, each with an offering from her hands.
 # WHERE: Nelim's sanctuary. WHEN: one clear day, the 4th of September 5500 (the date of the save), from noon to 12:35, five game minutes between two episodes. EPISODES, each one moving on from the last:
 # she meets the griffin among the statues (12:00), carries a meal to the kappa at its pond (12:05), holds hay out to the pegasus at the water garden (12:10), walks to the tea room where the kitsune waits (12:15),
@@ -79,7 +87,7 @@ Feature: Workshop pictures
   Scenario: the griffin among the statues
     When Nelim's Pickle Tools: I let 60 ticks pass
     And Nelim's Sanctuary: the animals are removed from the sanctuary "statue-garden"
-    And Nelim's Pickle Tools: an adult animal of kind "MM_Griffin" named "Aurelia" is spawned at (154, 97)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Griffin" named "Aurelia" is spawned at (153, 97)
     And Nelim's Pickle Tools: an adult animal of kind "Donkey" named "Pilar" is spawned at (159, 98)
     And Nelim's Pickle Tools: an adult animal of kind "Hare" named "Fennel" is spawned at (151, 98)
     And Nelim's Pickle Tools: I place the decor "SculptureSmall" at (152, 99)
@@ -89,13 +97,14 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (40, 120, 125)
-    And Nelim's Pickle Tools: "Nelim" stands at (151, 97) facing East
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
+    And Nelim's Pickle Tools: "Nelim" stands at (150, 97) facing East
     And Nelim's Pickle Tools: "Nelim" carries the item "Meat_Muffalo"
     Then Alpha Mythology Renew the creature "Aurelia" is standing on the map as "MM_Griffin"
-    When Nelim's Pickle Tools: the animal "Aurelia" stands at (154, 97) facing South
+    When Nelim's Pickle Tools: the animal "Aurelia" stands at (153, 97) facing South
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "statue-garden"
-    And Alpha Mythology Renew frames the animal "Aurelia" at zoom 6, shown 0 cells left and 0 cells up
+    And Alpha Mythology Renew frames the animal "Aurelia" at zoom 5, shown 1 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Open"
@@ -116,6 +125,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (224, 112, 96)
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" stands at (125, 69) facing West
     And Nelim's Pickle Tools: "Nelim" carries the item "MealSimple"
     Then Alpha Mythology Renew the creature "Ondine" is standing on the map as "MM_Kappa"
@@ -132,6 +142,7 @@ Feature: Workshop pictures
   Scenario: the pegasus at the water garden
     When Nelim's Pickle Tools: I let 476 ticks pass
     And Nelim's Pickle Tools: an adult animal of kind "MM_Pegasus" named "Zephyra" is spawned at (177, 173)
+    And Nelim's Pickle Tools: I lay the floor "Soil" from (180, 173) to (183, 175)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (179, 175)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (175, 171)
     And Nelim's Pickle Tools: the plants from (179, 175) to (179, 175) are fully grown
@@ -140,6 +151,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (232, 170, 60)
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" stands at (181, 174) facing West
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     Then Alpha Mythology Renew the creature "Zephyra" is standing on the map as "MM_Pegasus"
@@ -168,6 +180,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (52, 70, 130)
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" stands at (141, 66) facing West
     And Nelim's Pickle Tools: "Nelim" carries the item "MealFine"
     Then Alpha Mythology Renew the creature "Inari" is standing on the map as "MM_Kitsune"
@@ -186,6 +199,7 @@ Feature: Workshop pictures
     When Nelim's Pickle Tools: I let 500 ticks pass
     And Nelim's Pickle Tools: I let 392 ticks pass
     And Nelim's Pickle Tools: an adult animal of kind "MM_Phoenix" named "Cinder" is spawned at (180, 115)
+    And Nelim's Pickle Tools: an adult animal of kind "Cat" named "Ember" is spawned at (176, 113)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (178, 117)
     And Nelim's Pickle Tools: I place the decor "Brazier" at (183, 117)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (178, 117) is lit
@@ -194,13 +208,14 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (40, 110, 90)
-    And Nelim's Pickle Tools: "Nelim" stands at (176, 116) facing East
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
+    And Nelim's Pickle Tools: "Nelim" stands at (177, 116) facing East
     And Nelim's Pickle Tools: "Nelim" carries the item "WoodLog"
     Then Alpha Mythology Renew the creature "Cinder" is standing on the map as "MM_Phoenix"
     When Nelim's Pickle Tools: the animal "Cinder" stands at (180, 115) facing South
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "fire-pit"
-    And Alpha Mythology Renew frames the animal "Cinder" at zoom 7, shown 0 cells left and 0 cells up
+    And Alpha Mythology Renew frames the animal "Cinder" at zoom 5, shown 1 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Open"
@@ -221,6 +236,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (236, 226, 200)
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" stands at (183, 128) facing West
     And Nelim's Pickle Tools: "Nelim" carries the item "Kibble"
     Then Alpha Mythology Renew the creature "Balthazar" is standing on the map as "MM_Cerberus"
@@ -250,6 +266,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (130, 60, 120)
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: the colonist "Nelim" stands on the nearest free cell around (185, 88)
     And Nelim's Pickle Tools: "Nelim" carries the item "RawBerries"
     Then Alpha Mythology Renew the creature "Morwen" is standing on the map as "MM_Unicorn"
@@ -285,6 +302,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (176, 48, 56)
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" stands at (222, 117) facing East
     And Nelim's Pickle Tools: "Nelim" carries the item "Pemmican"
     Then Alpha Mythology Renew the creature "Thessaly" is standing on the map as "MM_Manticore"

@@ -47,3 +47,5 @@ nelim.pickletools.filmticks         path:PickleTools/FilmTicks/Mod
 nelim.pickletools.screenshotmode    path:PickleTools/ScreenshotMode/Mod
 nelim.resolvethisinstead   path:ResolveThisInstead/Mod
 Mlie.UseThisInstead        3396308787
+# Roo's HD Hairstyles (Continued): Nelim's high ponytail Roo_HD_Hair_Highpony (owner, 2026-10-23); same line as SanctuaryBacklot's wsl-deps.sanctuary-looks.map.
+rooboid.hdhair.continued 3559870636

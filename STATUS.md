@@ -175,3 +175,17 @@ Rework 6 of 2026-10-23: a probe scenario ("probe: save pets, sandstone tile and 
 2026-10-23 (owner): the eight candidate images of the first rework (`Art/Gallery/*-candidate-*.jpg` and their clean originals in `Art/Gallery-clean/`, from tickets c6b6 and a7e0) are deleted, they belonged to the plan before the rework; the accepted gallery (`0-preview` and 1 to 8) is untouched. They stay in git history (`git show 391858a:Art/Gallery/2-candidate-griffin.jpg`). The anomalies read on them (wing on a statue, phoenix too small, hound dark on dark, Victoria hair) stay in this file as the reasons of the rework.
 Rework 7 of 2026-10-23 (owner: again 1 to 6): only scene 3 moves on paper (frame "shown 3 cells left" so the geyser (149, 173) leaves the frame, daylily at (152, 170)); the five others keep their cells and zooms, what remains in 1, 2, 4, 5, 6 is settled only by a play. Next: the probe ticket, then the eight shots.
 Shot 1 reworked 2026-10-23 (owner): zoom 3 so the face and the offering read, donkey to (157, 98); e (visible action) waits for NPT's forced-job step; confidence stays 3 (cap: fix never played), zoom 3 now a doubt in this feature.
+
+## Shotlist 2026-10-23 (write-shotlist, Opus director's pass; full lines in the header of `09-publication-shots.feature`, block "SHOTLIST 2026-10-23"; the scenarios below still carry the previous steps)
+Story: one clear day, 4 September 5500, noon to dusk, every creature finds its place in Nelim's sanctuary; one outfit all day (deep blue top (36, 72, 140)), hours 12:00, 12:40, 13:30, 14:30, 15:30, 16:30, 17:15, 18:00. Series: wide opening (1), medium (2, 3, 5, 6, 7), close (4), wide closing at dusk (8). Kept from the Opus: haul/Tame/Refuel/Harvest instead of five Tame, visible carried items, manticore zoom 6, no meal in the close shot, a log instead of a fire catching, no sleeping Atticus, no sandstone strip, hours spread to dusk. Rejected: none; the jobs it flags (Tame on spawned animals, Harvest targets) stay guesses.
+| Scene | b decor | d outfit | e gesture, instant, how | f frame | j thumbnail | Est | Risk |
+|---|---|---|---|---|---|---|---|
+| 1 griffin 12:00 | sculpture, daylily | blue top | walks with meat; arrives; HaulToCell | z6 wide | griffin about 1/3 height | 3.5 | haul with an item unplayed |
+| 2 kappa 12:40 | tall grass, stool | same | Tame bubble; just begun; Tame | z4 | kappa small | 3.5 | Tame on a spawned animal |
+| 3 pegasus 13:30 | daylily, tall grass | same | carries hay; approaching; haul | z4 right | pegasus 1/3 | 3.5 | wild bank animals drift |
+| 4 kitsune 14:30 | torch, bonsai | same | face to face; Tame guess | close, root 3 | fills frame | 3.5 | SimpleCameraSetting, Tame |
+| 5 phoenix 15:30 | torch, brazier | same | log to campfire; Refuel | z4 | phoenix 1/3 | 3.5 | animal beside campfire cell |
+| 6 hound 16:30 | stool, bonsai | same | drags kibble; haul | z5 left | hound 1/3 | 3.5 | haul a sack, dark on wood |
+| 7 unicorn 17:15 | bonsai, daylily | same | picks berries; Harvest | z5 | unicorn small | 3.5 | berry bush as target |
+| 8 manticore 18:00 | sculpture, tall grass | same | harvests rice; Harvest | z6 wide dusk | manticore about 1/4 | 3.5 | rice Harvest, dusk light |
+Estimates are 3.5 until a probe 2 plays the jobs (haul, Refuel, Harvest, Tame, head framing); no ticket for a scene below 4 except that probe. Next: probe 2 after the tickets df08 and 6ea8 return, then the scenarios are rewritten.

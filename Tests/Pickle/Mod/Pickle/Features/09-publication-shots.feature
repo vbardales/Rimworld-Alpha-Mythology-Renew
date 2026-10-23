@@ -28,9 +28,9 @@
 # REWORK 2026-10-23, after the director's reading of the eight candidates (owner asked to rework the scenario; captures read in Art/Gallery-clean):
 #   Hair: Nelim wears the high ponytail `Roo_HD_Hair_Highpony` (owner, 2026-10-23; NELIM-PROFIL.md), set in every scenario by `"Nelim" hairstyle is` right after her top; map line `rooboid.hdhair.continued` added to wsl-deps.sanctuary.map. Nothing else in the run changes her hair.
 #   Reading: at zoom 5 to 7 her face is a few pixels, so the named expressions do not read (kappa at zoom 4 is the one where it nearly does). Only the griffin and the phoenix are reframed here (zoom 5, Nelim about 3 and 2 cells away); pegasus, kitsune, hound, unicorn, manticore keep zoom 5 or 6 and their expression stays set but unreadable: the pose, the offering and the top colour carry the picture.
-#   1 griffin: the right wing touched a small statue one cell east; griffin moved one cell west (153, 97), Nelim at (150, 97), zoom 5, griffin shown 1 cell left. Not resolved: a large green object at the top of the frame and a dark smudge on the ground (unidentified, to read on the replay and describe to NPT if still there).
+#   1 griffin: the right wing touched a small statue one cell east; griffin moved one cell west (153, 97), Nelim at (150, 97), zoom 5, griffin shown 1 cell left. Read by NSB 2026-10-23: the green object is the fixture SculptureGrand at (149, 94), kept (theme); the smudge is terrain or a pawn shadow, no thing; the hair default of the save is Victoria, so the hairstyle step stays needed.
 #   3 pegasus: Nelim stood on dry reeds in the grey water, little contrast; a patch of Soil (180-183, 173-175) is laid under her, the bank she stands on.
-#   5 phoenix (the weakest: small subject in a busy hall, Nelim lost, thrumbo and cat out of frame): zoom 5 instead of 7, phoenix shown 1 cell left, Nelim at (177, 116) two cells closer, a cat "Ember" at (176, 113) in the frame. The thrumbo of the hall is not in frame at zoom 5, not forced.
+#   5 phoenix (the weakest: small subject in a busy hall, Nelim lost, thrumbo and cat out of frame): zoom 5 instead of 7, phoenix shown 1 cell left, Nelim at (177, 116) two cells closer, a cat "Ember" at (177, 113) in the frame (176 holds a daylily pot, NSB). The thrumbo of the hall is not in frame at zoom 5, not forced.
 #   Kept as read: 2 kappa, 4 hound (dark on dark wood, risk kept: the heads read), 6 kitsune, 7 unicorn, 8 manticore.
 #
 # THE STORY IN ONE PARAGRAPH (criterion k, 2026-10-18). WHO: Nelim, the sanctuary's keeper, and eight creatures of Alpha Mythology who come to her one after the other, each with an offering from her hands.
@@ -199,7 +199,7 @@ Feature: Workshop pictures
     When Nelim's Pickle Tools: I let 500 ticks pass
     And Nelim's Pickle Tools: I let 392 ticks pass
     And Nelim's Pickle Tools: an adult animal of kind "MM_Phoenix" named "Cinder" is spawned at (180, 115)
-    And Nelim's Pickle Tools: an adult animal of kind "Cat" named "Ember" is spawned at (176, 113)
+    And Nelim's Pickle Tools: an adult animal of kind "Cat" named "Ember" is spawned at (177, 113)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (178, 117)
     And Nelim's Pickle Tools: I place the decor "Brazier" at (183, 117)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (178, 117) is lit

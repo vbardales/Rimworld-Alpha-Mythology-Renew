@@ -32,6 +32,11 @@
 #   3 pegasus: Nelim stood on dry reeds in the grey water, little contrast; a patch of Soil (180-183, 173-175) is laid and she stands on (182, 174), a cell with no reed or grass (NSB: the grass is at (180, 174) and (181, 173-174); soil laid under a plant does not remove it, so the first fix was not enough).
 #   5 phoenix (the weakest: small subject in a busy hall, Nelim lost, thrumbo and cat out of frame): zoom 5 instead of 7, phoenix shown 1 cell left, Nelim at (177, 116) two cells closer, a cat "Ember" at (177, 113) in the frame (176 holds a daylily pot, NSB). The thrumbo of the hall is not in frame at zoom 5, not forced.
 #   Kept as read: 2 kappa, 4 hound (dark on dark wood, risk kept: the heads read), 6 kitsune, 7 unicorn, 8 manticore.
+#   REWORK 2 2026-10-23 (owner: rework 3, 4, 5, 6; cells read in SanctuaryBacklot SANCTUAIRE-CASES.md and NSB's answers):
+#   3 pegasus: Nelim on (181, 175), a cell with no plant (reeds x=179, grass (180-181, 173-174), bulrush (181, 176)) on the Soil patch; zoom 4 (was 5) so the winged horse and her face are larger.
+#   4 kitsune: zoom 3 (was 6), shown 1 cell left: the frame is 6 cells high, so the DarklightBrazier at (144, 70), 4 cells above the fox, falls outside it without any hide step; the fox and Nelim are twice as big.
+#   5 phoenix: zoom 4 (was 5); the phoenix stands on the grey hearth stones (180-182, 114-116) read on the first capture, red on grey, Nelim 3 cells away, cat at (177, 113) (free per the list).
+#   6 hound: the black hound on dark wood did not stand out; a strip of `TileSandstone` (176-183, 127-128, name from vanilla terrain, to be read: the step fails with the known names if wrong) is laid under it, and Nelim's top is sky blue (90, 150, 210) instead of cream, which would vanish on pale tile.
 #
 # THE STORY IN ONE PARAGRAPH (criterion k, 2026-10-18). WHO: Nelim, the sanctuary's keeper, and eight creatures of Alpha Mythology who come to her one after the other, each with an offering from her hands.
 # WHERE: Nelim's sanctuary. WHEN: one clear day, the 4th of September 5500 (the date of the save), from noon to 12:35, five game minutes between two episodes. EPISODES, each one moving on from the last:
@@ -52,7 +57,7 @@
 # where she stands (about four cells from the creature, turned towards it or towards the visitor) and her expression, set last, right before the capture, after the map is held at
 # 20 degrees (no heat face) and her own face is set (two brows, smirk smile, blink). No other pawn: the visitors are the creatures.
 #   1 griffin: teal top, NLR-Open (wonder), (153, 97) facing East   2 kappa: coral top, moodCheerful, (125, 69) facing West   3 pegasus: saffron top, NLR-Smile, (181, 174) facing West
-#   4 kitsune: indigo top, moodCheerful2, (141, 66) facing West      5 phoenix: green top, NLR-Open, (176, 116) facing East     6 hound: cream top, SocialRelax (calm among wary dogs), (183, 128) facing West
+#   4 kitsune: indigo top, moodCheerful2, (141, 66) facing West      5 phoenix: green top, NLR-Open, (176, 116) facing East     6 hound: sky-blue top, SocialRelax (calm among wary dogs), (183, 128) facing West
 #   7 unicorn: plum top, moodCheerful2, (188, 87) facing East        8 manticore: crimson top, NLR-Smile, (222, 117) facing East
 # Cells beside the creature are read from the place lists, not from a photograph: a step that says "not standable" names the cell to move.
 # 9. window-backdrop-for-height, the settings window, a plain screen capture of what it is, the interface on and developer mode off so that its toolbar is not in the picture.
@@ -152,13 +157,13 @@ Feature: Workshop pictures
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (232, 170, 60)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
-    And Nelim's Pickle Tools: "Nelim" stands at (182, 174) facing West
+    And Nelim's Pickle Tools: "Nelim" stands at (181, 175) facing West
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     Then Alpha Mythology Renew the creature "Zephyra" is standing on the map as "MM_Pegasus"
     When Nelim's Pickle Tools: the animal "Zephyra" stands at (177, 173) facing South
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "water-garden"
-    And Alpha Mythology Renew frames the animal "Zephyra" at zoom 5, shown 2 cells left and 0 cells up
+    And Alpha Mythology Renew frames the animal "Zephyra" at zoom 4, shown 2 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"
@@ -188,7 +193,7 @@ Feature: Workshop pictures
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "tea-room"
     And Nelim's Pickle Tools: the painted zones are hidden
-    And Alpha Mythology Renew frames the animal "Inari" at zoom 6, shown 2 cells left and -2 cells up
+    And Alpha Mythology Renew frames the animal "Inari" at zoom 3, shown 1 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+moodCheerful2"
@@ -215,7 +220,7 @@ Feature: Workshop pictures
     When Nelim's Pickle Tools: the animal "Cinder" stands at (180, 115) facing South
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "fire-pit"
-    And Alpha Mythology Renew frames the animal "Cinder" at zoom 5, shown 1 cells left and 0 cells up
+    And Alpha Mythology Renew frames the animal "Cinder" at zoom 4, shown 1 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Open"
@@ -230,12 +235,13 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: an adult animal of kind "MM_Cerberus" named "Balthazar" is spawned at (179, 127)
     And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Mira" is spawned at (172, 127)
     And Nelim's Pickle Tools: an adult animal of kind "LabradorRetriever" named "Shogun" is spawned at (187, 126)
+    And Nelim's Pickle Tools: I lay the floor "TileSandstone" from (176, 127) to (183, 128)
     And Nelim's Pickle Tools: I place the decor "Stool" at (175, 127)
     And Nelim's Pickle Tools: I place the decor "PlantPot_Bonsai" at (186, 127)
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
-    And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (236, 226, 200)
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (90, 150, 210)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" stands at (183, 128) facing West
     And Nelim's Pickle Tools: "Nelim" carries the item "Kibble"

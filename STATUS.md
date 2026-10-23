@@ -147,3 +147,16 @@ Code review 2026-10-13 (prepareRelease 12.a): range 8ff9b37..92bdc6ece455a8dcb3e
 ## Scenario rework 2026-10-23 (after reading the eight candidates; not played yet)
 
 Director's reading of the eight candidates (Art/Gallery-clean) then rework of `09-publication-shots.feature` (header block "REWORK 2026-10-23"): Nelim's hair is the high ponytail `Roo_HD_Hair_Highpony` (owner, same day; step `"Nelim" hairstyle is` in every scenario, `rooboid.hdhair.continued` added to `wsl-deps.sanctuary.map`, not yet played so the fixture default is unread); griffin moved one cell west and zoom 5 (wing touched a statue); pegasus gets a Soil patch under Nelim (she stood on dry reeds); phoenix reframed to zoom 5 with a cat and Nelim two cells closer (weakest picture). Open and unverified: a green object and a dark smudge in the griffin frame, a blue flame inside the hut of the kitsune, faces unreadable at zoom 5 to 6 (expressions set but not visible). Estimated 4 for 1, 3 and 5 after the rework, to confirm on the replay; the other five keep their 4. No ticket filed: waiting for the owner's go.
+
+Shotlist a to k after the 2026-10-23 rework (estimate before replay; faces unreadable at zoom 5 to 6, so d's expression is set but not visible; all eight: a noon sanctuary, clear, 4 Sept 5500, 5 min between scenes; i one subject; j the creature; k the one story of the header; d hair Roo_HD_Hair_Highpony):
+| Scene | b decor | c living | d top, expression | e action | f frame | Est | Risk, plan |
+|---|---|---|---|---|---|---|---|
+| 1 griffin, statue-garden 12:00 | SculptureSmall, daylily | donkey, hare, griffin front | teal, NLR-Open | brings meat | z5, 1 left | 4 | green object, smudge unread; replay |
+| 2 kappa, fishing-zone 12:05 | 2 daylilies | swan, duck, kappa front | coral, moodCheerful | brings meal | z4, 2 left | 4 | small subject; zoom 4 |
+| 3 pegasus, water-garden 12:10 | 2 daylilies, Soil patch | swan, pegasus front | saffron, NLR-Smile | holds hay | z5, 2 left | 4 | grey water; Soil under Nelim |
+| 4 kitsune, tea-room 12:15 | torch lit, bonsai pot | cat, labrador, fox front | indigo, moodCheerful2 | brings fine meal | z6, up 2 | 4 | blue flame in hut; zones hidden |
+| 5 phoenix, fire-pit 12:20 | torch, brazier lit | cat Ember, phoenix | green, NLR-Open | feeds hearth | z5, 1 left | 4 | still small in hall; else back to 3 |
+| 6 hound, cloister 12:25 | stool, bonsai pot | 2 labradors, 3 heads front | cream, SocialRelax | brings kibble | z6 | 4 | dark on dark wood; heads read |
+| 7 unicorn, plant-garden 12:30 | 2 daylilies | 3 sparrows, unicorn front | plum, moodCheerful2 | holds berries | z5 | 4 | free cell; nearest-free step |
+| 8 manticore, rice-paddies 12:35 | sculpture, daylily, Soil | herons, chickens, manticore front | crimson, NLR-Smile | brings pemmican | z6, 2 left | 4 | rice grown; plants step |
+Interface 9 and 10 (window-backdrop-for-height) set aside. Real verdicts of the 2026-10-18 candidates: accept pending the owner; director reading in chat 2026-10-23 (5 and 6 best, 1 weakest).

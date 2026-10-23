@@ -29,7 +29,7 @@
 #   Hair: Nelim wears the high ponytail `Roo_HD_Hair_Highpony` (owner, 2026-10-23; NELIM-PROFIL.md), set in every scenario by `"Nelim" hairstyle is` right after her top; map line `rooboid.hdhair.continued` added to wsl-deps.sanctuary.map. Nothing else in the run changes her hair.
 #   Reading: at zoom 5 to 7 her face is a few pixels, so the named expressions do not read (kappa at zoom 4 is the one where it nearly does). Only the griffin and the phoenix are reframed here (zoom 5, Nelim about 3 and 2 cells away); pegasus, kitsune, hound, unicorn, manticore keep zoom 5 or 6 and their expression stays set but unreadable: the pose, the offering and the top colour carry the picture.
 #   1 griffin: the right wing touched a small statue one cell east; griffin moved one cell west (153, 97), Nelim at (150, 97), zoom 5, griffin shown 1 cell left. Read by NSB 2026-10-23: the green object is the fixture SculptureGrand at (149, 94), kept (theme); the smudge is terrain or a pawn shadow, no thing; the hair default of the save is Victoria, so the hairstyle step stays needed.
-#   3 pegasus: Nelim stood on dry reeds in the grey water, little contrast; a patch of Soil (180-183, 173-175) is laid under her, the bank she stands on.
+#   3 pegasus: Nelim stood on dry reeds in the grey water, little contrast; a patch of Soil (180-183, 173-175) is laid and she stands on (182, 174), a cell with no reed or grass (NSB: the grass is at (180, 174) and (181, 173-174); soil laid under a plant does not remove it, so the first fix was not enough).
 #   5 phoenix (the weakest: small subject in a busy hall, Nelim lost, thrumbo and cat out of frame): zoom 5 instead of 7, phoenix shown 1 cell left, Nelim at (177, 116) two cells closer, a cat "Ember" at (177, 113) in the frame (176 holds a daylily pot, NSB). The thrumbo of the hall is not in frame at zoom 5, not forced.
 #   Kept as read: 2 kappa, 4 hound (dark on dark wood, risk kept: the heads read), 6 kitsune, 7 unicorn, 8 manticore.
 #
@@ -152,7 +152,7 @@ Feature: Workshop pictures
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (232, 170, 60)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
-    And Nelim's Pickle Tools: "Nelim" stands at (181, 174) facing West
+    And Nelim's Pickle Tools: "Nelim" stands at (182, 174) facing West
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     Then Alpha Mythology Renew the creature "Zephyra" is standing on the map as "MM_Pegasus"
     When Nelim's Pickle Tools: the animal "Zephyra" stands at (177, 173) facing South

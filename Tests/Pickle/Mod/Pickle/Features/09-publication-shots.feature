@@ -49,6 +49,7 @@
 #   REWORK 6 2026-10-23 (owner: again, scenes 1 to 6; the paper is nearly exhausted, what is left needs the replay): scene 3 frame "shown 3 cells left" puts the camera at x 157, the visible x range is about 149.9 to 164.1, so the steam geyser at (149, 173) leaves the frame and the water gets the right half; the daylily moves to (152, 170) so it is not cut by the left edge. The other five scenes keep their cells and zooms: the remaining doubts (small subject on 2 and 5, contrast on 3 and 6, `stands at` on save pets, `TileSandstone`, zoom 3) can only be settled by a play, the probe scenario at the end settles three of them.
 #   REWORK 7 2026-10-23 (owner: work shot 1): the griffin scene goes to zoom 3 so that Nelim's face and the offering read (at zoom 5 the face was a few pixels): frame 6 cells high, griffin centred, Nelim at (150, 97) three cells to its left, hare Fennel (151, 98) beside her, donkey Pilar moved to (157, 98) (the old (159, 98) leaves the frame), statues SculptureSmall (152, 99) and (155, 97) and the daylily (156, 99) stay inside. Still open: the visible action of Nelim (NPT is writing a forced-job step, then this scene uses it); zoom 3 not yet played in this feature (the probe does not frame it, the kitsune scene does).
 #   REWORK 5 2026-10-23 (rate-gallery found criterion b weak on 2, 3, 7, 8 and f weak on 1 to 5): the decor sets now differ from one scene to the next (1 sculpture + daylily; 2 tall yellow grass + stool; 3 daylily + tall yellow grass; 7 bonsai pot + daylily; 8 sculpture + tall yellow grass; 4 torch + bonsai; 5 torch + brazier; 6 stool + bonsai), only defNames played and read in GALLERY-PROPS.md; the shot plan lines of 1 to 5 carry the zooms and cells of the scenarios. Not played, so no cap lifts.
+#   REWORK 8 2026-10-24 (owner: rework shot 1 before the ticket; read on capture 6ea8, zoom 6, Nelim small): the green object is NOT at NSB's (149, 94): on the capture it stands north-west of the griffin, about 2 cells west and 4.6 to 3 cells north, a 3x3 block whose south edge is near z 100 (cell not confirmed, NSB's coordinates look off); the dark smudge is at about (157, 94), south-east. Frame now zoom 3 (about 8 cells high, 15 wide at the 65 px per cell measured at zoom 6), camera 4 cells west of the griffin ("shown -4 cells left", negative = subject right of centre, never played) and 2 cells down ("up 2"): visible x about 141.6 to 156.4, z about 90.9 to 99.2, so the block (south edge z 100) and the smudge (x 157) fall outside; the donkey moves to (155, 96) to stay in the frame. Nelim, mid-haul, is near the centre and her face and the meat read. To read on the replay: negative `left` parsed, sculpture and smudge out, unnamed cells free.
 #
 # SHOTLIST 2026-10-23 (write-shotlist, director's pass by an Opus sub-agent; it SUPERSEDES the story and the shot plan below, whose scenarios are rewritten after the tickets df08 and 6ea8 return, so the steps of the eight scenarios below are still the previous version):
 # STORY. One clear day, 4 September 5500, noon to dusk: every creature of Alpha Mythology finds its place in Nelim's sanctuary. Nelim (Virginie) keeps ONE outfit all day, a deep-blue top (36, 72, 140), grey trousers, high ponytail Roo_HD_Hair_Highpony, brown eyes: the day is six hours, nothing in the story makes her change. Hours by `I set the hour to N`: 12:00, 13:00, 14:00, 15:00, 16:00, 17:00, about 17:12, 18:00 (the light moves on, the last image is dusk). Weather Clear.
@@ -119,7 +120,7 @@ Feature: Workshop pictures
     When Nelim's Pickle Tools: I let 60 ticks pass
     And Nelim's Sanctuary: the animals are removed from the sanctuary "statue-garden"
     And Nelim's Pickle Tools: an adult animal of kind "MM_Griffin" named "Aurelia" is spawned at (153, 97)
-    And Nelim's Pickle Tools: an adult animal of kind "Donkey" named "Pilar" is spawned at (157, 98)
+    And Nelim's Pickle Tools: an adult animal of kind "Donkey" named "Pilar" is spawned at (155, 96)
     And Nelim's Pickle Tools: an adult animal of kind "Hare" named "Fennel" is spawned at (151, 98)
     And Nelim's Pickle Tools: I place the decor "SculptureSmall" at (152, 99)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (156, 99)
@@ -137,7 +138,7 @@ Feature: Workshop pictures
     When Nelim's Pickle Tools: the animal "Aurelia" stands at (153, 97) facing South
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "statue-garden"
-    And Alpha Mythology Renew frames the animal "Aurelia" at zoom 6, shown 0 cells left and 0 cells up
+    And Alpha Mythology Renew frames the animal "Aurelia" at zoom 3, shown -4 cells left and 2 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Open"

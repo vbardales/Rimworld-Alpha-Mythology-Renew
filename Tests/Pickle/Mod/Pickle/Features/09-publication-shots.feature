@@ -50,6 +50,11 @@
 #   REWORK 7 2026-10-23 (owner: work shot 1): the griffin scene goes to zoom 3 so that Nelim's face and the offering read (at zoom 5 the face was a few pixels): frame 6 cells high, griffin centred, Nelim at (150, 97) three cells to its left, hare Fennel (151, 98) beside her, donkey Pilar moved to (157, 98) (the old (159, 98) leaves the frame), statues SculptureSmall (152, 99) and (155, 97) and the daylily (156, 99) stay inside. Still open: the visible action of Nelim (NPT is writing a forced-job step, then this scene uses it); zoom 3 not yet played in this feature (the probe does not frame it, the kitsune scene does).
 #   REWORK 5 2026-10-23 (rate-gallery found criterion b weak on 2, 3, 7, 8 and f weak on 1 to 5): the decor sets now differ from one scene to the next (1 sculpture + daylily; 2 tall yellow grass + stool; 3 daylily + tall yellow grass; 7 bonsai pot + daylily; 8 sculpture + tall yellow grass; 4 torch + bonsai; 5 torch + brazier; 6 stool + bonsai), only defNames played and read in GALLERY-PROPS.md; the shot plan lines of 1 to 5 carry the zooms and cells of the scenarios. Not played, so no cap lifts.
 #   REWORK 8 2026-10-24 (owner: rework shot 1 before the ticket; read on capture 6ea8, zoom 6, Nelim small): the green object is NOT at NSB's (149, 94): on the capture it stands north-west of the griffin, about 2 cells west and 4.6 to 3 cells north, a 3x3 block whose south edge is near z 100 (cell not confirmed, NSB's coordinates look off); the dark smudge is at about (157, 94), south-east. Frame now zoom 3 (about 8 cells high, 15 wide at the 65 px per cell measured at zoom 6), camera 4 cells west of the griffin ("shown -4 cells left", negative = subject right of centre, never played) and 2 cells down ("up 2"): visible x about 141.6 to 156.4, z about 90.9 to 99.2, so the block (south edge z 100) and the smudge (x 157) fall outside; the donkey moves to (155, 96) to stay in the frame. Nelim, mid-haul, is near the centre and her face and the meat read. To read on the replay: negative `left` parsed, sculpture and smudge out, unnamed cells free.
+#   REWORK 9 2026-10-25 (rate-gallery found f weak on 5, 7, 8: Nelim had no cell, 40 ticks cannot bring her from the save's position; owner: colonists smile by default):
+#   5 phoenix: Nelim at (178, 113) facing East, west of the WoodLog (179, 113) (fire-pit free cells row 113: 177-184, SANCTUAIRE-CASES.md; cat Ember at 177 beside her), expression NLR-Smile (was NLR-Open). Paused tick: the order then 40 ticks (`I let 40 ticks pass`), the game is paused otherwise.
+#   7 unicorn: Nelim on the nearest free cell around (186, 91), next to the berry bush (187, 90); frame zoom 3 `0 left, -2 up` (camera 2 cells north of the unicorn, visible z about 84 to 92) so she and the bush are in it. The plant-garden is not in SANCTUAIRE-CASES.md: the cell is searched by the step, not read.
+#   8 manticore: Nelim on the nearest free cell around (221, 118), next to the rice (222, 118) (rice-paddies not in SANCTUAIRE-CASES.md either); chicken Berta moved to (226, 121) so no animal stands on her cell; frame zoom 5 `2 left` shows x about 215.7 to 240.3, z about 110 to 124 (65 to 78 px per cell measured at zoom 6), so Nelim and the rice are inside.
+#   Smile: expression NLR-Smile (5, 8) and moodCheerful2 (7); if the smile does not read on the capture, `"Nelim" mouth is "MouthSmile"` after the expression (NPT, usable, not seen on screen). Not done here: the Opus director pass (patch of three lines, not a new shotlist).
 #
 # SHOTLIST 2026-10-23 (write-shotlist, director's pass by an Opus sub-agent; it SUPERSEDES the story and the shot plan below, whose scenarios are rewritten after the tickets df08 and 6ea8 return, so the steps of the eight scenarios below are still the previous version):
 # STORY. One clear day, 4 September 5500, noon to dusk: every creature of Alpha Mythology finds its place in Nelim's sanctuary. Nelim (Virginie) keeps ONE outfit all day, a deep-blue top (36, 72, 140), grey trousers, high ponytail Roo_HD_Hair_Highpony, brown eyes: the day is six hours, nothing in the story makes her change. Hours by `I set the hour to N`: 12:00, 13:00, 14:00, 15:00, 16:00, 17:00, about 17:12, 18:00 (the light moves on, the last image is dusk). Weather Clear.
@@ -252,6 +257,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Sanctuary: the appearance of "Nelim" is logged
     And Nelim's Pickle Tools: I place the decor "WoodLog" at (179, 113)
+    And Nelim's Pickle Tools: "Nelim" stands at (178, 113) facing East
     And Nelim's Pickle Tools: "Nelim" is forced into the job "Refuel" on the building "Campfire" at (181, 115)
     And Nelim's Pickle Tools: I let 40 ticks pass
     Then Alpha Mythology Renew the creature "Cinder" is standing on the map as "MM_Phoenix"
@@ -261,7 +267,7 @@ Feature: Workshop pictures
     And Alpha Mythology Renew frames the animal "Cinder" at zoom 4, shown 1 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
-    And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Open"
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"
     Then I take a screenshot "workshop-5-the-phoenix-in-the-hearth-hall"
     When Nelim's Pickle Tools: the decor is removed
 
@@ -312,6 +318,7 @@ Feature: Workshop pictures
     And Nelim's Sanctuary: the appearance of "Nelim" is logged
     And Nelim's Pickle Tools: I place the decor "Plant_Berry" at (187, 90)
     And Nelim's Pickle Tools: the plants from (187, 90) to (187, 90) are fully grown
+    And Nelim's Pickle Tools: "Nelim" stands on the nearest free cell around (186, 91)
     And Nelim's Pickle Tools: "Nelim" is forced into the job "Harvest" on the plant at (187, 90)
     And Nelim's Pickle Tools: I let 40 ticks pass
     Then Alpha Mythology Renew the creature "Morwen" is standing on the map as "MM_Unicorn"
@@ -319,7 +326,7 @@ Feature: Workshop pictures
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "plant-garden"
     And Nelim's Pickle Tools: the painted zones are hidden
-    And Alpha Mythology Renew frames the animal "Morwen" at zoom 3, shown 0 cells left and 0 cells up
+    And Alpha Mythology Renew frames the animal "Morwen" at zoom 3, shown 0 cells left and -2 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+moodCheerful2"
@@ -335,7 +342,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: an adult animal of kind "Heron" named "Aube" is spawned at (221, 120)
     And Nelim's Pickle Tools: an adult animal of kind "Heron" named "Brume" is spawned at (231, 112)
     And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Hilda" is spawned at (223, 114)
-    And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Berta" is spawned at (222, 119)
+    And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Berta" is spawned at (226, 121)
     And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Greta" is spawned at (230, 120)
     And Nelim's Pickle Tools: I place the decor "SculptureSmall" at (220, 115)
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (224, 121)
@@ -346,6 +353,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (36, 72, 140)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Sanctuary: the appearance of "Nelim" is logged
+    And Nelim's Pickle Tools: "Nelim" stands on the nearest free cell around (221, 118)
     And Nelim's Pickle Tools: "Nelim" is forced into the job "Harvest" on the plant at (222, 118)
     And Nelim's Pickle Tools: I let 40 ticks pass
     Then Alpha Mythology Renew the creature "Thessaly" is standing on the map as "MM_Manticore"

@@ -212,3 +212,9 @@ Shotlist patch 2026-10-25 (write-shotlist 5, 7, 8; feature header REWORK 9, rate
 - Waiting on NPT deploy: the pause step and the persistent facing (built, not played, not deployed). Usable now: animal apparel, `"Nelim" mouth is`, hide by radius. Owner 2026-10-25: animals may be dressed, mouth overridden, colonists smile by default (scene 1 still `NLR-Open`, to change), wardrobe not validated, ask NPT freely and tell the owner if refused.
 - Scenes 5, 7, 8 placed Nelim (REWORK 9, feature header). Scene 6 still lays a sandstone strip that the shotlist dropped: decide.
 - `Art/Gallery-clean/` does not exist: the accepted gallery 1 to 8 has no clean originals for the subtitle step.
+
+## Open at sleep, 2026-10-29 (session code AlM)
+- Stage moved back to playTests[1.0.0] by replay-audit (owner yes, 7866a1d): see the 2026-10-29 `remaining` line (8.m review of `git diff 92bdc6ec..HEAD -- Mod`, 8.c replay, 7.d camerazoom tag and 2 undefined steps).
+- Ticket 20261028-225424-558-8b55 queued (scene 1 griffin, zoom 3, `-4 left, 2 up`, donkey (155, 96); evidence `Tests/Pickle/Inbox/shot1-griffin3`, dep map `wsl-deps.sanctuary.map`); answer by RUN_DONE. Ticket 72b3 crashed (exit 139, signo 11 at startup before any scenario, infra), refiled as 8b55; its evidence folder deleted.
+- `Art/Preview.config.json` has an uncommitted edit (`iconBadge` renamed `icon`, new config format, STYLE_RIMWORLD.md): not committed by this session, decide at the next Preview render.
+- STATUS.md is over 40 KB: move older sections to `docs/runs/` at the next quiet moment.

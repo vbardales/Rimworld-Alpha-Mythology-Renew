@@ -4,7 +4,7 @@ packageId: nelim.alphamythology
 repo: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew
 remote: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew.git
 visibility: public
-workflow_stage: shootGallery[1.0.0]
+workflow_stage: playTests[1.0.0]
 licence: silent
 licence_at: "2026-09-12: upstream master 53a5518008821188009bbf996b7120ad9593cb5f and the Workshop page reviewed (602 comments, Bug Reports thread); no project licence, no redistribution grant, no refusal found. Refreshed 2026-09-26. Only a retexture permission (2022-08-21, conditional on the game EULA) was found, not a licence for this port. Silent = public (owner's rule)."
 upstream_mod_remotes:
@@ -22,6 +22,7 @@ automated_tests: "passed 2026-10-10: Tests/UnitTests ALL PASSED (spawn rules 13,
 xml_tests: "passed 2026-10-17 (3357d07): Check-Mod.ps1 now also runs shared Check-Translations at its end with the 6 compatibility Keyed keys allowed (NocturnalAnimals.BodyClock*, VEF_WarningEggExplodes), 174 assertions, Test-Validator 6 negative cases green; earlier 2026-10-11: Check-ModBasics (shared) then Check-Mod.ps1 174 own assertions, 86 XML files, 25 creatures; Test-Validator.ps1 6 negative cases (the runner was red before this audit, see Audit 2026-10-10); shared scripts/Check-Translations.ps1 224 source texts and French injections green 2026-10-11 (replaced Check-Translations.py, deleted)"
 functional_tests: "unverified in this audit; Pickle history reports green passes (see Tests): not re-read here"
 remaining:
+  - "2026-10-29 replay-audit (owner confirmed the move back from shootGallery): 8.m open, code_review_sha 92bdc6ec is older than the text commits under Mod/ (7 Def files, Languages XML, 21a3e5c to 730ae3f): read `git diff 92bdc6ec..HEAD -- Mod`, then set code_review_sha; 8.c `?`: the green Pickle runs (2026-10-10, 2026-10-17) predate those text commits; 7.d: Check-Steps reports 09-publication-shots.feature without @requires:nelim.pickletools.camerazoom and 2 undefined steps (`stands on the nearest free cell around`, asked of NPT); the gallery work of shootGallery (scene 1 ticket 8b55) goes on meanwhile"
   - "2026-10-17 feature (upstream PR 6): English fixes to carry upstream: Manticore description now `attacking from range` (done here); Erymanthian boar `slowing its progress and advantage` is still to fix upstream only (suggested: `slowing it down and negating its advantage`); not changed here"
   - "2026-10-10 unverified (playTests 8.f to 8.k): the @requires passes and the incompatibility pass are green on earlier revisions and are replayed as non-regression after the deploy (followUp 14.a); functional scenarios 8.g, settings in game FR and EN 8.h and UI and logs 8.i are covered by the initial passes (84 scenarios each, every red replayed green, docs/runs/2026-10-10-1a12-d0ff-initial-passes.md); the owner's manual validations, if any, are hers"
   - "2026-10-10 feature (prepareRelease, AUDIT 3.c/11.f/12.e): CHANGELOG [Unreleased] stays on top until the dry-run; in the commit whose sha goes to the dry-run it becomes `## [1.0.0] - <planned send date>`; a slipped send means a corrected date, a new commit and a new dry-run (Check-Status WARNs changelog from publish on)"
@@ -40,8 +41,8 @@ code_review_sha: 92bdc6ece455a8dcb3e6ca3f1a33a31d492eab8b
 publication_changelog_review_sha: 92ed1e831806f7b0fead291d3b1a8ad738562bc9
 echo_review_sha: 1dfde4ad13f2a7adfb833de2ec2e3bc185e76967
 social_preview_sha256: d0458c9f6095218ab55b06095e179d508311792a755a8681115c9c626463f2c5
-updated: 2026-10-17
-protocols_read_sha: 709f94c1383b5e32138ef80caf13ef1057a42d1f
+updated: 2026-10-29
+protocols_read_sha: cc1f93006ee3756009054a0389731cff310d8784
 ---
 # Alpha Mythology Renew (unofficial): status
 

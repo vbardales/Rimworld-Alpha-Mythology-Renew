@@ -27,11 +27,9 @@
   "backgroundFile": "Preview-source.png",
   "echo": {
     "file": "echo-source.png",
-    "color": "var(--accent)",
-    "width": 250,
-    "height": 197
+    "color": "var(--accent)"
   },
-  "iconBadge": {
+  "icon": {
     "file": "ModIcon-source.png"
   },
   "palette": {

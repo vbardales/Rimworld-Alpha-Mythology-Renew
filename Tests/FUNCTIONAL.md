@@ -49,7 +49,7 @@ test of this mod, impossible here, or covered by a definition check. None is cou
 | Part | Reason | Proposed state |
 |---|---|---|
 | F06 automatic-fire toggle | the toggle is VEF's, not this mod's ("we do not test the game", AUDIT.md) | not applicable |
-| F07 hatch targets, hatch durations, trainability | values of the Defs, proved offline by Check-Mod; a run would only re-read them | not applicable (offline) |
+| F07 hatch targets, hatch durations, trainability | values of the Defs, proved offline by Rule-OwnValues; a run would only re-read them | not applicable (offline) |
 | F02 rare outcome sample, "repeat enough times" | the egg roll is a pure function proved by the unit tests (`PhoenixRules`) and the eggs by 40 deaths per life stage in feature 13 | covered |
 | F10 migration of an Animal Ark save | the older pack is private, its class names changed; migration is declared untested in `About.xml` and the README, by design | not applicable, disclosed |
 | F10 reduced Animal Ark beside this mod | no reduced Animal Ark build is available to mount; the original beside this port is the incompatibility pass (feature 11) | not applicable, the incompatibility pass stands in |

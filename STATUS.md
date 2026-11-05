@@ -40,7 +40,7 @@ remaining:
 code_review_sha: 92bdc6ece455a8dcb3e6ca3f1a33a31d492eab8b
 publication_changelog_review_sha: 92ed1e831806f7b0fead291d3b1a8ad738562bc9
 echo_review_sha: 1dfde4ad13f2a7adfb833de2ec2e3bc185e76967
-social_preview_sha256: d0458c9f6095218ab55b06095e179d508311792a755a8681115c9c626463f2c5
+social_preview_sha256: 8419ed574aa2f2eb1f46a596d28f128bd8ee1c38845596b482361c8eefdbd157
 updated: 2026-10-29
 protocols_read_sha: 295f4667da6367fc5dc43082cfe1c5ca82faeab9
 ---
@@ -222,3 +222,4 @@ Shotlist patch 2026-10-25 (write-shotlist 5, 7, 8; feature header REWORK 9, rate
 - 2026-11-05 resume: Preview regenerated (7b; config to new format: background.file, titleSize default removed), echo inside panel, no clipping or overlap with title, 600714 bytes. social_preview_sha256 stale: the GitHub social preview must be uploaded again (Virginie), then sha256 of Mod/About/Preview.png recorded. Archived session of 2026-10-20 deleted (superseded).
 - 2026-11-05 Preview rendered again with renderer 295f466 (config rewritten by the renderer to titleParts with a tag part; a break part added after 'Alpha Mythology' so the title stays on one line and clears the echo). Mod/About/Preview.png sha256 6432377f8401b908eb9b5ed75b5c3d2c002f58de379e9bd2d9fabde132ac6d75; social_preview_sha256 still the old one until Virginie uploads.
 - 2026-11-05 Preview rendered with panel.description (Fit-Description, protocols 489ccad, f8811ff): title 37 px on 3 lines clear of the echo, description on 2 lines cut at the echo ink. Mod/About/Preview.png sha256 8419ed574aa2f2eb1f46a596d28f128bd8ee1c38845596b482361c8eefdbd157; social_preview_sha256 stale until Virginie uploads.
+- 2026-11-05 Virginie confirmed the Preview in chat; GitHub social preview uploaded by this session (Settings, Social preview, upload shows the new image), social_preview_sha256 = 8419ed574aa2f2eb1f46a596d28f128bd8ee1c38845596b482361c8eefdbd157.

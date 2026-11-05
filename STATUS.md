@@ -42,7 +42,7 @@ publication_changelog_review_sha: 92ed1e831806f7b0fead291d3b1a8ad738562bc9
 echo_review_sha: 1dfde4ad13f2a7adfb833de2ec2e3bc185e76967
 social_preview_sha256: d0458c9f6095218ab55b06095e179d508311792a755a8681115c9c626463f2c5
 updated: 2026-10-29
-protocols_read_sha: cc1f93006ee3756009054a0389731cff310d8784
+protocols_read_sha: 295f4667da6367fc5dc43082cfe1c5ca82faeab9
 ---
 # Alpha Mythology Renew (unofficial): status
 
@@ -219,3 +219,4 @@ Shotlist patch 2026-10-25 (write-shotlist 5, 7, 8; feature header REWORK 9, rate
 - `Art/Preview.config.json` has an uncommitted edit (`iconBadge` renamed `icon`, new config format, STYLE_RIMWORLD.md): not committed by this session, decide at the next Preview render.
 - STATUS.md is over 40 KB: move older sections to `docs/runs/` at the next quiet moment.
 - 2026-11-03: ticket 8b55 crashed (exit 139, signo 11 GC at startup, infra). Refiled once as 20261103-083220-718-d722 (filter `09-publication-shots::the griffin among the statues` guessed, map wsl-deps.sanctuary.map, evidence `Tests/Pickle/Inbox/shot1-griffin3`); answer by RUN_DONE. If it crashes again at same place: send TM last lines of Player.log.
+- 2026-11-05 resume: Preview regenerated (7b; config to new format: background.file, titleSize default removed), echo inside panel, no clipping or overlap with title, 600714 bytes. social_preview_sha256 stale: the GitHub social preview must be uploaded again (Virginie), then sha256 of Mod/About/Preview.png recorded. Archived session of 2026-10-20 deleted (superseded).

@@ -226,3 +226,8 @@ Shotlist patch 2026-10-25 (write-shotlist 5, 7, 8; feature header REWORK 9, rate
 - 2026-11-05 echo review (Virginie, in chat): keep Art/echo-source.png (phoenix line-art), Preview with panel.description confirmed; echo_review_sha = 78c1e580deb99203ddece9fb25f09cd895f4b824.
 - 2026-11-05 tests moved to the new shape (Audit, AGENTS.md 'Mod tests shape'): Tests/Check-Mod.ps1 and Tests/Test-Validator.ps1 cut into Tests/Rule-OwnValues.ps1, generated Tests/Test-Mod.ps1 (CI/CD stamp 8dce1888dd29), build.yml has a windows-latest mod-tests job; Test-Mod 6 passed 0 failed locally. Awaiting Audit validation.
 - 2026-11-05 test shape validated by Audit (Rule-OwnValues stamped). Negative controls: Virginie chose (c) (none per mod; the proof belongs to the shared checks, scripts/Tests/Test-Check*.ps1, Audit's backlog).
+
+## Open at sleep, 2026-11-05 (session code AlM)
+- Ticket 20261103-083220-718-d722 (scene 1 griffin, evidence Tests/Pickle/Inbox/shot1-griffin3) still queued: answer by RUN_DONE from the TM.
+- Done today: Preview rendered with panel.description (protocols 489ccad, f8811ff), confirmed by Virginie, GitHub social preview uploaded, echo_review_sha and social_preview_sha256 set; tests moved to Rule-OwnValues + generated Test-Mod (validated by Audit), negative controls left to the shared checks (Virginie chose c).
+- Still open: 8.m code review of git diff 92bdc6ec..HEAD -- Mod (Opus sub-agent), then code_review_sha; 8.c replay of the Pickle runs after the text commits; 7.d camerazoom tag and 2 undefined steps; STATUS.md is 44 KB (move older sections to Docs/runs/); protocols changed since 295f4667 (AGENTS.md, docs/STYLE_RIMWORLD.md, docs/scripts.md...), re-read as diffs at resume.

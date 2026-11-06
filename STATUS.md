@@ -42,7 +42,7 @@ publication_changelog_review_sha: 92ed1e831806f7b0fead291d3b1a8ad738562bc9
 echo_review_sha: 78c1e580deb99203ddece9fb25f09cd895f4b824
 social_preview_sha256: 8419ed574aa2f2eb1f46a596d28f128bd8ee1c38845596b482361c8eefdbd157
 updated: 2026-10-29
-protocols_read_sha: 295f4667da6367fc5dc43082cfe1c5ca82faeab9
+protocols_read_sha: 5574d91d2dd934385abae1b2efc380d693bc9bcd
 ---
 # Alpha Mythology Renew (unofficial): status
 
@@ -231,3 +231,8 @@ Shotlist patch 2026-10-25 (write-shotlist 5, 7, 8; feature header REWORK 9, rate
 - Ticket 20261103-083220-718-d722 (scene 1 griffin, evidence Tests/Pickle/Inbox/shot1-griffin3) still queued: answer by RUN_DONE from the TM.
 - Done today: Preview rendered with panel.description (protocols 489ccad, f8811ff), confirmed by Virginie, GitHub social preview uploaded, echo_review_sha and social_preview_sha256 set; tests moved to Rule-OwnValues + generated Test-Mod (validated by Audit), negative controls left to the shared checks (Virginie chose c).
 - Still open: 8.m code review of git diff 92bdc6ec..HEAD -- Mod (Opus sub-agent), then code_review_sha; 8.c replay of the Pickle runs after the text commits; 7.d camerazoom tag and 2 undefined steps; STATUS.md is 44 KB (move older sections to Docs/runs/); protocols changed since 295f4667 (AGENTS.md, docs/STYLE_RIMWORLD.md, docs/scripts.md...), re-read as diffs at resume.
+
+## Resume 2026-11-06 (session code AlM)
+- Ticket d722 (scene 1 griffin, evidence Tests/Pickle/Inbox/shot1-griffin3-1) read: summary.json 1 of 1 passed, exitReason passed, 144 s. Capture not yet read against the shot plan (zoom 3, `-4 left, 2 up`, donkey (155, 96)); 8b55 (shot1-griffin3) crashed, no report.
+- TM backlog digest (91 runs 09-26 to 11-05, newest 12 listed): nothing new to this session; 8b55 and 72b3 exit 139 known (infra, refiled), c6b6 and a7e0 gallery-nelim4/5 read 2026-10-18, df08 and 6ea8 read 2026-10-23, 2d25 and 8b61 read 2026-10-17, 9b40 read 2026-10-17. Not checked here: 19f7 (exit empty, gallery-nelim4, 10-18 00:21), d0fd (exit 1, gallery-nelim3, 10-17), 2d25-type exit 137 of p17-combat.
+- Preview rendered again (config `suffix` part, renderer rule 2026-11-06), committed d45bdc9, Mod/About/Preview.png sha256 c51c55af47ec42afdad3dd8c48ab6917900dcda75dddf81195bbe7ee3911c2e5. `social_preview_sha256` (8419ed57...) now stale: GitHub social preview to upload again (Virginie), then record the new sha256.

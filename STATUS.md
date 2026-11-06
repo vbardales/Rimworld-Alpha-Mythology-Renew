@@ -42,7 +42,7 @@ publication_changelog_review_sha: 92ed1e831806f7b0fead291d3b1a8ad738562bc9
 echo_review_sha: 78c1e580deb99203ddece9fb25f09cd895f4b824
 social_preview_sha256: c51c55af47ec42afdad3dd8c48ab6917900dcda75dddf81195bbe7ee3911c2e5
 updated: 2026-10-29
-protocols_read_sha: 5574d91d2dd934385abae1b2efc380d693bc9bcd
+protocols_read_sha: 89aa1bb1ab43f08fd0abb39881df7439d9dfa0a6
 ---
 # Alpha Mythology Renew (unofficial): status
 
@@ -242,3 +242,7 @@ Shotlist patch 2026-10-25 (write-shotlist 5, 7, 8; feature header REWORK 9, rate
 - No ticket queued. d722 (scene 1 griffin) passed 1 of 1: read capture `Tests/Pickle/Inbox/shot1-griffin3-1` against the plan (zoom 3, `-4 left, 2 up`, donkey (155, 96)), then decide scene 1 and the batch for scenes 2 to 8.
 - Still open: 8.m code review of `git diff 92bdc6ec..HEAD -- Mod` (Opus sub-agent) then `code_review_sha`; 8.c replay after the text commits; 7.d camerazoom tag and 2 undefined steps; STATUS.md 46 KB (move older sections to `Docs/runs/`).
 - Done today: Preview re-rendered (d45bdc9), GitHub social preview re-uploaded through Chrome, `social_preview_sha256` c51c55af...; protocols read to 5574d91d; TM told (REGISTER, backlog digest).
+
+## Resume 2026-11-06 b (session code AlM)
+- Protocols read to 89aa1bb1 (diff: Pickle remote scripts, LOCAL_SCRIPTS, AUDIT-STATUS; none touches playTests of this mod). TM REGISTER sent. Preview already committed today (7b skipped). Test-Mod 6 passed; Check-ModBasics PASS with 2 WARN (description must end with the Source code on GitHub link; LoadFolders gates vanillaexpanded.achievements, not in About.xml loadAfter); shared Check-Translations FAIL 6 findings = the 6 known compatibility Keyed keys (VEF_WarningEggExplodes, NocturnalAnimals.BodyClock*), to settle with Audit.
+- d722 capture read (`shot1-griffin3-1`, zoom 3, `-4 left, 2 up`): green block and smudge gone, Nelim readable carrying meat, but the griffin is cut by the top-right edge (head and wings clipped) and the statue dominates the centre: scene 1 not accepted, reframe (shift right and up less) before the batch for scenes 2 to 8.

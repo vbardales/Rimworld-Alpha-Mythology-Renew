@@ -237,3 +237,8 @@ Shotlist patch 2026-10-25 (write-shotlist 5, 7, 8; feature header REWORK 9, rate
 - TM backlog digest (91 runs 09-26 to 11-05, newest 12 listed): nothing new to this session; 8b55 and 72b3 exit 139 known (infra, refiled), c6b6 and a7e0 gallery-nelim4/5 read 2026-10-18, df08 and 6ea8 read 2026-10-23, 2d25 and 8b61 read 2026-10-17, 9b40 read 2026-10-17. Not checked here: 19f7 (exit empty, gallery-nelim4, 10-18 00:21), d0fd (exit 1, gallery-nelim3, 10-17), 2d25-type exit 137 of p17-combat.
 - Preview rendered again (config `suffix` part, renderer rule 2026-11-06), committed d45bdc9, Mod/About/Preview.png sha256 c51c55af47ec42afdad3dd8c48ab6917900dcda75dddf81195bbe7ee3911c2e5. `social_preview_sha256` (8419ed57...) now stale: GitHub social preview to upload again (Virginie), then record the new sha256.
 - 2026-11-06 GitHub social preview uploaded again by this session through Chrome (persisted after reload); social_preview_sha256 = c51c55af47ec42afdad3dd8c48ab6917900dcda75dddf81195bbe7ee3911c2e5.
+
+## Open at sleep, 2026-11-06 (session code AlM)
+- No ticket queued. d722 (scene 1 griffin) passed 1 of 1: read capture `Tests/Pickle/Inbox/shot1-griffin3-1` against the plan (zoom 3, `-4 left, 2 up`, donkey (155, 96)), then decide scene 1 and the batch for scenes 2 to 8.
+- Still open: 8.m code review of `git diff 92bdc6ec..HEAD -- Mod` (Opus sub-agent) then `code_review_sha`; 8.c replay after the text commits; 7.d camerazoom tag and 2 undefined steps; STATUS.md 46 KB (move older sections to `Docs/runs/`).
+- Done today: Preview re-rendered (d45bdc9), GitHub social preview re-uploaded through Chrome, `social_preview_sha256` c51c55af...; protocols read to 5574d91d; TM told (REGISTER, backlog digest).

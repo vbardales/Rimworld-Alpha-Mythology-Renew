@@ -42,7 +42,7 @@ publication_changelog_review_sha: 92ed1e831806f7b0fead291d3b1a8ad738562bc9
 echo_review_sha: 78c1e580deb99203ddece9fb25f09cd895f4b824
 social_preview_sha256: c51c55af47ec42afdad3dd8c48ab6917900dcda75dddf81195bbe7ee3911c2e5
 updated: 2026-10-29
-protocols_read_sha: 18f8db99dbcc5fc5da8c66dfb5cc7eb31b150f5a
+protocols_read_sha: 54d2e3243b18b0f286d3cc26a29db15816319699
 ---
 # Alpha Mythology Renew (unofficial): status
 
@@ -144,3 +144,4 @@ Code review 2026-10-13 (prepareRelease 12.a): range 8ff9b37..92bdc6ece455a8dcb3e
 - 2026-11-07 workshopId of `vanillaexpanded.achievements` = 2288125657 (Vanilla Achievements Expanded, Oskar Potocki), read through Chrome (it was not frozen, the first attempt only timed out); Check-OptionalCompat OK, no WARN (48e71ca). 8.m: diff 1818541..48e71ca is that one value, code_review_sha = 48e71ca. The queued replay tickets stage this tree (About-only change).
 - 2026-11-07 Audit asked to declare by name-only targets: Nature's Pretty Sweet added by hand (Mlie.NaturesPrettySweet proven by About/ResolveThisInstead.xml, 10-integrations @requires and the avec-facultatifs map, workshopId 3542949511); Vanilla Achievements already declared as vanillaexpanded.achievements (2288125657). 9 entries, Check-OptionalCompat OK. 8.m: one added line, code_review_sha = 9b253152c9d9d4d6e04c4033a2fbcf0ca00f1fb8.
 - 2026-11-07 RUN_DONE relay (TM): 10 opt-* suites 0 failed (opt-facultatifs 7, others 3 to 5 passed, skipped belong to other options); incompat5 (a576) 2 of 3, NRE in `AlphaMythologyRenewMod.IsOwnKind` (null `kind.race`) fixed at 7ea2822 (`kind.race?.race`); first trace (vanilla `CommonalityOfAnimal`, offset 0x7d) may stay on that map. Replay ticket 67f4 filed (`11-behaviour-and-incompatibility`, map incompat-magicalmenagerie, evidence Inbox/incompat6). To do: read summary.json, junit.xml and Player.log of each opt-* folder myself (8.i), triage Inbox (Prune-Evidence), read settings-en2 (7480) and settings-fr2 (b946) at RUN_DONE, OptionalCompat pass asked by TM (Audit 4.b/4.e, git pull the protocols root first).
+- 2026-11-07 Inbox treated (resume after sleep): 10 opt-* read (summary.md, Player.log: no error or warning naming this mod except Pickle's own `downloadUrl` WARN), all green, minified into `Tests/Pickle/Evidence/opt-*` with RELEASE.md; 9 older proofs they replace deleted (achievements2, ads2b, crossbreeding, dogsmate2, facultatifs5, genetics, giddyup, rimmsqol, rwom; treechop2 kept: 2 Tree Chopping Speed scenarios only there); incompat5 (red, cause drawn, fix 7ea2822) deleted. Evidence 2.0 MB. Inbox empty. Protocols read to 54d2e324. Waiting: 67f4 (incompat6), 7480 (settings-en2), b946 (settings-fr2).

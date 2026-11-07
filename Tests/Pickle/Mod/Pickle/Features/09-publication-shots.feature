@@ -111,7 +111,7 @@
 # Kept from the earlier versions: spawned adult on the player's side by PickleTools' own animal step, framed by this mod's own step (it lowers the camera
 # floor), facing south, the creature names do not exist in the fixture. After the run, every picture is opened and read against this plan; an anomaly that
 # comes from the scene or from the shared tool is described to Pickle Tools with the capture, never worked around here.
-@review @requires:nelim.pickletools.screenshotstudio @requires:nelim.pickletools.screenshotmode @requires:nelim.pickletools.colonistrace @requires:nelim.pickletools.stagedecor
+@review @requires:nelim.pickletools.screenshotstudio @requires:nelim.pickletools.screenshotmode @requires:nelim.pickletools.colonistrace @requires:nelim.pickletools.stagedecor @requires:nelim.pickletools.camerazoom
 Feature: Workshop pictures
 
   Background:
@@ -318,7 +318,7 @@ Feature: Workshop pictures
     And Nelim's Sanctuary: the appearance of "Nelim" is logged
     And Nelim's Pickle Tools: I place the decor "Plant_Berry" at (187, 90)
     And Nelim's Pickle Tools: the plants from (187, 90) to (187, 90) are fully grown
-    And Nelim's Pickle Tools: "Nelim" stands on the nearest free cell around (186, 91)
+    And Nelim's Pickle Tools: the colonist "Nelim" stands on the nearest free cell around (186, 91)
     And Nelim's Pickle Tools: "Nelim" is forced into the job "Harvest" on the plant at (187, 90)
     And Nelim's Pickle Tools: I let 40 ticks pass
     Then Alpha Mythology Renew the creature "Morwen" is standing on the map as "MM_Unicorn"
@@ -353,7 +353,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (36, 72, 140)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Sanctuary: the appearance of "Nelim" is logged
-    And Nelim's Pickle Tools: "Nelim" stands on the nearest free cell around (221, 118)
+    And Nelim's Pickle Tools: the colonist "Nelim" stands on the nearest free cell around (221, 118)
     And Nelim's Pickle Tools: "Nelim" is forced into the job "Harvest" on the plant at (222, 118)
     And Nelim's Pickle Tools: I let 40 ticks pass
     Then Alpha Mythology Renew the creature "Thessaly" is standing on the map as "MM_Manticore"

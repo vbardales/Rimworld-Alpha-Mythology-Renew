@@ -42,7 +42,7 @@ publication_changelog_review_sha: 92ed1e831806f7b0fead291d3b1a8ad738562bc9
 echo_review_sha: 78c1e580deb99203ddece9fb25f09cd895f4b824
 social_preview_sha256: c51c55af47ec42afdad3dd8c48ab6917900dcda75dddf81195bbe7ee3911c2e5
 updated: 2026-10-29
-protocols_read_sha: 89aa1bb1ab43f08fd0abb39881df7439d9dfa0a6
+protocols_read_sha: 18f8db99dbcc5fc5da8c66dfb5cc7eb31b150f5a
 ---
 # Alpha Mythology Renew (unofficial): status
 
@@ -254,3 +254,7 @@ Shotlist patch 2026-10-25 (write-shotlist 5, 7, 8; feature header REWORK 9, rate
 - Tickets queued, answers by RUN_DONE: 20261106-113902-363-49f6 (French translation report, `19-translation-report`, map wsl-deps.translation.map, evidence `Tests/Pickle/Inbox/translation-fr3`) and 20261106-113856-496-aaf7 (French `05-language` captures, evidence `Tests/Pickle/Inbox/language-fr3`). Their `tests=70` is an upper bound of the submit script, not the real count (1 and 2). At RUN_DONE: read summary.json then junit.xml, open the 05-language captures (8.d), check Player.log (8.i), then triage evidence.
 - Done today: 8.m closed (`code_review_sha` re-set after the Giddy Up! fix, see above); Giddy Up! full stop fixed in two French texts (Virginie, chat); protocols read to 89aa1bb1; Check-Status 0 error. Stage is playTests: no gallery work (d722 capture read stays evidence only, scene 1 reframe for shootGallery).
 - Still open in playTests: 8.c (the two tickets, then the optional-provider passes as non-regression), 8.h settings in game FR and EN (`settings_audit` partial), 8.k manual items, 7.d camerazoom tag and 2 undefined steps in 09-publication-shots.feature, `tested_1_7` absent, shared Check-Translations FAIL on the 6 known compatibility Keyed keys (settle with Audit), Check-ModBasics 2 WARN (description must end with the Source code link; LoadFolders gates vanillaexpanded.achievements, not in loadAfter), STATUS.md 50 KB (move the journal to `docs/runs/`).
+
+## Resume 2026-11-07 (session code AlM)
+- Protocols read to 18f8db99 (diffs: AUDIT 4.b/4.e/4.g OptionalCompat.xml rule, 8.b Pickle deployment counts, 8.i scenario D n/a, 8.l `tested_on` never empty; MOD_SETTINGS shortcut click is RIMMSQOL's domain; GALLERY skill order at shootGallery). TM REGISTER sent. FRENCH_REVIEW.md regenerated at fa8e119 (stale WARN). Tickets 49f6 and aaf7 still queued, answers by RUN_DONE.
+- New rule to check at 8: `Mod/` has no `OptionalCompat.xml` while the mod has guarded optional patches (4.b/4.e): read AUDIT 4.b before deciding, ask Audit if unclear. Check-Status WARN: STATUS.md 52 KB.

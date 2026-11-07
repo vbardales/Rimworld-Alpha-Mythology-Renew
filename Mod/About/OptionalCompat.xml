@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OptionalCompat>
+  <li><packageId>DizzyEevee.BetterCrossbreeding</packageId><workshopId>3520675842</workshopId><kind>patch</kind></li>
+  <li><packageId>Mlie.AdvancedBiomes</packageId><workshopId>3541022508</workshopId><kind>patch</kind></li>
+  <li><packageId>Mlie.XNDNocturnalAnimals</packageId><workshopId>2269731409</workshopId><kind>patch</kind></li>
+  <li><packageId>Torann.ARimworldOfMagic</packageId><workshopId>1201382956</workshopId><kind>patch</kind></li>
+  <li><packageId>vanillaexpanded.achievements</packageId><workshopId></workshopId><kind>patch</kind></li>
+  <li><packageId>VanillaExpanded.VCookE</packageId><workshopId>2134308519</workshopId><kind>patch</kind></li>
+  <li><packageId>VanillaExpanded.VGeneticsE</packageId><workshopId>2801160906</workshopId><kind>patch</kind></li>
+  <li><packageId>zal.lotrelves</packageId><workshopId>3548255064</workshopId><kind>patch</kind></li>
+</OptionalCompat>

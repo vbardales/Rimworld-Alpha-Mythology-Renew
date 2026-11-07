@@ -73,7 +73,7 @@ namespace AlphaMythologyRenew
         public static bool IsOwnKind(PawnKindDef kind)
         {
             return kind?.modContentPack != null && kind.modContentPack.PackageId == PackageId
-                   && kind.RaceProps != null && kind.RaceProps.Animal;
+                   && kind.race?.race != null && kind.race.race.Animal;
         }
 
         public override void DoSettingsWindowContents(Rect inRect)

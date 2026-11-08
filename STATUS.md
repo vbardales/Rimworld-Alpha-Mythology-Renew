@@ -42,7 +42,7 @@ publication_changelog_review_sha: 92ed1e831806f7b0fead291d3b1a8ad738562bc9
 echo_review_sha: 78c1e580deb99203ddece9fb25f09cd895f4b824
 social_preview_sha256: c51c55af47ec42afdad3dd8c48ab6917900dcda75dddf81195bbe7ee3911c2e5
 updated: 2026-10-29
-protocols_read_sha: e50928000bb957ac07098875d03ff6097b1637de
+protocols_read_sha: 6e1f76dfd8a201085e01aa7faff8b5ed6631b5fd
 ---
 # Alpha Mythology Renew (unofficial): status
 
@@ -148,3 +148,4 @@ Code review 2026-10-13 (prepareRelease 12.a): range 8ff9b37..92bdc6ece455a8dcb3e
 
 ## Resume 2026-11-08 (session code AlM)
 - Protocols read to e5092800 (diffs: AUDIT 9.e bis subtitles gate at 9.e, MODELS skill rename). TM REGISTER sent. Tickets 7480 and b946 (settings EN and FR) were abandoned with 0 attempts (dispatcher, 2026-11-07 20:54): refiled as 670a (settings-en3) and 7251 (settings-fr3), filter `02-settings::,03-shortcut::,06-reload::`, tree 7ea2822. 67f4 (incompat6) still queued. Inbox empty. Waiting: 67f4, 670a, 7251.
+- 2026-11-08 resume 2 (session code AlM): protocols read to 6e1f76df (PICKLE.md only path rename pickle-reports-wsl; Mark with -Force, dirty files ANIMALS, GALLERY-PROPS, LOCAL-SCRIPTS-*, SETTINGS_STEAM_DECK, steps, SEARCHING are not stage reads). TM REGISTER sent. Tickets 67f4, 670a, 7251 all ended exit 99 "launcher threw" (`finally` not recognized, lane azure, 0 s, nothing played, Inbox empty): launcher defect, reported to TM; refile after fix. Waiting: TM fix, then 67f4 (incompat6), 670a (settings-en3), 7251 (settings-fr3) refiled.

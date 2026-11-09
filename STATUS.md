@@ -37,12 +37,13 @@ remaining:
   - "2026-10-10 unverified: the 1.0.0 is not sent (the em dash of the description is gone, checked 2026-10-15: 0 in PUBLICATION.md and About.xml)"
   - "2026-10-15 unverified (1.7 pass): load, settings, shortcut, restart green on 1.7; features 13 to 15 green, 16 and 17 12 of 15 green (2 skipped for Tree Chopping Speed, 1 red cutting dead grass, replay 2d25 inconclusive, to refile with filter 17-plants::MM_BurnedGrass, studio map, 1.7); RIMMSQOL-skipped scenarios to replay on 1.7; French not playable on 1.7; tested_1_7 absent until green. Full detail and run links: docs/runs/2026-11-status-fold-3.md"
   - "2026-10-19 feature (shootGallery 9): eight new candidates in Art/Gallery (1-candidate-phoenix to 8-candidate-manticore, shotlist at 4 of 5, tickets c6b6 and a7e0 read, docs/runs/2026-10-18-c6b6-a7e0-gallery-shotlist.md); Virginie accepts or refuses each, then reindex with 8-settings.jpg as 9, update the gallery table below, subtitles from PUBLICATION.md 'Gallery subtitles' (clean originals in Art/Gallery-clean)"
+  - "2026-11-09 feature (shootGallery, shotlist; owner request): at write-shotlist also plan shots with the retextured version of the creatures (Workshop https://steamcommunity.com/sharedfiles/filedetails/?id=3384794582): optional-provider mod, ask NPT for the step if the load needs one, list the mod in the shot's `mods` column, check licence/permission wording before any public use (only a 2022-08-21 retexture permission is on record for the original)"
 code_review_sha: 0a4d7abfdda38c64a7e9716f073ff52997f07b47
 publication_changelog_review_sha: 92ed1e831806f7b0fead291d3b1a8ad738562bc9
 echo_review_sha: 78c1e580deb99203ddece9fb25f09cd895f4b824
 social_preview_sha256: c51c55af47ec42afdad3dd8c48ab6917900dcda75dddf81195bbe7ee3911c2e5
 updated: 2026-11-09
-protocols_read_sha: b1463127f5a02e208ce0dc75d3b7bbc5957ef0e9
+protocols_read_sha: 87ba23529d46e79e0cab82fbb7e48efc09b1caf7
 ---
 # Alpha Mythology Renew (unofficial): status
 

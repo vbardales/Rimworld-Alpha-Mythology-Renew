@@ -42,7 +42,7 @@ publication_changelog_review_sha: 92ed1e831806f7b0fead291d3b1a8ad738562bc9
 echo_review_sha: 78c1e580deb99203ddece9fb25f09cd895f4b824
 social_preview_sha256: c51c55af47ec42afdad3dd8c48ab6917900dcda75dddf81195bbe7ee3911c2e5
 updated: 2026-11-09
-protocols_read_sha: 493400badd8457f1be77d426895d09961d7f075b
+protocols_read_sha: b1463127
 ---
 # Alpha Mythology Renew (unofficial): status
 
@@ -131,3 +131,4 @@ Code review 2026-10-13 (prepareRelease 12.a): range 8ff9b37..92bdc6ece455a8dcb3e
 - incompat7 (e5ca, evidence incompat6) 2 of 3: wisp text and original-collision scenarios green; the phoenix scenario red on `RimWorld.BiomeDef.CommonalityOfAnimal` NRE (vanilla method, original loaded beside the port, offset 0x7d, our postfix only shown in the trace): documented fallout of the incompatibility (feature 11 comment), not a defect of this mod; `IsOwnKind` NRE gone (7ea2822). Folder deleted. Ticket 26e1 filed (`11-behaviour-and-incompatibility::`, default map, evidence Inbox/behaviour1) to prove phoenix egg and wisp text green on the fixed tree; the queue is PAUSE (Virginie away), the ticket waits.
 - Still open: 26e1 result, 8.k manual items, `tested_1_7` absent, Check-Translations FAIL on the 6 compatibility Keyed keys (Audit), Check-ModBasics 2 WARN, STATUS.md size.
 - 2026-11-09 8.m closed: diff 9b253152..0a4d7ab of Mod/ and Source/ read: one line in `Source/Settings.cs` (`IsOwnKind` reads `kind.race?.race`, null-safe where `kind.RaceProps` threw on a null race) plus the rebuilt DLL; no defect. code_review_sha = 0a4d7abfdda38c64a7e9716f073ff52997f07b47. The change is covered by ticket 26e1 (feature 11 default map) and the settings and optional passes that ran at 7ea2822 or later.
+- 2026-11-09 resume b: protocols read to b1463127 (diffs one line each: flags json moves to `Docs/`, PICKLE.md no pause reading). Ticket 26e1 read: `summary.json` total 3, passed 2, skipped 1 (original-collision scenario skipped by design on the default map, covered green by e5ca), exitReason passed: phoenix egg and wisp text green on the fixed tree. Minified into `Tests/Pickle/Evidence/behaviour1/`, Inbox empty. TM REGISTER resent.

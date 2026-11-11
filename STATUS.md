@@ -12,7 +12,7 @@ upstream_mod_remotes:
 settings_audit: partial
 localization: complete
 translation_en: complete
-translation_fr: pending_review      # 2026-11-11: validation cancelled (review-translation page-header bug), redo
+translation_fr: pending_review      # 2026-11-12: ChatGPT review (page 1 of 1) read, 2 French fixes applied (Catoblepas buffle du Cap, wyvern douleur extrême), awaiting Virginie's validation
 workshop: "3811323347 (0.1.0, creation of the publishIdFile only, 2026-10-01; the item is private, switching it to public is the owner's)"
 published: no
 tested_on: "2026-11-08 pickle bb2d812 (settings EN and FR 8 of 8 each, tickets 58d7 2a1d; incompat pass e5ca: 2 of 3, the phoenix scenario red by the original's fallout, replay 26e1 on the default map); 2026-11-06 pickle 5017aa2 (French replays 49f6 translation report and aaf7 language captures green, tree staged at their start); earlier 2026-10-10, Pickle only: initial passes EN and FR at the tree of eba7208 (docs commits after), replays at c9bdc67; optional-provider passes and incompatibility pass not replayed at this revision (green on earlier revisions, non-regression after deploy)"
@@ -23,7 +23,7 @@ xml_tests: "passed 2026-10-17 (3357d07): Check-Mod.ps1 now also runs shared Chec
 functional_tests: "unverified in this audit; Pickle history reports green passes (see Tests): not re-read here"
 remaining:
   - "2026-10-29 replay-audit (owner confirmed the move back from shootGallery): 8.m open, code_review_sha 92bdc6ec is older than the text commits under Mod/ (7 Def files, Languages XML, 21a3e5c to 730ae3f): read `git diff 92bdc6ec..HEAD -- Mod`, then set code_review_sha; 8.c `?`: the green Pickle runs (2026-10-10, 2026-10-17) predate those text commits; 7.d: Check-Steps reports 09-publication-shots.feature without @requires:nelim.pickletools.camerazoom and 2 undefined steps (`stands on the nearest free cell around`, asked of NPT); the gallery work of shootGallery (scene 1 ticket 8b55) goes on meanwhile"
-  - "2026-10-17 feature (upstream PR 6): English fixes to carry upstream: Manticore description now `attacking from range` (done here); Erymanthian boar `slowing its progress and advantage` is still to fix upstream only (suggested: `slowing it down and negating its advantage`); not changed here"
+  - "2026-10-17 feature (upstream PR 6): English fixes to carry upstream: Manticore description now `attacking from range` (done here); Erymanthian boar `slowing its progress and advantage` is still to fix upstream only (suggested: `slowing it down and negating its advantage`); not changed here; 2026-11-12 ChatGPT review adds two more upstream-only candidates: Cerberus `specially when modified` to `especially`, Pegasus `could make such flimsy wings to support their weight` to `... wings support their weight`"
   - "2026-10-10 unverified (playTests 8.f to 8.k): the @requires passes and the incompatibility pass are green on earlier revisions and are replayed as non-regression after the deploy (followUp 14.a); functional scenarios 8.g, settings in game FR and EN 8.h and UI and logs 8.i are covered by the initial passes (84 scenarios each, every red replayed green, docs/runs/2026-10-10-1a12-d0ff-initial-passes.md); the owner's manual validations, if any, are hers"
   - "2026-10-10 feature (prepareRelease, AUDIT 3.c/11.f/12.e): CHANGELOG [Unreleased] stays on top until the dry-run; in the commit whose sha goes to the dry-run it becomes `## [1.0.0] - <planned send date>`; a slipped send means a corrected date, a new commit and a new dry-run (Check-Status WARNs changelog from publish on)"
   - "2026-10-10 feature (followUp 14.b): the Use This Instead comment for Mlie (3396308787) is drafted in PUBLICATION.md; hand it to Virginie as an orange step once the item is public, with the link and the text ready to paste"
@@ -43,7 +43,7 @@ publication_changelog_review_sha: 92ed1e831806f7b0fead291d3b1a8ad738562bc9
 echo_review_sha: 78c1e580deb99203ddece9fb25f09cd895f4b824
 social_preview_sha256: c51c55af47ec42afdad3dd8c48ab6917900dcda75dddf81195bbe7ee3911c2e5
 updated: 2026-11-09
-protocols_read_sha: 87ba23529d46e79e0cab82fbb7e48efc09b1caf7
+protocols_read_sha: 43141970cc4343ff3dc2f3d79e5c3f5f9eed1922
 ---
 # Alpha Mythology Renew (unofficial): status
 

@@ -12,7 +12,7 @@ upstream_mod_remotes:
 settings_audit: partial
 localization: complete
 translation_en: complete
-translation_fr: complete
+translation_fr: pending_review      # 2026-11-11: validation cancelled (review-translation page-header bug), redo
 workshop: "3811323347 (0.1.0, creation of the publishIdFile only, 2026-10-01; the item is private, switching it to public is the owner's)"
 published: no
 tested_on: "2026-11-08 pickle bb2d812 (settings EN and FR 8 of 8 each, tickets 58d7 2a1d; incompat pass e5ca: 2 of 3, the phoenix scenario red by the original's fallout, replay 26e1 on the default map); 2026-11-06 pickle 5017aa2 (French replays 49f6 translation report and aaf7 language captures green, tree staged at their start); earlier 2026-10-10, Pickle only: initial passes EN and FR at the tree of eba7208 (docs commits after), replays at c9bdc67; optional-provider passes and incompatibility pass not replayed at this revision (green on earlier revisions, non-regression after deploy)"

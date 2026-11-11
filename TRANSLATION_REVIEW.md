@@ -737,4 +737,4 @@ Languages: French (612 keys, 0 missing against English). English is the source s
 
 | Reviewer | Date | Revision reviewed | Corrections requested |
 |---|---|---|---|
-| Virginie | 2026-10-17 | 730ae3f | aucune (retouches ChatGPT appliquées avant relecture) |
+| Virginie | 2026-10-17 | 730ae3f | CANCELLED 2026-11-11 (page-header bug made ChatGPT report a truncated file: redo /review-translation, Virginie validates again). Was:  aucune (retouches ChatGPT appliquées avant relecture) |

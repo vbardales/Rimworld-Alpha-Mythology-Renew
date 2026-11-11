@@ -35,14 +35,14 @@ remaining:
   - "2026-10-10 feature (writeDocs 11.h): thank-you drafts written in PUBLICATION.md for RWoM, Advanced Biomes, Nature's Pretty Sweet, Elves, Giddy-Up 2, Dogs mate, Better Crossbreeding and Tree Chopping Speed Stat; Covers completed in the register (protocols 3a01556 and 951bcc7). No draft, by the owner's earlier call: the original's page, Vanilla Genetics Expanded and Vanilla Achievements Expanded (Sarg Bjornson answers there). Drafts are read against the owner's voice at writeDocs, posted after the item is public (followUp 14.b)"
   - "2026-10-10 feature (blocker before 1.0.0): Resolve This Instead (nelim.resolvethisinstead, hard dependency) needs its own public Workshop page first; no Workshop id yet"
   - "2026-10-10 unverified: the 1.0.0 is not sent (the em dash of the description is gone, checked 2026-10-15: 0 in PUBLICATION.md and About.xml)"
-  - "2026-10-15 unverified (1.7 pass): load, settings, shortcut, restart green on 1.7; features 13 to 15 green, 16 and 17 12 of 15 green (2 skipped for Tree Chopping Speed, 1 red cutting dead grass, replay 2d25 inconclusive, to refile with filter 17-plants::MM_BurnedGrass, studio map, 1.7); RIMMSQOL-skipped scenarios to replay on 1.7; French not playable on 1.7; tested_1_7 absent until green. Full detail and run links: docs/runs/2026-11-status-fold-3.md"
+  - "2026-10-15 unverified (1.7 pass): load, settings, shortcut, restart green on 1.7; features 13 to 15 green, 16 and 17 12 of 15 green (2 skipped for Tree Chopping Speed, the red cutting dead grass replayed green 2026-11-09 (ticket 7f53, studio map, 1.7, 1 of 1, Tests/Pickle/Evidence/p17-burnedgrass)); RIMMSQOL-skipped scenarios to replay on 1.7; French not playable on 1.7; tested_1_7 absent until green. Full detail and run links: docs/runs/2026-11-status-fold-3.md"
   - "2026-10-19 feature (shootGallery 9): eight new candidates in Art/Gallery (1-candidate-phoenix to 8-candidate-manticore, shotlist at 4 of 5, tickets c6b6 and a7e0 read, docs/runs/2026-10-18-c6b6-a7e0-gallery-shotlist.md); Virginie accepts or refuses each, then reindex with 8-settings.jpg as 9, update the gallery table below, subtitles from PUBLICATION.md 'Gallery subtitles' (clean originals in Art/Gallery-clean)"
   - "2026-11-09 feature (shootGallery, shotlist; owner request): at write-shotlist also plan shots with the retextured version of the creatures (Workshop https://steamcommunity.com/sharedfiles/filedetails/?id=3384794582): optional-provider mod, ask NPT for the step if the load needs one, list the mod in the shot's `mods` column, check licence/permission wording before any public use (only a 2022-08-21 retexture permission is on record for the original)"
 code_review_sha: 0a4d7abfdda38c64a7e9716f073ff52997f07b47
 publication_changelog_review_sha: 92ed1e831806f7b0fead291d3b1a8ad738562bc9
 echo_review_sha: 78c1e580deb99203ddece9fb25f09cd895f4b824
 social_preview_sha256: c51c55af47ec42afdad3dd8c48ab6917900dcda75dddf81195bbe7ee3911c2e5
-updated: 2026-11-09
+updated: 2026-11-12
 protocols_read_sha: 43141970cc4343ff3dc2f3d79e5c3f5f9eed1922
 ---
 # Alpha Mythology Renew (unofficial): status

@@ -160,3 +160,4 @@ Four rows, nothing done outward.
 - Alpha Bees (1558161673): matters little. `1.5/Mods/MagicalMenagerie` and `1.6/Mods/MagicalMenagerie` (18 KB: bee combinations, bee list, bee, comb and research items) are keyed on `MM_` defNames and gated on `sarg.magicalmenagerie`. Proposal (a): ask the author to add our packageId; (b) rejected, same data copy. Waits for Virginie's go.
 - Alpha Mythology (1821617793): false row, it is the original itself; already (c): declared incompatible (`sarg.magicalmenagerie`).
 - Dog Collars (2644644983): link only (cites the original), dropped.
+- 2026-11-12 seventh /review-translation: 2 applied locally and upstream (Nahuatl, Mount Erymanthus capitals), 0 refused; Review line stays Virginie's.

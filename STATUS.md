@@ -42,6 +42,7 @@ code_review_sha: 73abeed36da3128e72e2a250fdd2dce11c5f7af9
 publication_changelog_review_sha: 92ed1e831806f7b0fead291d3b1a8ad738562bc9
 echo_review_sha: 78c1e580deb99203ddece9fb25f09cd895f4b824
 social_preview_sha256: c51c55af47ec42afdad3dd8c48ab6917900dcda75dddf81195bbe7ee3911c2e5
+upstream_synced: 2026-11-12 juanosarg/AlphaMythology@53a5518
 updated: 2026-11-12
 tested_1_7: yes   # 2026-11-12, English only; gaps in the 1.7 pass entry of remaining
 protocols_read_sha: 7640e2ab38b86705789fcc01578eafd826f2dc0e
@@ -148,3 +149,4 @@ Code review 2026-10-13 (prepareRelease 12.a): range 8ff9b37..92bdc6ece455a8dcb3e
 - 2026-11-12 fourth /review-translation: 3 applied (PUBLICATION.md line 3 stage and French review state; English Keyed MM_UtilityWorkerDesc 'workload', same fix as upstream PR 4), 0 refused. The Review line of TRANSLATION_REVIEW.md is Virginie's to fill.
 - 2026-11-12 fifth /review-translation: 3 applied locally and upstream (English Bodies_Animal_Cerberus label 'three-headed dog'; four Shock Troop descriptions 'combine high speed with an ability'; MM_UtilityMoodDesc without 'alternative'), 0 refused; upstream branch fix-english-wording carries them too. Review line stays Virginie's.
 - 2026-11-12 upstream: PR 4, 5 and 6 were closed for inactivity on 2026-11-11 (Virginie), PR 3 (the 1.6 update by another author) is open. Better than a fourth PR: reopen PR 6 (fix-english-typos), whose branch now also carries the wording fixes (merge 7d9f5e6, 15 files, all English fixes of this port's reviews in 1.4 and 1.5). Branch fix-english-wording stays as spare, no PR from it. PR 4 (phoenix egg lost in stack) and PR 5 (biten) stay closed unless Virginie reopens them; the work load typo of PR 4 is also in PR 6's branch.
+- 2026-11-12 upstream sync (item 22): upstream master is still 53a5518 (git ls-remote, same as the licence audit of 2026-09-12); no commit to integrate. The port was extracted from Animal Ark, so no shared history. `upstream_synced` written. The 1.6 and 1.7 upstream PRs are BACKLOG TODO, not opened.

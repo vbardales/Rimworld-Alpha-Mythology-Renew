@@ -152,3 +152,11 @@ Code review 2026-10-13 (prepareRelease 12.a): range 8ff9b37..92bdc6ece455a8dcb3e
 - 2026-11-12 upstream sync (item 22): upstream master is still 53a5518 (git ls-remote, same as the licence audit of 2026-09-12); no commit to integrate. The port was extracted from Animal Ark, so no shared history. `upstream_synced` written. The 1.6 and 1.7 upstream PRs are BACKLOG TODO, not opened.
 - 2026-11-12 sixth /review-translation: 4 applied locally and upstream (English Catoblepas, Phoenix 'fire-resistant', Lesser Wyvern 'Unlike ... appear in', Utility worker punctuation), 1 not changed (Giddy-up naming, logged in Docs/review-refusals.md), Review line stays Virginie's.
 - 2026-11-12 upstream PR 6 reopened by Virginie (OPEN, head a4d4376, 6 commits: the four typos plus all English wording fixes of the port's reviews). Nothing to do until the author answers.
+
+## Ecosystem (worklist pass 2026-11-12, docs/inventory/ecosystem-worklist.tsv)
+
+Four rows, nothing done outward.
+- Combat Extended (2890901044): matters. Its `ModPatches/Alpha Mythology` (5 files, 83 KB, 125 `MM_` references: races, bodies, hediffs, projectiles) is gated by `LoadFolders.xml` line 36 on `sarg.magicalmenagerie`, so it never fires with this port (same defNames as the original, packageId `nelim.alphamythology`). Proposal (a): ask the CE authors to add our packageId to that one LoadFolders line; (b) rejected, a copy of 83 KB of CE data tied to CE versions; (c) not needed, no conflict. Waits for Virginie's go.
+- Alpha Bees (1558161673): matters little. `1.5/Mods/MagicalMenagerie` and `1.6/Mods/MagicalMenagerie` (18 KB: bee combinations, bee list, bee, comb and research items) are keyed on `MM_` defNames and gated on `sarg.magicalmenagerie`. Proposal (a): ask the author to add our packageId; (b) rejected, same data copy. Waits for Virginie's go.
+- Alpha Mythology (1821617793): false row, it is the original itself; already (c): declared incompatible (`sarg.magicalmenagerie`).
+- Dog Collars (2644644983): link only (cites the original), dropped.

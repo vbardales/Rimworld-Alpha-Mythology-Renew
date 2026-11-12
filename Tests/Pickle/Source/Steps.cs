@@ -81,8 +81,23 @@ namespace AlphaMythologyRenew.PickleSteps
 
         private static Dictionary<string, float> Commonalities(PawnKindDef kind)
         {
-            return DefDatabase<BiomeDef>.AllDefsListForReading
-                .ToDictionary(b => b.defName, b => b.CommonalityOfAnimal(kind));
+            var result = new Dictionary<string, float>();
+            foreach (var biome in DefDatabase<BiomeDef>.AllDefsListForReading)
+            {
+                try
+                {
+                    result[biome.defName] = biome.CommonalityOfAnimal(kind);
+                }
+                catch (Exception e)
+                {
+                    // Diagnostic (ticket 4008, avec-facultatifs): say which biome and which mod's content made the game's
+                    // own method throw, with the stack, before the step fails.
+                    Log.Error($"[AMR test] CommonalityOfAnimal threw for biome '{biome.defName}' "
+                        + $"(from {biome.modContentPack?.PackageId ?? "?"}) and kind '{kind?.defName}': {e}");
+                    throw;
+                }
+            }
+            return result;
         }
 
         // --- what the mod loaded with ---------------------------------------------------------

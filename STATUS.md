@@ -161,3 +161,4 @@ Four rows, nothing done outward.
 - Alpha Mythology (1821617793): false row, it is the original itself; already (c): declared incompatible (`sarg.magicalmenagerie`).
 - Dog Collars (2644644983): link only (cites the original), dropped.
 - 2026-11-12 seventh /review-translation: 2 applied locally and upstream (Nahuatl, Mount Erymanthus capitals), 0 refused; Review line stays Virginie's.
+- 2026-11-12 eighth /review-translation: 1 applied (French AMR_SpawnMultiplierTip 'mais uniquement aux nouvelles apparitions'), 0 refused, no source-column change. French file changed again: the French replays of 8.c are to redo once, after the last review.

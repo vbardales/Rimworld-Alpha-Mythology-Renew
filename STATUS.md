@@ -162,3 +162,4 @@ Four rows, nothing done outward.
 - Dog Collars (2644644983): link only (cites the original), dropped.
 - 2026-11-12 seventh /review-translation: 2 applied locally and upstream (Nahuatl, Mount Erymanthus capitals), 0 refused; Review line stays Virginie's.
 - 2026-11-12 eighth /review-translation: 1 applied (French AMR_SpawnMultiplierTip 'mais uniquement aux nouvelles apparitions'), 0 refused, no source-column change. French file changed again: the French replays of 8.c are to redo once, after the last review.
+- 2026-11-12 ninth /review-translation: 5 applied (English ToxicBite hediff, Fenghuang, Ieltxu, Xiezhi, upstream too; French MM_Kappa 'si cette eau se renverse'), 0 refused. French file changed once more: 8.c French replays to redo after the last review.

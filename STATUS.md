@@ -43,7 +43,7 @@ publication_changelog_review_sha: 92ed1e831806f7b0fead291d3b1a8ad738562bc9
 echo_review_sha: 78c1e580deb99203ddece9fb25f09cd895f4b824
 social_preview_sha256: c51c55af47ec42afdad3dd8c48ab6917900dcda75dddf81195bbe7ee3911c2e5
 updated: 2026-11-12
-protocols_read_sha: 43141970cc4343ff3dc2f3d79e5c3f5f9eed1922
+protocols_read_sha: 4d927dc2aa9751f05097b29be19a1b9e3ba15a52
 ---
 # Alpha Mythology Renew (unofficial): status
 
@@ -135,3 +135,4 @@ Code review 2026-10-13 (prepareRelease 12.a): range 8ff9b37..92bdc6ece455a8dcb3e
 - 2026-11-09 resume b: protocols read to b1463127 (diffs one line each: flags json moves to `Docs/`, PICKLE.md no pause reading). Ticket 26e1 read: `summary.json` total 3, passed 2, skipped 1 (original-collision scenario skipped by design on the default map, covered green by e5ca), exitReason passed: phoenix egg and wisp text green on the fixed tree. Minified into `Tests/Pickle/Evidence/behaviour1/`, Inbox empty. TM REGISTER resent.
 - 2026-11-09 1.7: ticket 7f53 filed (1.7, `-DepMap wsl-deps.studio.map`, filter `17-plants::MM_BurnedGrass`, tree 89534d0, evidence Inbox/p17-burnedgrass) to replace inconclusive 2d25. Waits for TM RUN_DONE; do not refile.
 - 2026-11-12 8.c replay tickets filed at 7b61de9 (French texts changed since the last green runs): 20261112-005738-913-0c80 (French `05-language` captures, evidence `Tests/Pickle/Inbox/language-fr4`) and 20261112-005751-396-a8fb (French translation report, `19-translation-report`, map wsl-deps.translation.map, evidence `Tests/Pickle/Inbox/translation-fr4`). Answers by RUN_DONE: read summary.json then junit.xml, minify greens into Evidence, close 8.c. Then 7.d (Check-Steps, ask NPT) and the 1.7 skipped scenarios. Rule: check Inbox and Parked before any wait.
+- 2026-11-12 resume: protocols read to 4d927dc2 (AGENTS: check Inbox before waiting; AUDIT 6.g refusals file `Docs/review-refusals.md`, 7.d Inbox mkdir; no effect here). Ticket 0c80 read: language-fr4 `summary.json` total 2, passed 2, exitReason passed; minified into `Tests/Pickle/Evidence/language-fr4` (replaces language-fr3). a8fb (translation report, Inbox/translation-fr4) not delivered yet. TM REGISTER sent.

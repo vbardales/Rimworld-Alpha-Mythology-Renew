@@ -19,7 +19,7 @@ Record game/dependency versions, actual outcomes, Player.log per case.
    provider exists, present. Legacy Achievements, GeneticRim, NocturnalAnimals
    remain unverified; guard passing without provider proves no runtime behaviour.
 8. Save/reload colony with creatures, eggs, active bleeding wound: no losses or
-   repeated errors. Migration from older Animal Ark untested: class names changed.
+   repeated errors. Migration from older Animal Ark: not applicable (2026-11-12): class names changed, so no scenario can exist; saves made with Animal Ark do not carry over, said in `PUBLICATION.md` and `CHANGELOG.md`.
 9. Load with newly reduced Animal Ark: no duplicate defs or shared C# type names.
 
 Automated: `powershell -NoProfile -ExecutionPolicy Bypass -File Tests/Test-Mod.ps1` (generated: shared checks, then
@@ -61,7 +61,7 @@ Reports to investigate, not confirmed defects in this port.
 ## Executable checks and acceptance protocol
 
 Detailed manual steps, expected outcomes, evidence template:
-[Tests/FUNCTIONAL.md](Tests/FUNCTIONAL.md). All 12 scenario groups remain NOT RUN.
+[Tests/FUNCTIONAL.md](Tests/FUNCTIONAL.md). Its "Automation map" maps each of the 7.a scenarios F01 to F14 to the Pickle feature file or unit test that proves it (2026-11-12: mapping checked, F05 removed, F10 migration not applicable); the "NOT RUN" tags of its scenario texts are history.
 
 Run from repository root with PowerShell 7 and .NET SDK 8:
 

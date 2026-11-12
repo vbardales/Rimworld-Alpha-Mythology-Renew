@@ -45,7 +45,7 @@ Work toward 1.0.0, above the 0.1.0 pre-publication.
   AlphaMythologyRenew.dll; XML points to the isolated namespace.
 - Retained the 1.6 XML and VEF migrations documented in the source pack's port notes.
 - Added unofficial disclosure, original author credits and dependency metadata.
-- Manual in-game tests remain pending; existing-save migration is unverified.
+- Manual in-game tests are replaced by Pickle scenarios. Saves made with Animal Ark do not carry over: the class names changed.
 
 ## [0.1.0]
 

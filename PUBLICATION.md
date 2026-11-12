@@ -97,7 +97,7 @@ Original source: https://github.com/juanosarg/AlphaMythology
 
 Requires Resolve This Instead, a small library that lets this mod's optional patches keep working when a mod they support is renamed or replaced by a continuation. It reads Use This Instead's data, so that mod is loaded too.
 
-Do not load alongside the original Alpha Mythology or an older Animal Ark build still containing it. Do not remove this content from an ongoing save. Moving an existing save from Animal Ark is untested, especially saved custom hediff classes whose namespace changed.
+Do not load alongside the original Alpha Mythology or an older Animal Ark build still containing it. Do not remove this content from an ongoing save. Saves made with Animal Ark do not carry over: the namespace of saved custom hediff classes changed, so start a new colony.
 
 **IF I GO QUIET**
 

@@ -40,7 +40,7 @@ social_preview_sha256: c51c55af47ec42afdad3dd8c48ab6917900dcda75dddf81195bbe7ee3
 upstream_synced: 2026-11-12 juanosarg/AlphaMythology@53a5518
 updated: 2026-11-13
 tested_1_7: yes   # 2026-11-12, English only; gaps in the 1.7 pass entry of remaining
-protocols_read_sha: b6b4486d8e3585fdcf9b1f3e9066c87cf694e7c1
+protocols_read_sha: dddcd388a1a471290edbd3fdbb00986d404ee4a0
 ---
 # Alpha Mythology Renew (unofficial): status
 
@@ -188,3 +188,4 @@ Four rows, nothing done outward.
 - 2026-11-13 8.i: Virginie ok for a fresh log read. Ticket 20261113-224844-285-61ad filed (02-settings multiplier scenario, English, sans-facultatifs, tree 2a3a8e9, Mod/ identical to d1abd41, evidence Inbox/log-en5). Read Player.log for errors naming the mod BEFORE Prune-Evidence. Waits for RUN_DONE; do not refile.
 - 2026-11-13 8.i closed: ticket 61ad (log-en5, 02-settings multiplier, English) read: passed 1, skipped 0, failed 0, exit 0. Player.log read BEFORE Prune-Evidence: no error or exception from Mod/ or Source/. Only lines naming the mod: WARN dependency URL of the Pickle test mod (nelim.alphamythology.pickletests, test harness) and ERROR "Pickle tests did not load any content" (test mod holds no defs, by design); other warnings are vanilla (Steam, ALSA/FMOD, map version, think nodes). Prune-Evidence -Apply: log-en5 moved to Evidence (Player.log minified away after the read). Open: 8.g, 8.j.
 - 2026-11-13 8.g/8.j analysed, not closed. Source/ and Mod/Assemblies unchanged since ea53d3c; Mod/ since then texts only (TESTING.md "Tree per pass"). 8.j: last code fix 7ea2822 (IsOwnKind null race) has no game-free test (Settings.cs needs RimWorld types); covered by 02-settings real wild-animal draw, green at b475d59 (settings-en4, log-en5). Earlier fixes (f5e8956 restart, fe679b9 egg stack) were found by Pickle scenarios and replayed green (replay-restart, replay-egg). 8.g: F01 to F14 each mapped to a Pickle feature or unit test (Tests/FUNCTIONAL.md); full passes initial-en/fr at 2026-10-10 revision, replays and optional passes green since; no full 84-scenario pass on the final tree. Decision asked of Virginie: accept that evidence, or refile a full pass.
+- 2026-11-13 8.g and 8.j: Virginie accepts the existing evidence (chat, "Accept evidence"); no full pass refiled. Basis: F01 to F14 mapped (Tests/FUNCTIONAL.md), Source and Mod/Assemblies unchanged since ea53d3c, Mod/ texts only since, 7ea2822 covered by settings-en4 and log-en5 green. Playtest sub-steps 8.c to 8.m all closed; next: playTests exit check (Check-Status, tested_on, workflow_stage move).

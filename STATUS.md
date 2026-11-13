@@ -177,3 +177,17 @@ Four rows, nothing done outward.
 - 2026-11-13 Virginie: the Combat Extended PR (add nelim.alphamythology next to sarg.magicalmenagerie in LoadFolders, CE issue 4839) is opened AFTER the Workshop release, not before.
 - 2026-11-13 playTests journal (tickets 475d 3d74 89c5 20df 61ad, 8.c to 8.m) folded into Docs/runs/2026-11-status-fold-4.md. All green at b475d59 and 2a3a8e9; code_review_sha d1abd41; 8.i Player.log clean (61ad); 8.g and 8.j closed on existing evidence (owner accepted in chat).
 - 2026-11-13 8.g and 8.j: Virginie accepts the existing evidence (chat, "Accept evidence"); no full pass refiled. Basis: F01 to F14 mapped (Tests/FUNCTIONAL.md), Source and Mod/Assemblies unchanged since ea53d3c, Mod/ texts only since, 7ea2822 covered by settings-en4 and log-en5 green. Playtest sub-steps 8.c to 8.m all closed; next: playTests exit check (Check-Status, tested_on, workflow_stage move).
+
+## NSB (sync 2026-11-14, /sync-nsb-npt)
+
+Places read: not re-read (2026-11-14: NSB content unchanged since 2026-11-06; only commit 18abf53 renamed `docs/` to `Docs/`, 0 lines changed). Tribe read: 2026-11-14 (CATALOGUE-ANIMAUX only; profiles last read 2026-10-23). Steps read: 2026-11-14 (git log of NPT `docs/steps.md` since 2026-11-06, titles only; new entries not opened one by one).
+
+NSB since last sync: nothing that touches a place, colonist or animal. NPT since 2026-11-06: ScreenshotStudio step hiding the main tab bar, speed controls and mouse-over readout (65f21b3, usable for any shot that shows the map), StageDecor pot with a grown plant, decor burns, floors; ColonistRace filth removal (radius or map), game-condition step, animal hediff and surgery steps. No step used by `09-publication-shots` renamed or removed in the log titles; to confirm by reading `steps.md` at write-shotlist. Left alone: the eight accepted pictures; no scenario touched.
+
+Places (accepted gallery, plan in Docs/runs/2026-11-status-fold-2.md): statue-garden (1 griffin) | water-garden bank (5 pegasus) | tea-room hut (3 kitsune) | fire-pit (2 phoenix) | other places of 4, 6, 7 per the feature header | decor placed and removed per scene, noon 4 Sept 5500 | last read 2026-10-23.
+
+Colonists: Nelim | shots 1 to 7 | one outfit all day, deep blue top (36, 72, 140) | profile last read 2026-10-23 | exception: hair `Roo_HD_Hair_Highpony` (owner chat 2026-10-23), mouth overridden when the scenario justifies it (owner chat 2026-10-25).
+
+Animals: save pets Shogun, Yuki, Atticus (fixture pets, stand-at) | cat spawned for Tama and Kuru (not in the save) | outfit: animals may be dressed when the scenario justifies it (owner chat 2026-10-25, wardrobe not validated) | sheets last read 2026-10-23 | exceptions: none.
+
+Included animals (rule 5), 25 PawnKindDefs of the mod: shown by an accepted shot: Kitsune, Phoenix, Manticore, Kappa, Pegasus, Unicorn, Griffin (7). MISSING (no shot): Ahuizotl, Basilisk, Catoblepas, Cerberus, CeryneianHind, Chimera, ErymanthianBoar, Fenghuang, Ieltxu, LernaeanHydra, LesserWyvern, Qilin, Salamander, StymphalianBird, Tlilcoatl, WildMinotaur, WillOWisp, Xiezhi (18). Gap to fix in the shotlist (write-shotlist): group shots or new shots, then play them; rule 5 is not met by the current gallery.

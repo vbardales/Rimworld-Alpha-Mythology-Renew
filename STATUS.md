@@ -180,3 +180,5 @@ Four rows, nothing done outward.
 - 2026-11-13 CE issue 4839 answered by N7Huntsman (maintainer): a PR adding our id is welcome, but it cannot be merged until our mod is available to test (our Workshop item 3811323347 is private). No PR opened (outward, needs Virginie go). Alpha Bees 16 still unanswered.
 
 - 2026-11-13 Virginie: the Combat Extended PR (add nelim.alphamythology next to sarg.magicalmenagerie in LoadFolders, CE issue 4839) is opened AFTER the Workshop release, not before.
+
+- 2026-11-13 Ecosystem Steam study by PiI (docs/inventory/ecosystem-steam/AlphaMythologyRenew.md): only the original 1821617793 holds our 25 MM_* defNames (expected); no other fork or duplicate. 30 weak hits, one shared defName with Biotech Cosmetic Kit - Horns Halos and More (not a conflict to act on: not loaded by tests, watch only). Neighbours with other creatures: Mythic Ages (3537788184), Biotech Expansion Mythic (2883216840), Creatures of the Vael (3568419088), Mooloh Dnd Menagerie (2751849453). Link: Taste of Vanilla - The Alpha Mythology (3384794582, food add-on of the original). Combat Extended is the only compat target (issue 4839; PR after release).

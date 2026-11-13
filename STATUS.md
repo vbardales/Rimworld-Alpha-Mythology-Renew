@@ -48,7 +48,7 @@ social_preview_sha256: c51c55af47ec42afdad3dd8c48ab6917900dcda75dddf81195bbe7ee3
 upstream_synced: 2026-11-12 juanosarg/AlphaMythology@53a5518
 updated: 2026-11-13
 tested_1_7: yes   # 2026-11-12, English only; gaps in the 1.7 pass entry of remaining
-protocols_read_sha: 0888eac46c71476a812d67245a830b3d9c57b6db
+protocols_read_sha: b6b4486d8e3585fdcf9b1f3e9066c87cf694e7c1
 ---
 # Alpha Mythology Renew (unofficial): status
 
@@ -187,3 +187,5 @@ Four rows, nothing done outward.
 - 2026-11-13 Ecosystem Steam study by PiI (docs/inventory/ecosystem-steam/AlphaMythologyRenew.md): only the original 1821617793 holds our 25 MM_* defNames (expected); no other fork or duplicate. 30 weak hits, one shared defName with Biotech Cosmetic Kit - Horns Halos and More (not a conflict to act on: not loaded by tests, watch only). Neighbours with other creatures: Mythic Ages (3537788184), Biotech Expansion Mythic (2883216840), Creatures of the Vael (3568419088), Mooloh Dnd Menagerie (2751849453). Retexture: Taste of Vanilla - The Alpha Mythology (3384794582; PiI typed it a food add-on, Virginie 2026-11-13: it is a retexture mod, to be used in the gallery captures, see the 2026-11-09 shotlist feature). Combat Extended is the only compat target (issue 4839; PR after release).
 
 - 2026-11-13 8.c/8.h tickets filed at tree b475d59 (final texts): 475d settings-en4, 3d74 settings-fr4 (filter 02-settings,03-shortcut,06-reload), 89c5 language-fr5 (05-language, French), 20df translation-fr5 (19-translation-report, French, wsl-deps.translation.map). Evidence Tests/Pickle/Inbox/<name>. Answers by RUN_DONE: read summary.json then junit.xml, minify greens into Evidence, then 8.k tree shas, 8.m code_review_sha. Tree must stay frozen until RUN_DONE. opt2 passes (8.f) not refiled: patches and defs unchanged since ea53d3c, only texts and About.xml loadAfter; to note in TESTING.md.
+
+- 2026-11-13 resume: protocols read to b6b4486d (diffs: AGENTS ticket-script path, AUDIT 13.b subscribe-test after every upload by PiI; no effect now). TM REGISTER sent. Ticket 475d (settings-en4, b475d59) read: total 8, passed 8, exitReason passed; folder stays in Inbox until 3d74, 89c5, 20df (PENDING) are read, then minify all into Evidence. Tree frozen until then.

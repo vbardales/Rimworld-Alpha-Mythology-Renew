@@ -10,8 +10,8 @@
   <MM_EggFenghuangFertilized.description>Un œuf de fenghuang fécondé. Il peut se manger cru, mais il est bien meilleur cuit. Si tout se passe bien, un fenghuang devrait en éclore.</MM_EggFenghuangFertilized.description>
   <MM_EggStymphalianBirdFertilized.label>œuf d'oiseau du lac Stymphale (féc.)</MM_EggStymphalianBirdFertilized.label>
   <MM_EggStymphalianBirdFertilized.description>Un œuf d'oiseau du lac Stymphale fécondé. Il peut se manger cru, mais il est bien meilleur cuit. Si tout se passe bien, un oiseau du lac Stymphale devrait en éclore.</MM_EggStymphalianBirdFertilized.description>
-  <MM_EggIeltxuFertilized.label>œuf d'idittu (féc.)</MM_EggIeltxuFertilized.label>
-  <MM_EggIeltxuFertilized.description>Un œuf d'idittu fécondé. Il peut se manger cru, mais il est bien meilleur cuit. Si tout se passe bien, un idittu devrait en éclore.</MM_EggIeltxuFertilized.description>
+  <MM_EggIeltxuFertilized.label>œuf d'ieltxu (féc.)</MM_EggIeltxuFertilized.label>
+  <MM_EggIeltxuFertilized.description>Un œuf d'ieltxu fécondé. Il peut se manger cru, mais il est bien meilleur cuit. Si tout se passe bien, un ieltxu devrait en éclore.</MM_EggIeltxuFertilized.description>
   <MM_EggBasiliskFertilized.label>œuf de basilic (féc.)</MM_EggBasiliskFertilized.label>
   <MM_EggBasiliskFertilized.description>Un œuf de basilic fécondé. Il peut se manger cru, mais il est bien meilleur cuit. Si tout se passe bien, un basilic devrait en éclore.</MM_EggBasiliskFertilized.description>
   <MM_LightMagicalLeather.label>cuir magique léger</MM_LightMagicalLeather.label>
@@ -24,8 +24,8 @@
   <MM_EggBasiliskUnfertilized.description>Un œuf de basilic non fécondé. Il peut se manger cru, mais il est bien meilleur cuit.</MM_EggBasiliskUnfertilized.description>
   <MM_EggFenghuangUnfertilized.label>œuf de fenghuang (non féc.)</MM_EggFenghuangUnfertilized.label>
   <MM_EggFenghuangUnfertilized.description>Un œuf de fenghuang non fécondé. Il peut se manger cru, mais il est bien meilleur cuit.</MM_EggFenghuangUnfertilized.description>
-  <MM_EggIeltxuUnfertilized.label>œuf d'idittu (non féc.)</MM_EggIeltxuUnfertilized.label>
-  <MM_EggIeltxuUnfertilized.description>Un œuf d'idittu non fécondé. Il peut se manger cru, mais il est bien meilleur cuit.</MM_EggIeltxuUnfertilized.description>
+  <MM_EggIeltxuUnfertilized.label>œuf d'ieltxu (non féc.)</MM_EggIeltxuUnfertilized.label>
+  <MM_EggIeltxuUnfertilized.description>Un œuf d'ieltxu non fécondé. Il peut se manger cru, mais il est bien meilleur cuit.</MM_EggIeltxuUnfertilized.description>
   <MM_EggStymphalianBirdUnfertilized.label>œuf d'oiseau du lac Stymphale (non féc.)</MM_EggStymphalianBirdUnfertilized.label>
   <MM_EggStymphalianBirdUnfertilized.description>Un œuf d'oiseau du lac Stymphale non fécondé. Il peut se manger cru, mais il est bien meilleur cuit.</MM_EggStymphalianBirdUnfertilized.description>
   <MM_EggSalamanderUnfertilized.label>œuf de salamandre (non féc.)</MM_EggSalamanderUnfertilized.label>
@@ -39,8 +39,8 @@
   <MM_BurnedGrass.description>De l'herbe morte. Les animaux ne peuvent pas la manger.</MM_BurnedGrass.description>
   <MM_BurnedBush.label>buisson mort</MM_BurnedBush.label>
   <MM_BurnedBush.description>Un buisson mort. Les animaux ne peuvent pas le manger.</MM_BurnedBush.description>
-  <MM_Ahuizotl.label>ahuitzotl</MM_Ahuizotl.label>
-  <MM_Ahuizotl.description>L'ahuitzotl est une créature légendaire de la mythologie aztèque. Il ressemble à un chien dont la fourrure imperméable forme souvent des pointes. Ses mains lui permettent de manipuler des objets, et une main supplémentaire termine sa queue. On le redoute pour son goût pour la chair humaine, en particulier les ongles, les yeux et les dents. Il vivrait dans l'eau ou à proximité et utiliserait sa main caudale pour saisir ses proies et les entraîner dans les profondeurs afin de les noyer.\n\nLes ahuitzotls ne sont pas des créatures naturelles. Ils ont été créés dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : les ahuitzotls saisissent habilement leurs proies avec la main au bout de leur queue et les lacèrent de leurs griffes. Cela rend la retraite difficile au corps à corps.</MM_Ahuizotl.description>
+  <MM_Ahuizotl.label>ahuizotl</MM_Ahuizotl.label>
+  <MM_Ahuizotl.description>L'ahuizotl est une créature légendaire de la mythologie aztèque. Il ressemble à un chien dont la fourrure imperméable forme souvent des pointes. Ses mains lui permettent de manipuler des objets, et une main supplémentaire termine sa queue. On le redoute pour son goût pour la chair humaine, en particulier les ongles, les yeux et les dents. Il vivrait dans l'eau ou à proximité et utiliserait sa main caudale pour saisir ses proies et les entraîner dans les profondeurs afin de les noyer.\n\nLes ahuizotls ne sont pas des créatures naturelles. Ils ont été créés dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : les ahuizotls saisissent habilement leurs proies avec la main au bout de leur queue et les lacèrent de leurs griffes. Cela rend la retraite difficile au corps à corps.</MM_Ahuizotl.description>
   <MM_Ahuizotl.tools.grabbing_hand.label>main agrippante</MM_Ahuizotl.tools.grabbing_hand.label>
   <MM_Ahuizotl.tools.left_claw.label>griffe gauche</MM_Ahuizotl.tools.left_claw.label>
   <MM_Ahuizotl.tools.right_claw.label>griffe droite</MM_Ahuizotl.tools.right_claw.label>
@@ -89,8 +89,8 @@
   <MM_Griffin.tools.right_claw.label>griffe droite</MM_Griffin.tools.right_claw.label>
   <MM_Griffin.tools.beak.label>bec</MM_Griffin.tools.beak.label>
   <MM_Griffin.tools.head.label>tête</MM_Griffin.tools.head.label>
-  <MM_Ieltxu.label>idittu</MM_Ieltxu.label>
-  <MM_Ieltxu.description>L'idittu est un oiseau-esprit de la mythologie basque. Généralement représenté comme un corbeau noir de jais crachant du feu, il n'est pas malveillant, bien qu'on le décrive souvent comme espiègle. C'est une créature nocturne qui apparaît habituellement dans les forêts obscures, à la faveur de la nuit.\n\nLes idittus ne sont pas des créatures naturelles. Ils ont été créés dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : les idittus peuvent cracher du feu lorsqu'ils sont menacés. Ce sont des créatures nocturnes qui dorment pendant la journée.</MM_Ieltxu.description>
+  <MM_Ieltxu.label>ieltxu</MM_Ieltxu.label>
+  <MM_Ieltxu.description>L'ieltxu est un oiseau-esprit de la mythologie basque. Généralement représenté comme un corbeau noir de jais crachant du feu, il n'est pas malveillant, bien qu'on le décrive souvent comme espiègle. C'est une créature nocturne qui apparaît habituellement dans les forêts obscures, à la faveur de la nuit.\n\nLes ieltxus ne sont pas des créatures naturelles. Ils ont été créés dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : les ieltxus peuvent cracher du feu lorsqu'ils sont menacés. Ce sont des créatures nocturnes qui dorment pendant la journée.</MM_Ieltxu.description>
   <MM_Ieltxu.verbs.fire_breath.label>souffle de feu</MM_Ieltxu.verbs.fire_breath.label>
   <MM_Ieltxu.tools.claws.label>griffes</MM_Ieltxu.tools.claws.label>
   <MM_Ieltxu.tools.beak.label>bec</MM_Ieltxu.tools.beak.label>
@@ -171,8 +171,8 @@
   <MM_WillOWisp.comps.CompAsexualReproduction.customString>Fission asexuée dans : </MM_WillOWisp.comps.CompAsexualReproduction.customString>
   <MM_WillOWisp.tools.pseudopod.label>pseudopode</MM_WillOWisp.tools.pseudopod.label>
   <MM_WillOWisp.verbs.wisp_breath.label>souffle de feu follet</MM_WillOWisp.verbs.wisp_breath.label>
-  <MM_Xiezhi.label>xièzhì</MM_Xiezhi.label>
-  <MM_Xiezhi.description>Le xièzhì est une créature légendaire de la mythologie chinoise, également connue en Corée sous le nom de haetae. On le représente généralement comme un croisement entre un lion et une chèvre, avec une unique corne sur le front. Les xièzhìs perçoivent instinctivement le bien et le mal et savent distinguer les innocents des coupables.\n\nLes xièzhìs ne sont pas des créatures naturelles. Ils ont été créés dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : les xièzhìs attaquent férocement les pirates et les encornent avec leur corne justicière.</MM_Xiezhi.description>
+  <MM_Xiezhi.label>xiezhi</MM_Xiezhi.label>
+  <MM_Xiezhi.description>Le xiezhi est une créature légendaire de la mythologie chinoise, également connue en Corée sous le nom de haetae. On le représente généralement comme un croisement entre un lion et une chèvre, avec une unique corne sur le front. Les xiezhis perçoivent instinctivement le bien et le mal et savent distinguer les innocents des coupables.\n\nLes xiezhis ne sont pas des créatures naturelles. Ils ont été créés dans le cadre du projet Hécate, un programme de bio-ingénierie utilisant des réplicateurs mécanites pour transformer des animaux existants en créatures « magiques ».\n\nCapacités spéciales : les xiezhis attaquent férocement les pirates et les encornent avec leur corne justicière.</MM_Xiezhi.description>
   <MM_Xiezhi.tools.horn.label>corne</MM_Xiezhi.tools.horn.label>
   <MM_Xiezhi.tools.bite.label>morsure</MM_Xiezhi.tools.bite.label>
   <MM_Xiezhi.tools.left_claw.label>griffe gauche</MM_Xiezhi.tools.left_claw.label>

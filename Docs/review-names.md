@@ -6,15 +6,15 @@ Checked 2026-11-13 against fr.wikipedia (API titles and redirects). Rule from Au
 
 cerbère, pégase, phénix, chimère, kappa, fenghuang, catoblépas, basilic, griffon, licorne, manticore, salamandre, minotaure sauvage (Minotaure), biche de Cérynie, sanglier d'Érymanthe, hydre de Lerne.
 
-## Differs from fr.wikipedia (decided 2026-11-13: Virginie took the fr.wikipedia form, applied to the French DefInjected values)
+## Differs from fr.wikipedia (decided 2026-11-13: Virginie took fr.wikipedia, then ruled: when two forms are equivalent, keep the one used in other languages)
 
 | Game French now | fr.wikipedia title | Note |
 |---|---|---|
-| ahuizotl | Ahuitzotl | redirect from Ahuizotl |
-| xiezhi | Xièzhì | redirect from Xiezhi |
-| ieltxu | Idittu | redirect from Ieltxu |
-| petite vouivre | Wyverne | Vouivre is a separate article (folklore); English is Wyvern |
-| oiseau du Stymphale | Oiseaux du lac Stymphale | plural, whole flock; ours is one bird |
+| ahuizotl | Ahuitzotl | equivalent spelling, KEPT ahuizotl |
+| xiezhi | Xièzhì | equivalent (tones), KEPT xiezhi |
+| ieltxu | Idittu | same Basque word, KEPT ieltxu |
+| petite vouivre | Wyverne | different creature (Vouivre is folklore): CHANGED to petite wyverne |
+| oiseau du Stymphale | Oiseaux du lac Stymphale | CHANGED to oiseau du lac Stymphale |
 
 ## No article (free choice)
 

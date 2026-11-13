@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <MM_Ahuizotl.label>ahuitzotl</MM_Ahuizotl.label>
-  <MM_Ahuizotl.labelPlural>ahuitzotls</MM_Ahuizotl.labelPlural>
-  <MM_Ahuizotl.lifeStages.ahuizotl_puppy.label>petit ahuitzotl</MM_Ahuizotl.lifeStages.ahuizotl_puppy.label>
-  <MM_Ahuizotl.lifeStages.ahuizotl_puppy.labelPlural>petits ahuitzotls</MM_Ahuizotl.lifeStages.ahuizotl_puppy.labelPlural>
+  <MM_Ahuizotl.label>ahuizotl</MM_Ahuizotl.label>
+  <MM_Ahuizotl.labelPlural>ahuizotls</MM_Ahuizotl.labelPlural>
+  <MM_Ahuizotl.lifeStages.ahuizotl_puppy.label>petit ahuizotl</MM_Ahuizotl.lifeStages.ahuizotl_puppy.label>
+  <MM_Ahuizotl.lifeStages.ahuizotl_puppy.labelPlural>petits ahuizotls</MM_Ahuizotl.lifeStages.ahuizotl_puppy.labelPlural>
   <MM_Basilisk.label>basilic</MM_Basilisk.label>
   <MM_Catoblepas.label>catoblépas</MM_Catoblepas.label>
   <MM_Cerberus.label>cerbère</MM_Cerberus.label>
@@ -20,7 +20,7 @@
   <MM_Fenghuang.label>fenghuang</MM_Fenghuang.label>
   <MM_Fenghuang.lifeStages.fenghuang_chick.label>poussin de fenghuang</MM_Fenghuang.lifeStages.fenghuang_chick.label>
   <MM_Griffin.label>griffon</MM_Griffin.label>
-  <MM_Ieltxu.label>idittu</MM_Ieltxu.label>
+  <MM_Ieltxu.label>ieltxu</MM_Ieltxu.label>
   <MM_Kappa.label>kappa</MM_Kappa.label>
   <MM_Kitsune.label>kitsune</MM_Kitsune.label>
   <MM_Kitsune.labelPlural>kitsunes</MM_Kitsune.labelPlural>
@@ -50,5 +50,5 @@
   <MM_Unicorn.lifeStages.unicorn_foal.labelPlural>poulains licornes</MM_Unicorn.lifeStages.unicorn_foal.labelPlural>
   <MM_WildMinotaur.label>minotaure sauvage</MM_WildMinotaur.label>
   <MM_WillOWisp.label>feu follet</MM_WillOWisp.label>
-  <MM_Xiezhi.label>xièzhì</MM_Xiezhi.label>
+  <MM_Xiezhi.label>xiezhi</MM_Xiezhi.label>
 </LanguageData>

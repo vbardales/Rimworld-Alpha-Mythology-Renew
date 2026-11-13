@@ -171,7 +171,7 @@
 						<AchievementsExpanded.AchievementDef ParentName="MM_AchievementParent">
 							<defName>MM_AchievementHardLove</defName>
 							<label>Hard Love</label>
-							<description>Have a colonist develop a bond with a Catoblepas</description>
+							<description>Have a colonist develop a bond with a catoblepas</description>
 
 							<tracker Class="AchievementsExpanded.AnimalBondedTracker">
 								<kindDef>MM_Catoblepas</kindDef>
@@ -204,7 +204,7 @@
 						<AchievementsExpanded.AchievementDef ParentName="MM_AchievementParent">
 							<defName>MM_AchievementGrabbingHands</defName>
 							<label>Grabbing Hands</label>
-							<description>Have a pawn be held by an Ahuizotl's grasp</description>
+							<description>Have a pawn be held by an ahuizotl's grasp</description>
 
 							<tracker Class="AchievementsExpanded.HediffTracker">
 								<def>MM_Grabbed</def>

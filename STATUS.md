@@ -174,3 +174,5 @@ Four rows, nothing done outward.
 - 2026-11-13 names: Virginie chose the fr.wikipedia forms (ahuitzotl, xièzhì, idittu, wyverne, oiseau du lac Stymphale) and "normalise" for English creature casing; applied in Mod/ French and English, PR #6 branch 6b92727; Docs/review-names.md. Redo the French 8.c replays on this text.
 
 - 2026-11-13 names, correction: Virginie ruled "if two forms are equivalent, keep the one from other languages": ahuizotl, xiezhi, ieltxu kept in French; only petite wyverne and oiseau du lac Stymphale changed (Docs/review-names.md).
+
+- 2026-11-13 Virginie validated the review ("je valide la review") at e4f7651 (names and casing decided, see Docs/review-names.md). Ecosystem: ECOSYSTEM? sent to PiI (new procedure, AUDIT 1.a and 8.0); copy its one-line summary into the Ecosystem section when it answers. No Steam search or scan from this session.

@@ -4,7 +4,7 @@ packageId: nelim.alphamythology
 repo: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew
 remote: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew.git
 visibility: public
-workflow_stage: playTests[1.0.0]
+workflow_stage: declareDependencies[1.0.0]
 licence: silent
 licence_at: "2026-09-12: upstream master 53a5518008821188009bbf996b7120ad9593cb5f and the Workshop page reviewed (602 comments, Bug Reports thread); no project licence, no redistribution grant, no refusal found. Refreshed 2026-09-26. Only a retexture permission (2022-08-21, conditional on the game EULA) was found, not a licence for this port. Silent = public (owner's rule)."
 upstream_mod_remotes:
@@ -22,6 +22,7 @@ automated_tests: "passed 2026-10-10: Tests/UnitTests ALL PASSED (spawn rules 13,
 xml_tests: "passed 2026-10-17 (3357d07): Check-Mod.ps1 now also runs shared Check-Translations at its end with the 6 compatibility Keyed keys allowed (NocturnalAnimals.BodyClock*, VEF_WarningEggExplodes), 174 assertions, Test-Validator 6 negative cases green; earlier 2026-10-11: Check-ModBasics (shared) then Check-Mod.ps1 174 own assertions, 86 XML files, 25 creatures; Test-Validator.ps1 6 negative cases (the runner was red before this audit, see Audit 2026-10-10); shared scripts/Check-Translations.ps1 224 source texts and French injections green 2026-10-11 (replaced Check-Translations.py, deleted)"
 functional_tests: "unverified in this audit; Pickle history reports green passes (see Tests): not re-read here"
 remaining:
+  - "2026-11-13 replay-audit from zero (ledger ../.replays/AlphaMythologyRenew-20261113.tsv, Check-Replay OK 31 rows): moved back from playTests to declareDependencies. 4.e open: Check-OptionalCompat 2 ERROR, patch targets tkkntkkn.nps (Nature's Pretty Sweet) and XeoNovaDan.NocturnalAnimals not declared in Mod/About/OptionalCompat.xml (run -Write, set kind, rerun); 4.g open: workshop_required_items missing (value `n/a, not released yet`, item private); 4.d open: LoadFolders gates a folder on vanillaexpanded.achievements, not in About.xml loadAfter (Check-ModBasics WARN). Sections 1 to 3 done. After the fix, replay again: 5 to 8 were not replayed (8.k tree shas, French 8.c replays on the validated text e4f7651 still to do)."
   - "2026-10-29 replay-audit (owner confirmed the move back from shootGallery): 8.m closed 2026-11-12 (Mod diff since 0a4d7abf is 59bfc1c, two French lines, read; code_review_sha set); 8.c closed 2026-11-12 (French replays 0c80 language-fr4 2 of 2 and a8fb translation-fr4 1 of 1 green at 7b61de9, mod line `nelim.alphamythology (French): 0 findings, 0 notes`; the 3 global load errors name Blackboard and SchoolDesk, not this mod); 7.d closed 2026-11-12: Check-Steps now clean (19 of 19 feature files parse, 83 patterns compile, 627 step lines each resolve to exactly one expression); the gallery work of shootGallery (scene 1 ticket 8b55) goes on meanwhile"
   - "2026-10-17 feature (upstream PR 6): English fixes to carry upstream: Manticore description now `attacking from range` (done here); Erymanthian boar `slowing its progress and advantage` is still to fix upstream only (suggested: `slowing it down and negating its advantage`); not changed here; 2026-11-12 ChatGPT review adds two more upstream-only candidates: Cerberus `specially when modified` to `especially`, Pegasus `could make such flimsy wings to support their weight` to `... wings support their weight`"
   - "2026-10-10 unverified (playTests 8.f to 8.k): the @requires passes and the incompatibility pass are green on earlier revisions and are replayed as non-regression after the deploy (followUp 14.a); functional scenarios 8.g, settings in game FR and EN 8.h and UI and logs 8.i are covered by the initial passes (84 scenarios each, every red replayed green, docs/runs/2026-10-10-1a12-d0ff-initial-passes.md); the owner's manual validations, if any, are hers"
@@ -43,9 +44,9 @@ publication_changelog_review_sha: 92ed1e831806f7b0fead291d3b1a8ad738562bc9
 echo_review_sha: 78c1e580deb99203ddece9fb25f09cd895f4b824
 social_preview_sha256: c51c55af47ec42afdad3dd8c48ab6917900dcda75dddf81195bbe7ee3911c2e5
 upstream_synced: 2026-11-12 juanosarg/AlphaMythology@53a5518
-updated: 2026-11-12
+updated: 2026-11-13
 tested_1_7: yes   # 2026-11-12, English only; gaps in the 1.7 pass entry of remaining
-protocols_read_sha: 7640e2ab38b86705789fcc01578eafd826f2dc0e
+protocols_read_sha: 5af4c2c14c4c9dba0b099c7dfe251e0f9c34ff1f
 ---
 # Alpha Mythology Renew (unofficial): status
 

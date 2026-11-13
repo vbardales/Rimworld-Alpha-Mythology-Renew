@@ -123,3 +123,5 @@ Pickle request. Add it (About `modDependencies`, `Check-Mod` list, and `nelim.re
 pass maps) in one commit when library session says folder mountable, re-file passes then. Proof of
 concept queued in Pickle file (request `20260926-222716-133-fd04`), decides design.
 **TODO 2026-11-12 (upstream, item 22 of the TM missions):** two separate pull requests to juanosarg/AlphaMythology, each needing Virginie's go and sent from a fork branch, in this order: (1) the 1.6 update (supportedVersions, compatibility fixes, new dependencies) after the green 1.6 playTests; the upstream PR 3 ("Updated to 1.6", another author, open) overlaps and must be read first, so this one is a split or an answer there, not a collision; (2) the 1.7 update only after `tested_1_7: yes` (reached 2026-11-12 for English, the 1.7 declaration itself is not made). The English wording fixes are on the fork branch fix-english-typos, PR 6 to reopen.
+
+- [ ] After the Workshop release: open the Combat Extended PR adding nelim.alphamythology next to sarg.magicalmenagerie in LoadFolders (CE issue 4839, maintainer N7Huntsman agreed; merge only once the mod is public). Needs Virginie go at that moment.

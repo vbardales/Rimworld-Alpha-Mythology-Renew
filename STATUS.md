@@ -176,3 +176,5 @@ Four rows, nothing done outward.
 - 2026-11-13 names, correction: Virginie ruled "if two forms are equivalent, keep the one from other languages": ahuizotl, xiezhi, ieltxu kept in French; only petite wyverne and oiseau du lac Stymphale changed (Docs/review-names.md).
 
 - 2026-11-13 Virginie validated the review ("je valide la review") at e4f7651 (names and casing decided, see Docs/review-names.md). Ecosystem: ECOSYSTEM? sent to PiI (new procedure, AUDIT 1.a and 8.0); copy its one-line summary into the Ecosystem section when it answers. No Steam search or scan from this session.
+
+- 2026-11-13 CE issue 4839 answered by N7Huntsman (maintainer): a PR adding our id is welcome, but it cannot be merged until our mod is available to test (our Workshop item 3811323347 is private). No PR opened (outward, needs Virginie go). Alpha Bees 16 still unanswered.

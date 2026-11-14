@@ -60,21 +60,21 @@
 # STORY. One clear day, 4 September 5500, noon to dusk: every creature of Alpha Mythology finds its place in Nelim's sanctuary. Nelim (Virginie) keeps ONE outfit all day, a deep-blue top (36, 72, 140), grey trousers, high ponytail Roo_HD_Hair_Highpony, brown eyes: the day is six hours, nothing in the story makes her change. Hours by `I set the hour to N`: 12:00, 13:00, 14:00, 15:00, 16:00, 17:00, about 17:12, 18:00 (the light moves on, the last image is dusk). Weather Clear.
 # SERIES. Opening, wide: 1 griffin (zoom 6). Medium: 2 kappa, 3 pegasus, 5 phoenix, 6 hound (zoom 4 to 5), 7 unicorn. Close: 4 kitsune (head of Nelim and fox, root size 3). Closing, wide: 8 manticore (zoom 6, dusk). Jobs vary (haul, Tame, Refuel, Harvest), subject side varies. Thumbnail rule (268 px wide): the creature fills about a third of the frame height.
 # EACH SHOT: gesture of Nelim; what the creature does; the instant (what just happened, what comes next); how it is obtained (job through "is forced into the job", pause on the tick where the carried item, work effect or bubble is drawn, that tick is read on probe 2).
-#  1 griffin, statue-garden 12:00, z6 wide: Nelim walks toward the griffin carrying meat (HaulToCell Meat_Muffalo to a cell beside it, paused 2 cells away); it turns its head to her; she has just come in, she is about to hold out the meat. Decor SculptureSmall (152, 99), Plant_Daylily (156, 99); donkey, hare; griffin seen from the front.
-#  2 kappa, fishing-zone 13:00, z2.5 (frame 5 cells high, the kappa about 30 px high on a 268 px thumbnail, its green shell against the bank; Nelim 3 cells away stays in frame), expression moodCheerful, says: "The water spirit has come out of the pond and Nelim greets it.": Nelim faces the kappa on the bank, Tame bubble over her head; the kappa turned toward her; the interaction has just begun, it will accept or flee. Job Tame, pause on the bubble tick. Decor Plant_YellowTallGrass (124, 66), Stool (123, 69); swan, duck.
-#  3 pegasus, water-garden moss bank 14:00, z4, subject right of centre: Nelim carries hay along the bank toward the pegasus, which faces her; she is about to reach it. HaulToCell Hay, paused mid-walk. Decor Plant_Daylily (152, 170), Plant_YellowTallGrass (156, 170); swan.
-#  4 kitsune, tea-room door 15:00, close (root size 3, `the camera frames the head of "Nelim" and "Inari"`): Nelim and the fox face to face at the door, fox seen from the front, her face readable with her set expression; the fox has just come to the door, she is about to speak to it. Job Tame (guess; Train as fallback). Decor TorchLamp (143, 67) lit, PlantPot_Bonsai (139, 64); cat Miso, Shogun by the wall.
-#  5 phoenix, fire-pit hall 16:00, z4: Nelim carries a log to the campfire, the phoenix on the grey hearth stones beside the flames; she is about to put it on the fire. Job Refuel on the campfire, paused with the wood in her hands. Decor TorchLamp (178, 117), Brazier (183, 117) lit; cat Ember (177, 113). Atticus dropped (asleep needs a second job).
-#  6 hound, cloister 17:00, z5, subject left of centre: Nelim drags a sack of kibble toward the hound, Yuki and Shogun follow her; she is about to set it down. HaulToCell Kibble, paused mid-walk. Decor Stool (175, 127), PlantPot_Bonsai (186, 127); no sandstone strip (it looked like a set).
-#  7 unicorn, plant-garden about 17:12, z3 (frame 6 cells high, the unicorn about 1.5 cells, a quarter of the height, white against the dark soil), expression moodCheerful2, says: "While Nelim picks berries, the unicorn comes to the fence to see her.": Nelim picks berries behind the fence, work effect drawn; the unicorn wanders on the far side, sparrows in the plants; she has just picked the first, the unicorn is coming to the fence. Job Harvest on a grown berry bush placed for the shot. Decor PlantPot_Bonsai (186, 88), Plant_Daylily (191, 86).
-#  8 manticore, rice-paddies 18:00 dusk, z5 wide (frame 10 cells high, the manticore about 1.5 cells, a seventh of the height but the only dark winged silhouette on pale soil, about 40 px on the thumbnail; the paddies fill the rest), expression NLR-Smile, says: "At dusk the last visitor watches the paddies while Nelim finishes the harvest.": Nelim harvests rice with her back to the manticore, which watches from the bank, herons and chickens in the rice; the day is ending, nothing will happen. Job Harvest on the rice. Decor SculptureSmall (220, 115), Plant_YellowTallGrass (224, 121).
+#  1. griffin, statue-garden 12:00, z6 wide: Nelim walks toward the griffin carrying meat (HaulToCell Meat_Muffalo to a cell beside it, paused 2 cells away); it turns its head to her; she has just come in, she is about to hold out the meat. Decor SculptureSmall (152, 99), Plant_Daylily (156, 99); donkey, hare; griffin seen from the front.
+#  2. kappa, fishing-zone 13:00, z2.5 (frame 5 cells high, the kappa about 30 px high on a 268 px thumbnail, its green shell against the bank; Nelim 3 cells away stays in frame), expression moodCheerful, says: "The water spirit has come out of the pond and Nelim greets it.": Nelim faces the kappa on the bank, Tame bubble over her head; the kappa turned toward her; the interaction has just begun, it will accept or flee. Job Tame, pause on the bubble tick. Decor Plant_YellowTallGrass (124, 66), Stool (123, 69); swan, duck.
+#  3. pegasus, water-garden moss bank 14:00, z4, subject right of centre: Nelim carries hay along the bank toward the pegasus, which faces her; she is about to reach it. HaulToCell Hay, paused mid-walk. Decor Plant_Daylily (152, 170), Plant_YellowTallGrass (156, 170); swan.
+#  4. kitsune, tea-room door 15:00, close (root size 3, `the camera frames the head of "Nelim" and "Inari"`): Nelim and the fox face to face at the door, fox seen from the front, her face readable with her set expression; the fox has just come to the door, she is about to speak to it. Job Tame (guess; Train as fallback). Decor TorchLamp (143, 67) lit, PlantPot_Bonsai (139, 64); cat Miso, Shogun by the wall.
+#  5. phoenix, fire-pit hall 16:00, z4: Nelim carries a log to the campfire, the phoenix on the grey hearth stones beside the flames; she is about to put it on the fire. Job Refuel on the campfire, paused with the wood in her hands. Decor TorchLamp (178, 117), Brazier (183, 117) lit; cat Ember (177, 113). Atticus dropped (asleep needs a second job).
+#  6. hound, cloister 17:00, z5, subject left of centre: Nelim drags a sack of kibble toward the hound, Yuki and Shogun follow her; she is about to set it down. HaulToCell Kibble, paused mid-walk. Decor Stool (175, 127), PlantPot_Bonsai (186, 127); no sandstone strip (it looked like a set).
+#  7. unicorn, plant-garden about 17:12, z3 (frame 6 cells high, the unicorn about 1.5 cells, a quarter of the height, white against the dark soil), expression moodCheerful2, says: "While Nelim picks berries, the unicorn comes to the fence to see her.": Nelim picks berries behind the fence, work effect drawn; the unicorn wanders on the far side, sparrows in the plants; she has just picked the first, the unicorn is coming to the fence. Job Harvest on a grown berry bush placed for the shot. Decor PlantPot_Bonsai (186, 88), Plant_Daylily (191, 86).
+#  8. manticore, rice-paddies 18:00 dusk, z5 wide (frame 10 cells high, the manticore about 1.5 cells, a seventh of the height but the only dark winged silhouette on pale soil, about 40 px on the thumbnail; the paddies fill the rest), expression NLR-Smile, says: "At dusk the last visitor watches the paddies while Nelim finishes the harvest.": Nelim harvests rice with her back to the manticore, which watches from the bank, herons and chickens in the rice; the day is ending, nothing will happen. Job Harvest on the rice. Decor SculptureSmall (220, 115), Plant_YellowTallGrass (224, 121).
 # SHOTLIST EXTENSION 2026-11-14 (write-shotlist, rule 5 of sync-nsb-npt: every creature of the mod in at least one shot; director's pass by an Opus sub-agent, remarks kept below). The 8 shots above stay; the hound (6) is not in the accepted gallery. SAME DAY, 4 September 5500, evening: Nelim keeps the deep-blue top (36, 72, 140), grey trousers, Roo_HD_Hair_Highpony, brown eyes, NLR-Smile. Six GROUP shots of three creatures, ordered by clock (criterion k), 18:30 to 22:30; the barn at night closes the day, the manticore dusk (18:00) is the bridge. 18 creatures covered: Ahuizotl, Basilisk, Catoblepas, Cerberus, CeryneianHind, Chimera, ErymanthianBoar, Fenghuang, Ieltxu, LernaeanHydra, LesserWyvern, Qilin, Salamander, StymphalianBird, Tlilcoatl, WildMinotaur, WillOWisp, Xiezhi. Thumbnail rule: RimWorld is top-down, a creature nearer the camera is not bigger, staggering only avoids overlap; the small ones (Basilisk 1.4, Ieltxu 1.4, WillOWisp 1.6 cells) lead a z <= 3.5 shot or stand on a mark.
-#  9 hunt-trio, flower-garden 18:30, z3.5, clear, low warm light: lead CeryneianHind (3.5 cells, seen from the front, in front of Nelim), ErymanthianBoar eating RawBerries Nelim just set down (Ingest, caught mid-bite), StymphalianBird flying low over the boar (Floating). Nelim walks in carrying RawBerries (HaulToCell, paused mid-walk), about to put them down. Says: "Three beasts of the old hunts have come for the berries Nelim brings." Decor PlantPot_Bonsai, Plant_Daylily x3, Stool. Sparrows. No apples (vanilla has none).
-# 10 river-serpents, river-bridge 19:15 dusk, z4.5: lead LernaeanHydra in the river (about 70% of the frame height, heads up), Ahuizotl on the bank, Tlilcoatl coiled at the bridge foot (glossy black: dusk, not night). Nelim on the bridge with Meat_Muffalo (HaulToCell, paused), about to throw it. Says: "The river creatures wait below the bridge while Nelim brings them meat." No reflections (not drawn), no fish (Odyssey), wild swans/duck/heron kept out of frame. Decor TorchLamp lit on the bridge, Plant_YellowTallGrass, Stool.
-# 11 gaze-group, statue-garden 20:00 dusk, z3.5: lead Basilisk at the centre of its MM_BurnedGrass ring (ticks run so the ring forms; the ring makes it readable at 268 px), Catoblepas head down right, Cerberus at the frame edge left. The statues read as the victims of the gaze. Nelim lights a TorchLamp (Refuel, paused with the wood). Says: "The gaze beasts keep to the statues while Nelim lights the lamps." Decor TorchLamp x2, Brazier, Stool, SculptureSmall (152, 99).
-# 12 east, ritual-hall 20:45, z4.5: lead Qilin, Fenghuang on the altar side, Xiezhi right; no cat (Xiezhi is a predator). Nelim refuels the hall's own brazier at (204, 118) (no second brazier), censer (208, 121). Says: "At nightfall the three beasts of the east gather in the ritual hall as Nelim tends the flame." Free cells among the six cushions read before the steps.
-# 13 small-ones, preindustrial-workshop 21:30, z3, light from the forge or brazier in frame: lead Salamander (heat 30/s: doors open or temperature override checked), Ieltxu, WillOWisp. Nelim crafts at the bench (DoBill), pen in the working gesture. Says: "The three small ones keep Nelim company at the forge." The creatures give no light of their own (no Glower: WillOWisp is poison, Salamander a heat pusher); the light is the workshop's.
-# 14 barn-night, barn 22:30, z5.5, the barn's own four braziers lit (no added lamp): lead WildMinotaur eating the Hay Nelim brings (HaulToCell Hay), Chimera left, LesserWyvern behind with wings. All three tamed and fed (no manhunter on the map: Chimera breathes fire only in combat). Fixture enclosure animals stay in the background, not emptied. Says: "The big ones are brought into the barn for the night." Closing image of the story.
+#  9. hunt-trio, flower-garden 18:30, z3.5, clear, low warm light: lead CeryneianHind (3.5 cells, seen from the front, in front of Nelim), ErymanthianBoar eating RawBerries Nelim just set down (Ingest, caught mid-bite), StymphalianBird flying low over the boar (Floating). Nelim walks in carrying RawBerries (HaulToCell, paused mid-walk), about to put them down. Hour 18h plus 1250 ticks (18:30). Cells: CeryneianHind (155, 110), ErymanthianBoar (152, 111), StymphalianBird (156, 108), RawBerries at (152, 110) and Nelim hauls to (156, 112), Nelim near (158, 111), PlantPot_Bonsai (151, 113), Plant_Daylily (157, 113) (150, 111) (158, 108), Stool (159, 110). Says: "Three beasts of the old hunts have come for the berries Nelim brings." Decor PlantPot_Bonsai, Plant_Daylily x3, Stool. Sparrows. No apples (vanilla has none).
+#  10. river-serpents, river-bridge 19:15 dusk, z4.5: lead LernaeanHydra in the river (about 70% of the frame height, heads up), Ahuizotl on the bank, Tlilcoatl coiled at the bridge foot (glossy black: dusk, not night). Nelim on the bridge with Meat_Muffalo (HaulToCell, paused), about to throw it. Hour 19h plus 625 ticks (19:15). Cells: LernaeanHydra (133, 122), Ahuizotl (131, 126), Tlilcoatl (139, 127), Nelim near (135, 124) with Meat_Muffalo to (137, 124), TorchLamp (133, 125), PlantPot_Bonsai (137, 125), Plant_Daylily (134, 126), Brazier (140, 126), Stool (131, 123), Plant_YellowTallGrass (129, 127). Says: "The river creatures wait below the bridge while Nelim brings them meat." No reflections (not drawn), no fish (Odyssey), wild swans/duck/heron kept out of frame. Decor TorchLamp lit on the bridge, Plant_YellowTallGrass, Stool.
+#  11. gaze-group, statue-garden 20:00 dusk, z3.5: lead Basilisk at the centre of its MM_BurnedGrass ring (ticks run so the ring forms; the ring makes it readable at 268 px), Catoblepas head down right, Cerberus at the frame edge left. The statues read as the victims of the gaze. Nelim lights a TorchLamp (Refuel, paused with the wood). Hour 19h plus 2500 ticks (20:00, the ring grows in the first 2,500). Cells: Basilisk (153, 97), Catoblepas (156, 97), Cerberus (149, 98), SculptureSmall (152, 99), TorchLamp (150, 99) (155, 99), Brazier (157, 99), Stool (158, 98), Nelim near (154, 100). Says: "The gaze beasts keep to the statues while Nelim lights the lamps." Decor TorchLamp x2, Brazier, Stool, SculptureSmall (152, 99).
+#  12. east, ritual-hall 20:45, z4.5: lead Qilin, Fenghuang on the altar side, Xiezhi right; no cat (Xiezhi is a predator). Nelim refuels the Brazier she placed (Refuel, paused). Hour 20h plus 1875 ticks (20:45). Cells: Qilin (206, 121), Fenghuang (204, 121), Xiezhi (208, 121), Brazier (204, 118) placed by the scenario (the hall's own DarklightBrazier (205, 117) stays, no censer in the survey), WoodLog (203, 117), Nelim near (203, 118). Says: "At nightfall the three beasts of the east gather in the ritual hall as Nelim tends the flame." Free cells among the six cushions read before the steps.
+#  13. small-ones, preindustrial-workshop 21:30, z3, light from the forge or brazier in frame: lead Salamander (heat 30/s: doors open or temperature override checked), Ieltxu, WillOWisp. Nelim crafts at the bench (DoBill), pen in the working gesture. Hour 21h plus 1250 ticks (21:30). Cells: Salamander (223, 237), Ieltxu (221, 238), WillOWisp (225, 235), FueledSmithy (223, 233), Steel (222, 234), Brazier (226, 239), TorchLamp (220, 235), Stool (222, 241), PlantPot_Bonsai (219, 240), Plant_YellowTallGrass (216, 237), Nelim near (223, 234). Says: "The three small ones keep Nelim company at the forge." The creatures give no light of their own (no Glower: WillOWisp is poison, Salamander a heat pusher); the light is the workshop's.
+#  14. barn-night, barn 22:30, z5.5, the barn's own four braziers lit (no added lamp): lead WildMinotaur eating the Hay Nelim brings (HaulToCell Hay), Chimera left, LesserWyvern behind with wings. All three tamed and fed (no manhunter on the map: Chimera breathes fire only in combat). Fixture enclosure animals stay in the background, not emptied. Hour 22h plus 1250 ticks (22:30). Cells: WildMinotaur (198, 237), Chimera (195, 238), LesserWyvern (200, 240), Hay at (197, 239) and (199, 237), Nelim near (194, 237). Says: "The big ones are brought into the barn for the night." Closing image of the story.
 # DIRECTOR'S REMARKS: kept all (apples out, flowers trampled out, Basilisk lead on its ring, Gaze group moved to statue-garden, water group moved to river-bridge at dusk, Ieltxu swapped with LesserWyvern, forge light, brazier refuel, barn braziers, clock order, closing on the barn). Open: the feature header above still lists hound 6 and two clocks (12:00-18:00 and 12:00-12:35); the 2026-10-23 block supersedes. Unchecked items to confirm before play: raven, moths, sparrows (use what the save has), Ingest/DoBill/Refuel steps, three-creature placement step. Accepted shots 5 (fire-pit) and 7 (plant-garden) stand on places marked 'a embellir' in SANCTUAIRE-LIEUX.md (told, out of scope).
 # EXTENSION, SCORE-GALLERY ROUND 1 (plan, no capture yet): 9 f,k weak = 4.0; 10 b,f,k = 3.5; 11 e,f,k = 3.5; 12 e,f,k = 3.5; 13 b,e,f,g,k = 3.0; 14 e,f,k = 3.5. FIXES WRITTEN HERE (round 2):
 # STORY (current, replaces the two clocks and the hound of the older blocks): one clear day, 4 September 5500, Nelim keeps one outfit; episodes in clock order 12:00 griffin, 13:00 kappa, 14:00 pegasus, 15:00 kitsune, 16:00 phoenix, 17:12 unicorn, 18:00 manticore, then 18:30 hunt-trio, 19:15 river-serpents, 20:00 gaze-group, 20:45 east, 21:30 small-ones, 22:30 barn; opening wide = griffin, closing = barn; settings window outside the story. Wide: 1, 8, 14; medium: 2, 3, 5, 7, 9, 10, 11, 12; close: 4, 13.
@@ -382,6 +382,265 @@ Feature: Workshop pictures
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"
     Then I take a screenshot "workshop-8-the-manticore-by-the-paddies"
+    When Nelim's Pickle Tools: the decor is removed
+
+  # SHOTS 9 TO 14 (extension 2026-11-14, the evening of the same day; hours by `I set the hour to` plus ticks: 2,500 per game hour). Written from the header block
+  # "SHOTLIST EXTENSION 2026-11-14", NOT PLAYED. Cells of places with no list in SANCTUAIRE-CASES.md (flower-garden, river-bridge, statue-garden east, barn, workshop)
+  # are asked of the map by `stands on the nearest free cell around` after the spawn; a spawn on a blocked cell fails and names it: move it one cell.
+  Scenario: the hunt trio in the flower garden
+    When I set the hour to 18
+    And Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 250 ticks pass
+    And Nelim's Sanctuary: the animals are removed from the sanctuary "flower-garden"
+    And Nelim's Pickle Tools: an adult animal of kind "MM_CeryneianHind" named "Cyra" is spawned at (155, 110)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_ErymanthianBoar" named "Gorm" is spawned at (152, 111)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_StymphalianBird" named "Skye" is spawned at (156, 108)
+    And Nelim's Pickle Tools: an adult animal of kind "Sparrow" named "Pip" is spawned at (153, 113)
+    And Nelim's Pickle Tools: an adult animal of kind "Sparrow" named "Tilly" is spawned at (158, 109)
+    And Nelim's Pickle Tools: I place the decor "PlantPot_Bonsai" at (151, 113)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (157, 113)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (150, 111)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (158, 108)
+    And Nelim's Pickle Tools: I place the decor "Stool" at (159, 110)
+    And Nelim's Pickle Tools: the plants from (150, 111) to (158, 113) are fully grown
+    And Nelim's Pickle Tools: 6 of the item "RawBerries" are spawned at (152, 110)
+    And Nelim's Pickle Tools: the temperature of the map is 20 degrees
+    And Nelim's Pickle Tools: I let 10 ticks pass
+    And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (36, 72, 140)
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
+    And Nelim's Sanctuary: the appearance of "Nelim" is logged
+    And Nelim's Pickle Tools: the colonist "Nelim" stands on the nearest free cell around (158, 111)
+    And Nelim's Pickle Tools: "Nelim" is forced to haul 1 of the item "RawBerries" to (156, 112)
+    And Nelim's Pickle Tools: the animal "Cyra" stands on the nearest free cell around (155, 110)
+    And Nelim's Pickle Tools: the animal "Skye" stands on the nearest free cell around (156, 108)
+    And Nelim's Pickle Tools: the animal "Gorm" stands at (152, 111) facing South
+    And Nelim's Pickle Tools: the animal "Gorm" is forced into the job "Ingest" on the item "RawBerries" at (152, 110)
+    And Nelim's Pickle Tools: I let 40 ticks pass
+    Then Alpha Mythology Renew the creature "Cyra" is standing on the map as "MM_CeryneianHind"
+    And Alpha Mythology Renew the creature "Gorm" is standing on the map as "MM_ErymanthianBoar"
+    And Alpha Mythology Renew the creature "Skye" is standing on the map as "MM_StymphalianBird"
+    When Nelim's Pickle Tools: the animal "Cyra" stands at (155, 110) facing South
+    And Alpha Mythology Renew dismisses every letter
+    And Nelim's Sanctuary: I am at the sanctuary "flower-garden"
+    And Nelim's Pickle Tools: the painted zones are hidden
+    And Alpha Mythology Renew frames the animal "Cyra" at zoom 3.5, shown -1 cells left and 0 cells up
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And I wait 30 ticks
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"
+    Then I take a screenshot "workshop-9-the-hunt-trio-in-the-flower-garden"
+    When Nelim's Pickle Tools: the decor is removed
+
+  Scenario: the river serpents below the bridge
+    When I set the hour to 19
+    And Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 125 ticks pass
+    And Nelim's Sanctuary: the animals are removed from the sanctuary "river-bridge"
+    And Nelim's Pickle Tools: an adult animal of kind "MM_LernaeanHydra" named "Lerna" is spawned at (133, 122)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Ahuizotl" named "Ahui" is spawned at (131, 126)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Tlilcoatl" named "Tlil" is spawned at (139, 127)
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (133, 125)
+    And Nelim's Pickle Tools: I place the decor "PlantPot_Bonsai" at (137, 125)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (134, 126)
+    And Nelim's Pickle Tools: I place the decor "Brazier" at (140, 126)
+    And Nelim's Pickle Tools: I place the decor "Stool" at (131, 123)
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (129, 127)
+    And Nelim's Pickle Tools: the plants from (129, 127) to (134, 126) are fully grown
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (133, 125) is lit
+    And Nelim's Pickle Tools: the decor "Brazier" at (140, 126) is lit
+    And Nelim's Pickle Tools: the temperature of the map is 20 degrees
+    And Nelim's Pickle Tools: I let 10 ticks pass
+    And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (36, 72, 140)
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
+    And Nelim's Sanctuary: the appearance of "Nelim" is logged
+    And Nelim's Pickle Tools: the colonist "Nelim" stands on the nearest free cell around (135, 124)
+    And Nelim's Pickle Tools: "Nelim" is forced to haul 1 of the item "Meat_Muffalo" to (137, 124)
+    And Nelim's Pickle Tools: I let 40 ticks pass
+    Then Alpha Mythology Renew the creature "Lerna" is standing on the map as "MM_LernaeanHydra"
+    And Alpha Mythology Renew the creature "Ahui" is standing on the map as "MM_Ahuizotl"
+    And Alpha Mythology Renew the creature "Tlil" is standing on the map as "MM_Tlilcoatl"
+    When Nelim's Pickle Tools: the animal "Lerna" stands on the nearest free cell around (133, 122)
+    And Nelim's Pickle Tools: the animal "Ahui" stands on the nearest free cell around (131, 126)
+    And Nelim's Pickle Tools: the animal "Tlil" stands on the nearest free cell around (139, 127)
+    And Alpha Mythology Renew dismisses every letter
+    And Nelim's Sanctuary: I am at the sanctuary "river-bridge"
+    And Nelim's Pickle Tools: the painted zones are hidden
+    And Alpha Mythology Renew frames the animal "Lerna" at zoom 4.5, shown 1 cells left and 0 cells up
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And I wait 30 ticks
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"
+    Then I take a screenshot "workshop-10-the-river-serpents-below-the-bridge"
+    When Nelim's Pickle Tools: the decor is removed
+
+  Scenario: the gaze group among the statues
+    When I set the hour to 19
+    And Nelim's Sanctuary: the animals are removed from the sanctuary "statue-garden"
+    # MM_BurnedGrass ring: the Basilisk burns the grass it walks on; it runs alone for 1,000 ticks so the ring forms, then the others come. Read on the capture.
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Basilisk" named "Sibyl" is spawned at (153, 97)
+    And Nelim's Pickle Tools: the animal "Sibyl" stands at (153, 97) facing South
+    And Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Catoblepas" named "Moss" is spawned at (156, 97)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Cerberus" named "Balthazar" is spawned at (149, 98)
+    And Nelim's Pickle Tools: I place the decor "SculptureSmall" at (152, 99)
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (150, 99)
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (155, 99)
+    And Nelim's Pickle Tools: I place the decor "Brazier" at (157, 99)
+    And Nelim's Pickle Tools: I place the decor "Stool" at (158, 98)
+    And Nelim's Pickle Tools: the decor "Brazier" at (157, 99) is lit
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (150, 99) is lit
+    And Nelim's Pickle Tools: the building "TorchLamp" at (155, 99) is filled with 10 percent fuel
+    And Nelim's Pickle Tools: the temperature of the map is 20 degrees
+    And Nelim's Pickle Tools: I let 10 ticks pass
+    And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (36, 72, 140)
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
+    And Nelim's Sanctuary: the appearance of "Nelim" is logged
+    And Nelim's Pickle Tools: 10 of the item "WoodLog" are spawned at (154, 100)
+    And Nelim's Pickle Tools: the colonist "Nelim" stands on the nearest free cell around (154, 100)
+    And Nelim's Pickle Tools: "Nelim" is forced into the job "Refuel" on the building "TorchLamp" at (155, 99)
+    And Nelim's Pickle Tools: the animal "Moss" stands on the nearest free cell around (156, 97)
+    And Nelim's Pickle Tools: the animal "Balthazar" stands on the nearest free cell around (149, 98)
+    And Nelim's Pickle Tools: I let 40 ticks pass
+    Then Alpha Mythology Renew the creature "Sibyl" is standing on the map as "MM_Basilisk"
+    And Alpha Mythology Renew the creature "Moss" is standing on the map as "MM_Catoblepas"
+    And Alpha Mythology Renew the creature "Balthazar" is standing on the map as "MM_Cerberus"
+    When Nelim's Pickle Tools: the animal "Sibyl" stands at (153, 97) facing South
+    And Alpha Mythology Renew dismisses every letter
+    And Nelim's Sanctuary: I am at the sanctuary "statue-garden"
+    And Nelim's Pickle Tools: the painted zones are hidden
+    And Alpha Mythology Renew frames the animal "Sibyl" at zoom 3.5, shown 0 cells left and 0 cells up
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And I wait 30 ticks
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"
+    Then I take a screenshot "workshop-11-the-gaze-group-among-the-statues"
+    When Nelim's Pickle Tools: the decor is removed
+
+  Scenario: the beasts of the east in the ritual hall
+    When I set the hour to 20
+    And Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 375 ticks pass
+    And Nelim's Sanctuary: the animals are removed from the sanctuary "ritual-hall"
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Qilin" named "Lin" is spawned at (206, 121)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Fenghuang" named "Feng" is spawned at (204, 121)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Xiezhi" named "Zhi" is spawned at (208, 121)
+    # the hall's own DarklightBrazier at (205, 117) stays as it is (survey, SANCTUAIRE-CASES.md); the Brazier below is the one Nelim refuels
+    And Nelim's Pickle Tools: I place the decor "Brazier" at (204, 118)
+    And Nelim's Pickle Tools: the building "Brazier" at (204, 118) is filled with 10 percent fuel
+    And Nelim's Pickle Tools: 10 of the item "WoodLog" are spawned at (203, 117)
+    And Nelim's Pickle Tools: the temperature of the map is 20 degrees
+    And Nelim's Pickle Tools: I let 10 ticks pass
+    And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (36, 72, 140)
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
+    And Nelim's Sanctuary: the appearance of "Nelim" is logged
+    And Nelim's Pickle Tools: the colonist "Nelim" stands on the nearest free cell around (203, 118)
+    And Nelim's Pickle Tools: "Nelim" is forced into the job "Refuel" on the building "Brazier" at (204, 118)
+    And Nelim's Pickle Tools: the animal "Lin" stands on the nearest free cell around (206, 121)
+    And Nelim's Pickle Tools: the animal "Feng" stands on the nearest free cell around (204, 121)
+    And Nelim's Pickle Tools: the animal "Zhi" stands on the nearest free cell around (208, 121)
+    And Nelim's Pickle Tools: I let 40 ticks pass
+    Then Alpha Mythology Renew the creature "Lin" is standing on the map as "MM_Qilin"
+    And Alpha Mythology Renew the creature "Feng" is standing on the map as "MM_Fenghuang"
+    And Alpha Mythology Renew the creature "Zhi" is standing on the map as "MM_Xiezhi"
+    When Nelim's Pickle Tools: the animal "Lin" stands at (206, 121) facing South
+    And Alpha Mythology Renew dismisses every letter
+    And Nelim's Sanctuary: I am at the sanctuary "ritual-hall"
+    And Nelim's Pickle Tools: the painted zones are hidden
+    And Alpha Mythology Renew frames the animal "Lin" at zoom 4.5, shown 0 cells left and 0 cells up
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And I wait 30 ticks
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"
+    Then I take a screenshot "workshop-12-the-beasts-of-the-east-in-the-ritual-hall"
+    When Nelim's Pickle Tools: the decor is removed
+
+  Scenario: the small ones at the forge
+    When I set the hour to 21
+    And Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 250 ticks pass
+    And Nelim's Sanctuary: the animals are removed from the sanctuary "preindustrial-workshop"
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Salamander" named "Pyra" is spawned at (223, 237)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Ieltxu" named "Tolo" is spawned at (221, 238)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_WillOWisp" named "Lumen" is spawned at (225, 235)
+    And Nelim's Pickle Tools: I place the decor "FueledSmithy" at (223, 233)
+    And Nelim's Pickle Tools: I place the decor "Brazier" at (226, 239)
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (220, 235)
+    And Nelim's Pickle Tools: I place the decor "Stool" at (222, 241)
+    And Nelim's Pickle Tools: I place the decor "PlantPot_Bonsai" at (219, 240)
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (216, 237)
+    And Nelim's Pickle Tools: the plants from (216, 237) to (216, 237) are fully grown
+    And Nelim's Pickle Tools: the decor "Brazier" at (226, 239) is lit
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (220, 235) is lit
+    And Nelim's Pickle Tools: 100 of the item "Steel" are spawned at (222, 234)
+    And Nelim's Pickle Tools: the building "FueledSmithy" at (223, 233) has the bill "Make_Mace"
+    And Nelim's Pickle Tools: the temperature of the map is 20 degrees
+    And Nelim's Pickle Tools: I let 10 ticks pass
+    And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (36, 72, 140)
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
+    And Nelim's Sanctuary: the appearance of "Nelim" is logged
+    And Nelim's Pickle Tools: the colonist "Nelim" stands on the nearest free cell around (223, 234)
+    And Nelim's Pickle Tools: "Nelim" is forced into the job "DoBill" on the building "FueledSmithy" at (223, 233)
+    And Nelim's Pickle Tools: the animal "Pyra" stands on the nearest free cell around (223, 237)
+    And Nelim's Pickle Tools: the animal "Tolo" stands on the nearest free cell around (221, 238)
+    And Nelim's Pickle Tools: the animal "Lumen" stands on the nearest free cell around (225, 235)
+    And Nelim's Pickle Tools: I let 40 ticks pass
+    Then Alpha Mythology Renew the creature "Pyra" is standing on the map as "MM_Salamander"
+    And Alpha Mythology Renew the creature "Tolo" is standing on the map as "MM_Ieltxu"
+    And Alpha Mythology Renew the creature "Lumen" is standing on the map as "MM_WillOWisp"
+    When Nelim's Pickle Tools: the animal "Pyra" stands at (223, 237) facing South
+    And Alpha Mythology Renew dismisses every letter
+    And Nelim's Sanctuary: I am at the sanctuary "preindustrial-workshop"
+    And Nelim's Pickle Tools: the painted zones are hidden
+    And Alpha Mythology Renew frames the animal "Pyra" at zoom 3, shown 0 cells left and 0 cells up
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And I wait 30 ticks
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"
+    Then I take a screenshot "workshop-13-the-small-ones-at-the-forge"
+    When Nelim's Pickle Tools: the decor is removed
+
+  Scenario: the big ones in the barn
+    When I set the hour to 22
+    And Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 500 ticks pass
+    And Nelim's Pickle Tools: I let 250 ticks pass
+    # the barn's enclosure animals stay: no removal step here (fixture, shotlist 14); its own four braziers give the light.
+    And Nelim's Pickle Tools: an adult animal of kind "MM_WildMinotaur" named "Asterion" is spawned at (198, 237)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Chimera" named "Chiara" is spawned at (195, 238)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_LesserWyvern" named "Vyr" is spawned at (200, 240)
+    And Nelim's Pickle Tools: 4 of the item "Hay" are spawned at (197, 239)
+    And Nelim's Pickle Tools: the temperature of the map is 20 degrees
+    And Nelim's Pickle Tools: I let 10 ticks pass
+    And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (36, 72, 140)
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
+    And Nelim's Sanctuary: the appearance of "Nelim" is logged
+    And Nelim's Pickle Tools: the colonist "Nelim" stands on the nearest free cell around (194, 237)
+    And Nelim's Pickle Tools: "Nelim" is forced to haul 1 of the item "Hay" to (199, 237)
+    And Nelim's Pickle Tools: the animal "Chiara" stands on the nearest free cell around (195, 238)
+    And Nelim's Pickle Tools: the animal "Vyr" stands on the nearest free cell around (200, 240)
+    And Nelim's Pickle Tools: the animal "Asterion" stands on the nearest free cell around (198, 237)
+    And Nelim's Pickle Tools: the animal "Asterion" is forced into the job "Ingest" on the item "Hay" at (197, 239)
+    And Nelim's Pickle Tools: I let 40 ticks pass
+    Then Alpha Mythology Renew the creature "Asterion" is standing on the map as "MM_WildMinotaur"
+    And Alpha Mythology Renew the creature "Chiara" is standing on the map as "MM_Chimera"
+    And Alpha Mythology Renew the creature "Vyr" is standing on the map as "MM_LesserWyvern"
+    When Alpha Mythology Renew dismisses every letter
+    And Nelim's Sanctuary: I am at the sanctuary "barn"
+    And Nelim's Pickle Tools: the painted zones are hidden
+    And Alpha Mythology Renew frames the animal "Asterion" at zoom 5.5, shown 0 cells left and 0 cells up
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And I wait 30 ticks
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"
+    Then I take a screenshot "workshop-14-the-big-ones-in-the-barn"
     When Nelim's Pickle Tools: the decor is removed
 
   # The window is the subject: the interface stays on, developer mode off so that its toolbar is not in the picture.

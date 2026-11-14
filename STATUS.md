@@ -194,14 +194,14 @@ Included animals (rule 5), 25 PawnKindDefs of the mod: shown by an accepted shot
 
 ## Shotlist (write-shotlist 2026-11-14, extension for rule 5; full lines in the header of `09-publication-shots.feature`, blocks "SHOTLIST EXTENSION 2026-11-14" and "SCORE-GALLERY ROUND 1")
 
-No capture of the new shots yet: rating the plan. Round 1: 9 = 4.0, 10 = 3.5, 11 = 3.5, 12 = 3.5, 13 = 3.0, 14 = 3.5 (weak: b on 10 and 13, e on 11 to 14, f on all, g on 13, k on the series header). Round 2 after the written fixes: every new scene at 5.0 on paper (no step proven absent; Ingest, DoBill, Refuel on a TorchLamp, three-creature placement not checked against the NPT catalogue). Scenarios of 9 to 14 NOT written, Check-ShotlistVsScenario NOT run: no ticket. The 8 accepted shots (1 to 8) are unchanged.
+No capture of the new shots yet: rating the plan. Round 1: 9 = 4.0, 10 = 3.5, 11 = 3.5, 12 = 3.5, 13 = 3.0, 14 = 3.5 (weak: b on 10 and 13, e on 11 to 14, f on all, g on 13, k on the series header). Round 2 after the written fixes: every new scene at 5.0 on paper (no step proven absent; Ingest, DoBill, Refuel on a TorchLamp, three-creature placement not checked against the NPT catalogue). Gate 2 done 2026-11-14: scenarios of 9 to 14 written in `09-publication-shots.feature` (after the manticore, before the settings window), NOT played. Gate 3 done: `Check-ShotlistVsScenario.ps1 -Feature 09-publication-shots.feature` exit 0 (header shot lines 1 to 14 now carry the dot form `#  N.` so the script matches them; without `-Feature` it still prints "no gallery feature" because it reads only the first 40 lines; WARN 14 shots vs 15 scenarios = the probe scenario, harmless). Fixed on the way: shot 12 brazier is a plain `Brazier` placed at (204, 118); the hall's own one is a DarklightBrazier (205, 117) and the survey has no censer. The 8 accepted shots (1 to 8) are unchanged. Ticket not yet filed. Unproven before play: bench `FueledSmithy` (223, 233) with bill `Make_Mace` and 100 `Steel` (13), Refuel on `TorchLamp` and `Brazier`, Ingest of `RawBerries` and `Hay` by an animal, spawns on cells with no list (flower-garden, river-bridge, statue-garden east, barn, workshop) moved by `nearest free cell`, Hydra in the river, Basilisk ring (11), `StymphalianBird` flying low (9, no step: it stands), raven and moths dropped, sparrows spawned in 9.
 
 | Shot | Place, hour | Lead and group | Nelim's gesture | Zoom |
 |---|---|---|---|---|
 | 9 hunt-trio | flower-garden, 18:30 | CeryneianHind, ErymanthianBoar, StymphalianBird | carries RawBerries | 3.5 |
 | 10 river-serpents | river-bridge, 19:15 | LernaeanHydra, Ahuizotl, Tlilcoatl | carries meat on the bridge | 4.5 |
 | 11 gaze-group | statue-garden, 20:00 | Basilisk (on its burned ring), Catoblepas, Cerberus | refuels a TorchLamp | 3.5 |
-| 12 east | ritual-hall, 20:45 | Qilin, Fenghuang, Xiezhi | refuels the hall brazier (204, 118) | 4.5 |
+| 12 east | ritual-hall, 20:45 | Qilin, Fenghuang, Xiezhi | refuels a Brazier placed at (204, 118) | 4.5 |
 | 13 small-ones | preindustrial-workshop, 21:30 | Salamander, Ieltxu, WillOWisp | crafts at the bench | 3 |
 | 14 barn-night | barn, 22:30 | WildMinotaur, Chimera, LesserWyvern | sets down a hay bale | 5.5 |
 

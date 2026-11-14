@@ -191,3 +191,18 @@ Colonists: Nelim | shots 1 to 7 | one outfit all day, deep blue top (36, 72, 140
 Animals: save pets Shogun, Yuki, Atticus (fixture pets, stand-at) | cat spawned for Tama and Kuru (not in the save) | outfit: animals may be dressed when the scenario justifies it (owner chat 2026-10-25, wardrobe not validated) | sheets last read 2026-10-23 | exceptions: none.
 
 Included animals (rule 5), 25 PawnKindDefs of the mod: shown by an accepted shot: Kitsune, Phoenix, Manticore, Kappa, Pegasus, Unicorn, Griffin (7). MISSING (no shot): Ahuizotl, Basilisk, Catoblepas, Cerberus, CeryneianHind, Chimera, ErymanthianBoar, Fenghuang, Ieltxu, LernaeanHydra, LesserWyvern, Qilin, Salamander, StymphalianBird, Tlilcoatl, WildMinotaur, WillOWisp, Xiezhi (18). Gap to fix in the shotlist (write-shotlist): group shots or new shots, then play them; rule 5 is not met by the current gallery.
+
+## Shotlist (write-shotlist 2026-11-14, extension for rule 5; full lines in the header of `09-publication-shots.feature`, blocks "SHOTLIST EXTENSION 2026-11-14" and "SCORE-GALLERY ROUND 1")
+
+No capture of the new shots yet: rating the plan. Round 1: 9 = 4.0, 10 = 3.5, 11 = 3.5, 12 = 3.5, 13 = 3.0, 14 = 3.5 (weak: b on 10 and 13, e on 11 to 14, f on all, g on 13, k on the series header). Round 2 after the written fixes: every new scene at 5.0 on paper (no step proven absent; Ingest, DoBill, Refuel on a TorchLamp, three-creature placement not checked against the NPT catalogue). Scenarios of 9 to 14 NOT written, Check-ShotlistVsScenario NOT run: no ticket. The 8 accepted shots (1 to 8) are unchanged.
+
+| Shot | Place, hour | Lead and group | Nelim's gesture | Zoom |
+|---|---|---|---|---|
+| 9 hunt-trio | flower-garden, 18:30 | CeryneianHind, ErymanthianBoar, StymphalianBird | carries RawBerries | 3.5 |
+| 10 river-serpents | river-bridge, 19:15 | LernaeanHydra, Ahuizotl, Tlilcoatl | carries meat on the bridge | 4.5 |
+| 11 gaze-group | statue-garden, 20:00 | Basilisk (on its burned ring), Catoblepas, Cerberus | refuels a TorchLamp | 3.5 |
+| 12 east | ritual-hall, 20:45 | Qilin, Fenghuang, Xiezhi | refuels the hall brazier (204, 118) | 4.5 |
+| 13 small-ones | preindustrial-workshop, 21:30 | Salamander, Ieltxu, WillOWisp | crafts at the bench | 3 |
+| 14 barn-night | barn, 22:30 | WildMinotaur, Chimera, LesserWyvern | sets down a hay bale | 5.5 |
+
+Director's pass (Opus sub-agent, 2026-11-14): all remarks kept (apples and trampled flowers out, Basilisk lead on its ring, gaze group to statue-garden, water group to river-bridge at dusk, Ieltxu and LesserWyvern swapped, creatures give no light of their own so the light is the place's, clock order, barn closes the day). Rule 5 after this list: all 25 creatures have a shot on paper. Open: owner arbitrations none; accepted shots 5 and 7 stand on places marked "a embellir" (told, out of scope); gallery order by clock (criterion k) conflicts with the strength order used for the accepted 1 to 8: decide at the final reindex.

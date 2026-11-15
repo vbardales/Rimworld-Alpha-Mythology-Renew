@@ -70,7 +70,7 @@
 #  8. manticore, rice-paddies 18:00 dusk, z5 wide (frame 10 cells high, the manticore about 1.5 cells, a seventh of the height but the only dark winged silhouette on pale soil, about 40 px on the thumbnail; the paddies fill the rest), expression NLR-Smile, says: "At dusk the last visitor watches the paddies while Nelim finishes the harvest.": Nelim harvests rice with her back to the manticore, which watches from the bank, herons and chickens in the rice; the day is ending, nothing will happen. Job Harvest on the rice. Decor SculptureSmall (220, 115), Plant_YellowTallGrass (224, 121).
 # SHOTLIST EXTENSION 2026-11-14 (write-shotlist, rule 5 of sync-nsb-npt: every creature of the mod in at least one shot; director's pass by an Opus sub-agent, remarks kept below). The 8 shots above stay; the hound (6) is not in the accepted gallery. SAME DAY, 4 September 5500, evening: Nelim keeps the deep-blue top (36, 72, 140), grey trousers, Roo_HD_Hair_Highpony, brown eyes, NLR-Smile. Six GROUP shots of three creatures, ordered by clock (criterion k), 18:30 to 22:30; the barn at night closes the day, the manticore dusk (18:00) is the bridge. 18 creatures covered: Ahuizotl, Basilisk, Catoblepas, Cerberus, CeryneianHind, Chimera, ErymanthianBoar, Fenghuang, Ieltxu, LernaeanHydra, LesserWyvern, Qilin, Salamander, StymphalianBird, Tlilcoatl, WildMinotaur, WillOWisp, Xiezhi. Thumbnail rule: RimWorld is top-down, a creature nearer the camera is not bigger, staggering only avoids overlap; the small ones (Basilisk 1.4, Ieltxu 1.4, WillOWisp 1.6 cells) lead a z <= 3.5 shot or stand on a mark.
 #  9. hunt-trio, flower-garden 18:30, z3.5, clear, low warm light: lead CeryneianHind (3.5 cells, seen from the front, in front of Nelim), ErymanthianBoar eating RawBerries Nelim just set down (Ingest, caught mid-bite), StymphalianBird flying low over the boar (Floating). Nelim walks in carrying RawBerries (HaulToCell, paused mid-walk), about to put them down. Hour 18h plus 1250 ticks (18:30). Cells: CeryneianHind (155, 110), ErymanthianBoar (152, 111), StymphalianBird (156, 108), RawBerries at (152, 110) and Nelim hauls to (156, 112), Nelim near (158, 111), PlantPot_Bonsai (151, 113), Plant_Daylily (157, 113) (150, 111) (158, 108), Stool (159, 110). Says: "Three beasts of the old hunts have come for the berries Nelim brings." Decor PlantPot_Bonsai, Plant_Daylily x3, Stool. Sparrows. No apples (vanilla has none).
-#  10. river-serpents, river-bridge 19:15 dusk, z4.5: lead LernaeanHydra in the river (about 70% of the frame height, heads up), Ahuizotl on the bank, Tlilcoatl coiled at the bridge foot (glossy black: dusk, not night). Nelim on the bridge with Meat_Muffalo (HaulToCell, paused), about to throw it. Hour 19h plus 625 ticks (19:15). Cells: LernaeanHydra (133, 120), Ahuizotl (129, 123), Tlilcoatl (141, 123), Nelim near (135, 124) with Meat_Muffalo to (137, 124), TorchLamp (133, 125), PlantPot_Bonsai (137, 125), Plant_Daylily (134, 126), Brazier (140, 126), Stool (131, 123), Plant_YellowTallGrass (129, 127). Says: "The river creatures wait below the bridge while Nelim brings them meat." No reflections (not drawn), no fish (Odyssey), wild swans/duck/heron kept out of frame. Decor TorchLamp lit on the bridge, Plant_YellowTallGrass, Stool.
+#  10. river-serpents, river-bridge 19:15 dusk, z4.5: lead LernaeanHydra in the river (about 70% of the frame height, heads up), Ahuizotl on the bank, Tlilcoatl coiled at the bridge foot (glossy black: dusk, not night). Nelim on the bridge with Meat_Muffalo (HaulToCell, paused), about to throw it. Hour 19h plus 625 ticks (19:15). Cells: LernaeanHydra (133, 120), Ahuizotl (129, 123), Tlilcoatl (138, 121), Nelim near (135, 124) with Meat_Muffalo to (137, 124), TorchLamp (133, 125), PlantPot_Bonsai (137, 125), Plant_Daylily (134, 126), Brazier (140, 126), Stool (131, 123), Plant_YellowTallGrass (129, 127). Says: "The river creatures wait below the bridge while Nelim brings them meat." No reflections (not drawn), no fish (Odyssey), wild swans/duck/heron kept out of frame. Decor TorchLamp lit on the bridge, Plant_YellowTallGrass, Stool.
 #  11. gaze-group, statue-garden 20:00 dusk, z3.5: lead Basilisk at the centre of its MM_BurnedGrass ring (ticks run so the ring forms; the ring makes it readable at 268 px), Catoblepas head down right, Cerberus at the frame edge left. The statues read as the victims of the gaze. Nelim lights a TorchLamp (Refuel, paused with the wood). Hour 19h plus 2500 ticks (20:00, the ring grows in the first 2,500). Cells: Basilisk (153, 97), Catoblepas (156, 97), Cerberus (149, 98), SculptureSmall (152, 99), TorchLamp (150, 99) (156, 99), Brazier (157, 98), Stool (158, 98), Nelim near (154, 100). Says: "The gaze beasts keep to the statues while Nelim lights the lamps." Decor TorchLamp x2, Brazier, Stool, SculptureSmall (152, 99).
 #  12. east, ritual-hall 20:45, z4.5: lead Qilin, Fenghuang on the altar side, Xiezhi right; no cat (Xiezhi is a predator). Nelim refuels the Brazier she placed (Refuel, paused). Hour 20h plus 1875 ticks (20:45). Cells: Qilin (206, 121), Fenghuang (204, 121), Xiezhi (208, 121), Brazier (204, 118) placed by the scenario (the hall's own DarklightBrazier (205, 117) stays, no censer in the survey), WoodLog (203, 117), Nelim near (203, 118). Says: "At nightfall the three beasts of the east gather in the ritual hall as Nelim tends the flame." Free cells among the six cushions read before the steps.
 #  13. small-ones, preindustrial-workshop 21:30, z3, light from the forge or brazier in frame: lead Salamander (heat 30/s: doors open or temperature override checked), Ieltxu, WillOWisp. Nelim crafts at the bench (DoBill), pen in the working gesture. Hour 21h plus 1250 ticks (21:30). Cells: Salamander (223, 237), Ieltxu (221, 238), WillOWisp (225, 235), FueledSmithy (223, 233), Steel (222, 234), Brazier (226, 239), Stool (222, 241), PlantPot_Bonsai (219, 240), Plant_YellowTallGrass (216, 237), Nelim near (223, 234). Says: "The three small ones keep Nelim company at the forge." The creatures give no light of their own (no Glower: WillOWisp is poison, Salamander a heat pusher); the light is the workshop's.
@@ -425,7 +425,7 @@ Feature: Workshop pictures
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "flower-garden"
     And Nelim's Pickle Tools: the painted zones are hidden
-    And Alpha Mythology Renew frames the animal "Cyra" at zoom 3.5, shown -1 cells left and 0 cells up
+    And Alpha Mythology Renew frames the animal "Cyra" at zoom 3.5, shown 1 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"
@@ -439,7 +439,7 @@ Feature: Workshop pictures
     And Nelim's Sanctuary: the animals are removed from the sanctuary "river-bridge"
     And Nelim's Pickle Tools: an adult animal of kind "MM_LernaeanHydra" named "Lerna" is spawned at (133, 120)
     And Nelim's Pickle Tools: an adult animal of kind "MM_Ahuizotl" named "Ahui" is spawned at (129, 123)
-    And Nelim's Pickle Tools: an adult animal of kind "MM_Tlilcoatl" named "Tlil" is spawned at (141, 123)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Tlilcoatl" named "Tlil" is spawned at (138, 121)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (133, 125)
     And Nelim's Pickle Tools: I place the decor "PlantPot_Bonsai" at (137, 125)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (134, 126)
@@ -463,11 +463,11 @@ Feature: Workshop pictures
     And Alpha Mythology Renew the creature "Tlil" is standing on the map as "MM_Tlilcoatl"
     When Nelim's Pickle Tools: the animal "Lerna" stands on the nearest free cell around (133, 120)
     And Nelim's Pickle Tools: the animal "Ahui" stands on the nearest free cell around (129, 123)
-    And Nelim's Pickle Tools: the animal "Tlil" stands on the nearest free cell around (141, 123)
+    And Nelim's Pickle Tools: the animal "Tlil" stands on the nearest free cell around (138, 121)
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "river-bridge"
     And Nelim's Pickle Tools: the painted zones are hidden
-    And Alpha Mythology Renew frames the animal "Lerna" at zoom 4.5, shown 1 cells left and -1 cells up
+    And Alpha Mythology Renew frames the animal "Lerna" at zoom 4.5, shown 1 cells left and -2 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"
@@ -514,7 +514,7 @@ Feature: Workshop pictures
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "statue-garden"
     And Nelim's Pickle Tools: the painted zones are hidden
-    And Alpha Mythology Renew frames the animal "Sibyl" at zoom 3.5, shown 0 cells left and 0 cells up
+    And Alpha Mythology Renew frames the animal "Sibyl" at zoom 3.5, shown 0 cells left and -2 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"

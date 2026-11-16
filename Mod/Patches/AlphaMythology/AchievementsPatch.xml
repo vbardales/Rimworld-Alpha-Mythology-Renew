@@ -43,7 +43,7 @@
 						<AchievementsExpanded.AchievementDef ParentName="MM_AchievementParent">
 							<defName>MM_AchievementMagicHunter</defName>
 							<label>Magic Hunter</label>
-							<description>Kill any magical creature from Project Hecate</description>
+							<description>Kill any magical creature from Hecate Project</description>
 
 							<tracker Class="AchievementsExpanded.KillTrackerWithOr">
 								<kindDefList>

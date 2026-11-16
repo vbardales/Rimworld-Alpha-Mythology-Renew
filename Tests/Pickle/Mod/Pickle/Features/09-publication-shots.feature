@@ -589,6 +589,7 @@ Feature: Workshop pictures
     And Nelim's Sanctuary: the appearance of "Nelim" is logged
     And Nelim's Pickle Tools: the colonist "Nelim" stands on the nearest free cell around (223, 234)
     And Nelim's Pickle Tools: the colonist "Nelim" has the work type "Smithing" enabled
+    And Nelim's Pickle Tools: "Nelim" has the skill "Crafting" at level 8
     And Nelim's Pickle Tools: "Nelim" is forced into the job "DoBill" on the building "FueledSmithy" at (223, 233)
     And Nelim's Pickle Tools: the animal "Pyra" stands on the nearest free cell around (223, 237)
     And Nelim's Pickle Tools: the animal "Tolo" stands on the nearest free cell around (221, 238)

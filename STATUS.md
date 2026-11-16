@@ -171,7 +171,7 @@ No capture of the new shots yet: rating the plan. Round 1: 9 = 4.0, 10 = 3.5, 11
 |---|---|---|---|---|
 | 9 hunt-trio | flower-garden, 18:30 | CeryneianHind, ErymanthianBoar, StymphalianBird | carries RawBerries | 3.5 |
 | 10 river-serpents | river-bridge, 19:15 | LernaeanHydra, Ahuizotl, Tlilcoatl | carries meat on the bridge | 4.5 |
-| 11 gaze-group | statue-garden, 20:00 | Basilisk (on its burned ring), Catoblepas, Cerberus | refuels a TorchLamp | 3.5 |
+| 11 gaze-group | statue-garden, 20:00 | Basilisk (on its burned ring), Catoblepas, Cerberus | refuels a TorchLamp | 4.5 |
 | 12 east | ritual-hall, 20:45 | Qilin, Fenghuang, Xiezhi | refuels a Brazier placed at (204, 118) | 4.5 |
 | 13 small-ones | preindustrial-workshop, 21:30 | Salamander, Ieltxu, WillOWisp | crafts at the bench | 3 |
 | 14 barn-night | barn, 22:30 | WildMinotaur, Chimera, LesserWyvern | sets down a hay bale | 5.5 |

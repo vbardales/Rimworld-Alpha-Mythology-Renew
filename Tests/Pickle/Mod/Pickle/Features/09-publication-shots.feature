@@ -561,6 +561,7 @@ Feature: Workshop pictures
     Then I take a screenshot "workshop-12-the-beasts-of-the-east-in-the-ritual-hall"
     When Nelim's Pickle Tools: the decor is removed
 
+  @requires:Ludeon.RimWorld.Ideology @requires:nelim.pickletools.ideologysteps
   Scenario: the small ones at the forge
     When I set the hour to 21
     And Nelim's Pickle Tools: I let 500 ticks pass

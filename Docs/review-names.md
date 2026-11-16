@@ -23,3 +23,9 @@ tlilcoatl: no fr.wikipedia article, mod's own form.
 ## Casing mid-sentence
 
 French: lowercase common nouns (fr.wikipedia). English (decided 2026-11-13, "normalise"): species names lowercase mid-sentence (phoenix, fenghuang, griffin, kappa, xiezhi, ahuizotl, ieltxu, catoblepas, basilisk, salamander, unicorn, manticore, tlilcoatl, wyvern, pegasi plural); individuals stay capitalised (Cerberus, Pegasus, Ceryneian Hind, Erymanthian Boar, Lernaean Hydra, Minotaur, Chimera singular). Applied in Mod/ and on PR #6 (6b92727). XML comments left as they are (not game text).
+
+## Mod titles cited in game texts
+
+| Name | Decision | Reason | Date |
+|---|---|---|---|
+| Witcher Monster Hunt | translated to `Witcher Monster Hunt (La Traque du Sorceleur)` | Registry title decided by Virginie (Audit answer, workshop 2008529522); used in `MM_LesserWyvern.description` | 2026-11-16 |

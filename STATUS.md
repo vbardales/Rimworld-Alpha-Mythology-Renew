@@ -146,6 +146,7 @@ Four rows, nothing done outward.
 - 2026-11-13 CE issue 4839 answered by N7Huntsman (maintainer): a PR adding our id is welcome, but it cannot be merged until our mod is available to test (our Workshop item 3811323347 is private). No PR opened (outward, needs Virginie go). Alpha Bees 16 still unanswered.
 
 - 2026-11-13 Virginie: the Combat Extended PR (add nelim.alphamythology next to sarg.magicalmenagerie in LoadFolders, CE issue 4839) is opened AFTER the Workshop release, not before.
+- 2026-11-16 Virginie: the AlphaBees fork branch (add nelim.alphamythology next to sarg.magicalmenagerie, issue juanosarg/AlphaBees#16) is made AFTER the Workshop release, like the Combat Extended PR: no branch, no PR before.
 - 2026-11-13 playTests journal (tickets 475d 3d74 89c5 20df 61ad, 8.c to 8.m) folded into Docs/runs/2026-11-status-fold-4.md. All green at b475d59 and 2a3a8e9; code_review_sha d1abd41; 8.i Player.log clean (61ad); 8.g and 8.j closed on existing evidence (owner accepted in chat).
 - 2026-11-13 8.g and 8.j: Virginie accepts the existing evidence (chat, "Accept evidence"); no full pass refiled. Basis: F01 to F14 mapped (Tests/FUNCTIONAL.md), Source and Mod/Assemblies unchanged since ea53d3c, Mod/ texts only since, 7ea2822 covered by settings-en4 and log-en5 green. Playtest sub-steps 8.c to 8.m all closed; next: playTests exit check (Check-Status, tested_on, workflow_stage move).
 

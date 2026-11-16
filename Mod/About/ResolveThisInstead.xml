@@ -32,4 +32,20 @@
       ModsConfig.IsActive for this pair, so window 3 (runtime opt-in) is not needed.
     </note>
   </alias>
+  <alias>
+    <old>
+      <packageId>sarg.magicalmenagerie</packageId>
+      <name>Magical Menagerie</name>
+    </old>
+    <successor>
+      <packageId>nelim.alphamythology</packageId>
+    </successor>
+    <compatible>true</compatible>
+    <runtime>false</runtime>
+    <note>
+      This port keeps the original's defNames and texture paths, so mods written for the original (retextures such
+      as Taste of Vanilla - The Alpha Mythology) see their dependency satisfied by the port while the game loads
+      data. Only meaningful while the original is absent: the port is incompatibleWith it. Runtime opt-in not needed.
+    </note>
+  </alias>
 </ResolveThisInstead>

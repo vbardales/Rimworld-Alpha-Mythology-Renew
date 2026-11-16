@@ -28,3 +28,7 @@ ChatGPT suggestions of /review-translation that were not applied. One row per su
 | 2026-11-16 | French `MM_FenghuangHediff.description` | `Ses capacités de manipulation et de déplacement augmentent` | `Ses` would be ambiguous (the fenghuang or the person); `de cette personne` keeps one clear referent. |
 | 2026-11-16 | `PUBLICATION.md` first sentence | `requires` and `stores` for `asks for` and `holds` | Matter of taste; the current wording is correct. |
 | 2026-11-16 | `TRANSLATION_REVIEW.md` Review line | update the cancelled line | Hers to fill; a session never edits it. |
+| 2026-11-16 | English achievement `MM_AchievementGrabbingHands.description` | `be held by an ahuizotl's grasp` to `be caught in an ahuizotl's grasp` | Matter of taste; the current phrase is grammatical and `caught` changes the meaning (held, not caught). |
+| 2026-11-16 | English achievement `MM_AchievementFountainOfBlood.description` | `suffer from a bleeding wound` | `Bleeding` is the name of the hediff the achievement checks, kept capitalised on purpose. |
+| 2026-11-16 | French `MM_UtilityHealthDesc` | `les colons et les animaux proches` | `membres de la colonie` is the epicene wording for the English `colonists`, validated by Virginie (no gendered `colons`). |
+| 2026-11-16 | `TRANSLATION_REVIEW.md` `MM_OpenWound.labelNounPretty` empty source columns | surface the English value | Plugin inventory limit (nested or inherited key), not a text of the mod; same family as the will-o'-wisp key. |

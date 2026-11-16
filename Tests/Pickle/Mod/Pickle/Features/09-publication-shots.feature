@@ -578,7 +578,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: the plants from (216, 237) to (216, 237) are fully grown
     And Nelim's Pickle Tools: the decor "Brazier" at (226, 239) is lit
     And Nelim's Pickle Tools: 100 of the item "Steel" are spawned at (222, 234)
-    And Nelim's Pickle Tools: the building "FueledSmithy" at (223, 233) has the bill "Make_Mace"
+    And Nelim's Pickle Tools: the building "FueledSmithy" at (223, 233) has the bill "Make_MeleeWeapon_Mace"
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
@@ -622,7 +622,8 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Sanctuary: the appearance of "Nelim" is logged
     And Nelim's Pickle Tools: the colonist "Nelim" stands on the nearest free cell around (194, 237)
-    And Nelim's Pickle Tools: "Nelim" is forced to haul 1 of the item "Hay" to (193, 238)
+    And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
+    And Nelim's Pickle Tools: "Nelim" puts down what it carries at (193, 238)
     And Nelim's Pickle Tools: the animal "Chiara" stands on the nearest free cell around (192, 235)
     And Nelim's Pickle Tools: the animal "Vyr" stands on the nearest free cell around (200, 240)
     And Nelim's Pickle Tools: the animal "Asterion" stands on the nearest free cell around (192, 238)

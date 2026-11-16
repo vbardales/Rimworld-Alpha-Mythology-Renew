@@ -602,7 +602,7 @@ Feature: Workshop pictures
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "preindustrial-workshop"
     And Nelim's Pickle Tools: the painted zones are hidden
-    And Alpha Mythology Renew frames the animal "Pyra" at zoom 2, shown 0 cells left and 1 cells up
+    And Alpha Mythology Renew frames the animal "Pyra" at zoom 3.5, shown 0 cells left and 2 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"

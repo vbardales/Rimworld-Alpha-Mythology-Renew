@@ -235,7 +235,7 @@
 
 						<AchievementsExpanded.AchievementDef ParentName="MM_AchievementParent">
 							<defName>MM_AchievementStatueOfColonist</defName>
-							<label>Statue of Colonist</label>
+							<label>Statue of a Colonist</label>
 							<description>Have a pawn or animal die from petrification</description>
 
 							<tracker Class="AchievementsExpanded.HediffDeathTracker">

@@ -29,3 +29,4 @@ French: lowercase common nouns (fr.wikipedia). English (decided 2026-11-13, "nor
 | Name | Decision | Reason | Date |
 |---|---|---|---|
 | Witcher Monster Hunt | translated to `Witcher Monster Hunt (La Traque du Sorceleur)` | Registry title decided by Virginie (Audit answer, workshop 2008529522); used in `MM_LesserWyvern.description` | 2026-11-16 |
+| Giddy-up! Battle Mounts | translated to `Giddy-up! Battle Mounts (Hue, coco ! Montures de guerre)` in sentences; labels keep the English name alone | Decided by Virginie (Audit relay); used in `MM_Griffin`, `MM_Pegasus`, `MM_Unicorn` descriptions | 2026-11-16 |

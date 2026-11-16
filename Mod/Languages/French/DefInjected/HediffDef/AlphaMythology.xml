@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <MM_ToxicBite.description>Des toxines circulent dans le sang. Elles peuvent provenir de diverses sources : pollution, morsures venimeuses ou armes empoisonnées.\n\nÀ forte dose, l'intoxication est mortelle. Même à faible dose, elle peut provoquer des cancers.\n\nContrairement à l'intoxication du jeu de base, ces dégâts toxiques ne rendent pas impropres à la consommation les créatures qui en meurent.</MM_ToxicBite.description>
+  <MM_ToxicBite.description>Des toxines circulent dans le sang. Elles peuvent provenir de diverses sources, notamment des toxines environnementales, des morsures venimeuses ou des armes empoisonnées.\n\nÀ forte dose, l'intoxication est mortelle. Même à faible dose, elle peut provoquer des cancers.\n\nContrairement à l'intoxication du jeu de base, ces dégâts toxiques ne rendent pas impropres à la consommation les créatures qui en meurent.</MM_ToxicBite.description>
   <MM_ToxicBite.label>intoxication</MM_ToxicBite.label>
   <MM_ToxicBite.stages.initial-0.label>initiale</MM_ToxicBite.stages.initial-0.label>
   <MM_ToxicBite.stages.initial-1.label>initiale</MM_ToxicBite.stages.initial-1.label>

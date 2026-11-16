@@ -14,7 +14,7 @@
   <MM_Boomer>Explose à la mort</MM_Boomer>
   <MM_BoomerDesc>Cet animal explose à sa mort.</MM_BoomerDesc>
   <MM_DamageRanged>Combat à distance</MM_DamageRanged>
-  <MM_DamageRangedDOTDesc>Cet animal utilise des attaques à distance qui infligent des dégâts sur la durée. L'engager au corps à corps n'est pas forcément le meilleur usage de ses capacités.</MM_DamageRangedDOTDesc>
+  <MM_DamageRangedDOTDesc>Cet animal utilise des attaques à distance pour blesser ses assaillants. Ces attaques infligent des dégâts sur la durée. L'engager au corps à corps n'est pas forcément le meilleur usage de ses capacités.</MM_DamageRangedDOTDesc>
   <MM_DamageRangedDesc>Cet animal utilise des attaques à distance pour blesser ses adversaires. L'engager au corps à corps n'est pas forcément le meilleur usage de ses capacités.</MM_DamageRangedDesc>
   <MM_DamageRangedPoison>Attaque toxique à distance</MM_DamageRangedPoison>
   <MM_DamageRangedPoisonDesc>Cet animal utilise des attaques à distance qui infligent des dégâts toxiques. L'engager au corps à corps n'est pas forcément le meilleur usage de ses capacités.</MM_DamageRangedPoisonDesc>

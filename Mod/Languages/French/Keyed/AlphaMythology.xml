@@ -43,7 +43,7 @@
   <MM_UtilityMoodDesc>Cet animal, plutôt fragile, n'est pas adapté au combat. Il améliorera toutefois l'humeur des membres de la colonie par des câlins ou d'autres capacités.</MM_UtilityMoodDesc>
   <MM_UtilityTemperatureDesc>Cet animal dégage de la chaleur et réchauffe son environnement.</MM_UtilityTemperatureDesc>
   <MM_UtilityWorkerDesc>Cet animal, plutôt fragile, n'est pas adapté au combat. Il aidera toutefois les membres de la colonie à accomplir certaines tâches, comme le minage ou la récolte, ce qui réduit considérablement la charge de travail.</MM_UtilityWorkerDesc>
-  <MM_VenomousTankDesc>Les animaux résistants sont spécialisés dans le combat au corps à corps. Ils possèdent des attaques puissantes, une bonne résistance, beaucoup de santé ou d'autres capacités leur permettant de survivre en première ligne.\n\nCet animal possède aussi de puissantes attaques venimeuses.</MM_VenomousTankDesc>
+  <MM_VenomousTankDesc>Les animaux « Première ligne » sont spécialisés dans le combat au corps à corps. Ils possèdent des attaques puissantes, une bonne résistance, beaucoup de santé ou d'autres capacités leur permettant de survivre en première ligne.\n\nCet animal possède aussi de puissantes attaques venimeuses.</MM_VenomousTankDesc>
   <MM_Yes>Oui</MM_Yes>
   <AMR_SettingsCategory>Alpha Mythology Renew (unofficial)</AMR_SettingsCategory>
   <AMR_SpawnMultiplier>Fréquence d'apparition à l'état sauvage : ×{0}</AMR_SpawnMultiplier>

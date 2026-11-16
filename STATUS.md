@@ -4,12 +4,12 @@ packageId: nelim.alphamythology
 repo: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew
 remote: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew.git
 visibility: public
-workflow_stage: playTests[1.0.0]   # 2026-11-16 replay-audit: first open 8.h (settings_audit partial); owner said move back; gallery work (tickets 8184) continues
+workflow_stage: writeShotlist[1.0.0]   # 2026-11-16 replay-audit 8.h closed (settings_audit passed, owner yes); 9.0 bis waits on header drift of shots 11 and 14 (fix after ticket 8184 RUN_DONE), then shootGallery
 licence: silent
 licence_at: "2026-09-12: upstream master 53a5518008821188009bbf996b7120ad9593cb5f and the Workshop page reviewed (602 comments, Bug Reports thread); no project licence, no redistribution grant, no refusal found. Refreshed 2026-09-26. Only a retexture permission (2022-08-21, conditional on the game EULA) was found, not a licence for this port. Silent = public (owner's rule)."
 upstream_mod_remotes:
   - https://github.com/juanosarg/AlphaMythology
-settings_audit: partial
+settings_audit: passed        # 2026-11-16 owner yes: settings passes EN 8 of 8 and FR 10 of 10 green at b475d59 (tickets 475d 3d74 89c5 20df)
 localization: complete
 translation_en: complete
 translation_fr: complete      # 2026-11-12: Virginie validated in chat ("je valide la relecture") after twelve /review-translation runs, at c37f1d2 (replaces the 308a9ec validation; the Review line of TRANSLATION_REVIEW.md is hers to fill)
@@ -21,9 +21,9 @@ audit_at: 2026-10-10
 audit_revision: dbc114e22cf23ab64baa7a9047141d161d17abf2 (clean tree at the start; this audit then edited Tests/Test-Validator.ps1, CHANGELOG.md, TESTING.md, Tests/Pickle/README.md, STATUS.md)
 automated_tests: "passed 2026-10-10: Tests/UnitTests ALL PASSED (spawn rules 13, patch checks 47); Release build 0 warnings 0 errors"
 xml_tests: "passed 2026-10-17 (3357d07): Check-Mod.ps1 now also runs shared Check-Translations at its end with the 6 compatibility Keyed keys allowed (NocturnalAnimals.BodyClock*, VEF_WarningEggExplodes), 174 assertions, Test-Validator 6 negative cases green; earlier 2026-10-11: Check-ModBasics (shared) then Check-Mod.ps1 174 own assertions, 86 XML files, 25 creatures; Test-Validator.ps1 6 negative cases (the runner was red before this audit, see Audit 2026-10-10); shared scripts/Check-Translations.ps1 224 source texts and French injections green 2026-10-11 (replaced Check-Translations.py, deleted)"
-functional_tests: "unverified in this audit; Pickle history reports green passes (see Tests): not re-read here"
+functional_tests: "passed 2026-11-13: F01 to F14 played by Pickle (Tests/FUNCTIONAL.md map), 8.g and 8.j accepted by Virginie in chat on that evidence"
 remaining:
-  - "2026-11-16 replay-audit, 8.h open: settings_audit partial and functional_tests unverified though settings passes EN 8 of 8 and FR 10 of 10 are green at b475d59; owner call to move or record, then set settings_audit complete and passed with the proof, then return to shootGallery. Also 9.0 bis: header of 09-publication-shots.feature drifts from scenarios 11 and 14 (Check-ShotlistVsScenario exit 1), fix at shootGallery"
+  - "2026-11-16 replay-audit 9.0 bis: header of 09-publication-shots.feature drifts from scenarios 11 and 14 (Check-ShotlistVsScenario exit 1: shot 11 (149, 98), shot 14 (192, 235) (200, 240)); fix the header after ticket 8184 RUN_DONE (feature untouched while it runs), rerun the check, then workflow_stage shootGallery"
   - "2026-11-13 playTests (replay-audit, ledger 72 rows): 8.c, 8.f, 8.h, 8.k, 8.m done at tree d1abd41 (see Tests table in TESTING.md and the 2026-11-13 lines below); 8.d 8.g 8.i 8.j closed later the same day (see lines below); playTests exit sub-steps all closed. Migration from Animal Ark: not applicable, documented as not carried over (CHANGELOG, PUBLICATION, About.xml)."
   - "2026-10-17 feature (upstream PR 6): English fixes to carry upstream: Manticore description now `attacking from range` (done here); Erymanthian boar `slowing its progress and advantage` is still to fix upstream only (suggested: `slowing it down and negating its advantage`); not changed here; 2026-11-12 ChatGPT review adds two more upstream-only candidates: Cerberus `specially when modified` to `especially`, Pegasus `could make such flimsy wings to support their weight` to `... wings support their weight`"
   - "2026-10-10 feature (prepareRelease, AUDIT 3.c/11.f/12.e): CHANGELOG [Unreleased] stays on top until the dry-run; in the commit whose sha goes to the dry-run it becomes `## [1.0.0] - <planned send date>`; a slipped send means a corrected date, a new commit and a new dry-run (Check-Status WARNs changelog from publish on)"
@@ -41,7 +41,7 @@ social_preview_sha256: c51c55af47ec42afdad3dd8c48ab6917900dcda75dddf81195bbe7ee3
 upstream_synced: 2026-11-12 juanosarg/AlphaMythology@53a5518
 updated: 2026-11-16
 tested_1_7: yes   # 2026-11-12, English only; gaps in the 1.7 pass entry of remaining
-protocols_read_sha: 87c6118c4b41c01607a0d43efeb6905285c1f61b
+protocols_read_sha: 5de62894078b9c3c4d5938b7a75140012d7ddb55
 ---
 # Alpha Mythology Renew (unofficial): status
 

@@ -570,7 +570,8 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: an adult animal of kind "MM_Salamander" named "Pyra" is spawned at (223, 237)
     And Nelim's Pickle Tools: an adult animal of kind "MM_Ieltxu" named "Tolo" is spawned at (221, 238)
     And Nelim's Pickle Tools: an adult animal of kind "MM_WillOWisp" named "Lumen" is spawned at (225, 235)
-    And Nelim's Pickle Tools: I place the decor "FueledSmithy" at (223, 233)
+    And Nelim's Pickle Tools: I place the decor "FueledSmithy" owned by the colonists exactly at (223, 233) facing South
+    And Nelim's Pickle Tools: the building "FueledSmithy" at (223, 233) is filled with 100 percent fuel
     And Nelim's Pickle Tools: I place the decor "Brazier" at (226, 239)
     And Nelim's Pickle Tools: the building "Stool" is spawned on the nearest free cell around (222, 241)
     And Nelim's Pickle Tools: the building "PlantPot_Bonsai" is spawned on the nearest free cell around (219, 240)
@@ -612,8 +613,8 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: I let 250 ticks pass
     # the barn's enclosure animals stay: no removal step here (fixture, shotlist 14); its own four braziers give the light.
     And Nelim's Pickle Tools: an adult animal of kind "MM_WildMinotaur" named "Asterion" is spawned at (192, 238)
-    And Nelim's Pickle Tools: an adult animal of kind "MM_Chimera" named "Chiara" is spawned at (192, 235)
-    And Nelim's Pickle Tools: an adult animal of kind "MM_LesserWyvern" named "Vyr" is spawned at (200, 240)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Chimera" named "Chiara" is spawned at (189, 235)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_LesserWyvern" named "Vyr" is spawned at (198, 238)
     And Nelim's Pickle Tools: 4 of the item "Hay" are spawned at (193, 239)
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I let 10 ticks pass
@@ -624,8 +625,8 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: the colonist "Nelim" stands on the nearest free cell around (194, 237)
     And Nelim's Pickle Tools: "Nelim" carries the item "Hay"
     And Nelim's Pickle Tools: "Nelim" puts down what it carries at (193, 238)
-    And Nelim's Pickle Tools: the animal "Chiara" stands on the nearest free cell around (192, 235)
-    And Nelim's Pickle Tools: the animal "Vyr" stands on the nearest free cell around (200, 240)
+    And Nelim's Pickle Tools: the animal "Chiara" stands on the nearest free cell around (189, 235)
+    And Nelim's Pickle Tools: the animal "Vyr" stands on the nearest free cell around (198, 238)
     And Nelim's Pickle Tools: the animal "Asterion" stands on the nearest free cell around (192, 238)
     And Nelim's Pickle Tools: the animal "Asterion" is forced into the job "Ingest" on the item "Hay" at (193, 239)
     And Nelim's Pickle Tools: I let 40 ticks pass

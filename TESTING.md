@@ -160,7 +160,7 @@ HEAD d1abd41. `Source/` and `Mod/Assemblies/` unchanged since ea53d3c; `Mod/` ch
 |---|---|---|
 | settings, shortcut, reload EN (475d) and FR with language (3d74+89c5) | b475d59 (final texts) | `Evidence/settings-en4`, `settings-fr4` |
 | translation report FR (20df) | b475d59 | `Evidence/translation-fr5` |
-| ten optional-provider passes (`@requires` scenarios, opt2) | ea53d3c, not refiled: only texts and `About.xml` since | Parked `opt2-*` RELEASE.md, `Evidence/opt-*` |
+| ten optional-provider passes (`@requires` scenarios, opt2) | ea53d3c, not refiled: only texts and `About.xml` since | `Evidence/opt2-*` (minified, moved from Parked 2026-11-16; the earlier `opt-*` removed as superseded) |
 | incompatibility (e5ca 2 of 3, 26e1) | 7ea2822 / 59bfc1c, Mod changed since by texts only | `Evidence/incompat4`, `behaviour1` |
 | 1.7 English (9007, 7f53) | e571747 / 89534d0 | `Evidence/p17-*` |
 

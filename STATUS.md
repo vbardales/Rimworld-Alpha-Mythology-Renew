@@ -4,7 +4,7 @@ packageId: nelim.alphamythology
 repo: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew
 remote: https://github.com/vbardales/Rimworld-Alpha-Mythology-Renew.git
 visibility: public
-workflow_stage: shootGallery[1.0.0]   # 2026-11-16 9.0 bis met again (Check-ShotlistVsScenario exit 0 after the header of shots 11 and 14 was synced); 8.h closed (settings_audit passed)
+workflow_stage: playTests[1.0.0]   # 2026-11-18 replay-audit (owner yes, move back): 8.a 8.b 8.m open since Mod/ text changed after tested tree 2a3a8e9 and code_review_sha d1abd41; gallery work (ticket 7418) continues meanwhile
 licence: silent
 licence_at: "2026-09-12: upstream master 53a5518008821188009bbf996b7120ad9593cb5f and the Workshop page reviewed (602 comments, Bug Reports thread); no project licence, no redistribution grant, no refusal found. Refreshed 2026-09-26. Only a retexture permission (2022-08-21, conditional on the game EULA) was found, not a licence for this port. Silent = public (owner's rule)."
 upstream_mod_remotes:
@@ -23,6 +23,7 @@ automated_tests: "passed 2026-10-10: Tests/UnitTests ALL PASSED (spawn rules 13,
 xml_tests: "passed 2026-10-17 (3357d07): Check-Mod.ps1 now also runs shared Check-Translations at its end with the 6 compatibility Keyed keys allowed (NocturnalAnimals.BodyClock*, VEF_WarningEggExplodes), 174 assertions, Test-Validator 6 negative cases green; earlier 2026-10-11: Check-ModBasics (shared) then Check-Mod.ps1 174 own assertions, 86 XML files, 25 creatures; Test-Validator.ps1 6 negative cases (the runner was red before this audit, see Audit 2026-10-10); shared scripts/Check-Translations.ps1 224 source texts and French injections green 2026-10-11 (replaced Check-Translations.py, deleted)"
 functional_tests: "passed 2026-11-13: F01 to F14 played by Pickle (Tests/FUNCTIONAL.md map), 8.g and 8.j accepted by Virginie in chat on that evidence"
 remaining:
+  - "2026-11-18 REPLAY (ledger ../.replays/AlphaMythologyRenew-20261118.tsv, stage moved back to playTests): open 8.a (tested tree 2a3a8e9 differs from shipped: 11 files of Mod/ changed, Source and DLL unchanged), 8.b (texts changed by review rounds 13 to 16 after Virginie's validation at c37f1d2: she validates again, TRANSLATION_REVIEW.md already regenerated at 696af34), 8.m (code review of git diff d1abd41 HEAD on Mod: Opus sub-agent, then code_review_sha), 8.n. After them: re-test the changed texts by a small Pickle ticket, back to shootGallery. Gallery ticket 7418 and candidates 9 10 12 13 14 stand."
   - "2026-11-17 REDO 5 of 11 FILED: finding: the zoom number of `frames the animal` is the camera half-height in cells (Tests/Pickle/Source/GallerySteps.cs), so 5.5 gave about 98 px per cell and a tiny Basilisk; now zoom 3.2, shown 0 and 0 (about 11.4 x 6.4 cells, the green box at about x 150 stays out), same cells; no burned ring forced (the Basilisk stands in place, the ring forms where it walks: unproven). Committed 4757836, Check-ShotlistVsScenario exit 0 (-Mod and -Feature needed). Ticket 20261117-204127-348-7418 WAITING (label gallery 11 redo 5 4757836 sanctuary map, evidence Tests/Pickle/Inbox/gallery-redo-i; do not refile). Candidates 9 10 12 13 14. Next: open the capture, then score-gallery on 9 to 14, order, names, subtitles, one review by Virginie; /sync-nsb-npt."
   - "2026-11-17 a598 READ (1 of 1 passed): 10 captured by eye: hydra whole and large, Nelim whole with the meat, Ahuizotl tail whole, Tlilcoatl small at the bottom right (grey, near the corner); KEPT as candidate Art/Gallery/10-candidate-river-serpents.jpg; run gallery-redo-h deleted. Candidates now 9 10 12 13 14; 11 still REDO-or-accept (d5f2 capture: Basilisk small, no burned ring, green box cut at the right edge). Next: rework 11 (Basilisk zoom, burned ring, green box west of x 146), refile alone, then score-gallery on 9 to 14, order, names, subtitles, one review by Virginie; /sync-nsb-npt."
   - "2026-11-17 ea6c READ (0 of 1): 10 failed \"the cell (136, 119) is not standable\" at step `the animal Tlil stands at (136, 119) facing West` (the meat fix at 161725a worked, the run got past it). Fixed at 8d784c3: Tlilcoatl on the nearest free cell around (136, 119), facing lost. Ticket 20261117-202022-438-a598 WAITING (label gallery 10 redo 6 8d784c3 sanctuary map, evidence Tests/Pickle/Inbox/gallery-redo-h; do not refile; supersedes ea6c WAITING below). Run gallery-redo-g deleted."
@@ -49,9 +50,9 @@ publication_changelog_review_sha: 92ed1e831806f7b0fead291d3b1a8ad738562bc9
 echo_review_sha: 78c1e580deb99203ddece9fb25f09cd895f4b824
 social_preview_sha256: c51c55af47ec42afdad3dd8c48ab6917900dcda75dddf81195bbe7ee3911c2e5
 upstream_synced: 2026-11-12 juanosarg/AlphaMythology@53a5518
-updated: 2026-11-17
+updated: 2026-11-18
 tested_1_7: yes   # 2026-11-12, English only; gaps in the 1.7 pass entry of remaining
-protocols_read_sha: cc55569852194a8668047613f1fe6a2966b350c3
+protocols_read_sha: b41601bfb1156a9ec5daad38a43246a0286b3578
 ---
 # Alpha Mythology Renew (unofficial): status
 

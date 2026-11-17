@@ -456,7 +456,6 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (36, 72, 140)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Sanctuary: the appearance of "Nelim" is logged
-    And Nelim's Pickle Tools: 1 of the item "Meat_Muffalo" are spawned at (132, 122)
     And Nelim's Pickle Tools: the colonist "Nelim" stands on the nearest free cell around (132, 122)
     And Nelim's Pickle Tools: "Nelim" is forced to haul 1 of the item "Meat_Muffalo" to (133, 122)
     And Nelim's Pickle Tools: I let 40 ticks pass

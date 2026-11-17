@@ -6,7 +6,7 @@
 	<ThingDef ParentName="AnimalThingBase">
 		<defName>MM_Kitsune</defName>
 		<label>kitsune</label>
-		<description>The kitsune is a legendary creature from Japanese folklore, depicted as a quite intelligent fox-like being possessing paranormal abilities that increase with its age and wisdom. Kitsune have as many as nine tails. Generally, a greater number of tails indicates an older and more powerful Kitsune.\n\nKitsune aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.\n\nSpecial Abilities: When tamed, Kitsune slowly regenerate the wounds of nearby colonists and animals.</description>
+		<description>The kitsune is a legendary creature from Japanese folklore, depicted as a quite intelligent fox-like being possessing paranormal abilities that increase with its age and wisdom. Kitsune have as many as nine tails. Generally, a greater number of tails indicates an older and more powerful kitsune.\n\nKitsune aren't naturally occurring creatures, and were created as part of the Hecate Project, a bio-engineering program that applied mechanite replicators to already existing animals to mutate them into "magical" creatures.\n\nSpecial Abilities: When tamed, kitsune slowly regenerate the wounds of nearby colonists and animals.</description>
 		<statBases>
 		  <Wildness>0.75</Wildness>
 			<MoveSpeed>4.6</MoveSpeed>

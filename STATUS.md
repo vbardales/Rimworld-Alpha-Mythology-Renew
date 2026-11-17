@@ -46,7 +46,7 @@ social_preview_sha256: c51c55af47ec42afdad3dd8c48ab6917900dcda75dddf81195bbe7ee3
 upstream_synced: 2026-11-12 juanosarg/AlphaMythology@53a5518
 updated: 2026-11-16
 tested_1_7: yes   # 2026-11-12, English only; gaps in the 1.7 pass entry of remaining
-protocols_read_sha: bcd13d616a9af97e28b1435a8379af73c6107ce1
+protocols_read_sha: 79d52de6b8a10ce2fee694d3ba07ab5457b04666
 ---
 # Alpha Mythology Renew (unofficial): status
 
@@ -154,6 +154,7 @@ Four rows, nothing done outward.
 
 Places read: not re-read (2026-11-14: NSB content unchanged since 2026-11-06; only commit 18abf53 renamed `docs/` to `Docs/`, 0 lines changed). Tribe read: 2026-11-14 (CATALOGUE-ANIMAUX only; profiles last read 2026-10-23). Steps read: 2026-11-16 (git log and diff of NPT `Docs/steps.md` since 2026-11-14: six steps added, none renamed or removed).
 
+2026-11-17 second sync (diffs only): NSB commits of 2026-11-17 touch VALIDE.md (other colonists validated: Miel, Quo, Quaren, Daichi, Dalia, Iori, Celeste), NEUTRES-TETE.md, VTW-BODYTYPES.md; no place, no animal sheet, no Nelim line. NPT: only `ColonistRace/docs/catalogues/face-parts.md` (vanilla face, no vanilla mouth part); `steps.md` untouched. Tribe read 2026-11-17 (diffs), Steps read 2026-11-17 (diffs); Places read stays 2026-11-14. Nothing used, nothing rewritten, no owner question.
 2026-11-17 sync (diffs only, no full re-read): NSB commits since 2026-11-14 touch Soren, Ada, Lyra, Quill, VTW body types and Roster.xlsx (owner verdict on bodies, temporary go for Male, Female, Hulk Female, Thin Female, Child Female); no place, no animal sheet, no Nelim profile line; Nelim's validated look unchanged. Tribe diff read 2026-11-17 (VALIDE.md line on bodies); Places read stays 2026-11-14. NPT: no change to steps.md or catalogues since 2026-11-16. Rule 5: the 18 missing creatures all have a shot on paper (9 to 14), none played green (REDO 2026-11-17). Nothing used, nothing rewritten.
 NSB since last sync (older note): nothing that touches a place, colonist or animal (Check-Status raised no nsb-sync warn at 2026-11-16). NPT 2026-11-14 to 2026-11-16: added `aims at the cell`, `builds the blueprint`, `filth is spread`, `vehicle is spawned`, `hover over the gizmo`, Beauty2 mouth offset `DY`; render-node hide now uses the debugEnabled flag; no step of `09-publication-shots` touched; nothing used. NPT 2026-11-06 to 2026-11-14: ScreenshotStudio step hiding the main tab bar, speed controls and mouse-over readout (65f21b3, usable for any shot that shows the map), StageDecor pot with a grown plant, decor burns, floors; ColonistRace filth removal (radius or map), game-condition step, animal hediff and surgery steps. No step used by `09-publication-shots` renamed or removed in the log titles; to confirm by reading `steps.md` at write-shotlist. Left alone: the eight accepted pictures; no scenario touched.
 

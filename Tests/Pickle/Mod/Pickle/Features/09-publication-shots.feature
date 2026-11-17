@@ -398,7 +398,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: an adult animal of kind "MM_StymphalianBird" named "Skye" is spawned at (152, 109)
     And Nelim's Pickle Tools: an adult animal of kind "Sparrow" named "Pip" is spawned at (153, 113)
     And Nelim's Pickle Tools: an adult animal of kind "Sparrow" named "Tilly" is spawned at (158, 109)
-    And Nelim's Pickle Tools: I place the decor "PlantPot_Bonsai" at (151, 113)
+    And Nelim's Pickle Tools: the building "PlantPot_Bonsai" is spawned on the nearest free cell around (151, 113)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (157, 113)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (150, 111)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (158, 108)
@@ -553,8 +553,9 @@ Feature: Workshop pictures
     When Nelim's Pickle Tools: the animal "Lin" stands at (206, 121) facing South
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "ritual-hall"
-    # PiT 2026-11-17: list the things of the hall to find the def of the square outline and purple diamond markers, then hide it ("the things ... are hidden when present").
-    And Nelim's Pickle Tools: the things within 8 cells of (205, 119) are listed
+    # PiT 2026-11-17: the square outline and purple diamond are things on the map (ticket a3e8 list: RitualSpot, PartySpot); presentation mode does not hide them.
+    And Nelim's Pickle Tools: the things "RitualSpot" within 8 cells of (205, 119) are hidden when present
+    And Nelim's Pickle Tools: the things "PartySpot" within 8 cells of (205, 119) are hidden when present
     And Nelim's Pickle Tools: the painted zones are hidden
     And Alpha Mythology Renew frames the animal "Lin" at zoom 4.5, shown 0 cells left and 1 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled

@@ -553,6 +553,8 @@ Feature: Workshop pictures
     When Nelim's Pickle Tools: the animal "Lin" stands at (206, 121) facing South
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "ritual-hall"
+    # PiT 2026-11-17: list the things of the hall to find the def of the square outline and purple diamond markers, then hide it ("the things ... are hidden when present").
+    And Nelim's Pickle Tools: the things within 8 cells of (205, 119) are listed
     And Nelim's Pickle Tools: the painted zones are hidden
     And Alpha Mythology Renew frames the animal "Lin" at zoom 4.5, shown 0 cells left and 1 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled

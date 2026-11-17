@@ -464,7 +464,7 @@ Feature: Workshop pictures
     And Alpha Mythology Renew the creature "Tlil" is standing on the map as "MM_Tlilcoatl"
     When Nelim's Pickle Tools: the animal "Lerna" stands on the nearest free cell around (133, 120)
     And Nelim's Pickle Tools: the animal "Ahui" stands on the nearest free cell around (130, 121)
-    And Nelim's Pickle Tools: the animal "Tlil" stands at (136, 119) facing West
+    And Nelim's Pickle Tools: the animal "Tlil" stands on the nearest free cell around (136, 119)
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "river-bridge"
     And Nelim's Pickle Tools: the painted zones are hidden

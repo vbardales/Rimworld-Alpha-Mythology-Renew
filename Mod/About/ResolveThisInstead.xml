@@ -35,7 +35,7 @@
   <alias>
     <old>
       <packageId>sarg.magicalmenagerie</packageId>
-      <name>Magical Menagerie</name>
+      <name>Alpha Mythology</name>
     </old>
     <successor>
       <packageId>nelim.alphamythology</packageId>

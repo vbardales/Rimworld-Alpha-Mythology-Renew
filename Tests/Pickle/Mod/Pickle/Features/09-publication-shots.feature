@@ -397,7 +397,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: I let 500 ticks pass
     And Nelim's Pickle Tools: I let 250 ticks pass
     And Nelim's Sanctuary: the animals are removed from the sanctuary "flower-garden"
-    And Nelim's Pickle Tools: the plants "Plant_Daylily" are removed from the growing zones in the area from (148, 106) to (160, 114) widened by 0 cells
+    And Nelim's Pickle Tools: the plants "Plant_Daylily" are removed in the area from (148, 106) to (160, 114)
     And Nelim's Pickle Tools: an adult animal of kind "MM_CeryneianHind" named "Cyra" is spawned at (155, 110)
     And Nelim's Pickle Tools: an adult animal of kind "MM_ErymanthianBoar" named "Gorm" is spawned at (152, 111)
     And Nelim's Pickle Tools: an adult animal of kind "MM_StymphalianBird" named "Skye" is spawned at (152, 112)

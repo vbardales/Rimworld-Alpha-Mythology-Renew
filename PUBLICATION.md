@@ -77,6 +77,12 @@ One English line at the bottom of each scene without an interface window (`GALLE
 | unicorn in the plant garden | The unicorn walks the fenced plant garden, and Nelim follows at a distance. |
 | griffin among the statues | The griffin settles among the statues, like one more statue come to life. |
 | hound on the gallery | The three-headed hound keeps the wooden gallery, and Nelim stands calm among the wary dogs. |
+| 9 hunt-trio, flower garden (`9-hunt-trio.jpg`) | Three beasts of the old hunts have come for the berries Nelim brings. |
+| 10 river-serpents, river bridge (`10-river-serpents.jpg`) | The river creatures wait below the bridge while Nelim brings them meat. |
+| 11 gaze-group, statue garden (`11-gaze-group.jpg`) | The gaze beasts keep to the statues while Nelim lights the lamps. |
+| 12 beasts-of-the-east, ritual hall (`12-beasts-of-the-east.jpg`) | At nightfall the beasts of the east gather in the ritual hall as Nelim tends the flame. |
+| 13 small-ones-forge, workshop (`13-small-ones-forge.jpg`) | While Nelim works at the forge, three small creatures gather in the light of the fire. |
+| 14 barn-night, barn (`14-barn-night.jpg`) | The big ones are brought into the barn for the night. |
 
 ## Steam description
 

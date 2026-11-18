@@ -71,7 +71,7 @@ One English line at the bottom of each scene without an interface window (`GALLE
 |---|---|
 | 1 kitsune at the tea room (`1-kitsune.jpg`) | The fox spirit has made itself at home in the tea room, and Nelim joins it. |
 | 2 phoenix in the hearth hall (`2-phoenix.jpg`) | The phoenix settles in the hearth hall and lights it like a second fire. |
-| 3 manticore by the paddies (`3-manticore.jpg`) | The manticore watches the ripe rice from the bank, and Nelim watches it back. |
+| 3 manticore by the paddies (`3-manticore.jpg`) | The manticore prowls the young rice, and a scarlet macaw drops in beside it. |
 | 4 kappa by the pond (`4-kappa.jpg`) | A water spirit rests on the bank of the round pond, and Nelim has come to see it. |
 | 5 pegasus at the water garden (`5-pegasus.jpg`) | The winged horse drinks among the lilies, and Nelim stops to watch. |
 | 6 unicorn in the plant garden (`6-unicorn.jpg`) | The unicorn walks the fenced plant garden, and Nelim follows at a distance. |

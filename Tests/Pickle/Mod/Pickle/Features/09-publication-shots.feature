@@ -440,7 +440,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: an adult animal of kind "MM_LernaeanHydra" named "Lerna" is spawned at (133, 120)
     And Nelim's Pickle Tools: an adult animal of kind "MM_Ahuizotl" named "Ahui" is spawned at (130, 121)
     And Nelim's Pickle Tools: an adult animal of kind "MM_Tlilcoatl" named "Tlil" is spawned at (136, 120)
-    # 2026-11-18 redo 5: capture of ticket 0456 showed Tlilcoatl cut by the bottom edge (y 118, now 120), no meat in Nelim hands (nothing spawned for the haul, now 5 Meat_Muffalo at her cell and 15 ticks), Bonsai and Brazier outside the frame (now (136, 123) and (128, 123)). Redo 4 (2026-11-17): Nelim at (132, 122) with the meat spawned at her feet (the haul ran her to x 138 on top of Tlilcoatl, head cut by the top edge), Tlilcoatl (136, 119) facing West, Ahuizotl (130, 121). Redo 3: the frame now ends at y 124 (the bridge strip y 122 to 124 fills the top of the picture), so the decor sits on y 123 and 124
+    # 2026-11-18 redo 6: ticket fdad failed on "could not be placed near Nelim": the 5 Meat_Muffalo spawned at her cell merged with the stack the haul step makes itself (item not Spawned), so the extra spawn is dropped. Redo 5: capture of ticket 0456 showed Tlilcoatl cut by the bottom edge (y 118, now 120), no meat in Nelim hands (nothing spawned for the haul, now 5 Meat_Muffalo at her cell and 15 ticks), Bonsai and Brazier outside the frame (now (136, 123) and (128, 123)). Redo 4 (2026-11-17): Nelim at (132, 122) with the meat spawned at her feet (the haul ran her to x 138 on top of Tlilcoatl, head cut by the top edge), Tlilcoatl (136, 119) facing West, Ahuizotl (130, 121). Redo 3: the frame now ends at y 124 (the bridge strip y 122 to 124 fills the top of the picture), so the decor sits on y 123 and 124
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (135, 123)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (129, 123)
     And Nelim's Pickle Tools: I place the decor "PlantPot_Bonsai" at (136, 123)
@@ -457,7 +457,6 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Sanctuary: the appearance of "Nelim" is logged
     And Nelim's Pickle Tools: the colonist "Nelim" stands on the nearest free cell around (132, 122)
-    And Nelim's Pickle Tools: 5 of the item "Meat_Muffalo" are spawned at (132, 122)
     And Nelim's Pickle Tools: "Nelim" is forced to haul 1 of the item "Meat_Muffalo" to (133, 122)
     And Nelim's Pickle Tools: I let 15 ticks pass
     Then Alpha Mythology Renew the creature "Lerna" is standing on the map as "MM_LernaeanHydra"

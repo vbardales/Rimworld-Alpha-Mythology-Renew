@@ -52,7 +52,7 @@ social_preview_sha256: c51c55af47ec42afdad3dd8c48ab6917900dcda75dddf81195bbe7ee3
 upstream_synced: 2026-11-12 juanosarg/AlphaMythology@53a5518
 updated: 2026-11-18
 tested_1_7: yes   # 2026-11-12, English only; gaps in the 1.7 pass entry of remaining
-protocols_read_sha: af8f7e2d2d92c36d1ef96e7b281bcd9a3c304b0f
+protocols_read_sha: 3e013fbde98de8c2ac1e20e1f4d20a4e2334a0ec
 ---
 # Alpha Mythology Renew (unofficial): status
 

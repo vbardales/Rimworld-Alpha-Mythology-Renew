@@ -399,7 +399,7 @@ Feature: Workshop pictures
     And Nelim's Sanctuary: the animals are removed from the sanctuary "flower-garden"
     And Nelim's Pickle Tools: an adult animal of kind "MM_CeryneianHind" named "Cyra" is spawned at (155, 110)
     And Nelim's Pickle Tools: an adult animal of kind "MM_ErymanthianBoar" named "Gorm" is spawned at (152, 111)
-    And Nelim's Pickle Tools: an adult animal of kind "MM_StymphalianBird" named "Skye" is spawned at (152, 113)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_StymphalianBird" named "Skye" is spawned at (152, 112)
     And Nelim's Pickle Tools: an adult animal of kind "Sparrow" named "Pip" is spawned at (153, 113)
     And Nelim's Pickle Tools: an adult animal of kind "Sparrow" named "Tilly" is spawned at (158, 109)
     And Nelim's Pickle Tools: the building "PlantPot_Bonsai" is spawned on the nearest free cell around (153, 108)
@@ -408,6 +408,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (158, 108)
     And Nelim's Pickle Tools: the building "Stool" is spawned on the nearest free cell around (159, 110)
     And Nelim's Pickle Tools: the plants from (150, 111) to (158, 113) are fully grown
+    And Nelim's Pickle Tools: the plants "Plant_Daylily" are removed from the growing zones in the area from (152, 110) to (152, 110) widened by 0 cells
     And Nelim's Pickle Tools: 20 of the item "RawBerries" are spawned at (152, 110)
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I let 10 ticks pass
@@ -419,7 +420,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: the colonist "Nelim" stands on the nearest free cell around (158, 111)
     And Nelim's Pickle Tools: "Nelim" is forced to haul 1 of the item "RawBerries" to (156, 112)
     And Nelim's Pickle Tools: the animal "Cyra" stands on the nearest free cell around (155, 110)
-    And Nelim's Pickle Tools: the animal "Skye" stands on the nearest free cell around (152, 113)
+    And Nelim's Pickle Tools: the animal "Skye" stands on the nearest free cell around (152, 112)
     And Nelim's Pickle Tools: the animal "Gorm" stands at (152, 111) facing South
     And Nelim's Pickle Tools: the animal "Gorm" is forced into the job "Ingest" on the item "RawBerries" at (152, 110)
     And Nelim's Pickle Tools: I let 40 ticks pass
@@ -430,7 +431,7 @@ Feature: Workshop pictures
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "flower-garden"
     And Nelim's Pickle Tools: the painted zones are hidden
-    And Alpha Mythology Renew frames the animal "Cyra" at zoom 3.5, shown 1 cells left and 0 cells up
+    And Alpha Mythology Renew frames the animal "Cyra" at zoom 3.8, shown 1 cells left and -1 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"
@@ -444,7 +445,7 @@ Feature: Workshop pictures
     And Nelim's Sanctuary: the animals are removed from the sanctuary "river-bridge"
     And Nelim's Pickle Tools: an adult animal of kind "MM_LernaeanHydra" named "Lerna" is spawned at (133, 120)
     And Nelim's Pickle Tools: an adult animal of kind "MM_Ahuizotl" named "Ahui" is spawned at (130, 121)
-    And Nelim's Pickle Tools: an adult animal of kind "MM_Tlilcoatl" named "Tlil" is spawned at (136, 120)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Tlilcoatl" named "Tlil" is spawned at (137, 121)
     # 2026-11-18 redo 6: ticket fdad failed on "could not be placed near Nelim": the 5 Meat_Muffalo spawned at her cell merged with the stack the haul step makes itself (item not Spawned), so the extra spawn is dropped. Redo 5: capture of ticket 0456 showed Tlilcoatl cut by the bottom edge (y 118, now 120), no meat in Nelim hands (nothing spawned for the haul, now 5 Meat_Muffalo at her cell and 15 ticks), Bonsai and Brazier outside the frame (now (136, 123) and (128, 123)). Redo 4 (2026-11-17): Nelim at (132, 122) with the meat spawned at her feet (the haul ran her to x 138 on top of Tlilcoatl, head cut by the top edge), Tlilcoatl (136, 119) facing West, Ahuizotl (130, 121). Redo 3: the frame now ends at y 124 (the bridge strip y 122 to 124 fills the top of the picture), so the decor sits on y 123 and 124
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (135, 123)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (129, 123)
@@ -470,11 +471,11 @@ Feature: Workshop pictures
     And Alpha Mythology Renew the creature "Tlil" is standing on the map as "MM_Tlilcoatl"
     When Nelim's Pickle Tools: the animal "Lerna" stands on the nearest free cell around (133, 120)
     And Nelim's Pickle Tools: the animal "Ahui" stands on the nearest free cell around (130, 121)
-    And Nelim's Pickle Tools: the animal "Tlil" stands on the nearest free cell around (136, 120)
+    And Nelim's Pickle Tools: the animal "Tlil" stands on the nearest free cell around (137, 121)
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "river-bridge"
     And Nelim's Pickle Tools: the painted zones are hidden
-    And Alpha Mythology Renew frames the animal "Lerna" at zoom 2.8, shown 0 cells left and -1 cells up
+    And Alpha Mythology Renew frames the animal "Lerna" at zoom 2.8, shown 1 cells left and -1 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"
@@ -578,7 +579,7 @@ Feature: Workshop pictures
     And Nelim's Sanctuary: the animals are removed from the sanctuary "preindustrial-workshop"
     And Nelim's Pickle Tools: an adult animal of kind "MM_Salamander" named "Pyra" is spawned at (223, 236)
     # 2026-11-17 redo: the three small ones in one row at y 236 above Nelim (y 234), tighter frame (zoom 3.8), 60 ticks only so Nelim stays at the bench
-    And Nelim's Pickle Tools: an adult animal of kind "MM_Ieltxu" named "Tolo" is spawned at (221, 236)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Ieltxu" named "Tolo" is spawned at (222, 236)
     And Nelim's Pickle Tools: an adult animal of kind "MM_WillOWisp" named "Lumen" is spawned at (225, 236)
     And Nelim's Pickle Tools: I place the decor "FueledSmithy" owned by the colonists exactly at (223, 233) facing South
     And Nelim's Pickle Tools: the building "FueledSmithy" at (223, 233) is filled with 100 percent fuel
@@ -602,7 +603,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: "Nelim" has the skill "Crafting" at level 8
     And Nelim's Pickle Tools: "Nelim" is forced into the job "DoBill" on the building "FueledSmithy" at (223, 233)
     And Nelim's Pickle Tools: the animal "Pyra" stands on the nearest free cell around (223, 236)
-    And Nelim's Pickle Tools: the animal "Tolo" stands on the nearest free cell around (221, 236)
+    And Nelim's Pickle Tools: the animal "Tolo" stands on the nearest free cell around (222, 236)
     And Nelim's Pickle Tools: the animal "Lumen" stands on the nearest free cell around (225, 236)
     And Nelim's Pickle Tools: I let 60 ticks pass
     Then Alpha Mythology Renew the creature "Pyra" is standing on the map as "MM_Salamander"
@@ -612,7 +613,7 @@ Feature: Workshop pictures
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "preindustrial-workshop"
     And Nelim's Pickle Tools: the painted zones are hidden
-    And Alpha Mythology Renew frames the animal "Pyra" at zoom 3.8, shown 1 cells left and 1 cells up
+    And Alpha Mythology Renew frames the animal "Pyra" at zoom 3.8, shown 3 cells left and 1 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"
@@ -627,7 +628,7 @@ Feature: Workshop pictures
     # the barn's enclosure animals stay: no removal step here (fixture, shotlist 14); its own four braziers give the light.
     And Nelim's Pickle Tools: an adult animal of kind "MM_WildMinotaur" named "Asterion" is spawned at (192, 238)
     And Nelim's Pickle Tools: an adult animal of kind "MM_Chimera" named "Chiara" is spawned at (191, 235)
-    And Nelim's Pickle Tools: an adult animal of kind "MM_LesserWyvern" named "Vyr" is spawned at (193, 241)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_LesserWyvern" named "Vyr" is spawned at (194, 240)
     And Nelim's Pickle Tools: 4 of the item "Hay" are spawned at (193, 239)
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I let 10 ticks pass
@@ -639,7 +640,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: the colonist "Nelim" stands on the nearest free cell around (194, 237)
     And Nelim's Pickle Tools: "Nelim" is forced to haul 1 of the item "Hay" to (194, 238)
     And Nelim's Pickle Tools: the animal "Chiara" stands on the nearest free cell around (191, 235)
-    And Nelim's Pickle Tools: the animal "Vyr" stands on the nearest free cell around (193, 241)
+    And Nelim's Pickle Tools: the animal "Vyr" stands on the nearest free cell around (194, 240)
     And Nelim's Pickle Tools: the animal "Asterion" stands on the nearest free cell around (192, 238)
     And Nelim's Pickle Tools: the animal "Asterion" is forced into the job "Ingest" on the item "Hay" at (193, 239)
     And Nelim's Pickle Tools: I let 40 ticks pass
@@ -649,10 +650,11 @@ Feature: Workshop pictures
     When Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "barn"
     And Nelim's Pickle Tools: the painted zones are hidden
-    And Alpha Mythology Renew frames the animal "Asterion" at zoom 5.5, shown 0 cells left and 0 cells up
+    And Alpha Mythology Renew frames the animal "Asterion" at zoom 6.2, shown 0 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"
+    And Nelim's Pickle Tools: "Nelim" mouth is "MouthSmile"
     Then I take a screenshot "workshop-14-the-big-ones-in-the-barn"
     When Nelim's Pickle Tools: the decor is removed
 

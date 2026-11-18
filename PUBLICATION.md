@@ -73,8 +73,8 @@ One English line at the bottom of each scene without an interface window (`GALLE
 | 2 phoenix in the hearth hall (`2-phoenix.jpg`) | The phoenix settles in the hearth hall and lights it like a second fire. |
 | 3 manticore by the paddies (`3-manticore.jpg`) | The manticore prowls the young rice, and a scarlet macaw drops in beside it. |
 | 4 kappa by the pond (`4-kappa.jpg`) | A water spirit rests on the bank of the round pond, and Nelim has come to see it. |
-| 5 pegasus at the water garden (`5-pegasus.jpg`) | The winged horse drinks among the lilies, and Nelim stops to watch. |
-| 6 unicorn in the plant garden (`6-unicorn.jpg`) | The unicorn walks the fenced plant garden, and Nelim follows at a distance. |
+| 5 pegasus at the water garden (`5-pegasus.jpg`) | The winged horse rests among the lilies, and a swan glides close by. |
+| 6 unicorn in the plant garden (`6-unicorn.jpg`) | The unicorn walks the fenced plant garden, lit by a single torch. |
 | 7 griffin among the statues (`7-griffin.jpg`) | The griffin settles among the statues, like one more statue come to life. |
 | hound on the gallery | The three-headed hound keeps the wooden gallery, and Nelim stands calm among the wary dogs. |
 | 9 hunt-trio, flower garden (`9-hunt-trio.jpg`) | Three beasts of the old hunts have come for the berries Nelim brings. |

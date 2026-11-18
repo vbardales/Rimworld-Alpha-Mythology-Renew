@@ -69,13 +69,13 @@ One English line at the bottom of each scene without an interface window (`GALLE
 
 | scene | line |
 |---|---|
-| kitsune at the tea room | The fox spirit waits at the tea room door, and Nelim comes out to meet it. |
-| phoenix in the hearth hall | The phoenix settles in the hearth hall and lights it like a second fire. |
-| manticore by the paddies | The manticore watches the ripe rice from the bank, and Nelim watches it back. |
-| kappa by the pond | A water spirit rests on the bank of the round pond, and Nelim has come to see it. |
-| pegasus at the water garden | The winged horse drinks among the lilies, and Nelim stops to watch. |
-| unicorn in the plant garden | The unicorn walks the fenced plant garden, and Nelim follows at a distance. |
-| griffin among the statues | The griffin settles among the statues, like one more statue come to life. |
+| 1 kitsune at the tea room (`1-kitsune.jpg`) | The fox spirit waits at the tea room door, and Nelim comes out to meet it. |
+| 2 phoenix in the hearth hall (`2-phoenix.jpg`) | The phoenix settles in the hearth hall and lights it like a second fire. |
+| 3 manticore by the paddies (`3-manticore.jpg`) | The manticore watches the ripe rice from the bank, and Nelim watches it back. |
+| 4 kappa by the pond (`4-kappa.jpg`) | A water spirit rests on the bank of the round pond, and Nelim has come to see it. |
+| 5 pegasus at the water garden (`5-pegasus.jpg`) | The winged horse drinks among the lilies, and Nelim stops to watch. |
+| 6 unicorn in the plant garden (`6-unicorn.jpg`) | The unicorn walks the fenced plant garden, and Nelim follows at a distance. |
+| 7 griffin among the statues (`7-griffin.jpg`) | The griffin settles among the statues, like one more statue come to life. |
 | hound on the gallery | The three-headed hound keeps the wooden gallery, and Nelim stands calm among the wary dogs. |
 | 9 hunt-trio, flower garden (`9-hunt-trio.jpg`) | Three beasts of the old hunts have come for the berries Nelim brings. |
 | 10 river-serpents, river bridge (`10-river-serpents.jpg`) | The river creatures wait below the bridge while Nelim brings them meat. |

@@ -61,7 +61,7 @@
 # SERIES. Opening, wide: 1 griffin (zoom 6). Medium: 2 kappa, 3 pegasus, 5 phoenix, 6 hound (zoom 4 to 5), 7 unicorn. Close: 4 kitsune (head of Nelim and fox, root size 3). Closing, wide: 8 manticore (zoom 6, dusk). Jobs vary (haul, Tame, Refuel, Harvest), subject side varies. Thumbnail rule (268 px wide): the creature fills about a third of the frame height.
 # EACH SHOT: gesture of Nelim; what the creature does; the instant (what just happened, what comes next); how it is obtained (job through "is forced into the job", pause on the tick where the carried item, work effect or bubble is drawn, that tick is read on probe 2).
 #  1. griffin, statue-garden 12:00, z6 wide: Nelim walks toward the griffin carrying meat (HaulToCell Meat_Muffalo to a cell beside it, paused 2 cells away); it turns its head to her; she has just come in, she is about to hold out the meat. Decor SculptureSmall (152, 99), Plant_Daylily (156, 99); donkey, hare; griffin seen from the front.
-#  2. kappa, fishing-zone 13:00, z2.5 (frame 5 cells high, the kappa about 30 px high on a 268 px thumbnail, its green shell against the bank; Nelim 3 cells away stays in frame), expression moodCheerful, says: "The water spirit has come out of the pond and Nelim greets it.": Nelim faces the kappa on the bank, Tame bubble over her head; the kappa turned toward her; the interaction has just begun, it will accept or flee. Job Tame, pause on the bubble tick. Decor Plant_YellowTallGrass (124, 66), Stool (123, 69); swan, duck.
+#  2. kappa, fishing-zone 13:00, z2 (redo 5, 2026-11-20: tighter, kappa bigger; frame 4 cells high, the kappa about 30 px high on a 268 px thumbnail, its green shell against the bank; Nelim 3 cells away stays in frame), expression moodCheerful, says: "The water spirit has come out of the pond and Nelim greets it.": Nelim faces the kappa on the bank, Tame bubble over her head; the kappa turned toward her; the interaction has just begun, it will accept or flee. Job Tame, pause on the bubble tick. Decor Plant_YellowTallGrass (124, 66) (123, 64) (126, 66) (126, 71), Stool (123, 69), PlantPot_Bonsai (125, 66), Plant_Daylily (126, 69) (121, 70), SculptureSmall (124, 71); swan, duck.
 #  3. pegasus, water-garden moss bank 14:00, z4, subject right of centre: Nelim carries hay along the bank toward the pegasus, which faces her; she is about to reach it. HaulToCell Hay, paused mid-walk. Decor Plant_Daylily (152, 170), Plant_YellowTallGrass (156, 170); swan.
 #  4. kitsune, tea-room door 15:00, close (root size 3, `the camera frames the head of "Nelim" and "Inari"`): Nelim and the fox face to face at the door, fox seen from the front, her face readable with her set expression; the fox has just come to the door, she is about to speak to it. Job Tame (guess; Train as fallback). Decor TorchLamp (143, 67) lit, PlantPot_Bonsai (139, 64); cat Miso, Shogun by the wall.
 #  5. phoenix, fire-pit hall 16:00, z4: Nelim carries a log to the campfire, the phoenix on the grey hearth stones beside the flames; she is about to put it on the fire. Job Refuel on the campfire, paused with the wood in her hands. Decor TorchLamp (178, 117), Brazier (183, 117) lit; cat Ember (177, 113). Atticus dropped (asleep needs a second job).
@@ -177,6 +177,10 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (124, 66)
     And Nelim's Pickle Tools: I place the decor "Stool" at (123, 69)
     And Nelim's Pickle Tools: the plants from (124, 66) to (124, 66) are fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (123, 64)
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (126, 66)
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (126, 71)
+    And Nelim's Pickle Tools: the plants from (123, 64) to (126, 71) are fully grown
     # 2026-11-20 redo 5 (decor too sparse, bare ground): Bonsai pot, Daylily clumps and a small sculpture grouped around Nelim and the kappa, near the stool
     And Nelim's Pickle Tools: the building "PlantPot_Bonsai" is spawned on the nearest free cell around (125, 66)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (126, 69)
@@ -200,7 +204,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: I advance the paused game by exactly 40 ticks
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "fishing-zone"
-    And Alpha Mythology Renew frames the animal "Ondine" at zoom 2.5, shown 2 cells left and 0 cells up
+    And Alpha Mythology Renew frames the animal "Ondine" at zoom 2, shown 1 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+moodCheerful"

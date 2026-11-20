@@ -73,7 +73,7 @@
 #  10. river-serpents, river-bridge 19:15 dusk, z3.6 (redo 7 2026-11-19: Ahuizotl was off the left edge; redo 4, 2026-11-17: Nelim kept off Tlilcoatl and below the top edge): lead LernaeanHydra in the river (heads up, whole body in frame), Ahuizotl on the bank, Tlilcoatl coiled at the bridge foot (glossy black: dusk, not night). Nelim on the bridge with Meat_Muffalo (HaulToCell, paused), about to throw it. Hour 19h plus 625 ticks (19:15). Cells: LernaeanHydra (135, 120), Ahuizotl (131, 121), Tlilcoatl (140, 121), Nelim near (133, 123) with Meat_Muffalo to (129, 124), TorchLamp (135, 123) and (129, 123), PlantPot_Bonsai (136, 123), SculptureSmall (133, 123), Brazier (128, 123), Stool (131, 123). Says: "The river creatures wait below the bridge while Nelim brings them meat." No reflections (not drawn), no fish (Odyssey), wild swans/duck/heron kept out of frame. Decor TorchLamp x2 lit on the bridge, Bonsai, SculptureSmall, Brazier lit, Stool.
 #  11. gaze-group, statue-garden 20:00 dusk, z3.4 (redo 7, 2026-11-18: Nelim and Cerberus were cut by the frame at zoom 2.4, a stray wild animal came during the 2,500 ticks, so the waits are dropped and the hour is set to 20 directly; redo 6, 2026-11-18: zoom 2.4 so the Basilisk reads at 268 px, Cerberus and Nelim no longer overlap, ring not forced; redo 5, 2026-11-17: zoom is the camera half-height in cells, 5.5 gave 98 px per cell and a tiny Basilisk, 3.2 gives about 170 px and still keeps the green box at x 150 out; redo 4: zoom 5.5, Basilisk on the burned cells at (142, 99), green box out of frame): lead Basilisk at the centre of the close frame (the ring of burned grass is not forced and not planned, unproven), Catoblepas head down left, Cerberus right. The statues read as the victims of the gaze. Nelim lights a TorchLamp (Refuel, paused with the wood). Hour 20h (20:00). Cells: Basilisk (142, 99), Catoblepas (139, 100), Cerberus (145, 99), SculptureSmall (143, 98), TorchLamp (141, 101) (144, 101), Brazier (140, 98), Stool near (139, 101), Nelim near (143, 101). Says: "The gaze beasts keep to the statues while Nelim lights the lamps." Decor TorchLamp x2, Brazier, Stool, SculptureSmall (152, 99).
 #  12. east, ritual-hall 20:45, z4.5: lead Qilin, Fenghuang on the altar side, Xiezhi right; no cat (Xiezhi is a predator). Nelim refuels the Brazier she placed (Refuel, paused). Hour 20h plus 1875 ticks (20:45). Cells: Qilin (206, 121), Fenghuang (204, 121), Xiezhi (208, 121), Brazier (204, 118) placed by the scenario (the hall's own DarklightBrazier (205, 117) stays, no censer in the survey), WoodLog (203, 117), Nelim near (203, 118). Says: "At nightfall the three beasts of the east gather in the ritual hall as Nelim tends the flame." Free cells among the six cushions read before the steps.
-#  13. small-ones, preindustrial-workshop 21:30, z3.8 (redo 3, 2026-11-17: the three in one row above Nelim), light from the forge or brazier in frame: lead Salamander (heat 30/s: doors open or temperature override checked), Ieltxu, WillOWisp. Nelim crafts at the bench (DoBill), pen in the working gesture. Hour 21h plus 1250 ticks (21:30). Cells: Salamander (223, 236), Ieltxu (222, 236), WillOWisp (225, 236), FueledSmithy (223, 233), Steel (222, 234), Brazier (225, 232), Stool (222, 241), PlantPot_Bonsai (226, 235), Plant_YellowTallGrass (226, 237), Nelim near (223, 234). Says: "The three small ones keep Nelim company at the forge." The creatures give no light of their own (no Glower: WillOWisp is poison, Salamander a heat pusher); the light is the workshop's.
+#  13. small-ones, terrace 21:30, z3.6 (redo 4, 2026-11-20: Virginie refused the workshop, it read as a machine hall; moved to the terrace, lit by its own Campfire): lead Salamander, Ieltxu, WillOWisp in a row at z 120 (Pyra (196, 120), Tolo (197, 120), Lumen (198, 120)), Nelim at (195, 121) refuels the Campfire at (194, 121) (Refuel, 10 percent fuel, WoodLog at (195, 120)). Hour 21h plus 1250 ticks (21:30). Temperature 20 degrees first, own face, final expression plain "normal". Frame on Tolo, offsets to tune at the first capture. Says: "The three small ones keep Nelim company by the fire." The creatures give no light of their own; the light is the Campfire's and the TorchLamp at (200, 119).
 #  14. barn-night, barn 22:30, z5.5, the barn's own four braziers lit (no added lamp): lead WildMinotaur eating the Hay Nelim brings (HaulToCell Hay), Chimera left, LesserWyvern behind with wings. All three tamed and fed (no manhunter on the map: Chimera breathes fire only in combat). Fixture enclosure animals stay in the background, not emptied. Hour 22h plus 1250 ticks (22:30). Cells: WildMinotaur (193, 239), Chimera (191, 235), LesserWyvern (190, 242), Hay at (194, 239), Nelim near (196, 238) hauling Hay to (196, 237). Says: "The big ones are brought into the barn for the night." Closing image of the story.
 # DIRECTOR'S REMARKS: kept all (apples out, flowers trampled out, Basilisk lead on its ring, Gaze group moved to statue-garden, water group moved to river-bridge at dusk, Ieltxu swapped with LesserWyvern, forge light, brazier refuel, barn braziers, clock order, closing on the barn). Open: the feature header above still lists hound 6 and two clocks (12:00-18:00 and 12:00-12:35); the 2026-10-23 block supersedes. Unchecked items to confirm before play: raven, moths, sparrows (use what the save has), Ingest/DoBill/Refuel steps, three-creature placement step. Accepted shots 5 (fire-pit) and 7 (plant-garden) stand on places marked 'a embellir' in SANCTUAIRE-LIEUX.md (told, out of scope).
 # EXTENSION, SCORE-GALLERY ROUND 1 (plan, no capture yet): 9 f,k weak = 4.0; 10 b,f,k = 3.5; 11 e,f,k = 3.5; 12 e,f,k = 3.5; 13 b,e,f,g,k = 3.0; 14 e,f,k = 3.5. FIXES WRITTEN HERE (round 2):
@@ -582,26 +582,19 @@ Feature: Workshop pictures
     When Nelim's Pickle Tools: the decor is removed
 
   @requires:Ludeon.RimWorld.Ideology @requires:nelim.pickletools.ideologysteps
-  Scenario: the small ones at the forge
+  Scenario: the small ones on the terrace
     When I set the hour to 21
     And Nelim's Pickle Tools: I let 500 ticks pass
     And Nelim's Pickle Tools: I let 500 ticks pass
     And Nelim's Pickle Tools: I let 250 ticks pass
-    And Nelim's Sanctuary: the animals are removed from the sanctuary "preindustrial-workshop"
-    And Nelim's Pickle Tools: an adult animal of kind "MM_Salamander" named "Pyra" is spawned at (223, 236)
-    # 2026-11-17 redo: the three small ones in one row at y 236 above Nelim (y 234), tighter frame (zoom 3.8), 60 ticks only so Nelim stays at the bench
-    And Nelim's Pickle Tools: an adult animal of kind "MM_Ieltxu" named "Tolo" is spawned at (222, 236)
-    And Nelim's Pickle Tools: an adult animal of kind "MM_WillOWisp" named "Lumen" is spawned at (225, 236)
-    And Nelim's Pickle Tools: I place the decor "FueledSmithy" owned by the colonists exactly at (223, 233) facing South
-    And Nelim's Pickle Tools: the building "FueledSmithy" at (223, 233) is filled with 100 percent fuel
-    And Nelim's Pickle Tools: I place the decor "Brazier" at (225, 232)
-    And Nelim's Pickle Tools: the building "Stool" is spawned on the nearest free cell around (222, 241)
-    And Nelim's Pickle Tools: the building "PlantPot_Bonsai" is spawned on the nearest free cell around (226, 235)
-    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (226, 237)
-    And Nelim's Pickle Tools: the plants from (226, 237) to (226, 237) are fully grown
-    And Nelim's Pickle Tools: the decor "Brazier" at (225, 232) is lit
-    And Nelim's Pickle Tools: 100 of the item "Steel" are spawned at (222, 234)
-    And Nelim's Pickle Tools: the building "FueledSmithy" at (223, 233) has the bill "Make_MeleeWeapon_Mace"
+    And Nelim's Sanctuary: the animals are removed from the sanctuary "terrace"
+    # 2026-11-20 redo 4 (Virginie refused the workshop: it read as a machine hall): the terrace, lit by its own Campfire at (194, 121); Nelim tends the fire (Refuel), the three small ones in a row at z 120 east of her. Free cells per SANCTUAIRE-CASES.md (terrace x 193-200, z 118-124).
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Salamander" named "Pyra" is spawned at (196, 120)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Ieltxu" named "Tolo" is spawned at (197, 120)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_WillOWisp" named "Lumen" is spawned at (198, 120)
+    And Nelim's Pickle Tools: the building "Campfire" at (194, 121) is filled with 10 percent fuel
+    And Nelim's Pickle Tools: 10 of the item "WoodLog" are spawned at (195, 120)
+    And Nelim's Pickle Tools: the decor "Campfire" at (194, 121) is lit
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
@@ -609,26 +602,24 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (36, 72, 140)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Sanctuary: the appearance of "Nelim" is logged
-    And Nelim's Pickle Tools: the colonist "Nelim" stands on the nearest free cell around (223, 234)
-    And Nelim's Pickle Tools: the colonist "Nelim" has the work type "Smithing" enabled
-    And Nelim's Pickle Tools: "Nelim" has the skill "Crafting" at level 8
-    And Nelim's Pickle Tools: "Nelim" is forced into the job "DoBill" on the building "FueledSmithy" at (223, 233)
-    And Nelim's Pickle Tools: the animal "Pyra" stands on the nearest free cell around (223, 236)
-    And Nelim's Pickle Tools: the animal "Tolo" stands on the nearest free cell around (222, 236)
-    And Nelim's Pickle Tools: the animal "Lumen" stands on the nearest free cell around (225, 236)
-    And Nelim's Pickle Tools: I let 60 ticks pass
+    And Nelim's Pickle Tools: the colonist "Nelim" stands on the nearest free cell around (195, 121)
+    And Nelim's Pickle Tools: "Nelim" is forced into the job "Refuel" on the building "Campfire" at (194, 121)
+    And Nelim's Pickle Tools: the animal "Pyra" stands on the nearest free cell around (196, 120)
+    And Nelim's Pickle Tools: the animal "Tolo" stands on the nearest free cell around (197, 120)
+    And Nelim's Pickle Tools: the animal "Lumen" stands on the nearest free cell around (198, 120)
+    And Nelim's Pickle Tools: I let 40 ticks pass
     Then Alpha Mythology Renew the creature "Pyra" is standing on the map as "MM_Salamander"
     And Alpha Mythology Renew the creature "Tolo" is standing on the map as "MM_Ieltxu"
     And Alpha Mythology Renew the creature "Lumen" is standing on the map as "MM_WillOWisp"
-    When Nelim's Pickle Tools: the animal "Pyra" stands at (223, 236) facing South
+    When Nelim's Pickle Tools: the animal "Pyra" stands at (196, 120) facing South
     And Alpha Mythology Renew dismisses every letter
-    And Nelim's Sanctuary: I am at the sanctuary "preindustrial-workshop"
+    And Nelim's Sanctuary: I am at the sanctuary "terrace"
     And Nelim's Pickle Tools: the painted zones are hidden
-    And Alpha Mythology Renew frames the animal "Pyra" at zoom 3.8, shown 3 cells left and 1 cells up
+    And Alpha Mythology Renew frames the animal "Tolo" at zoom 3.6, shown 0 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
-    And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"
-    Then I take a screenshot "workshop-13-the-small-ones-at-the-forge"
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
+    Then I take a screenshot "workshop-13-the-small-ones-on-the-terrace"
     When Nelim's Pickle Tools: the decor is removed
 
   Scenario: the big ones in the barn

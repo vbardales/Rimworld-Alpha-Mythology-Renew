@@ -81,7 +81,7 @@ One English line at the bottom of each scene without an interface window (`GALLE
 | 10 river-serpents, river bridge (`10-candidate-river-serpents.jpg`) | The river creatures wait below the bridge while Nelim brings them meat. |
 | 11 gaze-group, statue garden (`11-candidate-gaze-group.jpg`) | The gaze beasts keep to the statues while Nelim lights the lamps. |
 | 12 beasts-of-the-east, ritual hall (`12-candidate-east.jpg`) | At nightfall the beasts of the east gather in the ritual hall as Nelim tends the flame. |
-| 13 small-ones-forge, workshop (`13-candidate-small-ones.jpg`) | While Nelim works at the forge, three small creatures gather in the light of the fire. |
+| 13 small-ones-terrace, terrace (`13-candidate-small-ones.jpg`) | The three small ones keep Nelim company by the fire. |
 | 14 barn-night, barn (`14-candidate-barn-night.jpg`) | The big ones are brought into the barn for the night. |
 
 ## Steam description

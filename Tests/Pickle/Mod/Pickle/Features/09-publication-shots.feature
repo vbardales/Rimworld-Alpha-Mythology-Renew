@@ -160,7 +160,8 @@ Feature: Workshop pictures
     When Nelim's Pickle Tools: the animal "Aurelia" stands at (153, 97) facing South
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "statue-garden"
-    And Alpha Mythology Renew frames the animal "Aurelia" at zoom 3, shown -4 cells left and 2 cells up
+    # 2026-11-20 redo 9 (ticket fa58 capture): griffin wings cut by the top edge, donkey cut by the right edge; scale is about 520/zoom px per cell, so 1 cell lower and 1 cell left
+    And Alpha Mythology Renew frames the animal "Aurelia" at zoom 3, shown -3 cells left and 1 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Open"
@@ -220,7 +221,8 @@ Feature: Workshop pictures
     When Nelim's Pickle Tools: the animal "Zephyra" stands at (154, 171) facing South
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "water-garden"
-    And Alpha Mythology Renew frames the animal "Zephyra" at zoom 4, shown 3 cells left and 0 cells up
+    # 2026-11-20 redo 9 (ticket fa58 capture): Nelim cut by the left edge, frame moved 2 cells so she is whole
+    And Alpha Mythology Renew frames the animal "Zephyra" at zoom 4, shown 1 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"
@@ -321,7 +323,7 @@ Feature: Workshop pictures
   Scenario: the unicorn in the plant garden
     When I set the hour to 17
     And Nelim's Pickle Tools: I let 500 ticks pass
-    And Nelim's Pickle Tools: an adult animal of kind "MM_Unicorn" named "Morwen" is spawned at (188, 86)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Unicorn" named "Morwen" is spawned at (188, 88)
     And Nelim's Pickle Tools: an adult animal of kind "Sparrow" named "Pip" is spawned at (187, 89)
     And Nelim's Pickle Tools: an adult animal of kind "Sparrow" named "Tilly" is spawned at (193, 85)
     And Nelim's Pickle Tools: an adult animal of kind "Sparrow" named "Wren" is spawned at (192, 91)
@@ -341,11 +343,12 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: "Nelim" is forced into the job "Harvest" on the plant at (187, 90)
     And Nelim's Pickle Tools: I let 40 ticks pass
     Then Alpha Mythology Renew the creature "Morwen" is standing on the map as "MM_Unicorn"
-    When Nelim's Pickle Tools: the animal "Morwen" stands on the nearest free cell around (188, 86)
+    When Nelim's Pickle Tools: the animal "Morwen" stands on the nearest free cell around (188, 88)
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "plant-garden"
     And Nelim's Pickle Tools: the painted zones are hidden
-    And Alpha Mythology Renew frames the animal "Morwen" at zoom 3, shown 0 cells left and -2 cells up
+    # 2026-11-20 redo 9 (ticket fa58 capture): Nelim was 5 cells above the unicorn and cut by the top edge; unicorn now at (188, 88), 3 cells below her
+    And Alpha Mythology Renew frames the animal "Morwen" at zoom 3, shown 0 cells left and -1 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+moodCheerful2"
@@ -477,7 +480,8 @@ Feature: Workshop pictures
     And Nelim's Sanctuary: I am at the sanctuary "river-bridge"
     And Nelim's Pickle Tools: the painted zones are hidden
     # 2026-11-19 redo 7 (ticket 9a05 capture): Ahuizotl (129) was off the left edge at zoom 2.8, frame widened to 3.6 and Ahuizotl moved to x 131
-    And Alpha Mythology Renew frames the animal "Lerna" at zoom 3.6, shown 1 cells left and -1 cells up
+    # 2026-11-20 redo 9 (ticket fa58 capture): Nelim cut by the top edge, Ahuizotl at the left edge, Tlilcoatl near the right one; zoom 4 and the subject 1 cell lower and 1 cell right
+    And Alpha Mythology Renew frames the animal "Lerna" at zoom 4, shown 0 cells left and -2 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"

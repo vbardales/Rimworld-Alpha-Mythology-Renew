@@ -188,6 +188,7 @@ Feature: Workshop pictures
     Then Alpha Mythology Renew the creature "Ondine" is standing on the map as "MM_Kappa"
     When Nelim's Pickle Tools: the animal "Ondine" stands at (122, 67) facing South
     And Nelim's Pickle Tools: the animal "Ondine" is made wild
+    And Nelim's Pickle Tools: the animal "Ondine" is designated for taming
     And Nelim's Pickle Tools: "Nelim" is forced into the job "Tame" on "Ondine"
     And Nelim's Pickle Tools: I let 40 ticks pass
     And Alpha Mythology Renew dismisses every letter
@@ -251,6 +252,7 @@ Feature: Workshop pictures
     Then Alpha Mythology Renew the creature "Inari" is standing on the map as "MM_Kitsune"
     When Nelim's Pickle Tools: the animal "Inari" stands at (138, 66) facing South
     And Nelim's Pickle Tools: the animal "Inari" is made wild
+    And Nelim's Pickle Tools: the animal "Inari" is designated for taming
     And Nelim's Pickle Tools: "Nelim" is forced into the job "Tame" on "Inari"
     And Nelim's Pickle Tools: I let 40 ticks pass
     And Alpha Mythology Renew dismisses every letter
@@ -442,7 +444,7 @@ Feature: Workshop pictures
     And Alpha Mythology Renew frames the animal "Cyra" at zoom 3.8, shown 1 cells left and -1 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
-    And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
     Then I take a screenshot "workshop-9-the-hunt-trio-in-the-flower-garden"
     When Nelim's Pickle Tools: the decor is removed
 
@@ -489,7 +491,7 @@ Feature: Workshop pictures
     And Alpha Mythology Renew frames the animal "Lerna" at zoom 4, shown 0 cells left and -2 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
-    And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
     Then I take a screenshot "workshop-10-the-river-serpents-below-the-bridge"
     When Nelim's Pickle Tools: the decor is removed
 
@@ -655,7 +657,7 @@ Feature: Workshop pictures
     And Alpha Mythology Renew frames the animal "Asterion" at zoom 6.2, shown 0 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
-    And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"
+    And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthSmile"
     Then I take a screenshot "workshop-14-the-big-ones-in-the-barn"
     When Nelim's Pickle Tools: the decor is removed

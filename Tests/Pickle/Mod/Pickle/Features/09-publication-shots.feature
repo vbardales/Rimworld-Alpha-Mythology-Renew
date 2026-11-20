@@ -187,6 +187,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: "Nelim" carries the item "MealSimple"
     Then Alpha Mythology Renew the creature "Ondine" is standing on the map as "MM_Kappa"
     When Nelim's Pickle Tools: the animal "Ondine" stands at (122, 67) facing South
+    And Nelim's Pickle Tools: the animal "Ondine" is made wild
     And Nelim's Pickle Tools: "Nelim" is forced into the job "Tame" on "Ondine"
     And Nelim's Pickle Tools: I let 40 ticks pass
     And Alpha Mythology Renew dismisses every letter
@@ -249,6 +250,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: "Nelim" carries the item "MealFine"
     Then Alpha Mythology Renew the creature "Inari" is standing on the map as "MM_Kitsune"
     When Nelim's Pickle Tools: the animal "Inari" stands at (138, 66) facing South
+    And Nelim's Pickle Tools: the animal "Inari" is made wild
     And Nelim's Pickle Tools: "Nelim" is forced into the job "Tame" on "Inari"
     And Nelim's Pickle Tools: I let 40 ticks pass
     And Alpha Mythology Renew dismisses every letter

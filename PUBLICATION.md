@@ -71,18 +71,18 @@ One English line at the bottom of each scene without an interface window (`GALLE
 |---|---|
 | 1 kitsune at the tea room (`1-kitsune.jpg`) | The fox spirit has made itself at home in the tea room, and Nelim joins it. |
 | 2 phoenix in the hearth hall (`2-phoenix.jpg`) | The phoenix settles in the hearth hall and lights it like a second fire. |
-| 3 manticore by the paddies (`3-manticore.jpg`) | The manticore prowls the young rice, and a scarlet macaw drops in beside it. |
 | 4 kappa by the pond (`4-kappa.jpg`) | A water spirit rests on the bank of the round pond, and Nelim has come to see it. |
-| 5 pegasus at the water garden (`5-pegasus.jpg`) | The winged horse rests among the lilies, and a swan glides close by. |
-| 6 unicorn in the plant garden (`6-unicorn.jpg`) | The unicorn walks the fenced plant garden, lit by a single torch. |
-| 7 griffin among the statues (`7-griffin.jpg`) | The griffin settles among the statues, like one more statue come to life. |
 | hound on the gallery | The three-headed hound keeps the wooden gallery, and Nelim stands calm among the wary dogs. |
-| 9 hunt-trio, flower garden (`9-hunt-trio.jpg`) | Three beasts of the old hunts have come for the berries Nelim brings. |
-| 10 river-serpents, river bridge (`10-river-serpents.jpg`) | The river creatures wait below the bridge while Nelim brings them meat. |
-| 11 gaze-group, statue garden (`11-gaze-group.jpg`) | The gaze beasts keep to the statues while Nelim lights the lamps. |
-| 12 beasts-of-the-east, ritual hall (`12-beasts-of-the-east.jpg`) | At nightfall the beasts of the east gather in the ritual hall as Nelim tends the flame. |
-| 13 small-ones-forge, workshop (`13-small-ones-forge.jpg`) | While Nelim works at the forge, three small creatures gather in the light of the fire. |
-| 14 barn-night, barn (`14-barn-night.jpg`) | The big ones are brought into the barn for the night. |
+| 3 manticore by the paddies (`3-candidate-manticore.jpg`) | The manticore prowls the young rice while Nelim tends the paddies. |
+| 5 pegasus at the water garden (`5-candidate-pegasus.jpg`) | The winged horse rests among the lilies, and a swan glides close by. |
+| 6 unicorn in the plant garden (`6-candidate-unicorn.jpg`) | The unicorn walks the fenced plant garden while Nelim gathers berries. |
+| 7 griffin among the statues (`7-candidate-griffin.jpg`) | The griffin settles among the statues, like one more statue come to life. |
+| 9 hunt-trio, flower garden (`9-candidate-hunt-trio.jpg`) | Three beasts of the old hunts have come for the hay Nelim brings. |
+| 10 river-serpents, river bridge (`10-candidate-river-serpents.jpg`) | The river creatures wait below the bridge while Nelim brings them meat. |
+| 11 gaze-group, statue garden (`11-candidate-gaze-group.jpg`) | The gaze beasts keep to the statues while Nelim lights the lamps. |
+| 12 beasts-of-the-east, ritual hall (`12-candidate-east.jpg`) | At nightfall the beasts of the east gather in the ritual hall as Nelim tends the flame. |
+| 13 small-ones-forge, workshop (`13-candidate-small-ones.jpg`) | While Nelim works at the forge, three small creatures gather in the light of the fire. |
+| 14 barn-night, barn (`14-candidate-barn-night.jpg`) | The big ones are brought into the barn for the night. |
 
 ## Steam description
 

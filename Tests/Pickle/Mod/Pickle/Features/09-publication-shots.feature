@@ -189,8 +189,10 @@ Feature: Workshop pictures
     When Nelim's Pickle Tools: the animal "Ondine" stands at (122, 67) facing South
     And Nelim's Pickle Tools: the animal "Ondine" is made wild
     And Nelim's Pickle Tools: the animal "Ondine" is designated for taming
+    And Nelim's Pickle Tools: the animal "Ondine" stands at (122, 67) facing South
+    And game speed is paused
     And Nelim's Pickle Tools: "Nelim" is forced into the job "Tame" on "Ondine"
-    And Nelim's Pickle Tools: I let 40 ticks pass
+    And Nelim's Pickle Tools: I advance the paused game by exactly 40 ticks
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "fishing-zone"
     And Alpha Mythology Renew frames the animal "Ondine" at zoom 2.5, shown 2 cells left and 0 cells up
@@ -253,8 +255,10 @@ Feature: Workshop pictures
     When Nelim's Pickle Tools: the animal "Inari" stands at (138, 66) facing South
     And Nelim's Pickle Tools: the animal "Inari" is made wild
     And Nelim's Pickle Tools: the animal "Inari" is designated for taming
+    And Nelim's Pickle Tools: the animal "Inari" stands at (138, 66) facing South
+    And game speed is paused
     And Nelim's Pickle Tools: "Nelim" is forced into the job "Tame" on "Inari"
-    And Nelim's Pickle Tools: I let 40 ticks pass
+    And Nelim's Pickle Tools: I advance the paused game by exactly 40 ticks
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "tea-room"
     And Nelim's Pickle Tools: the painted zones are hidden

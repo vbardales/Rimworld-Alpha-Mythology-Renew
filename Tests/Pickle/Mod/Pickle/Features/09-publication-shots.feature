@@ -323,7 +323,7 @@ Feature: Workshop pictures
   Scenario: the unicorn in the plant garden
     When I set the hour to 17
     And Nelim's Pickle Tools: I let 500 ticks pass
-    And Nelim's Pickle Tools: an adult animal of kind "MM_Unicorn" named "Morwen" is spawned at (188, 88)
+    And Nelim's Pickle Tools: an adult animal of kind "MM_Unicorn" named "Morwen" is spawned at (189, 88)
     And Nelim's Pickle Tools: an adult animal of kind "Sparrow" named "Pip" is spawned at (187, 89)
     And Nelim's Pickle Tools: an adult animal of kind "Sparrow" named "Tilly" is spawned at (193, 85)
     And Nelim's Pickle Tools: an adult animal of kind "Sparrow" named "Wren" is spawned at (192, 91)
@@ -343,7 +343,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: "Nelim" is forced into the job "Harvest" on the plant at (187, 90)
     And Nelim's Pickle Tools: I let 40 ticks pass
     Then Alpha Mythology Renew the creature "Morwen" is standing on the map as "MM_Unicorn"
-    When Nelim's Pickle Tools: the animal "Morwen" stands on the nearest free cell around (188, 88)
+    When Nelim's Pickle Tools: the animal "Morwen" stands on the nearest free cell around (189, 88)
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "plant-garden"
     And Nelim's Pickle Tools: the painted zones are hidden
@@ -366,9 +366,12 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Hilda" is spawned at (223, 114)
     And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Berta" is spawned at (226, 121)
     And Nelim's Pickle Tools: an adult animal of kind "Chicken" named "Greta" is spawned at (230, 120)
-    And Nelim's Pickle Tools: I place the decor "SculptureSmall" at (220, 115)
+    And Nelim's Pickle Tools: I place the decor "SculptureSmall" at (224, 115)
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (224, 121)
-    And Nelim's Pickle Tools: the plants from (224, 121) to (224, 121) are fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (228, 116)
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (225, 119)
+    And Nelim's Pickle Tools: I place the decor "PlantPot_Bonsai" at (223, 116)
+    And Nelim's Pickle Tools: the plants from (224, 116) to (228, 121) are fully grown
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
@@ -376,7 +379,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (36, 72, 140)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Sanctuary: the appearance of "Nelim" is logged
-    And Nelim's Pickle Tools: the colonist "Nelim" stands on the nearest free cell around (221, 118)
+    And Nelim's Pickle Tools: the colonist "Nelim" stands on the nearest free cell around (223, 118)
     And Nelim's Pickle Tools: "Nelim" is forced into the job "Harvest" on the plant at (222, 118)
     And Nelim's Pickle Tools: I let 40 ticks pass
     Then Alpha Mythology Renew the creature "Thessaly" is standing on the map as "MM_Manticore"
@@ -384,7 +387,7 @@ Feature: Workshop pictures
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "rice-paddies"
     And Nelim's Pickle Tools: the painted zones are hidden
-    And Alpha Mythology Renew frames the animal "Thessaly" at zoom 5, shown 2 cells left and 0 cells up
+    And Alpha Mythology Renew frames the animal "Thessaly" at zoom 3, shown 0 cells left and 0 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+NLR-Smile"
@@ -412,7 +415,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (158, 108)
     And Nelim's Pickle Tools: the building "Stool" is spawned on the nearest free cell around (159, 110)
     And Nelim's Pickle Tools: the plants from (150, 111) to (158, 113) are fully grown
-    And Nelim's Pickle Tools: 20 of the item "RawBerries" are spawned at (152, 110)
+    And Nelim's Pickle Tools: 20 of the item "Hay" are spawned at (152, 110)
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
@@ -421,11 +424,11 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Sanctuary: the appearance of "Nelim" is logged
     And Nelim's Pickle Tools: the colonist "Nelim" stands on the nearest free cell around (157, 114)
-    And Nelim's Pickle Tools: "Nelim" is forced to haul 1 of the item "RawBerries" to (156, 113)
+    And Nelim's Pickle Tools: "Nelim" is forced to haul 1 of the item "Hay" to (156, 113)
     And Nelim's Pickle Tools: the animal "Cyra" stands on the nearest free cell around (155, 110)
     And Nelim's Pickle Tools: the animal "Skye" stands on the nearest free cell around (152, 113)
     And Nelim's Pickle Tools: the animal "Gorm" stands at (152, 111) facing South
-    And Nelim's Pickle Tools: the animal "Gorm" is forced into the job "Ingest" on the item "RawBerries" at (152, 110)
+    And Nelim's Pickle Tools: the animal "Gorm" is forced into the job "Ingest" on the item "Hay" at (152, 110)
     And Nelim's Pickle Tools: I let 40 ticks pass
     Then Alpha Mythology Renew the creature "Cyra" is standing on the map as "MM_CeryneianHind"
     And Alpha Mythology Renew the creature "Gorm" is standing on the map as "MM_ErymanthianBoar"

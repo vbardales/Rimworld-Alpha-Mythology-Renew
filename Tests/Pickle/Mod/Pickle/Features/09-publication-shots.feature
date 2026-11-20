@@ -177,6 +177,11 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (124, 66)
     And Nelim's Pickle Tools: I place the decor "Stool" at (123, 69)
     And Nelim's Pickle Tools: the plants from (124, 66) to (124, 66) are fully grown
+    # 2026-11-20 redo 5 (decor too sparse, bare ground): Bonsai pot, Daylily clumps and a small sculpture grouped around Nelim and the kappa, near the stool
+    And Nelim's Pickle Tools: the building "PlantPot_Bonsai" is spawned on the nearest free cell around (125, 66)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (126, 69)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (121, 70)
+    And Nelim's Pickle Tools: the building "SculptureSmall" is spawned on the nearest free cell around (124, 71)
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face
@@ -598,9 +603,9 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: an adult animal of kind "MM_Salamander" named "Pyra" is spawned at (196, 120)
     And Nelim's Pickle Tools: an adult animal of kind "MM_Ieltxu" named "Tolo" is spawned at (197, 120)
     And Nelim's Pickle Tools: an adult animal of kind "MM_WillOWisp" named "Lumen" is spawned at (198, 120)
+    And Nelim's Pickle Tools: the building "Campfire" at (194, 121) is put out
     And Nelim's Pickle Tools: the building "Campfire" at (194, 121) is filled with 10 percent fuel
     And Nelim's Pickle Tools: 10 of the item "WoodLog" are spawned at (195, 120)
-    And Nelim's Pickle Tools: the decor "Campfire" at (194, 121) is lit
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: I let 10 ticks pass
     And Nelim's Sanctuary: Nelim has her own face

@@ -69,7 +69,7 @@ One English line at the bottom of each scene without an interface window (`GALLE
 
 | scene | line |
 |---|---|
-| 1 kitsune at the tea room (`1-kitsune.jpg`) | The fox spirit has made itself at home in the tea room, and Nelim joins it. |
+| 1 kitsune at the tea room (`1-candidate-kitsune.jpg`) | The fox spirit has made itself at home in the tea room, and Nelim joins it. |
 | 2 phoenix in the hearth hall (`2-phoenix.jpg`) | The phoenix settles in the hearth hall and lights it like a second fire. |
 | 4 kappa by the pond (`4-kappa.jpg`) | A water spirit rests on the bank of the round pond, and Nelim has come to see it. |
 | hound on the gallery | The three-headed hound keeps the wooden gallery, and Nelim stands calm among the wary dogs. |

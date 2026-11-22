@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MM_AchievementMagicHunter.label>マジックハンター</MM_AchievementMagicHunter.label>
+  <MM_AchievementMagicHunter.description>ヘカーテ計画の魔法生物を討伐</MM_AchievementMagicHunter.description>
+  <MM_AchievementStayingAhead.label>先手必勝</MM_AchievementStayingAhead.label>
+  <MM_AchievementStayingAhead.description>ヒュドラを5匹討伐</MM_AchievementStayingAhead.description>
+  <MM_AchievementHardLove.label>ハードラヴ</MM_AchievementHardLove.label>
+  <MM_AchievementHardLove.description>カトブレパスとの絆を深める</MM_AchievementHardLove.description>
+  <MM_AchievementMagicParka.label>マジックパーカ</MM_AchievementMagicParka.label>
+  <MM_AchievementMagicParka.description>重い魔法の革でパーカーを作る</MM_AchievementMagicParka.description>
+  <MM_AchievementGrabbingHands.label>握手会場</MM_AchievementGrabbingHands.label>
+  <MM_AchievementGrabbingHands.description>アウィソトルの尾の手にポーンが捕まる</MM_AchievementGrabbingHands.description>
+  <MM_AchievementFountainOfBlood.label>血の噴水</MM_AchievementFountainOfBlood.label>
+  <MM_AchievementFountainOfBlood.description>ポーンが出血傷の影響を受ける</MM_AchievementFountainOfBlood.description>
+  <MM_AchievementStatueOfColonist.label>入植者の像</MM_AchievementStatueOfColonist.label>
+  <MM_AchievementStatueOfColonist.description>石化によってポーンや動物が死亡する</MM_AchievementStatueOfColonist.description>
+  <MM_AchievementForbiddenPoultry.label>禁断の鳥獣戯画</MM_AchievementForbiddenPoultry.label>
+  <MM_AchievementForbiddenPoultry.description>グリフィンの有精卵を使って豪華な食事を作る</MM_AchievementForbiddenPoultry.description>
+</LanguageData>

@@ -11,6 +11,18 @@ shared VEF keys retain their existing English wording and add French coverage.
 The port's scoped wisp translation postfix was written after inspecting VEF's
 1.6 reproduction UI methods; it does not copy or replace reproduction logic.
 
+## Translations of the original (2026-11-22)
+
+The Russian, Ukrainian, Portuguese, Brazilian Portuguese and Japanese texts of this port start from community translations of the original Alpha Mythology. None states a licence or a redistribution rule, and no permission or refusal was found on the item pages or in their comments (read 2026-11-22). They are used and will be removed at the author's request.
+
+| Language | Author | Workshop item |
+|---|---|---|
+| Russian (main) | PiaRex | https://steamcommunity.com/sharedfiles/filedetails/?id=2898318931 |
+| Russian (gaps), Ukrainian, Portuguese, Brazilian Portuguese | Nevelian | https://steamcommunity.com/sharedfiles/filedetails/?id=2890142522 |
+| Japanese | Lucifel | https://steamcommunity.com/sharedfiles/filedetails/?id=2521068999 |
+
+Keys of this port that those translations do not carry (settings window, reproduction texts, unfertilized eggs, a few wound and attack labels) were written with Claude (Anthropic). In Portuguese and Brazilian Portuguese the Stymphalian bird is written "pássaro estinfálio" (the source had a wrong word). Not used: a Chinese Simplified and Traditional pack (3 authors named on the item), whose text forbids reposting (禁止转载); Ru Magical Menagerie (2635934509), not wanted by the owner.
+
 No project licence or explicit republication permission was found. The upstream remake timetable is not used to determine this port's status. The bundled Harmony MIT licence does not apply to Alpha Mythology.
 
 ## Original description and sound credits

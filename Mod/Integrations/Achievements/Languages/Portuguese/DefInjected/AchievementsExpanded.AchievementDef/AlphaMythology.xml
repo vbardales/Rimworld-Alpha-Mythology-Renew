@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MM_AchievementMagicHunter.label>Caçador de magia</MM_AchievementMagicHunter.label>
+  <MM_AchievementMagicHunter.description>Matar uma criatura mágica do projeto Hécate</MM_AchievementMagicHunter.description>
+  <MM_AchievementStayingAhead.label>Sempre à frente</MM_AchievementStayingAhead.label>
+  <MM_AchievementStayingAhead.description>Matar 5 hidras de Lerna</MM_AchievementStayingAhead.description>
+  <MM_AchievementHardLove.label>Amor difícil</MM_AchievementHardLove.label>
+  <MM_AchievementHardLove.description>Criar um vínculo entre um colono e um catoblepas</MM_AchievementHardLove.description>
+  <MM_AchievementMagicParka.label>Parka mágica</MM_AchievementMagicParka.label>
+  <MM_AchievementMagicParka.description>Fabricar uma parka de couro mágico grosso</MM_AchievementMagicParka.description>
+  <MM_AchievementGrabbingHands.label>Mãos agarradoras</MM_AchievementGrabbingHands.label>
+  <MM_AchievementGrabbingHands.description>Ter um personagem imobilizado pelo aperto de um ahuizotl</MM_AchievementGrabbingHands.description>
+  <MM_AchievementFountainOfBlood.label>Fonte de sangue</MM_AchievementFountainOfBlood.label>
+  <MM_AchievementFountainOfBlood.description>Ter um personagem com uma ferida hemorrágica</MM_AchievementFountainOfBlood.description>
+  <MM_AchievementStatueOfColonist.label>Estátua de colono</MM_AchievementStatueOfColonist.label>
+  <MM_AchievementStatueOfColonist.description>Fazer um personagem ou animal morrer por petrificação</MM_AchievementStatueOfColonist.description>
+  <MM_AchievementForbiddenPoultry.label>Aves proibidas</MM_AchievementForbiddenPoultry.label>
+  <MM_AchievementForbiddenPoultry.description>Usar um ovo de grifão fertilizado para cozinhar uma refeição luxuosa</MM_AchievementForbiddenPoultry.description>
+</LanguageData>

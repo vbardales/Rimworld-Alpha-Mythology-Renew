@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MM_AhuizotlBody.label>чотирилапа тварина з рукою у хвості</MM_AhuizotlBody.label>
+  <MM_AhuizotlBody.corePart.parts.Tail.parts.hand.customLabel>рука</MM_AhuizotlBody.corePart.parts.Tail.parts.hand.customLabel>
+  <MM_AhuizotlBody.corePart.parts.Tail.parts.hand.parts.right_pinky.customLabel>правий мізинець</MM_AhuizotlBody.corePart.parts.Tail.parts.hand.parts.right_pinky.customLabel>
+  <MM_AhuizotlBody.corePart.parts.Tail.parts.hand.parts.right_ring_finger.customLabel>правий радіус</MM_AhuizotlBody.corePart.parts.Tail.parts.hand.parts.right_ring_finger.customLabel>
+  <MM_AhuizotlBody.corePart.parts.Tail.parts.hand.parts.right_middle_finger.customLabel>середній палець правої руки</MM_AhuizotlBody.corePart.parts.Tail.parts.hand.parts.right_middle_finger.customLabel>
+  <MM_AhuizotlBody.corePart.parts.Tail.parts.hand.parts.right_index_finger.customLabel>вказівний палець правої руки</MM_AhuizotlBody.corePart.parts.Tail.parts.hand.parts.right_index_finger.customLabel>
+  <MM_AhuizotlBody.corePart.parts.Tail.parts.hand.parts.right_thumb.customLabel>великий палець правої руки</MM_AhuizotlBody.corePart.parts.Tail.parts.hand.parts.right_thumb.customLabel>
+  <MM_AhuizotlBody.corePart.parts.left_lung.customLabel>ліва легеня</MM_AhuizotlBody.corePart.parts.left_lung.customLabel>
+  <MM_AhuizotlBody.corePart.parts.right_lung.customLabel>права легеня</MM_AhuizotlBody.corePart.parts.right_lung.customLabel>
+  <MM_AhuizotlBody.corePart.parts.left_kidney.customLabel>ліва нирка</MM_AhuizotlBody.corePart.parts.left_kidney.customLabel>
+  <MM_AhuizotlBody.corePart.parts.right_kidney.customLabel>права нирка</MM_AhuizotlBody.corePart.parts.right_kidney.customLabel>
+  <MM_AhuizotlBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>ліве око</MM_AhuizotlBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+  <MM_AhuizotlBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>праве око</MM_AhuizotlBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+  <MM_AhuizotlBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>ліве вухо</MM_AhuizotlBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+  <MM_AhuizotlBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>ліве вухо</MM_AhuizotlBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+  <MM_AhuizotlBody.corePart.parts.front_left_leg.customLabel>передня ліва нога</MM_AhuizotlBody.corePart.parts.front_left_leg.customLabel>
+  <MM_AhuizotlBody.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>передня ліва лапа</MM_AhuizotlBody.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>
+  <MM_AhuizotlBody.corePart.parts.front_right_leg.customLabel>передня права нога</MM_AhuizotlBody.corePart.parts.front_right_leg.customLabel>
+  <MM_AhuizotlBody.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>передня права лапа</MM_AhuizotlBody.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>
+  <MM_AhuizotlBody.corePart.parts.rear_left_leg.customLabel>задня ліва нога</MM_AhuizotlBody.corePart.parts.rear_left_leg.customLabel>
+  <MM_AhuizotlBody.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>задня ліва лапа</MM_AhuizotlBody.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>
+  <MM_AhuizotlBody.corePart.parts.rear_right_leg.customLabel>задня права нога</MM_AhuizotlBody.corePart.parts.rear_right_leg.customLabel>
+  <MM_AhuizotlBody.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>задня ліва лапа</MM_AhuizotlBody.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>
+  <MM_ThreeHeadedDog.label>триголовий собака</MM_ThreeHeadedDog.label>
+  <MM_ThreeHeadedDog.corePart.parts.left_lung.customLabel>ліва легеня</MM_ThreeHeadedDog.corePart.parts.left_lung.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.right_lung.customLabel>права легеня</MM_ThreeHeadedDog.corePart.parts.right_lung.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.left_kidney.customLabel>ліва нирка</MM_ThreeHeadedDog.corePart.parts.left_kidney.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.right_kidney.customLabel>права нирка</MM_ThreeHeadedDog.corePart.parts.right_kidney.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-0.parts.left_eye.customLabel>ліве око</MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-0.parts.left_eye.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-0.parts.right_eye.customLabel>праве око</MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-0.parts.right_eye.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-0.parts.left_ear.customLabel>ліве вухо</MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-0.parts.left_ear.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-0.parts.right_ear.customLabel>ліве вухо</MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-0.parts.right_ear.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-1.parts.left_eye.customLabel>ліве око</MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-1.parts.left_eye.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-1.parts.right_eye.customLabel>праве око</MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-1.parts.right_eye.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-1.parts.left_ear.customLabel>ліве вухо</MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-1.parts.left_ear.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-1.parts.right_ear.customLabel>ліве вухо</MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-1.parts.right_ear.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-2.parts.left_eye.customLabel>ліве око</MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-2.parts.left_eye.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-2.parts.right_eye.customLabel>праве око</MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-2.parts.right_eye.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-2.parts.left_ear.customLabel>ліве вухо</MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-2.parts.left_ear.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-2.parts.right_ear.customLabel>ліве вухо</MM_ThreeHeadedDog.corePart.parts.Neck.parts.Head-2.parts.right_ear.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.front_left_leg.customLabel>передня ліва нога</MM_ThreeHeadedDog.corePart.parts.front_left_leg.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>передня ліва лапа</MM_ThreeHeadedDog.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.front_right_leg.customLabel>передня права нога</MM_ThreeHeadedDog.corePart.parts.front_right_leg.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>передня права лапа</MM_ThreeHeadedDog.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.rear_left_leg.customLabel>задня ліва нога</MM_ThreeHeadedDog.corePart.parts.rear_left_leg.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>задня ліва лапа</MM_ThreeHeadedDog.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.rear_right_leg.customLabel>задня права нога</MM_ThreeHeadedDog.corePart.parts.rear_right_leg.customLabel>
+  <MM_ThreeHeadedDog.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>задня права лапа</MM_ThreeHeadedDog.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>
+  <MM_Chimera_Body.label>химера</MM_Chimera_Body.label>
+  <MM_Chimera_Body.corePart.parts.MM_ChimeraTail.parts.Head.parts.left_eye.customLabel>ліве око</MM_Chimera_Body.corePart.parts.MM_ChimeraTail.parts.Head.parts.left_eye.customLabel>
+  <MM_Chimera_Body.corePart.parts.MM_ChimeraTail.parts.Head.parts.right_eye.customLabel>праве око</MM_Chimera_Body.corePart.parts.MM_ChimeraTail.parts.Head.parts.right_eye.customLabel>
+  <MM_Chimera_Body.corePart.parts.MM_Goathead.parts.left_eye.customLabel>ліве око</MM_Chimera_Body.corePart.parts.MM_Goathead.parts.left_eye.customLabel>
+  <MM_Chimera_Body.corePart.parts.MM_Goathead.parts.right_eye.customLabel>праве око</MM_Chimera_Body.corePart.parts.MM_Goathead.parts.right_eye.customLabel>
+  <MM_Chimera_Body.corePart.parts.MM_Goathead.parts.left_ear.customLabel>ліве вухо</MM_Chimera_Body.corePart.parts.MM_Goathead.parts.left_ear.customLabel>
+  <MM_Chimera_Body.corePart.parts.MM_Goathead.parts.right_ear.customLabel>ліве вухо</MM_Chimera_Body.corePart.parts.MM_Goathead.parts.right_ear.customLabel>
+  <MM_Chimera_Body.corePart.parts.left_lung.customLabel>ліва легеня</MM_Chimera_Body.corePart.parts.left_lung.customLabel>
+  <MM_Chimera_Body.corePart.parts.right_lung.customLabel>права легеня</MM_Chimera_Body.corePart.parts.right_lung.customLabel>
+  <MM_Chimera_Body.corePart.parts.left_kidney.customLabel>ліва нирка</MM_Chimera_Body.corePart.parts.left_kidney.customLabel>
+  <MM_Chimera_Body.corePart.parts.right_kidney.customLabel>права нирка</MM_Chimera_Body.corePart.parts.right_kidney.customLabel>
+  <MM_Chimera_Body.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>ліве око</MM_Chimera_Body.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+  <MM_Chimera_Body.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>праве око</MM_Chimera_Body.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+  <MM_Chimera_Body.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>ліве вухо</MM_Chimera_Body.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+  <MM_Chimera_Body.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>ліве вухо</MM_Chimera_Body.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+  <MM_Chimera_Body.corePart.parts.front_left_leg.customLabel>передня ліва нога</MM_Chimera_Body.corePart.parts.front_left_leg.customLabel>
+  <MM_Chimera_Body.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>передня ліва лапа</MM_Chimera_Body.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>
+  <MM_Chimera_Body.corePart.parts.front_right_leg.customLabel>передня права нога</MM_Chimera_Body.corePart.parts.front_right_leg.customLabel>
+  <MM_Chimera_Body.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>передня права лапа</MM_Chimera_Body.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>
+  <MM_Chimera_Body.corePart.parts.rear_left_leg.customLabel>задня ліва нога</MM_Chimera_Body.corePart.parts.rear_left_leg.customLabel>
+  <MM_Chimera_Body.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>задня ліва лапа</MM_Chimera_Body.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>
+  <MM_Chimera_Body.corePart.parts.rear_right_leg.customLabel>задня права нога</MM_Chimera_Body.corePart.parts.rear_right_leg.customLabel>
+  <MM_Chimera_Body.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>задня права лапа</MM_Chimera_Body.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>
+  <MM_Hydra.label>гідра</MM_Hydra.label>
+  <MM_Hydra.corePart.parts.left_lung.customLabel>ліва легеня</MM_Hydra.corePart.parts.left_lung.customLabel>
+  <MM_Hydra.corePart.parts.right_lung.customLabel>права легеня</MM_Hydra.corePart.parts.right_lung.customLabel>
+  <MM_Hydra.corePart.parts.left_kidney.customLabel>ліва нирка</MM_Hydra.corePart.parts.left_kidney.customLabel>
+  <MM_Hydra.corePart.parts.right_kidney.customLabel>права нирка</MM_Hydra.corePart.parts.right_kidney.customLabel>
+  <MM_Hydra.corePart.parts.SnakeHead-0.parts.left_eye.customLabel>ліве око</MM_Hydra.corePart.parts.SnakeHead-0.parts.left_eye.customLabel>
+  <MM_Hydra.corePart.parts.SnakeHead-0.parts.right_eye.customLabel>праве око</MM_Hydra.corePart.parts.SnakeHead-0.parts.right_eye.customLabel>
+  <MM_Hydra.corePart.parts.SnakeHead-1.parts.left_eye.customLabel>ліве око</MM_Hydra.corePart.parts.SnakeHead-1.parts.left_eye.customLabel>
+  <MM_Hydra.corePart.parts.SnakeHead-1.parts.right_eye.customLabel>праве око</MM_Hydra.corePart.parts.SnakeHead-1.parts.right_eye.customLabel>
+  <MM_Hydra.corePart.parts.SnakeHead-2.parts.left_eye.customLabel>ліве око</MM_Hydra.corePart.parts.SnakeHead-2.parts.left_eye.customLabel>
+  <MM_Hydra.corePart.parts.SnakeHead-2.parts.right_eye.customLabel>праве око</MM_Hydra.corePart.parts.SnakeHead-2.parts.right_eye.customLabel>
+  <MM_Hydra.corePart.parts.SnakeHead-3.parts.left_eye.customLabel>ліве око</MM_Hydra.corePart.parts.SnakeHead-3.parts.left_eye.customLabel>
+  <MM_Hydra.corePart.parts.SnakeHead-3.parts.right_eye.customLabel>праве око</MM_Hydra.corePart.parts.SnakeHead-3.parts.right_eye.customLabel>
+  <MM_Hydra.corePart.parts.SnakeHead-4.parts.left_eye.customLabel>ліве око</MM_Hydra.corePart.parts.SnakeHead-4.parts.left_eye.customLabel>
+  <MM_Hydra.corePart.parts.SnakeHead-4.parts.right_eye.customLabel>праве око</MM_Hydra.corePart.parts.SnakeHead-4.parts.right_eye.customLabel>
+  <MM_Hydra.corePart.parts.SnakeHead-5.parts.left_eye.customLabel>ліве око</MM_Hydra.corePart.parts.SnakeHead-5.parts.left_eye.customLabel>
+  <MM_Hydra.corePart.parts.SnakeHead-5.parts.right_eye.customLabel>праве око</MM_Hydra.corePart.parts.SnakeHead-5.parts.right_eye.customLabel>
+  <MM_Hydra.corePart.parts.front_left_leg.customLabel>передня ліва нога</MM_Hydra.corePart.parts.front_left_leg.customLabel>
+  <MM_Hydra.corePart.parts.front_left_leg.parts.front_left_hoof.customLabel>передня ліва копито</MM_Hydra.corePart.parts.front_left_leg.parts.front_left_hoof.customLabel>
+  <MM_Hydra.corePart.parts.front_right_leg.customLabel>передня права нога</MM_Hydra.corePart.parts.front_right_leg.customLabel>
+  <MM_Hydra.corePart.parts.front_right_leg.parts.front_right_hoof.customLabel>передня права копито</MM_Hydra.corePart.parts.front_right_leg.parts.front_right_hoof.customLabel>
+  <MM_Hydra.corePart.parts.rear_left_leg.customLabel>задня ліва нога</MM_Hydra.corePart.parts.rear_left_leg.customLabel>
+  <MM_Hydra.corePart.parts.rear_left_leg.parts.rear_left_hoof.customLabel>задня ліва копито</MM_Hydra.corePart.parts.rear_left_leg.parts.rear_left_hoof.customLabel>
+  <MM_Hydra.corePart.parts.rear_right_leg.customLabel>задня права нога</MM_Hydra.corePart.parts.rear_right_leg.customLabel>
+  <MM_Hydra.corePart.parts.rear_right_leg.parts.rear_right_hoof.customLabel>задня праве копито</MM_Hydra.corePart.parts.rear_right_leg.parts.rear_right_hoof.customLabel>
+  <MM_ManticoreBody.label>мантикора</MM_ManticoreBody.label>
+  <MM_ManticoreBody.corePart.parts.left_wing.customLabel>ліве крило</MM_ManticoreBody.corePart.parts.left_wing.customLabel>
+  <MM_ManticoreBody.corePart.parts.right_wing.customLabel>праве крило</MM_ManticoreBody.corePart.parts.right_wing.customLabel>
+  <MM_ManticoreBody.corePart.parts.left_lung.customLabel>ліва легеня</MM_ManticoreBody.corePart.parts.left_lung.customLabel>
+  <MM_ManticoreBody.corePart.parts.right_lung.customLabel>права легеня</MM_ManticoreBody.corePart.parts.right_lung.customLabel>
+  <MM_ManticoreBody.corePart.parts.left_kidney.customLabel>ліва нирка</MM_ManticoreBody.corePart.parts.left_kidney.customLabel>
+  <MM_ManticoreBody.corePart.parts.right_kidney.customLabel>права нирка</MM_ManticoreBody.corePart.parts.right_kidney.customLabel>
+  <MM_ManticoreBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>ліве око</MM_ManticoreBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+  <MM_ManticoreBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>праве око</MM_ManticoreBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+  <MM_ManticoreBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>ліве вухо</MM_ManticoreBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+  <MM_ManticoreBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>ліве вухо</MM_ManticoreBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+  <MM_ManticoreBody.corePart.parts.front_left_leg.customLabel>передня ліва нога</MM_ManticoreBody.corePart.parts.front_left_leg.customLabel>
+  <MM_ManticoreBody.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>передня ліва лапа</MM_ManticoreBody.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>
+  <MM_ManticoreBody.corePart.parts.front_right_leg.customLabel>передня права нога</MM_ManticoreBody.corePart.parts.front_right_leg.customLabel>
+  <MM_ManticoreBody.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>передня права лапа</MM_ManticoreBody.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>
+  <MM_ManticoreBody.corePart.parts.rear_left_leg.customLabel>задня ліва нога</MM_ManticoreBody.corePart.parts.rear_left_leg.customLabel>
+  <MM_ManticoreBody.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>задня ліва лапа</MM_ManticoreBody.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>
+  <MM_ManticoreBody.corePart.parts.rear_right_leg.customLabel>задня права нога</MM_ManticoreBody.corePart.parts.rear_right_leg.customLabel>
+  <MM_ManticoreBody.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>задня права лапа</MM_ManticoreBody.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>
+  <MM_PegasusBody.label>чотирилапа тварина з копитами і крилами</MM_PegasusBody.label>
+  <MM_PegasusBody.corePart.parts.left_wing.customLabel>ліве крило</MM_PegasusBody.corePart.parts.left_wing.customLabel>
+  <MM_PegasusBody.corePart.parts.right_wing.customLabel>праве крило</MM_PegasusBody.corePart.parts.right_wing.customLabel>
+  <MM_PegasusBody.corePart.parts.left_lung.customLabel>ліва легеня</MM_PegasusBody.corePart.parts.left_lung.customLabel>
+  <MM_PegasusBody.corePart.parts.right_lung.customLabel>права легеня</MM_PegasusBody.corePart.parts.right_lung.customLabel>
+  <MM_PegasusBody.corePart.parts.left_kidney.customLabel>ліва нирка</MM_PegasusBody.corePart.parts.left_kidney.customLabel>
+  <MM_PegasusBody.corePart.parts.right_kidney.customLabel>права нирка</MM_PegasusBody.corePart.parts.right_kidney.customLabel>
+  <MM_PegasusBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>ліве око</MM_PegasusBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+  <MM_PegasusBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>праве око</MM_PegasusBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+  <MM_PegasusBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>ліве вухо</MM_PegasusBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+  <MM_PegasusBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>ліве вухо</MM_PegasusBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+  <MM_PegasusBody.corePart.parts.front_left_leg.customLabel>передня ліва нога</MM_PegasusBody.corePart.parts.front_left_leg.customLabel>
+  <MM_PegasusBody.corePart.parts.front_left_leg.parts.front_left_hoof.customLabel>передня ліва копито</MM_PegasusBody.corePart.parts.front_left_leg.parts.front_left_hoof.customLabel>
+  <MM_PegasusBody.corePart.parts.front_right_leg.customLabel>передня права нога</MM_PegasusBody.corePart.parts.front_right_leg.customLabel>
+  <MM_PegasusBody.corePart.parts.front_right_leg.parts.front_right_hoof.customLabel>передня права копито</MM_PegasusBody.corePart.parts.front_right_leg.parts.front_right_hoof.customLabel>
+  <MM_PegasusBody.corePart.parts.rear_left_leg.customLabel>задня ліва нога</MM_PegasusBody.corePart.parts.rear_left_leg.customLabel>
+  <MM_PegasusBody.corePart.parts.rear_left_leg.parts.rear_left_hoof.customLabel>задня ліва копито</MM_PegasusBody.corePart.parts.rear_left_leg.parts.rear_left_hoof.customLabel>
+  <MM_PegasusBody.corePart.parts.rear_right_leg.customLabel>задня права нога</MM_PegasusBody.corePart.parts.rear_right_leg.customLabel>
+  <MM_PegasusBody.corePart.parts.rear_right_leg.parts.rear_right_hoof.customLabel>задня праве копито</MM_PegasusBody.corePart.parts.rear_right_leg.parts.rear_right_hoof.customLabel>
+  <MM_QilinBody.label>чотирилапа тварина з копитами і крилами</MM_QilinBody.label>
+  <MM_QilinBody.corePart.parts.left_lung.customLabel>ліва легеня</MM_QilinBody.corePart.parts.left_lung.customLabel>
+  <MM_QilinBody.corePart.parts.right_lung.customLabel>права легеня</MM_QilinBody.corePart.parts.right_lung.customLabel>
+  <MM_QilinBody.corePart.parts.left_kidney.customLabel>ліва нирка</MM_QilinBody.corePart.parts.left_kidney.customLabel>
+  <MM_QilinBody.corePart.parts.right_kidney.customLabel>права нирка</MM_QilinBody.corePart.parts.right_kidney.customLabel>
+  <MM_QilinBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>ліве око</MM_QilinBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+  <MM_QilinBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>праве око</MM_QilinBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+  <MM_QilinBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>ліве вухо</MM_QilinBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+  <MM_QilinBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>ліве вухо</MM_QilinBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+  <MM_QilinBody.corePart.parts.front_left_leg.customLabel>передня ліва нога</MM_QilinBody.corePart.parts.front_left_leg.customLabel>
+  <MM_QilinBody.corePart.parts.front_left_leg.parts.front_left_hoof.customLabel>передня ліва копито</MM_QilinBody.corePart.parts.front_left_leg.parts.front_left_hoof.customLabel>
+  <MM_QilinBody.corePart.parts.front_right_leg.customLabel>передня права нога</MM_QilinBody.corePart.parts.front_right_leg.customLabel>
+  <MM_QilinBody.corePart.parts.front_right_leg.parts.front_right_hoof.customLabel>передня права копито</MM_QilinBody.corePart.parts.front_right_leg.parts.front_right_hoof.customLabel>
+  <MM_QilinBody.corePart.parts.rear_left_leg.customLabel>задня ліва нога</MM_QilinBody.corePart.parts.rear_left_leg.customLabel>
+  <MM_QilinBody.corePart.parts.rear_left_leg.parts.rear_left_hoof.customLabel>задня ліва копито</MM_QilinBody.corePart.parts.rear_left_leg.parts.rear_left_hoof.customLabel>
+  <MM_QilinBody.corePart.parts.rear_right_leg.customLabel>задня права нога</MM_QilinBody.corePart.parts.rear_right_leg.customLabel>
+  <MM_QilinBody.corePart.parts.rear_right_leg.parts.rear_right_hoof.customLabel>задня праве копито</MM_QilinBody.corePart.parts.rear_right_leg.parts.rear_right_hoof.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.label>чотирилапа тварина з дзьобом і крилами</MM_QuadrupedAnimalWithBeakAndWings.label>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.left_lung.customLabel>ліва легеня</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.left_lung.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.right_lung.customLabel>права легеня</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.right_lung.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.left_kidney.customLabel>ліва нирка</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.left_kidney.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.right_kidney.customLabel>права нирка</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.right_kidney.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.right_wing.customLabel>праве крило</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.right_wing.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.left_wing.customLabel>ліве крило</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.left_wing.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>ліве око</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>праве око</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>ліве вухо</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>ліве вухо</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_left_leg.customLabel>передня ліва нога</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_left_leg.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>передня ліва лапа</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_left_leg.parts.front_left_paw.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_right_leg.customLabel>передня права нога</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_right_leg.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>передня права лапа</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.front_right_leg.parts.front_right_paw.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_left_leg.customLabel>задня ліва нога</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_left_leg.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>задня ліва лапа</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_left_leg.parts.rear_left_paw.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_right_leg.customLabel>задня права нога</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_right_leg.customLabel>
+  <MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>задня права лапа</MM_QuadrupedAnimalWithBeakAndWings.corePart.parts.rear_right_leg.parts.rear_right_paw.customLabel>
+  <MM_Wisp.label>вогник</MM_Wisp.label>
+  <MM_WyvernBody.label>Віверн</MM_WyvernBody.label>
+  <MM_WyvernBody.corePart.parts.left_wing.customLabel>ліве крило</MM_WyvernBody.corePart.parts.left_wing.customLabel>
+  <MM_WyvernBody.corePart.parts.right_wing.customLabel>праве крило</MM_WyvernBody.corePart.parts.right_wing.customLabel>
+  <MM_WyvernBody.corePart.parts.left_lung.customLabel>ліва легеня</MM_WyvernBody.corePart.parts.left_lung.customLabel>
+  <MM_WyvernBody.corePart.parts.right_lung.customLabel>права легеня</MM_WyvernBody.corePart.parts.right_lung.customLabel>
+  <MM_WyvernBody.corePart.parts.left_kidney.customLabel>ліва нирка</MM_WyvernBody.corePart.parts.left_kidney.customLabel>
+  <MM_WyvernBody.corePart.parts.right_kidney.customLabel>права нирка</MM_WyvernBody.corePart.parts.right_kidney.customLabel>
+  <MM_WyvernBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>ліве око</MM_WyvernBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+  <MM_WyvernBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>праве око</MM_WyvernBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+  <MM_WyvernBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>ліве вухо</MM_WyvernBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+  <MM_WyvernBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>ліве вухо</MM_WyvernBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+  <MM_WyvernBody.corePart.parts.left_leg.customLabel>ліва нога</MM_WyvernBody.corePart.parts.left_leg.customLabel>
+  <MM_WyvernBody.corePart.parts.left_leg.parts.left_claws.customLabel>ліві кігті</MM_WyvernBody.corePart.parts.left_leg.parts.left_claws.customLabel>
+  <MM_WyvernBody.corePart.parts.right_leg.customLabel>права нога</MM_WyvernBody.corePart.parts.right_leg.customLabel>
+  <MM_WyvernBody.corePart.parts.right_leg.parts.right_claws.customLabel>праві кігті</MM_WyvernBody.corePart.parts.right_leg.parts.right_claws.customLabel>
+  <MM_MinotaurBody.label>мінотавр</MM_MinotaurBody.label>
+  <MM_MinotaurBody.corePart.parts.left_lung.customLabel>ліва легеня</MM_MinotaurBody.corePart.parts.left_lung.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_lung.customLabel>права легеня</MM_MinotaurBody.corePart.parts.right_lung.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_kidney.customLabel>ліва нирка</MM_MinotaurBody.corePart.parts.left_kidney.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_kidney.customLabel>права нирка</MM_MinotaurBody.corePart.parts.right_kidney.customLabel>
+  <MM_MinotaurBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>ліве око</MM_MinotaurBody.corePart.parts.Neck.parts.Head.parts.left_eye.customLabel>
+  <MM_MinotaurBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>праве око</MM_MinotaurBody.corePart.parts.Neck.parts.Head.parts.right_eye.customLabel>
+  <MM_MinotaurBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>ліве вухо</MM_MinotaurBody.corePart.parts.Neck.parts.Head.parts.left_ear.customLabel>
+  <MM_MinotaurBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>праве вухо</MM_MinotaurBody.corePart.parts.Neck.parts.Head.parts.right_ear.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_shoulder.customLabel>ліве плече</MM_MinotaurBody.corePart.parts.left_shoulder.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_clavicle.customLabel>ліва ключиця</MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_clavicle.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.customLabel>ліва рука</MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_humerus.customLabel>ліва плечова кістка</MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_humerus.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_radius.customLabel>лівий радіус</MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_radius.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>ліва рука</MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_pinky.customLabel>лівий мізинець</MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_pinky.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_ring_finger.customLabel>лівий безіменний палець</MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_ring_finger.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>лівий мізинець</MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>лівий вказівний палець</MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>лівий вказівний палець</MM_MinotaurBody.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_shoulder.customLabel>праве плече</MM_MinotaurBody.corePart.parts.right_shoulder.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_clavicle.customLabel>права ключиця</MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_clavicle.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.customLabel>права рука</MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_humerus.customLabel>права плечова кістка</MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_humerus.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_radius.customLabel>правий радіус</MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_radius.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.customLabel>права рука</MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_pinky.customLabel>правий мізинець</MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_pinky.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_ring_finger.customLabel>правий радіус</MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_ring_finger.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>середній палець правої руки</MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>вказівний палець правої руки</MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>великий палець правої руки</MM_MinotaurBody.corePart.parts.right_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_leg.customLabel>ліва нога</MM_MinotaurBody.corePart.parts.left_leg.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_leg.parts.left_femur.customLabel>ліва стегнова кістка</MM_MinotaurBody.corePart.parts.left_leg.parts.left_femur.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_leg.parts.left_tibia.customLabel>ліва великомірцева кістка</MM_MinotaurBody.corePart.parts.left_leg.parts.left_tibia.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.customLabel>ліва нога</MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.parts.left_little_toe.customLabel>лівий мізинець</MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.parts.left_little_toe.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.parts.left_fourth_toe.customLabel>четвертий палець лівої ноги</MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.parts.left_fourth_toe.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.parts.left_middle_toe.customLabel>середній палець лівої ноги</MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.parts.left_middle_toe.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.parts.left_second_toe.customLabel>другий палець лівої ноги</MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.parts.left_second_toe.customLabel>
+  <MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.parts.left_big_toe.customLabel>великий палець лівої ноги</MM_MinotaurBody.corePart.parts.left_leg.parts.left_foot.parts.left_big_toe.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_leg.customLabel>права нога</MM_MinotaurBody.corePart.parts.right_leg.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_leg.parts.right_femur.customLabel>великий палець лівої ноги</MM_MinotaurBody.corePart.parts.right_leg.parts.right_femur.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_leg.parts.right_tibia.customLabel>права великомірцева кістка</MM_MinotaurBody.corePart.parts.right_leg.parts.right_tibia.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.customLabel>права нога</MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.parts.right_little_toe.customLabel>права великомірцева кістка</MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.parts.right_little_toe.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.parts.right_fourth_toe.customLabel>четвертий палець правої ноги</MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.parts.right_fourth_toe.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.parts.right_middle_toe.customLabel>середній палець правої ноги</MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.parts.right_middle_toe.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.parts.right_second_toe.customLabel>другий палець правої ноги</MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.parts.right_second_toe.customLabel>
+  <MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.parts.right_big_toe.customLabel>великий палець правої ноги</MM_MinotaurBody.corePart.parts.right_leg.parts.right_foot.parts.right_big_toe.customLabel>
+  <MM_HornedMechanoid.label>мехатавр</MM_HornedMechanoid.label>
+  <MM_HornedMechanoid.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>датчик лівого прицілу</MM_HornedMechanoid.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_sight_sensor.customLabel>
+  <MM_HornedMechanoid.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>датчик правого прицілу</MM_HornedMechanoid.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_sight_sensor.customLabel>
+  <MM_HornedMechanoid.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>лівий слуховий датчик</MM_HornedMechanoid.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.left_hearing_sensor.customLabel>
+  <MM_HornedMechanoid.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>правий слуховий датчик</MM_HornedMechanoid.corePart.parts.MechanicalNeck.parts.MechanicalHead.parts.right_hearing_sensor.customLabel>
+  <MM_HornedMechanoid.corePart.parts.left_shoulder.customLabel>ліве плече</MM_HornedMechanoid.corePart.parts.left_shoulder.customLabel>
+  <MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.customLabel>ліва рука</MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.customLabel>
+  <MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>ліва рука</MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.customLabel>
+  <MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_pinky.customLabel>лівий мізинець</MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_pinky.customLabel>
+  <MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>лівий мізинець</MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_middle_finger.customLabel>
+  <MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>лівий вказівний палець</MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_index_finger.customLabel>
+  <MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>великий палець лівої руки</MM_HornedMechanoid.corePart.parts.left_shoulder.parts.left_arm.parts.left_hand.parts.left_thumb.customLabel>
+  <MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.customLabel>праве механічне плече</MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.customLabel>
+  <MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel>права рука</MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.customLabel>
+  <MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.customLabel>права рука</MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.customLabel>
+  <MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_pinky.customLabel>правий мізинець</MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_pinky.customLabel>
+  <MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>середній палець правої руки</MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_middle_finger.customLabel>
+  <MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>вказівний палець правої руки</MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_index_finger.customLabel>
+  <MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>великий палець правої руки</MM_HornedMechanoid.corePart.parts.right_mechanical_shoulder.parts.right_arm.parts.right_hand.parts.right_thumb.customLabel>
+  <MM_HornedMechanoid.corePart.parts.left_leg.customLabel>ліва нога</MM_HornedMechanoid.corePart.parts.left_leg.customLabel>
+  <MM_HornedMechanoid.corePart.parts.left_leg.parts.left_foot.customLabel>ліва нога</MM_HornedMechanoid.corePart.parts.left_leg.parts.left_foot.customLabel>
+  <MM_HornedMechanoid.corePart.parts.right_leg.customLabel>права нога</MM_HornedMechanoid.corePart.parts.right_leg.customLabel>
+  <MM_HornedMechanoid.corePart.parts.right_leg.parts.right_foot.customLabel>права нога</MM_HornedMechanoid.corePart.parts.right_leg.parts.right_foot.customLabel>
+</LanguageData>

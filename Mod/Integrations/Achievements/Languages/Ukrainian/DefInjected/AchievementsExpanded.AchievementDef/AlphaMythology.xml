@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MM_AchievementMagicHunter.label>Мисливець за магією</MM_AchievementMagicHunter.label>
+  <MM_AchievementMagicHunter.description>Вбити магічну істоту проєкту «Геката»</MM_AchievementMagicHunter.description>
+  <MM_AchievementStayingAhead.label>На крок попереду</MM_AchievementStayingAhead.label>
+  <MM_AchievementStayingAhead.description>Вбити 5 лернейських гідр</MM_AchievementStayingAhead.description>
+  <MM_AchievementHardLove.label>Важке кохання</MM_AchievementHardLove.label>
+  <MM_AchievementHardLove.description>Створити зв'язок між колоністом і катоблепасом</MM_AchievementHardLove.description>
+  <MM_AchievementMagicParka.label>Чарівна парка</MM_AchievementMagicParka.label>
+  <MM_AchievementMagicParka.description>Пошити парку з товстої магічної шкіри</MM_AchievementMagicParka.description>
+  <MM_AchievementGrabbingHands.label>Чіпкі руки</MM_AchievementGrabbingHands.label>
+  <MM_AchievementGrabbingHands.description>Опинитися знерухомленим хваткою ауїцотля</MM_AchievementGrabbingHands.description>
+  <MM_AchievementFountainOfBlood.label>Фонтан крові</MM_AchievementFountainOfBlood.label>
+  <MM_AchievementFountainOfBlood.description>Отримати кровоточиву рану</MM_AchievementFountainOfBlood.description>
+  <MM_AchievementStatueOfColonist.label>Статуя колоніста</MM_AchievementStatueOfColonist.label>
+  <MM_AchievementStatueOfColonist.description>Померти від скам'яніння (людині чи тварині)</MM_AchievementStatueOfColonist.description>
+  <MM_AchievementForbiddenPoultry.label>Заборонена птиця</MM_AchievementForbiddenPoultry.label>
+  <MM_AchievementForbiddenPoultry.description>Приготувати розкішну страву із заплідненого яйця грифона</MM_AchievementForbiddenPoultry.description>
+</LanguageData>

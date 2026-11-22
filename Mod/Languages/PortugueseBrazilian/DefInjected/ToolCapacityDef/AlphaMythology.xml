@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MM_ToxicSting.label>forro venenoso</MM_ToxicSting.label>
+  <MM_ToxicBite.label>picada venenosa</MM_ToxicBite.label>
+  <MM_VeryToxicBite.label>picada venenosa</MM_VeryToxicBite.label>
+  <MM_ExtraDamageToPiratesHorn.label>córrego da justiça</MM_ExtraDamageToPiratesHorn.label>
+  <MM_Grapple.label>lutar</MM_Grapple.label>
+  <MM_BleedingWound.label>ferida sangrando</MM_BleedingWound.label>
+  <MM_FlamingBite.label>picada de poeira</MM_FlamingBite.label>
+</LanguageData>

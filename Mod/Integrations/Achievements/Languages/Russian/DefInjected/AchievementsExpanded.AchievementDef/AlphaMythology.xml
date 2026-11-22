@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MM_AchievementMagicHunter.label>Охотник за магией</MM_AchievementMagicHunter.label>
+  <MM_AchievementMagicHunter.description>Убить магическое существо проекта «Геката»</MM_AchievementMagicHunter.description>
+  <MM_AchievementStayingAhead.label>На шаг впереди</MM_AchievementStayingAhead.label>
+  <MM_AchievementStayingAhead.description>Убить 5 лернейских гидр</MM_AchievementStayingAhead.description>
+  <MM_AchievementHardLove.label>Трудная любовь</MM_AchievementHardLove.label>
+  <MM_AchievementHardLove.description>Создать связь между колонистом и катоблепасом</MM_AchievementHardLove.description>
+  <MM_AchievementMagicParka.label>Волшебная парка</MM_AchievementMagicParka.label>
+  <MM_AchievementMagicParka.description>Сшить парку из плотной магической кожи</MM_AchievementMagicParka.description>
+  <MM_AchievementGrabbingHands.label>Хватающие руки</MM_AchievementGrabbingHands.label>
+  <MM_AchievementGrabbingHands.description>Оказаться обездвиженным хваткой ауисотля</MM_AchievementGrabbingHands.description>
+  <MM_AchievementFountainOfBlood.label>Фонтан крови</MM_AchievementFountainOfBlood.label>
+  <MM_AchievementFountainOfBlood.description>Получить кровоточащую рану</MM_AchievementFountainOfBlood.description>
+  <MM_AchievementStatueOfColonist.label>Статуя колониста</MM_AchievementStatueOfColonist.label>
+  <MM_AchievementStatueOfColonist.description>Умереть от окаменения (человеку или животному)</MM_AchievementStatueOfColonist.description>
+  <MM_AchievementForbiddenPoultry.label>Запретная птица</MM_AchievementForbiddenPoultry.label>
+  <MM_AchievementForbiddenPoultry.description>Приготовить роскошную еду из оплодотворённого яйца грифона</MM_AchievementForbiddenPoultry.description>
+</LanguageData>

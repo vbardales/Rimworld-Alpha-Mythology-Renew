@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MM_ToxicBite.description>Токсин в крови. Может попасть в организм через окружающую среду, укусы ядовитых существ или рану от отравленного оружия.\n\nДаже в небольших дозах вещество обладает канцерогенным действием, а при больших — смертельно.\n\nВ отличие от отравления токсинами из базовой игры, существа, погибшие от подобного отравления токсинами, пригодны в пищу.</MM_ToxicBite.description>
+  <MM_ToxicBite.label>отравление токсинами</MM_ToxicBite.label>
+  <MM_ToxicBite.stages.initial-0.label>незаметное</MM_ToxicBite.stages.initial-0.label>
+  <MM_ToxicBite.stages.initial-1.label>начальное</MM_ToxicBite.stages.initial-1.label>
+  <MM_ToxicBite.stages.minor.label>лёгкое</MM_ToxicBite.stages.minor.label>
+  <MM_ToxicBite.stages.moderate.label>среднее</MM_ToxicBite.stages.moderate.label>
+  <MM_ToxicBite.stages.serious.label>серьёзное</MM_ToxicBite.stages.serious.label>
+  <MM_ToxicBite.stages.extreme.label>критическое</MM_ToxicBite.stages.extreme.label>
+  <MM_Grabbed.description>Это существо было схвачено и не может нормально двигаться.</MM_Grabbed.description>
+  <MM_Grabbed.label>захват</MM_Grabbed.label>
+  <MM_Grabbed.stages.initial.label>начальный</MM_Grabbed.stages.initial.label>
+  <MM_Grabbed.stages.partially_immobilized.label>частичное обездвиживание</MM_Grabbed.stages.partially_immobilized.label>
+  <MM_Grabbed.stages.grabbed.label>обычный</MM_Grabbed.stages.grabbed.label>
+  <MM_Grabbed.stages.grabbed_tight.label>крепкий</MM_Grabbed.stages.grabbed_tight.label>
+  <MM_BleedingWound.description>Кровоточащая рана, вызывающая потерю крови в течение некоторого времени после изначальной атаки.</MM_BleedingWound.description>
+  <MM_BleedingWound.label>кровоточащие раны</MM_BleedingWound.label>
+  <MM_BleedingWound.stages.bleeding_wounds_minor.label>слабые кровоточащие раны</MM_BleedingWound.stages.bleeding_wounds_minor.label>
+  <MM_BleedingWound.stages.bleeding_wounds_moderate.label>умеренные кровоточащие раны</MM_BleedingWound.stages.bleeding_wounds_moderate.label>
+  <MM_BleedingWound.stages.bleeding_wounds_serious.label>тяжёлые кровоточащие раны</MM_BleedingWound.stages.bleeding_wounds_serious.label>
+  <MM_OpenWound.label>открытая рана</MM_OpenWound.label>
+  <MM_OpenWound.description>Открытая рана.</MM_OpenWound.description>
+  <MM_OpenWound.labelNoun>открытая рана</MM_OpenWound.labelNoun>
+  <MM_OpenWound.labelNounPretty>{0}: {1}</MM_OpenWound.labelNounPretty>
+  <MM_OpenWound.comps.HediffComp_TendDuration.labelTendedWell>перевязано</MM_OpenWound.comps.HediffComp_TendDuration.labelTendedWell>
+  <MM_OpenWound.comps.HediffComp_TendDuration.labelTendedWellInner>зашито</MM_OpenWound.comps.HediffComp_TendDuration.labelTendedWellInner>
+  <MM_OpenWound.comps.HediffComp_TendDuration.labelSolidTendedWell>обработано</MM_OpenWound.comps.HediffComp_TendDuration.labelSolidTendedWell>
+  <MM_OpenWound.comps.HediffComp_GetsPermanent.permanentLabel>шрам от колотой раны</MM_OpenWound.comps.HediffComp_GetsPermanent.permanentLabel>
+  <MM_OpenWound.injuryProps.destroyedLabel>отрезано</MM_OpenWound.injuryProps.destroyedLabel>
+  <MM_OpenWound.injuryProps.destroyedOutLabel>вырезано</MM_OpenWound.injuryProps.destroyedOutLabel>
+  <MM_Petrification.description>Кожа жертвы затвердевает и превращается в хрупкий камень. Это состояние обратимо и рассеется естественным образом через несколько часов, однако если тяжесть состояния достигнет единицы, то это убьёт жертву.</MM_Petrification.description>
+  <MM_Petrification.label>окаменение</MM_Petrification.label>
+  <MM_Petrification.stages.initial.label>начальное</MM_Petrification.stages.initial.label>
+  <MM_Petrification.stages.stiff_joints.label>жёсткие суставы</MM_Petrification.stages.stiff_joints.label>
+  <MM_Petrification.stages.rocky_skin.label>каменная кожа</MM_Petrification.stages.rocky_skin.label>
+  <MM_Petrification.stages.brittle_bones.label>хрупкие кости</MM_Petrification.stages.brittle_bones.label>
+  <MM_Petrification.stages.turned_to_stone.label>превращение в камень</MM_Petrification.stages.turned_to_stone.label>
+  <MM_FenghuangHediff.label>мир и спокойствие</MM_FenghuangHediff.label>
+  <MM_FenghuangHediff.description>Фэнхуан успокает этого человека волнами позитивной энергии. Это улучшает показатели работы и движения на 12 часов.</MM_FenghuangHediff.description>
+  <MM_NoPain.description>У этого существа отсутствует болевая чувствительность и оно никогда не падёт от болевого шока.</MM_NoPain.description>
+  <MM_NoPain.label>отсутствует болевая чувствительность</MM_NoPain.label>
+</LanguageData>

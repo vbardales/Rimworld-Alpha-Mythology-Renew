@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VEF_WarningEggExplodes>Обережно: яйце вибухає під час вилуплення!</VEF_WarningEggExplodes>
+  <NocturnalAnimals.BodyClock>Біологічний годинник</NocturnalAnimals.BodyClock>
+  <NocturnalAnimals.BodyClock_Description>Визначає, коли тварина спить, а коли пильнує. Денні тварини сплять уночі і бадьорюють удень, тоді як нічні тварини сплять удень і пильнують уночі. Сутінкові тварини в основному активні в сутінках.</NocturnalAnimals.BodyClock_Description>
+  <NocturnalAnimals.BodyClock_Diurnal>Денний</NocturnalAnimals.BodyClock_Diurnal>
+  <NocturnalAnimals.BodyClock_Nocturnal>Нічний</NocturnalAnimals.BodyClock_Nocturnal>
+  <NocturnalAnimals.BodyClock_Crepuscular>Сутінковий</NocturnalAnimals.BodyClock_Crepuscular>
+</LanguageData>

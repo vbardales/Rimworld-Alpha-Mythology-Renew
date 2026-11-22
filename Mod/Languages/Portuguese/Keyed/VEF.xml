@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VEF_WarningEggExplodes>Atenção: este ovo explode ao chocar!</VEF_WarningEggExplodes>
+  <NocturnalAnimals.BodyClock>Relógio biológico</NocturnalAnimals.BodyClock>
+  <NocturnalAnimals.BodyClock_Description>Determina quando o animal dorme e quando está acordado. Os animais do dia dormem à noite e acordam durante o dia, enquanto os animais da noite dormem durante o dia e acordam à noite. Os animais crepúsculos são essencialmente ativos no anoitecer.</NocturnalAnimals.BodyClock_Description>
+  <NocturnalAnimals.BodyClock_Diurnal>Diurno</NocturnalAnimals.BodyClock_Diurnal>
+  <NocturnalAnimals.BodyClock_Nocturnal>Noturno</NocturnalAnimals.BodyClock_Nocturnal>
+  <NocturnalAnimals.BodyClock_Crepuscular>Crepúsculo</NocturnalAnimals.BodyClock_Crepuscular>
+</LanguageData>

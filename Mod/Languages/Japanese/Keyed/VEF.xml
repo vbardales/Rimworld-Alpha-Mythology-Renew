@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <VEF_WarningEggExplodes>警告: この卵は孵化するときに爆発します!</VEF_WarningEggExplodes>
+  <NocturnalAnimals.BodyClock>体内時計</NocturnalAnimals.BodyClock>
+  <NocturnalAnimals.BodyClock_Description>動物がいつ寝て,いつ起きるかを決定します.\n\n昼行性の動物は夜中に眠り,日中に目覚めますが,夜行性の動物は日中に眠り,夜中に目覚めます.薄明薄暮性の動物は主に夕暮れ時に活動します.</NocturnalAnimals.BodyClock_Description>
+  <NocturnalAnimals.BodyClock_Diurnal>昼行性</NocturnalAnimals.BodyClock_Diurnal>
+  <NocturnalAnimals.BodyClock_Nocturnal>夜行性</NocturnalAnimals.BodyClock_Nocturnal>
+  <NocturnalAnimals.BodyClock_Crepuscular>薄暮性</NocturnalAnimals.BodyClock_Crepuscular>
+</LanguageData>

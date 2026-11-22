@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MM_ToxicBite.label>picada venenosa</MM_ToxicBite.label>
+  <MM_ToxicBite.deathMessage>O 0 foi enterrado até à morte.</MM_ToxicBite.deathMessage>
+  <MM_VeryToxicBite.label>picada venenosa</MM_VeryToxicBite.label>
+  <MM_VeryToxicBite.deathMessage>0 foi picado até à morte.</MM_VeryToxicBite.deathMessage>
+  <MM_FlamingBite.label>picada de poeira</MM_FlamingBite.label>
+  <MM_FlamingBite.deathMessage>Após a queima de fogos vivas.</MM_FlamingBite.deathMessage>
+  <MM_ToxicSting.label>forro venenoso</MM_ToxicSting.label>
+  <MM_ToxicSting.deathMessage>0 foi picado até à morte.</MM_ToxicSting.deathMessage>
+  <MM_Grapple.label>gancho</MM_Grapple.label>
+  <MM_Grapple.deathMessage>É que foi capturado até à morte.</MM_Grapple.deathMessage>
+  <MM_BleedingWound.label>ferida sangrando</MM_BleedingWound.label>
+  <MM_BleedingWound.deathMessage>Após ter sangrado até à morte.</MM_BleedingWound.deathMessage>
+  <MM_UncontrollableBleeding.label>hemorragia incontrolável</MM_UncontrollableBleeding.label>
+  <MM_UncontrollableBleeding.deathMessage>um sangramento incontrolável.</MM_UncontrollableBleeding.deathMessage>
+  <MM_PetrifyingGaze.label>Olhar fossilizado</MM_PetrifyingGaze.label>
+  <MM_PetrifyingGaze.deathMessage>Um olhar petrificado.</MM_PetrifyingGaze.deathMessage>
+  <MM_AcidicBreath.label>respiração ácida</MM_AcidicBreath.label>
+  <MM_AcidicBreath.deathMessage>O cheiro azedo da boca.</MM_AcidicBreath.deathMessage>
+  <MM_ExtraDamageToPiratesHorn.label>córrego da justiça</MM_ExtraDamageToPiratesHorn.label>
+  <MM_ExtraDamageToPiratesHorn.deathMessage>0 foi esfaqueado até à morte.</MM_ExtraDamageToPiratesHorn.deathMessage>
+</LanguageData>

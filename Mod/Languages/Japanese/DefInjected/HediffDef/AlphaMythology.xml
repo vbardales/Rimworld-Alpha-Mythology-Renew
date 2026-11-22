@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MM_ToxicBite.description>血流中の毒素.これは,環境毒素,有毒な咬傷,毒された武器など,さまざまな原因から発生する可能性があります.\n高用量では,毒性の蓄積が致命的です.低用量でさえ,それは癌を生成する可能性があります.\nベースのゲームの有毒な蓄積とは対照的に,この有毒な損傷で死亡した生物は食べることができます.</MM_ToxicBite.description>
+  <MM_ToxicBite.label>毒の蓄積</MM_ToxicBite.label>
+  <MM_ToxicBite.stages.initial-0.label>初期</MM_ToxicBite.stages.initial-0.label>
+  <MM_ToxicBite.stages.initial-1.label>初期</MM_ToxicBite.stages.initial-1.label>
+  <MM_ToxicBite.stages.minor.label>軽微</MM_ToxicBite.stages.minor.label>
+  <MM_ToxicBite.stages.moderate.label>適度</MM_ToxicBite.stages.moderate.label>
+  <MM_ToxicBite.stages.serious.label>深刻</MM_ToxicBite.stages.serious.label>
+  <MM_ToxicBite.stages.extreme.label>極度</MM_ToxicBite.stages.extreme.label>
+  <MM_Grabbed.description>この生物は掴まれているため,適切に移動できません.</MM_Grabbed.description>
+  <MM_Grabbed.label>引っ掴む</MM_Grabbed.label>
+  <MM_Grabbed.stages.initial.label>初期</MM_Grabbed.stages.initial.label>
+  <MM_Grabbed.stages.partially_immobilized.label>部分的に固定化</MM_Grabbed.stages.partially_immobilized.label>
+  <MM_Grabbed.stages.grabbed.label>引っ掴む</MM_Grabbed.stages.grabbed.label>
+  <MM_Grabbed.stages.grabbed_tight.label>強く引っ掴む</MM_Grabbed.stages.grabbed_tight.label>
+  <MM_BleedingWound.description>最初の発作後,しばらくの間失血を引き起こし続ける出血の傷.</MM_BleedingWound.description>
+  <MM_BleedingWound.label>出血傷</MM_BleedingWound.label>
+  <MM_BleedingWound.stages.bleeding_wounds_minor.label>軽度の出血性の傷</MM_BleedingWound.stages.bleeding_wounds_minor.label>
+  <MM_BleedingWound.stages.bleeding_wounds_moderate.label>中等度の出血性の傷</MM_BleedingWound.stages.bleeding_wounds_moderate.label>
+  <MM_BleedingWound.stages.bleeding_wounds_serious.label>重度の出血性の傷</MM_BleedingWound.stages.bleeding_wounds_serious.label>
+  <MM_OpenWound.label>開放創</MM_OpenWound.label>
+  <MM_OpenWound.description>開放性損傷</MM_OpenWound.description>
+  <MM_OpenWound.labelNoun>開放創</MM_OpenWound.labelNoun>
+  <MM_OpenWound.labelNounPretty>{1}の{0}</MM_OpenWound.labelNounPretty>
+  <MM_OpenWound.comps.HediffComp_TendDuration.labelTendedWell>包帯済み</MM_OpenWound.comps.HediffComp_TendDuration.labelTendedWell>
+  <MM_OpenWound.comps.HediffComp_TendDuration.labelTendedWellInner>縫合済み</MM_OpenWound.comps.HediffComp_TendDuration.labelTendedWellInner>
+  <MM_OpenWound.comps.HediffComp_TendDuration.labelSolidTendedWell>整復済み</MM_OpenWound.comps.HediffComp_TendDuration.labelSolidTendedWell>
+  <MM_OpenWound.comps.HediffComp_GetsPermanent.permanentLabel>開放創痕</MM_OpenWound.comps.HediffComp_GetsPermanent.permanentLabel>
+  <MM_OpenWound.injuryProps.destroyedLabel>断つ</MM_OpenWound.injuryProps.destroyedLabel>
+  <MM_OpenWound.injuryProps.destroyedOutLabel>断つ</MM_OpenWound.injuryProps.destroyedOutLabel>
+  <MM_Petrification.description>皮膚は硬くなり脆い石に変わります.数時間後には自然回復しますが,重度が1になると死亡します.</MM_Petrification.description>
+  <MM_Petrification.label>石化</MM_Petrification.label>
+  <MM_Petrification.stages.initial.label>初期</MM_Petrification.stages.initial.label>
+  <MM_Petrification.stages.stiff_joints.label>硬化</MM_Petrification.stages.stiff_joints.label>
+  <MM_Petrification.stages.rocky_skin.label>岩肌</MM_Petrification.stages.rocky_skin.label>
+  <MM_Petrification.stages.brittle_bones.label>脆骨</MM_Petrification.stages.brittle_bones.label>
+  <MM_Petrification.stages.turned_to_stone.label>石化</MM_Petrification.stages.turned_to_stone.label>
+  <MM_FenghuangHediff.label>平安と静寂</MM_FenghuangHediff.label>
+  <MM_FenghuangHediff.description>鳳凰によるポジティブなエネルギーの波動でこの人を癒しています.12時間の間,指の機能と移動力を増加させます.</MM_FenghuangHediff.description>
+  <MM_NoPain.description>この生物は,痛みに対する感度が低下していて,痛みで倒れるまでに時間がかかります.</MM_NoPain.description>
+  <MM_NoPain.label>痛覚がない</MM_NoPain.label>
+</LanguageData>

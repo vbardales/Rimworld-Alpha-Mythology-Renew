@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MM_EggGriffinFertilized.label>ovo grifão (fert.)</MM_EggGriffinFertilized.label>
+  <MM_EggGriffinFertilized.description>Ovo de grifão fertilizado. Pode comer cru, mas é muito, muito melhor cozinhado. Se tudo correr bem, tem de sair a grife.</MM_EggGriffinFertilized.description>
+  <MM_EggPhoenixFertilized.label>ovo fénix (fert.)</MM_EggPhoenixFertilized.label>
+  <MM_EggPhoenixFertilized.description>Óvulo fertilizado de fênix. Se tudo correr bem, tem de sair um passarinho de fênix. Pode comer cru, mas é melhor cozinhar.</MM_EggPhoenixFertilized.description>
+  <MM_EggSalamanderFertilized.label>ovo de salmandra (fert.)</MM_EggSalamanderFertilized.label>
+  <MM_EggSalamanderFertilized.description>Ovo de salmandra fertilizado. Pode comer cru, mas é muito, muito melhor cozinhado. Se tudo correr bem, tem de sair uma salmandra.</MM_EggSalamanderFertilized.description>
+  <MM_EggFenghuangFertilized.label>ovo fenhuan (fert.)</MM_EggFenghuangFertilized.label>
+  <MM_EggFenghuangFertilized.description>Óvulo fanhuan fertilizado. Pode comer cru, mas é muito, muito melhor cozinhado. Se tudo correr bem, tem de sair um fanhuan.</MM_EggFenghuangFertilized.description>
+  <MM_EggStymphalianBirdFertilized.label>ovo de pássaro estinfálio (firt.)</MM_EggStymphalianBirdFertilized.label>
+  <MM_EggStymphalianBirdFertilized.description>Ovo fertilizado de pássaro de Estimulfalia. Pode comer cru, mas é muito, muito melhor cozinhado. Se tudo correr bem, tem de sair um pássaro estinfálio.</MM_EggStymphalianBirdFertilized.description>
+  <MM_EggIeltxuFertilized.label>ovo ieltxu (fert.)</MM_EggIeltxuFertilized.label>
+  <MM_EggIeltxuFertilized.description>Óvulo fertilizado ieltxu. Pode comer cru, mas é muito, muito melhor cozinhado. Se tudo correr bem, ele deve sair ieltxu.</MM_EggIeltxuFertilized.description>
+  <MM_EggBasiliskFertilized.label>ovo vasílisco (fert.)</MM_EggBasiliskFertilized.label>
+  <MM_EggBasiliskFertilized.description>Ovo vasílico fertilizado. Pode comer cru, mas é muito, muito melhor cozinhado. Se tudo correr bem, ele tem de sair do vasílico.</MM_EggBasiliskFertilized.description>
+  <MM_LightMagicalLeather.label>leve pele mágica</MM_LightMagicalLeather.label>
+  <MM_LightMagicalLeather.description>Esta pele brilha com uma luz estranha. Comparado com a maioria dos pulmões, é um pouco mais rígido e um pouco melhor sujeito a todos os tipos de regulação de temperatura.</MM_LightMagicalLeather.description>
+  <MM_HeavyMagicalLeather.label>pele pesada e mágica</MM_HeavyMagicalLeather.label>
+  <MM_HeavyMagicalLeather.description>Esta pele pesada brilha com uma luz estranha e imensa. Comparado com a maioria dos tipos de pele, é um pouco mais rígido e um pouco melhor sujeito a todos os tipos de regulação de temperatura.</MM_HeavyMagicalLeather.description>
+  <MM_EggGriffinUnfertilized.label>ovo de grifão (não fert.)</MM_EggGriffinUnfertilized.label>
+  <MM_EggGriffinUnfertilized.description>Ovo de grifão não fertilizado. Pode ser comido cru, mas fica muito, muito melhor cozinhado.</MM_EggGriffinUnfertilized.description>
+  <MM_EggBasiliskUnfertilized.label>ovo de vasilisco (não fert.)</MM_EggBasiliskUnfertilized.label>
+  <MM_EggBasiliskUnfertilized.description>Ovo de vasilisco não fertilizado. Pode ser comido cru, mas fica muito, muito melhor cozinhado.</MM_EggBasiliskUnfertilized.description>
+  <MM_EggFenghuangUnfertilized.label>ovo de fenhuan (não fert.)</MM_EggFenghuangUnfertilized.label>
+  <MM_EggFenghuangUnfertilized.description>Ovo de fenhuan não fertilizado. Pode ser comido cru, mas fica muito, muito melhor cozinhado.</MM_EggFenghuangUnfertilized.description>
+  <MM_EggIeltxuUnfertilized.label>ovo de ieltxu (não fert.)</MM_EggIeltxuUnfertilized.label>
+  <MM_EggIeltxuUnfertilized.description>Ovo de ieltxu não fertilizado. Pode ser comido cru, mas fica muito, muito melhor cozinhado.</MM_EggIeltxuUnfertilized.description>
+  <MM_EggStymphalianBirdUnfertilized.label>ovo de pássaro estinfálio (não fert.)</MM_EggStymphalianBirdUnfertilized.label>
+  <MM_EggStymphalianBirdUnfertilized.description>Ovo de pássaro estinfálio não fertilizado. Pode ser comido cru, mas fica muito, muito melhor cozinhado.</MM_EggStymphalianBirdUnfertilized.description>
+  <MM_EggSalamanderUnfertilized.label>ovo de salamandra (não fert.)</MM_EggSalamanderUnfertilized.label>
+  <MM_EggSalamanderUnfertilized.description>Ovo de salamandra não fertilizado. Pode ser comido cru, mas fica muito, muito melhor cozinhado.</MM_EggSalamanderUnfertilized.description>
+  <MM_Quill.label>pena</MM_Quill.label>
+  <MM_Tremor.label>tremer</MM_Tremor.label>
+  <MM_WispProjectile.label>respiração fraca</MM_WispProjectile.label>
+  <MM_AcidicBreath.label>cheiro ácido da boca</MM_AcidicBreath.label>
+  <MM_RazorSharpFeathers.label>picantes como penas de barbear</MM_RazorSharpFeathers.label>
+  <MM_BurnedGrass.label>erva morta</MM_BurnedGrass.label>
+  <MM_BurnedGrass.description>erva morta.</MM_BurnedGrass.description>
+  <MM_BurnedBush.label>peixe morto</MM_BurnedBush.label>
+  <MM_BurnedBush.description>Um arbusto morto. Não é comestível para animais.</MM_BurnedBush.description>
+  <MM_Ahuizotl.label>achuizotl</MM_Ahuizotl.label>
+  <MM_Ahuizotl.description>Ahuizotl é uma criatura lendária de mitos aztecas. Ele é descrito como um cão, a sua pele impenetrável é muitas vezes derramada, formando espinhos. O ahuizotl tem mãos manipuláveis e uma mão extra na cauda. Os ahuizotles são temidos pelo seu vício na carne humana, especialmente nas unhas, olhos e dentes. Dizem que ele vive na água ou perto dela e usa a mão na ponta de sua cauda para agarrar suas presas, arrastando o homem para afogá-lo .\n\nOs Ahuizotly não são seres que se encontram na natureza, e foram criados como parte do Projeto Hecat, um programa de bioengenharia que aplicou replicadores de tecidos em animais já existentes para mutá-los em seres mágicos. Os ahuizotli usam a mão na ponta da cauda para agarrar suas presas e agarrar-se a elas com as patas, tornando a retirada bastante difícil se lutarem em combate próximo.</MM_Ahuizotl.description>
+  <MM_Ahuizotl.tools.grabbing_hand.label>Mão agarradora</MM_Ahuizotl.tools.grabbing_hand.label>
+  <MM_Ahuizotl.tools.left_claw.label>garra esquerda</MM_Ahuizotl.tools.left_claw.label>
+  <MM_Ahuizotl.tools.right_claw.label>garra direita</MM_Ahuizotl.tools.right_claw.label>
+  <MM_Ahuizotl.tools.head.label>cabeça</MM_Ahuizotl.tools.head.label>
+  <MM_Basilisk.label>vasilisk</MM_Basilisk.label>
+  <MM_Basilisk.description>Nos bestiários europeus, o vasílico é um réptil lendário, considerado o rei da serpente, que pode causar a morte com um único olhar. O Plínio Senior descreveu a vasílica como uma cobra com uma mancha branca na cabeça que parece muito diadema. Eles disseram que ele tem efeitos extremamente nocivos sobre as plantas e todos os tipos de vegetação, destruindo e encurralando todas as plantas que o rodeavam .\n\nVassiliski não são seres que se encontram na natureza, e foram criados no Projeto Hecat, um programa de bioengenharia que aplicou replicadores de mecânicos a animais já existentes para mutá-los em seres mágicos.\ O seu ataque com o olhar pode petrificar as suas vítimas, e a erva e os arbustos que o rodeiam vão apodrecer lentamente e tornar-se numa seda decadente, alimentando o vasilisco durante o processo. Felizmente, as vasilhas não são muito frequentes.</MM_Basilisk.description>
+  <MM_Basilisk.verbs.petrifying_gaze.label>olhares fossilizados</MM_Basilisk.verbs.petrifying_gaze.label>
+  <MM_Basilisk.tools.fangs.label>presas</MM_Basilisk.tools.fangs.label>
+  <MM_Basilisk.tools.head.label>cabeça</MM_Basilisk.tools.head.label>
+  <MM_Catoblepas.label>catoblepas</MM_Catoblepas.label>
+  <MM_Catoblepas.description>Catoblepas é uma criatura lendária da Etiópia, diz-se que tem um corpo de búfalo de Capá e uma cabeça enorme. que é constantemente apontada para baixo devido ao seu grande peso .\n\nOs catobleps não são seres, os que se encontram na natureza, e foram criados como parte do Projeto Hécata, um programa de engenharia biológica que aplicava replicadores de mecânicos para animais já existentes. O olhar de Catoblepas pode transformar as pessoas em pedra. Não são agressivos da natureza, mas esta perigosa capacidade garante que não têm predadores naturais.</MM_Catoblepas.description>
+  <MM_Catoblepas.tools.head.label>cabeça</MM_Catoblepas.tools.head.label>
+  <MM_Catoblepas.tools.left_hoof.label>cavaquinho esquerdo</MM_Catoblepas.tools.left_hoof.label>
+  <MM_Catoblepas.tools.right_hoof.label>cavaquinho direito</MM_Catoblepas.tools.right_hoof.label>
+  <MM_Catoblepas.verbs.petrifying_gaze.label>olhares fossilizados</MM_Catoblepas.verbs.petrifying_gaze.label>
+  <MM_Cerberus.label>Cerbera</MM_Cerberus.label>
+  <MM_Cerberus.description>Na mitologia grega, Cerberus, frequentemente chamado de Cerbero Aida, é um cão de três cabeças que protege os portões do Submundo para evitar que os mortos saiam. Cerberus era descendente dos monstros Yehidna e Tifone e, principalmente, conhecido por ter sido capturado por Hércules, um dos doze feitos de Hércules .\n\nCerber não são seres que se encontram na natureza, e foram criados no Projeto Heckat, um programa de bioengenharia que replicava os mecânicos aos animais já existentes para mutá-los &quot;. Os cerberos são mais difíceis de traçar do que os cães normais, e não são tão inteligentes, mas ter três cabeças torna-os animais de guerra muito, muito perigosos, especialmente quando os implantes de mandíbula biônicos são modificados.</MM_Cerberus.description>
+  <MM_Cerberus.tools.left_claw.label>garra esquerda</MM_Cerberus.tools.left_claw.label>
+  <MM_Cerberus.tools.right_claw.label>garra direita</MM_Cerberus.tools.right_claw.label>
+  <MM_Cerberus.tools.head.label>cabeça</MM_Cerberus.tools.head.label>
+  <MM_CeryneianHind.label>Lanchonete de Kerinei</MM_CeryneianHind.label>
+  <MM_CeryneianHind.description>Na mitologia grega, a lanchonete de Kerinei era uma criatura mítica que vivia em Kerinei, Grécia, e tomava a forma de um veado enorme, mais boi, com chifres de ouro, como um veado. Devolvê-lo vivo Ewrisfei em Mikens foi a terceira proeza de Hércules .\n\nOs hindos de Kerinei não são seres naturais e foram criados no Projeto Hecat, um programa de bioengenharia que aplicou replicadores de mecânicos a animais já existentes para mutá-los em seres «mágicos» .\n\nHabilidades especiais: A lanchonete de Kerinei (e, portanto, Hart, porque foram criados em ambos os sexos) é uma criatura muito rápida, embora não possa ser treinada como animal de condução, nem unicórnios ou pegasus. Ele produz leite.</MM_CeryneianHind.description>
+  <MM_CeryneianHind.tools.antlers-0.label>chifre de veado</MM_CeryneianHind.tools.antlers-0.label>
+  <MM_CeryneianHind.tools.antlers-1.label>chifre de veado</MM_CeryneianHind.tools.antlers-1.label>
+  <MM_CeryneianHind.tools.left_hoof.label>cavaquinho esquerdo</MM_CeryneianHind.tools.left_hoof.label>
+  <MM_CeryneianHind.tools.right_hoof.label>cavaquinho direito</MM_CeryneianHind.tools.right_hoof.label>
+  <MM_Chimera.label>quimera</MM_Chimera.label>
+  <MM_Chimera.description>A quimera era uma criatura híbrida tremenda da Lícia, na Ásia Pequena, composta por partes de leão, com a cabeça de um bode a sair das costas, e uma cauda que termina com a cabeça de uma serpente .\n\nOs quimeros não são seres que se encontram na natureza, e foram criados no Projeto Hecat, um programa de bioengenharia que aplicou replicadores de tecidos em animais já existentes icos. Quimeras são ao mesmo tempo levemente venenosas e de fogo, tornando-as bastante perigosas, e não apenas para os seus inimigos! Os quimeros adoram as colônias de madeira. Também podem ser ordenhados.</MM_Chimera.description>
+  <MM_Chimera.tools.toxic_bite.label>picada venenosa</MM_Chimera.tools.toxic_bite.label>
+  <MM_Chimera.tools.left_claw.label>garra esquerda</MM_Chimera.tools.left_claw.label>
+  <MM_Chimera.tools.right_claw.label>garra direita</MM_Chimera.tools.right_claw.label>
+  <MM_Chimera.tools.head.label>cabeça</MM_Chimera.tools.head.label>
+  <MM_Chimera.verbs.fire_breath.label>respiração de fogo</MM_Chimera.verbs.fire_breath.label>
+  <MM_ErymanthianBoar.label>javali de Erimantz</MM_ErymanthianBoar.label>
+  <MM_ErymanthianBoar.description>O javali Erimantus era um porco gigante e terrivel que vivia nas encostas do Monte Erimantus, que de vez em quando devastava os campos dos agricultores. A captura do javali era o objetivo do quarto feito de Hércules. Para capturar o javali, Herculano encurralou-o em uma espessa neve, abrandando consideravelmente o seu avanço e vantagem .\n\nOs javalis erimantins não são seres naturais e foram criados no Projeto Hecat, um programa de bioengenharia que aplicou replicadores de tecidos em animais já existentes para mutá-los em seres «mágicos».\ Presas de javali erimantino podem causar vários ferimentos graves que continuam a sangrar e causam mais ferimentos, tornando-os MUITO perigosos em combate próximo.</MM_ErymanthianBoar.description>
+  <MM_ErymanthianBoar.tools.tusk.label>bíblia</MM_ErymanthianBoar.tools.tusk.label>
+  <MM_ErymanthianBoar.tools.head.label>cabeça</MM_ErymanthianBoar.tools.head.label>
+  <MM_Fenghuang.label>fenhuan</MM_Fenghuang.label>
+  <MM_Fenghuang.description>Fanhuan é um pássaro lendário nas mitologias da Ásia Oriental, que simboliza a alta virtude e elegância. Fanhuan também simboliza a união entre yin e yang, e acredita-se que o pássaro só aparece em áreas ou locais abençoados pela paz e prosperidade ou felicidade. Tradicionalmente descrito como um conjunto de muitos pássaros, ele também é frequentemente chamado de «fênix chinesa», embora a semelhança com o oeste de Phoenix seja superficial .\n\nFenhuana não são seres naturais e foram criados no Projeto Hecat, um programa de bioengenharia que aplicou replicadores de mecânicos em animais já existentes para mutá-los em seres «mágicos».\</MM_Fenghuang.description>
+  <MM_Fenghuang.tools.claws.label>garras</MM_Fenghuang.tools.claws.label>
+  <MM_Fenghuang.tools.beak.label>bico</MM_Fenghuang.tools.beak.label>
+  <MM_Fenghuang.tools.head.label>cabeça</MM_Fenghuang.tools.head.label>
+  <MM_Griffin.label>grifão</MM_Griffin.label>
+  <MM_Griffin.description>O grifão é uma criatura com o corpo, a cauda e as patas traseiras de um leão; cabeça e asas da águia; e garras de águia como pernas dianteiras. As grifes são criaturas especialmente poderosas e majestosas, conhecidas por proteger tesouros e propriedades de valor, e são apreciadas como cavalos confiáveis .\n\nOs grifões não são seres naturais e foram criadas no Projeto Hecat, um programa de bioengenharia que aplicou replicadores de mecânicos a animais já existentes para mutá-los em seres «mágicos »\n\n. As grifes são ótimos animais de condução que recebem bónus de velocidade e armadura a cavalo (para isso é preciso se animar! Maude nos cavalos de combate).</MM_Griffin.description>
+  <MM_Griffin.tools.left_claw.label>garra esquerda</MM_Griffin.tools.left_claw.label>
+  <MM_Griffin.tools.right_claw.label>garra direita</MM_Griffin.tools.right_claw.label>
+  <MM_Griffin.tools.beak.label>bico</MM_Griffin.tools.beak.label>
+  <MM_Griffin.tools.head.label>cabeça</MM_Griffin.tools.head.label>
+  <MM_Ieltxu.label>Ielthu</MM_Ieltxu.label>
+  <MM_Ieltxu.description>Ielthu é um pássaro jeans na mitologia basca. Normalmente representado como um homem de fogo, preto como um corvo de resina, Ielthu não é um ser malicioso, embora frequentemente seja descrito como opressivo. As criaturas noturnas que geralmente aparecem em florestas escuras sob o escuro .\n\nIelthu não são criaturas que se encontram na natureza, e foram criadas no projeto Hecate, um programa de bioengenharia que aplicou replicadores mechanite a animais já existentes para mutá-los em seres «mágicos» .\n\n. São seres noturnos que dormem durante o dia.</MM_Ieltxu.description>
+  <MM_Ieltxu.verbs.fire_breath.label>respiração de fogo</MM_Ieltxu.verbs.fire_breath.label>
+  <MM_Ieltxu.tools.claws.label>garras</MM_Ieltxu.tools.claws.label>
+  <MM_Ieltxu.tools.beak.label>bico</MM_Ieltxu.tools.beak.label>
+  <MM_Ieltxu.tools.head.label>cabeça</MM_Ieltxu.tools.head.label>
+  <MM_Kappa.label>cappa</MM_Kappa.label>
+  <MM_Kappa.description>Cappa é um traço fluvial no folclore japonês, representado como seres verdes e humanos com braços e pernas trocados e carapuça de tartaruga nas costas. O aprofundamento na cabeça deles, o seu «prato», retém uma pequena quantidade de água, e a cappa enfraquece muito se esta água derramar ou secar. Embora as capas sejam muitas vezes consideradas opressivas, elas não são essencialmente maliciosas. Na verdade, uma vez amigos, a cappa pode realizar quaisquer tarefas para as pessoas, como ajudar os agricultores a irrigar suas terras .\n\nKapa não são seres que se encontram na natureza, e foram criados através do Projeto Hecat, um programa de bioengenharia que aplicou replicadores de mecânicos em animais já existentes para mutá-los em seres «mágicos »\n\n. As capas são cobardes e fogem do combate se perdem muita saúde. Uma cappa devidamente treinada (pelo menos a habilidade de «Guardião») pode ajudar os colonos a realizar as tarefas de colheita.</MM_Kappa.description>
+  <MM_Kappa.tools.left_fist.label>punho esquerdo</MM_Kappa.tools.left_fist.label>
+  <MM_Kappa.tools.right_fist.label>punho direito</MM_Kappa.tools.right_fist.label>
+  <MM_Kappa.tools.teeth.label>dentes</MM_Kappa.tools.teeth.label>
+  <MM_Kappa.tools.head.label>cabeça</MM_Kappa.tools.head.label>
+  <MM_Kitsune.label>kitsune</MM_Kitsune.label>
+  <MM_Kitsune.description>Kitsune é uma criatura lendária do folclore japonês, representada como uma criatura bastante inteligente, semelhante à raposa, com poderes paranormais que aumentam com a idade e a sabedoria. Kitsune tem nove caudas. Em geral, mais caudas indicam um Kitsune mais antigo e poderoso .\n\nKitsune não são criaturas que se encontram na natureza, e foram criadas através do Projeto Gekat, um programa de bioengenharia que aplicou replicadores de mecânicos a animais já existentes, para mutá-los em seres «mágicos» .\n\nHabilidades especiais: por ser domado, Kitsunz</MM_Kitsune.description>
+  <MM_Kitsune.tools.left_claw.label>garra esquerda</MM_Kitsune.tools.left_claw.label>
+  <MM_Kitsune.tools.right_claw.label>garra direita</MM_Kitsune.tools.right_claw.label>
+  <MM_Kitsune.tools.head.label>cabeça</MM_Kitsune.tools.head.label>
+  <MM_LernaeanHydra.label>Hidra de Lernay</MM_LernaeanHydra.label>
+  <MM_LernaeanHydra.description>A Hidra de Lernay é um monstro de água de cobras na mitologia grega e romana. A sua guarita era o Lago Lerna, em Argolide, daí o seu nome. Hidra tem respiração e sangue extremamente venenosos e poderes regenerativos impressionantes. O assassinato da hidra foi o objetivo da Segunda Proeza de Herculano .\n\nHidras não são seres que se encontram na natureza, e foram criados como parte de um projeto de Hécat, um programa de bioengenharia que aplicou replicadores de mecânicos a animais já existentes para mutá-los em seres «mágicos» .\n\nHabilidades especiais: hidras podem regenerar feridas rapidamente. As hidras são perigosas em combate próximo, mas o verdadeiro perigo vem da respiração ácida venenosa. Felizmente, eles geralmente são seres muito tímidos e não tendem a se aproximar dos humanos.</MM_LernaeanHydra.description>
+  <MM_LernaeanHydra.tools.toxic_bite.label>picada venenosa</MM_LernaeanHydra.tools.toxic_bite.label>
+  <MM_LernaeanHydra.verbs.acidic_breath.label>cheiro ácido da boca</MM_LernaeanHydra.verbs.acidic_breath.label>
+  <MM_LesserWyvern.label>pequena viverna</MM_LesserWyvern.label>
+  <MM_LesserWyvern.description>Na geraldina medieval europeia, a viverna é um dragão de duas pernas alado que aparece em vários estandartes e brasões. Viverna em heráldicas e folclore raramente é uma lançadora de fogo, ao contrário de um dragão de quatro patas. Em vez disso, os viveres são normalmente associados ao veneno, seja como presas venenosas, seja como uma cauda perigosa .\n\nOs viveres menores não são seres naturais e foram criados no Projeto Hécat, um programa de bioengenharia que aplicou replicadores de mecânicos a animais já existentes para mutá-los em seres «mágicos »\n\n. Os pequenos viveiros são extremamente venenosos, resistentes aos danos e quase indiferentes à dor severa. Felizmente, são muito raros. Ao contrário do Big Vivern, eles não podem cuspir veneno (para ver as grandes vivernas, baixem a nossa moda RimWorld - Caçar o Bruxo dos Monstros!).</MM_LesserWyvern.description>
+  <MM_LesserWyvern.tools.left_claw.label>garra esquerda</MM_LesserWyvern.tools.left_claw.label>
+  <MM_LesserWyvern.tools.right_claw.label>garra direita</MM_LesserWyvern.tools.right_claw.label>
+  <MM_LesserWyvern.tools.tail.label>cauda</MM_LesserWyvern.tools.tail.label>
+  <MM_Manticore.label>mantiqueira</MM_Manticore.label>
+  <MM_Manticore.description>Mantikora é uma criatura lendária tremenda na mitologia persa. Ele tem uma cabeça de leão-humanoide híbrida, um corpo de leão e uma cauda de escorpiónio com espinhos venenosos, como agulhas de uma espécie selvagem. Este mantiqueiro também foi modificado para ter asas não unificadas ordenadas, embora as descrições históricas da criatura não incluíam. Mantiquora é um predador feroz capaz de localizar a sua vítima e atacar à queima-roupa .\n\nOs mantikores não são seres naturais e foram criados no Projeto Hecat, um programa de bioengenharia que aplicou replicadores de tecidos a animais já existentes para mutá-los em seres «mágicos» .\n\nHabilidades especiais: manticores podem lançar agulhas envenenadas para fora.</MM_Manticore.description>
+  <MM_Manticore.tools.left_claw.label>garra esquerda</MM_Manticore.tools.left_claw.label>
+  <MM_Manticore.tools.right_claw.label>garra direita</MM_Manticore.tools.right_claw.label>
+  <MM_Manticore.tools.head.label>cabeça</MM_Manticore.tools.head.label>
+  <MM_Manticore.verbs.venomous_quills.label>agulhas venenosas</MM_Manticore.verbs.venomous_quills.label>
+  <MM_Pegasus.label>pegasus</MM_Pegasus.label>
+  <MM_Pegasus.description>Pegasus é um mítico cavalo divino alado e uma das criaturas mais reconhecidas da mitologia grega. Pegasus são garanhões brancos com um par de asas operadas a crescer das suas costas. Disseram que os pegas mitológicos podiam voar com estas asas, mas estes seres parecem tê-las apenas por razões estéticas, porque não há tanta engenharia genética que possa criar asas tão frágeis para suportar o seu peso. Eles são apreciados como cavalos rápidos e confiáveis .\n\nPegasus não são seres que se encontram na natureza, e foram criados como parte do Projeto Gekat, um programa de bioengenharia que aplicou replicadores de mecânicos a animais já existentes para mutá-los em criaturas «mágicas» .\n\nHabilidades especiais: Pegasus são ótimos animais de condução que recebem um bónenorme de velocidade à cavalagem. Maude nos cavalos de combate).</MM_Pegasus.description>
+  <MM_Pegasus.tools.head.label>cabeça</MM_Pegasus.tools.head.label>
+  <MM_Pegasus.tools.left_hoof.label>cavaquinho esquerdo</MM_Pegasus.tools.left_hoof.label>
+  <MM_Pegasus.tools.right_hoof.label>cavaquinho direito</MM_Pegasus.tools.right_hoof.label>
+  <MM_Phoenix.label>Phoenix</MM_Phoenix.label>
+  <MM_Phoenix.description>Na antiga mitologia egípcia, e mais tarde grega e romana, a fênix é um pássaro de longa vida que se regenera cíclicamente ou, de outra forma, nasce de novo, normalmente como resultado de um incêndio de grandes proporções que esvazia tudo. Simbolicamente, a Fênix sempre foi associada a conceitos de renascimento, renovação e tenacidade .\n\nAs fênix não são seres que se encontram na natureza, e foram criadas através do Projeto Hecat, um programa de bioengenharia que aplicou replicadores de mecânicos a animais já existentes para mutá-los em seres «mágicos» .\n\nHabilidades especiais: os ataques de phopodem podem. Quando Phoenix morrer, vai explodir e criar um ovo de fogo (e, às vezes, dois). Daqui a pouco, um novo Phoenix vai emergir deste ovo.</MM_Phoenix.description>
+  <MM_Phoenix.tools.claws.label>garras</MM_Phoenix.tools.claws.label>
+  <MM_Phoenix.tools.beak.label>bico</MM_Phoenix.tools.beak.label>
+  <MM_Phoenix.tools.head.label>cabeça</MM_Phoenix.tools.head.label>
+  <MM_Qilin.label>cilina</MM_Qilin.label>
+  <MM_Qilin.description>O Cilino é uma criatura quimérica mítica conhecida nas culturas chinesas e outras da Ásia Oriental, que se diz que aparece com a chegada inevitável ou a morte de um sábio ou de um governante glorificado. Os corpos dos cilinos são parcialmente cobertos de escamas e têm a forma de veado, e as cabeças deles têm um par de chifres impressionantes .\n\nO Cilin não são seres que se encontram na natureza, e foram criados no Projeto Hecat, um programa de bioengenharia que aplicou replicadores de mecânicos em animais já existentes para mutá-los em seus animais. As criaturas «mágicas »\n\nEmbora o Cilin seja normalmente um ser pacífico, eles têm uma tendência desagradável a incendiar os seus inimigos quando são provocados.</MM_Qilin.description>
+  <MM_Qilin.tools.left_hoof.label>cavaquinho esquerdo</MM_Qilin.tools.left_hoof.label>
+  <MM_Qilin.tools.right_hoof.label>cavaquinho direito</MM_Qilin.tools.right_hoof.label>
+  <MM_Qilin.tools.antlers.label>chifre de veado</MM_Qilin.tools.antlers.label>
+  <MM_Qilin.tools.teeth.label>dentes</MM_Qilin.tools.teeth.label>
+  <MM_Qilin.tools.head.label>cabeça</MM_Qilin.tools.head.label>
+  <MM_Salamander.label>salmandra</MM_Salamander.label>
+  <MM_Salamander.description>Salandra é um anfíbio que, como muitos seres reais, muitas vezes é atribuído a qualidades fantásticas e algumas vezes ocultas que o organismo real não possui. A lendária salmandra nos relatos clássicos, medievais e renascentistas é frequentemente retratada como uma típica salmandra ou serpente em forma de lagarto, mas é geralmente atribuída a uma afinidade com o elemento do fogo .\n\nOs salmandras não são seres que se encontram na natureza, e foram criados como parte do Projeto Hecat, um programa de bioengenharia que aplicou replicadores de mecânicos aos animais já existentes icos para mutá-los &quot;. As salmandras emitem quantidades incríveis de calor, tornando-as muito perigosas (ou muito úteis) em um espaço estreito. Os ovos deles também têm essa qualidade, e explodem quando eclodem. A mordida da salmandra pode incendiar o alvo.</MM_Salamander.description>
+  <MM_Salamander.tools.firefangs.label>presas de fogo</MM_Salamander.tools.firefangs.label>
+  <MM_Salamander.tools.head.label>cabeça</MM_Salamander.tools.head.label>
+  <MM_StymphalianBird.label>pássaro estinfálio</MM_StymphalianBird.label>
+  <MM_StymphalianBird.description>As aves de estímulo são um grupo de pássaros ardentes na mitologia grega, cujo nome vem de seu habitat no pântano de Estimulpalia. Os pássaros de Estimulfali eram pássaros oblíquos com bicos de bronze, penas de metal picantes que podiam lançar em suas vítimas e excrementos venenosos. Derrotar os pássaros de estímulo foi o objetivo da Sexta Proeza de Herculano .\n\nAs aves de estímulo não são seres naturais e foram criadas através do Projeto Hecat, um programa de bioengenharia que aplicou replicadores mecânicos a animais já existentes para os ignorar em seres «mágicos» .\n\nHabilidades especiais: Os pássaros estimulfalianos voam sobre a localidade. Eles podem usar ataques de longo alcance.</MM_StymphalianBird.description>
+  <MM_StymphalianBird.verbs.razor_sharp_feathers.label>picantes como penas de barbear</MM_StymphalianBird.verbs.razor_sharp_feathers.label>
+  <MM_StymphalianBird.tools.claws.label>garras</MM_StymphalianBird.tools.claws.label>
+  <MM_StymphalianBird.tools.beak.label>cabeça</MM_StymphalianBird.tools.beak.label>
+  <MM_StymphalianBird.tools.head.label>cabeça</MM_StymphalianBird.tools.head.label>
+  <MM_Tlilcoatl.label>Tililcoatl</MM_Tlilcoatl.label>
+  <MM_Tlilcoatl.description>Tililcoatl é um réptil predador no folclore mexicano. Os Tililcoatli têm uma escova preta brilhante, uma cauda dividida e crescem para um tamanho considerável. Eles podem respirar o perigoso gás venenoso que rapidamente sufoca suas vítimas .\n\nOs Tlilcoatli não são seres que se encontram na natureza, e foram criados através do Projeto Gekat, um programa de bioengenharia que aplicou replicadores de mecânicos a animais já existentes, para mutá-los em seres «mágicos» .\n\nHabilidades especiais: Tlilcoatli extremamente extremamente extremamente. No entanto, eles só atacarão as pessoas se defenderem.</MM_Tlilcoatl.description>
+  <MM_Tlilcoatl.tools.fangs.label>presas</MM_Tlilcoatl.tools.fangs.label>
+  <MM_Tlilcoatl.verbs.poison_breath.label>respiração venenosa</MM_Tlilcoatl.verbs.poison_breath.label>
+  <MM_Unicorn.label>unicórnio</MM_Unicorn.label>
+  <MM_Unicorn.description>O unicórnio é uma criatura lendária que, desde a antiguidade, foi descrita como uma besta com um corno grande, afiado, enrolado, em espiral, a sair da sua testa. O unicórnio foi retratado em impressos antigos da civilização do Vale de Inda e foi mencionado por gregos antigos. O unicórnio era geralmente descrito como um ser florestal extremamente selvagem, um símbolo de pureza e elegância. Dizem que o seu córrego tem a capacidade de fazer água envenenada para beber e curar doenças .\n\nOs unicórnios não são seres que se encontram na natureza, e foram criados através do Projeto Hecat, um programa de bioengenharia que aplicou replicadores mecânicos a animais já existentes para mutá-los em seres «mágicos» .\n\nHabilidades especiais: Unicórnios são ótimos animais de condução que recebem um bónus enorme para a velocidade a cavalo. Maude nos cavalos de combate).</MM_Unicorn.description>
+  <MM_Unicorn.tools.horn-0.label>córrego</MM_Unicorn.tools.horn-0.label>
+  <MM_Unicorn.tools.horn-1.label>córrego</MM_Unicorn.tools.horn-1.label>
+  <MM_Unicorn.tools.left_hoof.label>cavaquinho esquerdo</MM_Unicorn.tools.left_hoof.label>
+  <MM_Unicorn.tools.right_hoof.label>cavaquinho direito</MM_Unicorn.tools.right_hoof.label>
+  <MM_WildMinotaur.label>minotauro selvagem</MM_WildMinotaur.label>
+  <MM_WildMinotaur.description>Na mitologia grega, Minotauro é uma criatura mítica representada em tempos clássicos com a cabeça e a cauda de um touro e o corpo de um homem. Ele vivia no centro do Labirinto, que era uma estrutura complexa, semelhante a um labirinto projetado pelo arquiteto Dedal e seu filho, Icarus, por ordem do rei crítico Minos. No fim, Minotauro foi morto pelo herói de Atenas Teseu. O Minotauro mitológico foi frequentemente retratado como uma besta astuta, enquanto esta criatura tem uma inteligência muito simples e instintiva .\n\nOs minotauros não são seres que se encontram na natureza, e foram criados como parte do Projeto Hecat, um programa de bioengenharia que aplicava os produtos mecânicos aos animais já existentes para mutá-los em seres «mágicos »\n\n.</MM_WildMinotaur.description>
+  <MM_WildMinotaur.tools.horns.label>chifres</MM_WildMinotaur.tools.horns.label>
+  <MM_WildMinotaur.tools.left_fist.label>punho esquerdo</MM_WildMinotaur.tools.left_fist.label>
+  <MM_WildMinotaur.tools.right_fist.label>punho direito</MM_WildMinotaur.tools.right_fist.label>
+  <MM_WildMinotaur.tools.teeth.label>dentes</MM_WildMinotaur.tools.teeth.label>
+  <MM_WildMinotaur.tools.head.label>cabeça</MM_WildMinotaur.tools.head.label>
+  <MM_WildMinotaur.verbs.tremors.label>tremores</MM_WildMinotaur.verbs.tremors.label>
+  <MM_WillOWisp.label>Luz errante</MM_WillOWisp.label>
+  <MM_WillOWisp.description>A luz vagabunda é uma criatura do folclore inglês composta por uma luz fantasma atmosférica que os viajantes veem à noite, especialmente sobre os pântanos. Dizem que ele ilude os viajantes, lembrando-se de uma lâmpada ou de uma lanterna .\n\nAs luzes vagas não são seres que se encontram na natureza, e foram criadas como parte do Projeto Hecat, um programa de bioengenharia que aplicou replicadores mecânicos aos animais já existentes para mutá-los em seres «mágicos» .\n\nHabilidades especiais: luzes brilantes Eles se multiplicam por uma divisão sem controle, quase não precisam de alimentos e são imunes a mudanças de temperatura, ambientes tóxicos, fogo e ataques mentais. Se forem ameaçados, o que não acontece com frequência, podem expelir uma nuvem de partículas coloridas que parece ser prejudicial para os seres vivos.</MM_WillOWisp.description>
+  <MM_WillOWisp.tools.pseudopod.label>pseudoposição</MM_WillOWisp.tools.pseudopod.label>
+  <MM_WillOWisp.verbs.wisp_breath.label>respiração fraca</MM_WillOWisp.verbs.wisp_breath.label>
+  <MM_Xiezhi.label>secções</MM_Xiezhi.label>
+  <MM_Xiezhi.description>Sechi é uma criatura lendária na mitologia chinesa e na mitologia coreana, onde é conhecida como Hataé. As secas são normalmente retratadas como algo entre um leão e um bode, com o único chifre na testa. As secções são inidôneas para o bem e o mal, sendo capazes de distinguir instintivamente os inocentes dos culpados .\n\nSeji não são seres que se encontram na natureza, e foram criadas como parte do Projeto Gekat, um programa de bioengenharia que aplicou replicadores de tecidos a animais já existentes para mutá-los em seres «mágicos» .\n\nHabilidades especiais: Seque serão ferozes.</MM_Xiezhi.description>
+  <MM_Xiezhi.tools.horn.label>córrego</MM_Xiezhi.tools.horn.label>
+  <MM_Xiezhi.tools.bite.label>morder</MM_Xiezhi.tools.bite.label>
+  <MM_Xiezhi.tools.left_claw.label>garra esquerda</MM_Xiezhi.tools.left_claw.label>
+  <MM_Xiezhi.tools.right_claw.label>garra direita</MM_Xiezhi.tools.right_claw.label>
+  <MM_Xiezhi.tools.head.label>cabeça</MM_Xiezhi.tools.head.label>
+</LanguageData>

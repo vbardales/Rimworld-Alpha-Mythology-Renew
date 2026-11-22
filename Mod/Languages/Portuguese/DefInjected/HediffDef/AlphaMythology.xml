@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MM_ToxicBite.description>Toxinas na corrente sanguínea. Isto pode vir de várias fontes, incluindo toxinas ambientais, picadas venenosas ou armas envenenadas.
+Com doses elevadas, a acumulação de toxinas causa a morte. Mesmo em doses baixas, pode causar cancro.
+\ n Ao contrário da acumulação de toxinas no jogo básico, as criaturas que morrem com este dano tóxico podem ser comidas.</MM_ToxicBite.description>
+  <MM_ToxicBite.label>envenenamento por toxinas</MM_ToxicBite.label>
+  <MM_ToxicBite.stages.initial-0.label>original</MM_ToxicBite.stages.initial-0.label>
+  <MM_ToxicBite.stages.initial-1.label>original</MM_ToxicBite.stages.initial-1.label>
+  <MM_ToxicBite.stages.minor.label>menor</MM_ToxicBite.stages.minor.label>
+  <MM_ToxicBite.stages.moderate.label>moderado</MM_ToxicBite.stages.moderate.label>
+  <MM_ToxicBite.stages.serious.label>grave</MM_ToxicBite.stages.serious.label>
+  <MM_ToxicBite.stages.extreme.label>extremo</MM_ToxicBite.stages.extreme.label>
+  <MM_Grabbed.description>Esta criatura está em estado de choque e não se pode mover normalmente.</MM_Grabbed.description>
+  <MM_Grabbed.label>capturado</MM_Grabbed.label>
+  <MM_Grabbed.stages.initial.label>original</MM_Grabbed.stages.initial.label>
+  <MM_Grabbed.stages.partially_immobilized.label>parcialmente desapropriado</MM_Grabbed.stages.partially_immobilized.label>
+  <MM_Grabbed.stages.grabbed.label>capturado</MM_Grabbed.stages.grabbed.label>
+  <MM_Grabbed.stages.grabbed_tight.label>tight capturado</MM_Grabbed.stages.grabbed_tight.label>
+  <MM_BleedingWound.description>Uma ferida sangrante que continua a causar perda de sangue há muito tempo após o ataque inicial.</MM_BleedingWound.description>
+  <MM_BleedingWound.label>feridas sangrando</MM_BleedingWound.label>
+  <MM_BleedingWound.stages.bleeding_wounds_minor.label>feridas hemorrágicas ligeiras</MM_BleedingWound.stages.bleeding_wounds_minor.label>
+  <MM_BleedingWound.stages.bleeding_wounds_moderate.label>feridas hemorrágicas moderadas</MM_BleedingWound.stages.bleeding_wounds_moderate.label>
+  <MM_BleedingWound.stages.bleeding_wounds_serious.label>feridas hemorrágicas graves</MM_BleedingWound.stages.bleeding_wounds_serious.label>
+  <MM_OpenWound.label>ferida aberta</MM_OpenWound.label>
+  <MM_OpenWound.description>Ferida aberta.</MM_OpenWound.description>
+  <MM_OpenWound.labelNoun>Ferimento aberto</MM_OpenWound.labelNoun>
+  <MM_OpenWound.labelNounPretty>{0}: {1}</MM_OpenWound.labelNounPretty>
+  <MM_OpenWound.comps.HediffComp_TendDuration.labelTendedWell>ligada</MM_OpenWound.comps.HediffComp_TendDuration.labelTendedWell>
+  <MM_OpenWound.comps.HediffComp_TendDuration.labelTendedWellInner>suturada</MM_OpenWound.comps.HediffComp_TendDuration.labelTendedWellInner>
+  <MM_OpenWound.comps.HediffComp_TendDuration.labelSolidTendedWell>recolocada</MM_OpenWound.comps.HediffComp_TendDuration.labelSolidTendedWell>
+  <MM_OpenWound.comps.HediffComp_GetsPermanent.permanentLabel>cicatriz de perfuração</MM_OpenWound.comps.HediffComp_GetsPermanent.permanentLabel>
+  <MM_OpenWound.injuryProps.destroyedLabel>Cortar</MM_OpenWound.injuryProps.destroyedLabel>
+  <MM_OpenWound.injuryProps.destroyedOutLabel>Cortar</MM_OpenWound.injuryProps.destroyedOutLabel>
+  <MM_Petrification.description>A pele da vítima é sólida e transforma-se numa pedra frágil. Este estado é reversível e natural dentro de algumas horas, mas se chegar à gravidade 1, matará a vítima.</MM_Petrification.description>
+  <MM_Petrification.label>Fóssil</MM_Petrification.label>
+  <MM_Petrification.stages.initial.label>original</MM_Petrification.stages.initial.label>
+  <MM_Petrification.stages.stiff_joints.label>articulações rígidas</MM_Petrification.stages.stiff_joints.label>
+  <MM_Petrification.stages.rocky_skin.label>pele rochosa</MM_Petrification.stages.rocky_skin.label>
+  <MM_Petrification.stages.brittle_bones.label>ossos frágeis</MM_Petrification.stages.brittle_bones.label>
+  <MM_Petrification.stages.turned_to_stone.label>transformou-se numa pedra</MM_Petrification.stages.turned_to_stone.label>
+  <MM_FenghuangHediff.label>paz e pacificação</MM_FenghuangHediff.label>
+  <MM_FenghuangHediff.description>Fanhuan acalma este homem com ondas de energia positiva. Isso aumenta as estatísticas de manipulação e deslocamento em 12 horas.</MM_FenghuangHediff.description>
+  <MM_NoPain.description>Esta criatura tem uma sensibilidade de dor reduzida, e a dor leva mais tempo para ser derrubada.</MM_NoPain.description>
+  <MM_NoPain.label>falta de sensibilidade de dor</MM_NoPain.label>
+</LanguageData>

@@ -109,6 +109,10 @@ Do not load alongside the original Alpha Mythology or an older Animal Ark build 
 
 If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved.
 
+**LANGUAGES**
+
+English and French. Russian: the translations of PiaRex and Nevelian. Ukrainian, Portuguese and Brazilian Portuguese: Nevelian's translation. Japanese: Lucifel's translation. These come from the community translations of the original Alpha Mythology; what they did not cover (the settings window, eggs, reproduction texts, a few wound and attack labels) was added with Claude (Anthropic), and none of these five languages has been checked by a native speaker.
+
 **AI-GENERATED**
 
 The port was made with AI assistance: Codex (OpenAI) for the extraction, the isolated assembly and the French translations; Claude Code (Anthropic) for the settings, the test suites and the documentation; OpenAI image generation for the preview illustration. The creatures, their code and their artwork are Sarg Bjornson's. Port and extraction by Nelim.

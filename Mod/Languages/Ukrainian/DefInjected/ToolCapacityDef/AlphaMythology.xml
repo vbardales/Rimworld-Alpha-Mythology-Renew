@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MM_ToxicSting.label>отруйне жало</MM_ToxicSting.label>
+  <MM_ToxicBite.label>отруйний укус</MM_ToxicBite.label>
+  <MM_VeryToxicBite.label>отруйний укус</MM_VeryToxicBite.label>
+  <MM_ExtraDamageToPiratesHorn.label>ріг правосуддя</MM_ExtraDamageToPiratesHorn.label>
+  <MM_Grapple.label>боротися</MM_Grapple.label>
+  <MM_BleedingWound.label>кровоточащая рана.</MM_BleedingWound.label>
+  <MM_FlamingBite.label>палаючий укус</MM_FlamingBite.label>
+</LanguageData>

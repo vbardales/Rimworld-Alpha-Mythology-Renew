@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MM_Ahuizotl.label>ахуїзотль</MM_Ahuizotl.label>
+  <MM_Ahuizotl.labelPlural>ахуїзотль</MM_Ahuizotl.labelPlural>
+  <MM_Ahuizotl.lifeStages.ahuizotl_puppy.label>ахуїзотль цуценя</MM_Ahuizotl.lifeStages.ahuizotl_puppy.label>
+  <MM_Ahuizotl.lifeStages.ahuizotl_puppy.labelPlural>ахуїзотль цуценяти</MM_Ahuizotl.lifeStages.ahuizotl_puppy.labelPlural>
+  <MM_Basilisk.label>василіск</MM_Basilisk.label>
+  <MM_Catoblepas.label>катоблепас</MM_Catoblepas.label>
+  <MM_Cerberus.label>цербер</MM_Cerberus.label>
+  <MM_Cerberus.labelPlural>цербери</MM_Cerberus.labelPlural>
+  <MM_Cerberus.lifeStages.cerberus_puppy.label>цербер цуценя</MM_Cerberus.lifeStages.cerberus_puppy.label>
+  <MM_Cerberus.lifeStages.cerberus_puppy.labelPlural>цербер цуценяти</MM_Cerberus.lifeStages.cerberus_puppy.labelPlural>
+  <MM_CeryneianHind.label>керінейська лань</MM_CeryneianHind.label>
+  <MM_CeryneianHind.labelMale>керінейський харт</MM_CeryneianHind.labelMale>
+  <MM_CeryneianHind.labelFemale>керінейська лань</MM_CeryneianHind.labelFemale>
+  <MM_CeryneianHind.lifeStages.ceryneian_calf.label>керінейське теля</MM_CeryneianHind.lifeStages.ceryneian_calf.label>
+  <MM_CeryneianHind.lifeStages.ceryneian_calf.labelPlural>керінейські телята</MM_CeryneianHind.lifeStages.ceryneian_calf.labelPlural>
+  <MM_Chimera.label>химера</MM_Chimera.label>
+  <MM_ErymanthianBoar.label>еримантійський кабан</MM_ErymanthianBoar.label>
+  <MM_Fenghuang.label>фенхуан</MM_Fenghuang.label>
+  <MM_Fenghuang.lifeStages.fenghuang_chick.label>фенхуан курча</MM_Fenghuang.lifeStages.fenghuang_chick.label>
+  <MM_Griffin.label>грифон</MM_Griffin.label>
+  <MM_Ieltxu.label>Ієлчу</MM_Ieltxu.label>
+  <MM_Kappa.label>каппа</MM_Kappa.label>
+  <MM_Kitsune.label>кіцуне</MM_Kitsune.label>
+  <MM_Kitsune.labelPlural>кіцуне</MM_Kitsune.labelPlural>
+  <MM_Kitsune.lifeStages.kitsune_puppy.label>кіцуне цуценя</MM_Kitsune.lifeStages.kitsune_puppy.label>
+  <MM_Kitsune.lifeStages.kitsune_puppy.labelPlural>кіцуне цуценята</MM_Kitsune.lifeStages.kitsune_puppy.labelPlural>
+  <MM_LernaeanHydra.label>лернейська гідра</MM_LernaeanHydra.label>
+  <MM_LesserWyvern.label>мала віверна</MM_LesserWyvern.label>
+  <MM_Manticore.label>мантикора</MM_Manticore.label>
+  <MM_Pegasus.label>пегас</MM_Pegasus.label>
+  <MM_Pegasus.labelPlural>пегаси</MM_Pegasus.labelPlural>
+  <MM_Pegasus.labelMale>пегас жеребець</MM_Pegasus.labelMale>
+  <MM_Pegasus.labelFemale>пегас mare</MM_Pegasus.labelFemale>
+  <MM_Pegasus.lifeStages.pegasus_foal.label>пегас жеребнят</MM_Pegasus.lifeStages.pegasus_foal.label>
+  <MM_Pegasus.lifeStages.pegasus_foal.labelPlural>пегас жеребята</MM_Pegasus.lifeStages.pegasus_foal.labelPlural>
+  <MM_Phoenix.label>Фенікс</MM_Phoenix.label>
+  <MM_Phoenix.labelPlural>фенікси</MM_Phoenix.labelPlural>
+  <MM_Phoenix.lifeStages.phoenix_chick.label>Фенікс курча</MM_Phoenix.lifeStages.phoenix_chick.label>
+  <MM_Qilin.label>цилінь</MM_Qilin.label>
+  <MM_Salamander.label>саламандра</MM_Salamander.label>
+  <MM_StymphalianBird.label>стимфалійський птах</MM_StymphalianBird.label>
+  <MM_StymphalianBird.lifeStages.stymphalian_bird_chick.label>стимфалійський птах курча</MM_StymphalianBird.lifeStages.stymphalian_bird_chick.label>
+  <MM_Tlilcoatl.label>тлількоатль</MM_Tlilcoatl.label>
+  <MM_Unicorn.label>єдиноріг</MM_Unicorn.label>
+  <MM_Unicorn.labelMale>єдиноріг жеребець</MM_Unicorn.labelMale>
+  <MM_Unicorn.labelFemale>єдиноріг кобила</MM_Unicorn.labelFemale>
+  <MM_Unicorn.lifeStages.unicorn_foal.label>жеребеня єдинорога</MM_Unicorn.lifeStages.unicorn_foal.label>
+  <MM_Unicorn.lifeStages.unicorn_foal.labelPlural>жеребята-єдинороги</MM_Unicorn.lifeStages.unicorn_foal.labelPlural>
+  <MM_WildMinotaur.label>дикий мінотавр</MM_WildMinotaur.label>
+  <MM_WillOWisp.label>блукаючий вогник</MM_WillOWisp.label>
+  <MM_Xiezhi.label>Січі</MM_Xiezhi.label>
+</LanguageData>

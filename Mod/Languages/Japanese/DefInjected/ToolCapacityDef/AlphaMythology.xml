@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MM_ToxicSting.label>有毒針</MM_ToxicSting.label>
+  <MM_ToxicBite.label>毒噛みつき</MM_ToxicBite.label>
+  <MM_VeryToxicBite.label>猛毒噛みつき</MM_VeryToxicBite.label>
+  <MM_ExtraDamageToPiratesHorn.label>裁きの角</MM_ExtraDamageToPiratesHorn.label>
+  <MM_Grapple.label>組み付き</MM_Grapple.label>
+  <MM_BleedingWound.label>出血傷</MM_BleedingWound.label>
+  <MM_FlamingBite.label>熱傷噛みつき</MM_FlamingBite.label>
+</LanguageData>

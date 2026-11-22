@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <AMR_AsexualHatched>{0} reproduziu-se de forma assexuada.</AMR_AsexualHatched>
+  <MM_DestroyEggsLabel>Partir o ovo</MM_DestroyEggsLabel>
+  <MM_DestroyEggsDesc>Coloque uma ordem de trabalho na fila para quebrar este ovo o mais rápido possível</MM_DestroyEggsDesc>
+  <MM_CancelDestroyEggsLabel>Cancelar quebrar ovo</MM_CancelDestroyEggsLabel>
+  <MM_CancelDestroyEggsDesc>Cancelar a ordem de trabalho para quebrar este ovo o mais rápido possível</MM_CancelDestroyEggsDesc>
+  <AMR_AsexualReproductionProgress>Progresso da fissão assexuada: {0} ({1} por ciclo)</AMR_AsexualReproductionProgress>
+  <AMR_AsexualReproductionDays.One>{0} dia</AMR_AsexualReproductionDays.One>
+  <AMR_AsexualReproductionDays.Many>{0} dias</AMR_AsexualReproductionDays.Many>
+  <AMR_AsexualReproductionDisabled>Reprodução assexuada desativada</AMR_AsexualReproductionDisabled>
+  <AMR_DevReproduce>DEV: reproduzir agora</AMR_DevReproduce>
+  <AMR_DevReproduceDesc>Ativar a reprodução assexuada imediatamente.</AMR_DevReproduceDesc>
+  <MM_Boomer>Boomer</MM_Boomer>
+  <MM_BoomerDesc>Este animal explode quando morre.</MM_BoomerDesc>
+  <MM_DamageRanged>Atacante de longa distância</MM_DamageRanged>
+  <MM_DamageRangedDOTDesc>Este animal usa ataques de longa distância para causar danos aos atacantes. Estes ataques causam danos com o tempo. Usá-los em combate próximo pode não ser bom para eles.</MM_DamageRangedDOTDesc>
+  <MM_DamageRangedDesc>Este animal usa ataques de longa distância para causar danos aos atacantes. Usá-los em combate próximo pode não ser bom para eles.</MM_DamageRangedDesc>
+  <MM_DamageRangedPoison>Atacante com mira venenosa</MM_DamageRangedPoison>
+  <MM_DamageRangedPoisonDesc>Este animal usa ataques de longa distância para causar danos aos atacantes. Estes ataques causam danos tóxicos. Usá-los em combate próximo pode não ser bom para eles.</MM_DamageRangedPoisonDesc>
+  <MM_Farm>Animal agrícola</MM_Farm>
+  <MM_FarmMilkDesc>É um animal agrícola que produz leite.</MM_FarmMilkDesc>
+  <MM_FireyShockTroopDesc>Os animais da Tropa de Choque são especializados em alta velocidade e algumas habilidades que adicionam utilidade ao combate próximo. Eles podem não ser muito resistentes ou possuir altos níveis de saúde, mas, se usados corretamente, podem ter efeitos devastadores .\Este animal também n\nY ataques que incendiam os inimigos.</MM_FireyShockTroopDesc>
+  <MM_MountFast>Fixação rápida</MM_MountFast>
+  <MM_MountFastArmoured>Fixação blindada e rápida</MM_MountFastArmoured>
+  <MM_MountFastArmouredDesc>Os colonos podem montar este animal a cavalo, garantindo um aumento significativo da velocidade, maior proteção através de uma reserva adicional, e a possibilidade de atacar em uma batalha próxima com o seu cavaleiro. Tenha em mente que esta interação só está disponível se você estiver com a cabeça em volta! A moda está instalada. E se não o fizer, o que espera?</MM_MountFastArmouredDesc>
+  <MM_MountFastDesc>Os colonos podem montar este animal a cavalo, aumentando significativamente a velocidade e permitindo o ataque em uma batalha próxima com o seu cavaleiro. Tenha em mente que esta interação só está disponível se você estiver com a cabeça em volta! A moda está instalada. E se não o fizer, o que espera?</MM_MountFastDesc>
+  <MM_No>Não</MM_No>
+  <MM_NoRanged>Este animal não tem ataques de longa distância. Para mandá-lo atacar, ele precisa ser treinado para proteger e atacar, e então deve ser designado para seguir o dono quando ele for chamado e/ou trabalhar. O botão «soltar» na barra de comando do dono vai obrigar o animal a atacar em combate próximo.</MM_NoRanged>
+  <MM_ParalizingRanged>Paralisador de longo alcance</MM_ParalizingRanged>
+  <MM_ParalyzingRangedDesc>Animais «paralisantes de longo alcance» usam ataques de longo alcance para encurralar os atacantes. Tê-los em combate próximo talvez não seja o melhor uso para eles.</MM_ParalyzingRangedDesc>
+  <MM_ParalyzingShockTroopDesc>Os animais da Tropa de Choque são especializados em alta velocidade e em algumas habilidades que adicionam utilidade ao combate próximo. Eles podem não ser muito resistentes ou possuir altos níveis de saúde, mas, se usados corretamente, podem ter efeitos devastadores .\Este animal também tem ataques que podem ser usados para desobstruir os atacantes.</MM_ParalyzingShockTroopDesc>
+  <MM_PrimaryRole>Papel principal</MM_PrimaryRole>
+  <MM_Ranged>Este animal usa ataques de combate de longa distância e só usará ataques de combate próximo se o inimigo estiver a uma distância de combate próximo. Para mandá-lo atacar, ele precisa ser treinado para proteger e atacar, e então deve ser designado para seguir o dono quando ele for chamado e/ou trabalhar. O botão «soltar» na barra de comandos do dono obrigará o animal a procurar um esconderijo apropriado e usar o seu ataque de longo alcance.</MM_Ranged>
+  <MM_RangedAttacks>Usa ataques de longo alcance</MM_RangedAttacks>
+  <MM_SecondaryRole>Papel secundário</MM_SecondaryRole>
+  <MM_ShockTroop>Tropa de Choque</MM_ShockTroop>
+  <MM_ShockTroopDOTDesc>Os animais da Tropa de Choque são especializados em alta velocidade e em algumas habilidades que adicionam utilidade ao combate próximo. Eles podem não ser muito resistentes ou possuir altos níveis de saúde, mas, se usados corretamente, podem ter efeitos devastadores .\n\nEste animal tem um ataque de combate próximo que, com o tempo, causa danos.</MM_ShockTroopDOTDesc>
+  <MM_ShockTroopDesc>Os animais da Tropa de Choque são especializados em alta velocidade e em algumas habilidades que adicionam utilidade ao combate próximo. Eles podem não ser muito resistentes ou possuir altos níveis de saúde, mas, se usados corretamente, podem ter efeitos devastadores.</MM_ShockTroopDesc>
+  <MM_Tank>Tanque</MM_Tank>
+  <MM_Utility>Benefícios</MM_Utility>
+  <MM_UtilityHealthDesc>Este animal não é adaptado para lutar, sendo muito fraco fisicamente. No entanto, isso ajudará a saúde dos vossos colonos, seja curando as feridas ou de alguma forma fortalecendo-as.</MM_UtilityHealthDesc>
+  <MM_UtilityMoodDesc>Este animal não é adaptado para lutar, sendo muito fraco fisicamente. No entanto, isso aumentará o humor dos vossos colonos, seja através do cheiramento ou de outras capacidades alternativas.</MM_UtilityMoodDesc>
+  <MM_UtilityTemperatureDesc>Este animal não é adaptado para lutar, sendo muito fraco fisicamente. No entanto, isso vai ajudá-lo a controlar a temperatura da colónia.</MM_UtilityTemperatureDesc>
+  <MM_UtilityWorkerDesc>Este animal não é adaptado para lutar, sendo muito fraco fisicamente. No entanto, isso ajudará seus colonos com tarefas específicas (mineração, colheita etc), reduzindo significativamente sua carga de trabalho..</MM_UtilityWorkerDesc>
+  <MM_VenomousTankDesc>Os animais Tanque são especializados em combate próximo. Estes animais têm alto impacto de ataque, boa resistência, alto nível de saúde ou outros poderes que lhes permitem sobreviver na linha de frente .\n\nEste animal também possui poderosos ataques venenosos.</MM_VenomousTankDesc>
+  <MM_Yes>Sim, sim</MM_Yes>
+  <AMR_SettingsCategory>Alpha Mythology Renew (unofficial)</AMR_SettingsCategory>
+  <AMR_SpawnMultiplier>Frequência de aparição em estado selvagem: ×{0}</AMR_SpawnMultiplier>
+  <AMR_SpawnMultiplierTip>Multiplica a frequência de todas as criaturas deste mod entre os animais selvagens de um bioma (1 = valores do mod). Muda a sua proporção em relação aos outros animais, não o número total de animais no mapa. Aplica-se imediatamente, apenas a novas aparições: os animais já presentes no mapa mantêm-se.</AMR_SpawnMultiplierTip>
+  <AMR_ResetDefaults>Repor valores predefinidos</AMR_ResetDefaults>
+  <AMR_AllowedHeader>Criaturas autorizadas a aparecer em estado selvagem (desmarcadas: nunca aparecem; os animais domesticados e já existentes não são afetados)</AMR_AllowedHeader>
+</LanguageData>

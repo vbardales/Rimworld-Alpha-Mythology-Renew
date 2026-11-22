@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MM_ChimeraTail.label>змеиная голова</MM_ChimeraTail.label>
+  <MM_Goathead.label>козлиная голова</MM_Goathead.label>
+  <MM_Wing.label>крыло</MM_Wing.label>
+  <MM_ScorpionTail.label>хвост скорпиона</MM_ScorpionTail.label>
+  <MM_Antlers.label>рога</MM_Antlers.label>
+  <MM_Horns.label>рога</MM_Horns.label>
+  <MM_PlasmaMembrane.label>плазматическая мембрана</MM_PlasmaMembrane.label>
+  <MM_Cytoplasm.label>цитоплазма</MM_Cytoplasm.label>
+</LanguageData>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <MM_EggGriffinFertilized.label>яйце грифона (ферт.)</MM_EggGriffinFertilized.label>
+  <MM_EggGriffinFertilized.description>Запліднене яйце грифона. Його можна їсти сирим, але він набагато, набагато краще приготовлений. Якщо все піде добре, з нього повинен вилупитися грифон.</MM_EggGriffinFertilized.description>
+  <MM_EggPhoenixFertilized.label>яйце фенікса (ферт.)</MM_EggPhoenixFertilized.label>
+  <MM_EggPhoenixFertilized.description>Запліднена яйцеклітина фенікса. Якщо все піде добре, з нього має вилупитися пташеня фенікса. Його можна їсти сирим, але набагато краще приготувати.</MM_EggPhoenixFertilized.description>
+  <MM_EggSalamanderFertilized.label>яйце саламандри (ферт.)</MM_EggSalamanderFertilized.label>
+  <MM_EggSalamanderFertilized.description>Запліднене яйце саламандри. Його можна їсти сирим, але він набагато, набагато краще приготовлений. Якщо все піде добре, з нього повинна вилупитися саламандра.</MM_EggSalamanderFertilized.description>
+  <MM_EggFenghuangFertilized.label>яйце фенхуан (ферт.)</MM_EggFenghuangFertilized.label>
+  <MM_EggFenghuangFertilized.description>Запліднена яйцеклітина фенхуан. Його можна їсти сирим, але він набагато, набагато краще приготовлений. Якщо все піде добре, з нього повинен вилупитися фенхуан.</MM_EggFenghuangFertilized.description>
+  <MM_EggStymphalianBirdFertilized.label>яйце стимфалійського птаха (fert.)</MM_EggStymphalianBirdFertilized.label>
+  <MM_EggStymphalianBirdFertilized.description>Запліднене яйце стимфалійського птаха. Його можна їсти сирим, але він набагато, набагато краще приготовлений. Якщо все піде добре, з нього має вилупитися стимфалійський птах.</MM_EggStymphalianBirdFertilized.description>
+  <MM_EggIeltxuFertilized.label>яйце ieltxu (ферт.)</MM_EggIeltxuFertilized.label>
+  <MM_EggIeltxuFertilized.description>Запліднена яйцеклітина ieltxu. Його можна їсти сирим, але він набагато, набагато краще приготовлений. Якщо все піде добре, з нього повинен вилупитися ieltxu.</MM_EggIeltxuFertilized.description>
+  <MM_EggBasiliskFertilized.label>яйце василіска (ферт.)</MM_EggBasiliskFertilized.label>
+  <MM_EggBasiliskFertilized.description>Запліднене яйце василіска. Його можна їсти сирим, але він набагато, набагато краще приготовлений. Якщо все піде добре, з нього повинен вилупитися василіск.</MM_EggBasiliskFertilized.description>
+  <MM_LightMagicalLeather.label>легка чарівна шкіра</MM_LightMagicalLeather.label>
+  <MM_LightMagicalLeather.description>Ця шкіра сяє дивним, неземним світлом. Порівняно з більшістю легенів, вона трохи жорсткіше і трохи краще піддається всім видам регулювання температури.</MM_LightMagicalLeather.description>
+  <MM_HeavyMagicalLeather.label>важка чарівна шкіра</MM_HeavyMagicalLeather.label>
+  <MM_HeavyMagicalLeather.description>Ця важка шкіра сяє дивним, неземним світлом. У порівнянні з більшістю видів шкіри, вона трохи жорсткіше і трохи краще піддається всім видам регулювання температури.</MM_HeavyMagicalLeather.description>
+  <MM_EggGriffinUnfertilized.label>яйце грифона (незапл.)</MM_EggGriffinUnfertilized.label>
+  <MM_EggGriffinUnfertilized.description>Незапліднене яйце грифона. Його можна їсти сирим, але приготоване воно набагато смачніше.</MM_EggGriffinUnfertilized.description>
+  <MM_EggBasiliskUnfertilized.label>яйце василіска (незапл.)</MM_EggBasiliskUnfertilized.label>
+  <MM_EggBasiliskUnfertilized.description>Незапліднене яйце василіска. Його можна їсти сирим, але приготоване воно набагато смачніше.</MM_EggBasiliskUnfertilized.description>
+  <MM_EggFenghuangUnfertilized.label>яйце фенхуан (незапл.)</MM_EggFenghuangUnfertilized.label>
+  <MM_EggFenghuangUnfertilized.description>Незапліднене яйце фенхуан. Його можна їсти сирим, але приготоване воно набагато смачніше.</MM_EggFenghuangUnfertilized.description>
+  <MM_EggIeltxuUnfertilized.label>яйце ieltxu (незапл.)</MM_EggIeltxuUnfertilized.label>
+  <MM_EggIeltxuUnfertilized.description>Незапліднене яйце ieltxu. Його можна їсти сирим, але приготоване воно набагато смачніше.</MM_EggIeltxuUnfertilized.description>
+  <MM_EggStymphalianBirdUnfertilized.label>яйце стимфалійського птаха (незапл.)</MM_EggStymphalianBirdUnfertilized.label>
+  <MM_EggStymphalianBirdUnfertilized.description>Незапліднене яйце стимфалійського птаха. Його можна їсти сирим, але приготоване воно набагато смачніше.</MM_EggStymphalianBirdUnfertilized.description>
+  <MM_EggSalamanderUnfertilized.label>яйце саламандри (незапл.)</MM_EggSalamanderUnfertilized.label>
+  <MM_EggSalamanderUnfertilized.description>Незапліднене яйце саламандри. Його можна їсти сирим, але приготоване воно набагато смачніше.</MM_EggSalamanderUnfertilized.description>
+  <MM_Quill.label>перо</MM_Quill.label>
+  <MM_Tremor.label>тремтіння</MM_Tremor.label>
+  <MM_WispProjectile.label>слабке дихання</MM_WispProjectile.label>
+  <MM_AcidicBreath.label>кислий запах з рота</MM_AcidicBreath.label>
+  <MM_RazorSharpFeathers.label>гострі як бритва пір&apos;я</MM_RazorSharpFeathers.label>
+  <MM_BurnedGrass.label>мертва трава</MM_BurnedGrass.label>
+  <MM_BurnedGrass.description>мертва трава.</MM_BurnedGrass.description>
+  <MM_BurnedBush.label>мертвий куст</MM_BurnedBush.label>
+  <MM_BurnedBush.description>Мертвий куст. Не їстівний для тварин.</MM_BurnedBush.description>
+  <MM_Ahuizotl.label>ахуїзотль</MM_Ahuizotl.label>
+  <MM_Ahuizotl.description>Ахуізотль - легендарна істота з ацтекських міфів. Його описують як схожого на собаку, його непромокаємий хутро часто злипається, утворюючи шипи. В ахуїзотля є руки, здатні маніпулювати, і додаткова рука на хвості. Ахуізотля бояться через його пристрасть до людської плоті, особливо нігтям, очам і зубам. Кажуть, що він живе у воді або поруч з нею і використовує руку на кінці свого хвоста, щоб схопити свою здобич, потягуючи людину в глибину, щоб втопити його .\n\nАхуізотлі не є істотами, що зустрічаються в природі, і були створені в рамках проекту Геката, біоінженерної програми, яка застосовувала реплікатори механітів до вже існуючих тварин, щоб мутувати їх у «Волезних». Ахуізотлі вміло використовують руку на кінці свого хвоста, щоб схопити свою здобич і вчепитися в неї лапами, що робить відступ досить важким, якщо вони борються в ближньому бою.</MM_Ahuizotl.description>
+  <MM_Ahuizotl.tools.grabbing_hand.label>хапальна рука</MM_Ahuizotl.tools.grabbing_hand.label>
+  <MM_Ahuizotl.tools.left_claw.label>лівий кіготь</MM_Ahuizotl.tools.left_claw.label>
+  <MM_Ahuizotl.tools.right_claw.label>правий кіготь</MM_Ahuizotl.tools.right_claw.label>
+  <MM_Ahuizotl.tools.head.label>голова</MM_Ahuizotl.tools.head.label>
+  <MM_Basilisk.label>василіск</MM_Basilisk.label>
+  <MM_Basilisk.description>У європейських бестіаріях василіск - легендарна рептилія, що вважається зміїним королем, який може викликати смерть одним поглядом. Пліній Старший описував василіска як змію з білою плямою на голові, що сильно нагадує діадему. Говорили, що він має надзвичайно шкідливий вплив на рослини і всі види рослинності, знищуючи і загниваючи всі оточуючі його рослини .\n\nВасилиски не є істотами, що зустрічаються в природі, і були створені в рамках проекту Геката, біоінженерної програми, яка застосовувала реплікатори механітів до вже існуючих тварин, щоб мутувати їх в «чарівних» істот .\n\nОсобливі: Василиск - особливо неприємний звір. Його атака поглядом може скам&apos;янити його жертв, а трава і кущі, що оточують його, повільно гнитимуть і перетворюватимуться на збожеволіле лушпиння в процесі. На щастя, василіски зустрічаються не дуже часто.</MM_Basilisk.description>
+  <MM_Basilisk.verbs.petrifying_gaze.label>скам&apos;янілий погляд</MM_Basilisk.verbs.petrifying_gaze.label>
+  <MM_Basilisk.tools.fangs.label>ікла</MM_Basilisk.tools.fangs.label>
+  <MM_Basilisk.tools.head.label>голова</MM_Basilisk.tools.head.label>
+  <MM_Catoblepas.label>катоблепас</MM_Catoblepas.label>
+  <MM_Catoblepas.description>Катоблепас - легендарна істота з Ефіопії, кажуть, що у нього тіло капського буйвола і величезна голова, яка постійно спрямована вниз через його велику вагу .\n\nКатоблепи не є істотами, що зустрічаються в природі, і були створені в рамках проекту Геката, біоінженерної програми, яка застосовувала реплікатори механітів до вже існуючих тварин, щоб мутувати їх у «Вовщених». Погляд Катоблепаса може перетворювати людей на камінь. Вони не агресивні від природи, але ця небезпечна здатність гарантує, що у них немає природних хижаків.</MM_Catoblepas.description>
+  <MM_Catoblepas.tools.head.label>голова</MM_Catoblepas.tools.head.label>
+  <MM_Catoblepas.tools.left_hoof.label>ліве копито</MM_Catoblepas.tools.left_hoof.label>
+  <MM_Catoblepas.tools.right_hoof.label>праве копито</MM_Catoblepas.tools.right_hoof.label>
+  <MM_Catoblepas.verbs.petrifying_gaze.label>скам&apos;янілий погляд</MM_Catoblepas.verbs.petrifying_gaze.label>
+  <MM_Cerberus.label>цербер</MM_Cerberus.label>
+  <MM_Cerberus.description>У грецькій міфології Цербер, який часто називається гончим Аїда, представляє собою триголову собаку, яка охороняє ворота Підземного світу, щоб не дати мертвим піти. Цербер був нащадком монстрів Єхидни і Тіфона і в першу чергу відомий тим, що був захоплений Гераклом, одним з дванадцяти подвигів Геракла ..\n\nЦербери не є істотами, що зустрічаються в природі, і були створені в рамках проекту Геката, біоінженерної програми, яка застосовувала реплікатори механітів до вже існуючих тварин, щоб мутувати їх в &quot;чарівних &quot;\особливостей&quot;. церберів важче дресирувати, ніж звичайних собак, і вони не такі розумні, але наявність трьох голів робить їх дуже-дуже небезпечними бойовими тваринами, особливо при модифікації біонічними щелепними імплантатами..</MM_Cerberus.description>
+  <MM_Cerberus.tools.left_claw.label>лівий кіготь</MM_Cerberus.tools.left_claw.label>
+  <MM_Cerberus.tools.right_claw.label>правий кіготь</MM_Cerberus.tools.right_claw.label>
+  <MM_Cerberus.tools.head.label>голова</MM_Cerberus.tools.head.label>
+  <MM_CeryneianHind.label>керінейська лань</MM_CeryneianHind.label>
+  <MM_CeryneianHind.description>У грецькій міфології керінейська лань була міфічною істотою, яка жила в Керінеї, Греція, і приймала форму величезного оленя, більше бика, з золотими рогами, як у оленя. Повернути його живим Еврісфею в Мікени було третім подвигом Геракла .\n\nКерінейські хінди не є природними істотами і були створені в рамках проекту Геката, біоінженерної програми, яка застосовувала реплікатори механітів до вже існуючих тварин, щоб мутувати їх в «чарівних» істот .\n\nОсобливі здібності: Керінейська лань (і, відповідно, Харт, оскільки вони були створені в обох підлогах) - дуже швидка істота, хоча її не можна навчити як їздової тварини, а також єдинорогів або пегасів. Він виробляє молоко.</MM_CeryneianHind.description>
+  <MM_CeryneianHind.tools.antlers-0.label>оленячі роги</MM_CeryneianHind.tools.antlers-0.label>
+  <MM_CeryneianHind.tools.antlers-1.label>оленячі роги</MM_CeryneianHind.tools.antlers-1.label>
+  <MM_CeryneianHind.tools.left_hoof.label>ліве копито</MM_CeryneianHind.tools.left_hoof.label>
+  <MM_CeryneianHind.tools.right_hoof.label>праве копито</MM_CeryneianHind.tools.right_hoof.label>
+  <MM_Chimera.label>химера</MM_Chimera.label>
+  <MM_Chimera.description>Химера була жахливою вогнедишною гібридною істотою з Лікії в Малій Азії, що складається з частин лева, з головою козла, що виступає зі спини, і хвостом, який закінчується головою змії .\n\nХимери не є істотами, що зустрічаються в природі, і були створені в рамках проекту Геката, біоінженерної програми, яка застосовувала реплікатори механітів до вже існуючих тварин «щоб» біоінженерної програми, щоб застосовувати, щоб застосовувати реплікатори, щоб застосовувати реплікатори, щоб застосовувати рецій, які вже існуючими тваринних тварин. Химери одночасно злегка отруйні і вогнедишать, що робить їх досить небезпечними, і не тільки для їхніх ворогів! Химери просто ОБОЖНЮЮТЬ дерев&apos;яні колонії. О, їх теж можна доїти...</MM_Chimera.description>
+  <MM_Chimera.tools.toxic_bite.label>отруйний укус</MM_Chimera.tools.toxic_bite.label>
+  <MM_Chimera.tools.left_claw.label>лівий кіготь</MM_Chimera.tools.left_claw.label>
+  <MM_Chimera.tools.right_claw.label>правий кіготь</MM_Chimera.tools.right_claw.label>
+  <MM_Chimera.tools.head.label>голова</MM_Chimera.tools.head.label>
+  <MM_Chimera.verbs.fire_breath.label>вогняне дихання</MM_Chimera.verbs.fire_breath.label>
+  <MM_ErymanthianBoar.label>еримантійський кабан</MM_ErymanthianBoar.label>
+  <MM_ErymanthianBoar.description>Еримантійський кабан був гігантською, жахливою дикою свинею, яка мешкала на схилах гори Ерімантус, час від часу спустошуючи поля фермерів. Упіймання кабана було метою Четвертого подвигу Геракла. Щоб зловити кабана, Геракл загнав його в густий сніг, значно уповільнивши його просування і перевагу .\n\nЕримантійські кабани не є природними істотами і були створені в рамках проекту Геката, біоінженерної програми, яка застосовувала реплікатори механітів до вже існуючих тварин, щоб мутувати їх в «чарівних» істот .\n\nОсобливі здатності: Клики еримантійського кабана можуть завдати кілька серйозних ран, які продовжують кровоточити і викликають подальші травми, що робить їх ДУЖЕ небезпечними в ближньому бою.</MM_ErymanthianBoar.description>
+  <MM_ErymanthianBoar.tools.tusk.label>бивень</MM_ErymanthianBoar.tools.tusk.label>
+  <MM_ErymanthianBoar.tools.head.label>голова</MM_ErymanthianBoar.tools.head.label>
+  <MM_Fenghuang.label>фенхуан</MM_Fenghuang.label>
+  <MM_Fenghuang.description>Фенхуан - легендарний птах у східноазіатських міфологіях, що символізує високу чесноту і витонченість. Фэнхуан также символизирует союз инь и ян, и считается, что птица появляется только в тех областях или местечках, которые благословлены предельным миром и процветанием или счастьем. Традиційно описуваний як сукупність багатьох птахів, він також часто називається «китайським феніксом», хоча схожість із західним Феніксом поверхневе .\n\nФенхуани не є природними істотами і були створені в рамках проекту Геката, біоінженерної програми, яка застосовувала реплікатори механітів до вже існуючих тварин, щоб мутувати їх у «чарівних» істот .\n\n\nОсоблив: Приручені фенхуани випромінюють ауру світу і умиротворення, піднімаючи настрій тим, хто знаходиться поблизу..</MM_Fenghuang.description>
+  <MM_Fenghuang.tools.claws.label>кігті</MM_Fenghuang.tools.claws.label>
+  <MM_Fenghuang.tools.beak.label>дзьоб</MM_Fenghuang.tools.beak.label>
+  <MM_Fenghuang.tools.head.label>голова</MM_Fenghuang.tools.head.label>
+  <MM_Griffin.label>грифон</MM_Griffin.label>
+  <MM_Griffin.description>Грифон - це істота з тілом, хвостом і задніми лапами лева; головою та крилами орла; і кігтями орла в якості передніх ніг. Грифони - особливо могутні і величні істоти, відомі тим, що охороняють скарби і безцінне майно, і цінуються як надійні скакуни .\n\nГрифони не є природними істотами і були створені в рамках проекту Геката, біоінженерної програми, яка застосовувала реплікатори механітів до вже існуючих тварин, щоб мутувати їх у «чарівних» істот .\n\n\N. Грифони - відмінні їздові тварини, які отримують бонуси до швидкості і брони при їзді верхи (для цього потрібно підбадьоритися! Мод на бойових скакунів).</MM_Griffin.description>
+  <MM_Griffin.tools.left_claw.label>лівий кіготь</MM_Griffin.tools.left_claw.label>
+  <MM_Griffin.tools.right_claw.label>правий кіготь</MM_Griffin.tools.right_claw.label>
+  <MM_Griffin.tools.beak.label>дзьоб</MM_Griffin.tools.beak.label>
+  <MM_Griffin.tools.head.label>голова</MM_Griffin.tools.head.label>
+  <MM_Ieltxu.label>Іелтху</MM_Ieltxu.label>
+  <MM_Ieltxu.description>Іелтху - птах-джинн у баскській міфології. Зазвичай зображуваний як вогнедишний, чорний як смоль ворон, Іелтху не є зловмисною істотою, хоча його часто описують як озорого. Іелтху - нічні створення, що зазвичай з&apos;являються в темних лісах під покровом темряви .\n\nІелтху не є істотами, що зустрічаються в природі, і були створені в рамках проекту Hecate, біоінженерної програми, яка застосовувала реплікатори mechanite до вже існуючих тварин, щоб мутувати їх в «чарівних» істот .\n\nОсобливі здібності: Іелтху може видихати вогонь, коли йому загрожують. Це нічні істоти, які сплять вдень.</MM_Ieltxu.description>
+  <MM_Ieltxu.verbs.fire_breath.label>вогняне дихання</MM_Ieltxu.verbs.fire_breath.label>
+  <MM_Ieltxu.tools.claws.label>кігті</MM_Ieltxu.tools.claws.label>
+  <MM_Ieltxu.tools.beak.label>дзьоб</MM_Ieltxu.tools.beak.label>
+  <MM_Ieltxu.tools.head.label>голова</MM_Ieltxu.tools.head.label>
+  <MM_Kappa.label>каппа</MM_Kappa.label>
+  <MM_Kappa.description>Каппа - річкове чортеня в японському фольклорі, що зображується у вигляді зелених людиноподібних істот з перепінчастими руками і ногами і черепашачим панцирем на спині. Поглиблення на їхній голові, їхня «тарілка», утримує невелику кількість води, і каппа сильно слабшає, якщо ця вода проливається або висихає. Хоча каппа часто вважаються озорими, за своєю суттю вони не є зловмисними. Насправді, одного разу подружившись, каппа може виконувати будь-яку кількість завдань для людей, наприклад, допомагати фермерам зрошувати їх землю .\n\nКаппа не є істотами, що зустрічаються в природі, і були створені в рамках проекту Геката, біоінженерної програми, яка застосовувала реплікатори механітів до вже існуючих тварин, щоб мутувати їх в «чарівних» істот .\n\nОсобливі: Каппа боягузливі і тікають з бою, якщо втрачають занадто багато здоров&apos;я. Належним чином навчений каппа (принаймні, навик «Охоронець») може допомогти колоністам у виконанні завдань зі збору врожаю.</MM_Kappa.description>
+  <MM_Kappa.tools.left_fist.label>лівий кулак</MM_Kappa.tools.left_fist.label>
+  <MM_Kappa.tools.right_fist.label>правий кулак</MM_Kappa.tools.right_fist.label>
+  <MM_Kappa.tools.teeth.label>зуби</MM_Kappa.tools.teeth.label>
+  <MM_Kappa.tools.head.label>голова</MM_Kappa.tools.head.label>
+  <MM_Kitsune.label>кіцуне</MM_Kitsune.label>
+  <MM_Kitsune.description>Кіцуне - легендарна істота з японського фольклору, що зображується як досить розумна істота, схожа на лисицю, що володіє паранормальними здібностями, які зростають з віком і мудрістю. У Кіцуне цілих дев&apos;ять хвостів. Як правило, більша кількість хвостів вказує на більш стару і могутню Кіцуне .\n\nКіцуне не є істотами, що зустрічаються в природі, і були створені в рамках проекту Геката, біоінженерної програми, яка застосовувала реплікатори механітів до вже існуючих тварин, щоб мутувати їх в «чарівних» істот .\n\nОсобливі здібності: Будучи прирученою, Кіцуне повільно регенерує рани довколишніх колоністів і тварин..</MM_Kitsune.description>
+  <MM_Kitsune.tools.left_claw.label>лівий кіготь</MM_Kitsune.tools.left_claw.label>
+  <MM_Kitsune.tools.right_claw.label>правий кіготь</MM_Kitsune.tools.right_claw.label>
+  <MM_Kitsune.tools.head.label>голова</MM_Kitsune.tools.head.label>
+  <MM_LernaeanHydra.label>лернейська гідра</MM_LernaeanHydra.label>
+  <MM_LernaeanHydra.description>Лернейська гідра - змієвідне водяне чудовисько в грецькій і римській міфології. Його лігвом було озеро Лерна в Арголіді, звідси і його назва. Гідра володіє надзвичайно отруйним диханням і кров&apos;ю, а також вражаючими регенеративними здібностями. Вбивство гідри було метою Другого подвигу Геракла .\n\nГідри не є істотами, що зустрічаються в природі, і були створені в рамках проекту Геката, біоінженерної програми, яка застосовувала реплікатори механітів до вже існуючих тварин, щоб мутувати їх у «чарівних» істот .\n\nОсобливі здібності: Гідри можуть досить швидко регенерувати рани. Гідри небезпечні в ближньому бою, але справжня небезпека виходить від їх отруйного кислотного дихання. На щастя, вони зазвичай досить сором&apos;язливі істоти і не схильні наближатися до людей.</MM_LernaeanHydra.description>
+  <MM_LernaeanHydra.tools.toxic_bite.label>отруйний укус</MM_LernaeanHydra.tools.toxic_bite.label>
+  <MM_LernaeanHydra.verbs.acidic_breath.label>кислий запах з рота</MM_LernaeanHydra.verbs.acidic_breath.label>
+  <MM_LesserWyvern.label>мала віверна</MM_LesserWyvern.label>
+  <MM_LesserWyvern.description>У середньовічній європейській геральдиці віверна - це крилатий двоногий дракон, що з&apos;являється на численних штандартах і гербах. Віверна в геральдиці і фольклорі рідко буває вогнедишною, на відміну від чотирилапого дракона. Замість цього віверни зазвичай асоціюються з отрутою, або у вигляді отруйних кліків, або у вигляді їх небезпечного колючого хвоста .\n\nМенші віверни не є природними істотами і були створені в рамках проекту Геката, біоінженерної програми, яка застосовувала реплікатори механітів до вже існуючих тварин, щоб мутувати їх у «чарівних» істот .\n\nОсобливі здібності: Малі віверни надзвичайно отруйні, стійкі до пошкоджень і майже байдужі до сильного болю. На щастя, вони дуже рідкісні. На відміну від Великих віверн, вони не можуть плюватися отрутою (щоб побачити великих віверн, скачайте наш мод RimWorld - Полювання на Відьмака на монстрів!).</MM_LesserWyvern.description>
+  <MM_LesserWyvern.tools.left_claw.label>лівий кіготь</MM_LesserWyvern.tools.left_claw.label>
+  <MM_LesserWyvern.tools.right_claw.label>правий кіготь</MM_LesserWyvern.tools.right_claw.label>
+  <MM_LesserWyvern.tools.tail.label>хвіст</MM_LesserWyvern.tools.tail.label>
+  <MM_Manticore.label>мантикора</MM_Manticore.label>
+  <MM_Manticore.description>Мантікора - жахлива легендарна істота в перській міфології. У нього гібридна левово-гуманоїдна голова, тіло лева і скорпіоній хвіст з отруйними шипами, схожими на голки дикобраза. Ця мантикора також була модифікована, щоб мати нефункціональні крила рукокрилих, хоча історичні описи істоти їх не включали. Мантікора - лютий хижак, здатний вистежувати свою жертву і нападати з близької відстані .\n\nМантикори не є природними істотами і були створені в рамках проекту Геката, біоінженерної програми, яка застосовувала реплікатори механітів до вже існуючих тварин, щоб мутувати їх у «чарівних» істот .\n\nОсобливі здібності: Мантикори можуть викидати отруєні голки зі своїх скорпіоноподібних хвостів.</MM_Manticore.description>
+  <MM_Manticore.tools.left_claw.label>лівий кіготь</MM_Manticore.tools.left_claw.label>
+  <MM_Manticore.tools.right_claw.label>правий кіготь</MM_Manticore.tools.right_claw.label>
+  <MM_Manticore.tools.head.label>голова</MM_Manticore.tools.head.label>
+  <MM_Manticore.verbs.venomous_quills.label>отруйні голки</MM_Manticore.verbs.venomous_quills.label>
+  <MM_Pegasus.label>пегас</MM_Pegasus.label>
+  <MM_Pegasus.description>Пегас - міфічний крилатий божественний кінь і одна з найбільш впізнаваних істот у грецькій міфології. Пегаси - це білі жеребці з парою оперених крил, що ростуть з їх спини. Говорили, що міфологічні пегаси могли літати за допомогою цих крил, однак ці істоти, схоже, хизуються ними тільки з естетичних міркувань, оскільки немає такої кількості генної інженерії, яка могла б створити такі крихкі крила, щоб витримати їх вагу. Їх цінують як швидких і надійних скакунів .\n\nПегаси не є істотами, що зустрічаються в природі, і були створені в рамках проекту Геката, біоінженерної програми, яка застосовувала реплікатори механітів до вже існуючих тварин, щоб мутувати їх у «чарівних» істот .\n\nОсобливі здібності: Пегаси - відмінні їздові тварини, які отримують величезний бонус до швидкості при їзді верхи (для цього потрібно підбадьоритися! Мод на бойових скакунів).</MM_Pegasus.description>
+  <MM_Pegasus.tools.head.label>голова</MM_Pegasus.tools.head.label>
+  <MM_Pegasus.tools.left_hoof.label>ліве копито</MM_Pegasus.tools.left_hoof.label>
+  <MM_Pegasus.tools.right_hoof.label>праве копито</MM_Pegasus.tools.right_hoof.label>
+  <MM_Phoenix.label>Фенікс</MM_Phoenix.label>
+  <MM_Phoenix.description>У давньоєгипетській, а пізніше грецькій і римській міфології фенікс - це довгоживучий птах, який циклічно регенерує або іншим чином народжується заново, зазвичай в результаті масштабної пожежі, яка спустошує все навколо. Символічно Фенікс завжди асоціювався з поняттями відродження, оновлення та завзятості .\n\nФенікси не є істотами, що зустрічаються в природі, і були створені в рамках проекту Геката, біоінженерної програми, яка застосовувала реплікатори механітів до вже існуючих тварин, щоб мутувати їх у «чарівних» істот .\n\nОсобливі здібності: Атаки Фенікса можуть підпалити їхні цілі. Коли Фенікс помре, він вибухне і створить вогнетривке яйце (а іноді і два). Через деякий час з цього яйця вилупиться новий Фенікс.</MM_Phoenix.description>
+  <MM_Phoenix.tools.claws.label>кігті</MM_Phoenix.tools.claws.label>
+  <MM_Phoenix.tools.beak.label>дзьоб</MM_Phoenix.tools.beak.label>
+  <MM_Phoenix.tools.head.label>голова</MM_Phoenix.tools.head.label>
+  <MM_Qilin.label>цилінь</MM_Qilin.label>
+  <MM_Qilin.description>Цилінь - міфічна копитна хімічна істота, відома в китайській та інших східноазіатських культурах, яка, як кажуть, з&apos;являється з неминучим прибуттям або кончиною мудреця або прославленого правителя. Тіла цилінів частково покриті лускою і мають форму оленя, а на головах у них пара вражаючих рогів .\n\nЦилінь не є істотами, що зустрічаються в природі, і були створені в рамках проекту Геката, біоінженерної програми, яка застосовувала реплікатори механітів до вже існуючих тварин, щоб мутувати їх в «чарівних» істот .\n\nХоча Цилінь зазвичай мирні істоти, у них є неприємна схильність підпалювати своїх ворогів, коли їх провокують.</MM_Qilin.description>
+  <MM_Qilin.tools.left_hoof.label>ліве копито</MM_Qilin.tools.left_hoof.label>
+  <MM_Qilin.tools.right_hoof.label>праве копито</MM_Qilin.tools.right_hoof.label>
+  <MM_Qilin.tools.antlers.label>оленячі роги</MM_Qilin.tools.antlers.label>
+  <MM_Qilin.tools.teeth.label>зуби</MM_Qilin.tools.teeth.label>
+  <MM_Qilin.tools.head.label>голова</MM_Qilin.tools.head.label>
+  <MM_Salamander.label>саламандра</MM_Salamander.label>
+  <MM_Salamander.description>Саламандра - це амфібія, якій, як і багатьом реальним істотам, часто приписують фантастичні, а іноді і окультні якості, якими не володіє реальний організм. Легендарна саламандра в класичних, середньовічних і ренесансних переказах часто зображується як типова саламандра або змія у формі ящірки, але зазвичай їй приписується спорідненість зі стихією вогню ..\n\nСаламандри не є істотами, що зустрічаються в природі, і були створені в рамках проекту Геката, біоінженерної програми, яка застосовувала реплікатори механітів до вже існуючих тварин, щоб, щоб їх, щоб «мутувати в їх». Саламандри випромінюють неймовірну кількість тепла, що робить їх дуже небезпечними (або дуже корисними) в тісному просторі. Їх яйця теж володіють цією якістю, і вони вибухають при вилупленні. Укус саламандри може підпалити їх ціль.</MM_Salamander.description>
+  <MM_Salamander.tools.firefangs.label>вогняні ікла</MM_Salamander.tools.firefangs.label>
+  <MM_Salamander.tools.head.label>голова</MM_Salamander.tools.head.label>
+  <MM_StymphalianBird.label>стимфалійський птах</MM_StymphalianBird.label>
+  <MM_StymphalianBird.description>Стимпалійські птахи - група ненажерливих птахів у грецькій міфології, назва яких походить від їхнього проживання на болоті в Стімпалії. Стимфалійські птахи були птахами-людожерами з бронзовими дзьобами, гострими металевими пір&apos;ями, які вони могли запускати у своїх жертв, і отруйним послідом. Перемога над стимпалійськими птахами була метою Шостого подвигу Геракла .\n\nСтимфалійські птахи не є природними істотами і були створені в рамках проекту Геката, біоінженерної програми, яка застосовувала механічні реплікатори до вже існуючих тварин, щоб мутувати їх у «чарівних» істот .\n\nОсобливі здібності: Стимфаліанські птахи літають над місцевістю, ігноруючи витрати на пересування по місцевості. Вони можуть використовувати гострі дальні атаки.</MM_StymphalianBird.description>
+  <MM_StymphalianBird.verbs.razor_sharp_feathers.label>гострі як бритва пір&apos;я</MM_StymphalianBird.verbs.razor_sharp_feathers.label>
+  <MM_StymphalianBird.tools.claws.label>кігті</MM_StymphalianBird.tools.claws.label>
+  <MM_StymphalianBird.tools.beak.label>голова</MM_StymphalianBird.tools.beak.label>
+  <MM_StymphalianBird.tools.head.label>голова</MM_StymphalianBird.tools.head.label>
+  <MM_Tlilcoatl.label>Тлількоатль</MM_Tlilcoatl.label>
+  <MM_Tlilcoatl.description>Тлількоатль («чорна змія» мовою науатль) - хижа рептилія в мексиканському фольклорі. Тлількоатлі мають блискучу чорну луску, роздвоєний хвіст і виростають до значних розмірів. Вони можуть дихати небезпечним отруйним газом, який швидко душить їх жертв .\n\nТлілкоатлі не є істотами, що зустрічаються в природі, і були створені в рамках проекту Геката, біоінженерної програми, яка застосовувала реплікатори механітів до вже існуючих тварин, щоб мутувати їх в «чарівних» істот .\n\nОсобливі здібності: Тлілкоатлі надзвичайно отруйні, з небезпечним укусом і дуже неприємним диханням. Однак вони нападатимуть на людей тільки захищаючись.</MM_Tlilcoatl.description>
+  <MM_Tlilcoatl.tools.fangs.label>ікла</MM_Tlilcoatl.tools.fangs.label>
+  <MM_Tlilcoatl.verbs.poison_breath.label>отруйне дихання</MM_Tlilcoatl.verbs.poison_breath.label>
+  <MM_Unicorn.label>єдиноріг</MM_Unicorn.label>
+  <MM_Unicorn.description>Єдиноріг - легендарна істота, яка з давнини описувалася як звір з одним великим, загостреним, що закручується спіраллю рогом, який виступає з його лоба. Єдиноріг був зображений на стародавніх печатках цивілізації долини Інда і згадувався стародавніми греками. Єдинорога зазвичай описували як надзвичайно дику лісову істоту, символ чистоти і витонченості. Кажуть, що його ріг має здатність робити отруєну воду придатною для пиття і зцілювати хвороби .\n\nЕдинороги не є істотами, що зустрічаються в природі, і були створені в рамках проекту Геката, біоінженерної програми, яка застосовувала механічні реплікатори до вже існуючих тварин, щоб мутувати їх у «чарівних» істот .\n\nОсобливі здібності: Єдинороги - відмінні їздові тварини, які отримують величезний бонус до швидкості при їзді верхи (для цього потрібно підбадьоритися! Мод на бойових скакунів).</MM_Unicorn.description>
+  <MM_Unicorn.tools.horn-0.label>ріг</MM_Unicorn.tools.horn-0.label>
+  <MM_Unicorn.tools.horn-1.label>ріг</MM_Unicorn.tools.horn-1.label>
+  <MM_Unicorn.tools.left_hoof.label>ліве копито</MM_Unicorn.tools.left_hoof.label>
+  <MM_Unicorn.tools.right_hoof.label>праве копито</MM_Unicorn.tools.right_hoof.label>
+  <MM_WildMinotaur.label>дикий мінотавр</MM_WildMinotaur.label>
+  <MM_WildMinotaur.description>У грецькій міфології Мінотавр - міфічна істота, що зображалася в класичні часи з головою і хвостом бика і тілом людини. Він жив у центрі Лабіринту, який був складною спорудою, схожою на лабіринт, спроектованою архітектором Дедалом і його сином Ікаром за наказом критського царя Міноса. Зрештою Мінотавр був убитий афінським героєм Тесеєм. Міфологічний Мінотавр часто зображувався як хитрий звір, в той час як ця істота володіє дуже простим, інстинктивним інтелектом .\n\nМінотаври не є істотами, що зустрічаються в природі, і були створені в рамках проекту Геката, біоінженерної програми, яка застосовувала реплікатори механітів до вже існуючих тварин, щоб мутувати їх у «чарівних» істот. Дикі мінотаври можуть колотити землю своїми копитами, викликаючи підземну тремтіння..</MM_WildMinotaur.description>
+  <MM_WildMinotaur.tools.horns.label>роги</MM_WildMinotaur.tools.horns.label>
+  <MM_WildMinotaur.tools.left_fist.label>лівий кулак</MM_WildMinotaur.tools.left_fist.label>
+  <MM_WildMinotaur.tools.right_fist.label>правий кулак</MM_WildMinotaur.tools.right_fist.label>
+  <MM_WildMinotaur.tools.teeth.label>зуби</MM_WildMinotaur.tools.teeth.label>
+  <MM_WildMinotaur.tools.head.label>голова</MM_WildMinotaur.tools.head.label>
+  <MM_WildMinotaur.verbs.tremors.label>поштовхи</MM_WildMinotaur.verbs.tremors.label>
+  <MM_WillOWisp.label>блукаючий вогник</MM_WillOWisp.label>
+  <MM_WillOWisp.description>Блукаючий вогник - істота з англійського фольклору, що складається з атмосферного примарного світла, яке мандрівники бачать вночі, особливо над болотами. Кажуть, що він вводить мандрівників в оману, нагадуючи мерехтливу лампу або ліхтар .\n\nБлукаючі вогники не є істотами, що зустрічаються в природі, і були створені в рамках проекту Геката, біоінженерної програми, яка застосовувала механічні реплікатори до вже існуючих тварин, щоб мутувати їх у «чарівних» істот .\n\nОсобливості: Блукаючі вогники навряд чи можна вважати живими істотами, найбільше вони нагадують дійсно дивні бактерії. Вони розмножуються безстатевим поділом, майже не потребують їжі і несприйнятливі до перепадів температур, токсичного середовища, вогню і психічних атак. Якщо їм загрожують, що трапляється нечасто, вони можуть видихати хмару різнокольорових частинок, яка, мабуть, шкідлива для живих істот.</MM_WillOWisp.description>
+  <MM_WillOWisp.tools.pseudopod.label>псевдопідія</MM_WillOWisp.tools.pseudopod.label>
+  <MM_WillOWisp.verbs.wisp_breath.label>слабке дихання</MM_WillOWisp.verbs.wisp_breath.label>
+  <MM_Xiezhi.label>Січі</MM_Xiezhi.label>
+  <MM_Xiezhi.description>Січі - легендарна істота в китайській міфології, а також в корейській міфології, де вона відома як хетае. Січі зазвичай зображуються як щось середнє між левом і козлом, з єдиним рогом на лобі. Січі вроджено налаштовані на добро і зло, будучи здатними інстинктивно відрізняти невинних від винних .\n\nСечжі не є істотами, що зустрічаються в природі, і були створені в рамках проекту Геката, біоінженерної програми, яка застосовувала реплікатори механітів до вже існуючих тварин, щоб мутувати їх в «чарівних» істот .\n\nОсобливості: Січі буде люто нападати на піратів, пронизуючи їх своїм рогом у пошуках справедливості..</MM_Xiezhi.description>
+  <MM_Xiezhi.tools.horn.label>ріг</MM_Xiezhi.tools.horn.label>
+  <MM_Xiezhi.tools.bite.label>кусати</MM_Xiezhi.tools.bite.label>
+  <MM_Xiezhi.tools.left_claw.label>лівий кіготь</MM_Xiezhi.tools.left_claw.label>
+  <MM_Xiezhi.tools.right_claw.label>правий кіготь</MM_Xiezhi.tools.right_claw.label>
+  <MM_Xiezhi.tools.head.label>голова</MM_Xiezhi.tools.head.label>
+</LanguageData>

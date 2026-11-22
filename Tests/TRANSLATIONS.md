@@ -53,6 +53,10 @@ no custom grammar packs. IDs, enum values, def references, paths, technical logs
 save keys and mod names in patch gates are not prose. About metadata and repository
 documents are outside the in-game gate.
 
+## Translations of the original (2026-11-22)
+
+Five languages added at `localize` from community packs of the original (authors and items in `ATTRIBUTION.md`): Russian (PiaRex 2898318931, gaps from Nevelian 2890142522), Ukrainian, Portuguese and Brazilian Portuguese (Nevelian), Japanese (Lucifel 2521068999). Each language has the same 630 keys as French plus 17 achievement keys (`Mod/Integrations/Achievements`); pack index paths (`parts.1.parts.0`) were converted to the handle paths the game and `Check-DefInjected.ps1` expect. About 590 keys per language come from the packs, 36 to 40 were written by AI (the wisp `customString` key is left out: it resolves to nothing in the game). Rejected: Chinese pack 2469628967 (reposting forbidden). Not checked by a native speaker; `/review-translation` still to run for the five languages.
+
 ## Reproducible checks
 
 ```powershell

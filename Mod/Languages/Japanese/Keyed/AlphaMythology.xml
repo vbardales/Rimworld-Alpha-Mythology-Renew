@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <AMR_AsexualHatched>{0}が無性生殖で増えました。</AMR_AsexualHatched>
+  <MM_DestroyEggsLabel>卵割り</MM_DestroyEggsLabel>
+  <MM_DestroyEggsDesc>この卵をできるだけ早く潰すために作業指示を待ちます</MM_DestroyEggsDesc>
+  <MM_CancelDestroyEggsLabel>卵割りをキャンセル</MM_CancelDestroyEggsLabel>
+  <MM_CancelDestroyEggsDesc>この卵をできるだけ早く潰すための作業指示をキャンセルします</MM_CancelDestroyEggsDesc>
+  <AMR_AsexualReproductionProgress>無性分裂の進行: {0}(1サイクルあたり{1})</AMR_AsexualReproductionProgress>
+  <AMR_AsexualReproductionDays.One>{0}日</AMR_AsexualReproductionDays.One>
+  <AMR_AsexualReproductionDays.Many>{0}日</AMR_AsexualReproductionDays.Many>
+  <AMR_AsexualReproductionDisabled>無性生殖は無効</AMR_AsexualReproductionDisabled>
+  <AMR_DevReproduce>DEV: 今すぐ繁殖</AMR_DevReproduce>
+  <AMR_DevReproduceDesc>無性生殖を今すぐ発生させます。</AMR_DevReproduceDesc>
+  <MM_Boomer>自爆</MM_Boomer>
+  <MM_BoomerDesc>この動物は死ぬと爆発します.</MM_BoomerDesc>
+  <MM_DamageRanged>射撃</MM_DamageRanged>
+  <MM_DamageRangedDOTDesc>この動物は,遠距離攻撃を使って目標にダメージ与え,時間の経過とともにダメージも与えます.この動物に近接攻撃させることは,ベストな使い方とは言えません.</MM_DamageRangedDOTDesc>
+  <MM_DamageRangedDesc>この動物は,遠距離攻撃を使って目標にダメージを与えます.この動物に近接攻撃させることは,ベストな使い方とは言えません.</MM_DamageRangedDesc>
+  <MM_DamageRangedPoison>射撃(毒)</MM_DamageRangedPoison>
+  <MM_DamageRangedPoisonDesc>この動物は,遠距離攻撃を使って目標にダメージを与えます.この攻撃は有毒ダメージを与えます.この動物に近接攻撃させることは,ベストな使い方とは言えません.</MM_DamageRangedPoisonDesc>
+  <MM_Farm>家畜</MM_Farm>
+  <MM_FarmMilkDesc>ミルクを生産する家畜です.</MM_FarmMilkDesc>
+  <MM_FireyShockTroopDesc>「打撃」役割の動物は高速移動に特化しており,近接戦闘が有利になる能力を持ちます.それらは防御力やHPが高いわけではありませんが,適切に使役すれば敵を壊滅させる事が可能です.\n\nこの動物は,通常よりもはるかに高い確率で感染させる攻撃や,感染を拡大する攻撃を持っています.</MM_FireyShockTroopDesc>
+  <MM_MountFast>高速騎乗</MM_MountFast>
+  <MM_MountFastArmoured>高速装甲騎乗</MM_MountFastArmoured>
+  <MM_MountFastArmouredDesc>この動物は,入植者が騎乗することが可能で,速度と防御力の向上をもたらすとともに,騎手と一緒に近接攻撃を行うことができます.Giddy_Up！Modをインストールしている場合のみ利用可能です.そうでない場合は,待っていても何も起きませんよ？</MM_MountFastArmouredDesc>
+  <MM_MountFastDesc>この動物は,入植者が騎乗することが可能で,かなりの移動速度の向上をもたらすとともに,騎手と一緒に近接攻撃を行うことができます.Giddy_Up！Modをインストールしている場合のみ利用可能です.そうでない場合は,待っていても何も起きませんよ？</MM_MountFastDesc>
+  <MM_No>いいえ</MM_No>
+  <MM_NoRanged>この動物には,遠隔攻撃はありません.攻撃を命令するには,防御と攻撃が訓練済で,その後,徴兵または屋外活動時に追従を割り当てられている必要があります.主人のコマンドバーにある「獲物を指示」ボタンを押すと,動物は近接戦闘を仕掛けます.</MM_NoRanged>
+  <MM_ParalizingRanged>射撃(麻痺)</MM_ParalizingRanged>
+  <MM_ParalyzingRangedDesc>この動物は,遠距離攻撃を使って目標を麻痺させます.この動物に近接攻撃させることは,ベストな使い方とは言えません.</MM_ParalyzingRangedDesc>
+  <MM_ParalyzingShockTroopDesc>「打撃」役割の動物は高速移動に特化しており,近接戦闘が有利になる能力を持ちます.それらは防御力やHPが高いわけではありませんが,適切に使役すれば敵を壊滅させる事が可能です.\n\nこの動物は,攻撃された相手を麻痺させる攻撃を持っています.</MM_ParalyzingShockTroopDesc>
+  <MM_PrimaryRole>優先役割</MM_PrimaryRole>
+  <MM_Ranged>この動物は遠隔攻撃を行い,敵から近接攻撃を受けた場合だけ近接攻撃を行います.攻撃を命令するには,防御と攻撃が訓練済で,その後,徴兵または屋外活動時に追従を割り当てられている必要があります.主人のコマンドバーにある「獲物を指示」ボタンを押すと,動物は適当な目標を探して遠距離攻撃を仕掛けます.</MM_Ranged>
+  <MM_RangedAttacks>遠距離攻撃を使用する</MM_RangedAttacks>
+  <MM_SecondaryRole>二次役割</MM_SecondaryRole>
+  <MM_ShockTroop>打撃</MM_ShockTroop>
+  <MM_ShockTroopDOTDesc>「打撃」役割の動物は高速移動に特化しており,近接戦闘が有利になる能力を持ちます.それらは防御力やHPが高いわけではありませんが,適切に使役すれば敵を壊滅させる事が可能です.\n\nこの動物は,時間の経過とともにダメージを与えるDOT攻撃を持っています.</MM_ShockTroopDOTDesc>
+  <MM_ShockTroopDesc>「打撃」役割の動物は高速移動に特化しており,近接戦闘が有利になる能力を持ちます.それらは防御力やHPが高いわけではありませんが,適切に使役すれば敵を壊滅させる事が可能です.\n\nこの動物は,時間の経過とともにダメージを与えるDOT攻撃を持っています.</MM_ShockTroopDesc>
+  <MM_Tank>前衛</MM_Tank>
+  <MM_Utility>補助動物</MM_Utility>
+  <MM_UtilityHealthDesc>この動物は体が非常に弱く,戦闘には向いていません.ただし,傷を治療したり,何らかの方法で強化したして,入植者の健康維持を補助します.</MM_UtilityHealthDesc>
+  <MM_UtilityMoodDesc>この動物は体が非常に弱く,戦闘には向いていません.ただし,すり寄りや他の代替能力を通して,入植者の心情を高めます.</MM_UtilityMoodDesc>
+  <MM_UtilityTemperatureDesc>この動物は体が非常に弱く,戦闘には向いていません.ただし,コロニーの熱量制御に役立ちます.</MM_UtilityTemperatureDesc>
+  <MM_UtilityWorkerDesc>この動物は体が非常に弱く,戦闘には向いていません.ただし,入植者が特定の作業 (採掘,収穫,清掃など) を行うのに役立ち,作業負荷が大幅に軽減されます.</MM_UtilityWorkerDesc>
+  <MM_VenomousTankDesc>「打撃」役割の動物は高速移動に特化しており,近接戦闘が有利になる能力を持ちます.それらは防御力やHPが高いわけではありませんが,適切に使役すれば敵を壊滅させる事が可能です.\n\nこの動物は,有毒物質の蓄積を引き起こす毒攻撃を持っています.</MM_VenomousTankDesc>
+  <MM_Yes>はい</MM_Yes>
+  <AMR_SettingsCategory>Alpha Mythology Renew (unofficial)</AMR_SettingsCategory>
+  <AMR_SpawnMultiplier>野生での出現頻度: ×{0}</AMR_SpawnMultiplier>
+  <AMR_SpawnMultiplierTip>このMODの全ての生き物が、バイオーム内の野生動物の中でどれだけ多く現れるかを倍率で調整します(1 = MOD本来の値)。他の動物との割合が変わるだけで、マップ上の動物の総数は変わりません。すぐに反映されますが、新たな出現にのみ適用され、すでにマップ上にいる動物はそのままです。</AMR_SpawnMultiplierTip>
+  <AMR_ResetDefaults>初期値に戻す</AMR_ResetDefaults>
+  <AMR_AllowedHeader>野生に出現できる生き物(チェックなし: 出現しません。飼いならされた動物と既存の動物には影響しません)</AMR_AllowedHeader>
+</LanguageData>

@@ -204,7 +204,7 @@ Feature: Workshop pictures
     And Nelim's Pickle Tools: I advance the paused game by exactly 40 ticks
     And Alpha Mythology Renew dismisses every letter
     And Nelim's Sanctuary: I am at the sanctuary "fishing-zone"
-    And Alpha Mythology Renew frames the animal "Ondine" at zoom 2, shown 1 cells left and 0 cells up
+    And Alpha Mythology Renew frames the animal "Ondine" at zoom 2, shown 1 cells left and -1 cells up
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And I wait 30 ticks
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal+moodCheerful"

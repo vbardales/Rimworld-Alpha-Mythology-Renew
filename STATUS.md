@@ -48,7 +48,7 @@ social_preview_sha256: c51c55af47ec42afdad3dd8c48ab6917900dcda75dddf81195bbe7ee3
 upstream_synced: 2026-11-12 juanosarg/AlphaMythology@53a5518
 updated: 2026-11-18
 tested_1_7: yes   # 2026-11-12, English only; gaps in the 1.7 pass entry of remaining
-protocols_read_sha: ec07a1ba07d72f67247acb87a06338516eb2e3de
+protocols_read_sha: 9076dc7ed32ed99800d4f0026157da2053469dd4
 ---
 # Alpha Mythology Renew (unofficial): status
 
@@ -155,7 +155,7 @@ Four rows, nothing done outward.
 
 ## NSB (sync 2026-11-14, /sync-nsb-npt)
 
-Places read: 2026-11-20 diffs only, no place doc touched; earlier note (2026-11-14: NSB content unchanged since 2026-11-06; only commit 18abf53 renamed `docs/` to `Docs/`, 0 lines changed). Tribe read: 2026-11-20 (diffs only, nothing touched since 2026-11-19; CATALOGUE-ANIMAUX last fully read 2026-11-14, profiles 2026-10-23). Steps read: 2026-11-20 (diffs only; NPT `steps.md` and `ColonistRace/docs/catalogues` untouched since 2026-11-18, no commit on them).
+Places read: 2026-11-20 diffs only, no place doc touched; earlier note (2026-11-14: NSB content unchanged since 2026-11-06; only commit 18abf53 renamed `docs/` to `Docs/`, 0 lines changed). Tribe read: 2026-11-20 (diffs only, nothing touched since 2026-11-19; CATALOGUE-ANIMAUX last fully read 2026-11-14, profiles 2026-10-23). Steps read: 2026-11-22 (diffs only; NPT `Docs/steps.md` changed 2026-11-20 to 2026-11-21: 773 steps, new `the animal X is made wild`, `the animal X is designated for taming`, `X turns toward Y` (renamed from `X faces Y`, no scenario of this mod calls it), `the things on the area ... are logged`, two ClickDiagnostics steps; none serves a gallery shot, no scenario changed).
 2026-11-20 fifth sync (diffs only): NSB commits since 2026-11-19 touch only its own STATUS.md and Docs/runs (journal migration, replay result): no place, colonist, animal sheet, VALIDE or APPARENCES line; NPT: no commit on `steps.md` or the catalogues. Rules 1 to 5 said back: NSB free, outside NSB asks Virginie (none used), colonist properties only on her word (Nelim: hair Highpony 2026-10-23, mouth 2026-10-25), every outfit free, every included animal in a shot. Included animals (rule 5): 25 of 25 in the shotlist (old 7: Kitsune Phoenix Manticore Kappa Pegasus Unicorn Griffin; 9 to 14: Hind Boar Bird, Hydra Ahuizotl Tlilcoatl, Basilisk Catoblepas Cerberus, Qilin Fenghuang Xiezhi, Salamander Ieltxu WillOWisp, Minotaur Chimera Wyvern), none MISSING; shots 9 and 10 refiled (3939), 3 5 6 7 replayed (fa58). Scene 10 stays without railings (Cat candidates not validated).
 
 

@@ -207,6 +207,18 @@ A second, separate commit fixes a typo in the English text of MM_UtilityWorkerDe
 Commit `Mod/About/PublishedFileId.txt` immediately (lost, the next send creates a second item); record the
 Workshop id in `STATUS.md`; update the register; post comments only once the item is visible to recipients.
 
+## Thank-you comments for the integrated translations (2026-11-23, none posted)
+
+PUBLISHING.md (owner, 2026-11-23): a translation integrated from another mod is thanked in the language folder (`Mod/Languages/<Language>/CREDITS.txt`, done) and by one message on the page of that mod (11.h), one per recipient, register row 11.b added at posting time. Post after the item is public.
+
+| Recipient | Workshop id | Language | Register today | Action |
+|---|---|---|---|---|
+| Русский язык для Alpha Mythology (PiaRex) | 2898318931 | Russian | absent | draft below |
+| Alpha Mythology ua ru pr (Nevelian) | 2890142522 | Ukrainian, Portuguese, Brazilian Portuguese, Russian gaps | absent | draft below |
+| Alpha Mythology 日本語翻訳 (Lucifel) | 2521068999 | Japanese | absent | draft below |
+
+Draft, same text for each, language and name changed: "Hello, thank you for your translation of Alpha Mythology into <language>. It is the starting point of the <language> text of Alpha Mythology Renew (unofficial), a continuation of the original for the latest RimWorld version. Your name and this page are credited in the language folder of the mod. If you would rather have your text removed, tell me and I will take it out. Link: <Workshop link of the item>."
+
 ## Thank-you comment drafts for the optional providers (2026-09-26, none posted)
 
 Read first, per `WORKSHOP_COMMENTS.md`: each page's description and latest comments through the browser. Status of every

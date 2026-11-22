@@ -1,0 +1,7 @@
+Translation credits
+
+This language starts from the community translation of the original Alpha Mythology by:
+- Nevelian: "Alpha Mythology ua ru pr", https://steamcommunity.com/sharedfiles/filedetails/?id=2890142522
+
+Texts those translations do not cover were added with Claude (Anthropic). This language has not been checked by a native speaker.
+Thanks to the authors above. At an author's request their text is removed.

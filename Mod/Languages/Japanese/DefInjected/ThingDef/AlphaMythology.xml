@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <MM_EggGriffinFertilized.label>グリフィンの卵</MM_EggGriffinFertilized.label>
-  <MM_EggGriffinFertilized.description>受精したグリフィンの卵.生で食べることもできますが,調理したほうが美味しく食べれます.</MM_EggGriffinFertilized.description>
+  <MM_EggGriffinFertilized.label>グリフィンの卵(有精卵)</MM_EggGriffinFertilized.label>
+  <MM_EggGriffinFertilized.description>受精したグリフィンの卵.生で食べることもできますが,調理したほうが美味しく食べれます.うまくいけば,グリフィンが孵化するはずです.</MM_EggGriffinFertilized.description>
   <MM_EggPhoenixFertilized.label>フェニックスの卵(有精卵)</MM_EggPhoenixFertilized.label>
-  <MM_EggPhoenixFertilized.description>受精したフラミンゴフェニックスの卵.うまくいけば,フェニックスのヒナになるはずです.生でも食べられますが,調理した方が美味しいです.</MM_EggPhoenixFertilized.description>
+  <MM_EggPhoenixFertilized.description>受精したフェニックスの卵.うまくいけば,フェニックスのヒナになるはずです.生でも食べられますが,調理した方が美味しいです.</MM_EggPhoenixFertilized.description>
   <MM_EggSalamanderFertilized.label>サラマンダーの卵(有精卵)</MM_EggSalamanderFertilized.label>
   <MM_EggSalamanderFertilized.description>受精したサラマンダーの卵.うまくいけば,サラマンダーの幼生になるはずです.生でも食べられますが,調理した方が美味しいです.</MM_EggSalamanderFertilized.description>
   <MM_EggFenghuangFertilized.label>鳳凰の卵(有精卵)</MM_EggFenghuangFertilized.label>

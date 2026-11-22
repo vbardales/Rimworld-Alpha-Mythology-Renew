@@ -3,7 +3,7 @@
   <MM_ToxicBite.label>毒噛みつき</MM_ToxicBite.label>
   <MM_ToxicBite.deathMessage>{0}は噛まれて死んだ.</MM_ToxicBite.deathMessage>
   <MM_VeryToxicBite.label>猛毒噛みつき</MM_VeryToxicBite.label>
-  <MM_VeryToxicBite.deathMessage>{0}は噛まれて死んだ.</MM_VeryToxicBite.deathMessage>
+  <MM_VeryToxicBite.deathMessage>{0}は刺されて死んだ.</MM_VeryToxicBite.deathMessage>
   <MM_FlamingBite.label>熱傷噛みつき</MM_FlamingBite.label>
   <MM_FlamingBite.deathMessage>{0}は燃え尽きて死んだ.</MM_FlamingBite.deathMessage>
   <MM_ToxicSting.label>有毒針</MM_ToxicSting.label>

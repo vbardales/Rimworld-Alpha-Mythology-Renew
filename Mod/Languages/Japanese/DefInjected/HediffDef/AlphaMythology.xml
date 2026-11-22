@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <MM_ToxicBite.description>血流中の毒素.これは,環境毒素,有毒な咬傷,毒された武器など,さまざまな原因から発生する可能性があります.\n高用量では,毒性の蓄積が致命的です.低用量でさえ,それは癌を生成する可能性があります.\nベースのゲームの有毒な蓄積とは対照的に,この有毒な損傷で死亡した生物は食べることができます.</MM_ToxicBite.description>
+  <MM_ToxicBite.description>血流中の毒素.これは,環境毒素,有毒な咬傷,毒された武器など,さまざまな原因から発生する可能性があります.\n\n高用量では,毒性の蓄積が致命的です.低用量でさえ,それは癌を生成する可能性があります.\n\nベースのゲームの有毒な蓄積とは対照的に,この有毒な損傷で死亡した生物は食べることができます.</MM_ToxicBite.description>
   <MM_ToxicBite.label>毒の蓄積</MM_ToxicBite.label>
   <MM_ToxicBite.stages.initial-0.label>初期</MM_ToxicBite.stages.initial-0.label>
   <MM_ToxicBite.stages.initial-1.label>初期</MM_ToxicBite.stages.initial-1.label>
@@ -9,11 +9,11 @@
   <MM_ToxicBite.stages.serious.label>深刻</MM_ToxicBite.stages.serious.label>
   <MM_ToxicBite.stages.extreme.label>極度</MM_ToxicBite.stages.extreme.label>
   <MM_Grabbed.description>この生物は掴まれているため,適切に移動できません.</MM_Grabbed.description>
-  <MM_Grabbed.label>引っ掴む</MM_Grabbed.label>
+  <MM_Grabbed.label>掴まれている</MM_Grabbed.label>
   <MM_Grabbed.stages.initial.label>初期</MM_Grabbed.stages.initial.label>
   <MM_Grabbed.stages.partially_immobilized.label>部分的に固定化</MM_Grabbed.stages.partially_immobilized.label>
-  <MM_Grabbed.stages.grabbed.label>引っ掴む</MM_Grabbed.stages.grabbed.label>
-  <MM_Grabbed.stages.grabbed_tight.label>強く引っ掴む</MM_Grabbed.stages.grabbed_tight.label>
+  <MM_Grabbed.stages.grabbed.label>掴まれている</MM_Grabbed.stages.grabbed.label>
+  <MM_Grabbed.stages.grabbed_tight.label>強く掴まれている</MM_Grabbed.stages.grabbed_tight.label>
   <MM_BleedingWound.description>最初の発作後,しばらくの間失血を引き起こし続ける出血の傷.</MM_BleedingWound.description>
   <MM_BleedingWound.label>出血傷</MM_BleedingWound.label>
   <MM_BleedingWound.stages.bleeding_wounds_minor.label>軽度の出血性の傷</MM_BleedingWound.stages.bleeding_wounds_minor.label>
